@@ -1,56 +1,36 @@
 {
-  "workbook": "workbooks/2026 Chevrolet Truck Silverado 1500 Retail and Fleet Export.xlsx",
-  "vehicle_name": "2026 Chevrolet Silverado 1500",
+  "workbook": "workbooks/2026 Chevrolet Truck Blazer EV Export.xlsx",
+  "vehicle_name": "2026 Chevrolet Blazer EV",
   "files": [
     {
       "type": "model",
-      "name": "2026 Chevrolet Silverado 1500",
-      "path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html"
+      "name": "2026 Chevrolet Blazer EV",
+      "path": "workbooks_html/model_2026_Chevrolet_Blazer_EV.html"
     },
     {
       "type": "trim",
-      "name": "Work Truck",
-      "path": "workbooks_html/trim_2026_Chevrolet_Silverado_1500_Work_Truck.html"
+      "name": "LT 1MC26 FWD",
+      "path": "workbooks_html/trim_2026_Chevrolet_Blazer_EV_LT_1MC26_FWD.html"
     },
     {
       "type": "trim",
-      "name": "Custom",
-      "path": "workbooks_html/trim_2026_Chevrolet_Silverado_1500_Custom.html"
+      "name": "LT 1MC26 AWD",
+      "path": "workbooks_html/trim_2026_Chevrolet_Blazer_EV_LT_1MC26_AWD.html"
     },
     {
       "type": "trim",
-      "name": "Custom Trail Boss",
-      "path": "workbooks_html/trim_2026_Chevrolet_Silverado_1500_Custom_Trail_Boss.html"
+      "name": "RS 1MD26 FWD",
+      "path": "workbooks_html/trim_2026_Chevrolet_Blazer_EV_RS_1MD26_FWD.html"
     },
     {
       "type": "trim",
-      "name": "LT",
-      "path": "workbooks_html/trim_2026_Chevrolet_Silverado_1500_LT.html"
+      "name": "RS 1MD26 AWD",
+      "path": "workbooks_html/trim_2026_Chevrolet_Blazer_EV_RS_1MD26_AWD.html"
     },
     {
       "type": "trim",
-      "name": "RST",
-      "path": "workbooks_html/trim_2026_Chevrolet_Silverado_1500_RST.html"
-    },
-    {
-      "type": "trim",
-      "name": "LT Trail Boss",
-      "path": "workbooks_html/trim_2026_Chevrolet_Silverado_1500_LT_Trail_Boss.html"
-    },
-    {
-      "type": "trim",
-      "name": "ZR2",
-      "path": "workbooks_html/trim_2026_Chevrolet_Silverado_1500_ZR2.html"
-    },
-    {
-      "type": "trim",
-      "name": "LTZ",
-      "path": "workbooks_html/trim_2026_Chevrolet_Silverado_1500_LTZ.html"
-    },
-    {
-      "type": "trim",
-      "name": "High Country",
-      "path": "workbooks_html/trim_2026_Chevrolet_Silverado_1500_High_Country.html"
+      "name": "SS 1MG26 AWD",
+      "path": "workbooks_html/trim_2026_Chevrolet_Blazer_EV_SS_1MG26_AWD.html"
     }
   ]
 }
