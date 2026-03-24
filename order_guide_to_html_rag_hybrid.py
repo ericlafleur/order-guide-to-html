@@ -1470,25 +1470,38 @@ def write_outputs(data: WorkbookData, output_dir: Path) -> Dict[str, object]:
     return manifest
 
 
+WORKBOOKS_DIR = Path("workbooks")
+OUTPUT_DIR = Path("workbook_html")
+
+
 def main(argv: Optional[Sequence[str]] = None) -> int:
     parser = argparse.ArgumentParser(
         description='Convert a GM Vehicle Order Guide workbook into chunk-budget-aware model and trim HTML files for RAG.'
     )
-    parser.add_argument('workbook', help='Path to the input XLSX workbook')
+    parser.add_argument(
+        'files',
+        nargs='*',
+        type=Path,
+        help='Specific xlsx files to convert. Defaults to all files in workbooks/.',
+    )
     parser.add_argument('-o', '--output-dir', help='Directory for generated HTML files')
     args = parser.parse_args(argv)
 
-    workbook_path = Path(args.workbook)
-    if not workbook_path.exists():
-        print(f'Workbook not found: {workbook_path}', file=sys.stderr)
-        return 1
+    output_dir = Path(args.output_dir) if args.output_dir else OUTPUT_DIR
 
-    default_dir = workbook_path.with_suffix('')
-    output_dir = Path(args.output_dir) if args.output_dir else default_dir.parent / f'{default_dir.name}_html'
+    xlsx_files = args.files if args.files else list(WORKBOOKS_DIR.glob("*.xlsx"))
 
-    data = parse_workbook(workbook_path)
-    manifest = write_outputs(data, output_dir)
-    print(json.dumps(manifest, indent=2))
+    if not xlsx_files:
+        print(f"No xlsx files found in {WORKBOOKS_DIR}/")
+        return 0
+
+    for workbook_path in xlsx_files:
+        if not workbook_path.exists():
+            print(f'Workbook not found: {workbook_path}', file=sys.stderr)
+            continue
+        data = parse_workbook(workbook_path)
+        manifest = write_outputs(data, output_dir)
+        print(json.dumps(manifest, indent=2))
     return 0
 
 
