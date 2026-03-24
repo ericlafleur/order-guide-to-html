@@ -1,0 +1,51 @@
+name: Convert Workbooks to HTML
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "workbooks/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Detect changed workbooks
+        id: changed
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            # Manual trigger: convert all files
+            echo "files=" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.before }}" = "0000000000000000000000000000000000000000" ]; then
+            # First push to branch: convert all files
+            echo "files=" >> "$GITHUB_OUTPUT"
+          else
+            FILES=$(git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" -- 'workbooks/*.xlsx' | tr '\n' ' ')
+            echo "files=$FILES" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Convert xlsx files to HTML
+        run: python order_guide_to_html.py ${{ steps.changed.outputs.files }}
+
+      - name: Commit generated HTML files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add workbook_html/
+          git diff --cached --quiet || git commit -m "chore: convert workbooks to HTML [skip ci]"
+          git push
