@@ -1,11 +1,11 @@
-"""Convert xlsx files from the workbooks/ folder to HTML files in workbook_html/."""
+"""Convert xlsx files from the workbooks/ folder to HTML files in workbooks_html/."""
 
 import argparse
 import pathlib
 import pandas as pd
 
 WORKBOOKS_DIR = pathlib.Path("workbooks")
-OUTPUT_DIR = pathlib.Path("workbook_html")
+OUTPUT_DIR = pathlib.Path("workbooks_html")
 
 parser = argparse.ArgumentParser(description="Convert xlsx workbooks to HTML.")
 parser.add_argument(
