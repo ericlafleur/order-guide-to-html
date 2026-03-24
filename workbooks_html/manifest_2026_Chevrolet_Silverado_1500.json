@@ -1,0 +1,95 @@
+{
+  "workbook": "../workbooks/2026 Chevrolet Truck Silverado 1500 Retail and Fleet Export.xlsx",
+  "vehicle_name": "2026 Chevrolet Silverado 1500",
+  "files": [
+    {
+      "objecttype": "Product",
+      "type": "model",
+      "path": "model_2026_Chevrolet_Silverado_1500.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "name": "Work Truck",
+      "title": "Work Truck\n1WT1",
+      "engine": "Engine, 2.7L TurboMax, (310 hp [231 kW] @ 5600 rpm, 430 lb-ft of torque [583 Nm] @ 3000 rpm)",
+      "parent_model": "model_2026_Chevrolet_Silverado_1500.html",
+      "path": "trim_2026_Chevrolet_Silverado_1500_Work_Truck.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "name": "Custom",
+      "title": "Custom\n1CX2",
+      "engine": "Engine, 2.7L TurboMax, (310 hp [231 kW] @ 5600 rpm, 430 lb-ft of torque [583 Nm] @ 3000 rpm)",
+      "parent_model": "model_2026_Chevrolet_Silverado_1500.html",
+      "path": "trim_2026_Chevrolet_Silverado_1500_Custom.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "name": "Custom Trail Boss",
+      "title": "Custom Trail Boss\n2CX6",
+      "engine": "Engine, 2.7L TurboMax, (310 hp [231 kW] @ 5600 rpm, 430 lb-ft of torque [583 Nm] @ 3000 rpm)",
+      "parent_model": "model_2026_Chevrolet_Silverado_1500.html",
+      "path": "trim_2026_Chevrolet_Silverado_1500_Custom_Trail_Boss.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "name": "LT",
+      "title": "LT\n1LT3",
+      "engine": "Engine, 2.7L TurboMax, (310 hp [231 kW] @ 5600 rpm, 430 lb-ft of torque [583 Nm] @ 3000 rpm)",
+      "parent_model": "model_2026_Chevrolet_Silverado_1500.html",
+      "path": "trim_2026_Chevrolet_Silverado_1500_LT.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "name": "RST",
+      "title": "RST\n1SP4",
+      "engine": "Engine, 2.7L TurboMax, (310 hp [231 kW] @ 5600 rpm, 430 lb-ft of torque [583 Nm] @ 3000 rpm)",
+      "parent_model": "model_2026_Chevrolet_Silverado_1500.html",
+      "path": "trim_2026_Chevrolet_Silverado_1500_RST.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "name": "LT Trail Boss",
+      "title": "LT Trail Boss\n2LT6",
+      "engine": "Engine, 2.7L TurboMax, (310 hp [231 kW] @ 5600 rpm, 430 lb-ft of torque [583 Nm] @ 3000 rpm)",
+      "parent_model": "model_2026_Chevrolet_Silverado_1500.html",
+      "path": "trim_2026_Chevrolet_Silverado_1500_LT_Trail_Boss.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "name": "ZR2",
+      "title": "ZR2\n3LT7",
+      "seating": "5",
+      "body_style": "Crew Cab",
+      "engine": "Engine, Duramax 3.0L Turbo-Diesel I6, (305 hp [227 kW] @ 3750 rpm, 495 lb-ft of torque [671 Nm] @ 2750 rpm)",
+      "drivetrain": "4WD",
+      "parent_model": "model_2026_Chevrolet_Silverado_1500.html",
+      "path": "trim_2026_Chevrolet_Silverado_1500_ZR2.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "name": "LTZ",
+      "title": "LTZ\n1LZ5",
+      "engine": "Engine, 5.3L EcoTec3 V8, (355 hp [265 kW] @ 5600 rpm, 383 lb-ft of torque [518 Nm] @ 4100 rpm); featuring available Dynamic Fuel Management that enables the engine to operate in 17 different patterns between 2 and 8 cylinders, depending on demand, to optimize power delivery and efficiency",
+      "parent_model": "model_2026_Chevrolet_Silverado_1500.html",
+      "path": "trim_2026_Chevrolet_Silverado_1500_LTZ.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "name": "High Country",
+      "title": "High Country\n3LZ6",
+      "engine": "Engine, 5.3L EcoTec3 V8, (355 hp [265 kW] @ 5600 rpm, 383 lb-ft of torque [518 Nm] @ 4100 rpm); featuring available Dynamic Fuel Management that enables the engine to operate in 17 different patterns between 2 and 8 cylinders, depending on demand, to optimize power delivery and efficiency",
+      "parent_model": "model_2026_Chevrolet_Silverado_1500.html",
+      "path": "trim_2026_Chevrolet_Silverado_1500_High_Country.html"
+    }
+  ]
+}
