@@ -2436,7 +2436,7 @@ def write_outputs(data: WorkbookData, output_dir: Path) -> Dict[str, object]:
         trim_path.write_text(render_trim_page(data, trim), encoding='utf-8')
         trim_paths[trim.key] = trim_path
 
-    manifest_path = output_dir.parent / vehicle_manifest_filename(data)
+    manifest_path = output_dir / vehicle_manifest_filename(data)
     manifest_base = manifest_path.parent
 
     manifest: Dict[str, object] = {
