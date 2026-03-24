@@ -3,7 +3,8 @@ permalink: /sitemap.xml
 eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:coveo="https://www.coveo.com/en/company/about-us">
 {%- for page in collections.workbookPages %}
   <url>
     <loc>{{ site.url }}{{ page.url }}</loc>
