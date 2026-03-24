@@ -1,19 +1,32 @@
 """Convert xlsx files from the workbooks/ folder to HTML files in workbook_html/."""
 
+import argparse
 import pathlib
 import pandas as pd
 
 WORKBOOKS_DIR = pathlib.Path("workbooks")
 OUTPUT_DIR = pathlib.Path("workbook_html")
 
+parser = argparse.ArgumentParser(description="Convert xlsx workbooks to HTML.")
+parser.add_argument(
+    "files",
+    nargs="*",
+    type=pathlib.Path,
+    help="Specific xlsx files to convert. Defaults to all files in workbooks/.",
+)
+args = parser.parse_args()
+
 OUTPUT_DIR.mkdir(exist_ok=True)
 
-xlsx_files = list(WORKBOOKS_DIR.glob("*.xlsx"))
+xlsx_files = args.files if args.files else list(WORKBOOKS_DIR.glob("*.xlsx"))
 
 if not xlsx_files:
     print("No xlsx files found in workbooks/")
 else:
     for xlsx_path in xlsx_files:
+        if not xlsx_path.exists():
+            print(f"Skipping {xlsx_path}: file not found")
+            continue
         stem = xlsx_path.stem
         all_sheets_html = []
 
