@@ -8,6 +8,21 @@ eleventyExcludeFromCollections: true
   <url>
     <loc>{{ site.url }}{{ page.url }}</loc>
     <lastmod>{{ page.date }}</lastmod>
+    {%- if page.meta %}
+    <coveo:metadata>
+      {%- if page.meta.objecttype %}<objecttype>{{ page.meta.objecttype }}</objecttype>{% endif %}
+      {%- if page.meta.type %}<type>{{ page.meta.type }}</type>{% endif %}
+      {%- if page.meta.vehicle_name %}<vehicle_name>{{ page.meta.vehicle_name }}</vehicle_name>{% endif %}
+      {%- if page.meta.name %}<name>{{ page.meta.name }}</name>{% endif %}
+      {%- if page.meta.title %}<title>{{ page.meta.title }}</title>{% endif %}
+      {%- if page.meta.seating %}<seating>{{ page.meta.seating }}</seating>{% endif %}
+      {%- if page.meta.body_style %}<body_style>{{ page.meta.body_style }}</body_style>{% endif %}
+      {%- if page.meta.engine %}<engine>{{ page.meta.engine }}</engine>{% endif %}
+      {%- if page.meta.fuel_type %}<fuel_type>{{ page.meta.fuel_type }}</fuel_type>{% endif %}
+      {%- if page.meta.drivetrain %}<drivetrain>{{ page.meta.drivetrain }}</drivetrain>{% endif %}
+      {%- if page.meta.parent_model %}<parent_model>{{ page.meta.parent_model }}</parent_model>{% endif %}
+    </coveo:metadata>
+    {%- endif %}
   </url>
 {%- endfor %}
 </urlset>

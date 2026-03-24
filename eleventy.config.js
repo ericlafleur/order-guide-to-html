@@ -5,6 +5,32 @@ module.exports = function (eleventyConfig) {
   // Copy all HTML files from workbooks_html/ to _site/workbooks_html/ as-is.
   eleventyConfig.addPassthroughCopy("workbooks_html");
 
+  // Build a metadata lookup from all manifest_*.json files in workbooks_html/.
+  const metadataByFilename = {};
+  const htmlDir = "workbooks_html";
+  if (fs.existsSync(htmlDir)) {
+    for (const entry of fs.readdirSync(htmlDir)) {
+      if (entry.startsWith("manifest_") && entry.endsWith(".json")) {
+        try {
+          const manifest = JSON.parse(
+            fs.readFileSync(path.join(htmlDir, entry), "utf-8")
+          );
+          for (const fileEntry of manifest.files || []) {
+            if (fileEntry.path) {
+              const filename = path.basename(fileEntry.path);
+              metadataByFilename[filename] = {
+                vehicle_name: manifest.vehicle_name,
+                ...fileEntry,
+              };
+            }
+          }
+        } catch (_e) {
+          // skip unreadable or malformed manifest files
+        }
+      }
+    }
+  }
+
   // Build a collection of workbook pages so the sitemap knows about them.
   eleventyConfig.addCollection("workbookPages", function (_collectionApi) {
     const pages = [];
@@ -22,6 +48,7 @@ module.exports = function (eleventyConfig) {
           pages.push({
             url: "/" + fullPath.split(path.sep).join("/"),
             date: mtime.toISOString().split("T")[0],
+            meta: metadataByFilename[entry.name] || null,
           });
         }
       }
