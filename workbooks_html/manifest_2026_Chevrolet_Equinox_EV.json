@@ -1,0 +1,39 @@
+{
+  "workbook": "../workbooks/2026 Chevrolet Truck Equinox EV Export.xlsx",
+  "vehicle_name": "2026 Chevrolet Equinox EV",
+  "files": [
+    {
+      "objecttype": "Product",
+      "type": "model",
+      "seating": "2/3",
+      "engine": "Electric drive unit, primary, 1 motor, integrated inverter, park system, 76F",
+      "fuel_type": "Fuel, none",
+      "drivetrain": "Propulsion, front wheel drive",
+      "path": "model_2026_Chevrolet_Equinox_EV.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "name": "LT",
+      "title": "LT\n2LT1",
+      "seating": "2/3",
+      "engine": "Electric drive unit, primary, 1 motor, integrated inverter, park system, 76F",
+      "fuel_type": "Fuel, none",
+      "drivetrain": "Propulsion, front wheel drive",
+      "parent_model": "model_2026_Chevrolet_Equinox_EV.html",
+      "path": "trim_2026_Chevrolet_Equinox_EV_LT.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "name": "RS",
+      "title": "RS\n2RS2",
+      "seating": "2/3",
+      "engine": "Electric drive unit, primary, 1 motor, integrated inverter, park system, 76F",
+      "fuel_type": "Fuel, none",
+      "drivetrain": "Propulsion, front wheel drive",
+      "parent_model": "model_2026_Chevrolet_Equinox_EV.html",
+      "path": "trim_2026_Chevrolet_Equinox_EV_RS.html"
+    }
+  ]
+}
