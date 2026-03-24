@@ -1,0 +1,12 @@
+{
+  "name": "order-guide-to-html",
+  "version": "1.0.0",
+  "description": "Order guide HTML files served as a static site via Eleventy",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.5"
+  }
+}
