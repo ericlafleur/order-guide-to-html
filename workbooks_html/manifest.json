@@ -1,21 +1,56 @@
 {
-  "workbook": "workbooks/2026 Chevrolet Truck Equinox EV Export.xlsx",
-  "vehicle_name": "2026 Chevrolet Equinox EV",
+  "workbook": "workbooks/2026 Chevrolet Truck Silverado 1500 Retail and Fleet Export.xlsx",
+  "vehicle_name": "2026 Chevrolet Silverado 1500",
   "files": [
     {
       "type": "model",
-      "name": "2026 Chevrolet Equinox EV",
-      "path": "workbooks_html/model_2026_Chevrolet_Equinox_EV.html"
+      "name": "2026 Chevrolet Silverado 1500",
+      "path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html"
+    },
+    {
+      "type": "trim",
+      "name": "Work Truck",
+      "path": "workbooks_html/trim_2026_Chevrolet_Silverado_1500_Work_Truck.html"
+    },
+    {
+      "type": "trim",
+      "name": "Custom",
+      "path": "workbooks_html/trim_2026_Chevrolet_Silverado_1500_Custom.html"
+    },
+    {
+      "type": "trim",
+      "name": "Custom Trail Boss",
+      "path": "workbooks_html/trim_2026_Chevrolet_Silverado_1500_Custom_Trail_Boss.html"
     },
     {
       "type": "trim",
       "name": "LT",
-      "path": "workbooks_html/trim_2026_Chevrolet_Equinox_EV_LT.html"
+      "path": "workbooks_html/trim_2026_Chevrolet_Silverado_1500_LT.html"
     },
     {
       "type": "trim",
-      "name": "RS",
-      "path": "workbooks_html/trim_2026_Chevrolet_Equinox_EV_RS.html"
+      "name": "RST",
+      "path": "workbooks_html/trim_2026_Chevrolet_Silverado_1500_RST.html"
+    },
+    {
+      "type": "trim",
+      "name": "LT Trail Boss",
+      "path": "workbooks_html/trim_2026_Chevrolet_Silverado_1500_LT_Trail_Boss.html"
+    },
+    {
+      "type": "trim",
+      "name": "ZR2",
+      "path": "workbooks_html/trim_2026_Chevrolet_Silverado_1500_ZR2.html"
+    },
+    {
+      "type": "trim",
+      "name": "LTZ",
+      "path": "workbooks_html/trim_2026_Chevrolet_Silverado_1500_LTZ.html"
+    },
+    {
+      "type": "trim",
+      "name": "High Country",
+      "path": "workbooks_html/trim_2026_Chevrolet_Silverado_1500_High_Country.html"
     }
   ]
 }
