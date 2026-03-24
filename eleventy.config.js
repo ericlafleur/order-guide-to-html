@@ -2,8 +2,8 @@ const path = require("path");
 const fs = require("fs");
 
 module.exports = function (eleventyConfig) {
-  // Copy all HTML files from workbook_html/ to _site/workbook_html/ as-is.
-  eleventyConfig.addPassthroughCopy("workbook_html");
+  // Copy all HTML files from workbooks_html/ to _site/workbooks_html/ as-is.
+  eleventyConfig.addPassthroughCopy("workbooks_html");
 
   // Build a collection of workbook pages so the sitemap knows about them.
   eleventyConfig.addCollection("workbookPages", function (_collectionApi) {
@@ -27,7 +27,7 @@ module.exports = function (eleventyConfig) {
       }
     }
 
-    walkDir("workbook_html");
+    walkDir("workbooks_html");
     return pages;
   });
 
@@ -35,7 +35,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.ignores.add("README.md");
 
   return {
-    // Only treat .njk and .md files as templates; HTML files in workbook_html/
+    // Only treat .njk and .md files as templates; HTML files in workbooks_html/
     // are passthrough-copied as-is via addPassthroughCopy above.
     templateFormats: ["njk", "md"],
     dir: {

@@ -1471,7 +1471,7 @@ def write_outputs(data: WorkbookData, output_dir: Path) -> Dict[str, object]:
 
 
 WORKBOOKS_DIR = Path("workbooks")
-OUTPUT_DIR = Path("workbook_html")
+OUTPUT_DIR = Path("workbooks_html")
 
 
 def main(argv: Optional[Sequence[str]] = None) -> int:

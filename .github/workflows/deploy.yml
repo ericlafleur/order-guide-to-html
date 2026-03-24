@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - "workbook_html/**"
+      - "workbooks_html/**"
       - "eleventy.config.js"
       - "sitemap.njk"
       - "_data/**"
