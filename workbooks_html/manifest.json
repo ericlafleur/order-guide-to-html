@@ -1,0 +1,21 @@
+{
+  "workbook": "workbooks/2026 Chevrolet Truck Equinox EV Export.xlsx",
+  "vehicle_name": "2026 Chevrolet Equinox EV",
+  "files": [
+    {
+      "type": "model",
+      "name": "2026 Chevrolet Equinox EV",
+      "path": "workbooks_html/model_2026_Chevrolet_Equinox_EV.html"
+    },
+    {
+      "type": "trim",
+      "name": "LT",
+      "path": "workbooks_html/trim_2026_Chevrolet_Equinox_EV_LT.html"
+    },
+    {
+      "type": "trim",
+      "name": "RS",
+      "path": "workbooks_html/trim_2026_Chevrolet_Equinox_EV_RS.html"
+    }
+  ]
+}
