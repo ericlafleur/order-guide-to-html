@@ -1,36 +1,41 @@
 {
-  "workbook": "workbooks/2026 Chevrolet Truck Blazer EV Export.xlsx",
-  "vehicle_name": "2026 Chevrolet Blazer EV",
+  "workbook": "workbooks/2026 Chevrolet Truck Suburban Export.xlsx",
+  "vehicle_name": "2026 Chevrolet Suburban",
   "files": [
     {
       "type": "model",
-      "name": "2026 Chevrolet Blazer EV",
-      "path": "workbooks_html/model_2026_Chevrolet_Blazer_EV.html"
+      "name": "2026 Chevrolet Suburban",
+      "path": "workbooks_html/model_2026_Chevrolet_Suburban.html"
     },
     {
       "type": "trim",
-      "name": "LT 1MC26 FWD",
-      "path": "workbooks_html/trim_2026_Chevrolet_Blazer_EV_LT_1MC26_FWD.html"
+      "name": "LS",
+      "path": "workbooks_html/trim_2026_Chevrolet_Suburban_LS.html"
     },
     {
       "type": "trim",
-      "name": "LT 1MC26 AWD",
-      "path": "workbooks_html/trim_2026_Chevrolet_Blazer_EV_LT_1MC26_AWD.html"
+      "name": "LT",
+      "path": "workbooks_html/trim_2026_Chevrolet_Suburban_LT.html"
     },
     {
       "type": "trim",
-      "name": "RS 1MD26 FWD",
-      "path": "workbooks_html/trim_2026_Chevrolet_Blazer_EV_RS_1MD26_FWD.html"
+      "name": "RST",
+      "path": "workbooks_html/trim_2026_Chevrolet_Suburban_RST.html"
     },
     {
       "type": "trim",
-      "name": "RS 1MD26 AWD",
-      "path": "workbooks_html/trim_2026_Chevrolet_Blazer_EV_RS_1MD26_AWD.html"
+      "name": "Z71",
+      "path": "workbooks_html/trim_2026_Chevrolet_Suburban_Z71.html"
     },
     {
       "type": "trim",
-      "name": "SS 1MG26 AWD",
-      "path": "workbooks_html/trim_2026_Chevrolet_Blazer_EV_SS_1MG26_AWD.html"
+      "name": "Premier",
+      "path": "workbooks_html/trim_2026_Chevrolet_Suburban_Premier.html"
+    },
+    {
+      "type": "trim",
+      "name": "High Country",
+      "path": "workbooks_html/trim_2026_Chevrolet_Suburban_High_Country.html"
     }
   ]
 }
