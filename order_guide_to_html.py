@@ -978,6 +978,26 @@ STATUS_PRIORITY = {
     'Not Available': 6,
 }
 
+# Display order for availability sections — mirrors VOG ETL SECTION_LABELS ordering.
+_TRIM_SECTION_ORDER: List[str] = [
+    'Standard Equipment',
+    'Included in Equipment Group',
+    'Included in Equipment Group but upgradeable',
+    'ADI Available',
+    'Available',
+    'Indicates availability of feature on multiple models',
+]
+
+
+def _best_status_label(agg: 'TrimFeatureAggregate') -> str:
+    """Return the highest-priority (most certain) availability label for *agg*."""
+    if not agg.availability_contexts:
+        return 'Other'
+    return min(
+        (label for _raw, label in agg.availability_contexts.keys()),
+        key=lambda lbl: STATUS_PRIORITY.get(lbl, 99),
+    )
+
 
 def feature_title(label: str, orderable_code: str = '', reference_code: str = '') -> str:
     prefix = orderable_code or reference_code
@@ -1725,14 +1745,17 @@ def identity_fields(
     data: WorkbookData,
     trim: Optional[TrimDef] = None,
     *,
-    category: str = '',
-    source_context: str = '',
-    source_tabs: str = '',
     extra_fields: Sequence[Tuple[str, str]] = (),
     drive_type: Optional[str] = None,
 ) -> List[Tuple[str, str]]:
+    """Return the minimal set of grounding fields for a RAG chunk.
+
+    Only factual vehicle/trim attributes are included — category labels and
+    source tab names are omitted because they are already encoded in the
+    article heading title and add noise without adding meaning.
+    """
     fields: List[Tuple[str, str]] = [('Vehicle', data.vehicle_name)]
-    if data.propulsion and data.propulsion != 'ICE':
+    if data.propulsion:
         fields.append(('Propulsion', data.propulsion))
     if data.vehicle_type:
         fields.append(('Vehicle type', data.vehicle_type.upper()))
@@ -1748,12 +1771,6 @@ def identity_fields(
     else:
         if data.drive_types:
             fields.append(('Drive types', ', '.join(data.drive_types)))
-    if category:
-        fields.append(('Guide category', category))
-    if source_context:
-        fields.append(('Source context', source_context))
-    if source_tabs:
-        fields.append(('Source tabs', source_tabs))
     fields.extend(extra_fields)
     return dedupe_fields(fields)
 
@@ -1791,7 +1808,7 @@ def infer_feature_category(*texts: str) -> str:
 
     mechanical_keywords = [
         'all-wheel drive', 'axle', 'battery', 'brakes', 'charging', 'charger', 'drive unit', 'drivetrain',
-        'electric drive', 'engine', 'fuel', 'gvwr', 'horsepower', 'motor', 'payload', 'performance',
+        'electric drive', 'engine', 'evot? ', 'fuel', 'gvwr', 'horsepower', 'motor', 'payload', 'performance',
         'powertrain', 'propulsion', 'range', 'rear axle', 'suspension', 'torque', 'tow', 'trailer',
         'trailering', 'transmission'
     ]
@@ -1889,42 +1906,42 @@ def chunk_feature_items(items: Sequence[str]) -> List[List[str]]:
 
 
 def render_page_identity_section(data: WorkbookData, trim: Optional[TrimDef] = None) -> str:
-    entity = full_trim_heading(data, trim) if trim is not None else data.vehicle_name
-    parts = [f'<section class="guide-context"><h2>{html.escape(entity)} | Vehicle identity and guide structure</h2>']
-    trim_headers = [trim_def.raw_header for trim_def in data.trim_defs if normalize_text(trim_def.raw_header)]
+    """Render a compact vehicle/trim identity block.
 
-    # Build metadata block — mirrors vog_transformer build_vehicle_body metadata
-    meta_lines: List[str] = []
+    Contains only the facts an LLM needs to ground a chunk: vehicle name,
+    vehicle type, propulsion, drive type, and (for trim pages) the trim name
+    and code.  Source tabs and raw trim headers are omitted — they are Excel
+    bookkeeping details, not consumer-facing facts.
+    """
+    entity = full_trim_heading(data, trim) if trim is not None else data.vehicle_name
+    parts = [f'<section class="guide-context"><h2>{html.escape(entity)} | Vehicle information</h2>']
+
+    fields: List[Tuple[str, str]] = [('Vehicle', data.vehicle_name)]
     if data.vehicle_type:
-        meta_lines.append(f'Vehicle type: {data.vehicle_type.upper()}')
+        fields.append(('Vehicle type', data.vehicle_type.upper()))
     if data.propulsion:
-        meta_lines.append(f'Propulsion: {data.propulsion}')
-    if data.drive_types:
-        meta_lines.append(f'Drive types: {", ".join(data.drive_types)}')
+        fields.append(('Propulsion', data.propulsion))
+
     if trim is not None:
+        fields.append(('Trim', trim.name))
+        if trim.code:
+            fields.append(('Trim code', trim.code))
         trim_drive = infer_trim_drive_type(data.spec_columns, trim, data.drive_types)
         if trim_drive:
-            meta_lines.append(f'Drive type ({trim.name}): {trim_drive}')
-
-    if trim is None:
-        fields = dedupe_fields([
-            ('Vehicle', data.vehicle_name),
-            ('Source tabs', '; '.join(data.sheet_names)),
-            ('Trim headers from guide', ' ; '.join(trim_headers)),
-        ] + [(label, value) for label, value in [('Vehicle type', data.vehicle_type.upper()), ('Propulsion', data.propulsion), ('Drive types', ', '.join(data.drive_types))] if value])
-        parts.append(render_article(article_heading(entity, 'Vehicle identity and guide structure'), fields,
-            [('Vehicle metadata', meta_lines)] if meta_lines else []))
+            fields.append(('Drive type', trim_drive))
+        elif data.drive_types:
+            fields.append(('Drive types', ', '.join(data.drive_types)))
     else:
-        trim_drive = infer_trim_drive_type(data.spec_columns, trim, data.drive_types)
-        fields = dedupe_fields([
-            ('Vehicle', data.vehicle_name),
-            ('Trim', trim.name),
-            ('Trim code', trim.code),
-            ('Trim header from guide', trim.raw_header),
-            ('Source tabs', '; '.join(data.sheet_names)),
-        ] + [(label, value) for label, value in [('Vehicle type', data.vehicle_type.upper()), ('Propulsion', data.propulsion), ('Drive type', trim_drive or '')] if value])
-        parts.append(render_article(article_heading(entity, 'Vehicle identity and guide structure'), fields,
-            [('Vehicle metadata', meta_lines)] if meta_lines else []))
+        if data.drive_types:
+            fields.append(('Drive types', ', '.join(data.drive_types)))
+        trims_text = ' | '.join(
+            f'{t.name} ({t.code})' if t.code and t.code != t.name else t.name
+            for t in data.trim_defs if t.name
+        )
+        if trims_text:
+            fields.append(('Available trims', trims_text))
+
+    parts.append(render_article(article_heading(entity, 'Vehicle information'), dedupe_fields(fields)))
     parts.append('</section>')
     return ''.join(parts)
 
@@ -1937,7 +1954,7 @@ def render_matrix_legend_section(data: WorkbookData, page_title: str) -> str:
         return ''
     return '<section class="matrix-legend">' + render_article(
         article_heading(page_title, 'Matrix availability legend'),
-        identity_fields(data, category='Other guide content', extra_fields=[('Legend from guide', legend_text)]),
+        identity_fields(data, extra_fields=[('Legend from guide', legend_text)]),
     ) + '</section>'
 
 
@@ -1978,7 +1995,7 @@ def grouped_feature_sections(
             parts.append(
                 render_article(
                     article_heading(entity, title),
-                    identity_fields(data, trim, category=category, source_tabs=source_tabs),
+                    identity_fields(data, trim),
                     [('Feature lines from guide', line_chunk)],
                 )
             )
@@ -2038,19 +2055,101 @@ def exact_trim_feature_section(data: WorkbookData, trim: TrimDef, features: Sequ
 
 
 def render_model_feature_sections(data: WorkbookData) -> str:
+    """Render model-level features grouped by feature category.
+
+    Each category section (Safety, Technology, Interior, etc.) lists every
+    feature with a compact availability summary showing which trims have it
+    and at what status (Standard / Available / etc.).
+    """
     features = aggregate_model_features(data)
-    return ''.join([
-        grouped_feature_sections(data, features, model_mode=True),
-        exact_model_feature_section(data, features),
-    ])
+    if not features:
+        return ''
+    entity = data.vehicle_name
+
+    category_groups: Dict[str, List[ModelFeatureAggregate]] = OrderedDict()
+    for agg in features:
+        cat = category_for_model_feature(agg)
+        category_groups.setdefault(cat, []).append(agg)
+
+    parts = [f'<section class="model-features"><h2>{html.escape(entity)} | Features and availability</h2>']
+    for category in sorted(category_groups.keys(), key=sort_category_key):
+        cat_feats = category_groups[category]
+        items: List[str] = []
+        for agg in cat_feats:
+            desc = compact_text(agg.description or agg.title, max_words=25)
+            avail = availability_summary_for_model(agg)
+            items.append(f'{desc} — {avail}')
+        for idx, chunk in enumerate(chunk_feature_items(items), start=1):
+            title = category
+            if idx > 1:
+                title += f' | part {idx}'
+            parts.append(
+                render_article(
+                    article_heading(entity, title),
+                    identity_fields(data),
+                    [('Feature availability from guide', chunk)],
+                )
+            )
+    parts.append('</section>')
+    return ''.join(parts)
 
 
 def render_trim_feature_sections(data: WorkbookData, trim: TrimDef) -> str:
+    """Render trim features grouped by availability section, then by source sheet.
+
+    Section order mirrors VOG ETL’s SECTION_LABELS:
+      Standard Equipment → Included in Equipment Group → … → Available
+
+    Within each section features are grouped by the source sheet they
+    came from (Standard Equipment, Interior, Exterior, Mechanical, Wheels…).
+    Each feature line is: ``(RPO code) Description — condition note``
+    """
     features = aggregate_trim_features(data, trim)
-    return ''.join([
-        grouped_feature_sections(data, features, trim=trim, model_mode=False),
-        exact_trim_feature_section(data, trim, features),
-    ])
+    if not features:
+        return ''
+    entity = full_trim_heading(data, trim)
+
+    # Bucket: section_label → source_sheet → [agg, ...]
+    section_buckets: Dict[str, Dict[str, List[TrimFeatureAggregate]]] = OrderedDict(
+        (label, OrderedDict()) for label in _TRIM_SECTION_ORDER
+    )
+    for agg in features:
+        label = _best_status_label(agg)
+        bucket = section_buckets.setdefault(label, OrderedDict())
+        # Primary source = sheet name (everything before the first ' | ')
+        primary_src = (
+            normalize_text(agg.source_contexts[0]).split(' | ')[0]
+            if agg.source_contexts else 'Other'
+        )
+        bucket.setdefault(primary_src, []).append(agg)
+
+    parts = [f'<section class="trim-features"><h2>{html.escape(entity)} | Equipment and features</h2>']
+    for section_label in _TRIM_SECTION_ORDER:
+        by_source = section_buckets.get(section_label, {})
+        if not by_source:
+            continue
+        for source_name, source_feats in by_source.items():
+            items: List[str] = []
+            for agg in source_feats:
+                desc = normalize_text(agg.description or agg.title)
+                code = agg.orderable_code or agg.reference_code
+                line = f'({code}) {desc}' if code else desc
+                if agg.notes:
+                    line += f' — {agg.notes[0]}'
+                items.append(line)
+            for idx, chunk in enumerate(chunk_list(items, max_words=110, max_items=8), start=1):
+                title = f'{section_label} | {source_name}'
+                if idx > 1:
+                    title += f' | part {idx}'
+                parts.append(
+                    render_article(
+                        article_heading(entity, title),
+                        identity_fields(data, trim),
+                        [('Features', chunk)],
+                    )
+                )
+    parts.append('</section>')
+    return ''.join(parts)
 
 
 def render_model_color_sections(data: WorkbookData) -> str:
@@ -2092,8 +2191,6 @@ def render_model_color_sections(data: WorkbookData) -> str:
                             article_heading(entity, feature_title(f'Interior trim | {decor_level} | {seat_trim}', seat_code)),
                             identity_fields(
                                 data,
-                                category='Colour and trim',
-                                source_tabs=sheet.name,
                                 extra_fields=[
                                     ('Decor level', decor_level),
                                     ('Seat type', seat_type),
@@ -2112,7 +2209,7 @@ def render_model_color_sections(data: WorkbookData) -> str:
                     parts.append(
                         render_article(
                             article_heading(entity, title),
-                            identity_fields(data, category='Colour and trim', source_tabs=sheet.name),
+                            identity_fields(data),
                             [('Interior colour and trim lines from guide', chunk)],
                         )
                     )
@@ -2144,8 +2241,6 @@ def render_model_color_sections(data: WorkbookData) -> str:
                         article_heading(entity, feature_title(f'Exterior paint | {paint_name}', row.color_code)),
                         identity_fields(
                             data,
-                            category='Colour and trim',
-                            source_tabs=sheet.name,
                             extra_fields=[('Touch-Up Paint Number', row.touch_up_paint_number)],
                         ),
                         bullet_groups,
@@ -2160,7 +2255,7 @@ def render_model_color_sections(data: WorkbookData) -> str:
                     parts.append(
                         render_article(
                             article_heading(entity, title),
-                            identity_fields(data, category='Colour and trim', source_tabs=sheet.name),
+                            identity_fields(data),
                             [('Exterior paint lines from guide', chunk)],
                         )
                     )
@@ -2170,7 +2265,7 @@ def render_model_color_sections(data: WorkbookData) -> str:
             parts.append(
                 render_article(
                     article_heading(entity, f'{sheet.name} | colour and trim notes'),
-                    identity_fields(data, category='Colour and trim', source_tabs=sheet.name),
+                    identity_fields(data),
                     [('Guide notes', general_notes)],
                 )
             )
@@ -2213,8 +2308,6 @@ def render_trim_color_sections(data: WorkbookData, trim: TrimDef) -> str:
                         identity_fields(
                             data,
                             trim,
-                            category='Colour and trim',
-                            source_tabs=sheet.name,
                             extra_fields=[
                                 ('Decor level', row.decor_level),
                                 ('Seat type', row.seat_type),
@@ -2235,7 +2328,7 @@ def render_trim_color_sections(data: WorkbookData, trim: TrimDef) -> str:
                     parts.append(
                         render_article(
                             article_heading(entity, title),
-                            identity_fields(data, trim, category='Colour and trim', source_tabs=sheet.name),
+                            identity_fields(data, trim),
                             [('Interior colour and trim lines from guide', chunk)],
                         )
                     )
@@ -2273,8 +2366,6 @@ def render_trim_color_sections(data: WorkbookData, trim: TrimDef) -> str:
                     identity_fields(
                         data,
                         trim,
-                        category='Colour and trim',
-                        source_tabs=sheet.name,
                         extra_fields=[('Touch-Up Paint Number', row.touch_up_paint_number)],
                     ),
                     bullet_groups,
@@ -2289,7 +2380,7 @@ def render_trim_color_sections(data: WorkbookData, trim: TrimDef) -> str:
                 parts.append(
                     render_article(
                         article_heading(entity, title),
-                        identity_fields(data, trim, category='Colour and trim', source_tabs=sheet.name),
+                        identity_fields(data, trim),
                         [('Exterior paint lines from guide', chunk)],
                     )
                 )
@@ -2299,7 +2390,7 @@ def render_trim_color_sections(data: WorkbookData, trim: TrimDef) -> str:
             parts.append(
                 render_article(
                     article_heading(entity, f'{sheet.name} | colour and trim notes'),
-                    identity_fields(data, trim, category='Colour and trim', source_tabs=sheet.name),
+                    identity_fields(data, trim),
                     [('Guide notes', general_notes)],
                 )
             )
@@ -2434,9 +2525,8 @@ def render_model_page(data: WorkbookData) -> str:
     entity = data.vehicle_name
     parts = [
         '<html><head><meta charset="utf-8"></head><body>',
-        f'<h1>{html.escape(entity)} | Vehicle Order Guide model page</h1>',
+        f'<h1>{html.escape(entity)} | Vehicle Order Guide</h1>',
         render_page_identity_section(data),
-        render_matrix_legend_section(data, entity),
         render_model_feature_sections(data),
         render_model_color_sections(data),
         render_spec_records(data, data.spec_columns),
@@ -2451,9 +2541,8 @@ def render_trim_page(data: WorkbookData, trim: TrimDef) -> str:
     entity = full_trim_heading(data, trim)
     parts = [
         '<html><head><meta charset="utf-8"></head><body>',
-        f'<h1>{html.escape(entity)} | Vehicle Order Guide trim page</h1>',
+        f'<h1>{html.escape(entity)} | Vehicle Order Guide</h1>',
         render_page_identity_section(data, trim=trim),
-        render_matrix_legend_section(data, entity),
         render_trim_feature_sections(data, trim),
         render_trim_color_sections(data, trim),
         render_trim_spec_sections(data, trim),
