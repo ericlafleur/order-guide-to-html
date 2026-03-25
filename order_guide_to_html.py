@@ -1387,19 +1387,21 @@ def identity_fields(
 ) -> List[Tuple[str, str]]:
     """Return the minimal set of grounding fields for a RAG chunk.
 
-    Only factual vehicle/trim attributes are included — category labels and
-    source tab names are omitted because they are already encoded in the
-    article heading title and add noise without adding meaning.
+    Only includes fields NOT already present in the article title (vehicle name,
+    trim name, and trim code are omitted). Focuses on contextual attributes like
+    propulsion type and drive configuration that are critical for RAG but not
+    redundant with the heading.
     """
-    fields: List[Tuple[str, str]] = [('Vehicle', data.vehicle_name)]
+    fields: List[Tuple[str, str]] = []
+    
+    # Include propulsion and vehicle type - not in title but important context
     if data.propulsion:
         fields.append(('Propulsion', data.propulsion))
     if data.vehicle_type:
         fields.append(('Vehicle type', data.vehicle_type.upper()))
+    
+    # Include drive type info - critical for feature applicability
     if trim is not None:
-        fields.append(('Trim', trim.name))
-        if trim.code:
-            fields.append(('Trim code', trim.code))
         resolved_drive = drive_type or infer_trim_drive_type(data.spec_columns, trim, data.drive_types)
         if resolved_drive:
             fields.append(('Drive type', resolved_drive))
@@ -1408,6 +1410,7 @@ def identity_fields(
     else:
         if data.drive_types:
             fields.append(('Drive types', ', '.join(data.drive_types)))
+    
     fields.extend(extra_fields)
     return dedupe_fields(fields)
 
