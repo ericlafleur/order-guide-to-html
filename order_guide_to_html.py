@@ -27,6 +27,153 @@ STATUS_LABELS = OrderedDict(
     ]
 )
 
+# ---------------------------------------------------------------------------
+# Propulsion / vehicle-type / drive-type inference (mirrors vog_transformer.py)
+# ---------------------------------------------------------------------------
+
+PROPULSION_KEYWORDS: Dict[str, str] = {
+    'ev': 'EV', 'electric': 'EV', 'bev': 'EV',
+    'hybrid': 'HYBRID', 'phev': 'PHEV',
+    'turbomax': 'ICE', 'ecotec': 'ICE', 'duramax': 'ICE',
+    'turbo-diesel': 'ICE', 'diesel': 'ICE', 'v8': 'ICE', 'v6': 'ICE', 'turbo': 'ICE',
+}
+
+VEHICLE_TYPE_SUV_KEYWORDS = (
+    'equinox', 'blazer', 'trax', 'trailblazer', 'traverse', 'tahoe', 'suburban',
+    'terrain', 'acadia', 'encore', 'envision', 'enclave', 'escalade',
+    'xt4', 'xt5', 'xt6', 'lyriq', 'yukon',
+)
+
+DRIVE_TYPE_PATTERNS = [
+    (re.compile(r'\beawd\b', re.I), 'eAWD'),
+    (re.compile(r'\bawd\b', re.I), 'AWD'),
+    (re.compile(r'\bfwd\b', re.I), 'FWD'),
+    (re.compile(r'\brwd\b', re.I), 'RWD'),
+    (re.compile(r'\b4wd\b|\b4x4\b', re.I), '4WD'),
+    (re.compile(r'\b2wd\b|\b4x2\b', re.I), '2WD'),
+    (re.compile(r'\ball[- ]wheel drive\b', re.I), 'AWD'),
+    (re.compile(r'\bfront[- ]wheel drive\b', re.I), 'FWD'),
+    (re.compile(r'\brear[- ]wheel drive\b', re.I), 'RWD'),
+    (re.compile(r'\b4[- ]wheel drive\b', re.I), '4WD'),
+    (re.compile(r'\b2[- ]wheel drive\b', re.I), '2WD'),
+]
+
+
+def infer_propulsion(vehicle_name: str, engine_axle_entries: 'List[EngineAxleEntry]') -> str:
+    """Infer EV / HYBRID / PHEV / ICE from the engine descriptions first, then the vehicle name.
+
+    Engine data is checked first because it is the most reliable signal.
+    Short keywords like 'ev' are matched as whole words in the vehicle name to
+    avoid false positives (e.g. "Silv**er**ado" containing 'ev').
+    """
+    # 1. Engine descriptions are the most reliable source
+    for entry in engine_axle_entries:
+        eng = entry.engine.lower()
+        for kw, prop in PROPULSION_KEYWORDS.items():
+            if kw in eng:
+                return prop
+
+    # 2. Vehicle name — use word-boundary matching for short tokens
+    name_lower = vehicle_name.lower()
+    for kw, prop in PROPULSION_KEYWORDS.items():
+        if len(kw) <= 3:
+            if re.search(r'\b' + re.escape(kw) + r'\b', name_lower):
+                return prop
+        else:
+            if kw in name_lower:
+                return prop
+
+    return 'ICE'
+
+
+def infer_vehicle_type(vehicle_name: str) -> str:
+    """Infer 'suv', 'truck', 'van', etc. from the vehicle name."""
+    name_lower = vehicle_name.lower()
+    for kw in VEHICLE_TYPE_SUV_KEYWORDS:
+        if kw in name_lower:
+            return 'suv'
+    truck_keywords = ('silverado', 'sierra', 'colorado', 'canyon', 'titan', 'f-', 'ram ', 'tundra')
+    for kw in truck_keywords:
+        if kw in name_lower:
+            return 'truck'
+    return 'suv'
+
+
+def parse_drive_type_from_text(text: str) -> List[str]:
+    """Extract all drive type tokens found in *text* (e.g. a spec column header)."""
+    found: List[str] = []
+    for pattern, label in DRIVE_TYPE_PATTERNS:
+        if pattern.search(text):
+            found.append(label)
+    return found
+
+
+def infer_drive_types(
+    engine_axle_entries: 'List[EngineAxleEntry]',
+    spec_columns: 'List[SpecColumn]',
+    matrix_sheets: 'List[MatrixSheet]',
+    propulsion: str,
+) -> List[str]:
+    """Collect all drive types from engine axle model codes, spec column headers,
+    and equipment descriptions — same multi-source strategy as vog_transformer."""
+    drives: set = set()
+
+    # Engine axle model codes: CC prefix = 2WD, CK prefix = 4WD
+    for entry in engine_axle_entries:
+        code = entry.model_code
+        if code.startswith('CK'):
+            drives.add('4WD')
+        elif code.startswith('CC'):
+            drives.add('2WD')
+
+    # Spec column headers (encodes drive info for trucks: "2WD Short Bed Crew Cab")
+    for col in spec_columns:
+        for text in [col.top_label, col.header] + col.header_lines:
+            for dt in parse_drive_type_from_text(text):
+                drives.add(dt)
+
+    # Equipment / feature descriptions mentioning drive type
+    for sheet in matrix_sheets:
+        for row in sheet.rows:
+            desc = normalize_text(row.description_main or row.description_raw).lower()
+            if 'all-wheel drive' in desc or ' awd' in desc:
+                drives.add('AWD')
+            elif 'front-wheel drive' in desc or ' fwd' in desc:
+                drives.add('FWD')
+            elif 'rear-wheel drive' in desc or ' rwd' in desc:
+                drives.add('RWD')
+
+    # EV fallback: if still nothing, assume AWD
+    if not drives and propulsion == 'EV':
+        drives.add('AWD')
+
+    return sorted(drives) if drives else ['FWD']
+
+
+def infer_trim_drive_type(
+    spec_columns: 'List[SpecColumn]',
+    trim: 'TrimDef',
+    vehicle_drive_types: List[str],
+) -> Optional[str]:
+    """Best-effort per-trim drive type using the same fallback chain as vog_transformer.
+
+    1. Look for a spec column whose header contains this trim's name/code and
+       mentions a drive type token explicitly.
+    2. If the vehicle as a whole has exactly one drive type, inherit it.
+    3. Otherwise return None (ambiguous).
+    """
+    candidate: set = set()
+    for col in spec_columns:
+        blob = ' '.join([col.top_label, col.header] + col.header_lines)
+        if trim.name.lower() in blob.lower() or trim.code.lower() in blob.lower():
+            for dt in parse_drive_type_from_text(blob):
+                candidate.add(dt)
+    if len(candidate) == 1:
+        return candidate.pop()
+    if len(vehicle_drive_types) == 1:
+        return vehicle_drive_types[0]
+    return None
+
 FOOTNOTE_LINE_RE = re.compile(r"^\s*(\d+)\.\s*(.+?)\s*$")
 URL_RE = re.compile(r"(https?://[^\s<]+)")
 TRAILING_DIGITS_RE = re.compile(r"^(.*?)(\d+)\s*$")
@@ -198,6 +345,10 @@ class WorkbookData:
     gcwr_records: List[GCWRRecord]
     glossary: OrderedDict[str, str]
     sheet_names: List[str]
+    # Inferred vehicle attributes (populated after parsing)
+    propulsion: str = field(default='ICE')
+    vehicle_type: str = field(default='suv')
+    drive_types: List[str] = field(default_factory=list)
 
 
 def normalize_text(value: object) -> str:
@@ -759,6 +910,10 @@ def parse_workbook(path: Path) -> WorkbookData:
         if name == "All":
             glossary.update(parse_glossary_sheet(ws))
 
+    propulsion = infer_propulsion(vehicle_name, engine_axle_entries)
+    vehicle_type = infer_vehicle_type(vehicle_name)
+    drive_types = infer_drive_types(engine_axle_entries, spec_columns, matrix_sheets, propulsion)
+
     return WorkbookData(
         path=path,
         year=year,
@@ -774,6 +929,9 @@ def parse_workbook(path: Path) -> WorkbookData:
         gcwr_records=gcwr_records,
         glossary=glossary,
         sheet_names=wb.sheetnames,
+        propulsion=propulsion,
+        vehicle_type=vehicle_type,
+        drive_types=drive_types,
     )
 
 
@@ -1016,7 +1174,11 @@ def aggregate_trim_features(data: WorkbookData, trim: TrimDef) -> List[TrimFeatu
             raw = normalize_text(row.status_by_trim.get(trim.key))
             if not raw:
                 continue
-            _code, label, _notes = parse_status_value(raw, row.inline_footnotes, sheet.footnotes)
+            code, label, _notes = parse_status_value(raw, row.inline_footnotes, sheet.footnotes)
+            # Skip features that are explicitly not available on this trim.
+            # Mirrors VOG ETL: categorise_equipment_for_trim ignores '--' cells.
+            if code == '--':
+                continue
             title = feature_title(row.label, row.option_code or '', row.ref_code or '')
             agg = groups.get(row.identity_key)
             if agg is None:
@@ -1567,12 +1729,25 @@ def identity_fields(
     source_context: str = '',
     source_tabs: str = '',
     extra_fields: Sequence[Tuple[str, str]] = (),
+    drive_type: Optional[str] = None,
 ) -> List[Tuple[str, str]]:
     fields: List[Tuple[str, str]] = [('Vehicle', data.vehicle_name)]
+    if data.propulsion and data.propulsion != 'ICE':
+        fields.append(('Propulsion', data.propulsion))
+    if data.vehicle_type:
+        fields.append(('Vehicle type', data.vehicle_type.upper()))
     if trim is not None:
         fields.append(('Trim', trim.name))
         if trim.code:
             fields.append(('Trim code', trim.code))
+        resolved_drive = drive_type or infer_trim_drive_type(data.spec_columns, trim, data.drive_types)
+        if resolved_drive:
+            fields.append(('Drive type', resolved_drive))
+        elif data.drive_types:
+            fields.append(('Drive types', ', '.join(data.drive_types)))
+    else:
+        if data.drive_types:
+            fields.append(('Drive types', ', '.join(data.drive_types)))
     if category:
         fields.append(('Guide category', category))
     if source_context:
@@ -1616,7 +1791,7 @@ def infer_feature_category(*texts: str) -> str:
 
     mechanical_keywords = [
         'all-wheel drive', 'axle', 'battery', 'brakes', 'charging', 'charger', 'drive unit', 'drivetrain',
-        'electric drive', 'engine', 'evot? ', 'fuel', 'gvwr', 'horsepower', 'motor', 'payload', 'performance',
+        'electric drive', 'engine', 'fuel', 'gvwr', 'horsepower', 'motor', 'payload', 'performance',
         'powertrain', 'propulsion', 'range', 'rear axle', 'suspension', 'torque', 'tow', 'trailer',
         'trailering', 'transmission'
     ]
@@ -1717,22 +1892,39 @@ def render_page_identity_section(data: WorkbookData, trim: Optional[TrimDef] = N
     entity = full_trim_heading(data, trim) if trim is not None else data.vehicle_name
     parts = [f'<section class="guide-context"><h2>{html.escape(entity)} | Vehicle identity and guide structure</h2>']
     trim_headers = [trim_def.raw_header for trim_def in data.trim_defs if normalize_text(trim_def.raw_header)]
+
+    # Build metadata block — mirrors vog_transformer build_vehicle_body metadata
+    meta_lines: List[str] = []
+    if data.vehicle_type:
+        meta_lines.append(f'Vehicle type: {data.vehicle_type.upper()}')
+    if data.propulsion:
+        meta_lines.append(f'Propulsion: {data.propulsion}')
+    if data.drive_types:
+        meta_lines.append(f'Drive types: {", ".join(data.drive_types)}')
+    if trim is not None:
+        trim_drive = infer_trim_drive_type(data.spec_columns, trim, data.drive_types)
+        if trim_drive:
+            meta_lines.append(f'Drive type ({trim.name}): {trim_drive}')
+
     if trim is None:
-        fields = [
+        fields = dedupe_fields([
             ('Vehicle', data.vehicle_name),
             ('Source tabs', '; '.join(data.sheet_names)),
             ('Trim headers from guide', ' ; '.join(trim_headers)),
-        ]
-        parts.append(render_article(article_heading(entity, 'Vehicle identity and guide structure'), dedupe_fields(fields)))
+        ] + [(label, value) for label, value in [('Vehicle type', data.vehicle_type.upper()), ('Propulsion', data.propulsion), ('Drive types', ', '.join(data.drive_types))] if value])
+        parts.append(render_article(article_heading(entity, 'Vehicle identity and guide structure'), fields,
+            [('Vehicle metadata', meta_lines)] if meta_lines else []))
     else:
-        fields = [
+        trim_drive = infer_trim_drive_type(data.spec_columns, trim, data.drive_types)
+        fields = dedupe_fields([
             ('Vehicle', data.vehicle_name),
             ('Trim', trim.name),
             ('Trim code', trim.code),
             ('Trim header from guide', trim.raw_header),
             ('Source tabs', '; '.join(data.sheet_names)),
-        ]
-        parts.append(render_article(article_heading(entity, 'Vehicle identity and guide structure'), dedupe_fields(fields)))
+        ] + [(label, value) for label, value in [('Vehicle type', data.vehicle_type.upper()), ('Propulsion', data.propulsion), ('Drive type', trim_drive or '')] if value])
+        parts.append(render_article(article_heading(entity, 'Vehicle identity and guide structure'), fields,
+            [('Vehicle metadata', meta_lines)] if meta_lines else []))
     parts.append('</section>')
     return ''.join(parts)
 
@@ -1867,84 +2059,112 @@ def render_model_color_sections(data: WorkbookData) -> str:
     entity = data.vehicle_name
     parts = [f'<section class="colour-trim-sections"><h2>{html.escape(entity)} | Colour and trim from guide</h2>']
     for sheet in data.color_sheets:
-        interior_lines: List[str] = []
-        for row in sheet.interior_rows:
-            color_lines = [f'{color}: {code}' for color, code in row.colors.items() if normalize_text(code) and normalize_text(code) != '--']
-            summary = ' | '.join(x for x in [row.decor_level, row.seat_type, row.seat_trim] if normalize_text(x))
-            if color_lines:
-                summary += ' — ' + '; '.join(color_lines)
-            interior_lines.append(summary)
-        if interior_lines:
-            for idx, chunk in enumerate(chunk_feature_items(interior_lines), start=1):
-                title = 'Colour and trim | interior grouped passage'
-                if idx > 1:
-                    title += f' | part {idx}'
+        # ── Interior: group rows by decor level, nest seat materials + colours
+        if sheet.interior_rows:
+            # Collect {decor_level: [(seat_type, seat_trim, seat_code, [(color_name, code)])...]}
+            decor_groups: 'OrderedDict[str, List[Tuple]]' = OrderedDict()
+            for row in sheet.interior_rows:
+                color_pairs = [
+                    (color_name, code)
+                    for color_name, code in row.colors.items()
+                    if normalize_text(code) and normalize_text(code) != '--'
+                ]
+                if not color_pairs:
+                    continue
+                decor_groups.setdefault(row.decor_level, []).append(
+                    (row.seat_type, row.seat_trim, row.seat_code, color_pairs)
+                )
+
+            interior_group_lines: List[str] = []
+            for decor_level, seat_rows in decor_groups.items():
+                for seat_type, seat_trim, seat_code, color_pairs in seat_rows:
+                    if len(color_pairs) == 1:
+                        color_name, code = color_pairs[0]
+                        line = f'{decor_level} | {seat_trim} — {color_name}: {code}'
+                    else:
+                        color_text = '; '.join(f'{cn}: {code}' for cn, code in color_pairs)
+                        line = f'{decor_level} | {seat_trim} — {color_text}'
+                    interior_group_lines.append(line)
+                    # Atomic record per decor+seat row
+                    color_items = [f'{cn}: {code}' for cn, code in color_pairs]
+                    parts.append(
+                        render_article(
+                            article_heading(entity, feature_title(f'Interior trim | {decor_level} | {seat_trim}', seat_code)),
+                            identity_fields(
+                                data,
+                                category='Colour and trim',
+                                source_tabs=sheet.name,
+                                extra_fields=[
+                                    ('Decor level', decor_level),
+                                    ('Seat type', seat_type),
+                                    ('Seat trim', seat_trim),
+                                ],
+                            ),
+                            [('Interior colours and guide values', color_items)],
+                        )
+                    )
+
+            if interior_group_lines:
+                for idx, chunk in enumerate(chunk_feature_items(interior_group_lines), start=1):
+                    title = 'Colour and trim | interior grouped passage'
+                    if idx > 1:
+                        title += f' | part {idx}'
+                    parts.append(
+                        render_article(
+                            article_heading(entity, title),
+                            identity_fields(data, category='Colour and trim', source_tabs=sheet.name),
+                            [('Interior colour and trim lines from guide', chunk)],
+                        )
+                    )
+
+        # ── Exterior: nested "Available with Interior Colours" list
+        if sheet.exterior_rows:
+            exterior_group_lines: List[str] = []
+            for row in sheet.exterior_rows:
+                available_interiors = [
+                    color_name
+                    for color_name, status in row.colors.items()
+                    if normalize_text(status) and normalize_text(status).upper() in ('A', 'S')
+                ]
+                title_value, title_note_ids = parse_value_and_footnote_ids(row.title)
+                note_texts = [sheet.footnotes[nid] for nid in title_note_ids if nid in sheet.footnotes]
+                paint_name = title_value or row.title
+                line = ' | '.join(x for x in [paint_name, row.color_code] if normalize_text(x))
+                if available_interiors:
+                    line += ' — Available with: ' + ', '.join(available_interiors)
+                exterior_group_lines.append(line)
+
+                bullet_groups: List[Tuple[str, Sequence[str]]] = []
+                if available_interiors:
+                    bullet_groups.append(('Available with Interior Colours', available_interiors))
+                if note_texts:
+                    bullet_groups.append(('Guide notes', note_texts))
                 parts.append(
                     render_article(
-                        article_heading(entity, title),
-                        identity_fields(data, category='Colour and trim', source_tabs=sheet.name),
-                        [('Interior colour and trim lines from guide', chunk)],
+                        article_heading(entity, feature_title(f'Exterior paint | {paint_name}', row.color_code)),
+                        identity_fields(
+                            data,
+                            category='Colour and trim',
+                            source_tabs=sheet.name,
+                            extra_fields=[('Touch-Up Paint Number', row.touch_up_paint_number)],
+                        ),
+                        bullet_groups,
                     )
                 )
-        exterior_lines: List[str] = []
-        for row in sheet.exterior_rows:
-            title_value, _title_note_ids = parse_value_and_footnote_ids(row.title)
-            availability = [f'{color}: {status}' for color, status in row.colors.items() if normalize_text(status)]
-            line = ' | '.join(x for x in [title_value or row.title, row.color_code] if normalize_text(x))
-            if availability:
-                line += ' — ' + '; '.join(availability)
-            exterior_lines.append(line)
-        if exterior_lines:
-            for idx, chunk in enumerate(chunk_feature_items(exterior_lines), start=1):
-                title = 'Colour and trim | exterior paint grouped passage'
-                if idx > 1:
-                    title += f' | part {idx}'
-                parts.append(
-                    render_article(
-                        article_heading(entity, title),
-                        identity_fields(data, category='Colour and trim', source_tabs=sheet.name),
-                        [('Exterior paint lines from guide', chunk)],
+
+            if exterior_group_lines:
+                for idx, chunk in enumerate(chunk_feature_items(exterior_group_lines), start=1):
+                    title = 'Colour and trim | exterior paint grouped passage'
+                    if idx > 1:
+                        title += f' | part {idx}'
+                    parts.append(
+                        render_article(
+                            article_heading(entity, title),
+                            identity_fields(data, category='Colour and trim', source_tabs=sheet.name),
+                            [('Exterior paint lines from guide', chunk)],
+                        )
                     )
-                )
-        for row in sheet.interior_rows:
-            color_lines = [f'{color}: {code}' for color, code in row.colors.items() if normalize_text(code) and normalize_text(code) != '--']
-            parts.append(
-                render_article(
-                    article_heading(entity, feature_title(f'Interior trim | {row.decor_level} | {row.seat_trim}', row.seat_code)),
-                    identity_fields(
-                        data,
-                        category='Colour and trim',
-                        source_tabs=sheet.name,
-                        extra_fields=[
-                            ('Decor level', row.decor_level),
-                            ('Seat type', row.seat_type),
-                            ('Seat trim', row.seat_trim),
-                        ],
-                    ),
-                    [('Interior colours and guide values', color_lines)] if color_lines else [],
-                )
-            )
-        for row in sheet.exterior_rows:
-            availability_lines = [f'{color}: {status}' for color, status in row.colors.items() if normalize_text(status)]
-            title_value, title_note_ids = parse_value_and_footnote_ids(row.title)
-            note_texts = [sheet.footnotes[nid] for nid in title_note_ids if nid in sheet.footnotes]
-            bullet_groups: List[Tuple[str, Sequence[str]]] = []
-            if availability_lines:
-                bullet_groups.append(('Availability by interior colour column', availability_lines))
-            if note_texts:
-                bullet_groups.append(('Guide notes', note_texts))
-            parts.append(
-                render_article(
-                    article_heading(entity, feature_title(f'Exterior paint | {title_value or row.title}', row.color_code)),
-                    identity_fields(
-                        data,
-                        category='Colour and trim',
-                        source_tabs=sheet.name,
-                        extra_fields=[('Touch-Up Paint Number', row.touch_up_paint_number)],
-                    ),
-                    bullet_groups,
-                )
-            )
+
         general_notes = unique_preserve_order(list(sheet.footnotes.values()) + list(sheet.bullet_notes))
         if general_notes:
             parts.append(
@@ -1964,69 +2184,92 @@ def render_trim_color_sections(data: WorkbookData, trim: TrimDef) -> str:
     entity = full_trim_heading(data, trim)
     parts = [f'<section class="trim-colours"><h2>{html.escape(entity)} | Colour and trim from guide</h2>']
     for sheet in data.color_sheets:
-        grouped_interior_lines: List[str] = []
+        # ── Interior: only rows matching this trim, grouped by seat material
+        trim_interior_rows = [row for row in sheet.interior_rows if trim_matches_decor(trim, row.decor_level)]
         relevant_interior_columns: List[str] = []
-        for row in sheet.interior_rows:
-            if not trim_matches_decor(trim, row.decor_level):
-                continue
-            color_lines = [f'{color}: {code}' for color, code in row.colors.items() if normalize_text(code) and normalize_text(code) != '--']
-            relevant_interior_columns.extend([color for color, code in row.colors.items() if normalize_text(code) and normalize_text(code) != '--'])
-            summary = ' | '.join(x for x in [row.decor_level, row.seat_type, row.seat_trim] if normalize_text(x))
-            if color_lines:
-                summary += ' — ' + '; '.join(color_lines)
-            grouped_interior_lines.append(summary)
-            parts.append(
-                render_article(
-                    article_heading(entity, feature_title(f'Interior trim | {row.decor_level} | {row.seat_trim}', row.seat_code)),
-                    identity_fields(
-                        data,
-                        trim,
-                        category='Colour and trim',
-                        source_tabs=sheet.name,
-                        extra_fields=[
-                            ('Decor level', row.decor_level),
-                            ('Seat type', row.seat_type),
-                            ('Seat trim', row.seat_trim),
-                        ],
-                    ),
-                    [('Interior colours and guide values', color_lines)] if color_lines else [],
-                )
-            )
-        relevant_interior_columns = unique_preserve_order(relevant_interior_columns)
-        if grouped_interior_lines:
-            for idx, chunk in enumerate(chunk_feature_items(grouped_interior_lines), start=1):
-                title = 'Colour and trim | interior grouped passage'
-                if idx > 1:
-                    title += f' | part {idx}'
+
+        if trim_interior_rows:
+            interior_group_lines: List[str] = []
+            for row in trim_interior_rows:
+                color_pairs = [
+                    (color_name, code)
+                    for color_name, code in row.colors.items()
+                    if normalize_text(code) and normalize_text(code) != '--'
+                ]
+                if not color_pairs:
+                    continue
+                relevant_interior_columns.extend(cn for cn, _ in color_pairs)
+                if len(color_pairs) == 1:
+                    color_name, code = color_pairs[0]
+                    line = f'{row.decor_level} | {row.seat_trim} — {color_name}: {code}'
+                else:
+                    color_text = '; '.join(f'{cn}: {code}' for cn, code in color_pairs)
+                    line = f'{row.decor_level} | {row.seat_trim} — {color_text}'
+                interior_group_lines.append(line)
+                color_items = [f'{cn}: {code}' for cn, code in color_pairs]
                 parts.append(
                     render_article(
-                        article_heading(entity, title),
-                        identity_fields(data, trim, category='Colour and trim', source_tabs=sheet.name),
-                        [('Interior colour and trim lines from guide', chunk)],
+                        article_heading(entity, feature_title(f'Interior trim | {row.decor_level} | {row.seat_trim}', row.seat_code)),
+                        identity_fields(
+                            data,
+                            trim,
+                            category='Colour and trim',
+                            source_tabs=sheet.name,
+                            extra_fields=[
+                                ('Decor level', row.decor_level),
+                                ('Seat type', row.seat_type),
+                                ('Seat trim', row.seat_trim),
+                            ],
+                        ),
+                        [('Interior colours and guide values', color_items)],
                     )
                 )
+
+            relevant_interior_columns = unique_preserve_order(relevant_interior_columns)
+
+            if interior_group_lines:
+                for idx, chunk in enumerate(chunk_feature_items(interior_group_lines), start=1):
+                    title = 'Colour and trim | interior grouped passage'
+                    if idx > 1:
+                        title += f' | part {idx}'
+                    parts.append(
+                        render_article(
+                            article_heading(entity, title),
+                            identity_fields(data, trim, category='Colour and trim', source_tabs=sheet.name),
+                            [('Interior colour and trim lines from guide', chunk)],
+                        )
+                    )
+
+        # ── Exterior: only show paints where this trim's interior colours are available
         grouped_exterior_lines: List[str] = []
         for row in sheet.exterior_rows:
-            availability_lines: List[str] = []
-            for color_name in relevant_interior_columns:
-                raw = normalize_text(row.colors.get(color_name))
-                if not raw:
-                    continue
-                _code, label, _notes = parse_status_value(raw, {}, sheet.footnotes)
-                availability_lines.append(f'{color_name}: {label} [{raw}]')
-            if not availability_lines:
+            available_interiors = [
+                color_name
+                for color_name in relevant_interior_columns
+                if normalize_text(row.colors.get(color_name, '')).upper() in ('A', 'S')
+            ] if relevant_interior_columns else [
+                color_name
+                for color_name, status in row.colors.items()
+                if normalize_text(status).upper() in ('A', 'S')
+            ]
+            if not available_interiors and relevant_interior_columns:
                 continue
             title_value, title_note_ids = parse_value_and_footnote_ids(row.title)
             note_texts = [sheet.footnotes[nid] for nid in title_note_ids if nid in sheet.footnotes]
-            grouped_line = ' | '.join(x for x in [title_value or row.title, row.color_code] if normalize_text(x))
-            grouped_line += ' — ' + '; '.join(availability_lines)
-            grouped_exterior_lines.append(grouped_line)
-            bullet_groups: List[Tuple[str, Sequence[str]]] = [('Availability by interior colour', availability_lines)]
+            paint_name = title_value or row.title
+            line = ' | '.join(x for x in [paint_name, row.color_code] if normalize_text(x))
+            if available_interiors:
+                line += ' — Available with: ' + ', '.join(available_interiors)
+            grouped_exterior_lines.append(line)
+
+            bullet_groups: List[Tuple[str, Sequence[str]]] = []
+            if available_interiors:
+                bullet_groups.append(('Available with Interior Colours', available_interiors))
             if note_texts:
                 bullet_groups.append(('Guide notes', note_texts))
             parts.append(
                 render_article(
-                    article_heading(entity, feature_title(f'Exterior paint | {title_value or row.title}', row.color_code)),
+                    article_heading(entity, feature_title(f'Exterior paint | {paint_name}', row.color_code)),
                     identity_fields(
                         data,
                         trim,
@@ -2037,6 +2280,7 @@ def render_trim_color_sections(data: WorkbookData, trim: TrimDef) -> str:
                     bullet_groups,
                 )
             )
+
         if grouped_exterior_lines:
             for idx, chunk in enumerate(chunk_feature_items(grouped_exterior_lines), start=1):
                 title = 'Colour and trim | exterior paint grouped passage'
@@ -2049,6 +2293,7 @@ def render_trim_color_sections(data: WorkbookData, trim: TrimDef) -> str:
                         [('Exterior paint lines from guide', chunk)],
                     )
                 )
+
         general_notes = unique_preserve_order(list(sheet.footnotes.values()) + list(sheet.bullet_notes))
         if general_notes:
             parts.append(
@@ -2386,6 +2631,13 @@ def extract_manifest_metadata_for_model(data: WorkbookData) -> Dict[str, object]
     drivetrain = pick_drivetrain_description(descs)
     if drivetrain:
         metadata['drivetrain'] = drivetrain
+    # Vehicle attributes inferred during parsing
+    if data.propulsion:
+        metadata['propulsion'] = data.propulsion
+    if data.vehicle_type:
+        metadata['vehicle_type'] = data.vehicle_type
+    if data.drive_types:
+        metadata['drive_types'] = data.drive_types
     return metadata
 
 
@@ -2415,6 +2667,16 @@ def extract_manifest_metadata_for_trim(data: WorkbookData, trim: TrimDef) -> Dic
         drivetrain = extract_trim_drive_token_from_headers(data, trim)
     if drivetrain:
         metadata['drivetrain'] = drivetrain
+    # Vehicle attributes inferred during parsing
+    if data.propulsion:
+        metadata['propulsion'] = data.propulsion
+    if data.vehicle_type:
+        metadata['vehicle_type'] = data.vehicle_type
+    trim_drive = infer_trim_drive_type(data.spec_columns, trim, data.drive_types)
+    if trim_drive:
+        metadata['drive_type'] = trim_drive
+    elif data.drive_types:
+        metadata['drive_types'] = data.drive_types
     return metadata
 
 
