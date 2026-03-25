@@ -1,0 +1,83 @@
+{
+  "workbook": "../workbooks/2026 Chevrolet Truck Blazer EV Export.xlsx",
+  "vehicle_name": "2026 Chevrolet Blazer EV",
+  "files": [
+    {
+      "objecttype": "Product",
+      "type": "model",
+      "seating": "2/3",
+      "engine": "Engine, none (electric drive unit)",
+      "propulsion": "EV",
+      "vehicle_type": "suv",
+      "drive_types": [
+        "AWD"
+      ],
+      "path": "model_2026_Chevrolet_Blazer_EV.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "name": "LT 1MC26 FWD",
+      "title": "LT\n1MC26\nFWD\n2LT",
+      "engine": "Engine, none (electric drive unit)",
+      "drivetrain": "Propulsion, front wheel drive (FWD)",
+      "propulsion": "EV",
+      "vehicle_type": "suv",
+      "drive_type": "AWD",
+      "parent_model": "model_2026_Chevrolet_Blazer_EV.html",
+      "path": "trim_2026_Chevrolet_Blazer_EV_LT_1MC26_FWD.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "name": "LT 1MC26 AWD",
+      "title": "LT\n1MC26\nAWD\n4LT",
+      "engine": "Engine, none (electric drive unit)",
+      "drivetrain": "Propulsion, electric dual-motor all-wheel drive (AWD)",
+      "propulsion": "EV",
+      "vehicle_type": "suv",
+      "drive_type": "AWD",
+      "parent_model": "model_2026_Chevrolet_Blazer_EV.html",
+      "path": "trim_2026_Chevrolet_Blazer_EV_LT_1MC26_AWD.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "name": "RS 1MD26 FWD",
+      "title": "RS\n1MD26\nFWD\n1RS",
+      "engine": "Engine, none (electric drive unit)",
+      "drivetrain": "Propulsion, front wheel drive (FWD)",
+      "propulsion": "EV",
+      "vehicle_type": "suv",
+      "drive_type": "AWD",
+      "parent_model": "model_2026_Chevrolet_Blazer_EV.html",
+      "path": "trim_2026_Chevrolet_Blazer_EV_RS_1MD26_FWD.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "name": "RS 1MD26 AWD",
+      "title": "RS\n1MD26\nAWD\n3RS",
+      "engine": "Engine, none (electric drive unit)",
+      "drivetrain": "Propulsion, electric dual-motor all-wheel drive (AWD)",
+      "propulsion": "EV",
+      "vehicle_type": "suv",
+      "drive_type": "AWD",
+      "parent_model": "model_2026_Chevrolet_Blazer_EV.html",
+      "path": "trim_2026_Chevrolet_Blazer_EV_RS_1MD26_AWD.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "name": "SS 1MG26 AWD",
+      "title": "SS\n1MG26\nAWD\n2SS",
+      "engine": "Engine, none (electric drive unit)",
+      "drivetrain": "Propulsion, electric performance dual-motor all-wheel drive (AWD)",
+      "propulsion": "EV",
+      "vehicle_type": "suv",
+      "drive_type": "AWD",
+      "parent_model": "model_2026_Chevrolet_Blazer_EV.html",
+      "path": "trim_2026_Chevrolet_Blazer_EV_SS_1MG26_AWD.html"
+    }
+  ]
+}
