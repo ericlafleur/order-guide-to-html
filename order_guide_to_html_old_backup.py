@@ -1,0 +1,2461 @@
+
+#!/usr/bin/env python3
+from __future__ import annotations
+
+import argparse
+import html
+import json
+import re
+import sys
+from collections import OrderedDict
+from dataclasses import dataclass, field
+from pathlib import Path
+from typing import Dict, Iterable, List, Optional, Sequence, Tuple
+
+import openpyxl
+
+
+STATUS_LABELS = OrderedDict(
+    [
+        ("S", "Standard Equipment"),
+        ("A", "Available"),
+        ("D", "ADI Available"),
+        ("■", "Included in Equipment Group"),
+        ("□", "Included in Equipment Group but upgradeable"),
+        ("*", "Indicates availability of feature on multiple models"),
+        ("--", "Not Available"),
+    ]
+)
+
+# ---------------------------------------------------------------------------
+# Propulsion / vehicle-type / drive-type inference (mirrors vog_transformer.py)
+# ---------------------------------------------------------------------------
+
+PROPULSION_KEYWORDS: Dict[str, str] = {
+    'ev': 'EV', 'electric': 'EV', 'bev': 'EV',
+    'hybrid': 'HYBRID', 'phev': 'PHEV',
+    'turbomax': 'ICE', 'ecotec': 'ICE', 'duramax': 'ICE',
+    'turbo-diesel': 'ICE', 'diesel': 'ICE', 'v8': 'ICE', 'v6': 'ICE', 'turbo': 'ICE',
+}
+
+VEHICLE_TYPE_SUV_KEYWORDS = (
+    'equinox', 'blazer', 'trax', 'trailblazer', 'traverse', 'tahoe', 'suburban',
+    'terrain', 'acadia', 'encore', 'envision', 'enclave', 'escalade',
+    'xt4', 'xt5', 'xt6', 'lyriq', 'yukon',
+)
+
+DRIVE_TYPE_PATTERNS = [
+    (re.compile(r'\beawd\b', re.I), 'eAWD'),
+    (re.compile(r'\bawd\b', re.I), 'AWD'),
+    (re.compile(r'\bfwd\b', re.I), 'FWD'),
+    (re.compile(r'\brwd\b', re.I), 'RWD'),
+    (re.compile(r'\b4wd\b|\b4x4\b', re.I), '4WD'),
+    (re.compile(r'\b2wd\b|\b4x2\b', re.I), '2WD'),
+    (re.compile(r'\ball[- ]wheel drive\b', re.I), 'AWD'),
+    (re.compile(r'\bfront[- ]wheel drive\b', re.I), 'FWD'),
+    (re.compile(r'\brear[- ]wheel drive\b', re.I), 'RWD'),
+    (re.compile(r'\b4[- ]wheel drive\b', re.I), '4WD'),
+    (re.compile(r'\b2[- ]wheel drive\b', re.I), '2WD'),
+]
+
+
+def infer_propulsion(vehicle_name: str, engine_axle_entries: 'List[EngineAxleEntry]') -> str:
+    """Infer EV / HYBRID / PHEV / ICE from the engine descriptions first, then the vehicle name.
+
+    Engine data is checked first because it is the most reliable signal.
+    Short keywords like 'ev' are matched as whole words in the vehicle name to
+    avoid false positives (e.g. "Silv**er**ado" containing 'ev').
+    """
+    # 1. Engine descriptions are the most reliable source
+    for entry in engine_axle_entries:
+        eng = entry.engine.lower()
+        for kw, prop in PROPULSION_KEYWORDS.items():
+            if kw in eng:
+                return prop
+
+    # 2. Vehicle name — use word-boundary matching for short tokens
+    name_lower = vehicle_name.lower()
+    for kw, prop in PROPULSION_KEYWORDS.items():
+        if len(kw) <= 3:
+            if re.search(r'\b' + re.escape(kw) + r'\b', name_lower):
+                return prop
+        else:
+            if kw in name_lower:
+                return prop
+
+    return 'ICE'
+
+
+def infer_vehicle_type(vehicle_name: str) -> str:
+    """Infer 'suv', 'truck', 'van', etc. from the vehicle name."""
+    name_lower = vehicle_name.lower()
+    for kw in VEHICLE_TYPE_SUV_KEYWORDS:
+        if kw in name_lower:
+            return 'suv'
+    truck_keywords = ('silverado', 'sierra', 'colorado', 'canyon', 'titan', 'f-', 'ram ', 'tundra')
+    for kw in truck_keywords:
+        if kw in name_lower:
+            return 'truck'
+    return 'suv'
+
+
+def parse_drive_type_from_text(text: str) -> List[str]:
+    """Extract all drive type tokens found in *text* (e.g. a spec column header)."""
+    found: List[str] = []
+    for pattern, label in DRIVE_TYPE_PATTERNS:
+        if pattern.search(text):
+            found.append(label)
+    return found
+
+
+def infer_drive_types(
+    engine_axle_entries: 'List[EngineAxleEntry]',
+    spec_columns: 'List[SpecColumn]',
+    matrix_sheets: 'List[MatrixSheet]',
+    propulsion: str,
+) -> List[str]:
+    """Collect all drive types from engine axle model codes, spec column headers,
+    and equipment descriptions — same multi-source strategy as vog_transformer."""
+    drives: set = set()
+
+    # Engine axle model codes: CC prefix = 2WD, CK prefix = 4WD
+    for entry in engine_axle_entries:
+        code = entry.model_code
+        if code.startswith('CK'):
+            drives.add('4WD')
+        elif code.startswith('CC'):
+            drives.add('2WD')
+
+    # Spec column headers (encodes drive info for trucks: "2WD Short Bed Crew Cab")
+    for col in spec_columns:
+        for text in [col.top_label, col.header] + col.header_lines:
+            for dt in parse_drive_type_from_text(text):
+                drives.add(dt)
+
+    # Equipment / feature descriptions mentioning drive type
+    for sheet in matrix_sheets:
+        for row in sheet.rows:
+            desc = normalize_text(row.description_main or row.description_raw).lower()
+            if 'all-wheel drive' in desc or ' awd' in desc:
+                drives.add('AWD')
+            elif 'front-wheel drive' in desc or ' fwd' in desc:
+                drives.add('FWD')
+            elif 'rear-wheel drive' in desc or ' rwd' in desc:
+                drives.add('RWD')
+
+    # EV fallback: if still nothing, assume AWD
+    if not drives and propulsion == 'EV':
+        drives.add('AWD')
+
+    return sorted(drives) if drives else ['FWD']
+
+
+def infer_trim_drive_type(
+    spec_columns: 'List[SpecColumn]',
+    trim: 'TrimDef',
+    vehicle_drive_types: List[str],
+) -> Optional[str]:
+    """Best-effort per-trim drive type using the same fallback chain as vog_transformer.
+
+    1. Look for a spec column whose header contains this trim's name/code and
+       mentions a drive type token explicitly.
+    2. If the vehicle as a whole has exactly one drive type, inherit it.
+    3. Otherwise return None (ambiguous).
+    """
+    candidate: set = set()
+    for col in spec_columns:
+        blob = ' '.join([col.top_label, col.header] + col.header_lines)
+        if trim.name.lower() in blob.lower() or trim.code.lower() in blob.lower():
+            for dt in parse_drive_type_from_text(blob):
+                candidate.add(dt)
+    if len(candidate) == 1:
+        return candidate.pop()
+    if len(vehicle_drive_types) == 1:
+        return vehicle_drive_types[0]
+    return None
+
+FOOTNOTE_LINE_RE = re.compile(r"^\s*(\d+)\.\s*(.+?)\s*$")
+URL_RE = re.compile(r"(https?://[^\s<]+)")
+TRAILING_DIGITS_RE = re.compile(r"^(.*?)(\d+)\s*$")
+CODE_IN_PARENS_RE = re.compile(r"\(([A-Z0-9]{2,6})\)")
+NON_ALNUM_RE = re.compile(r"[^a-z0-9]+", re.I)
+FILLER_TOKENS = {"Truck", "Trucks", "Cars", "Car", "SUV", "SUVs"}
+
+
+@dataclass
+class TrimDef:
+    name: str
+    code: str
+    raw_header: str
+
+    @property
+    def key(self) -> str:
+        return self.code or self.name
+
+    @property
+    def label(self) -> str:
+        if self.code and self.name:
+            return f"{self.name} ({self.code})"
+        return self.name or self.code
+
+
+@dataclass
+class MatrixRow:
+    sheet_name: str
+    row_group: Optional[str]
+    option_code: Optional[str]
+    ref_code: Optional[str]
+    aux_meta: List[str]
+    description_raw: str
+    description_main: str
+    inline_footnotes: Dict[str, str] = field(default_factory=dict)
+    bullet_notes: List[str] = field(default_factory=list)
+    status_by_trim: Dict[str, str] = field(default_factory=dict)
+
+    @property
+    def label(self) -> str:
+        text = self.description_main or self.description_raw
+        text = normalize_text(text).split("\n")[0]
+        text = re.sub(r"^NEW!\s+", "", text, flags=re.I)
+        short = text
+        if ", includes " in text.lower():
+            short = text.split(",", 1)[0]
+        elif ". " in text and len(text.split(". ", 1)[0]) >= 12:
+            short = text.split(". ", 1)[0]
+        if len(short) > 140:
+            short = short[:137].rstrip() + "..."
+        return normalize_text(short)
+
+    @property
+    def identity_key(self) -> str:
+        basis = " | ".join(
+            normalize_text(x)
+            for x in [self.option_code or "", self.ref_code or "", self.description_main or self.description_raw]
+            if normalize_text(x)
+        )
+        return NON_ALNUM_RE.sub(" ", basis).strip().lower()
+
+
+@dataclass
+class MatrixSheet:
+    name: str
+    legend_text: str
+    trim_defs: List[TrimDef]
+    footnotes: Dict[str, str]
+    rows: List[MatrixRow]
+
+
+@dataclass
+class ColorInteriorRow:
+    decor_level: str
+    seat_type: str
+    seat_code: str
+    seat_trim: str
+    colors: Dict[str, str]
+
+
+@dataclass
+class ColorExteriorRow:
+    title: str
+    color_code: str
+    touch_up_paint_number: str
+    colors: Dict[str, str]
+
+
+@dataclass
+class ColorSheet:
+    name: str
+    heading_text: str
+    footnotes: Dict[str, str]
+    bullet_notes: List[str]
+    interior_rows: List[ColorInteriorRow]
+    exterior_rows: List[ColorExteriorRow]
+
+
+@dataclass
+class SpecCell:
+    section: str
+    label: str
+    value: str
+
+
+@dataclass
+class SpecColumn:
+    sheet_name: str
+    top_label: str
+    header: str
+    header_lines: List[str]
+    cells: List[SpecCell]
+
+
+@dataclass
+class EngineAxleItem:
+    category: str
+    name: str
+    raw_status: str
+    status_code: str
+    status_label: str
+    notes: List[str]
+
+
+@dataclass
+class EngineAxleEntry:
+    sheet_name: str
+    top_label: str
+    model_code: str
+    engine: str
+    items: List[EngineAxleItem]
+
+
+@dataclass
+class TraileringRecord:
+    sheet_name: str
+    rating_type: str
+    note_text: str
+    model_code: str
+    engine: str
+    axle_ratio: str
+    max_trailer_weight: str
+    footnotes: List[str]
+
+
+@dataclass
+class GCWRRecord:
+    sheet_name: str
+    table_title: str
+    engine: str
+    gcwr: str
+    axle_ratio: str
+    footnotes: List[str]
+
+
+@dataclass
+class WorkbookData:
+    path: Path
+    year: str
+    make: str
+    model: str
+    vehicle_name: str
+    trim_defs: List[TrimDef]
+    matrix_sheets: List[MatrixSheet]
+    color_sheets: List[ColorSheet]
+    spec_columns: List[SpecColumn]
+    engine_axle_entries: List[EngineAxleEntry]
+    trailering_records: List[TraileringRecord]
+    gcwr_records: List[GCWRRecord]
+    glossary: OrderedDict[str, str]
+    sheet_names: List[str]
+    # Inferred vehicle attributes (populated after parsing)
+    propulsion: str = field(default='ICE')
+    vehicle_type: str = field(default='suv')
+    drive_types: List[str] = field(default_factory=list)
+
+
+def normalize_text(value: object) -> str:
+    if value is None:
+        return ""
+    text = str(value)
+    text = text.replace("\xa0", " ").replace("\r", "\n")
+    text = re.sub(r"[ \t]+", " ", text)
+    text = re.sub(r" *\n *", "\n", text)
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return text.strip()
+
+
+def slugify(text: str) -> str:
+    text = normalize_text(text).replace("/", " ")
+    text = re.sub(r"[^A-Za-z0-9]+", "_", text)
+    text = re.sub(r"_+", "_", text)
+    return text.strip("_")
+
+
+def htmlize_text(text: str) -> str:
+    escaped = html.escape(normalize_text(text))
+    return URL_RE.sub(r'<a href="\1" target="_blank">\1</a>', escaped)
+
+
+def parse_filename_metadata(path: Path) -> Tuple[str, str, str, str]:
+    stem = path.stem
+    stem = re.sub(r"\s+Export$", "", stem, flags=re.I)
+    stem = re.sub(r"\s+(Retail and Fleet|Retail|Fleet)$", "", stem, flags=re.I)
+    parts = stem.split()
+    if not parts or not re.fullmatch(r"\d{4}", parts[0]):
+        raise ValueError(f"Cannot determine year from filename: {path.name}")
+    year = parts[0]
+    if len(parts) < 3:
+        raise ValueError(f"Cannot determine make/model from filename: {path.name}")
+    make = parts[1]
+    model_tokens = [p for p in parts[2:] if p not in FILLER_TOKENS]
+    if not model_tokens:
+        raise ValueError(f"Cannot determine model from filename: {path.name}")
+    model = " ".join(model_tokens)
+    vehicle_name = f"{year} {make} {model}"
+    return year, make, model, vehicle_name
+
+
+def parse_trim_header(value: object) -> Optional[TrimDef]:
+    text = normalize_text(value)
+    if not text:
+        return None
+    lines = [normalize_text(x) for x in text.split("\n") if normalize_text(x)]
+    if not lines:
+        return None
+    if len(lines) == 1:
+        return TrimDef(name=lines[0], code=lines[0], raw_header=text)
+    return TrimDef(name=" ".join(lines[:-1]), code=lines[-1], raw_header=text)
+
+
+def find_matrix_header_row(ws) -> Optional[int]:
+    for r in range(1, min(ws.max_row, 10) + 1):
+        values = [normalize_text(ws.cell(r, c).value) for c in range(1, ws.max_column + 1)]
+        if "Description" in values:
+            return r
+    return None
+
+
+def parse_footnote_map(text: str) -> Dict[str, str]:
+    notes: Dict[str, str] = {}
+    for line in normalize_text(text).split("\n"):
+        m = FOOTNOTE_LINE_RE.match(line)
+        if m:
+            notes[m.group(1)] = normalize_text(m.group(2))
+    return notes
+
+
+def split_main_notes_and_bullets(text: str) -> Tuple[str, Dict[str, str], List[str]]:
+    lines = [normalize_text(line) for line in normalize_text(text).split("\n") if normalize_text(line)]
+    main_lines: List[str] = []
+    notes: Dict[str, str] = {}
+    bullets: List[str] = []
+    in_notes = False
+    for line in lines:
+        m = FOOTNOTE_LINE_RE.match(line)
+        if m:
+            notes[m.group(1)] = normalize_text(m.group(2))
+            in_notes = True
+            continue
+        if line.startswith("•"):
+            bullets.append(normalize_text(line.lstrip("•").strip()))
+            in_notes = True
+            continue
+        if not in_notes:
+            main_lines.append(line)
+        else:
+            bullets.append(line)
+    main_text = normalize_text(" ".join(main_lines))
+    return main_text, notes, bullets
+
+
+def parse_status_value(raw: str, row_notes: Dict[str, str], sheet_notes: Dict[str, str]) -> Tuple[str, str, List[str]]:
+    raw = normalize_text(raw)
+    if not raw:
+        return "", "", []
+    m = re.match(r"^(--|[A-Z]+|[■□*]+)(.*)$", raw)
+    if m:
+        code = m.group(1)
+        suffix = m.group(2)
+    else:
+        code = raw
+        suffix = ""
+    label = STATUS_LABELS.get(code, code)
+    note_ids = re.findall(r"\d+", suffix)
+    notes: List[str] = []
+    for note_id in note_ids:
+        if note_id in row_notes:
+            notes.append(row_notes[note_id])
+        elif note_id in sheet_notes:
+            notes.append(sheet_notes[note_id])
+    return code, label, unique_preserve_order(notes)
+
+
+def unique_preserve_order(items: Iterable[str]) -> List[str]:
+    seen = OrderedDict()
+    for item in items:
+        item = normalize_text(item)
+        if item:
+            seen[item] = None
+    return list(seen.keys())
+
+
+def parse_matrix_sheet(ws, trim_defs: Optional[List[TrimDef]] = None) -> Optional[MatrixSheet]:
+    header_row = find_matrix_header_row(ws)
+    if header_row is None:
+        return None
+
+    headers = [normalize_text(ws.cell(header_row, c).value) for c in range(1, ws.max_column + 1)]
+    description_col = headers.index("Description") + 1
+
+    legend_text_parts: List[str] = []
+    sheet_footnotes: Dict[str, str] = {}
+    for r in range(1, header_row):
+        row_texts = [normalize_text(ws.cell(r, c).value) for c in range(1, ws.max_column + 1)]
+        nonempty = [t for t in row_texts if t]
+        if nonempty:
+            legend_text_parts.extend(nonempty)
+        for item in nonempty:
+            sheet_footnotes.update(parse_footnote_map(item))
+
+    inferred_trim_defs: List[TrimDef] = []
+    c = description_col + 1
+    while c <= ws.max_column:
+        raw = normalize_text(ws.cell(header_row, c).value)
+        if not raw:
+            break
+        parsed = parse_trim_header(raw)
+        if parsed:
+            inferred_trim_defs.append(parsed)
+        c += 1
+    active_trim_defs = trim_defs or inferred_trim_defs
+    trim_cols = list(range(description_col + 1, description_col + 1 + len(active_trim_defs)))
+
+    rows: List[MatrixRow] = []
+    current_group: Optional[str] = None
+    for r in range(header_row + 1, ws.max_row + 1):
+        meta = [normalize_text(ws.cell(r, c).value) for c in range(1, description_col + 1)]
+        status_values = [normalize_text(ws.cell(r, c).value) for c in trim_cols]
+        if not any(meta) and not any(status_values):
+            continue
+
+        if not any(status_values):
+            nonempty = [m for m in meta if m]
+            for item in nonempty:
+                sheet_footnotes.update(parse_footnote_map(item))
+            if nonempty and not any(FOOTNOTE_LINE_RE.match(line) for item in nonempty for line in item.split("\n")):
+                current_group = nonempty[0]
+            continue
+
+        description_raw = meta[-1]
+        if not description_raw:
+            continue
+
+        option_code = meta[0] or None
+        ref_code = meta[1] or None if len(meta) > 1 else None
+        aux_meta = [x for x in meta[2:-1] if x]
+        main_text, inline_notes, bullet_notes = split_main_notes_and_bullets(description_raw)
+
+        row = MatrixRow(
+            sheet_name=ws.title,
+            row_group=current_group,
+            option_code=option_code,
+            ref_code=ref_code,
+            aux_meta=aux_meta,
+            description_raw=description_raw,
+            description_main=main_text or description_raw,
+            inline_footnotes=inline_notes,
+            bullet_notes=bullet_notes,
+            status_by_trim={
+                active_trim_defs[idx].key: status_values[idx]
+                for idx in range(min(len(active_trim_defs), len(status_values)))
+                if normalize_text(status_values[idx])
+            },
+        )
+        rows.append(row)
+
+    legend_text = "\n".join(unique_preserve_order(legend_text_parts))
+    return MatrixSheet(
+        name=ws.title,
+        legend_text=legend_text,
+        trim_defs=active_trim_defs,
+        footnotes=sheet_footnotes,
+        rows=rows,
+    )
+
+
+def parse_color_sheet(ws) -> ColorSheet:
+    footnotes: Dict[str, str] = {}
+    bullet_notes: List[str] = []
+    heading_lines: List[str] = []
+    interior_rows: List[ColorInteriorRow] = []
+    exterior_rows: List[ColorExteriorRow] = []
+
+    for r in range(1, ws.max_row + 1):
+        row_values = [normalize_text(ws.cell(r, c).value) for c in range(1, ws.max_column + 1)]
+        first = row_values[0] if row_values else ""
+        if r <= 3 and any(row_values):
+            heading_lines.extend([v for v in row_values if v])
+        for value in row_values:
+            if value:
+                footnotes.update(parse_footnote_map(value))
+                for line in normalize_text(value).split("\n"):
+                    if line.startswith("•"):
+                        bullet_notes.append(normalize_text(line.lstrip("•").strip()))
+
+        if first == "Decor Level":
+            color_headers = [normalize_text(ws.cell(r, c).value).split("\n")[0] for c in range(5, ws.max_column + 1)]
+            rr = r + 1
+            while rr <= ws.max_row:
+                values = [normalize_text(ws.cell(rr, c).value) for c in range(1, ws.max_column + 1)]
+                if values[0] == "Exterior Solid Paint":
+                    break
+                if not any(values):
+                    rr += 1
+                    continue
+                if values[0] and values[0] != "Decor Level":
+                    colors = {
+                        color_headers[i]: values[4 + i]
+                        for i in range(len(color_headers))
+                        if color_headers[i]
+                    }
+                    interior_rows.append(
+                        ColorInteriorRow(
+                            decor_level=values[0],
+                            seat_type=values[1],
+                            seat_code=values[2],
+                            seat_trim=values[3],
+                            colors=colors,
+                        )
+                    )
+                rr += 1
+
+        if first == "Exterior Solid Paint":
+            color_headers = [normalize_text(ws.cell(r, c).value).split("\n")[0] for c in range(5, ws.max_column + 1)]
+            rr = r + 1
+            while rr <= ws.max_row:
+                values = [normalize_text(ws.cell(rr, c).value) for c in range(1, ws.max_column + 1)]
+                if not any(values):
+                    rr += 1
+                    continue
+                if FOOTNOTE_LINE_RE.match(values[0]) or values[0].startswith("•"):
+                    break
+                if values[0] and values[0] != "Exterior Solid Paint":
+                    colors = {
+                        color_headers[i]: values[4 + i]
+                        for i in range(len(color_headers))
+                        if color_headers[i]
+                    }
+                    exterior_rows.append(
+                        ColorExteriorRow(
+                            title=values[0],
+                            color_code=values[2],
+                            touch_up_paint_number=values[3],
+                            colors=colors,
+                        )
+                    )
+                rr += 1
+
+    return ColorSheet(
+        name=ws.title,
+        heading_text=" | ".join(unique_preserve_order(heading_lines)),
+        footnotes=footnotes,
+        bullet_notes=unique_preserve_order(bullet_notes),
+        interior_rows=interior_rows,
+        exterior_rows=exterior_rows,
+    )
+
+
+def parse_spec_sheet(ws) -> List[SpecColumn]:
+    section_markers = {"Specifications", "Capacities"}
+    first_section_row: Optional[int] = None
+    for r in range(1, min(ws.max_row, 10) + 1):
+        if normalize_text(ws.cell(r, 1).value) in section_markers:
+            first_section_row = r
+            break
+    if first_section_row is None:
+        return []
+
+    header_row = first_section_row
+    nonempty_on_section_row = sum(1 for c in range(1, ws.max_column + 1) if normalize_text(ws.cell(first_section_row, c).value))
+    if nonempty_on_section_row <= 1 and first_section_row > 1:
+        header_row = first_section_row - 1
+
+    top_label = ""
+    for r in range(1, header_row + 1):
+        cell = normalize_text(ws.cell(r, 1).value)
+        if cell and cell not in section_markers and "all dimensions" not in cell.lower():
+            top_label = cell
+            break
+
+    columns: List[SpecColumn] = []
+    for c in range(2, ws.max_column + 1):
+        header = normalize_text(ws.cell(header_row, c).value)
+        if not header:
+            continue
+        header_lines = [normalize_text(x) for x in header.split("\n") if normalize_text(x)]
+        current_section = normalize_text(ws.cell(first_section_row, 1).value) if header_row == first_section_row else ""
+        cells: List[SpecCell] = []
+        for r in range(header_row + 1, ws.max_row + 1):
+            label = normalize_text(ws.cell(r, 1).value)
+            row_values = [normalize_text(ws.cell(r, cc).value) for cc in range(1, ws.max_column + 1)]
+            if label in section_markers and sum(1 for x in row_values[1:] if x) == 0:
+                current_section = label
+                continue
+            value = normalize_text(ws.cell(r, c).value)
+            if label and value and value != "--":
+                cells.append(SpecCell(section=current_section or "Data", label=label, value=value))
+        if cells:
+            columns.append(
+                SpecColumn(
+                    sheet_name=ws.title,
+                    top_label=top_label,
+                    header=header,
+                    header_lines=header_lines,
+                    cells=cells,
+                )
+            )
+    return columns
+
+
+def parse_engine_axles_sheet(ws) -> List[EngineAxleEntry]:
+    if not ws.title.startswith("Engine Axles"):
+        return []
+    top_label = normalize_text(ws.cell(1, 1).value)
+    footnotes: Dict[str, str] = {}
+    for r in range(1, ws.max_row + 1):
+        first = normalize_text(ws.cell(r, 1).value)
+        if first:
+            footnotes.update(parse_footnote_map(first))
+
+    section_headers: Dict[int, str] = {}
+    current_section = ""
+    for c in range(3, ws.max_column + 1):
+        value = normalize_text(ws.cell(3, c).value)
+        if value:
+            current_section = value
+        section_headers[c] = current_section
+
+    entries: List[EngineAxleEntry] = []
+    current_model = ""
+    for r in range(5, ws.max_row + 1):
+        model = normalize_text(ws.cell(r, 1).value)
+        engine = normalize_text(ws.cell(r, 2).value)
+        row_values = [normalize_text(ws.cell(r, c).value) for c in range(1, ws.max_column + 1)]
+        if not any(row_values):
+            continue
+        if model and FOOTNOTE_LINE_RE.match(model):
+            continue
+        if model:
+            current_model = model
+        if not engine:
+            continue
+        items: List[EngineAxleItem] = []
+        for c in range(3, ws.max_column + 1):
+            raw_status = normalize_text(ws.cell(r, c).value)
+            if not raw_status or raw_status == "--":
+                continue
+            code, label, notes = parse_status_value(raw_status, {}, footnotes)
+            items.append(
+                EngineAxleItem(
+                    category=section_headers.get(c, ""),
+                    name=normalize_text(ws.cell(4, c).value),
+                    raw_status=raw_status,
+                    status_code=code,
+                    status_label=label,
+                    notes=notes,
+                )
+            )
+        if items:
+            entries.append(
+                EngineAxleEntry(
+                    sheet_name=ws.title,
+                    top_label=top_label,
+                    model_code=current_model,
+                    engine=engine,
+                    items=items,
+                )
+            )
+    return entries
+
+
+def parse_value_and_footnote_ids(raw: str) -> Tuple[str, List[str]]:
+    raw = normalize_text(raw)
+    if not raw or raw == "--":
+        return "", []
+    m = re.match(r"^(.*\))(\d+)$", raw)
+    if m:
+        return normalize_text(m.group(1)), re.findall(r"\d+", m.group(2))
+    m = re.match(r"^([0-9]+\.[0-9]{2})(\d+)$", raw)
+    if m:
+        return normalize_text(m.group(1)), re.findall(r"\d+", m.group(2))
+    m = TRAILING_DIGITS_RE.match(raw)
+    if m and re.search(r"[A-Za-z]", m.group(1)):
+        return normalize_text(m.group(1)), re.findall(r"\d+", m.group(2))
+    return raw, []
+
+
+def parse_trailering_sheet(ws) -> Tuple[List[TraileringRecord], List[GCWRRecord]]:
+    if not ws.title.startswith("Trailering Specs"):
+        return [], []
+
+    sheet_footnotes: Dict[str, str] = {}
+    for r in range(1, ws.max_row + 1):
+        for c in range(1, ws.max_column + 1):
+            sheet_footnotes.update(parse_footnote_map(normalize_text(ws.cell(r, c).value)))
+
+    rating_note = normalize_text(ws.cell(1, 1).value)
+    rating_type = normalize_text(ws.cell(2, 1).value)
+
+    engine_pairs: List[Tuple[str, int, int]] = []
+    c = 2
+    while c <= ws.max_column:
+        engine = normalize_text(ws.cell(3, c).value)
+        if engine:
+            engine_pairs.append((engine, c, c + 1))
+        c += 2
+
+    trailering_records: List[TraileringRecord] = []
+    current_model = ""
+    gcwr_start_row = None
+    for r in range(5, ws.max_row + 1):
+        first = normalize_text(ws.cell(r, 1).value)
+        if first.startswith("GCWR "):
+            gcwr_start_row = r
+            break
+        if first and FOOTNOTE_LINE_RE.match(first):
+            continue
+        if first:
+            current_model = first
+        if not current_model:
+            continue
+        for engine, axle_col, weight_col in engine_pairs:
+            raw_axle = normalize_text(ws.cell(r, axle_col).value)
+            raw_weight = normalize_text(ws.cell(r, weight_col).value)
+            if (not raw_axle or raw_axle == "--") and (not raw_weight or raw_weight == "--"):
+                continue
+            axle_ratio, axle_note_ids = parse_value_and_footnote_ids(raw_axle)
+            max_weight, weight_note_ids = parse_value_and_footnote_ids(raw_weight)
+            note_texts = [sheet_footnotes[nid] for nid in axle_note_ids + weight_note_ids if nid in sheet_footnotes]
+            trailering_records.append(
+                TraileringRecord(
+                    sheet_name=ws.title,
+                    rating_type=rating_type,
+                    note_text=rating_note,
+                    model_code=current_model,
+                    engine=engine,
+                    axle_ratio=axle_ratio or raw_axle,
+                    max_trailer_weight=max_weight or raw_weight,
+                    footnotes=unique_preserve_order(note_texts),
+                )
+            )
+
+    gcwr_records: List[GCWRRecord] = []
+    if gcwr_start_row is not None and gcwr_start_row + 3 <= ws.max_row:
+        table_title = normalize_text(ws.cell(gcwr_start_row, 1).value)
+        header_values = [normalize_text(ws.cell(gcwr_start_row + 2, c).value) for c in range(2, ws.max_column + 1)]
+        for r in range(gcwr_start_row + 3, ws.max_row + 1):
+            engine = normalize_text(ws.cell(r, 1).value)
+            if not engine or FOOTNOTE_LINE_RE.match(engine):
+                continue
+            for idx, gcwr in enumerate(header_values, start=2):
+                if not gcwr:
+                    continue
+                raw_axle = normalize_text(ws.cell(r, idx).value)
+                if not raw_axle or raw_axle == "--":
+                    continue
+                axle_ratio, note_ids = parse_value_and_footnote_ids(raw_axle)
+                gcwr_records.append(
+                    GCWRRecord(
+                        sheet_name=ws.title,
+                        table_title=table_title,
+                        engine=engine,
+                        gcwr=gcwr,
+                        axle_ratio=axle_ratio or raw_axle,
+                        footnotes=unique_preserve_order(sheet_footnotes[nid] for nid in note_ids if nid in sheet_footnotes),
+                    )
+                )
+
+    return trailering_records, gcwr_records
+
+
+def parse_glossary_sheet(ws) -> OrderedDict[str, str]:
+    glossary: OrderedDict[str, str] = OrderedDict()
+    first = normalize_text(ws.cell(1, 1).value)
+    second = normalize_text(ws.cell(1, 2).value)
+    if first != "Option Code" or second != "Description":
+        return glossary
+    for r in range(2, ws.max_row + 1):
+        code = normalize_text(ws.cell(r, 1).value)
+        description = normalize_text(ws.cell(r, 2).value)
+        if code and description:
+            glossary[code] = description
+    return glossary
+
+
+def parse_workbook(path: Path) -> WorkbookData:
+    wb = openpyxl.load_workbook(path, data_only=True)
+    year, make, model, vehicle_name = parse_filename_metadata(path)
+
+    trim_defs: List[TrimDef] = []
+    matrix_sheets: List[MatrixSheet] = []
+    color_sheets: List[ColorSheet] = []
+    spec_columns: List[SpecColumn] = []
+    engine_axle_entries: List[EngineAxleEntry] = []
+    trailering_records: List[TraileringRecord] = []
+    gcwr_records: List[GCWRRecord] = []
+    glossary: OrderedDict[str, str] = OrderedDict()
+
+    for name in wb.sheetnames:
+        ws = wb[name]
+        matrix = parse_matrix_sheet(ws, trim_defs or None)
+        if matrix:
+            if not trim_defs:
+                trim_defs = matrix.trim_defs
+            matrix_sheets.append(matrix)
+        if name.startswith("Colour and Trim"):
+            color_sheets.append(parse_color_sheet(ws))
+        if name.startswith("Dimensions") or name.startswith("Specs") or name in {"Dimensions", "Specs"}:
+            spec_columns.extend(parse_spec_sheet(ws))
+        if name.startswith("Engine Axles"):
+            engine_axle_entries.extend(parse_engine_axles_sheet(ws))
+        if name.startswith("Trailering Specs"):
+            records, gcwrs = parse_trailering_sheet(ws)
+            trailering_records.extend(records)
+            gcwr_records.extend(gcwrs)
+        if name == "All":
+            glossary.update(parse_glossary_sheet(ws))
+
+    propulsion = infer_propulsion(vehicle_name, engine_axle_entries)
+    vehicle_type = infer_vehicle_type(vehicle_name)
+    drive_types = infer_drive_types(engine_axle_entries, spec_columns, matrix_sheets, propulsion)
+
+    return WorkbookData(
+        path=path,
+        year=year,
+        make=make,
+        model=model,
+        vehicle_name=vehicle_name,
+        trim_defs=trim_defs,
+        matrix_sheets=matrix_sheets,
+        color_sheets=color_sheets,
+        spec_columns=spec_columns,
+        engine_axle_entries=engine_axle_entries,
+        trailering_records=trailering_records,
+        gcwr_records=gcwr_records,
+        glossary=glossary,
+        sheet_names=wb.sheetnames,
+        propulsion=propulsion,
+        vehicle_type=vehicle_type,
+        drive_types=drive_types,
+    )
+
+
+
+def referenced_codes_for_text(text: str, glossary: Dict[str, str]) -> List[Tuple[str, str]]:
+    codes = []
+    for code in CODE_IN_PARENS_RE.findall(text):
+        if code in glossary:
+            codes.append((code, glossary[code]))
+    return list(OrderedDict(((code, desc), None) for code, desc in codes).keys())
+
+
+@dataclass
+class ModelFeatureAggregate:
+    title: str
+    description: str
+    orderable_code: str
+    reference_code: str
+    source_contexts: List[str] = field(default_factory=list)
+    availability_contexts: OrderedDict[Tuple[Tuple[Tuple[str, str, Tuple[str, ...]], ...]], List[str]] = field(default_factory=OrderedDict)
+    notes: List[str] = field(default_factory=list)
+    referenced_codes: List[Tuple[str, str]] = field(default_factory=list)
+
+
+@dataclass
+class TrimFeatureAggregate:
+    title: str
+    description: str
+    orderable_code: str
+    reference_code: str
+    availability_contexts: OrderedDict[Tuple[str, str], List[str]] = field(default_factory=OrderedDict)
+    source_contexts: List[str] = field(default_factory=list)
+    notes: List[str] = field(default_factory=list)
+    referenced_codes: List[Tuple[str, str]] = field(default_factory=list)
+
+
+STATUS_PRIORITY = {
+    'Standard Equipment': 0,
+    'Included in Equipment Group': 1,
+    'Included in Equipment Group but upgradeable': 2,
+    'ADI Available': 3,
+    'Available': 4,
+    'Indicates availability of feature on multiple models': 5,
+    'Not Available': 6,
+}
+
+# Display order for availability sections — mirrors VOG ETL SECTION_LABELS ordering.
+_TRIM_SECTION_ORDER: List[str] = [
+    'Standard Equipment',
+    'Included in Equipment Group',
+    'Included in Equipment Group but upgradeable',
+    'ADI Available',
+    'Available',
+    'Indicates availability of feature on multiple models',
+]
+
+
+def _best_status_label(agg: 'TrimFeatureAggregate') -> str:
+    """Return the highest-priority (most certain) availability label for *agg*."""
+    if not agg.availability_contexts:
+        return 'Other'
+    return min(
+        (label for _raw, label in agg.availability_contexts.keys()),
+        key=lambda lbl: STATUS_PRIORITY.get(lbl, 99),
+    )
+
+
+def feature_title(label: str, orderable_code: str = '', reference_code: str = '') -> str:
+    prefix = orderable_code or reference_code
+    label = normalize_text(label)
+    if prefix:
+        return f'{prefix} | {label}'
+    return label
+
+
+def source_context(sheet_name: str, row_group: Optional[str] = None) -> str:
+    sheet_name = normalize_text(sheet_name)
+    row_group = normalize_text(row_group)
+    if row_group and row_group.lower() != sheet_name.lower():
+        return f'{sheet_name} | {row_group}'
+    return sheet_name
+
+
+def sentence_chunks(text: str, max_words: int = 110) -> List[str]:
+    text = normalize_text(text)
+    if not text:
+        return []
+    parts = [normalize_text(p) for p in re.split(r'(?<=[.!?])\s+|\n+', text) if normalize_text(p)]
+    if not parts:
+        return [text]
+    chunks: List[str] = []
+    current: List[str] = []
+    current_words = 0
+    for part in parts:
+        words = len(part.split())
+        if words > max_words and not current:
+            raw_words = part.split()
+            for i in range(0, len(raw_words), max_words):
+                chunks.append(' '.join(raw_words[i:i + max_words]))
+            continue
+        if current and current_words + words > max_words:
+            chunks.append(normalize_text(' '.join(current)))
+            current = [part]
+            current_words = words
+        else:
+            current.append(part)
+            current_words += words
+    if current:
+        chunks.append(normalize_text(' '.join(current)))
+    return [c for c in chunks if c]
+
+
+def chunk_list(items: Sequence[str], max_words: int = 110, max_items: int = 8) -> List[List[str]]:
+    chunks: List[List[str]] = []
+    current: List[str] = []
+    current_words = 0
+    for item in items:
+        item = normalize_text(item)
+        if not item:
+            continue
+        words = len(item.split())
+        if current and (current_words + words > max_words or len(current) >= max_items):
+            chunks.append(current)
+            current = [item]
+            current_words = words
+        else:
+            current.append(item)
+            current_words += words
+    if current:
+        chunks.append(current)
+    return chunks
+
+
+def render_article(title: str, fields: Sequence[Tuple[str, str]], bullet_groups: Sequence[Tuple[str, Sequence[str]]] = ()) -> str:
+    parts = [f'<article class="guide-record"><h3>{htmlize_text(title)}</h3>']
+    for label, value in fields:
+        value = normalize_text(value)
+        if value:
+            parts.append(f'<p><strong>{html.escape(label)}:</strong> {htmlize_text(value)}</p>')
+    for label, items in bullet_groups:
+        clean_items = [normalize_text(item) for item in items if normalize_text(item)]
+        if not clean_items:
+            continue
+        parts.append(f'<div class="record-list"><p><strong>{html.escape(label)}:</strong></p><ul>')
+        for item in clean_items:
+            parts.append(f'<li>{htmlize_text(item)}</li>')
+        parts.append('</ul></div>')
+    parts.append('</article>')
+    return ''.join(parts)
+
+
+def trim_matches_decor(trim: TrimDef, decor_value: str) -> bool:
+    decor = normalize_text(decor_value)
+    if not decor:
+        return False
+    parts = re.split(r'\s*/\s*|\s*,\s*', decor)
+    trim_values = {trim.name.lower(), trim.code.lower()}
+    for part in parts:
+        p = normalize_text(part).lower()
+        if not p:
+            continue
+        if p in trim_values:
+            return True
+        if trim.name.lower() == p:
+            return True
+        if trim.code.lower().startswith(p) or p.startswith(trim.code.lower()):
+            return True
+        name_words = trim.name.lower().split()
+        if len(name_words) == 1 and p == name_words[0]:
+            return True
+    return False
+
+
+def column_matches_trim(column: SpecColumn, trim: TrimDef) -> bool:
+    blob = ' '.join([column.top_label, column.header] + column.header_lines).lower()
+    if trim.name.lower() in blob or trim.code.lower() in blob:
+        return True
+    return False
+
+
+def collect_row_note_texts(row: MatrixRow, sheet: MatrixSheet) -> List[str]:
+    notes: List[str] = []
+    for note_text in row.inline_footnotes.values():
+        notes.append(note_text)
+    for raw in row.status_by_trim.values():
+        raw = normalize_text(raw)
+        if not raw:
+            continue
+        m = re.match(r'^(--|[A-Z]+|[■□*]+)(.*)$', raw)
+        suffix = m.group(2) if m else ''
+        for note_id in re.findall(r'\d+', suffix):
+            if note_id in row.inline_footnotes:
+                notes.append(row.inline_footnotes[note_id])
+            elif note_id in sheet.footnotes:
+                notes.append(sheet.footnotes[note_id])
+    notes.extend(row.bullet_notes)
+    return unique_preserve_order([normalize_text(n) for n in notes if normalize_text(n)])
+
+
+def summarize_model_status_groups(row: MatrixRow, trim_defs: Sequence[TrimDef], sheet: MatrixSheet) -> Tuple[Tuple[str, str, Tuple[str, ...]], ...]:
+    groups: 'OrderedDict[Tuple[str, str], List[str]]' = OrderedDict()
+    for trim in trim_defs:
+        raw = normalize_text(row.status_by_trim.get(trim.key))
+        if not raw:
+            continue
+        _code, label, _notes = parse_status_value(raw, row.inline_footnotes, sheet.footnotes)
+        groups.setdefault((raw, label), []).append(trim.name or trim.code)
+    return tuple((raw, label, tuple(names)) for (raw, label), names in groups.items())
+
+
+def model_status_summary_lines(signature: Tuple[Tuple[str, str, Tuple[str, ...]], ...]) -> List[str]:
+    lines = []
+    for raw, label, names in signature:
+        lines.append(f'{label} [{raw}]: {", ".join(names)}')
+    return lines
+
+
+def sort_trim_feature(agg: TrimFeatureAggregate) -> Tuple[int, str]:
+    first_key = next(iter(agg.availability_contexts.keys()), ('', ''))
+    raw, label = first_key
+    return (STATUS_PRIORITY.get(label, 99), normalize_text(agg.title).lower(), raw)
+
+
+def aggregate_model_features(data: WorkbookData) -> List[ModelFeatureAggregate]:
+    groups: 'OrderedDict[str, ModelFeatureAggregate]' = OrderedDict()
+    for sheet in data.matrix_sheets:
+        for row in sheet.rows:
+            title = feature_title(row.label, row.option_code or '', row.ref_code or '')
+            agg = groups.get(row.identity_key)
+            if agg is None:
+                agg = ModelFeatureAggregate(
+                    title=title,
+                    description=normalize_text(row.description_main or row.description_raw),
+                    orderable_code=normalize_text(row.option_code),
+                    reference_code=normalize_text(row.ref_code),
+                )
+                groups[row.identity_key] = agg
+            else:
+                candidate_desc = normalize_text(row.description_main or row.description_raw)
+                if len(candidate_desc) > len(agg.description):
+                    agg.description = candidate_desc
+                if not agg.orderable_code and row.option_code:
+                    agg.orderable_code = normalize_text(row.option_code)
+                if not agg.reference_code and row.ref_code:
+                    agg.reference_code = normalize_text(row.ref_code)
+            ctx = source_context(sheet.name, row.row_group)
+            agg.source_contexts = unique_preserve_order(agg.source_contexts + [ctx])
+            signature = summarize_model_status_groups(row, sheet.trim_defs, sheet)
+            agg.availability_contexts.setdefault(signature, [])
+            agg.availability_contexts[signature] = unique_preserve_order(agg.availability_contexts[signature] + [ctx])
+            agg.notes = unique_preserve_order(agg.notes + collect_row_note_texts(row, sheet))
+            agg.referenced_codes = list(OrderedDict(((code, desc), None) for code, desc in (agg.referenced_codes + referenced_codes_for_text(row.description_raw, data.glossary))).keys())
+    return list(groups.values())
+
+
+def aggregate_trim_features(data: WorkbookData, trim: TrimDef) -> List[TrimFeatureAggregate]:
+    groups: 'OrderedDict[str, TrimFeatureAggregate]' = OrderedDict()
+    for sheet in data.matrix_sheets:
+        for row in sheet.rows:
+            raw = normalize_text(row.status_by_trim.get(trim.key))
+            if not raw:
+                continue
+            code, label, _notes = parse_status_value(raw, row.inline_footnotes, sheet.footnotes)
+            # Skip features that are explicitly not available on this trim.
+            # Mirrors VOG ETL: categorise_equipment_for_trim ignores '--' cells.
+            if code == '--':
+                continue
+            title = feature_title(row.label, row.option_code or '', row.ref_code or '')
+            agg = groups.get(row.identity_key)
+            if agg is None:
+                agg = TrimFeatureAggregate(
+                    title=title,
+                    description=normalize_text(row.description_main or row.description_raw),
+                    orderable_code=normalize_text(row.option_code),
+                    reference_code=normalize_text(row.ref_code),
+                )
+                groups[row.identity_key] = agg
+            else:
+                candidate_desc = normalize_text(row.description_main or row.description_raw)
+                if len(candidate_desc) > len(agg.description):
+                    agg.description = candidate_desc
+                if not agg.orderable_code and row.option_code:
+                    agg.orderable_code = normalize_text(row.option_code)
+                if not agg.reference_code and row.ref_code:
+                    agg.reference_code = normalize_text(row.ref_code)
+            ctx = source_context(sheet.name, row.row_group)
+            agg.source_contexts = unique_preserve_order(agg.source_contexts + [ctx])
+            agg.availability_contexts.setdefault((raw, label), [])
+            agg.availability_contexts[(raw, label)] = unique_preserve_order(agg.availability_contexts[(raw, label)] + [ctx])
+            agg.notes = unique_preserve_order(agg.notes + collect_row_note_texts(row, sheet))
+            agg.referenced_codes = list(OrderedDict(((code, desc), None) for code, desc in (agg.referenced_codes + referenced_codes_for_text(row.description_raw, data.glossary))).keys())
+    return sorted(groups.values(), key=sort_trim_feature)
+
+
+def collect_referenced_codes_for_model(data: WorkbookData) -> List[str]:
+    codes: List[str] = []
+    for sheet in data.matrix_sheets:
+        for row in sheet.rows:
+            for code, _desc in referenced_codes_for_text(row.description_raw, data.glossary):
+                codes.append(code)
+            for code in [row.option_code, row.ref_code]:
+                if normalize_text(code) in data.glossary:
+                    codes.append(normalize_text(code))
+    for sheet in data.color_sheets:
+        for row in sheet.interior_rows:
+            if normalize_text(row.seat_code) in data.glossary:
+                codes.append(normalize_text(row.seat_code))
+            for value in row.colors.values():
+                if normalize_text(value) in data.glossary:
+                    codes.append(normalize_text(value))
+        for row in sheet.exterior_rows:
+            if normalize_text(row.color_code) in data.glossary:
+                codes.append(normalize_text(row.color_code))
+    return unique_preserve_order(codes)
+
+
+def referenced_glossary_codes_for_trim(data: WorkbookData, trim: TrimDef) -> List[str]:
+    codes: List[str] = []
+    for agg in aggregate_trim_features(data, trim):
+        for code in [agg.orderable_code, agg.reference_code]:
+            if code and code in data.glossary:
+                codes.append(code)
+        for code, _desc in agg.referenced_codes:
+            if code in data.glossary:
+                codes.append(code)
+    for sheet in data.color_sheets:
+        for row in sheet.interior_rows:
+            if not trim_matches_decor(trim, row.decor_level):
+                continue
+            if row.seat_code and row.seat_code in data.glossary:
+                codes.append(row.seat_code)
+            for value in row.colors.values():
+                if value and value in data.glossary:
+                    codes.append(value)
+        for row in sheet.exterior_rows:
+            if row.color_code and row.color_code in data.glossary:
+                codes.append(row.color_code)
+    return unique_preserve_order(codes)
+
+
+WORKBOOKS_DIR = Path("workbooks")
+OUTPUT_DIR = Path("workbooks_html")
+
+
+def main(argv: Optional[Sequence[str]] = None) -> int:
+    parser = argparse.ArgumentParser(
+        description='Convert a GM Vehicle Order Guide workbook into chunk-budget-aware model and trim HTML files for RAG.'
+    )
+    parser.add_argument(
+        'files',
+        nargs='*',
+        type=Path,
+        help='Specific xlsx files to convert. Defaults to all files in workbooks/.',
+    )
+    parser.add_argument('-o', '--output-dir', help='Directory for generated HTML files')
+    args = parser.parse_args(argv)
+
+    output_dir = Path(args.output_dir) if args.output_dir else OUTPUT_DIR
+
+    xlsx_files = args.files if args.files else list(WORKBOOKS_DIR.glob("*.xlsx"))
+
+    if not xlsx_files:
+        print(f"No xlsx files found in {WORKBOOKS_DIR}/")
+        return 0
+
+    for workbook_path in xlsx_files:
+        if not workbook_path.exists():
+            print(f'Workbook not found: {workbook_path}', file=sys.stderr)
+            continue
+        data = parse_workbook(workbook_path)
+        manifest = write_outputs(data, output_dir)
+        print(json.dumps(manifest, indent=2))
+    return 0
+
+
+# --- Hybrid RAG rendering revision: stronger entity identity, grouped category passages,
+# --- atomic feature records, and no glossary output.
+
+CATEGORY_SEQUENCE = [
+    'Safety and driver assistance',
+    'Technology and connectivity',
+    'Interior and comfort',
+    'Exterior and utility',
+    'Wheels and tires',
+    'Mechanical and performance',
+    'Packages and options',
+    'Colour and trim',
+    'Specifications and dimensions',
+    'Engine, axle and GVWR',
+    'Trailering and GCWR',
+    'Other guide content',
+]
+CATEGORY_ORDER = {name: idx for idx, name in enumerate(CATEGORY_SEQUENCE)}
+
+
+def page_entity(data: WorkbookData, trim: Optional[TrimDef] = None) -> str:
+    if trim is None:
+        return data.vehicle_name
+    return normalize_text(f'{data.vehicle_name} {trim.name}')
+
+
+def full_trim_heading(data: WorkbookData, trim: TrimDef) -> str:
+    base = page_entity(data, trim)
+    if trim.code and trim.code.lower() != trim.name.lower():
+        return f'{base} ({trim.code})'
+    return base
+
+
+def article_heading(entity: str, base_title: str) -> str:
+    base_title = normalize_text(base_title)
+    if not base_title:
+        return entity
+    return f'{entity} | {base_title}'
+
+
+def source_tabs_from_contexts(contexts: Sequence[str]) -> str:
+    tabs: List[str] = []
+    for context in contexts:
+        context = normalize_text(context)
+        if not context:
+            continue
+        first = normalize_text(context.split('|', 1)[0])
+        if first:
+            tabs.append(first)
+    return '; '.join(unique_preserve_order(tabs))
+
+
+def compact_text(text: str, max_words: int = 20) -> str:
+    text = normalize_text(text)
+    if not text:
+        return ''
+    words = text.split()
+    if len(words) <= max_words:
+        return text
+    return ' '.join(words[:max_words]).rstrip(',;:') + '...'
+
+
+def dedupe_fields(fields: Sequence[Tuple[str, str]]) -> List[Tuple[str, str]]:
+    cleaned: List[Tuple[str, str]] = []
+    seen = set()
+    for label, value in fields:
+        label = normalize_text(label)
+        value = normalize_text(value)
+        if not label or not value:
+            continue
+        key = (label, value)
+        if key in seen:
+            continue
+        seen.add(key)
+        cleaned.append((label, value))
+    return cleaned
+
+
+def identity_fields(
+    data: WorkbookData,
+    trim: Optional[TrimDef] = None,
+    *,
+    extra_fields: Sequence[Tuple[str, str]] = (),
+    drive_type: Optional[str] = None,
+) -> List[Tuple[str, str]]:
+    """Return the minimal set of grounding fields for a RAG chunk.
+
+    Only includes fields NOT already present in the article title (vehicle name,
+    trim name, and trim code are omitted). Focuses on contextual attributes like
+    propulsion type and drive configuration that are critical for RAG but not
+    redundant with the heading.
+    """
+    fields: List[Tuple[str, str]] = []
+    
+    # Include propulsion and vehicle type - not in title but important context
+    if data.propulsion:
+        fields.append(('Propulsion', data.propulsion))
+    if data.vehicle_type:
+        fields.append(('Vehicle type', data.vehicle_type.upper()))
+    
+    # Include drive type info - critical for feature applicability
+    if trim is not None:
+        resolved_drive = drive_type or infer_trim_drive_type(data.spec_columns, trim, data.drive_types)
+        if resolved_drive:
+            fields.append(('Drive type', resolved_drive))
+        elif data.drive_types:
+            fields.append(('Drive types', ', '.join(data.drive_types)))
+    else:
+        if data.drive_types:
+            fields.append(('Drive types', ', '.join(data.drive_types)))
+    
+    fields.extend(extra_fields)
+    return dedupe_fields(fields)
+
+
+def infer_feature_category(*texts: str) -> str:
+    blob = ' '.join(normalize_text(text).lower() for text in texts if normalize_text(text))
+    if not blob:
+        return 'Other guide content'
+
+    if 'colour and trim' in blob or 'color and trim' in blob or ' paint' in blob or blob.startswith('paint ') or 'decor level' in blob:
+        return 'Colour and trim'
+
+    safety_keywords = [
+        'airbag', 'airbags', 'blind zone', 'collision', 'cruise', 'driver assistance', 'following distance',
+        'hd surround vision', 'lane ', 'pedestrian', 'parking assist', 'rear cross traffic', 'rear pedestrian',
+        'safety', 'seat belt', 'stability control', 'traffic sign', 'traction control', 'warning', 'alert',
+        'camera', 'restraint', 'teen driver', 'sensing system', 'automatic emergency braking', 'brake assist',
+        'reverse automatic braking', 'tire pressure monitor', 'rear park assist'
+    ]
+    if any(keyword in blob for keyword in safety_keywords):
+        return 'Safety and driver assistance'
+
+    technology_keywords = [
+        'android auto', 'apple carplay', 'audio system', 'bluetooth', 'display', 'google built-in',
+        'head-up display', 'infotainment', 'mychevrolet', 'navigation', 'onstar', 'phone', 'radio',
+        'remote start', 'screen', 'siriusxm', 'smartphone', 'speaker', 'usb', 'wi-fi', 'wifi',
+        'wireless', 'charging pad', 'charging-only', 'device charging', 'driver information center'
+    ]
+    if any(keyword in blob for keyword in technology_keywords):
+        return 'Technology and connectivity'
+
+    wheels_keywords = ['wheel', 'wheels', 'tire', 'tires', 'spare tire', 'spare wheel', 'lug nut', 'wheel lock']
+    if any(keyword in blob for keyword in wheels_keywords):
+        return 'Wheels and tires'
+
+    mechanical_keywords = [
+        'all-wheel drive', 'axle', 'battery', 'brakes', 'charging', 'charger', 'drive unit', 'drivetrain',
+        'electric drive', 'engine', 'evot? ', 'fuel', 'gvwr', 'horsepower', 'motor', 'payload', 'performance',
+        'powertrain', 'propulsion', 'range', 'rear axle', 'suspension', 'torque', 'tow', 'trailer',
+        'trailering', 'transmission'
+    ]
+    if any(keyword in blob for keyword in mechanical_keywords):
+        return 'Mechanical and performance'
+
+    exterior_keywords = [
+        'bed', 'box', 'bumper', 'cargo', 'cross rails', 'door', 'emblem', 'fascia', 'glass', 'grille',
+        'headlamp', 'hood', 'lamp', 'liftgate', 'license plate', 'mirror, outside', 'nameplate', 'roof',
+        'running board', 'splash guard', 'tailgate', 'window', 'wiper', 'privacy glass', 'deep tint'
+    ]
+    if any(keyword in blob for keyword in exterior_keywords):
+        return 'Exterior and utility'
+
+    interior_keywords = [
+        'air conditioning', 'ambient', 'armrest', 'carpet', 'climate', 'console', 'cup holder', 'driver seat',
+        'floor mat', 'headrest', 'heated seat', 'inside rearview', 'instrument panel', 'lumbar', 'rear seat',
+        'seat adjuster', 'seat trim', 'seating', 'seats', 'steering wheel', 'sun visor', 'visor', 'interior'
+    ]
+    if any(keyword in blob for keyword in interior_keywords):
+        return 'Interior and comfort'
+
+    package_keywords = ['package', 'equipment group', 'lpo', 'accessory', 'dealer-installed', 'option']
+    if any(keyword in blob for keyword in package_keywords):
+        return 'Packages and options'
+
+    if 'interior' in blob:
+        return 'Interior and comfort'
+    if 'exterior' in blob:
+        return 'Exterior and utility'
+    if 'mechanical' in blob:
+        return 'Mechanical and performance'
+    if 'wheels' in blob:
+        return 'Wheels and tires'
+    if 'onstar' in blob or 'siriusxm' in blob:
+        return 'Technology and connectivity'
+    return 'Other guide content'
+
+
+def sort_category_key(category: str) -> Tuple[int, str]:
+    return (CATEGORY_ORDER.get(category, 999), normalize_text(category).lower())
+
+
+def category_for_trim_feature(agg: TrimFeatureAggregate) -> str:
+    return infer_feature_category(' '.join(agg.source_contexts), agg.title, agg.description)
+
+
+def category_for_model_feature(agg: ModelFeatureAggregate) -> str:
+    return infer_feature_category(' '.join(agg.source_contexts), agg.title, agg.description)
+
+
+def availability_lines_for_trim(agg: TrimFeatureAggregate) -> List[str]:
+    lines: List[str] = []
+    for (raw, label), contexts in agg.availability_contexts.items():
+        context_text = '; '.join(contexts)
+        if context_text:
+            lines.append(f'{label} [{raw}] — {context_text}')
+        else:
+            lines.append(f'{label} [{raw}]')
+    return lines
+
+
+def availability_summary_for_trim(agg: TrimFeatureAggregate) -> str:
+    parts: List[str] = []
+    for (raw, label), contexts in agg.availability_contexts.items():
+        tabs = source_tabs_from_contexts(contexts)
+        bit = f'{label} [{raw}]'
+        if tabs:
+            bit += f' ({tabs})'
+        parts.append(bit)
+    return '; '.join(parts)
+
+
+def availability_lines_for_model(agg: ModelFeatureAggregate) -> List[str]:
+    lines: List[str] = []
+    for signature, contexts in agg.availability_contexts.items():
+        summary = ' ; '.join(model_status_summary_lines(signature))
+        context_text = '; '.join(contexts)
+        if context_text:
+            lines.append(f'{summary} — {context_text}')
+        else:
+            lines.append(summary)
+    return lines
+
+
+def availability_summary_for_model(agg: ModelFeatureAggregate) -> str:
+    parts: List[str] = []
+    for signature, _contexts in agg.availability_contexts.items():
+        parts.append(' ; '.join(model_status_summary_lines(signature)))
+    return ' / '.join(parts)
+
+
+def chunk_feature_items(items: Sequence[str]) -> List[List[str]]:
+    return chunk_list(items, max_words=135, max_items=8)
+
+
+def render_page_identity_section(data: WorkbookData, trim: Optional[TrimDef] = None) -> str:
+    """Render a compact vehicle/trim identity block.
+
+    Contains only the facts an LLM needs to ground a chunk: vehicle name,
+    vehicle type, propulsion, drive type, and (for trim pages) the trim name
+    and code.  Source tabs and raw trim headers are omitted — they are Excel
+    bookkeeping details, not consumer-facing facts.
+    """
+    entity = full_trim_heading(data, trim) if trim is not None else data.vehicle_name
+    parts = [f'<section class="guide-context"><h2>{html.escape(entity)} | Vehicle information</h2>']
+
+    fields: List[Tuple[str, str]] = [('Vehicle', data.vehicle_name)]
+    if data.vehicle_type:
+        fields.append(('Vehicle type', data.vehicle_type.upper()))
+    if data.propulsion:
+        fields.append(('Propulsion', data.propulsion))
+
+    if trim is not None:
+        fields.append(('Trim', trim.name))
+        if trim.code:
+            fields.append(('Trim code', trim.code))
+        trim_drive = infer_trim_drive_type(data.spec_columns, trim, data.drive_types)
+        if trim_drive:
+            fields.append(('Drive type', trim_drive))
+        elif data.drive_types:
+            fields.append(('Drive types', ', '.join(data.drive_types)))
+    else:
+        if data.drive_types:
+            fields.append(('Drive types', ', '.join(data.drive_types)))
+        trims_text = ' | '.join(
+            f'{t.name} ({t.code})' if t.code and t.code != t.name else t.name
+            for t in data.trim_defs if t.name
+        )
+        if trims_text:
+            fields.append(('Available trims', trims_text))
+
+    parts.append(render_article(article_heading(entity, 'Vehicle information'), dedupe_fields(fields)))
+    parts.append('</section>')
+    return ''.join(parts)
+
+
+def render_matrix_legend_section(data: WorkbookData, page_title: str) -> str:
+    if not data.matrix_sheets:
+        return ''
+    legend_text = normalize_text(data.matrix_sheets[0].legend_text)
+    if not legend_text:
+        return ''
+    return '<section class="matrix-legend">' + render_article(
+        article_heading(page_title, 'Matrix availability legend'),
+        identity_fields(data, extra_fields=[('Legend from guide', legend_text)]),
+    ) + '</section>'
+
+
+def trim_group_line(agg: TrimFeatureAggregate) -> str:
+    feature_text = compact_text(agg.description or agg.title, max_words=18)
+    availability = availability_summary_for_trim(agg)
+    line = f'{feature_text} — {availability}'
+    if agg.notes:
+        note = normalize_text(agg.notes[0])
+        line += f' — {note}'
+    return line
+
+
+def model_group_line(agg: ModelFeatureAggregate) -> str:
+    feature_text = compact_text(agg.description or agg.title, max_words=18)
+    availability = availability_summary_for_model(agg)
+    line = f'{feature_text} — {availability}'
+    if agg.notes:
+        note = normalize_text(agg.notes[0])
+        line += f' — {note}'
+    return line
+
+
+def grouped_feature_sections(
+    data: WorkbookData,
+    features: Sequence[object],
+    *,
+    trim: Optional[TrimDef] = None,
+    model_mode: bool = False,
+) -> str:
+    if not features:
+        return ''
+    entity = full_trim_heading(data, trim) if trim is not None else data.vehicle_name
+    category_groups: Dict[str, List[object]] = OrderedDict()
+    for feature in features:
+        category = category_for_model_feature(feature) if model_mode else category_for_trim_feature(feature)
+        category_groups.setdefault(category, []).append(feature)
+
+    parts = [f'<section class="grouped-feature-passages"><h2>{html.escape(entity)} | Grouped feature passages from guide</h2>']
+    for category in sorted(category_groups.keys(), key=sort_category_key):
+        items = category_groups[category]
+        lines = [model_group_line(item) if model_mode else trim_group_line(item) for item in items]
+        for idx, line_chunk in enumerate(chunk_feature_items(lines), start=1):
+            title = f'{category} | grouped guide passage'
+            if idx > 1:
+                title += f' | part {idx}'
+            parts.append(
+                render_article(
+                    article_heading(entity, title),
+                    identity_fields(data, trim),
+                    [('Feature lines from guide', line_chunk)],
+                )
+            )
+    parts.append('</section>')
+    return ''.join(parts)
+
+
+def exact_model_feature_section(data: WorkbookData, features: Sequence[ModelFeatureAggregate]) -> str:
+    if not features:
+        return ''
+    entity = data.vehicle_name
+    parts = [f'<section class="exact-feature-records"><h2>{html.escape(entity)} | Exact feature records from guide</h2>']
+    ordered = sorted(features, key=lambda agg: (sort_category_key(category_for_model_feature(agg)), normalize_text(agg.title).lower()))
+    for agg in ordered:
+        category = category_for_model_feature(agg)
+        fields = identity_fields(
+            data,
+            extra_fields=[('Category', category), ('Source', '; '.join(agg.source_contexts))],
+        )
+        fields.append(('Guide text', agg.description))
+        bullet_groups: List[Tuple[str, Sequence[str]]] = []
+        availability_lines = availability_lines_for_model(agg)
+        if availability_lines:
+            bullet_groups.append(('Availability by trim', availability_lines))
+        if agg.notes:
+            bullet_groups.append(('Guide notes', agg.notes))
+        parts.append(render_article(article_heading(entity, agg.title), fields, bullet_groups))
+    parts.append('</section>')
+    return ''.join(parts)
+
+
+def exact_trim_feature_section(data: WorkbookData, trim: TrimDef, features: Sequence[TrimFeatureAggregate]) -> str:
+    if not features:
+        return ''
+    entity = full_trim_heading(data, trim)
+    parts = [f'<section class="exact-feature-records"><h2>{html.escape(entity)} | Exact feature records from guide</h2>']
+    ordered = sorted(features, key=lambda agg: (sort_category_key(category_for_trim_feature(agg)), sort_trim_feature(agg)))
+    for agg in ordered:
+        category = category_for_trim_feature(agg)
+        fields = identity_fields(
+            data,
+            trim,
+            extra_fields=[('Category', category), ('Source', '; '.join(agg.source_contexts))],
+        )
+        fields.append(('Guide text', agg.description))
+        bullet_groups: List[Tuple[str, Sequence[str]]] = []
+        availability_lines = availability_lines_for_trim(agg)
+        if availability_lines:
+            bullet_groups.append(('Availability on this trim', availability_lines))
+        if agg.notes:
+            bullet_groups.append(('Guide notes', agg.notes))
+        parts.append(render_article(article_heading(entity, agg.title), fields, bullet_groups))
+    parts.append('</section>')
+    return ''.join(parts)
+
+
+def render_model_feature_sections(data: WorkbookData) -> str:
+    """Render model-level features grouped by feature category.
+
+    Each category section (Safety, Technology, Interior, etc.) lists every
+    feature with a compact availability summary showing which trims have it
+    and at what status (Standard / Available / etc.).
+    """
+    features = aggregate_model_features(data)
+    if not features:
+        return ''
+    entity = data.vehicle_name
+
+    category_groups: Dict[str, List[ModelFeatureAggregate]] = OrderedDict()
+    for agg in features:
+        cat = category_for_model_feature(agg)
+        category_groups.setdefault(cat, []).append(agg)
+
+    parts = [f'<section class="model-features"><h2>{html.escape(entity)} | Features and availability</h2>']
+    for category in sorted(category_groups.keys(), key=sort_category_key):
+        cat_feats = category_groups[category]
+        items: List[str] = []
+        for agg in cat_feats:
+            desc = compact_text(agg.description or agg.title, max_words=25)
+            avail = availability_summary_for_model(agg)
+            items.append(f'{desc} — {avail}')
+        for idx, chunk in enumerate(chunk_feature_items(items), start=1):
+            title = category
+            if idx > 1:
+                title += f' | part {idx}'
+            parts.append(
+                render_article(
+                    article_heading(entity, title),
+                    identity_fields(data),
+                    [('Feature availability from guide', chunk)],
+                )
+            )
+    parts.append('</section>')
+    return ''.join(parts)
+
+
+def render_trim_feature_sections(data: WorkbookData, trim: TrimDef) -> str:
+    """Render trim features grouped by availability section, then by source sheet.
+
+    Section order mirrors VOG ETL’s SECTION_LABELS:
+      Standard Equipment → Included in Equipment Group → … → Available
+
+    Within each section features are grouped by the source sheet they
+    came from (Standard Equipment, Interior, Exterior, Mechanical, Wheels…).
+    Each feature line is: ``(RPO code) Description — condition note``
+    """
+    features = aggregate_trim_features(data, trim)
+    if not features:
+        return ''
+    entity = full_trim_heading(data, trim)
+
+    # Bucket: section_label → source_sheet → [agg, ...]
+    section_buckets: Dict[str, Dict[str, List[TrimFeatureAggregate]]] = OrderedDict(
+        (label, OrderedDict()) for label in _TRIM_SECTION_ORDER
+    )
+    for agg in features:
+        label = _best_status_label(agg)
+        bucket = section_buckets.setdefault(label, OrderedDict())
+        # Primary source = sheet name (everything before the first ' | ')
+        primary_src = (
+            normalize_text(agg.source_contexts[0]).split(' | ')[0]
+            if agg.source_contexts else 'Other'
+        )
+        bucket.setdefault(primary_src, []).append(agg)
+
+    parts = [f'<section class="trim-features"><h2>{html.escape(entity)} | Equipment and features</h2>']
+    for section_label in _TRIM_SECTION_ORDER:
+        by_source = section_buckets.get(section_label, {})
+        if not by_source:
+            continue
+        for source_name, source_feats in by_source.items():
+            items: List[str] = []
+            for agg in source_feats:
+                desc = normalize_text(agg.description or agg.title)
+                code = agg.orderable_code or agg.reference_code
+                line = f'({code}) {desc}' if code else desc
+                if agg.notes:
+                    line += f' — {agg.notes[0]}'
+                items.append(line)
+            for idx, chunk in enumerate(chunk_list(items, max_words=110, max_items=8), start=1):
+                title = f'{section_label} | {source_name}'
+                if idx > 1:
+                    title += f' | part {idx}'
+                parts.append(
+                    render_article(
+                        article_heading(entity, title),
+                        identity_fields(data, trim),
+                        [('Features', chunk)],
+                    )
+                )
+    parts.append('</section>')
+    return ''.join(parts)
+
+
+def render_model_color_sections(data: WorkbookData) -> str:
+    if not data.color_sheets:
+        return ''
+    entity = data.vehicle_name
+    parts = [f'<section class="colour-trim-sections"><h2>{html.escape(entity)} | Colour and trim from guide</h2>']
+    for sheet in data.color_sheets:
+        # ── Interior: group rows by decor level, nest seat materials + colours
+        if sheet.interior_rows:
+            # Collect {decor_level: [(seat_type, seat_trim, seat_code, [(color_name, code)])...]}
+            decor_groups: 'OrderedDict[str, List[Tuple]]' = OrderedDict()
+            for row in sheet.interior_rows:
+                color_pairs = [
+                    (color_name, code)
+                    for color_name, code in row.colors.items()
+                    if normalize_text(code) and normalize_text(code) != '--'
+                ]
+                if not color_pairs:
+                    continue
+                decor_groups.setdefault(row.decor_level, []).append(
+                    (row.seat_type, row.seat_trim, row.seat_code, color_pairs)
+                )
+
+            interior_group_lines: List[str] = []
+            for decor_level, seat_rows in decor_groups.items():
+                for seat_type, seat_trim, seat_code, color_pairs in seat_rows:
+                    if len(color_pairs) == 1:
+                        color_name, code = color_pairs[0]
+                        line = f'{decor_level} | {seat_trim} — {color_name}: {code}'
+                    else:
+                        color_text = '; '.join(f'{cn}: {code}' for cn, code in color_pairs)
+                        line = f'{decor_level} | {seat_trim} — {color_text}'
+                    interior_group_lines.append(line)
+                    # Atomic record per decor+seat row
+                    color_items = [f'{cn}: {code}' for cn, code in color_pairs]
+                    parts.append(
+                        render_article(
+                            article_heading(entity, feature_title(f'Interior trim | {decor_level} | {seat_trim}', seat_code)),
+                            identity_fields(
+                                data,
+                                extra_fields=[
+                                    ('Decor level', decor_level),
+                                    ('Seat type', seat_type),
+                                    ('Seat trim', seat_trim),
+                                ],
+                            ),
+                            [('Interior colours and guide values', color_items)],
+                        )
+                    )
+
+            if interior_group_lines:
+                for idx, chunk in enumerate(chunk_feature_items(interior_group_lines), start=1):
+                    title = 'Colour and trim | interior grouped passage'
+                    if idx > 1:
+                        title += f' | part {idx}'
+                    parts.append(
+                        render_article(
+                            article_heading(entity, title),
+                            identity_fields(data),
+                            [('Interior colour and trim lines from guide', chunk)],
+                        )
+                    )
+
+        # ── Exterior: nested "Available with Interior Colours" list
+        if sheet.exterior_rows:
+            exterior_group_lines: List[str] = []
+            for row in sheet.exterior_rows:
+                available_interiors = [
+                    color_name
+                    for color_name, status in row.colors.items()
+                    if normalize_text(status) and normalize_text(status).upper() in ('A', 'S')
+                ]
+                title_value, title_note_ids = parse_value_and_footnote_ids(row.title)
+                note_texts = [sheet.footnotes[nid] for nid in title_note_ids if nid in sheet.footnotes]
+                paint_name = title_value or row.title
+                line = ' | '.join(x for x in [paint_name, row.color_code] if normalize_text(x))
+                if available_interiors:
+                    line += ' — Available with: ' + ', '.join(available_interiors)
+                exterior_group_lines.append(line)
+
+                bullet_groups: List[Tuple[str, Sequence[str]]] = []
+                if available_interiors:
+                    bullet_groups.append(('Available with Interior Colours', available_interiors))
+                if note_texts:
+                    bullet_groups.append(('Guide notes', note_texts))
+                parts.append(
+                    render_article(
+                        article_heading(entity, feature_title(f'Exterior paint | {paint_name}', row.color_code)),
+                        identity_fields(
+                            data,
+                            extra_fields=[('Touch-Up Paint Number', row.touch_up_paint_number)],
+                        ),
+                        bullet_groups,
+                    )
+                )
+
+            if exterior_group_lines:
+                for idx, chunk in enumerate(chunk_feature_items(exterior_group_lines), start=1):
+                    title = 'Colour and trim | exterior paint grouped passage'
+                    if idx > 1:
+                        title += f' | part {idx}'
+                    parts.append(
+                        render_article(
+                            article_heading(entity, title),
+                            identity_fields(data),
+                            [('Exterior paint lines from guide', chunk)],
+                        )
+                    )
+
+        general_notes = unique_preserve_order(list(sheet.footnotes.values()) + list(sheet.bullet_notes))
+        if general_notes:
+            parts.append(
+                render_article(
+                    article_heading(entity, f'{sheet.name} | colour and trim notes'),
+                    identity_fields(data),
+                    [('Guide notes', general_notes)],
+                )
+            )
+    parts.append('</section>')
+    return ''.join(parts)
+
+
+def render_trim_color_sections(data: WorkbookData, trim: TrimDef) -> str:
+    if not data.color_sheets:
+        return ''
+    entity = full_trim_heading(data, trim)
+    parts = [f'<section class="trim-colours"><h2>{html.escape(entity)} | Colour and trim from guide</h2>']
+    for sheet in data.color_sheets:
+        # ── Interior: only rows matching this trim, grouped by seat material
+        trim_interior_rows = [row for row in sheet.interior_rows if trim_matches_decor(trim, row.decor_level)]
+        relevant_interior_columns: List[str] = []
+
+        if trim_interior_rows:
+            interior_group_lines: List[str] = []
+            for row in trim_interior_rows:
+                color_pairs = [
+                    (color_name, code)
+                    for color_name, code in row.colors.items()
+                    if normalize_text(code) and normalize_text(code) != '--'
+                ]
+                if not color_pairs:
+                    continue
+                relevant_interior_columns.extend(cn for cn, _ in color_pairs)
+                if len(color_pairs) == 1:
+                    color_name, code = color_pairs[0]
+                    line = f'{row.decor_level} | {row.seat_trim} — {color_name}: {code}'
+                else:
+                    color_text = '; '.join(f'{cn}: {code}' for cn, code in color_pairs)
+                    line = f'{row.decor_level} | {row.seat_trim} — {color_text}'
+                interior_group_lines.append(line)
+                color_items = [f'{cn}: {code}' for cn, code in color_pairs]
+                parts.append(
+                    render_article(
+                        article_heading(entity, feature_title(f'Interior trim | {row.decor_level} | {row.seat_trim}', row.seat_code)),
+                        identity_fields(
+                            data,
+                            trim,
+                            extra_fields=[
+                                ('Decor level', row.decor_level),
+                                ('Seat type', row.seat_type),
+                                ('Seat trim', row.seat_trim),
+                            ],
+                        ),
+                        [('Interior colours and guide values', color_items)],
+                    )
+                )
+
+            relevant_interior_columns = unique_preserve_order(relevant_interior_columns)
+
+            if interior_group_lines:
+                for idx, chunk in enumerate(chunk_feature_items(interior_group_lines), start=1):
+                    title = 'Colour and trim | interior grouped passage'
+                    if idx > 1:
+                        title += f' | part {idx}'
+                    parts.append(
+                        render_article(
+                            article_heading(entity, title),
+                            identity_fields(data, trim),
+                            [('Interior colour and trim lines from guide', chunk)],
+                        )
+                    )
+
+        # ── Exterior: only show paints where this trim's interior colours are available
+        grouped_exterior_lines: List[str] = []
+        for row in sheet.exterior_rows:
+            available_interiors = [
+                color_name
+                for color_name in relevant_interior_columns
+                if normalize_text(row.colors.get(color_name, '')).upper() in ('A', 'S')
+            ] if relevant_interior_columns else [
+                color_name
+                for color_name, status in row.colors.items()
+                if normalize_text(status).upper() in ('A', 'S')
+            ]
+            if not available_interiors and relevant_interior_columns:
+                continue
+            title_value, title_note_ids = parse_value_and_footnote_ids(row.title)
+            note_texts = [sheet.footnotes[nid] for nid in title_note_ids if nid in sheet.footnotes]
+            paint_name = title_value or row.title
+            line = ' | '.join(x for x in [paint_name, row.color_code] if normalize_text(x))
+            if available_interiors:
+                line += ' — Available with: ' + ', '.join(available_interiors)
+            grouped_exterior_lines.append(line)
+
+            bullet_groups: List[Tuple[str, Sequence[str]]] = []
+            if available_interiors:
+                bullet_groups.append(('Available with Interior Colours', available_interiors))
+            if note_texts:
+                bullet_groups.append(('Guide notes', note_texts))
+            parts.append(
+                render_article(
+                    article_heading(entity, feature_title(f'Exterior paint | {paint_name}', row.color_code)),
+                    identity_fields(
+                        data,
+                        trim,
+                        extra_fields=[('Touch-Up Paint Number', row.touch_up_paint_number)],
+                    ),
+                    bullet_groups,
+                )
+            )
+
+        if grouped_exterior_lines:
+            for idx, chunk in enumerate(chunk_feature_items(grouped_exterior_lines), start=1):
+                title = 'Colour and trim | exterior paint grouped passage'
+                if idx > 1:
+                    title += f' | part {idx}'
+                parts.append(
+                    render_article(
+                        article_heading(entity, title),
+                        identity_fields(data, trim),
+                        [('Exterior paint lines from guide', chunk)],
+                    )
+                )
+
+        general_notes = unique_preserve_order(list(sheet.footnotes.values()) + list(sheet.bullet_notes))
+        if general_notes:
+            parts.append(
+                render_article(
+                    article_heading(entity, f'{sheet.name} | colour and trim notes'),
+                    identity_fields(data, trim),
+                    [('Guide notes', general_notes)],
+                )
+            )
+    parts.append('</section>')
+    return ''.join(parts)
+
+
+def render_spec_records(data: WorkbookData, columns: List[SpecColumn], *, trim: Optional[TrimDef] = None) -> str:
+    if not columns:
+        return ''
+    entity = full_trim_heading(data, trim) if trim is not None else data.vehicle_name
+    parts = [f'<section class="spec-sections"><h2>{html.escape(entity)} | Specifications and dimensions from guide</h2>']
+    for column in columns:
+        grouped: 'OrderedDict[str, List[str]]' = OrderedDict()
+        for cell in column.cells:
+            grouped.setdefault(cell.section or 'Data', []).append(f'{cell.label}: {cell.value}')
+        header_context = unique_preserve_order([x for x in [column.top_label, column.header] + column.header_lines if normalize_text(x)])
+        header_text = ' | '.join(header_context)
+        for section_name, values in grouped.items():
+            for idx, value_chunk in enumerate(chunk_list(values, max_words=110, max_items=8), start=1):
+                title = f'Specifications and dimensions | {section_name}'
+                if header_text:
+                    title += f' | {column.header or column.top_label}'
+                if idx > 1:
+                    title += f' | part {idx}'
+                parts.append(
+                    render_article(
+                        article_heading(entity, title),
+                        identity_fields(
+                            data,
+                            trim,
+                            extra_fields=[('Column context', header_text)],
+                        ),
+                        [('Guide values', value_chunk)],
+                    )
+                )
+    parts.append('</section>')
+    return ''.join(parts)
+
+
+def render_trim_spec_sections(data: WorkbookData, trim: TrimDef) -> str:
+    direct_columns = [column for column in data.spec_columns if column_matches_trim(column, trim)]
+    if direct_columns:
+        return render_spec_records(data, direct_columns, trim=trim)
+    return render_spec_records(data, data.spec_columns, trim=trim)
+
+
+def render_engine_axles_section(data: WorkbookData) -> str:
+    if not data.engine_axle_entries:
+        return ''
+    entity = data.vehicle_name
+    parts = [f'<section class="engine-axles"><h2>{html.escape(entity)} | Engine, axle and GVWR from guide</h2>']
+    for entry in data.engine_axle_entries:
+        grouped: 'OrderedDict[str, List[str]]' = OrderedDict()
+        for item in entry.items:
+            line = f'{item.name}: {item.status_label} [{item.raw_status}]'
+            if item.notes:
+                line += ' — ' + '; '.join(item.notes)
+            grouped.setdefault(item.category or 'Guide values', []).append(line)
+        for category, items in grouped.items():
+            for idx, chunk in enumerate(chunk_list(items, max_words=110, max_items=8), start=1):
+                title = f'Engine, axle and GVWR | {entry.model_code} | {entry.engine} | {category}'
+                if idx > 1:
+                    title += f' | part {idx}'
+                parts.append(
+                    render_article(
+                        article_heading(entity, title),
+                        identity_fields(
+                            data,
+                            extra_fields=[('Top label', entry.top_label)],
+                        ),
+                        [('Guide values', chunk)],
+                    )
+                )
+    parts.append('</section>')
+    return ''.join(parts)
+
+
+def render_trailering_section(data: WorkbookData) -> str:
+    if not data.trailering_records and not data.gcwr_records:
+        return ''
+    entity = data.vehicle_name
+    parts = [f'<section class="trailering"><h2>{html.escape(entity)} | Trailering and GCWR from guide</h2>']
+    for record in data.trailering_records:
+        bullet_groups: List[Tuple[str, Sequence[str]]] = []
+        if record.note_text:
+            bullet_groups.append(('Guide text', sentence_chunks(record.note_text, max_words=90)))
+        if record.footnotes:
+            bullet_groups.append(('Guide notes', record.footnotes))
+        parts.append(
+            render_article(
+                article_heading(entity, f'Trailering and GCWR | {record.model_code} | {record.engine} | {record.axle_ratio}'),
+                identity_fields(
+                    data,
+                    extra_fields=[
+                        ('Rating type', record.rating_type),
+                        ('Maximum trailer weight', record.max_trailer_weight),
+                    ],
+                ),
+                bullet_groups,
+            )
+        )
+    for record in data.gcwr_records:
+        bullet_groups: List[Tuple[str, Sequence[str]]] = []
+        if record.footnotes:
+            bullet_groups.append(('Guide notes', record.footnotes))
+        else:
+            bullet_groups.append(('Guide values', [f'GCWR: {record.gcwr}']))
+        parts.append(
+            render_article(
+                article_heading(entity, f'Trailering and GCWR | GCWR | {record.engine} | {record.gcwr}'),
+                identity_fields(
+                    data,
+                    extra_fields=[('Table title', record.table_title), ('Axle ratio', record.axle_ratio)],
+                ),
+                bullet_groups,
+            )
+        )
+    parts.append('</section>')
+    return ''.join(parts)
+
+
+def render_model_page(data: WorkbookData) -> str:
+    entity = data.vehicle_name
+    parts = [
+        '<html><head><meta charset="utf-8"></head><body>',
+        f'<h1>{html.escape(entity)} | Vehicle Order Guide</h1>',
+        render_page_identity_section(data),
+        render_model_feature_sections(data),
+        render_model_color_sections(data),
+        render_spec_records(data, data.spec_columns),
+        render_engine_axles_section(data),
+        render_trailering_section(data),
+        '</body></html>',
+    ]
+    return ''.join(part for part in parts if part)
+
+
+def render_trim_page(data: WorkbookData, trim: TrimDef) -> str:
+    entity = full_trim_heading(data, trim)
+    parts = [
+        '<html><head><meta charset="utf-8"></head><body>',
+        f'<h1>{html.escape(entity)} | Vehicle Order Guide</h1>',
+        render_page_identity_section(data, trim=trim),
+        render_trim_feature_sections(data, trim),
+        render_trim_color_sections(data, trim),
+        render_trim_spec_sections(data, trim),
+        '</body></html>',
+    ]
+    return ''.join(part for part in parts if part)
+
+
+# --- Manifest revision: vehicle-specific manifest filename and workbook-backed file metadata only.
+
+MANIFEST_STANDARDISH_CODES = {'S', '■', '□'}
+MANIFEST_DRIVE_TOKENS = ('2WD', '4WD', 'AWD', 'FWD', 'RWD')
+MANIFEST_BODY_STYLE_TOKENS = ('Crew Cab', 'Double Cab', 'Regular Cab')
+
+
+def manifest_relpath(path: Path, base_dir: Path) -> str:
+    import os
+    try:
+        return os.path.relpath(str(path), str(base_dir))
+    except (ValueError, OSError):
+        return str(path)
+
+
+def first_unique(values: Iterable[str]) -> Optional[str]:
+    cleaned = unique_preserve_order(normalize_text(v) for v in values if normalize_text(v))
+    if len(cleaned) == 1:
+        return cleaned[0]
+    return None
+
+
+def standardish_trim_descriptions(data: WorkbookData, trim: TrimDef) -> List[str]:
+    values: List[str] = []
+    for sheet in data.matrix_sheets:
+        for row in sheet.rows:
+            raw = normalize_text(row.status_by_trim.get(trim.key))
+            if not raw:
+                continue
+            status_code, _status_label, _notes = parse_status_value(raw, row.inline_footnotes, sheet.footnotes)
+            if status_code not in MANIFEST_STANDARDISH_CODES:
+                continue
+            desc = normalize_text(row.description_main or row.description_raw)
+            if desc:
+                values.append(desc)
+    return unique_preserve_order(values)
+
+
+def model_descriptions_standard_for_all_trims(data: WorkbookData) -> List[str]:
+    values: List[str] = []
+    trim_defs = list(data.trim_defs)
+    if not trim_defs:
+        return values
+    for sheet in data.matrix_sheets:
+        for row in sheet.rows:
+            codes: List[str] = []
+            for trim in trim_defs:
+                raw = normalize_text(row.status_by_trim.get(trim.key))
+                if not raw:
+                    codes = []
+                    break
+                status_code, _status_label, _notes = parse_status_value(raw, row.inline_footnotes, sheet.footnotes)
+                codes.append(status_code)
+            if not codes or any(code not in MANIFEST_STANDARDISH_CODES for code in codes):
+                continue
+            desc = normalize_text(row.description_main or row.description_raw)
+            if desc:
+                values.append(desc)
+    return unique_preserve_order(values)
+
+
+def pick_engine_description(values: Sequence[str]) -> Optional[str]:
+    preferred = [
+        v for v in values
+        if normalize_text(v).lower().startswith('electric drive unit')
+    ]
+    choice = first_unique(preferred)
+    if choice:
+        return choice
+    preferred = [
+        v for v in values
+        if normalize_text(v).lower().startswith('engine,') and normalize_text(v).lower() != 'engine, none'
+    ]
+    choice = first_unique(preferred)
+    if choice:
+        return choice
+    return None
+
+
+def pick_fuel_description(values: Sequence[str]) -> Optional[str]:
+    return first_unique(v for v in values if normalize_text(v).lower().startswith('fuel,'))
+
+
+def pick_drivetrain_description(values: Sequence[str]) -> Optional[str]:
+    direct = [v for v in values if 'wheel drive' in normalize_text(v).lower()]
+    choice = first_unique(direct)
+    if choice:
+        return choice
+    propulsion = [v for v in values if normalize_text(v).lower().startswith('propulsion,') and 'fwd' not in normalize_text(v).lower() and 'awd' not in normalize_text(v).lower() and 'rwd' not in normalize_text(v).lower() and '4wd' not in normalize_text(v).lower() and '2wd' not in normalize_text(v).lower()]
+    choice = first_unique(propulsion)
+    if choice:
+        return choice
+    tokenized = [v for v in values if normalize_text(v).lower().startswith('propulsion,')]
+    return first_unique(tokenized)
+
+
+def trim_direct_spec_columns(data: WorkbookData, trim: TrimDef) -> List[SpecColumn]:
+    return [column for column in data.spec_columns if column_matches_trim(column, trim)]
+
+
+def extract_trim_seating(data: WorkbookData, trim: TrimDef) -> Optional[str]:
+    cols = trim_direct_spec_columns(data, trim)
+    values = [
+        cell.value
+        for column in cols
+        for cell in column.cells
+        if normalize_text(cell.label).lower().startswith('seating capacity')
+    ]
+    return first_unique(values)
+
+
+def extract_model_seating(data: WorkbookData) -> Optional[str]:
+    values = [
+        cell.value
+        for column in data.spec_columns
+        for cell in column.cells
+        if normalize_text(cell.label).lower().startswith('seating capacity')
+    ]
+    return first_unique(values)
+
+
+def extract_trim_body_style(data: WorkbookData, trim: TrimDef) -> Optional[str]:
+    cols = trim_direct_spec_columns(data, trim)
+    top_labels = [column.top_label for column in cols if normalize_text(column.top_label)]
+    choice = first_unique(top_labels)
+    if choice:
+        return choice
+    header_hits: List[str] = []
+    for column in cols:
+        for token in MANIFEST_BODY_STYLE_TOKENS:
+            if token.lower() in ' '.join([column.top_label, column.header] + column.header_lines).lower():
+                header_hits.append(token)
+    return first_unique(header_hits)
+
+
+def extract_model_body_style(data: WorkbookData) -> Optional[str]:
+    top_labels = [column.top_label for column in data.spec_columns if normalize_text(column.top_label)]
+    return first_unique(top_labels)
+
+
+def extract_trim_drive_token_from_headers(data: WorkbookData, trim: TrimDef) -> Optional[str]:
+    cols = trim_direct_spec_columns(data, trim)
+    tokens: List[str] = []
+    for column in cols:
+        blob = '\n'.join([column.top_label, column.header] + column.header_lines)
+        for token in MANIFEST_DRIVE_TOKENS:
+            if token.lower() in blob.lower():
+                tokens.append(token)
+    return first_unique(tokens)
+
+
+def extract_manifest_metadata_for_model(data: WorkbookData) -> Dict[str, object]:
+    descs = model_descriptions_standard_for_all_trims(data)
+    metadata: Dict[str, object] = {}
+    seating = extract_model_seating(data)
+    if seating:
+        metadata['seating'] = seating
+    body_style = extract_model_body_style(data)
+    if body_style:
+        metadata['body_style'] = body_style
+    engine = pick_engine_description(descs)
+    if engine:
+        metadata['engine'] = engine
+    fuel = pick_fuel_description(descs)
+    if fuel:
+        metadata['fuel_type'] = fuel
+    drivetrain = pick_drivetrain_description(descs)
+    if drivetrain:
+        metadata['drivetrain'] = drivetrain
+    # Vehicle attributes inferred during parsing
+    if data.propulsion:
+        metadata['propulsion'] = data.propulsion
+    if data.vehicle_type:
+        metadata['vehicle_type'] = data.vehicle_type
+    if data.drive_types:
+        metadata['drive_types'] = data.drive_types
+    return metadata
+
+
+def extract_manifest_metadata_for_trim(data: WorkbookData, trim: TrimDef) -> Dict[str, object]:
+    descs = standardish_trim_descriptions(data, trim)
+    metadata: Dict[str, object] = {}
+    trim_name = normalize_text(trim.name)
+    if trim_name:
+        metadata['name'] = trim_name
+    title = normalize_text(trim.raw_header)
+    if title:
+        metadata['title'] = title
+    seating = extract_trim_seating(data, trim)
+    if seating:
+        metadata['seating'] = seating
+    body_style = extract_trim_body_style(data, trim)
+    if body_style:
+        metadata['body_style'] = body_style
+    engine = pick_engine_description(descs)
+    if engine:
+        metadata['engine'] = engine
+    fuel = pick_fuel_description(descs)
+    if fuel:
+        metadata['fuel_type'] = fuel
+    drivetrain = pick_drivetrain_description(descs)
+    if not drivetrain:
+        drivetrain = extract_trim_drive_token_from_headers(data, trim)
+    if drivetrain:
+        metadata['drivetrain'] = drivetrain
+    # Vehicle attributes inferred during parsing
+    if data.propulsion:
+        metadata['propulsion'] = data.propulsion
+    if data.vehicle_type:
+        metadata['vehicle_type'] = data.vehicle_type
+    trim_drive = infer_trim_drive_type(data.spec_columns, trim, data.drive_types)
+    if trim_drive:
+        metadata['drive_type'] = trim_drive
+    elif data.drive_types:
+        metadata['drive_types'] = data.drive_types
+    return metadata
+
+
+def vehicle_manifest_filename(data: WorkbookData) -> str:
+    return f'manifest_{slugify(data.year)}_{slugify(data.make)}_{slugify(data.model)}.json'
+
+
+def write_outputs(data: WorkbookData, output_dir: Path) -> Dict[str, object]:
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    model_filename = f'model_{data.year}_{slugify(data.make)}_{slugify(data.model)}.html'
+    model_path = output_dir / model_filename
+    model_path.write_text(render_model_page(data), encoding='utf-8')
+
+    trim_paths: Dict[str, Path] = {}
+    for trim in data.trim_defs:
+        trim_filename = f'trim_{data.year}_{slugify(data.make)}_{slugify(data.model)}_{slugify(trim.name)}.html'
+        trim_path = output_dir / trim_filename
+        trim_path.write_text(render_trim_page(data, trim), encoding='utf-8')
+        trim_paths[trim.key] = trim_path
+
+    manifest_path = output_dir / vehicle_manifest_filename(data)
+    manifest_base = manifest_path.parent
+
+    manifest: Dict[str, object] = {
+        'workbook': manifest_relpath(data.path, manifest_base),
+        'vehicle_name': data.vehicle_name,
+        'files': [],
+    }
+
+    model_entry: Dict[str, object] = {
+        'objecttype': 'Product',
+        'type': 'model',
+    }
+    model_entry.update(extract_manifest_metadata_for_model(data))
+    model_entry['path'] = manifest_relpath(model_path, manifest_base)
+    manifest['files'].append(model_entry)
+
+    model_relpath = manifest_relpath(model_path, manifest_base)
+    for trim in data.trim_defs:
+        trim_entry: Dict[str, object] = {
+            'objecttype': 'Variant',
+            'type': 'trim',
+        }
+        trim_entry.update(extract_manifest_metadata_for_trim(data, trim))
+        trim_entry['parent_model'] = model_relpath
+        trim_entry['path'] = manifest_relpath(trim_paths[trim.key], manifest_base)
+        manifest['files'].append(trim_entry)
+
+    manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False), encoding='utf-8')
+    return manifest
+
+if __name__ == '__main__':
+    raise SystemExit(main())
