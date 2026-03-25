@@ -1600,12 +1600,22 @@ def render_matrix_legend_section(data: WorkbookData, page_title: str) -> str:
 
 def trim_group_line(agg: TrimFeatureAggregate) -> str:
     feature_text = compact_text(agg.description or agg.title, max_words=18)
-    return f'{feature_text} — {availability_summary_for_trim(agg)}'
+    availability = availability_summary_for_trim(agg)
+    line = f'{feature_text} — {availability}'
+    if agg.notes:
+        note = normalize_text(agg.notes[0])
+        line += f' — {note}'
+    return line
 
 
 def model_group_line(agg: ModelFeatureAggregate) -> str:
     feature_text = compact_text(agg.description or agg.title, max_words=18)
-    return f'{feature_text} — {availability_summary_for_model(agg)}'
+    availability = availability_summary_for_model(agg)
+    line = f'{feature_text} — {availability}'
+    if agg.notes:
+        note = normalize_text(agg.notes[0])
+        line += f' — {note}'
+    return line
 
 
 def grouped_feature_sections(
