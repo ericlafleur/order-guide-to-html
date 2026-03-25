@@ -5,6 +5,12 @@
     {
       "objecttype": "Product",
       "type": "model",
+      "propulsion": "ICE",
+      "vehicle_type": "truck",
+      "drive_types": [
+        "2WD",
+        "4WD"
+      ],
       "path": "model_2026_Chevrolet_Silverado_1500.html"
     },
     {
@@ -13,6 +19,12 @@
       "name": "Work Truck",
       "title": "Work Truck\n1WT1",
       "engine": "Engine, 2.7L TurboMax, (310 hp [231 kW] @ 5600 rpm, 430 lb-ft of torque [583 Nm] @ 3000 rpm)",
+      "propulsion": "ICE",
+      "vehicle_type": "truck",
+      "drive_types": [
+        "2WD",
+        "4WD"
+      ],
       "parent_model": "model_2026_Chevrolet_Silverado_1500.html",
       "path": "trim_2026_Chevrolet_Silverado_1500_Work_Truck.html"
     },
@@ -22,6 +34,12 @@
       "name": "Custom",
       "title": "Custom\n1CX2",
       "engine": "Engine, 2.7L TurboMax, (310 hp [231 kW] @ 5600 rpm, 430 lb-ft of torque [583 Nm] @ 3000 rpm)",
+      "propulsion": "ICE",
+      "vehicle_type": "truck",
+      "drive_types": [
+        "2WD",
+        "4WD"
+      ],
       "parent_model": "model_2026_Chevrolet_Silverado_1500.html",
       "path": "trim_2026_Chevrolet_Silverado_1500_Custom.html"
     },
@@ -31,6 +49,12 @@
       "name": "Custom Trail Boss",
       "title": "Custom Trail Boss\n2CX6",
       "engine": "Engine, 2.7L TurboMax, (310 hp [231 kW] @ 5600 rpm, 430 lb-ft of torque [583 Nm] @ 3000 rpm)",
+      "propulsion": "ICE",
+      "vehicle_type": "truck",
+      "drive_types": [
+        "2WD",
+        "4WD"
+      ],
       "parent_model": "model_2026_Chevrolet_Silverado_1500.html",
       "path": "trim_2026_Chevrolet_Silverado_1500_Custom_Trail_Boss.html"
     },
@@ -40,6 +64,12 @@
       "name": "LT",
       "title": "LT\n1LT3",
       "engine": "Engine, 2.7L TurboMax, (310 hp [231 kW] @ 5600 rpm, 430 lb-ft of torque [583 Nm] @ 3000 rpm)",
+      "propulsion": "ICE",
+      "vehicle_type": "truck",
+      "drive_types": [
+        "2WD",
+        "4WD"
+      ],
       "parent_model": "model_2026_Chevrolet_Silverado_1500.html",
       "path": "trim_2026_Chevrolet_Silverado_1500_LT.html"
     },
@@ -49,6 +79,12 @@
       "name": "RST",
       "title": "RST\n1SP4",
       "engine": "Engine, 2.7L TurboMax, (310 hp [231 kW] @ 5600 rpm, 430 lb-ft of torque [583 Nm] @ 3000 rpm)",
+      "propulsion": "ICE",
+      "vehicle_type": "truck",
+      "drive_types": [
+        "2WD",
+        "4WD"
+      ],
       "parent_model": "model_2026_Chevrolet_Silverado_1500.html",
       "path": "trim_2026_Chevrolet_Silverado_1500_RST.html"
     },
@@ -58,6 +94,12 @@
       "name": "LT Trail Boss",
       "title": "LT Trail Boss\n2LT6",
       "engine": "Engine, 2.7L TurboMax, (310 hp [231 kW] @ 5600 rpm, 430 lb-ft of torque [583 Nm] @ 3000 rpm)",
+      "propulsion": "ICE",
+      "vehicle_type": "truck",
+      "drive_types": [
+        "2WD",
+        "4WD"
+      ],
       "parent_model": "model_2026_Chevrolet_Silverado_1500.html",
       "path": "trim_2026_Chevrolet_Silverado_1500_LT_Trail_Boss.html"
     },
@@ -70,6 +112,9 @@
       "body_style": "Crew Cab",
       "engine": "Engine, Duramax 3.0L Turbo-Diesel I6, (305 hp [227 kW] @ 3750 rpm, 495 lb-ft of torque [671 Nm] @ 2750 rpm)",
       "drivetrain": "4WD",
+      "propulsion": "ICE",
+      "vehicle_type": "truck",
+      "drive_type": "4WD",
       "parent_model": "model_2026_Chevrolet_Silverado_1500.html",
       "path": "trim_2026_Chevrolet_Silverado_1500_ZR2.html"
     },
@@ -79,6 +124,12 @@
       "name": "LTZ",
       "title": "LTZ\n1LZ5",
       "engine": "Engine, 5.3L EcoTec3 V8, (355 hp [265 kW] @ 5600 rpm, 383 lb-ft of torque [518 Nm] @ 4100 rpm); featuring available Dynamic Fuel Management that enables the engine to operate in 17 different patterns between 2 and 8 cylinders, depending on demand, to optimize power delivery and efficiency",
+      "propulsion": "ICE",
+      "vehicle_type": "truck",
+      "drive_types": [
+        "2WD",
+        "4WD"
+      ],
       "parent_model": "model_2026_Chevrolet_Silverado_1500.html",
       "path": "trim_2026_Chevrolet_Silverado_1500_LTZ.html"
     },
@@ -88,6 +139,12 @@
       "name": "High Country",
       "title": "High Country\n3LZ6",
       "engine": "Engine, 5.3L EcoTec3 V8, (355 hp [265 kW] @ 5600 rpm, 383 lb-ft of torque [518 Nm] @ 4100 rpm); featuring available Dynamic Fuel Management that enables the engine to operate in 17 different patterns between 2 and 8 cylinders, depending on demand, to optimize power delivery and efficiency",
+      "propulsion": "ICE",
+      "vehicle_type": "truck",
+      "drive_types": [
+        "2WD",
+        "4WD"
+      ],
       "parent_model": "model_2026_Chevrolet_Silverado_1500.html",
       "path": "trim_2026_Chevrolet_Silverado_1500_High_Country.html"
     }

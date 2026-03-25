@@ -9,6 +9,12 @@
       "engine": "Electric drive unit, primary, 1 motor, integrated inverter, park system, 76F",
       "fuel_type": "Fuel, none",
       "drivetrain": "Propulsion, front wheel drive",
+      "propulsion": "EV",
+      "vehicle_type": "suv",
+      "drive_types": [
+        "AWD",
+        "FWD"
+      ],
       "path": "model_2026_Chevrolet_Equinox_EV.html"
     },
     {
@@ -20,6 +26,12 @@
       "engine": "Electric drive unit, primary, 1 motor, integrated inverter, park system, 76F",
       "fuel_type": "Fuel, none",
       "drivetrain": "Propulsion, front wheel drive",
+      "propulsion": "EV",
+      "vehicle_type": "suv",
+      "drive_types": [
+        "AWD",
+        "FWD"
+      ],
       "parent_model": "model_2026_Chevrolet_Equinox_EV.html",
       "path": "trim_2026_Chevrolet_Equinox_EV_LT.html"
     },
@@ -32,6 +44,12 @@
       "engine": "Electric drive unit, primary, 1 motor, integrated inverter, park system, 76F",
       "fuel_type": "Fuel, none",
       "drivetrain": "Propulsion, front wheel drive",
+      "propulsion": "EV",
+      "vehicle_type": "suv",
+      "drive_types": [
+        "AWD",
+        "FWD"
+      ],
       "parent_model": "model_2026_Chevrolet_Equinox_EV.html",
       "path": "trim_2026_Chevrolet_Equinox_EV_RS.html"
     }
