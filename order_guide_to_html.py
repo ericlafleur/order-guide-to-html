@@ -7,7 +7,7 @@ import html
 import json
 import re
 import sys
-from collections import OrderedDict, defaultdict
+from collections import OrderedDict
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Sequence, Tuple
@@ -442,8 +442,8 @@ def split_main_notes_and_bullets(text: str) -> Tuple[str, Dict[str, str], List[s
             main_lines.append(line)
         else:
             bullets.append(line)
-    main = normalize_text(" ".join(main_lines))
-    return main, notes, bullets
+    main_text = normalize_text(" ".join(main_lines))
+    return main_text, notes, bullets
 
 
 def parse_status_value(raw: str, row_notes: Dict[str, str], sheet_notes: Dict[str, str]) -> Tuple[str, str, List[str]]:
@@ -531,7 +531,7 @@ def parse_matrix_sheet(ws, trim_defs: Optional[List[TrimDef]] = None) -> Optiona
         option_code = meta[0] or None
         ref_code = meta[1] or None if len(meta) > 1 else None
         aux_meta = [x for x in meta[2:-1] if x]
-        main, inline_notes, bullet_notes = split_main_notes_and_bullets(description_raw)
+        main_text, inline_notes, bullet_notes = split_main_notes_and_bullets(description_raw)
 
         row = MatrixRow(
             sheet_name=ws.title,
@@ -540,7 +540,7 @@ def parse_matrix_sheet(ws, trim_defs: Optional[List[TrimDef]] = None) -> Optiona
             ref_code=ref_code,
             aux_meta=aux_meta,
             description_raw=description_raw,
-            description_main=main or description_raw,
+            description_main=main_text or description_raw,
             inline_footnotes=inline_notes,
             bullet_notes=bullet_notes,
             status_by_trim={
@@ -658,7 +658,6 @@ def parse_spec_sheet(ws) -> List[SpecColumn]:
     if nonempty_on_section_row <= 1 and first_section_row > 1:
         header_row = first_section_row - 1
 
-    header_cells = [normalize_text(ws.cell(header_row, c).value) for c in range(1, ws.max_column + 1)]
     top_label = ""
     for r in range(1, header_row + 1):
         cell = normalize_text(ws.cell(r, 1).value)
@@ -700,12 +699,6 @@ def parse_engine_axles_sheet(ws) -> List[EngineAxleEntry]:
     if not ws.title.startswith("Engine Axles"):
         return []
     top_label = normalize_text(ws.cell(1, 1).value)
-    legend_text = " ".join(
-        normalize_text(ws.cell(r, c).value)
-        for r in range(1, min(ws.max_row, 4) + 1)
-        for c in range(1, ws.max_column + 1)
-        if normalize_text(ws.cell(r, c).value)
-    )
     footnotes: Dict[str, str] = {}
     for r in range(1, ws.max_row + 1):
         first = normalize_text(ws.cell(r, 1).value)
@@ -1272,362 +1265,6 @@ def referenced_glossary_codes_for_trim(data: WorkbookData, trim: TrimDef) -> Lis
     return unique_preserve_order(codes)
 
 
-def render_note_articles(title_prefix: str, note_texts: Sequence[str], context_text: str, label: str = 'Guide note') -> str:
-    parts: List[str] = []
-    for note_index, note in enumerate(unique_preserve_order(note_texts), start=1):
-        chunks = sentence_chunks(note, max_words=105)
-        for chunk_index, chunk in enumerate(chunks, start=1):
-            title = f'{title_prefix} | {label.lower()} {note_index}'
-            if len(chunks) > 1:
-                title += f' | part {chunk_index}'
-            parts.append(
-                render_article(
-                    title,
-                    [(label, chunk), ('Applies to source context', context_text)],
-                )
-            )
-    return ''.join(parts)
-
-
-def render_guide_context_section(data: WorkbookData, page_title: str, trim: Optional[TrimDef] = None) -> str:
-    parts = [f'<section class="guide-context"><h2>{html.escape(page_title)} | Guide Context</h2>']
-    trim_headers = [trim_def.raw_header for trim_def in data.trim_defs if normalize_text(trim_def.raw_header)]
-    fields = [
-        ('Source tabs', '; '.join(data.sheet_names)),
-        ('Trim headers from guide', ' ; '.join(trim_headers)),
-    ]
-    if trim is not None:
-        fields = [
-            ('Trim name', trim.name),
-            ('Trim code', trim.code),
-            ('Trim header from guide', trim.raw_header),
-            ('Source tabs', '; '.join(data.sheet_names)),
-        ]
-    parts.append(render_article(f'{page_title} | Guide structure', fields))
-    parts.append('</section>')
-    return ''.join(parts)
-
-
-def render_matrix_legend_section(data: WorkbookData, page_title: str) -> str:
-    if not data.matrix_sheets:
-        return ''
-    legend_text = normalize_text(data.matrix_sheets[0].legend_text)
-    if not legend_text:
-        return ''
-    return '<section class="matrix-legend">' + render_article(
-        f'{page_title} | Matrix availability legend',
-        [('Legend from guide', legend_text)],
-    ) + '</section>'
-
-
-def render_model_feature_sections(data: WorkbookData) -> str:
-    features = aggregate_model_features(data)
-    parts = ['<section class="matrix-features"><h2>Aggregated feature availability from guide</h2>']
-    for agg in features:
-        description_chunks = sentence_chunks(agg.description, max_words=90)
-        fields = []
-        if description_chunks:
-            fields.append(('Guide text', description_chunks[0]))
-        code_bits = [f'Orderable {agg.orderable_code}' for agg in [agg] if agg.orderable_code] + [f'Reference {agg.reference_code}' for agg in [agg] if agg.reference_code]
-        if code_bits:
-            fields.append(('RPO codes', '; '.join(code_bits)))
-        if agg.source_contexts:
-            fields.append(('Source context', '; '.join(agg.source_contexts)))
-        availability_items: List[str] = []
-        for signature, contexts in agg.availability_contexts.items():
-            context_text = '; '.join(contexts)
-            summary_text = ' ; '.join(model_status_summary_lines(signature))
-            if context_text:
-                availability_items.append(f'{context_text}: {summary_text}')
-            else:
-                availability_items.append(summary_text)
-        bullet_groups = []
-        for availability_chunk in chunk_list(availability_items, max_words=105, max_items=3):
-            bullet_groups.append(('Availability by trim', availability_chunk))
-        if agg.referenced_codes:
-            code_items = [f'{code}: {desc}' for code, desc in agg.referenced_codes]
-            for idx, code_chunk in enumerate(chunk_list(code_items, max_words=95, max_items=6), start=1):
-                bullet_groups.append((f'Referenced codes from the guide ({idx})' if len(code_items) > len(code_chunk) else 'Referenced codes from the guide', code_chunk))
-        parts.append(render_article(agg.title, fields, bullet_groups))
-        for idx, extra_desc in enumerate(description_chunks[1:], start=2):
-            parts.append(render_article(f'{agg.title} | guide text part {idx - 1}', [('Guide text', extra_desc), ('Source context', '; '.join(agg.source_contexts))]))
-        parts.append(render_note_articles(agg.title, agg.notes, '; '.join(agg.source_contexts)))
-    parts.append('</section>')
-    return ''.join(parts)
-
-
-def render_model_color_sections(data: WorkbookData) -> str:
-    if not data.color_sheets:
-        return ''
-    parts = ['<section class="colour-trim-sections"><h2>Colour and trim from guide</h2>']
-    for sheet in data.color_sheets:
-        parts.append(f'<section class="colour-sheet" data-source-tab="{html.escape(sheet.name)}">')
-        parts.append(f'<h3>{html.escape(sheet.name)}</h3>')
-        for row in sheet.interior_rows:
-            color_lines = [f'{color}: {code}' for color, code in row.colors.items() if normalize_text(code) and normalize_text(code) != '--']
-            parts.append(
-                render_article(
-                    feature_title(f'Interior trim | {row.decor_level} | {row.seat_trim}', row.seat_code),
-                    [
-                        ('Decor level', row.decor_level),
-                        ('Seat type', row.seat_type),
-                        ('Seat trim', row.seat_trim),
-                        ('Source sheet', sheet.name),
-                    ],
-                    [('Interior colours and guide values', color_lines)] if color_lines else [],
-                )
-            )
-        for row in sheet.exterior_rows:
-            availability_lines = [f'{color}: {status}' for color, status in row.colors.items() if normalize_text(status)]
-            title_value, title_note_ids = parse_value_and_footnote_ids(row.title)
-            note_texts = [sheet.footnotes[nid] for nid in title_note_ids if nid in sheet.footnotes]
-            parts.append(
-                render_article(
-                    feature_title(f'Exterior paint | {title_value or row.title}', row.color_code),
-                    [
-                        ('Exterior paint', title_value or row.title),
-                        ('Touch-Up Paint Number', row.touch_up_paint_number),
-                        ('Source sheet', sheet.name),
-                    ],
-                    [('Availability by interior colour column', availability_lines)] if availability_lines else [],
-                )
-            )
-            parts.append(render_note_articles(feature_title(f'Exterior paint | {title_value or row.title}', row.color_code), note_texts, sheet.name, label='Paint note'))
-        note_texts = list(sheet.footnotes.values()) + list(sheet.bullet_notes)
-        if note_texts:
-            parts.append(render_note_articles(f'{sheet.name} | Colour and trim notes', note_texts, sheet.name, label='Guide note'))
-        parts.append('</section>')
-    parts.append('</section>')
-    return ''.join(parts)
-
-
-def render_spec_sections(data: WorkbookData, page_title: str, columns: List[SpecColumn]) -> str:
-    if not columns:
-        return ''
-    parts = [f'<section class="spec-sections"><h2>{html.escape(page_title)} | Specifications and dimensions</h2>']
-    for column in columns:
-        grouped: 'OrderedDict[str, List[str]]' = OrderedDict()
-        for cell in column.cells:
-            grouped.setdefault(cell.section or 'Data', []).append(f'{cell.label}: {cell.value}')
-        header_context = unique_preserve_order([x for x in [column.top_label, column.header] + column.header_lines if normalize_text(x)])
-        header_text = ' | '.join(header_context)
-        for section_name, values in grouped.items():
-            value_chunks = chunk_list(values, max_words=95, max_items=7)
-            for idx, value_chunk in enumerate(value_chunks, start=1):
-                title = ' | '.join(x for x in [column.header or column.top_label, section_name] if normalize_text(x))
-                if idx > 1:
-                    title += f' | part {idx}'
-                parts.append(
-                    render_article(
-                        title,
-                        [('Source sheet', column.sheet_name), ('Column context', header_text)],
-                        [('Guide values', value_chunk)],
-                    )
-                )
-    parts.append('</section>')
-    return ''.join(parts)
-
-
-def render_engine_axles_section(data: WorkbookData) -> str:
-    if not data.engine_axle_entries:
-        return ''
-    parts = ['<section class="engine-axles"><h2>Engine, transmission, axle and GVWR from guide</h2>']
-    for entry in data.engine_axle_entries:
-        grouped: 'OrderedDict[str, List[str]]' = OrderedDict()
-        for item in entry.items:
-            line = f'{item.name}: {item.status_label} [{item.raw_status}]'
-            grouped.setdefault(item.category or 'Guide values', []).append(line)
-        for category, items in grouped.items():
-            for idx, chunk in enumerate(chunk_list(items, max_words=95, max_items=6), start=1):
-                title = ' | '.join(x for x in [entry.model_code, entry.engine, category] if normalize_text(x))
-                if idx > 1:
-                    title += f' | part {idx}'
-                parts.append(
-                    render_article(
-                        title,
-                        [('Source sheet', entry.sheet_name), ('Top label', entry.top_label)],
-                        [('Guide values', chunk)],
-                    )
-                )
-    parts.append('</section>')
-    return ''.join(parts)
-
-
-def render_trailering_section(data: WorkbookData) -> str:
-    if not data.trailering_records and not data.gcwr_records:
-        return ''
-    parts = ['<section class="trailering"><h2>Trailering and GCWR from guide</h2>']
-    for record in data.trailering_records:
-        title = ' | '.join(x for x in [record.model_code, record.engine, record.axle_ratio] if normalize_text(x))
-        fields = [
-            ('Source sheet', record.sheet_name),
-            ('Rating type', record.rating_type),
-            ('Maximum trailer weight', record.max_trailer_weight),
-        ]
-        if record.note_text:
-            for idx, chunk in enumerate(sentence_chunks(record.note_text, max_words=90), start=1):
-                note_title = title + ' | trailering note'
-                if idx > 1:
-                    note_title += f' | part {idx}'
-                parts.append(render_article(note_title, [('Guide text', chunk), ('Source sheet', record.sheet_name)]))
-        parts.append(render_article(title, fields, [('Footnotes', record.footnotes)] if record.footnotes else []))
-    for record in data.gcwr_records:
-        title = ' | '.join(x for x in ['GCWR', record.engine, record.gcwr] if normalize_text(x))
-        parts.append(
-            render_article(
-                title,
-                [('Source sheet', record.sheet_name), ('Table title', record.table_title), ('Axle ratio', record.axle_ratio)],
-                [('Footnotes', record.footnotes)] if record.footnotes else [('Guide values', [f'GCWR: {record.gcwr}'])],
-            )
-        )
-    parts.append('</section>')
-    return ''.join(parts)
-
-
-def render_glossary_section(page_title: str, glossary: Dict[str, str], limit_codes: Optional[Sequence[str]] = None) -> str:
-    if not glossary:
-        return ''
-    if limit_codes is None:
-        ordered_codes = list(glossary.keys())
-    else:
-        ordered_codes = [code for code in OrderedDict((normalize_text(code), None) for code in limit_codes) if code in glossary]
-    if not ordered_codes:
-        return ''
-    parts = [f'<section class="glossary"><h2>{html.escape(page_title)} | Option code glossary</h2>']
-    for code in ordered_codes:
-        parts.append(render_article(f'Option code | {code}', [('Option code', code), ('Description from All tab', glossary[code])]))
-    parts.append('</section>')
-    return ''.join(parts)
-
-
-def render_trim_feature_sections(data: WorkbookData, trim: TrimDef) -> str:
-    features = aggregate_trim_features(data, trim)
-    parts = [f'<section class="trim-features"><h2>{html.escape(trim.raw_header or trim.name)} | Features and availability from guide</h2>']
-    for agg in features:
-        description_chunks = sentence_chunks(agg.description, max_words=90)
-        fields = []
-        if description_chunks:
-            fields.append(('Guide text', description_chunks[0]))
-        code_bits = [f'Orderable {agg.orderable_code}' for agg in [agg] if agg.orderable_code] + [f'Reference {agg.reference_code}' for agg in [agg] if agg.reference_code]
-        if code_bits:
-            fields.append(('RPO codes', '; '.join(code_bits)))
-        availability_items = []
-        for (raw, label), contexts in agg.availability_contexts.items():
-            context_text = '; '.join(contexts)
-            if context_text:
-                availability_items.append(f'{context_text}: {label} [{raw}]')
-            else:
-                availability_items.append(f'{label} [{raw}]')
-        bullet_groups = [('Source tabs and availability', availability_items)] if availability_items else []
-        if agg.referenced_codes:
-            code_items = [f'{code}: {desc}' for code, desc in agg.referenced_codes]
-            for idx, code_chunk in enumerate(chunk_list(code_items, max_words=95, max_items=6), start=1):
-                bullet_groups.append((f'Referenced codes from the guide ({idx})' if len(code_items) > len(code_chunk) else 'Referenced codes from the guide', code_chunk))
-        parts.append(render_article(agg.title, fields, bullet_groups))
-        for idx, extra_desc in enumerate(description_chunks[1:], start=2):
-            parts.append(render_article(f'{agg.title} | guide text part {idx - 1}', [('Guide text', extra_desc), ('Source context', '; '.join(agg.source_contexts))]))
-        parts.append(render_note_articles(agg.title, agg.notes, '; '.join(agg.source_contexts)))
-    parts.append('</section>')
-    return ''.join(parts)
-
-
-def render_trim_color_sections(data: WorkbookData, trim: TrimDef) -> str:
-    if not data.color_sheets:
-        return ''
-    parts = [f'<section class="trim-colours"><h2>{html.escape(trim.raw_header or trim.name)} | Colour and trim from guide</h2>']
-    for sheet in data.color_sheets:
-        parts.append(f'<section class="colour-sheet" data-source-tab="{html.escape(sheet.name)}"><h3>{html.escape(sheet.name)}</h3>')
-        relevant_interior_columns: List[str] = []
-        for row in sheet.interior_rows:
-            if not trim_matches_decor(trim, row.decor_level):
-                continue
-            for color_name, code_value in row.colors.items():
-                code_value = normalize_text(code_value)
-                if not code_value or code_value == '--':
-                    continue
-                relevant_interior_columns.append(color_name)
-                parts.append(
-                    render_article(
-                        feature_title(f'Interior colour | {color_name}', row.seat_code),
-                        [
-                            ('Decor level', row.decor_level),
-                            ('Seat type', row.seat_type),
-                            ('Seat trim', row.seat_trim),
-                            ('Guide value', code_value),
-                            ('Source sheet', sheet.name),
-                        ],
-                    )
-                )
-        relevant_interior_columns = unique_preserve_order(relevant_interior_columns)
-        for row in sheet.exterior_rows:
-            availability_lines = []
-            for color_name in relevant_interior_columns:
-                raw = normalize_text(row.colors.get(color_name))
-                if not raw:
-                    continue
-                _code, label, _notes = parse_status_value(raw, {}, sheet.footnotes)
-                availability_lines.append(f'{color_name}: {label} [{raw}]')
-            if not availability_lines:
-                continue
-            title_value, title_note_ids = parse_value_and_footnote_ids(row.title)
-            note_texts = [sheet.footnotes[nid] for nid in title_note_ids if nid in sheet.footnotes]
-            title = feature_title(f'Exterior paint | {title_value or row.title}', row.color_code)
-            parts.append(
-                render_article(
-                    title,
-                    [('Touch-Up Paint Number', row.touch_up_paint_number), ('Source sheet', sheet.name)],
-                    [('Availability by interior colour', availability_lines)],
-                )
-            )
-            parts.append(render_note_articles(title, note_texts, sheet.name, label='Paint note'))
-        parts.append('</section>')
-    parts.append('</section>')
-    return ''.join(parts)
-
-
-def render_trim_spec_sections(data: WorkbookData, trim: TrimDef) -> str:
-    direct_columns = [column for column in data.spec_columns if column_matches_trim(column, trim)]
-    if direct_columns:
-        return render_spec_sections(data, trim.raw_header or trim.name, direct_columns)
-    return render_spec_sections(data, trim.raw_header or trim.name, data.spec_columns)
-
-
-def render_model_page(data: WorkbookData) -> str:
-    page_title = 'Vehicle Order Guide'
-    referenced_codes = collect_referenced_codes_for_model(data)
-    parts = [
-        '<html><head><meta charset="utf-8"></head><body>',
-        '<h1>Vehicle Order Guide | model page</h1>',
-        render_guide_context_section(data, page_title),
-        render_matrix_legend_section(data, page_title),
-        render_model_feature_sections(data),
-        render_model_color_sections(data),
-        render_spec_sections(data, page_title, data.spec_columns),
-        render_engine_axles_section(data),
-        render_trailering_section(data),
-        render_glossary_section(page_title, data.glossary, limit_codes=referenced_codes),
-        '</body></html>',
-    ]
-    return ''.join(part for part in parts if part)
-
-
-def render_trim_page(data: WorkbookData, trim: TrimDef) -> str:
-    page_title = trim.raw_header or trim.name
-    referenced_codes = referenced_glossary_codes_for_trim(data, trim)
-    parts = [
-        '<html><head><meta charset="utf-8"></head><body>',
-        f'<h1>{html.escape(trim.raw_header or trim.name)} | Vehicle Order Guide trim page</h1>',
-        render_guide_context_section(data, page_title, trim=trim),
-        render_matrix_legend_section(data, page_title),
-        render_trim_feature_sections(data, trim),
-        render_trim_color_sections(data, trim),
-        render_trim_spec_sections(data, trim),
-        render_glossary_section(page_title, data.glossary, limit_codes=referenced_codes),
-        '</body></html>',
-    ]
-    return ''.join(part for part in parts if part)
-
-
 WORKBOOKS_DIR = Path("workbooks")
 OUTPUT_DIR = Path("workbooks_html")
 
@@ -1987,7 +1624,6 @@ def grouped_feature_sections(
     for category in sorted(category_groups.keys(), key=sort_category_key):
         items = category_groups[category]
         lines = [model_group_line(item) if model_mode else trim_group_line(item) for item in items]
-        source_tabs = source_tabs_from_contexts([ctx for item in items for ctx in getattr(item, 'source_contexts', [])])
         for idx, line_chunk in enumerate(chunk_feature_items(lines), start=1):
             title = f'{category} | grouped guide passage'
             if idx > 1:
@@ -2013,8 +1649,7 @@ def exact_model_feature_section(data: WorkbookData, features: Sequence[ModelFeat
         category = category_for_model_feature(agg)
         fields = identity_fields(
             data,
-            category=category,
-            source_context='; '.join(agg.source_contexts),
+            extra_fields=[('Category', category), ('Source', '; '.join(agg.source_contexts))],
         )
         fields.append(('Guide text', agg.description))
         bullet_groups: List[Tuple[str, Sequence[str]]] = []
@@ -2039,8 +1674,7 @@ def exact_trim_feature_section(data: WorkbookData, trim: TrimDef, features: Sequ
         fields = identity_fields(
             data,
             trim,
-            category=category,
-            source_context='; '.join(agg.source_contexts),
+            extra_fields=[('Category', category), ('Source', '; '.join(agg.source_contexts))],
         )
         fields.append(('Guide text', agg.description))
         bullet_groups: List[Tuple[str, Sequence[str]]] = []
@@ -2422,8 +2056,6 @@ def render_spec_records(data: WorkbookData, columns: List[SpecColumn], *, trim: 
                         identity_fields(
                             data,
                             trim,
-                            category='Specifications and dimensions',
-                            source_tabs=column.sheet_name,
                             extra_fields=[('Column context', header_text)],
                         ),
                         [('Guide values', value_chunk)],
@@ -2462,8 +2094,6 @@ def render_engine_axles_section(data: WorkbookData) -> str:
                         article_heading(entity, title),
                         identity_fields(
                             data,
-                            category='Engine, axle and GVWR',
-                            source_tabs=entry.sheet_name,
                             extra_fields=[('Top label', entry.top_label)],
                         ),
                         [('Guide values', chunk)],
@@ -2489,8 +2119,6 @@ def render_trailering_section(data: WorkbookData) -> str:
                 article_heading(entity, f'Trailering and GCWR | {record.model_code} | {record.engine} | {record.axle_ratio}'),
                 identity_fields(
                     data,
-                    category='Trailering and GCWR',
-                    source_tabs=record.sheet_name,
                     extra_fields=[
                         ('Rating type', record.rating_type),
                         ('Maximum trailer weight', record.max_trailer_weight),
@@ -2510,8 +2138,6 @@ def render_trailering_section(data: WorkbookData) -> str:
                 article_heading(entity, f'Trailering and GCWR | GCWR | {record.engine} | {record.gcwr}'),
                 identity_fields(
                     data,
-                    category='Trailering and GCWR',
-                    source_tabs=record.sheet_name,
                     extra_fields=[('Table title', record.table_title), ('Axle ratio', record.axle_ratio)],
                 ),
                 bullet_groups,
@@ -2562,7 +2188,7 @@ def manifest_relpath(path: Path, base_dir: Path) -> str:
     import os
     try:
         return os.path.relpath(str(path), str(base_dir))
-    except Exception:
+    except (ValueError, OSError):
         return str(path)
 
 
