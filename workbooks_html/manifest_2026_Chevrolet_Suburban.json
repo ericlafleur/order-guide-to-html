@@ -1,0 +1,73 @@
+{
+  "workbook": "../workbooks/2026 Chevrolet Truck Suburban Export.xlsx",
+  "vehicle_name": "2026 Chevrolet Suburban",
+  "files": [
+    {
+      "objecttype": "Product",
+      "type": "model",
+      "seating": "3/3/3",
+      "fuel_type": "Fuel, gasoline, E15",
+      "path": "model_2026_Chevrolet_Suburban.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "name": "LS",
+      "title": "LS\n1LS1",
+      "engine": "Engine, 5.3L EcoTec3 V8 with Dynamic Fuel Management, Direct Injection and Variable Valve Timing, includes aluminum block construction (355 hp [265 kW] @ 5600 rpm, 383 lb-ft of torque [518 Nm] @ 4100 rpm)",
+      "fuel_type": "Fuel, gasoline, E15",
+      "parent_model": "model_2026_Chevrolet_Suburban.html",
+      "path": "trim_2026_Chevrolet_Suburban_LS.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "name": "LT",
+      "title": "LT\n1LT2",
+      "engine": "Engine, 5.3L EcoTec3 V8 with Dynamic Fuel Management, Direct Injection and Variable Valve Timing, includes aluminum block construction (355 hp [265 kW] @ 5600 rpm, 383 lb-ft of torque [518 Nm] @ 4100 rpm)",
+      "fuel_type": "Fuel, gasoline, E15",
+      "parent_model": "model_2026_Chevrolet_Suburban.html",
+      "path": "trim_2026_Chevrolet_Suburban_LT.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "name": "RST",
+      "title": "RST\n1SP2",
+      "engine": "Engine, 5.3L EcoTec3 V8 with Dynamic Fuel Management, Direct Injection and Variable Valve Timing, includes aluminum block construction (355 hp [265 kW] @ 5600 rpm, 383 lb-ft of torque [518 Nm] @ 4100 rpm)",
+      "fuel_type": "Fuel, gasoline, E15",
+      "parent_model": "model_2026_Chevrolet_Suburban.html",
+      "path": "trim_2026_Chevrolet_Suburban_RST.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "name": "Z71",
+      "title": "Z71\n2Z72",
+      "engine": "Engine, 5.3L EcoTec3 V8 with Dynamic Fuel Management, Direct Injection and Variable Valve Timing, includes aluminum block construction (355 hp [265 kW] @ 5600 rpm, 383 lb-ft of torque [518 Nm] @ 4100 rpm)",
+      "fuel_type": "Fuel, gasoline, E15",
+      "parent_model": "model_2026_Chevrolet_Suburban.html",
+      "path": "trim_2026_Chevrolet_Suburban_Z71.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "name": "Premier",
+      "title": "Premier\n1LZ2",
+      "engine": "Engine, 5.3L EcoTec3 V8 with Dynamic Fuel Management, Direct Injection and Variable Valve Timing, includes aluminum block construction (355 hp [265 kW] @ 5600 rpm, 383 lb-ft of torque [518 Nm] @ 4100 rpm)",
+      "fuel_type": "Fuel, gasoline, E15",
+      "parent_model": "model_2026_Chevrolet_Suburban.html",
+      "path": "trim_2026_Chevrolet_Suburban_Premier.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "name": "High Country",
+      "title": "High Country\n3LZ2",
+      "engine": "Engine, 6.2L EcoTec3 V8 with Dynamic Fuel Management, Direct Injection and Variable Valve Timing, includes aluminum block construction (420 hp [313 kW] @ 5600 rpm, 460 lb-ft of torque [624 Nm] @ 4100 rpm)",
+      "fuel_type": "Fuel, gasoline, E15",
+      "parent_model": "model_2026_Chevrolet_Suburban.html",
+      "path": "trim_2026_Chevrolet_Suburban_High_Country.html"
+    }
+  ]
+}
