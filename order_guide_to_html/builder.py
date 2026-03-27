@@ -199,7 +199,7 @@ class CorpusBuilder:
         trim_paths = self.build_trims(data, output_dir, used_names, bindings, model_path)
         self.build_configurations(data, output_dir, used_names, bindings, model_path, trim_paths)
 
-        manifest_path = output_dir.parent / vehicle_manifest_filename(data)
+        manifest_path = output_dir / vehicle_manifest_filename(data)
         manifest = build_manifest_from_bindings(data, bindings, manifest_path)
         cleaned_manifest = self.cleaner.clean_manifest(manifest)
         manifest_path.write_text(json.dumps(cleaned_manifest, indent=2, ensure_ascii=False), encoding='utf-8')

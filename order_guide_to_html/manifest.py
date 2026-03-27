@@ -2234,18 +2234,6 @@ def build_manifest_from_bindings(data: WorkbookData, bindings: Sequence[BoundRec
     manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False), encoding='utf-8')
     return manifest
 
-def write_outputs(data: WorkbookData, output_dir: Path) -> Dict[str, object]:
-    output_dir.mkdir(parents=True, exist_ok=True)
-    used_names: set[str] = set()
-    bindings: List[BoundRecord] = []
-
-    model_path = build_model_and_comparison_records(data, output_dir, used_names, bindings)
-    trim_paths = build_trim_records(data, output_dir, used_names, bindings, model_path)
-    build_configuration_records(data, output_dir, used_names, bindings, model_path, trim_paths)
-
-    manifest_path = output_dir / vehicle_manifest_filename(data)
-    return build_manifest_from_bindings(data, bindings, manifest_path)
-
 def manifest_text_is_meaningful(value: Optional[str], *, require_letters: bool = True) -> bool:
     text = normalize_text(value)
     if not text:
