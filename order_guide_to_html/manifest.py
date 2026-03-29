@@ -904,19 +904,10 @@ def extract_manifest_metadata_for_model(data: WorkbookData) -> Dict[str, object]
     metadata: Dict[str, object] = {}
     seating = extract_model_seating(data)
     if seating:
-        metadata['gm_vehicle_seating'] = seating
-    body_style = extract_model_body_style(data)
-    if body_style:
-        metadata['gm_vehicle_body_style'] = body_style
-    engine = pick_engine_description(descs)
-    if engine:
-        metadata['gm_vehicle_engine'] = engine
+        metadata['seating'] = seating
     fuel = pick_fuel_description(descs)
     if fuel:
-        metadata['gm_vehicle_fuel_type'] = fuel
-    drivetrain = pick_drivetrain_description(descs)
-    if drivetrain:
-        metadata['gm_vehicle_drivetrain'] = drivetrain
+        metadata['fuel_type'] = fuel
     return metadata
 
 def extract_manifest_metadata_for_trim(data: WorkbookData, trim: TrimDef) -> Dict[str, object]:
@@ -925,27 +916,15 @@ def extract_manifest_metadata_for_trim(data: WorkbookData, trim: TrimDef) -> Dic
     trim_name = normalize_text(trim.name)
     if trim_name:
         metadata['name'] = trim_name
-        metadata['gm_vehicle_trim'] = trim_name
     title = normalize_text(trim.raw_header)
     if title:
         metadata['title'] = title
     seating = extract_trim_seating(data, trim)
     if seating:
-        metadata['gm_vehicle_seating'] = seating
-    body_style = extract_trim_body_style(data, trim)
-    if body_style:
-        metadata['gm_vehicle_body_style'] = body_style
-    engine = pick_engine_description(descs)
-    if engine:
-        metadata['gm_vehicle_engine'] = engine
+        metadata['seating'] = seating
     fuel = pick_fuel_description(descs)
     if fuel:
-        metadata['gm_vehicle_fuel_type'] = fuel
-    drivetrain = pick_drivetrain_description(descs)
-    if not drivetrain:
-        drivetrain = extract_trim_drive_token_from_headers(data, trim)
-    if drivetrain:
-        metadata['gm_vehicle_drivetrain'] = drivetrain
+        metadata['fuel_type'] = fuel
     return metadata
 
 def render_trim_lineup_section(data: WorkbookData) -> str:
@@ -1217,6 +1196,9 @@ def model_manifest_metadata(data: WorkbookData) -> Dict[str, object]:
     metadata.update({
         'name': data.vehicle_name,
         'title': data.vehicle_name,
+        'year': normalize_text(data.year),
+        'make': normalize_text(data.make),
+        'model': normalize_text(data.model),
         'trim_headers_from_guide': trim_header_list(data),
         'trim_names_from_guide': trim_name_list(data),
         'trim_codes_from_guide': trim_code_list(data),
@@ -1230,6 +1212,10 @@ def trim_manifest_metadata(data: WorkbookData, trim: TrimDef) -> Dict[str, objec
     metadata.update({
         'name': normalize_text(trim.name),
         'title': full_trim_heading(data, trim),
+        'year': normalize_text(data.year),
+        'make': normalize_text(data.make),
+        'model': normalize_text(data.model),
+        'trim': normalize_text(trim.name),
         'trim_header_from_guide': normalize_text(trim.raw_header),
         'trim_code': normalize_text(trim.code),
     })
@@ -1243,13 +1229,12 @@ def engine_axle_manifest_metadata(data: WorkbookData, entry: EngineAxleEntry, tr
         'configuration_kind': CONFIG_KIND_ENGINE_AXLE,
         'top_label': normalize_text(entry.top_label),
         'model_code': normalize_text(entry.model_code),
-        'gm_vehicle_engine': normalize_text(entry.engine),
+        'engine': normalize_text(entry.engine),
         'guide_categories': unique_preserve_order(item.category for item in entry.items if normalize_text(item.category)),
     }
     if normalize_text(entry.top_label):
-        metadata['gm_vehicle_body_style'] = normalize_text(entry.top_label)
+        metadata['body_style'] = normalize_text(entry.top_label)
     if trim is not None:
-        metadata['gm_vehicle_trim'] = normalize_text(trim.name)
         metadata['trim_code'] = normalize_text(trim.code)
         metadata['trim_header_from_guide'] = normalize_text(trim.raw_header)
     return {k: v for k, v in metadata.items() if v not in ('', [], None)}
@@ -1262,12 +1247,11 @@ def trailering_manifest_metadata(data: WorkbookData, record: TraileringRecord, t
         'configuration_kind': CONFIG_KIND_TRAILERING,
         'rating_type': normalize_text(record.rating_type),
         'model_code': normalize_text(record.model_code),
-        'gm_vehicle_engine': normalize_text(record.engine),
-        'gm_vehicle_axle_ratio': normalize_text(record.axle_ratio),
-        'gm_max_trailer_weight': normalize_text(record.max_trailer_weight),
+        'engine': normalize_text(record.engine),
+        'axle_ratio': normalize_text(record.axle_ratio),
+        'max_trailer_weight': normalize_text(record.max_trailer_weight),
     }
     if trim is not None:
-        metadata['gm_vehicle_trim'] = normalize_text(trim.name)
         metadata['trim_code'] = normalize_text(trim.code)
         metadata['trim_header_from_guide'] = normalize_text(trim.raw_header)
     return {k: v for k, v in metadata.items() if v not in ('', [], None)}
@@ -1280,12 +1264,11 @@ def gcwr_manifest_metadata(data: WorkbookData, records: Sequence[GCWRRecord], tr
         'source_tab': normalize_text(records[0].sheet_name) if records else '',
         'configuration_kind': CONFIG_KIND_GCWR,
         'table_title': normalize_text(records[0].table_title) if records else '',
-        'gm_vehicle_engine': normalize_text(records[0].engine) if records else '',
+        'engine': normalize_text(records[0].engine) if records else '',
         'gcwr_values': unique_preserve_order(record.gcwr for record in records),
-        'gm_vehicle_axle_ratios': unique_preserve_order(record.axle_ratio for record in records),
+        'axle_ratios': unique_preserve_order(record.axle_ratio for record in records),
     }
     if trim is not None:
-        metadata['gm_vehicle_trim'] = normalize_text(trim.name)
         metadata['trim_code'] = normalize_text(trim.code)
         metadata['trim_header_from_guide'] = normalize_text(trim.raw_header)
     return {k: v for k, v in metadata.items() if v not in ('', [], None)}
@@ -1855,8 +1838,8 @@ def trim_feature_manifest_metadata(data: WorkbookData, trim: TrimDef, agg: TrimF
         source_tabs=source_tab_list_from_contexts(agg.source_contexts),
         source_contexts=list(agg.source_contexts),
         feature_text_from_guide=normalize_text(agg.description),
-        gm_orderable_code=normalize_text(agg.orderable_code),
-        gm_reference_code=normalize_text(agg.reference_code),
+        orderable_code=normalize_text(agg.orderable_code),
+        reference_code=normalize_text(agg.reference_code),
         guide_status_values=raw_values,
         guide_status_labels=labels,
         has_notes=bool_or_none(bool(agg.notes)),
@@ -1912,8 +1895,8 @@ def comparison_feature_manifest_metadata(data: WorkbookData, agg: ModelFeatureAg
         source_contexts=list(agg.source_contexts),
         comparison_axis='trim',
         feature_text_from_guide=normalize_text(agg.description),
-        gm_orderable_code=normalize_text(agg.orderable_code),
-        gm_reference_code=normalize_text(agg.reference_code),
+        orderable_code=normalize_text(agg.orderable_code),
+        reference_code=normalize_text(agg.reference_code),
         guide_status_values=raw_values,
         guide_status_labels=labels,
         availability_varies_by_trim=comparison_varies_by_trim(agg),
@@ -2202,6 +2185,9 @@ def build_manifest_from_bindings(data: WorkbookData, bindings: Sequence[BoundRec
         'workbook': manifest_relpath(data.path, manifest_base),
         'vehicle_name': data.vehicle_name,
         'vehicle_key': vehicle_key(data),
+        'year': normalize_text(data.year),
+        'make': normalize_text(data.make),
+        'model': normalize_text(data.model),
         'files': [],
     }
     for binding in bindings:
@@ -2271,21 +2257,20 @@ def spec_column_manifest_metadata(data: WorkbookData, column: SpecColumn, trim: 
     }
     seating = spec_column_seating_value(column)
     if manifest_text_is_meaningful(seating, require_letters=False):
-        metadata['gm_vehicle_seating'] = seating
+        metadata['seating'] = seating
     body_style = spec_column_body_style_value(column)
     if manifest_text_is_meaningful(body_style):
-        metadata['gm_vehicle_body_style'] = body_style
+        metadata['body_style'] = body_style
     engine = spec_column_engine_value(column)
     if looks_like_engine_value(engine):
-        metadata['gm_vehicle_engine'] = engine
+        metadata['engine'] = engine
     drivetrain = spec_column_drivetrain_value(column)
     if manifest_text_is_meaningful(drivetrain):
-        metadata['gm_vehicle_drivetrain'] = drivetrain
+        metadata['drivetrain'] = drivetrain
     fuel = spec_column_fuel_value(column)
     if looks_like_fuel_value(fuel):
-        metadata['gm_vehicle_fuel_type'] = fuel
+        metadata['fuel_type'] = fuel
     if trim is not None:
-        metadata['gm_vehicle_trim'] = normalize_text(trim.name)
         metadata['trim_code'] = normalize_text(trim.code)
         metadata['trim_header_from_guide'] = normalize_text(trim.raw_header)
     return {k: v for k, v in metadata.items() if v not in ('', [], None)}
@@ -2370,21 +2355,20 @@ def spec_group_manifest_metadata(data: WorkbookData, group: SpecGroupDoc, trim: 
         metadata['model_code'] = model_code
     body_style = spec_group_first_value(group, spec_column_body_style_value) or group.top_label
     if manifest_text_is_meaningful(body_style):
-        metadata['gm_vehicle_body_style'] = body_style
+        metadata['body_style'] = body_style
     seating = spec_group_first_value(group, spec_column_seating_value)
     if manifest_text_is_meaningful(seating, require_letters=False):
-        metadata['gm_vehicle_seating'] = seating
+        metadata['seating'] = seating
     engine = spec_group_first_value(group, spec_column_engine_value)
     if looks_like_engine_value(engine):
-        metadata['gm_vehicle_engine'] = engine
+        metadata['engine'] = engine
     drivetrain = spec_group_first_value(group, spec_column_drivetrain_value)
     if manifest_text_is_meaningful(drivetrain):
-        metadata['gm_vehicle_drivetrain'] = drivetrain
+        metadata['drivetrain'] = drivetrain
     fuel = spec_group_first_value(group, spec_column_fuel_value)
     if looks_like_fuel_value(fuel):
-        metadata['gm_vehicle_fuel_type'] = fuel
+        metadata['fuel_type'] = fuel
     if trim is not None:
-        metadata['gm_vehicle_trim'] = normalize_text(trim.name)
         metadata['trim_code'] = normalize_text(trim.code)
         metadata['trim_header_from_guide'] = normalize_text(trim.raw_header)
     return {k: v for k, v in metadata.items() if v not in ('', [], None)}
@@ -2492,18 +2476,13 @@ def powertrain_trailering_manifest_metadata(data: WorkbookData, group: Powertrai
         'guide_categories': guide_categories,
         'trailering_rating_types': unique_preserve_order(record.rating_type for record in group.trailering_records if normalize_text(record.rating_type)),
     }
-    if manifest_text_is_meaningful(first_unique(group.top_labels)):
-        metadata['gm_vehicle_body_style'] = first_unique(group.top_labels)
-    if len(engines) == 1 and looks_like_engine_value(engines[0]):
-        metadata['gm_vehicle_engine'] = engines[0]
-    elif engines:
-        metadata['gm_vehicle_engines'] = engines
+    if engines:
+        metadata['engines'] = engines
     if axle_ratios:
-        metadata['gm_vehicle_axle_ratios'] = axle_ratios
+        metadata['axle_ratios'] = axle_ratios
     if max_trailer_weights:
-        metadata['gm_max_trailer_weights'] = max_trailer_weights
+        metadata['max_trailer_weights'] = max_trailer_weights
     if trim is not None:
-        metadata['gm_vehicle_trim'] = normalize_text(trim.name)
         metadata['trim_code'] = normalize_text(trim.code)
         metadata['trim_header_from_guide'] = normalize_text(trim.raw_header)
     return {k: v for k, v in metadata.items() if v not in ('', [], None)}
@@ -2556,9 +2535,9 @@ def gcwr_reference_manifest_metadata(data: WorkbookData, records: Sequence[GCWRR
         'source_tabs': unique_preserve_order(record.sheet_name for record in records),
         'configuration_kind': CONFIG_KIND_GCWR_REFERENCE,
         'table_titles': unique_preserve_order(record.table_title for record in records),
-        'gm_vehicle_engines': unique_preserve_order(record.engine for record in records if normalize_text(record.engine)),
+        'engines': unique_preserve_order(record.engine for record in records if normalize_text(record.engine)),
         'gcwr_values': unique_preserve_order(record.gcwr for record in records if normalize_text(record.gcwr)),
-        'gm_vehicle_axle_ratios': unique_preserve_order(record.axle_ratio for record in records if normalize_text(record.axle_ratio)),
+        'axle_ratios': unique_preserve_order(record.axle_ratio for record in records if normalize_text(record.axle_ratio)),
     }
 
 def build_model_and_comparison_records(

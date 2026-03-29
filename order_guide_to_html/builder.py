@@ -40,11 +40,15 @@ class CorpusBuilder:
             'entity_name': self.cleaner.clean_trim_heading(data, matched_trim) if matched_trim is not None else data.vehicle_name,
             'entity_key': trim_entity_key(data, matched_trim) if matched_trim is not None else vehicle_key(data),
             'vehicle_key': vehicle_key(data),
+            'year': normalize_text(data.year),
+            'make': normalize_text(data.make),
+            'model': normalize_text(data.model),
             'guide_domains': [normalize_domain_value(domain)],
             'retrieval_granularity': 'coarse',
         }
         if matched_trim is not None:
             extra['trim_key'] = trim_entity_key(data, matched_trim)
+            extra['trim'] = normalize_text(matched_trim.name)
         return with_flat_doc_metadata(metadata, **extra)
 
     def build_model_and_comparisons(self, data, output_dir: Path, used_names: set[str], bindings: List[BoundRecord]) -> Path:
