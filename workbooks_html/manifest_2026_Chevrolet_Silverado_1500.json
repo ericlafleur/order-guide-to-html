@@ -8,6 +8,9 @@
       "node_id": "M3381846B8AEC20F4",
       "name": "2026 Chevrolet Silverado 1500",
       "title": "2026 Chevrolet Silverado 1500",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
       "doc_type": "model",
       "doc_role": "entity",
       "entity_level": "model",
@@ -29,7 +32,7 @@
       "entity_key": "2026_chevrolet_silverado_1500",
       "vehicle_key": "2026_chevrolet_silverado_1500",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "child": [
         "C7E89A76AE23A01C4",
         "CFDBDCFC8712D216B",
@@ -72,47 +75,47 @@
         "S8E30CE629F656F24"
       ],
       "child_paths": [
-        "workbooks_html/compare_domain_2026_Chevrolet_Silverado_1500_Safety_and_driver_assistance.html",
-        "workbooks_html/compare_domain_2026_Chevrolet_Silverado_1500_Technology_and_connectivity.html",
-        "workbooks_html/compare_domain_2026_Chevrolet_Silverado_1500_Interior_and_comfort.html",
-        "workbooks_html/compare_domain_2026_Chevrolet_Silverado_1500_Exterior_and_utility.html",
-        "workbooks_html/compare_domain_2026_Chevrolet_Silverado_1500_Wheels_and_tires.html",
-        "workbooks_html/compare_domain_2026_Chevrolet_Silverado_1500_Mechanical_and_performance.html",
-        "workbooks_html/compare_domain_2026_Chevrolet_Silverado_1500_Packages_and_options.html",
-        "workbooks_html/trim_2026_Chevrolet_Silverado_1500_Work_Truck.html",
-        "workbooks_html/trim_2026_Chevrolet_Silverado_1500_Custom.html",
-        "workbooks_html/trim_2026_Chevrolet_Silverado_1500_Custom_Trail_Boss.html",
-        "workbooks_html/trim_2026_Chevrolet_Silverado_1500_LT.html",
-        "workbooks_html/trim_2026_Chevrolet_Silverado_1500_RST.html",
-        "workbooks_html/trim_2026_Chevrolet_Silverado_1500_LT_Trail_Boss.html",
-        "workbooks_html/trim_2026_Chevrolet_Silverado_1500_ZR2.html",
-        "workbooks_html/trim_2026_Chevrolet_Silverado_1500_LTZ.html",
-        "workbooks_html/trim_2026_Chevrolet_Silverado_1500_High_Country.html",
-        "workbooks_html/spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CC10543.html",
-        "workbooks_html/spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CK10543.html",
-        "workbooks_html/spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CK10543_2.html",
-        "workbooks_html/spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CC10743.html",
-        "workbooks_html/spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CK10743.html",
-        "workbooks_html/spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CK10743_2.html",
-        "workbooks_html/spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CC10753.html",
-        "workbooks_html/spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CK10753.html",
-        "workbooks_html/spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CC10703.html",
-        "workbooks_html/spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CK10703.html",
-        "workbooks_html/spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CC10903.html",
-        "workbooks_html/spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CK10903.html",
-        "workbooks_html/config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CC10543.html",
-        "workbooks_html/config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CK10543.html",
-        "workbooks_html/config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CC10743.html",
-        "workbooks_html/config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CK10743.html",
-        "workbooks_html/config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CC10753.html",
-        "workbooks_html/config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CK10753.html",
-        "workbooks_html/config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CC10703.html",
-        "workbooks_html/config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CK10703.html",
-        "workbooks_html/config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CC10903.html",
-        "workbooks_html/config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CK10903.html",
-        "workbooks_html/config_2026_Chevrolet_Silverado_1500_gcwr_reference.html"
+        "compare_domain_2026_Chevrolet_Silverado_1500_Safety_and_driver_assistance.html",
+        "compare_domain_2026_Chevrolet_Silverado_1500_Technology_and_connectivity.html",
+        "compare_domain_2026_Chevrolet_Silverado_1500_Interior_and_comfort.html",
+        "compare_domain_2026_Chevrolet_Silverado_1500_Exterior_and_utility.html",
+        "compare_domain_2026_Chevrolet_Silverado_1500_Wheels_and_tires.html",
+        "compare_domain_2026_Chevrolet_Silverado_1500_Mechanical_and_performance.html",
+        "compare_domain_2026_Chevrolet_Silverado_1500_Packages_and_options.html",
+        "trim_2026_Chevrolet_Silverado_1500_Work_Truck.html",
+        "trim_2026_Chevrolet_Silverado_1500_Custom.html",
+        "trim_2026_Chevrolet_Silverado_1500_Custom_Trail_Boss.html",
+        "trim_2026_Chevrolet_Silverado_1500_LT.html",
+        "trim_2026_Chevrolet_Silverado_1500_RST.html",
+        "trim_2026_Chevrolet_Silverado_1500_LT_Trail_Boss.html",
+        "trim_2026_Chevrolet_Silverado_1500_ZR2.html",
+        "trim_2026_Chevrolet_Silverado_1500_LTZ.html",
+        "trim_2026_Chevrolet_Silverado_1500_High_Country.html",
+        "spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CC10543.html",
+        "spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CK10543.html",
+        "spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CK10543_2.html",
+        "spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CC10743.html",
+        "spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CK10743.html",
+        "spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CK10743_2.html",
+        "spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CC10753.html",
+        "spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CK10753.html",
+        "spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CC10703.html",
+        "spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CK10703.html",
+        "spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CC10903.html",
+        "spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CK10903.html",
+        "config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CC10543.html",
+        "config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CK10543.html",
+        "config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CC10743.html",
+        "config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CK10743.html",
+        "config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CC10753.html",
+        "config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CK10753.html",
+        "config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CC10703.html",
+        "config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CK10703.html",
+        "config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CC10903.html",
+        "config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CK10903.html",
+        "config_2026_Chevrolet_Silverado_1500_gcwr_reference.html"
       ],
-      "path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "path": "model_2026_Chevrolet_Silverado_1500.html",
       "available_trims": [
         "Work Truck",
         "Custom",
@@ -131,6 +134,9 @@
       "node_id": "C7E89A76AE23A01C4",
       "name": "2026 Chevrolet Silverado 1500 | Safety and driver assistance trim comparison",
       "title": "2026 Chevrolet Silverado 1500 | Safety and driver assistance trim comparison",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
       "trim_names_from_guide": [
         "Work Truck",
         "Custom",
@@ -157,12 +163,12 @@
       "entity_key": "2026_chevrolet_silverado_1500",
       "vehicle_key": "2026_chevrolet_silverado_1500",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/compare_domain_2026_Chevrolet_Silverado_1500_Safety_and_driver_assistance.html"
+      "path": "compare_domain_2026_Chevrolet_Silverado_1500_Safety_and_driver_assistance.html"
     },
     {
       "objecttype": "Comparison",
@@ -170,6 +176,9 @@
       "node_id": "CFDBDCFC8712D216B",
       "name": "2026 Chevrolet Silverado 1500 | Technology and connectivity trim comparison",
       "title": "2026 Chevrolet Silverado 1500 | Technology and connectivity trim comparison",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
       "trim_names_from_guide": [
         "Work Truck",
         "Custom",
@@ -196,12 +205,12 @@
       "entity_key": "2026_chevrolet_silverado_1500",
       "vehicle_key": "2026_chevrolet_silverado_1500",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/compare_domain_2026_Chevrolet_Silverado_1500_Technology_and_connectivity.html"
+      "path": "compare_domain_2026_Chevrolet_Silverado_1500_Technology_and_connectivity.html"
     },
     {
       "objecttype": "Comparison",
@@ -209,6 +218,9 @@
       "node_id": "C9E95A493ED4AFCF6",
       "name": "2026 Chevrolet Silverado 1500 | Interior and comfort trim comparison",
       "title": "2026 Chevrolet Silverado 1500 | Interior and comfort trim comparison",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
       "trim_names_from_guide": [
         "Work Truck",
         "Custom",
@@ -235,12 +247,12 @@
       "entity_key": "2026_chevrolet_silverado_1500",
       "vehicle_key": "2026_chevrolet_silverado_1500",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/compare_domain_2026_Chevrolet_Silverado_1500_Interior_and_comfort.html"
+      "path": "compare_domain_2026_Chevrolet_Silverado_1500_Interior_and_comfort.html"
     },
     {
       "objecttype": "Comparison",
@@ -248,6 +260,9 @@
       "node_id": "C5F904DC7C441BC35",
       "name": "2026 Chevrolet Silverado 1500 | Exterior and utility trim comparison",
       "title": "2026 Chevrolet Silverado 1500 | Exterior and utility trim comparison",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
       "trim_names_from_guide": [
         "Work Truck",
         "Custom",
@@ -274,12 +289,12 @@
       "entity_key": "2026_chevrolet_silverado_1500",
       "vehicle_key": "2026_chevrolet_silverado_1500",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/compare_domain_2026_Chevrolet_Silverado_1500_Exterior_and_utility.html"
+      "path": "compare_domain_2026_Chevrolet_Silverado_1500_Exterior_and_utility.html"
     },
     {
       "objecttype": "Comparison",
@@ -287,6 +302,9 @@
       "node_id": "CF40F9373CA1859AE",
       "name": "2026 Chevrolet Silverado 1500 | Wheels and tires trim comparison",
       "title": "2026 Chevrolet Silverado 1500 | Wheels and tires trim comparison",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
       "trim_names_from_guide": [
         "Work Truck",
         "Custom",
@@ -313,12 +331,12 @@
       "entity_key": "2026_chevrolet_silverado_1500",
       "vehicle_key": "2026_chevrolet_silverado_1500",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/compare_domain_2026_Chevrolet_Silverado_1500_Wheels_and_tires.html"
+      "path": "compare_domain_2026_Chevrolet_Silverado_1500_Wheels_and_tires.html"
     },
     {
       "objecttype": "Comparison",
@@ -326,6 +344,9 @@
       "node_id": "CFB9A2C98B2F4382F",
       "name": "2026 Chevrolet Silverado 1500 | Mechanical and performance trim comparison",
       "title": "2026 Chevrolet Silverado 1500 | Mechanical and performance trim comparison",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
       "trim_names_from_guide": [
         "Work Truck",
         "Custom",
@@ -352,12 +373,12 @@
       "entity_key": "2026_chevrolet_silverado_1500",
       "vehicle_key": "2026_chevrolet_silverado_1500",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/compare_domain_2026_Chevrolet_Silverado_1500_Mechanical_and_performance.html"
+      "path": "compare_domain_2026_Chevrolet_Silverado_1500_Mechanical_and_performance.html"
     },
     {
       "objecttype": "Comparison",
@@ -365,6 +386,9 @@
       "node_id": "CA77C37510AA3BC7B",
       "name": "2026 Chevrolet Silverado 1500 | Packages and options trim comparison",
       "title": "2026 Chevrolet Silverado 1500 | Packages and options trim comparison",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
       "trim_names_from_guide": [
         "Work Truck",
         "Custom",
@@ -391,21 +415,23 @@
       "entity_key": "2026_chevrolet_silverado_1500",
       "vehicle_key": "2026_chevrolet_silverado_1500",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/compare_domain_2026_Chevrolet_Silverado_1500_Packages_and_options.html"
+      "path": "compare_domain_2026_Chevrolet_Silverado_1500_Packages_and_options.html"
     },
     {
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "TBF1CE3CB306682A4",
       "name": "Work Truck",
-      "gm_vehicle_trim": "Work Truck",
       "title": "2026 Chevrolet Silverado 1500 Work Truck",
-      "gm_vehicle_engine": "Engine, 2.7L TurboMax, (310 hp [231 kW] @ 5600 rpm, 430 lb-ft of torque [583 Nm] @ 3000 rpm)",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
+      "trim": "Work Truck",
       "doc_type": "trim",
       "doc_role": "entity",
       "entity_level": "trim",
@@ -428,21 +454,23 @@
       "vehicle_key": "2026_chevrolet_silverado_1500",
       "trim_key": "2026_chevrolet_silverado_1500_work_truck",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/trim_2026_Chevrolet_Silverado_1500_Work_Truck.html"
+      "path": "trim_2026_Chevrolet_Silverado_1500_Work_Truck.html"
     },
     {
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "T39BA52770A06E5C7",
       "name": "Custom",
-      "gm_vehicle_trim": "Custom",
       "title": "2026 Chevrolet Silverado 1500 Custom",
-      "gm_vehicle_engine": "Engine, 2.7L TurboMax, (310 hp [231 kW] @ 5600 rpm, 430 lb-ft of torque [583 Nm] @ 3000 rpm)",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
+      "trim": "Custom",
       "doc_type": "trim",
       "doc_role": "entity",
       "entity_level": "trim",
@@ -465,21 +493,23 @@
       "vehicle_key": "2026_chevrolet_silverado_1500",
       "trim_key": "2026_chevrolet_silverado_1500_custom",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/trim_2026_Chevrolet_Silverado_1500_Custom.html"
+      "path": "trim_2026_Chevrolet_Silverado_1500_Custom.html"
     },
     {
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "TAD39289754078D26",
       "name": "Custom Trail Boss",
-      "gm_vehicle_trim": "Custom Trail Boss",
       "title": "2026 Chevrolet Silverado 1500 Custom Trail Boss",
-      "gm_vehicle_engine": "Engine, 2.7L TurboMax, (310 hp [231 kW] @ 5600 rpm, 430 lb-ft of torque [583 Nm] @ 3000 rpm)",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
+      "trim": "Custom Trail Boss",
       "doc_type": "trim",
       "doc_role": "entity",
       "entity_level": "trim",
@@ -502,21 +532,23 @@
       "vehicle_key": "2026_chevrolet_silverado_1500",
       "trim_key": "2026_chevrolet_silverado_1500_custom_trail_boss",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/trim_2026_Chevrolet_Silverado_1500_Custom_Trail_Boss.html"
+      "path": "trim_2026_Chevrolet_Silverado_1500_Custom_Trail_Boss.html"
     },
     {
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "TBFA80469E5DE8109",
       "name": "LT",
-      "gm_vehicle_trim": "LT",
       "title": "2026 Chevrolet Silverado 1500 LT",
-      "gm_vehicle_engine": "Engine, 2.7L TurboMax, (310 hp [231 kW] @ 5600 rpm, 430 lb-ft of torque [583 Nm] @ 3000 rpm)",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
+      "trim": "LT",
       "doc_type": "trim",
       "doc_role": "entity",
       "entity_level": "trim",
@@ -539,21 +571,23 @@
       "vehicle_key": "2026_chevrolet_silverado_1500",
       "trim_key": "2026_chevrolet_silverado_1500_lt",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/trim_2026_Chevrolet_Silverado_1500_LT.html"
+      "path": "trim_2026_Chevrolet_Silverado_1500_LT.html"
     },
     {
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "T3FBE11768803FF7E",
       "name": "RST",
-      "gm_vehicle_trim": "RST",
       "title": "2026 Chevrolet Silverado 1500 RST",
-      "gm_vehicle_engine": "Engine, 2.7L TurboMax, (310 hp [231 kW] @ 5600 rpm, 430 lb-ft of torque [583 Nm] @ 3000 rpm)",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
+      "trim": "RST",
       "doc_type": "trim",
       "doc_role": "entity",
       "entity_level": "trim",
@@ -576,21 +610,23 @@
       "vehicle_key": "2026_chevrolet_silverado_1500",
       "trim_key": "2026_chevrolet_silverado_1500_rst",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/trim_2026_Chevrolet_Silverado_1500_RST.html"
+      "path": "trim_2026_Chevrolet_Silverado_1500_RST.html"
     },
     {
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "T7A1C4817E46D335B",
       "name": "LT Trail Boss",
-      "gm_vehicle_trim": "LT Trail Boss",
       "title": "2026 Chevrolet Silverado 1500 LT Trail Boss",
-      "gm_vehicle_engine": "Engine, 2.7L TurboMax, (310 hp [231 kW] @ 5600 rpm, 430 lb-ft of torque [583 Nm] @ 3000 rpm)",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
+      "trim": "LT Trail Boss",
       "doc_type": "trim",
       "doc_role": "entity",
       "entity_level": "trim",
@@ -613,24 +649,24 @@
       "vehicle_key": "2026_chevrolet_silverado_1500",
       "trim_key": "2026_chevrolet_silverado_1500_lt_trail_boss",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/trim_2026_Chevrolet_Silverado_1500_LT_Trail_Boss.html"
+      "path": "trim_2026_Chevrolet_Silverado_1500_LT_Trail_Boss.html"
     },
     {
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "TDF3D181958796E95",
       "name": "ZR2",
-      "gm_vehicle_trim": "ZR2",
       "title": "2026 Chevrolet Silverado 1500 ZR2",
-      "gm_vehicle_seating": "5",
-      "gm_vehicle_body_style": "Crew Cab",
-      "gm_vehicle_engine": "Engine, Duramax 3.0L Turbo-Diesel I6, (305 hp [227 kW] @ 3750 rpm, 495 lb-ft of torque [671 Nm] @ 2750 rpm)",
-      "gm_vehicle_drivetrain": "4WD",
+      "seating": "5",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
+      "trim": "ZR2",
       "doc_type": "trim",
       "doc_role": "entity",
       "entity_level": "trim",
@@ -653,27 +689,29 @@
       "vehicle_key": "2026_chevrolet_silverado_1500",
       "trim_key": "2026_chevrolet_silverado_1500_zr2",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
       "child": [
         "S03544C2A45CBA774"
       ],
       "child_paths": [
-        "workbooks_html/spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_ZR2_CK10543.html"
+        "spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_ZR2_CK10543.html"
       ],
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/trim_2026_Chevrolet_Silverado_1500_ZR2.html"
+      "path": "trim_2026_Chevrolet_Silverado_1500_ZR2.html"
     },
     {
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "T77898B6DD5C20CE0",
       "name": "LTZ",
-      "gm_vehicle_trim": "LTZ",
       "title": "2026 Chevrolet Silverado 1500 LTZ",
-      "gm_vehicle_engine": "Engine, 5.3L EcoTec3 V8, (355 hp [265 kW] @ 5600 rpm, 383 lb-ft of torque [518 Nm] @ 4100 rpm); featuring available Dynamic Fuel Management that enables the engine to operate in 17 different patterns between 2 and 8 cylinders, depending on demand, to optimize power delivery and efficiency",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
+      "trim": "LTZ",
       "doc_type": "trim",
       "doc_role": "entity",
       "entity_level": "trim",
@@ -696,21 +734,23 @@
       "vehicle_key": "2026_chevrolet_silverado_1500",
       "trim_key": "2026_chevrolet_silverado_1500_ltz",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/trim_2026_Chevrolet_Silverado_1500_LTZ.html"
+      "path": "trim_2026_Chevrolet_Silverado_1500_LTZ.html"
     },
     {
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "TD72FF37971AA9EAB",
       "name": "High Country",
-      "gm_vehicle_trim": "High Country",
       "title": "2026 Chevrolet Silverado 1500 High Country",
-      "gm_vehicle_engine": "Engine, 5.3L EcoTec3 V8, (355 hp [265 kW] @ 5600 rpm, 383 lb-ft of torque [518 Nm] @ 4100 rpm); featuring available Dynamic Fuel Management that enables the engine to operate in 17 different patterns between 2 and 8 cylinders, depending on demand, to optimize power delivery and efficiency",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
+      "trim": "High Country",
       "doc_type": "trim",
       "doc_role": "entity",
       "entity_level": "trim",
@@ -733,12 +773,12 @@
       "vehicle_key": "2026_chevrolet_silverado_1500",
       "trim_key": "2026_chevrolet_silverado_1500_high_country",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/trim_2026_Chevrolet_Silverado_1500_High_Country.html"
+      "path": "trim_2026_Chevrolet_Silverado_1500_High_Country.html"
     },
     {
       "objecttype": "Configuration",
@@ -748,8 +788,8 @@
       "title": "2026 Chevrolet Silverado 1500 | Configuration dimensions and specifications | 2WD Short Bed Crew Cab",
       "configuration_kind": "spec-group",
       "configuration_label": "2WD Short Bed Crew Cab",
-      "gm_vehicle_body_style": "Crew Cab",
-      "gm_vehicle_drivetrain": "2WD",
+      "body_style": "Crew Cab",
+      "drivetrain": "2WD",
       "doc_type": "configuration-spec",
       "doc_role": "passage",
       "entity_level": "configuration",
@@ -762,14 +802,17 @@
       "entity_name": "2026 Chevrolet Silverado 1500",
       "entity_key": "2026_chevrolet_silverado_1500",
       "vehicle_key": "2026_chevrolet_silverado_1500",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
       "retrieval_granularity": "coarse",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CC10543.html"
+      "path": "spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CC10543.html"
     },
     {
       "objecttype": "Configuration",
@@ -779,8 +822,8 @@
       "title": "2026 Chevrolet Silverado 1500 | Configuration dimensions and specifications | 4WD Short Bed Crew Cab",
       "configuration_kind": "spec-group",
       "configuration_label": "4WD Short Bed Crew Cab",
-      "gm_vehicle_body_style": "Crew Cab",
-      "gm_vehicle_drivetrain": "4WD",
+      "body_style": "Crew Cab",
+      "drivetrain": "4WD",
       "doc_type": "configuration-spec",
       "doc_role": "passage",
       "entity_level": "configuration",
@@ -793,14 +836,17 @@
       "entity_name": "2026 Chevrolet Silverado 1500",
       "entity_key": "2026_chevrolet_silverado_1500",
       "vehicle_key": "2026_chevrolet_silverado_1500",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
       "retrieval_granularity": "coarse",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CK10543.html"
+      "path": "spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CK10543.html"
     },
     {
       "objecttype": "Configuration",
@@ -810,8 +856,8 @@
       "title": "2026 Chevrolet Silverado 1500 | Configuration dimensions and specifications | 4WD Short Bed Crew Cab\nLifted",
       "configuration_kind": "spec-group",
       "configuration_label": "4WD Short Bed Crew Cab\nLifted",
-      "gm_vehicle_body_style": "Crew Cab",
-      "gm_vehicle_drivetrain": "4WD",
+      "body_style": "Crew Cab",
+      "drivetrain": "4WD",
       "doc_type": "configuration-spec",
       "doc_role": "passage",
       "entity_level": "configuration",
@@ -824,14 +870,17 @@
       "entity_name": "2026 Chevrolet Silverado 1500",
       "entity_key": "2026_chevrolet_silverado_1500",
       "vehicle_key": "2026_chevrolet_silverado_1500",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
       "retrieval_granularity": "coarse",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CK10543_2.html"
+      "path": "spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CK10543_2.html"
     },
     {
       "objecttype": "Configuration",
@@ -841,9 +890,8 @@
       "title": "2026 Chevrolet Silverado 1500 | Configuration dimensions and specifications | 4WD Short Bed Crew Cab\nZR2",
       "configuration_kind": "spec-group",
       "configuration_label": "4WD Short Bed Crew Cab\nZR2",
-      "gm_vehicle_body_style": "Crew Cab",
-      "gm_vehicle_drivetrain": "4WD",
-      "gm_vehicle_trim": "ZR2",
+      "body_style": "Crew Cab",
+      "drivetrain": "4WD",
       "doc_type": "configuration-spec",
       "doc_role": "passage",
       "entity_level": "configuration",
@@ -856,17 +904,21 @@
       "entity_name": "2026 Chevrolet Silverado 1500 ZR2",
       "entity_key": "2026_chevrolet_silverado_1500_zr2",
       "vehicle_key": "2026_chevrolet_silverado_1500",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
       "retrieval_granularity": "coarse",
       "trim_key": "2026_chevrolet_silverado_1500_zr2",
+      "trim": "ZR2",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "TDF3D181958796E95",
-      "parent_path": "workbooks_html/trim_2026_Chevrolet_Silverado_1500_ZR2.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "trim_2026_Chevrolet_Silverado_1500_ZR2.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "parent_trim": "workbooks_html/trim_2026_Chevrolet_Silverado_1500_ZR2.html",
+      "parent_trim": "trim_2026_Chevrolet_Silverado_1500_ZR2.html",
       "parent_trim_id": "TDF3D181958796E95",
-      "path": "workbooks_html/spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_ZR2_CK10543.html"
+      "path": "spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_ZR2_CK10543.html"
     },
     {
       "objecttype": "Configuration",
@@ -876,8 +928,8 @@
       "title": "2026 Chevrolet Silverado 1500 | Configuration dimensions and specifications | 2WD Standard Bed Crew Cab",
       "configuration_kind": "spec-group",
       "configuration_label": "2WD Standard Bed Crew Cab",
-      "gm_vehicle_body_style": "Crew Cab",
-      "gm_vehicle_drivetrain": "2WD",
+      "body_style": "Crew Cab",
+      "drivetrain": "2WD",
       "doc_type": "configuration-spec",
       "doc_role": "passage",
       "entity_level": "configuration",
@@ -890,14 +942,17 @@
       "entity_name": "2026 Chevrolet Silverado 1500",
       "entity_key": "2026_chevrolet_silverado_1500",
       "vehicle_key": "2026_chevrolet_silverado_1500",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
       "retrieval_granularity": "coarse",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CC10743.html"
+      "path": "spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CC10743.html"
     },
     {
       "objecttype": "Configuration",
@@ -907,8 +962,8 @@
       "title": "2026 Chevrolet Silverado 1500 | Configuration dimensions and specifications | 4WD Standard Bed Crew Cab",
       "configuration_kind": "spec-group",
       "configuration_label": "4WD Standard Bed Crew Cab",
-      "gm_vehicle_body_style": "Crew Cab",
-      "gm_vehicle_drivetrain": "4WD",
+      "body_style": "Crew Cab",
+      "drivetrain": "4WD",
       "doc_type": "configuration-spec",
       "doc_role": "passage",
       "entity_level": "configuration",
@@ -921,14 +976,17 @@
       "entity_name": "2026 Chevrolet Silverado 1500",
       "entity_key": "2026_chevrolet_silverado_1500",
       "vehicle_key": "2026_chevrolet_silverado_1500",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
       "retrieval_granularity": "coarse",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CK10743.html"
+      "path": "spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CK10743.html"
     },
     {
       "objecttype": "Configuration",
@@ -938,8 +996,8 @@
       "title": "2026 Chevrolet Silverado 1500 | Configuration dimensions and specifications | 4WD Standard Bed Crew Cab\nLifted",
       "configuration_kind": "spec-group",
       "configuration_label": "4WD Standard Bed Crew Cab\nLifted",
-      "gm_vehicle_body_style": "Crew Cab",
-      "gm_vehicle_drivetrain": "4WD",
+      "body_style": "Crew Cab",
+      "drivetrain": "4WD",
       "doc_type": "configuration-spec",
       "doc_role": "passage",
       "entity_level": "configuration",
@@ -952,14 +1010,17 @@
       "entity_name": "2026 Chevrolet Silverado 1500",
       "entity_key": "2026_chevrolet_silverado_1500",
       "vehicle_key": "2026_chevrolet_silverado_1500",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
       "retrieval_granularity": "coarse",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CK10743_2.html"
+      "path": "spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CK10743_2.html"
     },
     {
       "objecttype": "Configuration",
@@ -969,8 +1030,8 @@
       "title": "2026 Chevrolet Silverado 1500 | Configuration dimensions and specifications | 2WD Standard Bed Double Cab",
       "configuration_kind": "spec-group",
       "configuration_label": "2WD Standard Bed Double Cab",
-      "gm_vehicle_body_style": "Double Cab",
-      "gm_vehicle_drivetrain": "2WD",
+      "body_style": "Double Cab",
+      "drivetrain": "2WD",
       "doc_type": "configuration-spec",
       "doc_role": "passage",
       "entity_level": "configuration",
@@ -983,14 +1044,17 @@
       "entity_name": "2026 Chevrolet Silverado 1500",
       "entity_key": "2026_chevrolet_silverado_1500",
       "vehicle_key": "2026_chevrolet_silverado_1500",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
       "retrieval_granularity": "coarse",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CC10753.html"
+      "path": "spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CC10753.html"
     },
     {
       "objecttype": "Configuration",
@@ -1000,8 +1064,8 @@
       "title": "2026 Chevrolet Silverado 1500 | Configuration dimensions and specifications | 4WD Standard Bed Double Cab",
       "configuration_kind": "spec-group",
       "configuration_label": "4WD Standard Bed Double Cab",
-      "gm_vehicle_body_style": "Double Cab",
-      "gm_vehicle_drivetrain": "4WD",
+      "body_style": "Double Cab",
+      "drivetrain": "4WD",
       "doc_type": "configuration-spec",
       "doc_role": "passage",
       "entity_level": "configuration",
@@ -1014,14 +1078,17 @@
       "entity_name": "2026 Chevrolet Silverado 1500",
       "entity_key": "2026_chevrolet_silverado_1500",
       "vehicle_key": "2026_chevrolet_silverado_1500",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
       "retrieval_granularity": "coarse",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CK10753.html"
+      "path": "spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CK10753.html"
     },
     {
       "objecttype": "Configuration",
@@ -1031,8 +1098,8 @@
       "title": "2026 Chevrolet Silverado 1500 | Configuration dimensions and specifications | 2WD Standard Bed Regular Cab",
       "configuration_kind": "spec-group",
       "configuration_label": "2WD Standard Bed Regular Cab",
-      "gm_vehicle_body_style": "Regular Cab",
-      "gm_vehicle_drivetrain": "2WD",
+      "body_style": "Regular Cab",
+      "drivetrain": "2WD",
       "doc_type": "configuration-spec",
       "doc_role": "passage",
       "entity_level": "configuration",
@@ -1045,14 +1112,17 @@
       "entity_name": "2026 Chevrolet Silverado 1500",
       "entity_key": "2026_chevrolet_silverado_1500",
       "vehicle_key": "2026_chevrolet_silverado_1500",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
       "retrieval_granularity": "coarse",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CC10703.html"
+      "path": "spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CC10703.html"
     },
     {
       "objecttype": "Configuration",
@@ -1062,8 +1132,8 @@
       "title": "2026 Chevrolet Silverado 1500 | Configuration dimensions and specifications | 4WD Standard Bed Regular Cab",
       "configuration_kind": "spec-group",
       "configuration_label": "4WD Standard Bed Regular Cab",
-      "gm_vehicle_body_style": "Regular Cab",
-      "gm_vehicle_drivetrain": "4WD",
+      "body_style": "Regular Cab",
+      "drivetrain": "4WD",
       "doc_type": "configuration-spec",
       "doc_role": "passage",
       "entity_level": "configuration",
@@ -1076,14 +1146,17 @@
       "entity_name": "2026 Chevrolet Silverado 1500",
       "entity_key": "2026_chevrolet_silverado_1500",
       "vehicle_key": "2026_chevrolet_silverado_1500",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
       "retrieval_granularity": "coarse",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CK10703.html"
+      "path": "spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CK10703.html"
     },
     {
       "objecttype": "Configuration",
@@ -1093,8 +1166,8 @@
       "title": "2026 Chevrolet Silverado 1500 | Configuration dimensions and specifications | 2WD Long Bed Regular Cab",
       "configuration_kind": "spec-group",
       "configuration_label": "2WD Long Bed Regular Cab",
-      "gm_vehicle_body_style": "Regular Cab",
-      "gm_vehicle_drivetrain": "2WD",
+      "body_style": "Regular Cab",
+      "drivetrain": "2WD",
       "doc_type": "configuration-spec",
       "doc_role": "passage",
       "entity_level": "configuration",
@@ -1107,14 +1180,17 @@
       "entity_name": "2026 Chevrolet Silverado 1500",
       "entity_key": "2026_chevrolet_silverado_1500",
       "vehicle_key": "2026_chevrolet_silverado_1500",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
       "retrieval_granularity": "coarse",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CC10903.html"
+      "path": "spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CC10903.html"
     },
     {
       "objecttype": "Configuration",
@@ -1124,8 +1200,8 @@
       "title": "2026 Chevrolet Silverado 1500 | Configuration dimensions and specifications | 4WD Long Bed Regular Cab",
       "configuration_kind": "spec-group",
       "configuration_label": "4WD Long Bed Regular Cab",
-      "gm_vehicle_body_style": "Regular Cab",
-      "gm_vehicle_drivetrain": "4WD",
+      "body_style": "Regular Cab",
+      "drivetrain": "4WD",
       "doc_type": "configuration-spec",
       "doc_role": "passage",
       "entity_level": "configuration",
@@ -1138,14 +1214,17 @@
       "entity_name": "2026 Chevrolet Silverado 1500",
       "entity_key": "2026_chevrolet_silverado_1500",
       "vehicle_key": "2026_chevrolet_silverado_1500",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
       "retrieval_granularity": "coarse",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CK10903.html"
+      "path": "spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CK10903.html"
     },
     {
       "objecttype": "Configuration",
@@ -1165,18 +1244,17 @@
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
       ],
-      "gm_vehicle_body_style": "Crew Cab",
-      "gm_vehicle_engines": [
+      "engines": [
         "TurboMax",
         "5.3L EcoTec3 V8",
         "Duramax 3.0L Turbo-Diesel I6"
       ],
-      "gm_vehicle_axle_ratios": [
+      "axle_ratios": [
         "3.42",
         "3.23",
         "3.73"
       ],
-      "gm_max_trailer_weights": [
+      "max_trailer_weights": [
         "9300 (4218)",
         "9600 (4355)",
         "11300 (5126)",
@@ -1198,14 +1276,17 @@
       "entity_name": "2026 Chevrolet Silverado 1500",
       "entity_key": "2026_chevrolet_silverado_1500",
       "vehicle_key": "2026_chevrolet_silverado_1500",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
       "retrieval_granularity": "coarse",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CC10543.html"
+      "path": "config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CC10543.html"
     },
     {
       "objecttype": "Configuration",
@@ -1225,19 +1306,18 @@
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
       ],
-      "gm_vehicle_body_style": "Crew Cab",
-      "gm_vehicle_engines": [
+      "engines": [
         "TurboMax",
         "5.3L EcoTec3 V8",
         "6.2L EcoTec3 V8",
         "Duramax 3.0L Turbo-Diesel I6"
       ],
-      "gm_vehicle_axle_ratios": [
+      "axle_ratios": [
         "3.42",
         "3.23",
         "3.73"
       ],
-      "gm_max_trailer_weights": [
+      "max_trailer_weights": [
         "9000 (4082)",
         "9300 (4218)",
         "9100 (4128)",
@@ -1264,14 +1344,17 @@
       "entity_name": "2026 Chevrolet Silverado 1500",
       "entity_key": "2026_chevrolet_silverado_1500",
       "vehicle_key": "2026_chevrolet_silverado_1500",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
       "retrieval_granularity": "coarse",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CK10543.html"
+      "path": "config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CK10543.html"
     },
     {
       "objecttype": "Configuration",
@@ -1291,18 +1374,17 @@
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
       ],
-      "gm_vehicle_body_style": "Crew Cab",
-      "gm_vehicle_engines": [
+      "engines": [
         "TurboMax",
         "5.3L EcoTec3 V8",
         "Duramax 3.0L Turbo-Diesel I6"
       ],
-      "gm_vehicle_axle_ratios": [
+      "axle_ratios": [
         "3.42",
         "3.23",
         "3.73"
       ],
-      "gm_max_trailer_weights": [
+      "max_trailer_weights": [
         "9100 (4128)",
         "9500 (4309)",
         "9200 (4173)",
@@ -1326,14 +1408,17 @@
       "entity_name": "2026 Chevrolet Silverado 1500",
       "entity_key": "2026_chevrolet_silverado_1500",
       "vehicle_key": "2026_chevrolet_silverado_1500",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
       "retrieval_granularity": "coarse",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CC10743.html"
+      "path": "config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CC10743.html"
     },
     {
       "objecttype": "Configuration",
@@ -1353,19 +1438,18 @@
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
       ],
-      "gm_vehicle_body_style": "Crew Cab",
-      "gm_vehicle_engines": [
+      "engines": [
         "TurboMax",
         "5.3L EcoTec3 V8",
         "6.2L EcoTec3 V8",
         "Duramax 3.0L Turbo-Diesel I6"
       ],
-      "gm_vehicle_axle_ratios": [
+      "axle_ratios": [
         "3.42",
         "3.23",
         "3.73"
       ],
-      "gm_max_trailer_weights": [
+      "max_trailer_weights": [
         "9000 (4082)",
         "9200 (4173)",
         "9100 (4128)",
@@ -1391,14 +1475,17 @@
       "entity_name": "2026 Chevrolet Silverado 1500",
       "entity_key": "2026_chevrolet_silverado_1500",
       "vehicle_key": "2026_chevrolet_silverado_1500",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
       "retrieval_granularity": "coarse",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CK10743.html"
+      "path": "config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CK10743.html"
     },
     {
       "objecttype": "Configuration",
@@ -1418,18 +1505,17 @@
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
       ],
-      "gm_vehicle_body_style": "Double Cab",
-      "gm_vehicle_engines": [
+      "engines": [
         "TurboMax",
         "5.3L EcoTec3 V8",
         "Duramax 3.0L Turbo-Diesel I6"
       ],
-      "gm_vehicle_axle_ratios": [
+      "axle_ratios": [
         "3.42",
         "3.23",
         "3.73"
       ],
-      "gm_max_trailer_weights": [
+      "max_trailer_weights": [
         "9300 (4218)",
         "9700 (4400)",
         "11400 (5171)",
@@ -1452,14 +1538,17 @@
       "entity_name": "2026 Chevrolet Silverado 1500",
       "entity_key": "2026_chevrolet_silverado_1500",
       "vehicle_key": "2026_chevrolet_silverado_1500",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
       "retrieval_granularity": "coarse",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CC10753.html"
+      "path": "config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CC10753.html"
     },
     {
       "objecttype": "Configuration",
@@ -1479,18 +1568,17 @@
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
       ],
-      "gm_vehicle_body_style": "Double Cab",
-      "gm_vehicle_engines": [
+      "engines": [
         "TurboMax",
         "5.3L EcoTec3 V8",
         "Duramax 3.0L Turbo-Diesel I6"
       ],
-      "gm_vehicle_axle_ratios": [
+      "axle_ratios": [
         "3.42",
         "3.23",
         "3.73"
       ],
-      "gm_max_trailer_weights": [
+      "max_trailer_weights": [
         "9000 (4082)",
         "9300 (4218)",
         "9100 (4128)",
@@ -1514,14 +1602,17 @@
       "entity_name": "2026 Chevrolet Silverado 1500",
       "entity_key": "2026_chevrolet_silverado_1500",
       "vehicle_key": "2026_chevrolet_silverado_1500",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
       "retrieval_granularity": "coarse",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CK10753.html"
+      "path": "config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CK10753.html"
     },
     {
       "objecttype": "Configuration",
@@ -1541,12 +1632,13 @@
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
       ],
-      "gm_vehicle_body_style": "Regular Cab",
-      "gm_vehicle_engine": "TurboMax",
-      "gm_vehicle_axle_ratios": [
+      "engines": [
+        "TurboMax"
+      ],
+      "axle_ratios": [
         "3.42"
       ],
-      "gm_max_trailer_weights": [
+      "max_trailer_weights": [
         "9100 (4128)",
         "9000 (4082)"
       ],
@@ -1562,14 +1654,17 @@
       "entity_name": "2026 Chevrolet Silverado 1500",
       "entity_key": "2026_chevrolet_silverado_1500",
       "vehicle_key": "2026_chevrolet_silverado_1500",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
       "retrieval_granularity": "coarse",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CC10703.html"
+      "path": "config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CC10703.html"
     },
     {
       "objecttype": "Configuration",
@@ -1589,12 +1684,13 @@
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
       ],
-      "gm_vehicle_body_style": "Regular Cab",
-      "gm_vehicle_engine": "TurboMax",
-      "gm_vehicle_axle_ratios": [
+      "engines": [
+        "TurboMax"
+      ],
+      "axle_ratios": [
         "3.42"
       ],
-      "gm_max_trailer_weights": [
+      "max_trailer_weights": [
         "8900 (4037)",
         "8800 (3992)"
       ],
@@ -1610,14 +1706,17 @@
       "entity_name": "2026 Chevrolet Silverado 1500",
       "entity_key": "2026_chevrolet_silverado_1500",
       "vehicle_key": "2026_chevrolet_silverado_1500",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
       "retrieval_granularity": "coarse",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CK10703.html"
+      "path": "config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CK10703.html"
     },
     {
       "objecttype": "Configuration",
@@ -1637,16 +1736,15 @@
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
       ],
-      "gm_vehicle_body_style": "Regular Cab",
-      "gm_vehicle_engines": [
+      "engines": [
         "TurboMax",
         "5.3L EcoTec3 V8"
       ],
-      "gm_vehicle_axle_ratios": [
+      "axle_ratios": [
         "3.42",
         "3.23"
       ],
-      "gm_max_trailer_weights": [
+      "max_trailer_weights": [
         "9500 (4309)",
         "9900 (4491)",
         "9400 (4264)",
@@ -1664,14 +1762,17 @@
       "entity_name": "2026 Chevrolet Silverado 1500",
       "entity_key": "2026_chevrolet_silverado_1500",
       "vehicle_key": "2026_chevrolet_silverado_1500",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
       "retrieval_granularity": "coarse",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CC10903.html"
+      "path": "config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CC10903.html"
     },
     {
       "objecttype": "Configuration",
@@ -1691,16 +1792,15 @@
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
       ],
-      "gm_vehicle_body_style": "Regular Cab",
-      "gm_vehicle_engines": [
+      "engines": [
         "TurboMax",
         "5.3L EcoTec3 V8"
       ],
-      "gm_vehicle_axle_ratios": [
+      "axle_ratios": [
         "3.42",
         "3.23"
       ],
-      "gm_max_trailer_weights": [
+      "max_trailer_weights": [
         "9300 (4218)",
         "9600 (4355)",
         "9200 (4173)",
@@ -1718,14 +1818,17 @@
       "entity_name": "2026 Chevrolet Silverado 1500",
       "entity_key": "2026_chevrolet_silverado_1500",
       "vehicle_key": "2026_chevrolet_silverado_1500",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
       "retrieval_granularity": "coarse",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CK10903.html"
+      "path": "config_2026_Chevrolet_Silverado_1500_powertrain_trailering_CK10903.html"
     },
     {
       "objecttype": "Configuration",
@@ -1734,7 +1837,7 @@
       "name": "2026 Chevrolet Silverado 1500 GCWR reference",
       "title": "2026 Chevrolet Silverado 1500 | GCWR reference",
       "configuration_kind": "gcwr-reference",
-      "gm_vehicle_engines": [
+      "engines": [
         "TurboMax",
         "5.3L EcoTec3 V8",
         "6.2L EcoTec3 V8",
@@ -1749,7 +1852,7 @@
         "19100 (8664)",
         "19000 (8618)"
       ],
-      "gm_vehicle_axle_ratios": [
+      "axle_ratios": [
         "3.42",
         "3.23",
         "3.73"
@@ -1766,14 +1869,17 @@
       "entity_name": "2026 Chevrolet Silverado 1500",
       "entity_key": "2026_chevrolet_silverado_1500",
       "vehicle_key": "2026_chevrolet_silverado_1500",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
       "retrieval_granularity": "coarse",
       "collection": "M3381846B8AEC20F4",
-      "collection_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
-      "parent_path": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "workbooks_html/model_2026_Chevrolet_Silverado_1500.html",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "workbooks_html/config_2026_Chevrolet_Silverado_1500_gcwr_reference.html"
+      "path": "config_2026_Chevrolet_Silverado_1500_gcwr_reference.html"
     }
   ]
 }
