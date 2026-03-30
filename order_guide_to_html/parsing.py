@@ -37,7 +37,7 @@ def parse_trim_header(value: object) -> Optional[TrimDef]:
         return None
     if len(lines) == 1:
         return TrimDef(name=lines[0], code=lines[0], raw_header=text)
-    return TrimDef(name=" ".join(lines[:-1]), code=lines[-1], raw_header=text)
+    return TrimDef(name=lines[0], code=lines[-1], raw_header=text)
 
 def find_matrix_header_row(ws) -> Optional[int]:
     for r in range(1, min(ws.max_row, 10) + 1):
