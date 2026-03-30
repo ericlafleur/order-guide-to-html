@@ -10,6 +10,13 @@ from .utils import CODE_IN_PARENS_RE, FILLER_TOKENS, FOOTNOTE_LINE_RE, STATUS_LA
 from .models import ColorExteriorRow, ColorInteriorRow, ColorSheet, EngineAxleEntry, EngineAxleItem, GCWRRecord, MatrixRow, MatrixSheet, SpecCell, SpecColumn, TraileringRecord, TrimDef, WorkbookData
 
 
+MODEL_CODE_LINE_RE = re.compile(r'^[0-9][A-Z0-9]{4,6}$')
+GENERIC_MATRIX_TOP_LABELS = {
+    'recommended',
+    'custom interior trim and seat combinations',
+}
+
+
 def parse_filename_metadata(path: Path) -> Tuple[str, str, str, str]:
     stem = path.stem
     stem = re.sub(r"\s+Export$", "", stem, flags=re.I)
@@ -28,16 +35,46 @@ def parse_filename_metadata(path: Path) -> Tuple[str, str, str, str]:
     vehicle_name = f"{year} {make} {model}"
     return year, make, model, vehicle_name
 
-def parse_trim_header(value: object) -> Optional[TrimDef]:
+def _sheet_family_from_label(label: object) -> str:
+    text = normalize_text(label)
+    if not text:
+        return ''
+    lowered = text.lower()
+    if lowered in GENERIC_MATRIX_TOP_LABELS:
+        return ''
+    return text
+
+
+def parse_trim_header(value: object, sheet_family: str = '') -> Optional[TrimDef]:
     text = normalize_text(value)
     if not text:
         return None
     lines = [normalize_text(x) for x in text.split("\n") if normalize_text(x)]
     if not lines:
         return None
+
+    family = _sheet_family_from_label(sheet_family)
     if len(lines) == 1:
-        return TrimDef(name=lines[0], code=lines[0], raw_header=text)
-    return TrimDef(name=lines[0], code=lines[-1], raw_header=text)
+        return TrimDef(name=lines[0], code=lines[0], raw_header=text, family_label=family)
+
+    if len(lines) >= 3 and MODEL_CODE_LINE_RE.fullmatch(lines[-2]):
+        base_name = lines[0]
+        model_code = lines[-2]
+        trim_code = lines[-1]
+        family_parts = [normalize_text(part) for part in re.split(r'\s+and\s+|/', family) if normalize_text(part)]
+        if family and all(part.lower() not in base_name.lower() for part in family_parts):
+            base_name = f'{family} {base_name}'
+        display_name = normalize_text(f'{base_name} {trim_code}')
+        return TrimDef(
+            name=display_name,
+            code=trim_code,
+            raw_header=text,
+            model_code=model_code,
+            family_label=family,
+        )
+
+    return TrimDef(name=" ".join(lines[:-1]), code=lines[-1], raw_header=text, family_label=family)
+
 
 def find_matrix_header_row(ws) -> Optional[int]:
     for r in range(1, min(ws.max_row, 10) + 1):
@@ -116,17 +153,18 @@ def parse_matrix_sheet(ws, trim_defs: Optional[List[TrimDef]] = None) -> Optiona
         for item in nonempty:
             sheet_footnotes.update(parse_footnote_map(item))
 
+    sheet_family = _sheet_family_from_label(ws.cell(1, 1).value)
     inferred_trim_defs: List[TrimDef] = []
     c = description_col + 1
     while c <= ws.max_column:
         raw = normalize_text(ws.cell(header_row, c).value)
         if not raw:
             break
-        parsed = parse_trim_header(raw)
+        parsed = parse_trim_header(raw, sheet_family=sheet_family)
         if parsed:
             inferred_trim_defs.append(parsed)
         c += 1
-    active_trim_defs = trim_defs or inferred_trim_defs
+    active_trim_defs = inferred_trim_defs or trim_defs or []
     trim_cols = list(range(description_col + 1, description_col + 1 + len(active_trim_defs)))
 
     rows: List[MatrixRow] = []
@@ -495,7 +533,7 @@ def parse_workbook(path: Path) -> WorkbookData:
     wb = openpyxl.load_workbook(path, data_only=True)
     year, make, model, vehicle_name = parse_filename_metadata(path)
 
-    trim_defs: List[TrimDef] = []
+    trim_defs_by_key: OrderedDict[str, TrimDef] = OrderedDict()
     matrix_sheets: List[MatrixSheet] = []
     color_sheets: List[ColorSheet] = []
     spec_columns: List[SpecColumn] = []
@@ -506,10 +544,10 @@ def parse_workbook(path: Path) -> WorkbookData:
 
     for name in wb.sheetnames:
         ws = wb[name]
-        matrix = parse_matrix_sheet(ws, trim_defs or None)
+        matrix = parse_matrix_sheet(ws)
         if matrix:
-            if not trim_defs:
-                trim_defs = matrix.trim_defs
+            for trim in matrix.trim_defs:
+                trim_defs_by_key.setdefault(trim.key, trim)
             matrix_sheets.append(matrix)
         if name.startswith("Colour and Trim"):
             color_sheets.append(parse_color_sheet(ws))
@@ -530,7 +568,7 @@ def parse_workbook(path: Path) -> WorkbookData:
         make=make,
         model=model,
         vehicle_name=vehicle_name,
-        trim_defs=trim_defs,
+        trim_defs=list(trim_defs_by_key.values()),
         matrix_sheets=matrix_sheets,
         color_sheets=color_sheets,
         spec_columns=spec_columns,

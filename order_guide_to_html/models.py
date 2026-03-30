@@ -14,14 +14,19 @@ class TrimDef:
     name: str
     code: str
     raw_header: str
+    model_code: str = ""
+    family_label: str = ""
 
     @property
     def key(self) -> str:
-        return self.code or self.name
+        basis = ' | '.join(
+            part for part in [self.family_label, self.raw_header, self.name, self.model_code, self.code] if normalize_text(part)
+        )
+        return NON_ALNUM_RE.sub(' ', basis).strip().lower()
 
     @property
     def label(self) -> str:
-        if self.code and self.name:
+        if self.code and self.name and self.code.lower() not in self.name.lower().split():
             return f"{self.name} ({self.code})"
         return self.name or self.code
 
