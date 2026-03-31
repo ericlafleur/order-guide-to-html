@@ -6,8 +6,8 @@ import sys
 from pathlib import Path
 from typing import Optional, Sequence
 
-from .parsing import parse_workbook
-from .manifest import vehicle_manifest_filename
+from .parsing import parse_workbook, split_workbook_by_subfamily
+from .manifest import clear_metadata_caches, vehicle_manifest_filename
 from .aggregation import FeatureAggregationService
 from .builder import CorpusBuilder
 from .cleaning import GuideTextCleaner
@@ -50,13 +50,16 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         if not workbook_path.exists():
             print(f'Workbook not found: {workbook_path}', file=sys.stderr)
             continue
+        clear_metadata_caches()
         data = parse_workbook(workbook_path)
-        builder = build_pipeline()
-        manifest = builder.write_outputs(data, output_dir)
-        summary = {
-            'workbook': str(workbook_path),
-            'vehicle_name': data.vehicle_name,
-            'output_dir': str(output_dir),
-            'file_count': len(manifest.get('files', [])),
-        }
+        for sub_data in split_workbook_by_subfamily(data):
+            clear_metadata_caches()
+            builder = build_pipeline()
+            manifest = builder.write_outputs(sub_data, output_dir)
+            summary = {
+                'workbook': str(workbook_path),
+                'vehicle_name': sub_data.vehicle_name,
+                'output_dir': str(output_dir),
+                'file_count': len(manifest.get('files', [])),
+            }
     return 0

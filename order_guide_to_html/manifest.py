@@ -18,7 +18,7 @@ from .utils import (
 from .models import BoundRecord, EngineAxleEntry, EngineAxleItem, GCWRRecord, ModelFeatureAggregate, OutputFileRecord, PowertrainTraileringGroup, SpecCell, SpecColumn, SpecGroupDoc, TraileringRecord, TrimDef, TrimFeatureAggregate, WorkbookData
 from .parsing import parse_status_value, parse_value_and_footnote_ids, parse_workbook, referenced_codes_for_text
 from .classification import COMPARISON_OBJECTTYPE, CONFIG_KIND_ENGINE_AXLE, CONFIG_KIND_GCWR, CONFIG_KIND_GCWR_REFERENCE, CONFIG_KIND_POWERTRAIN_TRAILERING_GROUP, CONFIG_KIND_SPEC_COLUMN, CONFIG_KIND_SPEC_GROUP, CONFIG_KIND_TRAILERING, CONFIG_OBJECTTYPE, CONFIG_TYPE, DOC_ROLE_CHILD, DOC_ROLE_ENTITY, DOC_ROLE_PARENT, DOC_ROLE_PASSAGE, DOMAIN_COLOR, DOMAIN_OVERVIEW, MODEL_OBJECTTYPE, NOTE_OBJECTTYPE, SURFACE_BOTH, SURFACE_PASSAGE_ONLY, TRIM_OBJECTTYPE, availability_pairs_for_model, availability_pairs_for_trim, category_for_model_feature, category_for_trim_feature, collect_row_note_texts, comparison_varies_by_trim, feature_title, model_status_summary_lines, normalize_domain_value, sort_category_key, sort_trim_feature, source_context, source_tab_list_from_contexts, source_tab_list_from_strings, summarize_model_status_groups, with_doc_metadata
-from .configuration import best_trim_match, best_trim_match_for_spec_column, column_matches_trim, group_powertrain_trailering_for_cpr, group_spec_columns_for_cpr, powertrain_group_trim_match, section_names_for_column, spec_column_body_style_value, spec_column_context_text, spec_column_drivetrain_value, spec_column_engine_value, spec_column_fuel_value, spec_column_seating_value, spec_group_context_text, spec_group_first_value, spec_group_model_code, spec_group_section_names, trim_code_list, trim_colour_context, trim_header_list, trim_matches_decor, trim_name_list, workbook_tab_metadata
+from .configuration import all_trim_matches, all_trim_matches_for_spec_group, best_trim_match, best_trim_match_for_spec_column, column_matches_trim, group_powertrain_trailering_for_cpr, group_spec_columns_for_cpr, powertrain_group_trim_match, section_names_for_column, spec_column_body_style_value, spec_column_context_text, spec_column_drivetrain_value, spec_column_engine_value, spec_column_fuel_value, spec_column_seating_value, spec_group_context_text, spec_group_first_value, spec_group_model_code, spec_group_section_names, strip_drive_tokens, trim_body_styles, trim_code_list, trim_colour_context, trim_drivetrains, trim_header_list, trim_matches_decor, trim_name_list, trim_seating, workbook_tab_metadata
 
 
 def aggregate_model_features(data: WorkbookData) -> List[ModelFeatureAggregate]:
@@ -208,7 +208,7 @@ def render_glossary_section(page_title: str, glossary: Dict[str, str], limit_cod
 def page_entity(data: WorkbookData, trim: Optional[TrimDef] = None) -> str:
     if trim is None:
         return data.vehicle_name
-    return normalize_text(f'{data.vehicle_name} {trim.name}')
+    return normalize_text(f'{data.vehicle_name} {strip_drive_tokens(trim.name)}')
 
 def full_trim_heading(data: WorkbookData, trim: TrimDef) -> str:
     base = page_entity(data, trim)
@@ -902,9 +902,13 @@ def extract_trim_drive_token_from_headers(data: WorkbookData, trim: TrimDef) -> 
 def extract_manifest_metadata_for_model(data: WorkbookData) -> Dict[str, object]:
     descs = model_descriptions_standard_for_all_trims(data)
     metadata: Dict[str, object] = {}
-    seating = extract_model_seating(data)
-    if seating:
-        metadata['seating'] = seating
+    seating_values = list(dict.fromkeys(
+        sv
+        for col in data.spec_columns
+        if (sv := spec_column_seating_value(col))
+    ))
+    if seating_values:
+        metadata['seating'] = seating_values
     fuel = pick_fuel_description(descs)
     if fuel:
         metadata['fuel_type'] = fuel
@@ -919,12 +923,18 @@ def extract_manifest_metadata_for_trim(data: WorkbookData, trim: TrimDef) -> Dic
     title = normalize_text(trim.raw_header)
     if title:
         metadata['title'] = title
-    seating = extract_trim_seating(data, trim)
-    if seating:
-        metadata['seating'] = seating
+    seating_values = trim_seating(data, trim)
+    if seating_values:
+        metadata['seating'] = seating_values
     fuel = pick_fuel_description(descs)
     if fuel:
         metadata['fuel_type'] = fuel
+    drivetrains = trim_drivetrains(data, trim)
+    if drivetrains:
+        metadata['drivetrains'] = drivetrains
+    body_styles = trim_body_styles(data, trim)
+    if body_styles:
+        metadata['body_styles'] = body_styles
     return metadata
 
 def render_trim_lineup_section(data: WorkbookData) -> str:
@@ -1210,12 +1220,12 @@ def trim_manifest_metadata(data: WorkbookData, trim: TrimDef) -> Dict[str, objec
     metadata.update(workbook_tab_metadata(data))
     metadata.update(extract_manifest_metadata_for_trim(data, trim))
     metadata.update({
-        'name': normalize_text(trim.name),
+        'name': strip_drive_tokens(normalize_text(trim.name)),
         'title': full_trim_heading(data, trim),
         'year': normalize_text(data.year),
         'make': normalize_text(data.make),
         'model': normalize_text(data.model),
-        'trim': normalize_text(trim.name),
+        'trim': strip_drive_tokens(normalize_text(trim.name)),
         'trim_header_from_guide': normalize_text(trim.raw_header),
         'trim_code': normalize_text(trim.code),
     })
@@ -1781,6 +1791,10 @@ _MODEL_METADATA_CACHE: Dict[int, Dict[str, object]] = {}
 
 _TRIM_METADATA_CACHE: Dict[Tuple[int, str], Dict[str, object]] = {}
 
+def clear_metadata_caches() -> None:
+    _MODEL_METADATA_CACHE.clear()
+    _TRIM_METADATA_CACHE.clear()
+
 def cached_model_metadata(data: WorkbookData) -> Dict[str, object]:
     key = id(data)
     cached = _MODEL_METADATA_CACHE.get(key)
@@ -1963,7 +1977,7 @@ def add_bound_record(
     collection: Optional[Path],
     parent: Optional[Path],
     parent_vehicle: Optional[Path],
-    parent_trim: Optional[Path],
+    parent_trims: List[Path],
 ) -> None:
     bindings.append(
         BoundRecord(
@@ -1971,7 +1985,7 @@ def add_bound_record(
             collection=collection,
             parent=parent,
             parent_vehicle=parent_vehicle,
-            parent_trim=parent_trim,
+            parent_trims=parent_trims,
         )
     )
 
@@ -1984,7 +1998,7 @@ def write_note_records(
     model_path: Path,
     parent_path: Path,
     parent_vehicle: Path,
-    parent_trim: Optional[Path],
+    parent_trims: List[Path],
     title_prefix: str,
     notes: Sequence[str],
     base_metadata: Dict[str, object],
@@ -2036,7 +2050,7 @@ def write_note_records(
                 collection=model_path,
                 parent=parent_path,
                 parent_vehicle=parent_vehicle,
-                parent_trim=parent_trim,
+                parent_trims=parent_trims,
             )
 
 def vehicle_key(data: WorkbookData) -> str:
@@ -2151,7 +2165,7 @@ def build_trim_records(
             path=overview_path,
             metadata=trim_overview_manifest_metadata(data, trim),
         )
-        add_bound_record(bindings, overview_record, collection=model_path, parent=model_path, parent_vehicle=model_path, parent_trim=None)
+        add_bound_record(bindings, overview_record, collection=model_path, parent=model_path, parent_vehicle=model_path, parent_trims=[])
         trim_paths[trim.key] = overview_path
     return trim_paths
 
@@ -2181,6 +2195,9 @@ def build_manifest_from_bindings(data: WorkbookData, bindings: Sequence[BoundRec
     for binding in bindings:
         if binding.parent is not None:
             children_map[binding.parent].append(binding.record.path)
+        for trim_path in binding.parent_trims:
+            if trim_path != binding.parent:
+                children_map[trim_path].append(binding.record.path)
     manifest: Dict[str, object] = {
         'workbook': manifest_relpath(data.path, manifest_base),
         'vehicle_name': data.vehicle_name,
@@ -2211,9 +2228,13 @@ def build_manifest_from_bindings(data: WorkbookData, bindings: Sequence[BoundRec
         if binding.parent_vehicle is not None:
             entry['parent_vehicle'] = manifest_relpath(binding.parent_vehicle, manifest_base)
             entry['parent_vehicle_id'] = id_map[binding.parent_vehicle]
-        if binding.parent_trim is not None:
-            entry['parent_trim'] = manifest_relpath(binding.parent_trim, manifest_base)
-            entry['parent_trim_id'] = id_map[binding.parent_trim]
+        if binding.parent_trims:
+            if len(binding.parent_trims) == 1:
+                entry['parent_trim'] = manifest_relpath(binding.parent_trims[0], manifest_base)
+                entry['parent_trim_id'] = id_map[binding.parent_trims[0]]
+            else:
+                entry['parent_trims'] = [manifest_relpath(p, manifest_base) for p in binding.parent_trims]
+                entry['parent_trim_ids'] = [id_map[p] for p in binding.parent_trims]
         entry['path'] = manifest_relpath(record.path, manifest_base)
         entry = {k: v for k, v in entry.items() if v not in ('', [], None)}
         manifest['files'].append(entry)
@@ -2555,7 +2576,7 @@ def build_model_and_comparison_records(
         path=model_path,
         metadata=model_overview_manifest_metadata(data),
     )
-    add_bound_record(bindings, model_record, collection=model_path, parent=None, parent_vehicle=None, parent_trim=None)
+    add_bound_record(bindings, model_record, collection=model_path, parent=None, parent_vehicle=None, parent_trims=[])
 
     for category, features in model_feature_groups_by_category(data).items():
         if normalize_domain_value(category) == 'Other guide content':
@@ -2572,7 +2593,7 @@ def build_model_and_comparison_records(
             path=domain_path,
             metadata=comparison_domain_manifest_metadata(data, category, selected_features),
         )
-        add_bound_record(bindings, domain_record, collection=model_path, parent=model_path, parent_vehicle=model_path, parent_trim=None)
+        add_bound_record(bindings, domain_record, collection=model_path, parent=model_path, parent_vehicle=model_path, parent_trims=[])
     return model_path
 
 def build_configuration_records(
@@ -2585,13 +2606,12 @@ def build_configuration_records(
 ) -> None:
     trim_path_by_name = {normalize_text(trim.name): trim_paths[trim.key] for trim in data.trim_defs if trim.key in trim_paths}
 
-    def parent_paths_for_trim(matched_trim: Optional[TrimDef]) -> Tuple[Path, Optional[Path]]:
-        if matched_trim is None:
-            return model_path, None
-        trim_path = trim_path_by_name.get(normalize_text(matched_trim.name))
-        if trim_path is None:
-            return model_path, None
-        return trim_path, trim_path
+    def parent_paths_for_trims(matched_trims: List[TrimDef]) -> Tuple[Path, List[Path]]:
+        paths = [p for trim in matched_trims if (p := trim_path_by_name.get(normalize_text(trim.name))) is not None]
+        if not paths:
+            return model_path, []
+        parent = paths[0] if len(paths) == 1 else model_path
+        return parent, paths
 
     def enrich_config_metadata(metadata: Dict[str, object], matched_trim: Optional[TrimDef], domain: str) -> Dict[str, object]:
         extra: Dict[str, object] = {
@@ -2606,7 +2626,8 @@ def build_configuration_records(
         return with_flat_doc_metadata(metadata, **extra)
 
     for group in group_spec_columns_for_cpr(data):
-        matched_trim = best_trim_match(data, group.top_label, group.header, *group.header_lines)
+        matched_trims = all_trim_matches_for_spec_group(data, group)
+        matched_trim = matched_trims[0] if len(matched_trims) == 1 else None
         trim_slug = slugify(matched_trim.name) if matched_trim is not None else ''
         model_code = spec_group_model_code(group)
         base_name = f'spec_{data.year}_{slugify(data.make)}_{slugify(data.model)}_dimensions_specifications'
@@ -2629,11 +2650,12 @@ def build_configuration_records(
             domain,
         )
         record = OutputFileRecord(objecttype=CONFIG_OBJECTTYPE, type=CONFIG_TYPE, path=page_path, metadata=metadata)
-        parent_path, parent_trim = parent_paths_for_trim(matched_trim)
-        add_bound_record(bindings, record, collection=model_path, parent=parent_path, parent_vehicle=model_path, parent_trim=parent_trim)
+        parent_path, parent_trims = parent_paths_for_trims(matched_trims)
+        add_bound_record(bindings, record, collection=model_path, parent=parent_path, parent_vehicle=model_path, parent_trims=parent_trims)
 
     for group in group_powertrain_trailering_for_cpr(data):
-        matched_trim = powertrain_group_trim_match(data, group)
+        matched_trims = all_trim_matches(data, group.model_code, *group.top_labels)
+        matched_trim = matched_trims[0] if len(matched_trims) == 1 else None
         trim_slug = slugify(matched_trim.name) if matched_trim is not None else ''
         base_name = f'config_{data.year}_{slugify(data.make)}_{slugify(data.model)}_powertrain_trailering_{slugify(group.model_code)}'
         if trim_slug:
@@ -2651,8 +2673,8 @@ def build_configuration_records(
             domain,
         )
         record = OutputFileRecord(objecttype=CONFIG_OBJECTTYPE, type=CONFIG_TYPE, path=page_path, metadata=metadata)
-        parent_path, parent_trim = parent_paths_for_trim(matched_trim)
-        add_bound_record(bindings, record, collection=model_path, parent=parent_path, parent_vehicle=model_path, parent_trim=parent_trim)
+        parent_path, parent_trims = parent_paths_for_trims(matched_trims)
+        add_bound_record(bindings, record, collection=model_path, parent=parent_path, parent_vehicle=model_path, parent_trims=parent_trims)
 
     if data.gcwr_records:
         page_path = unique_output_path(
@@ -2672,4 +2694,4 @@ def build_configuration_records(
             domain,
         )
         output_record = OutputFileRecord(objecttype=CONFIG_OBJECTTYPE, type=CONFIG_TYPE, path=page_path, metadata=metadata)
-        add_bound_record(bindings, output_record, collection=model_path, parent=model_path, parent_vehicle=model_path, parent_trim=None)
+        add_bound_record(bindings, output_record, collection=model_path, parent=model_path, parent_vehicle=model_path, parent_trims=[])

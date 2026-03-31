@@ -10,6 +10,8 @@ from .parsing import parse_value_and_footnote_ids
 from .classification import MODEL_CODE_RE
 from .utils import MANIFEST_BODY_STYLE_TOKENS, MANIFEST_DRIVE_TOKENS, MANIFEST_STANDARDISH_CODES, first_unique, material_note_texts
 
+BED_TYPE_RE = re.compile(r'\b(Short Bed|Standard Bed|Long Bed)\b', re.IGNORECASE)
+
 
 def trim_matches_decor(trim: TrimDef, decor_value: str) -> bool:
     decor = normalize_text(decor_value)
@@ -41,8 +43,17 @@ def column_matches_trim(column: SpecColumn, trim: TrimDef) -> bool:
 def trim_header_list(data: WorkbookData) -> List[str]:
     return [normalize_text(trim.raw_header) for trim in data.trim_defs if normalize_text(trim.raw_header)]
 
+def strip_drive_tokens(name: str) -> str:
+    pattern = r'\s*\b(?:' + '|'.join(MANIFEST_DRIVE_TOKENS) + r')\b'
+    stripped = re.sub(pattern, '', name, flags=re.IGNORECASE)
+    stripped = MODEL_CODE_RE.sub('', stripped)
+    stripped = re.sub(r'\s*\b[0-9][A-Z0-9]{4,6}\b', '', stripped)
+    stripped = re.sub(r'\s*/\s*', ' ', stripped)
+    stripped = re.sub(r'\s+', ' ', stripped)
+    return stripped.strip()
+
 def trim_name_list(data: WorkbookData) -> List[str]:
-    return [normalize_text(trim.name) for trim in data.trim_defs if normalize_text(trim.name)]
+    return [strip_drive_tokens(normalize_text(trim.name)) for trim in data.trim_defs if normalize_text(trim.name)]
 
 def trim_code_list(data: WorkbookData) -> List[str]:
     return [normalize_text(trim.code) for trim in data.trim_defs if normalize_text(trim.code)]
@@ -87,6 +98,53 @@ def best_trim_match(data: WorkbookData, *texts: str) -> Optional[TrimDef]:
     if len(scored) > 1 and scored[0][0] == scored[1][0]:
         return None
     return scored[0][1]
+
+def all_trim_matches(data: WorkbookData, *texts: str) -> List[TrimDef]:
+    blob = ' \n '.join(normalize_text(text) for text in texts if normalize_text(text))
+    if not blob:
+        return []
+    matched: List[TrimDef] = []
+    for trim in data.trim_defs:
+        candidates = unique_preserve_order([trim.raw_header, trim.name, trim.code])
+        for candidate in candidates:
+            if phrase_occurs_in_text(candidate, blob):
+                matched.append(trim)
+                break
+    return matched
+
+def all_trim_matches_for_spec_group(data: WorkbookData, group: 'SpecGroupDoc') -> List[TrimDef]:
+    """Find trims for a spec group, using three progressively broader strategies.
+
+    1. Match full trim names / codes against the column header (works when the
+       header already embeds a trim name or code, e.g. Trax "1TU58 FWD LT, 2RS
+       and ACTIV").
+    2. Match stripped trim names (no drive tokens, no model codes) against the
+       header (works for Trailblazer-style headers like "1TR56 LS FWD" where the
+       trim's raw name "LS 1TR56 FWD / 1TV56 AWD" doesn't appear verbatim).
+    3. Scan spec cell labels in the group for trim name mentions (works for
+       Tahoe-style workbooks with generic headers like "CC10706 / 2WD" where
+       trim-specific dimension rows such as "Overall height, LS" carry the
+       association).
+    """
+    # Strategy 1: full-name / code match in header text
+    matched = all_trim_matches(data, group.top_label, group.header, *group.header_lines)
+    if matched:
+        return matched
+
+    # Strategy 2: stripped-name match in header text
+    blob = ' \n '.join(normalize_text(t) for t in [group.top_label, group.header] + list(group.header_lines) if normalize_text(t))
+    if blob:
+        stripped_matches: List[TrimDef] = []
+        for trim in data.trim_defs:
+            stripped = strip_drive_tokens(normalize_text(trim.name))
+            if stripped and phrase_occurs_in_text(stripped, blob):
+                stripped_matches.append(trim)
+        if stripped_matches:
+            return stripped_matches
+
+    # Strategy 3: scan spec cell labels for trim name mentions
+    cell_labels = [cell.label for col in group.columns for cell in col.cells]
+    return all_trim_matches(data, *cell_labels)
 
 def best_trim_match_for_spec_column(data: WorkbookData, column: SpecColumn) -> Optional[TrimDef]:
     texts = [column.top_label, column.header] + list(column.header_lines)
@@ -141,6 +199,146 @@ def spec_column_drivetrain_value(column: SpecColumn) -> Optional[str]:
 
 def spec_column_seating_value(column: SpecColumn) -> Optional[str]:
     return first_unique(find_cell_values_by_label_contains(column, ['seating capacity']))
+
+def trim_drivetrains(data: WorkbookData, trim: TrimDef) -> List[str]:
+    """Return all drivetrain values applicable to a trim.
+
+    Three-tier lookup:
+
+    1. Explicitly-matched groups: spec groups where all_trim_matches_for_spec_group
+       returns a non-empty list and includes this trim.  Covers Trailblazer-style
+       (header contains trim name) and Tahoe-style (cell labels mention trim name).
+
+    2. Generic groups: spec groups where all_trim_matches_for_spec_group returns []
+       (no trim specifically identified — i.e. the configuration applies to all
+       trims not covered by an explicit group).  Covers Silverado-style workbooks
+       where most spec columns carry a body-config code like "CC30743 / 2WD Crew
+       Cab" with no trim marker.  A trim is considered "covered by an explicit
+       group" only if it appears in at least one group's explicit match list, in
+       which case we skip the generic groups for it (e.g. Silverado High Country
+       has its own CK-only columns, so it should not also inherit the generic
+       CC/CK drivetrains).
+
+    3. Fallback: drive tokens found in the trim's own raw header / name (e.g.
+       "RS 1TY56 AWD" → AWD).
+    """
+    groups = group_spec_columns_for_cpr(data)
+    matches_by_group: List[List[TrimDef]] = [all_trim_matches_for_spec_group(data, g) for g in groups]
+
+    # Trims that appear in at least one explicit (non-generic) match list
+    explicitly_covered: List[TrimDef] = [t for m in matches_by_group for t in m]
+
+    values: List[str] = []
+
+    for group, matches in zip(groups, matches_by_group):
+        include = False
+        if matches and trim in matches:
+            # Strategy 1: explicit specific match
+            include = True
+        elif not matches and trim not in explicitly_covered:
+            # Strategy 2: generic group, trim has no specific group of its own
+            include = True
+        if include:
+            for col in group.columns:
+                dt = spec_column_drivetrain_value(col)
+                if dt and dt not in values:
+                    values.append(dt)
+
+    # Strategy 3: drive token in trim name / header
+    if not values:
+        blob = normalize_text(trim.raw_header) + ' ' + normalize_text(trim.name)
+        for token in MANIFEST_DRIVE_TOKENS:
+            if phrase_occurs_in_text(token, blob):
+                values.append(token)
+
+    return values
+
+
+def spec_group_body_style_label(group: SpecGroupDoc) -> Optional[str]:
+    """Return a composite body style label for a spec group.
+
+    Combines the cab type from top_label (e.g. 'Crew Cab') with a bed type
+    extracted from the header lines (e.g. 'Short Bed', 'Standard Bed',
+    'Long Bed') to produce a label like 'Crew Cab, Short Bed'.  Falls back
+    to the bare cab type when no bed type is present, and to None when the
+    top_label has no recognised body style token.
+    """
+    cab_type = normalize_text(group.top_label)
+    if not cab_type or not any(token.lower() in cab_type.lower() for token in MANIFEST_BODY_STYLE_TOKENS):
+        return None
+    bed_type: Optional[str] = None
+    for line in group.header_lines:
+        m = BED_TYPE_RE.search(normalize_text(line))
+        if m:
+            bed_type = m.group(1)
+            break
+    if bed_type:
+        return f'{cab_type}, {bed_type}'
+    return cab_type
+
+
+def trim_body_styles(data: WorkbookData, trim: TrimDef) -> List[str]:
+    """Return all body style values applicable to a trim.
+
+    Uses the same three-tier logic as trim_drivetrains:
+    1. Explicit match groups (trim name appears in header or cell labels).
+    2. Generic groups (no trim matched at all) for trims not explicitly covered.
+    3. Body style tokens found in the trim's own raw header / name as a fallback.
+
+    Each group contributes a composite label combining the cab type with bed
+    type when available (e.g. 'Crew Cab, Short Bed').
+    """
+    groups = group_spec_columns_for_cpr(data)
+    matches_by_group: List[List[TrimDef]] = [all_trim_matches_for_spec_group(data, g) for g in groups]
+    explicitly_covered: List[TrimDef] = [t for m in matches_by_group for t in m]
+
+    values: List[str] = []
+    for group, matches in zip(groups, matches_by_group):
+        include = False
+        if matches and trim in matches:
+            include = True
+        elif not matches and trim not in explicitly_covered:
+            include = True
+        if include:
+            bs = spec_group_body_style_label(group)
+            if bs and bs not in values:
+                values.append(bs)
+
+    if not values:
+        blob = normalize_text(trim.raw_header) + ' ' + normalize_text(trim.name)
+        for token in MANIFEST_BODY_STYLE_TOKENS:
+            if token.lower() in blob.lower() and token not in values:
+                values.append(token)
+
+    return values
+
+
+def trim_seating(data: WorkbookData, trim: TrimDef) -> List[str]:
+    """Return all seating capacity values applicable to a trim.
+
+    Uses the same three-tier logic as trim_drivetrains / trim_body_styles:
+    1. Explicitly-matched groups (trim name in header or cell labels).
+    2. Generic groups (no trim matched) for trims not explicitly covered.
+    3. No fallback — seating does not appear in trim names or headers.
+    """
+    groups = group_spec_columns_for_cpr(data)
+    matches_by_group: List[List[TrimDef]] = [all_trim_matches_for_spec_group(data, g) for g in groups]
+    explicitly_covered: List[TrimDef] = [t for m in matches_by_group for t in m]
+
+    values: List[str] = []
+    for group, matches in zip(groups, matches_by_group):
+        include = False
+        if matches and trim in matches:
+            include = True
+        elif not matches and trim not in explicitly_covered:
+            include = True
+        if include:
+            for col in group.columns:
+                sv = spec_column_seating_value(col)
+                if sv and sv not in values:
+                    values.append(sv)
+    return values
+
 
 def spec_column_body_style_value(column: SpecColumn) -> Optional[str]:
     direct = first_unique(find_cell_values_by_label_contains(column, ['body style']))

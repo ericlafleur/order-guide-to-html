@@ -57,23 +57,19 @@ def parse_trim_header(value: object, sheet_family: str = '') -> Optional[TrimDef
     if len(lines) == 1:
         return TrimDef(name=lines[0], code=lines[0], raw_header=text, family_label=family)
 
-    if len(lines) >= 3 and MODEL_CODE_LINE_RE.fullmatch(lines[-2]):
-        base_name = lines[0]
-        model_code = lines[-2]
-        trim_code = lines[-1]
-        family_parts = [normalize_text(part) for part in re.split(r'\s+and\s+|/', family) if normalize_text(part)]
-        if family and all(part.lower() not in base_name.lower() for part in family_parts):
-            base_name = f'{family} {base_name}'
-        display_name = normalize_text(f'{base_name} {trim_code}')
-        return TrimDef(
-            name=display_name,
-            code=trim_code,
-            raw_header=text,
-            model_code=model_code,
-            family_label=family,
-        )
+    code = lines[-1]
+    model_code = ''
+    name_parts = [lines[0]]
 
-    return TrimDef(name=" ".join(lines[:-1]), code=lines[-1], raw_header=text, family_label=family)
+    for mid in lines[1:-1]:
+        if MODEL_CODE_LINE_RE.fullmatch(mid):
+            if not model_code:
+                model_code = mid
+        else:
+            name_parts.append(mid)
+
+    name = normalize_text(' '.join(name_parts))
+    return TrimDef(name=name, code=code, raw_header=text, model_code=model_code, family_label=family)
 
 
 def find_matrix_header_row(ws) -> Optional[int]:
@@ -578,6 +574,187 @@ def parse_workbook(path: Path) -> WorkbookData:
         glossary=glossary,
         sheet_names=wb.sheetnames,
     )
+
+def _trim_subfamily_name(trim: TrimDef) -> str:
+    """Return the sub-model name for a TrimDef.
+
+    For most workbooks, this is just trim.family_label.  For the Corvette
+    workbook the 'ZR1 and ZR1X' family_label covers two distinct sub-models;
+    this function derives the correct name ('ZR1' or 'ZR1X') from the trim
+    body-style name.
+    """
+    if trim.family_label and trim.family_label != 'ZR1 and ZR1X':
+        return trim.family_label
+    # Derive from name by stripping the trailing body-style word
+    for suffix in (' Coupe', ' Convertible', ' Sedan', ' Hatchback'):
+        if trim.name.endswith(suffix):
+            return trim.name[:-len(suffix)].strip()
+    return trim.name
+
+
+def _merge_status_values(statuses: List[str]) -> str:
+    """Pick the most available status from a list of raw status strings.
+
+    When collapsing body-style variants (e.g. Coupe + Convertible) into a
+    single package-level TrimDef, take whichever value indicates the feature
+    is most available — 'S' beats 'A' beats '--', etc.  Footnote suffixes
+    (e.g. 'S1') are stripped for comparison but preserved in the winner.
+    """
+    if not statuses:
+        return ''
+    priority = {'S': 6, '■': 6, '□': 5, 'D': 4, 'A': 3, '--': 1}
+
+    def key(s: str) -> int:
+        base = re.sub(r'\d+$', '', s.strip()) if s else ''
+        return priority.get(base, priority.get(s, 2))
+
+    return max(statuses, key=key)
+
+
+def split_workbook_by_subfamily(data: WorkbookData) -> List[WorkbookData]:
+    """Partition a multi-family workbook into separate sub-workbooks, one per subfamily.
+
+    For standard single-family workbooks this is a no-op — returns [data].
+
+    For Corvette-style workbooks that bundle multiple distinct sub-models in
+    one spreadsheet file:
+
+    - Identifies sub-model families (Stingray, Z06, E-Ray, ZR1, ZR1X) from
+      TrimDef.family_label / name prefix.
+    - Creates one WorkbookData per sub-model.
+    - Collapses body-style variants (Coupe + Convertible) that share a package
+      code into a single synthetic TrimDef whose name *is* the package code
+      (e.g. '1LT', '2LT', '3LT').  Status values are merged by taking the
+      most-available value across body styles.
+    - Filters matrix_sheets, spec_columns, engine_axle_entries, and
+      trailering_records to those that belong to each sub-model.
+    - Colour sheets are shared across sub-workbooks (trim_matches_decor handles
+      per-package filtering at render time).
+    """
+    subfamilies = list(dict.fromkeys(_trim_subfamily_name(t) for t in data.trim_defs))
+    # Only split when the workbook genuinely contains multiple distinct sub-models,
+    # identified by multiple distinct non-empty family_label values on TrimDefs.
+    distinct_family_labels = list(dict.fromkeys(t.family_label for t in data.trim_defs if t.family_label))
+    if len(distinct_family_labels) <= 1:
+        return [data]
+
+    results: List[WorkbookData] = []
+
+    for sub in subfamilies:
+        sub_trims = [t for t in data.trim_defs if _trim_subfamily_name(t) == sub]
+
+        # One collapsed TrimDef per unique package code, in first-seen order
+        packages_seen: List[str] = []
+        collapsed: List[TrimDef] = []
+        for t in sub_trims:
+            if t.code not in packages_seen:
+                packages_seen.append(t.code)
+                collapsed.append(TrimDef(
+                    name=t.code,
+                    code=t.code,
+                    raw_header=f'{sub}\n{t.code}',
+                    model_code='',
+                    family_label=sub,
+                ))
+
+        # package code → original TrimDef keys for status aggregation
+        orig_keys_by_code: Dict[str, List[str]] = {}
+        for t in sub_trims:
+            orig_keys_by_code.setdefault(t.code, []).append(t.key)
+
+        sub_orig_keys = {t.key for t in sub_trims}
+
+        # Rebuild matrix sheets that belong to this sub-model
+        new_sheets: List[MatrixSheet] = []
+        for sheet in data.matrix_sheets:
+            sheet_trim_keys: set = set()
+            for row in sheet.rows:
+                sheet_trim_keys.update(row.status_by_trim.keys())
+            if not (sheet_trim_keys & sub_orig_keys):
+                continue
+
+            new_rows: List[MatrixRow] = []
+            for row in sheet.rows:
+                new_status: Dict[str, str] = {}
+                for ct in collapsed:
+                    orig_ks = orig_keys_by_code[ct.code]
+                    vals = [row.status_by_trim[k] for k in orig_ks if k in row.status_by_trim]
+                    if vals:
+                        new_status[ct.key] = _merge_status_values(vals)
+                if new_status:
+                    new_rows.append(MatrixRow(
+                        sheet_name=row.sheet_name,
+                        row_group=row.row_group,
+                        option_code=row.option_code,
+                        ref_code=row.ref_code,
+                        aux_meta=list(row.aux_meta),
+                        description_raw=row.description_raw,
+                        description_main=row.description_main,
+                        inline_footnotes=dict(row.inline_footnotes),
+                        bullet_notes=list(row.bullet_notes),
+                        status_by_trim=new_status,
+                    ))
+            if new_rows:
+                new_sheets.append(MatrixSheet(
+                    name=sheet.name,
+                    legend_text=sheet.legend_text,
+                    trim_defs=collapsed,
+                    footnotes=dict(sheet.footnotes),
+                    rows=new_rows,
+                ))
+
+        # Filter spec_columns to this sub-model by model code or body-style name
+        sub_model_codes = {t.model_code for t in sub_trims if t.model_code}
+        sub_body_names = {t.name.lower() for t in sub_trims}
+
+        def col_belongs(col: SpecColumn) -> bool:
+            text = ' '.join([col.header, col.top_label] + col.header_lines).lower()
+            if sub_model_codes:
+                return any(mc.lower() in text for mc in sub_model_codes)
+            # Fallback when no model codes available: match by body-style name
+            return any(bn in text for bn in sub_body_names)
+
+        sub_spec_cols = [c for c in data.spec_columns if col_belongs(c)]
+
+        # Filter engine_axle_entries and trailering_records by model code
+        sub_engine_axles = [
+            e for e in data.engine_axle_entries
+            if not sub_model_codes or not e.model_code or e.model_code in sub_model_codes
+        ]
+        sub_trailering = [
+            r for r in data.trailering_records
+            if not sub_model_codes or not r.model_code or r.model_code in sub_model_codes
+        ]
+
+        sub_model = f'{data.model} {sub}'
+        sub_vehicle_name = f'{data.year} {data.make} {sub_model}'
+        sub_path = data.path.parent / (
+            data.path.stem + '_' + sub.replace('-', '').replace(' ', '_') + '.xlsx'
+        )
+        sub_sheet_names = unique_preserve_order(
+            [s.name for s in new_sheets]
+            + [c.sheet_name for c in sub_spec_cols]
+            + [s.name for s in data.color_sheets]
+        )
+
+        results.append(WorkbookData(
+            path=sub_path,
+            year=data.year,
+            make=data.make,
+            model=sub_model,
+            vehicle_name=sub_vehicle_name,
+            trim_defs=collapsed,
+            matrix_sheets=new_sheets,
+            color_sheets=list(data.color_sheets),
+            spec_columns=sub_spec_cols,
+            engine_axle_entries=sub_engine_axles,
+            trailering_records=sub_trailering,
+            gcwr_records=list(data.gcwr_records),
+            glossary=data.glossary,
+            sheet_names=sub_sheet_names,
+        ))
+
+    return results
 
 def referenced_codes_for_text(text: str, glossary: Dict[str, str]) -> List[Tuple[str, str]]:
     codes = []

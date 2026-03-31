@@ -11,8 +11,8 @@ from .classification import (
     TRIM_OBJECTTYPE, comparison_varies_by_trim, normalize_domain_value,
 )
 from .configuration import (
-    best_trim_match, group_powertrain_trailering_for_cpr, group_spec_columns_for_cpr,
-    powertrain_group_trim_match, spec_group_model_code,
+    all_trim_matches, all_trim_matches_for_spec_group, best_trim_match, group_powertrain_trailering_for_cpr, group_spec_columns_for_cpr,
+    powertrain_group_trim_match, spec_group_model_code, strip_drive_tokens,
 )
 from .manifest import (
     add_bound_record, build_manifest_from_bindings,
@@ -48,7 +48,7 @@ class CorpusBuilder:
         }
         if matched_trim is not None:
             extra['trim_key'] = trim_entity_key(data, matched_trim)
-            extra['trim'] = normalize_text(matched_trim.name)
+            extra['trim'] = strip_drive_tokens(normalize_text(matched_trim.name))
         return with_flat_doc_metadata(metadata, **extra)
 
     def build_model_and_comparisons(self, data, output_dir: Path, used_names: set[str], bindings: List[BoundRecord]) -> Path:
@@ -61,7 +61,7 @@ class CorpusBuilder:
             path=model_path,
             metadata=model_overview_manifest_metadata(data),
         )
-        add_bound_record(bindings, model_record, collection=model_path, parent=None, parent_vehicle=None, parent_trim=None)
+        add_bound_record(bindings, model_record, collection=model_path, parent=None, parent_vehicle=None, parent_trims=[])
 
         for category, features in self.aggregation.model_feature_groups_by_category(data).items():
             domain = normalize_text(category)
@@ -83,7 +83,7 @@ class CorpusBuilder:
                 path=domain_path,
                 metadata=comparison_domain_manifest_metadata(data, category, selected_features),
             )
-            add_bound_record(bindings, domain_record, collection=model_path, parent=model_path, parent_vehicle=model_path, parent_trim=None)
+            add_bound_record(bindings, domain_record, collection=model_path, parent=model_path, parent_vehicle=model_path, parent_trims=[])
         return model_path
 
     def build_trims(self, data, output_dir: Path, used_names: set[str], bindings: List[BoundRecord], model_path: Path) -> Dict[str, Path]:
@@ -98,7 +98,7 @@ class CorpusBuilder:
                 path=path,
                 metadata=trim_overview_manifest_metadata(data, trim),
             )
-            add_bound_record(bindings, record, collection=model_path, parent=model_path, parent_vehicle=model_path, parent_trim=None)
+            add_bound_record(bindings, record, collection=model_path, parent=model_path, parent_vehicle=model_path, parent_trims=[])
             trim_paths[trim.key] = path
         return trim_paths
 
@@ -113,16 +113,16 @@ class CorpusBuilder:
     ) -> None:
         trim_path_by_name = {normalize_text(trim.name): trim_paths[trim.key] for trim in data.trim_defs if trim.key in trim_paths}
 
-        def parent_paths_for_trim(matched_trim) -> Tuple[Path, Optional[Path]]:
-            if matched_trim is None:
-                return model_path, None
-            trim_path = trim_path_by_name.get(normalize_text(matched_trim.name))
-            if trim_path is None:
-                return model_path, None
-            return trim_path, trim_path
+        def parent_paths_for_trims(matched_trims) -> Tuple[Path, List[Path]]:
+            paths = [p for trim in matched_trims if (p := trim_path_by_name.get(normalize_text(trim.name))) is not None]
+            if not paths:
+                return model_path, []
+            parent = paths[0] if len(paths) == 1 else model_path
+            return parent, paths
 
         for group in group_spec_columns_for_cpr(data):
-            matched_trim = best_trim_match(data, group.top_label, group.header, *group.header_lines)
+            matched_trims = all_trim_matches_for_spec_group(data, group)
+            matched_trim = matched_trims[0] if len(matched_trims) == 1 else None
             trim_slug = slugify(matched_trim.name) if matched_trim is not None else ''
             model_code = spec_group_model_code(group)
             base_name = f'spec_{data.year}_{slugify(data.make)}_{slugify(data.model)}_dimensions_specifications'
@@ -146,11 +146,12 @@ class CorpusBuilder:
                 domain,
             )
             record = OutputFileRecord(objecttype=CONFIG_OBJECTTYPE, type=CONFIG_TYPE, path=page_path, metadata=metadata)
-            parent_path, parent_trim = parent_paths_for_trim(matched_trim)
-            add_bound_record(bindings, record, collection=model_path, parent=parent_path, parent_vehicle=model_path, parent_trim=parent_trim)
+            parent_path, parent_trims = parent_paths_for_trims(matched_trims)
+            add_bound_record(bindings, record, collection=model_path, parent=parent_path, parent_vehicle=model_path, parent_trims=parent_trims)
 
         for group in group_powertrain_trailering_for_cpr(data):
-            matched_trim = powertrain_group_trim_match(data, group)
+            matched_trims = all_trim_matches(data, group.model_code, *group.top_labels)
+            matched_trim = matched_trims[0] if len(matched_trims) == 1 else None
             trim_slug = slugify(matched_trim.name) if matched_trim is not None else ''
             base_name = f'config_{data.year}_{slugify(data.make)}_{slugify(data.model)}_powertrain_trailering_{slugify(group.model_code)}'
             if trim_slug:
@@ -169,8 +170,8 @@ class CorpusBuilder:
                 domain,
             )
             record = OutputFileRecord(objecttype=CONFIG_OBJECTTYPE, type=CONFIG_TYPE, path=page_path, metadata=metadata)
-            parent_path, parent_trim = parent_paths_for_trim(matched_trim)
-            add_bound_record(bindings, record, collection=model_path, parent=parent_path, parent_vehicle=model_path, parent_trim=parent_trim)
+            parent_path, parent_trims = parent_paths_for_trims(matched_trims)
+            add_bound_record(bindings, record, collection=model_path, parent=parent_path, parent_vehicle=model_path, parent_trims=parent_trims)
 
         if data.gcwr_records:
             page_path = unique_output_path(
@@ -191,7 +192,7 @@ class CorpusBuilder:
                 domain,
             )
             record = OutputFileRecord(objecttype=CONFIG_OBJECTTYPE, type=CONFIG_TYPE, path=page_path, metadata=metadata)
-            add_bound_record(bindings, record, collection=model_path, parent=model_path, parent_vehicle=model_path, parent_trim=None)
+            add_bound_record(bindings, record, collection=model_path, parent=model_path, parent_vehicle=model_path, parent_trims=[])
 
     def write_outputs(self, data, output_dir: Path) -> Dict[str, object]:
         self.cleaner.load_glossary(getattr(data, 'glossary', {}))

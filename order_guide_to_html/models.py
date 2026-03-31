@@ -201,7 +201,7 @@ class BoundRecord:
     collection: Optional[Path]
     parent: Optional[Path]
     parent_vehicle: Optional[Path]
-    parent_trim: Optional[Path]
+    parent_trims: List[Path]
 
 @dataclass
 class SpecGroupDoc:

@@ -6,6 +6,7 @@ from dataclasses import dataclass, field
 from typing import Dict, Iterable, List, Mapping, MutableMapping, Sequence, Tuple
 
 from .utils import htmlize_text, normalize_text, unique_preserve_order
+from .configuration import strip_drive_tokens
 import html
 
 
@@ -263,7 +264,7 @@ class GuideTextCleaner:
         return ''.join(parts)
 
     def clean_trim_heading(self, data, trim) -> str:
-        return normalize_text(f'{data.vehicle_name} {trim.name}')
+        return normalize_text(f'{data.vehicle_name} {strip_drive_tokens(trim.name)}')
 
     def clean_feature_title(self, label: str, orderable_code: str = '', reference_code: str = '') -> str:
         return self.clean_customer_text(label)
