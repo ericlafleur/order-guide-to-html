@@ -6,7 +6,9 @@
       "objecttype": "Product",
       "type": "model",
       "node_id": "M98FED0D3D2CD762C",
-      "seating": "5",
+      "seating": [
+        "5"
+      ],
       "name": "2026 Chevrolet Silverado EV",
       "title": "2026 Chevrolet Silverado EV",
       "year": "2026",
@@ -86,7 +88,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C6B74DB746C1F786C",
-      "seating": "5",
+      "seating": [
+        "5"
+      ],
       "name": "2026 Chevrolet Silverado EV | Safety and driver assistance trim comparison",
       "title": "2026 Chevrolet Silverado EV | Safety and driver assistance trim comparison",
       "year": "2026",
@@ -128,7 +132,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C208D614F8F748AD0",
-      "seating": "5",
+      "seating": [
+        "5"
+      ],
       "name": "2026 Chevrolet Silverado EV | Technology and connectivity trim comparison",
       "title": "2026 Chevrolet Silverado EV | Technology and connectivity trim comparison",
       "year": "2026",
@@ -170,7 +176,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CE3A8C700ED4CB372",
-      "seating": "5",
+      "seating": [
+        "5"
+      ],
       "name": "2026 Chevrolet Silverado EV | Interior and comfort trim comparison",
       "title": "2026 Chevrolet Silverado EV | Interior and comfort trim comparison",
       "year": "2026",
@@ -212,7 +220,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CCAB29B5F1466883B",
-      "seating": "5",
+      "seating": [
+        "5"
+      ],
       "name": "2026 Chevrolet Silverado EV | Exterior and utility trim comparison",
       "title": "2026 Chevrolet Silverado EV | Exterior and utility trim comparison",
       "year": "2026",
@@ -254,7 +264,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C7ED851A46A653808",
-      "seating": "5",
+      "seating": [
+        "5"
+      ],
       "name": "2026 Chevrolet Silverado EV | Wheels and tires trim comparison",
       "title": "2026 Chevrolet Silverado EV | Wheels and tires trim comparison",
       "year": "2026",
@@ -296,7 +308,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CC58CDB03516DF763",
-      "seating": "5",
+      "seating": [
+        "5"
+      ],
       "name": "2026 Chevrolet Silverado EV | Mechanical and performance trim comparison",
       "title": "2026 Chevrolet Silverado EV | Mechanical and performance trim comparison",
       "year": "2026",
@@ -338,7 +352,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C83E8D8B9C1979750",
-      "seating": "5",
+      "seating": [
+        "5"
+      ],
       "name": "2026 Chevrolet Silverado EV | Packages and options trim comparison",
       "title": "2026 Chevrolet Silverado EV | Packages and options trim comparison",
       "year": "2026",
@@ -382,7 +398,12 @@
       "node_id": "TF358A4BD95438A6D",
       "name": "Work Truck Standard Range",
       "title": "2026 Chevrolet Silverado EV Work Truck Standard Range",
-      "seating": "5",
+      "seating": [
+        "5"
+      ],
+      "drivetrains": [
+        "4WD"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Silverado EV",
@@ -428,7 +449,12 @@
       "node_id": "T32CE61C010E36EE8",
       "name": "Work Truck Extended Range",
       "title": "2026 Chevrolet Silverado EV Work Truck Extended Range",
-      "seating": "5",
+      "seating": [
+        "5"
+      ],
+      "drivetrains": [
+        "4WD"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Silverado EV",
@@ -474,7 +500,12 @@
       "node_id": "T299E47696B8DEBF1",
       "name": "Work Truck Max Range",
       "title": "2026 Chevrolet Silverado EV Work Truck Max Range",
-      "seating": "5",
+      "seating": [
+        "5"
+      ],
+      "drivetrains": [
+        "4WD"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Silverado EV",
@@ -520,7 +551,12 @@
       "node_id": "TD5D5D2C2164F94D4",
       "name": "LT Standard Range",
       "title": "2026 Chevrolet Silverado EV LT Standard Range",
-      "seating": "5",
+      "seating": [
+        "5"
+      ],
+      "drivetrains": [
+        "4WD"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Silverado EV",
@@ -566,7 +602,12 @@
       "node_id": "TDD97EC821F50E6C4",
       "name": "LT Extended Range",
       "title": "2026 Chevrolet Silverado EV LT Extended Range",
-      "seating": "5",
+      "seating": [
+        "5"
+      ],
+      "drivetrains": [
+        "4WD"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Silverado EV",
@@ -612,7 +653,12 @@
       "node_id": "T65D93AE7C9460482",
       "name": "LT Max Range",
       "title": "2026 Chevrolet Silverado EV LT Max Range",
-      "seating": "5",
+      "seating": [
+        "5"
+      ],
+      "drivetrains": [
+        "4WD"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Silverado EV",
@@ -658,7 +704,12 @@
       "node_id": "TD0FD9E487FDFC80D",
       "name": "Trail Boss Extended Range",
       "title": "2026 Chevrolet Silverado EV Trail Boss Extended Range",
-      "seating": "5",
+      "seating": [
+        "5"
+      ],
+      "drivetrains": [
+        "4WD"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Silverado EV",
@@ -704,7 +755,12 @@
       "node_id": "TF65E0BDA7DE0450E",
       "name": "Trail Boss Max Range",
       "title": "2026 Chevrolet Silverado EV Trail Boss Max Range",
-      "seating": "5",
+      "seating": [
+        "5"
+      ],
+      "drivetrains": [
+        "4WD"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Silverado EV",

@@ -6,7 +6,9 @@
       "objecttype": "Product",
       "type": "model",
       "node_id": "M87F359BE24F1D455",
-      "seating": "2/3",
+      "seating": [
+        "2/3"
+      ],
       "fuel_type": "Fuel, gasoline, E15",
       "name": "2026 Chevrolet Equinox",
       "title": "2026 Chevrolet Equinox",
@@ -75,7 +77,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CBC3D68868518805D",
-      "seating": "2/3",
+      "seating": [
+        "2/3"
+      ],
       "fuel_type": "Fuel, gasoline, E15",
       "name": "2026 Chevrolet Equinox | Safety and driver assistance trim comparison",
       "title": "2026 Chevrolet Equinox | Safety and driver assistance trim comparison",
@@ -113,7 +117,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CCC7E17925906B358",
-      "seating": "2/3",
+      "seating": [
+        "2/3"
+      ],
       "fuel_type": "Fuel, gasoline, E15",
       "name": "2026 Chevrolet Equinox | Technology and connectivity trim comparison",
       "title": "2026 Chevrolet Equinox | Technology and connectivity trim comparison",
@@ -151,7 +157,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CDA70C3D281A5A01B",
-      "seating": "2/3",
+      "seating": [
+        "2/3"
+      ],
       "fuel_type": "Fuel, gasoline, E15",
       "name": "2026 Chevrolet Equinox | Interior and comfort trim comparison",
       "title": "2026 Chevrolet Equinox | Interior and comfort trim comparison",
@@ -189,7 +197,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C5D9A401D50983684",
-      "seating": "2/3",
+      "seating": [
+        "2/3"
+      ],
       "fuel_type": "Fuel, gasoline, E15",
       "name": "2026 Chevrolet Equinox | Exterior and utility trim comparison",
       "title": "2026 Chevrolet Equinox | Exterior and utility trim comparison",
@@ -227,7 +237,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C2222FF89AF6E8BCD",
-      "seating": "2/3",
+      "seating": [
+        "2/3"
+      ],
       "fuel_type": "Fuel, gasoline, E15",
       "name": "2026 Chevrolet Equinox | Wheels and tires trim comparison",
       "title": "2026 Chevrolet Equinox | Wheels and tires trim comparison",
@@ -265,7 +277,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C04D4A066F482F3A9",
-      "seating": "2/3",
+      "seating": [
+        "2/3"
+      ],
       "fuel_type": "Fuel, gasoline, E15",
       "name": "2026 Chevrolet Equinox | Mechanical and performance trim comparison",
       "title": "2026 Chevrolet Equinox | Mechanical and performance trim comparison",
@@ -303,7 +317,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C89F381D8672C050D",
-      "seating": "2/3",
+      "seating": [
+        "2/3"
+      ],
       "fuel_type": "Fuel, gasoline, E15",
       "name": "2026 Chevrolet Equinox | Packages and options trim comparison",
       "title": "2026 Chevrolet Equinox | Packages and options trim comparison",
@@ -343,8 +359,13 @@
       "node_id": "T46B29B835928C66D",
       "name": "LT",
       "title": "2026 Chevrolet Equinox LT",
-      "seating": "2/3",
+      "seating": [
+        "2/3"
+      ],
       "fuel_type": "Fuel, gasoline, E15",
+      "drivetrains": [
+        "AWD"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Equinox",
@@ -383,8 +404,13 @@
       "node_id": "T8A939E90F0042CAD",
       "name": "LT",
       "title": "2026 Chevrolet Equinox LT",
-      "seating": "2/3",
+      "seating": [
+        "2/3"
+      ],
       "fuel_type": "Fuel, gasoline, E15",
+      "drivetrains": [
+        "AWD"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Equinox",
@@ -413,6 +439,12 @@
       "collection_path": "model_2026_Chevrolet_Equinox.html",
       "parent": "M87F359BE24F1D455",
       "parent_path": "model_2026_Chevrolet_Equinox.html",
+      "child": [
+        "S3602C1AF8EFB06DF"
+      ],
+      "child_paths": [
+        "spec_2026_Chevrolet_Equinox_dimensions_specifications_1PT26_FWD_and_AWD_LT.html"
+      ],
       "parent_vehicle": "model_2026_Chevrolet_Equinox.html",
       "parent_vehicle_id": "M87F359BE24F1D455",
       "path": "trim_2026_Chevrolet_Equinox_LT_2.html"
@@ -423,8 +455,13 @@
       "node_id": "T8FCBDB24A59B44D0",
       "name": "ACTIV",
       "title": "2026 Chevrolet Equinox ACTIV",
-      "seating": "2/3",
+      "seating": [
+        "2/3"
+      ],
       "fuel_type": "Fuel, gasoline, E15",
+      "drivetrains": [
+        "AWD"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Equinox",
@@ -469,8 +506,13 @@
       "node_id": "T71CE93DB8705B3C0",
       "name": "RS",
       "title": "2026 Chevrolet Equinox RS",
-      "seating": "2/3",
+      "seating": [
+        "2/3"
+      ],
       "fuel_type": "Fuel, gasoline, E15",
+      "drivetrains": [
+        "AWD"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Equinox",
@@ -540,6 +582,12 @@
       "parent_path": "model_2026_Chevrolet_Equinox.html",
       "parent_vehicle": "model_2026_Chevrolet_Equinox.html",
       "parent_vehicle_id": "M87F359BE24F1D455",
+      "parent_trims": [
+        "trim_2026_Chevrolet_Equinox_LT_2.html"
+      ],
+      "parent_trim_ids": [
+        "T8A939E90F0042CAD"
+      ],
       "path": "spec_2026_Chevrolet_Equinox_dimensions_specifications_1PT26_FWD_and_AWD_LT.html"
     },
     {

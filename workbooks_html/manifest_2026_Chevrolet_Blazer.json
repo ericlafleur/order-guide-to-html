@@ -6,7 +6,9 @@
       "objecttype": "Product",
       "type": "model",
       "node_id": "MB9E28BD2C0012871",
-      "seating": "2/3",
+      "seating": [
+        "2/3"
+      ],
       "name": "2026 Chevrolet Blazer",
       "title": "2026 Chevrolet Blazer",
       "year": "2026",
@@ -70,7 +72,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C270EF37E90E8217E",
-      "seating": "2/3",
+      "seating": [
+        "2/3"
+      ],
       "name": "2026 Chevrolet Blazer | Safety and driver assistance trim comparison",
       "title": "2026 Chevrolet Blazer | Safety and driver assistance trim comparison",
       "year": "2026",
@@ -107,7 +111,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C4D9310ADC8A261AE",
-      "seating": "2/3",
+      "seating": [
+        "2/3"
+      ],
       "name": "2026 Chevrolet Blazer | Technology and connectivity trim comparison",
       "title": "2026 Chevrolet Blazer | Technology and connectivity trim comparison",
       "year": "2026",
@@ -144,7 +150,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C226FE8879D32D900",
-      "seating": "2/3",
+      "seating": [
+        "2/3"
+      ],
       "name": "2026 Chevrolet Blazer | Interior and comfort trim comparison",
       "title": "2026 Chevrolet Blazer | Interior and comfort trim comparison",
       "year": "2026",
@@ -181,7 +189,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CC0D62F1BEDC5EAC3",
-      "seating": "2/3",
+      "seating": [
+        "2/3"
+      ],
       "name": "2026 Chevrolet Blazer | Exterior and utility trim comparison",
       "title": "2026 Chevrolet Blazer | Exterior and utility trim comparison",
       "year": "2026",
@@ -218,7 +228,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C3610B94433DBD498",
-      "seating": "2/3",
+      "seating": [
+        "2/3"
+      ],
       "name": "2026 Chevrolet Blazer | Wheels and tires trim comparison",
       "title": "2026 Chevrolet Blazer | Wheels and tires trim comparison",
       "year": "2026",
@@ -255,7 +267,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C20DF27CDDC8F3B01",
-      "seating": "2/3",
+      "seating": [
+        "2/3"
+      ],
       "name": "2026 Chevrolet Blazer | Mechanical and performance trim comparison",
       "title": "2026 Chevrolet Blazer | Mechanical and performance trim comparison",
       "year": "2026",
@@ -292,7 +306,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C4629666B5B44E1CA",
-      "seating": "2/3",
+      "seating": [
+        "2/3"
+      ],
       "name": "2026 Chevrolet Blazer | Packages and options trim comparison",
       "title": "2026 Chevrolet Blazer | Packages and options trim comparison",
       "year": "2026",
@@ -331,7 +347,12 @@
       "node_id": "T7B5104EBF85EC8EE",
       "name": "LT",
       "title": "2026 Chevrolet Blazer LT",
-      "seating": "2/3",
+      "seating": [
+        "2/3"
+      ],
+      "drivetrains": [
+        "AWD"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Blazer",
@@ -361,10 +382,12 @@
       "parent": "MB9E28BD2C0012871",
       "parent_path": "model_2026_Chevrolet_Blazer.html",
       "child": [
-        "SD5909204C4E364E3"
+        "SD5909204C4E364E3",
+        "S73F4A5DA1790B800"
       ],
       "child_paths": [
-        "spec_2026_Chevrolet_Blazer_dimensions_specifications_LT_1NR26_AWD_LT.html"
+        "spec_2026_Chevrolet_Blazer_dimensions_specifications_LT_1NR26_AWD_LT.html",
+        "config_2026_Chevrolet_Blazer_powertrain_trailering_1NR26_LT_AWD_1NS26_RS_AWD.html"
       ],
       "parent_vehicle": "model_2026_Chevrolet_Blazer.html",
       "parent_vehicle_id": "MB9E28BD2C0012871",
@@ -414,7 +437,12 @@
       "node_id": "T83C51F2963213029",
       "name": "RS",
       "title": "2026 Chevrolet Blazer RS",
-      "seating": "2/3",
+      "seating": [
+        "2/3"
+      ],
+      "drivetrains": [
+        "AWD"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Blazer",
@@ -446,11 +474,13 @@
       "child": [
         "SBBEA184A0D4AD443",
         "SC50335DCC0E826DD",
+        "S73F4A5DA1790B800",
         "SB0E5053F9CF977BC"
       ],
       "child_paths": [
         "spec_2026_Chevrolet_Blazer_dimensions_specifications_RS_1NS26_AWD_RS.html",
         "config_2026_Chevrolet_Blazer_powertrain_trailering_RS_1NS26_RS.html",
+        "config_2026_Chevrolet_Blazer_powertrain_trailering_1NR26_LT_AWD_1NS26_RS_AWD.html",
         "config_2026_Chevrolet_Blazer_powertrain_trailering_1NR26_RS_AWD_RS.html"
       ],
       "parent_vehicle": "model_2026_Chevrolet_Blazer.html",
@@ -618,6 +648,14 @@
       "parent_path": "model_2026_Chevrolet_Blazer.html",
       "parent_vehicle": "model_2026_Chevrolet_Blazer.html",
       "parent_vehicle_id": "MB9E28BD2C0012871",
+      "parent_trims": [
+        "trim_2026_Chevrolet_Blazer_LT.html",
+        "trim_2026_Chevrolet_Blazer_RS.html"
+      ],
+      "parent_trim_ids": [
+        "T7B5104EBF85EC8EE",
+        "T83C51F2963213029"
+      ],
       "path": "config_2026_Chevrolet_Blazer_powertrain_trailering_1NR26_LT_AWD_1NS26_RS_AWD.html"
     },
     {

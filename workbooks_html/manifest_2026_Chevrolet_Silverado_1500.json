@@ -6,6 +6,11 @@
       "objecttype": "Product",
       "type": "model",
       "node_id": "M3381846B8AEC20F4",
+      "seating": [
+        "6",
+        "5",
+        "3"
+      ],
       "name": "2026 Chevrolet Silverado 1500",
       "title": "2026 Chevrolet Silverado 1500",
       "year": "2026",
@@ -132,6 +137,11 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C7E89A76AE23A01C4",
+      "seating": [
+        "6",
+        "5",
+        "3"
+      ],
       "name": "2026 Chevrolet Silverado 1500 | Safety and driver assistance trim comparison",
       "title": "2026 Chevrolet Silverado 1500 | Safety and driver assistance trim comparison",
       "year": "2026",
@@ -174,6 +184,11 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CFDBDCFC8712D216B",
+      "seating": [
+        "6",
+        "5",
+        "3"
+      ],
       "name": "2026 Chevrolet Silverado 1500 | Technology and connectivity trim comparison",
       "title": "2026 Chevrolet Silverado 1500 | Technology and connectivity trim comparison",
       "year": "2026",
@@ -216,6 +231,11 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C9E95A493ED4AFCF6",
+      "seating": [
+        "6",
+        "5",
+        "3"
+      ],
       "name": "2026 Chevrolet Silverado 1500 | Interior and comfort trim comparison",
       "title": "2026 Chevrolet Silverado 1500 | Interior and comfort trim comparison",
       "year": "2026",
@@ -258,6 +278,11 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C5F904DC7C441BC35",
+      "seating": [
+        "6",
+        "5",
+        "3"
+      ],
       "name": "2026 Chevrolet Silverado 1500 | Exterior and utility trim comparison",
       "title": "2026 Chevrolet Silverado 1500 | Exterior and utility trim comparison",
       "year": "2026",
@@ -300,6 +325,11 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CF40F9373CA1859AE",
+      "seating": [
+        "6",
+        "5",
+        "3"
+      ],
       "name": "2026 Chevrolet Silverado 1500 | Wheels and tires trim comparison",
       "title": "2026 Chevrolet Silverado 1500 | Wheels and tires trim comparison",
       "year": "2026",
@@ -342,6 +372,11 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CFB9A2C98B2F4382F",
+      "seating": [
+        "6",
+        "5",
+        "3"
+      ],
       "name": "2026 Chevrolet Silverado 1500 | Mechanical and performance trim comparison",
       "title": "2026 Chevrolet Silverado 1500 | Mechanical and performance trim comparison",
       "year": "2026",
@@ -384,6 +419,11 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CA77C37510AA3BC7B",
+      "seating": [
+        "6",
+        "5",
+        "3"
+      ],
       "name": "2026 Chevrolet Silverado 1500 | Packages and options trim comparison",
       "title": "2026 Chevrolet Silverado 1500 | Packages and options trim comparison",
       "year": "2026",
@@ -428,6 +468,21 @@
       "node_id": "TBF1CE3CB306682A4",
       "name": "Work Truck",
       "title": "2026 Chevrolet Silverado 1500 Work Truck",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "drivetrains": [
+        "2WD",
+        "4WD"
+      ],
+      "body_styles": [
+        "Crew Cab, Short Bed",
+        "Crew Cab, Standard Bed",
+        "Double Cab, Standard Bed",
+        "Regular Cab, Standard Bed",
+        "Regular Cab, Long Bed"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Silverado 1500",
@@ -467,6 +522,21 @@
       "node_id": "T39BA52770A06E5C7",
       "name": "Custom",
       "title": "2026 Chevrolet Silverado 1500 Custom",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "drivetrains": [
+        "2WD",
+        "4WD"
+      ],
+      "body_styles": [
+        "Crew Cab, Short Bed",
+        "Crew Cab, Standard Bed",
+        "Double Cab, Standard Bed",
+        "Regular Cab, Standard Bed",
+        "Regular Cab, Long Bed"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Silverado 1500",
@@ -506,6 +576,21 @@
       "node_id": "TAD39289754078D26",
       "name": "Custom Trail Boss",
       "title": "2026 Chevrolet Silverado 1500 Custom Trail Boss",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "drivetrains": [
+        "2WD",
+        "4WD"
+      ],
+      "body_styles": [
+        "Crew Cab, Short Bed",
+        "Crew Cab, Standard Bed",
+        "Double Cab, Standard Bed",
+        "Regular Cab, Standard Bed",
+        "Regular Cab, Long Bed"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Silverado 1500",
@@ -545,6 +630,21 @@
       "node_id": "TBFA80469E5DE8109",
       "name": "LT",
       "title": "2026 Chevrolet Silverado 1500 LT",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "drivetrains": [
+        "2WD",
+        "4WD"
+      ],
+      "body_styles": [
+        "Crew Cab, Short Bed",
+        "Crew Cab, Standard Bed",
+        "Double Cab, Standard Bed",
+        "Regular Cab, Standard Bed",
+        "Regular Cab, Long Bed"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Silverado 1500",
@@ -584,6 +684,21 @@
       "node_id": "T3FBE11768803FF7E",
       "name": "RST",
       "title": "2026 Chevrolet Silverado 1500 RST",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "drivetrains": [
+        "2WD",
+        "4WD"
+      ],
+      "body_styles": [
+        "Crew Cab, Short Bed",
+        "Crew Cab, Standard Bed",
+        "Double Cab, Standard Bed",
+        "Regular Cab, Standard Bed",
+        "Regular Cab, Long Bed"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Silverado 1500",
@@ -623,6 +738,21 @@
       "node_id": "T7A1C4817E46D335B",
       "name": "LT Trail Boss",
       "title": "2026 Chevrolet Silverado 1500 LT Trail Boss",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "drivetrains": [
+        "2WD",
+        "4WD"
+      ],
+      "body_styles": [
+        "Crew Cab, Short Bed",
+        "Crew Cab, Standard Bed",
+        "Double Cab, Standard Bed",
+        "Regular Cab, Standard Bed",
+        "Regular Cab, Long Bed"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Silverado 1500",
@@ -662,7 +792,15 @@
       "node_id": "TDF3D181958796E95",
       "name": "ZR2",
       "title": "2026 Chevrolet Silverado 1500 ZR2",
-      "seating": "5",
+      "seating": [
+        "5"
+      ],
+      "drivetrains": [
+        "4WD"
+      ],
+      "body_styles": [
+        "Crew Cab, Short Bed"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Silverado 1500",
@@ -708,6 +846,21 @@
       "node_id": "T77898B6DD5C20CE0",
       "name": "LTZ",
       "title": "2026 Chevrolet Silverado 1500 LTZ",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "drivetrains": [
+        "2WD",
+        "4WD"
+      ],
+      "body_styles": [
+        "Crew Cab, Short Bed",
+        "Crew Cab, Standard Bed",
+        "Double Cab, Standard Bed",
+        "Regular Cab, Standard Bed",
+        "Regular Cab, Long Bed"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Silverado 1500",
@@ -747,6 +900,21 @@
       "node_id": "TD72FF37971AA9EAB",
       "name": "High Country",
       "title": "2026 Chevrolet Silverado 1500 High Country",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "drivetrains": [
+        "2WD",
+        "4WD"
+      ],
+      "body_styles": [
+        "Crew Cab, Short Bed",
+        "Crew Cab, Standard Bed",
+        "Double Cab, Standard Bed",
+        "Regular Cab, Standard Bed",
+        "Regular Cab, Long Bed"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Silverado 1500",

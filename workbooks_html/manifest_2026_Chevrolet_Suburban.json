@@ -6,7 +6,9 @@
       "objecttype": "Product",
       "type": "model",
       "node_id": "M42C4D74903002308",
-      "seating": "3/3/3",
+      "seating": [
+        "3/3/3"
+      ],
       "fuel_type": "Fuel, gasoline, E15",
       "name": "2026 Chevrolet Suburban",
       "title": "2026 Chevrolet Suburban",
@@ -49,7 +51,6 @@
         "TF699DE3035111C4B",
         "TA2E52C132B3ACE68",
         "T9BB1903BA06A643F",
-        "S31328C16643464E8",
         "S9452BD0F0EC86D63",
         "S6160F737DE0CCF4C",
         "S3CBA42C0C6725D53",
@@ -71,7 +72,6 @@
         "trim_2026_Chevrolet_Suburban_Z71.html",
         "trim_2026_Chevrolet_Suburban_Premier.html",
         "trim_2026_Chevrolet_Suburban_High_Country.html",
-        "spec_2026_Chevrolet_Suburban_dimensions_specifications_CC10906.html",
         "spec_2026_Chevrolet_Suburban_dimensions_specifications_CK10906.html",
         "config_2026_Chevrolet_Suburban_powertrain_trailering_CC10906.html",
         "config_2026_Chevrolet_Suburban_powertrain_trailering_CK10906.html",
@@ -93,7 +93,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CD619984B5A5AA197",
-      "seating": "3/3/3",
+      "seating": [
+        "3/3/3"
+      ],
       "fuel_type": "Fuel, gasoline, E15",
       "name": "2026 Chevrolet Suburban | Safety and driver assistance trim comparison",
       "title": "2026 Chevrolet Suburban | Safety and driver assistance trim comparison",
@@ -134,7 +136,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C83A9AA8EC2F912E5",
-      "seating": "3/3/3",
+      "seating": [
+        "3/3/3"
+      ],
       "fuel_type": "Fuel, gasoline, E15",
       "name": "2026 Chevrolet Suburban | Technology and connectivity trim comparison",
       "title": "2026 Chevrolet Suburban | Technology and connectivity trim comparison",
@@ -175,7 +179,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C3BE0D079B2DC449B",
-      "seating": "3/3/3",
+      "seating": [
+        "3/3/3"
+      ],
       "fuel_type": "Fuel, gasoline, E15",
       "name": "2026 Chevrolet Suburban | Interior and comfort trim comparison",
       "title": "2026 Chevrolet Suburban | Interior and comfort trim comparison",
@@ -216,7 +222,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C46C433840042CC4F",
-      "seating": "3/3/3",
+      "seating": [
+        "3/3/3"
+      ],
       "fuel_type": "Fuel, gasoline, E15",
       "name": "2026 Chevrolet Suburban | Exterior and utility trim comparison",
       "title": "2026 Chevrolet Suburban | Exterior and utility trim comparison",
@@ -257,7 +265,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C7309AE50D9D75A8F",
-      "seating": "3/3/3",
+      "seating": [
+        "3/3/3"
+      ],
       "fuel_type": "Fuel, gasoline, E15",
       "name": "2026 Chevrolet Suburban | Wheels and tires trim comparison",
       "title": "2026 Chevrolet Suburban | Wheels and tires trim comparison",
@@ -298,7 +308,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C78F3AFAF63C66835",
-      "seating": "3/3/3",
+      "seating": [
+        "3/3/3"
+      ],
       "fuel_type": "Fuel, gasoline, E15",
       "name": "2026 Chevrolet Suburban | Mechanical and performance trim comparison",
       "title": "2026 Chevrolet Suburban | Mechanical and performance trim comparison",
@@ -339,7 +351,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CC43F04300E540EA2",
-      "seating": "3/3/3",
+      "seating": [
+        "3/3/3"
+      ],
       "fuel_type": "Fuel, gasoline, E15",
       "name": "2026 Chevrolet Suburban | Packages and options trim comparison",
       "title": "2026 Chevrolet Suburban | Packages and options trim comparison",
@@ -382,7 +396,14 @@
       "node_id": "TECC727F993F90D22",
       "name": "LS",
       "title": "2026 Chevrolet Suburban LS",
+      "seating": [
+        "3/3/3"
+      ],
       "fuel_type": "Fuel, gasoline, E15",
+      "drivetrains": [
+        "2WD",
+        "4WD"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Suburban",
@@ -412,6 +433,14 @@
       "collection_path": "model_2026_Chevrolet_Suburban.html",
       "parent": "M42C4D74903002308",
       "parent_path": "model_2026_Chevrolet_Suburban.html",
+      "child": [
+        "S1FF24846436A63DD",
+        "S9452BD0F0EC86D63"
+      ],
+      "child_paths": [
+        "spec_2026_Chevrolet_Suburban_dimensions_specifications_LS_CC10906.html",
+        "spec_2026_Chevrolet_Suburban_dimensions_specifications_CK10906.html"
+      ],
       "parent_vehicle": "model_2026_Chevrolet_Suburban.html",
       "parent_vehicle_id": "M42C4D74903002308",
       "path": "trim_2026_Chevrolet_Suburban_LS.html"
@@ -422,7 +451,13 @@
       "node_id": "T8C1481D6FF8A71E3",
       "name": "LT",
       "title": "2026 Chevrolet Suburban LT",
+      "seating": [
+        "3/3/3"
+      ],
       "fuel_type": "Fuel, gasoline, E15",
+      "drivetrains": [
+        "4WD"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Suburban",
@@ -452,6 +487,12 @@
       "collection_path": "model_2026_Chevrolet_Suburban.html",
       "parent": "M42C4D74903002308",
       "parent_path": "model_2026_Chevrolet_Suburban.html",
+      "child": [
+        "S9452BD0F0EC86D63"
+      ],
+      "child_paths": [
+        "spec_2026_Chevrolet_Suburban_dimensions_specifications_CK10906.html"
+      ],
       "parent_vehicle": "model_2026_Chevrolet_Suburban.html",
       "parent_vehicle_id": "M42C4D74903002308",
       "path": "trim_2026_Chevrolet_Suburban_LT.html"
@@ -462,7 +503,13 @@
       "node_id": "T910DCC37562C06D2",
       "name": "RST",
       "title": "2026 Chevrolet Suburban RST",
+      "seating": [
+        "3/3/3"
+      ],
       "fuel_type": "Fuel, gasoline, E15",
+      "drivetrains": [
+        "4WD"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Suburban",
@@ -492,6 +539,12 @@
       "collection_path": "model_2026_Chevrolet_Suburban.html",
       "parent": "M42C4D74903002308",
       "parent_path": "model_2026_Chevrolet_Suburban.html",
+      "child": [
+        "S9452BD0F0EC86D63"
+      ],
+      "child_paths": [
+        "spec_2026_Chevrolet_Suburban_dimensions_specifications_CK10906.html"
+      ],
       "parent_vehicle": "model_2026_Chevrolet_Suburban.html",
       "parent_vehicle_id": "M42C4D74903002308",
       "path": "trim_2026_Chevrolet_Suburban_RST.html"
@@ -502,7 +555,13 @@
       "node_id": "TF699DE3035111C4B",
       "name": "Z71",
       "title": "2026 Chevrolet Suburban Z71",
+      "seating": [
+        "3/3/3"
+      ],
       "fuel_type": "Fuel, gasoline, E15",
+      "drivetrains": [
+        "4WD"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Suburban",
@@ -532,6 +591,12 @@
       "collection_path": "model_2026_Chevrolet_Suburban.html",
       "parent": "M42C4D74903002308",
       "parent_path": "model_2026_Chevrolet_Suburban.html",
+      "child": [
+        "S9452BD0F0EC86D63"
+      ],
+      "child_paths": [
+        "spec_2026_Chevrolet_Suburban_dimensions_specifications_CK10906.html"
+      ],
       "parent_vehicle": "model_2026_Chevrolet_Suburban.html",
       "parent_vehicle_id": "M42C4D74903002308",
       "path": "trim_2026_Chevrolet_Suburban_Z71.html"
@@ -542,7 +607,13 @@
       "node_id": "TA2E52C132B3ACE68",
       "name": "Premier",
       "title": "2026 Chevrolet Suburban Premier",
+      "seating": [
+        "3/3/3"
+      ],
       "fuel_type": "Fuel, gasoline, E15",
+      "drivetrains": [
+        "4WD"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Suburban",
@@ -572,6 +643,12 @@
       "collection_path": "model_2026_Chevrolet_Suburban.html",
       "parent": "M42C4D74903002308",
       "parent_path": "model_2026_Chevrolet_Suburban.html",
+      "child": [
+        "S9452BD0F0EC86D63"
+      ],
+      "child_paths": [
+        "spec_2026_Chevrolet_Suburban_dimensions_specifications_CK10906.html"
+      ],
       "parent_vehicle": "model_2026_Chevrolet_Suburban.html",
       "parent_vehicle_id": "M42C4D74903002308",
       "path": "trim_2026_Chevrolet_Suburban_Premier.html"
@@ -582,7 +659,13 @@
       "node_id": "T9BB1903BA06A643F",
       "name": "High Country",
       "title": "2026 Chevrolet Suburban High Country",
+      "seating": [
+        "3/3/3"
+      ],
       "fuel_type": "Fuel, gasoline, E15",
+      "drivetrains": [
+        "4WD"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Suburban",
@@ -612,6 +695,12 @@
       "collection_path": "model_2026_Chevrolet_Suburban.html",
       "parent": "M42C4D74903002308",
       "parent_path": "model_2026_Chevrolet_Suburban.html",
+      "child": [
+        "S9452BD0F0EC86D63"
+      ],
+      "child_paths": [
+        "spec_2026_Chevrolet_Suburban_dimensions_specifications_CK10906.html"
+      ],
       "parent_vehicle": "model_2026_Chevrolet_Suburban.html",
       "parent_vehicle_id": "M42C4D74903002308",
       "path": "trim_2026_Chevrolet_Suburban_High_Country.html"
@@ -619,7 +708,7 @@
     {
       "objecttype": "Configuration",
       "type": "configuration-spec",
-      "node_id": "S31328C16643464E8",
+      "node_id": "S1FF24846436A63DD",
       "title": "2026 Chevrolet Suburban | Configuration dimensions and specifications",
       "configuration_kind": "spec-group",
       "configuration_label": "2WD",
@@ -633,20 +722,24 @@
       ],
       "has_numeric_specs": true,
       "surface": "passage_only",
-      "entity_name": "2026 Chevrolet Suburban",
-      "entity_key": "2026_chevrolet_suburban",
+      "entity_name": "2026 Chevrolet Suburban LS",
+      "entity_key": "2026_chevrolet_suburban_ls",
       "vehicle_key": "2026_chevrolet_suburban",
       "year": "2026",
       "make": "Chevrolet",
       "model": "Suburban",
       "retrieval_granularity": "coarse",
+      "trim_key": "2026_chevrolet_suburban_ls",
+      "trim": "LS",
       "collection": "M42C4D74903002308",
       "collection_path": "model_2026_Chevrolet_Suburban.html",
-      "parent": "M42C4D74903002308",
-      "parent_path": "model_2026_Chevrolet_Suburban.html",
+      "parent": "TECC727F993F90D22",
+      "parent_path": "trim_2026_Chevrolet_Suburban_LS.html",
       "parent_vehicle": "model_2026_Chevrolet_Suburban.html",
       "parent_vehicle_id": "M42C4D74903002308",
-      "path": "spec_2026_Chevrolet_Suburban_dimensions_specifications_CC10906.html"
+      "parent_trim": "trim_2026_Chevrolet_Suburban_LS.html",
+      "parent_trim_id": "TECC727F993F90D22",
+      "path": "spec_2026_Chevrolet_Suburban_dimensions_specifications_LS_CC10906.html"
     },
     {
       "objecttype": "Configuration",
@@ -678,6 +771,22 @@
       "parent_path": "model_2026_Chevrolet_Suburban.html",
       "parent_vehicle": "model_2026_Chevrolet_Suburban.html",
       "parent_vehicle_id": "M42C4D74903002308",
+      "parent_trims": [
+        "trim_2026_Chevrolet_Suburban_LS.html",
+        "trim_2026_Chevrolet_Suburban_LT.html",
+        "trim_2026_Chevrolet_Suburban_RST.html",
+        "trim_2026_Chevrolet_Suburban_Z71.html",
+        "trim_2026_Chevrolet_Suburban_Premier.html",
+        "trim_2026_Chevrolet_Suburban_High_Country.html"
+      ],
+      "parent_trim_ids": [
+        "TECC727F993F90D22",
+        "T8C1481D6FF8A71E3",
+        "T910DCC37562C06D2",
+        "TF699DE3035111C4B",
+        "TA2E52C132B3ACE68",
+        "T9BB1903BA06A643F"
+      ],
       "path": "spec_2026_Chevrolet_Suburban_dimensions_specifications_CK10906.html"
     },
     {

@@ -6,6 +6,10 @@
       "objecttype": "Product",
       "type": "model",
       "node_id": "M4490F0E9C53E2E2F",
+      "seating": [
+        "6",
+        "3"
+      ],
       "name": "2026 Chevrolet Silverado 3500 HD",
       "title": "2026 Chevrolet Silverado 3500 HD",
       "year": "2026",
@@ -135,6 +139,10 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CE101C88CC5189CEA",
+      "seating": [
+        "6",
+        "3"
+      ],
       "name": "2026 Chevrolet Silverado 3500 HD | Safety and driver assistance trim comparison",
       "title": "2026 Chevrolet Silverado 3500 HD | Safety and driver assistance trim comparison",
       "year": "2026",
@@ -172,6 +180,10 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C6B7F98E1E46B87FB",
+      "seating": [
+        "6",
+        "3"
+      ],
       "name": "2026 Chevrolet Silverado 3500 HD | Technology and connectivity trim comparison",
       "title": "2026 Chevrolet Silverado 3500 HD | Technology and connectivity trim comparison",
       "year": "2026",
@@ -209,6 +221,10 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CC50BF2454951F691",
+      "seating": [
+        "6",
+        "3"
+      ],
       "name": "2026 Chevrolet Silverado 3500 HD | Interior and comfort trim comparison",
       "title": "2026 Chevrolet Silverado 3500 HD | Interior and comfort trim comparison",
       "year": "2026",
@@ -246,6 +262,10 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C49E16BC072B443E7",
+      "seating": [
+        "6",
+        "3"
+      ],
       "name": "2026 Chevrolet Silverado 3500 HD | Exterior and utility trim comparison",
       "title": "2026 Chevrolet Silverado 3500 HD | Exterior and utility trim comparison",
       "year": "2026",
@@ -283,6 +303,10 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C1876A94192E1BB2F",
+      "seating": [
+        "6",
+        "3"
+      ],
       "name": "2026 Chevrolet Silverado 3500 HD | Wheels and tires trim comparison",
       "title": "2026 Chevrolet Silverado 3500 HD | Wheels and tires trim comparison",
       "year": "2026",
@@ -320,6 +344,10 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CA8CA3C84C57A036D",
+      "seating": [
+        "6",
+        "3"
+      ],
       "name": "2026 Chevrolet Silverado 3500 HD | Mechanical and performance trim comparison",
       "title": "2026 Chevrolet Silverado 3500 HD | Mechanical and performance trim comparison",
       "year": "2026",
@@ -357,6 +385,10 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C3F5F3C3E2265963D",
+      "seating": [
+        "6",
+        "3"
+      ],
       "name": "2026 Chevrolet Silverado 3500 HD | Packages and options trim comparison",
       "title": "2026 Chevrolet Silverado 3500 HD | Packages and options trim comparison",
       "year": "2026",
@@ -396,6 +428,20 @@
       "node_id": "T9922C107BA787C2E",
       "name": "Work Truck",
       "title": "2026 Chevrolet Silverado 3500 HD Work Truck",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "drivetrains": [
+        "2WD",
+        "4WD"
+      ],
+      "body_styles": [
+        "Crew Cab, Standard Bed",
+        "Crew Cab, Long Bed",
+        "Double Cab, Long Bed",
+        "Regular Cab, Long Bed"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Silverado 3500 HD",
@@ -435,6 +481,20 @@
       "node_id": "TAA17513B11C09051",
       "name": "LT",
       "title": "2026 Chevrolet Silverado 3500 HD LT",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "drivetrains": [
+        "2WD",
+        "4WD"
+      ],
+      "body_styles": [
+        "Crew Cab, Standard Bed",
+        "Crew Cab, Long Bed",
+        "Double Cab, Long Bed",
+        "Regular Cab, Long Bed"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Silverado 3500 HD",
@@ -474,6 +534,20 @@
       "node_id": "T32E96FA32860A8D7",
       "name": "LTZ",
       "title": "2026 Chevrolet Silverado 3500 HD LTZ",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "drivetrains": [
+        "2WD",
+        "4WD"
+      ],
+      "body_styles": [
+        "Crew Cab, Standard Bed",
+        "Crew Cab, Long Bed",
+        "Double Cab, Long Bed",
+        "Regular Cab, Long Bed"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Silverado 3500 HD",
@@ -513,7 +587,16 @@
       "node_id": "T51F156C3B3F9D9E3",
       "name": "High Country",
       "title": "2026 Chevrolet Silverado 3500 HD High Country",
-      "seating": "6",
+      "seating": [
+        "6"
+      ],
+      "drivetrains": [
+        "4WD"
+      ],
+      "body_styles": [
+        "Crew Cab, Standard Bed",
+        "Crew Cab, Long Bed"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Silverado 3500 HD",

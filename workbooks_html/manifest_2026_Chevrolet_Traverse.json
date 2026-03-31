@@ -6,6 +6,9 @@
       "objecttype": "Product",
       "type": "model",
       "node_id": "M4656CBE26E68DA88",
+      "seating": [
+        "2/2/3"
+      ],
       "name": "2026 Chevrolet Traverse",
       "title": "2026 Chevrolet Traverse",
       "year": "2026",
@@ -40,15 +43,9 @@
         "C5E58FA4D971001B7",
         "C472D715560384EC8",
         "C4595EBF51B39F825",
-        "T0F20F410F4107FE8",
-        "TCCCF64E3BC69EDCF",
-        "T859D1E1EFA82EBD1",
-        "SF7F87E355496D8CE",
-        "SD4B04EBBD0F1C9C2",
-        "S19A609FA8863DC1F",
-        "SEAAAFD1145C91F4A",
-        "S92EC0B4E6223C7C5",
-        "SF93837148FFAF297"
+        "T356802850BECB7B8",
+        "T7D160887363C00C7",
+        "T80F92296C87522B5"
       ],
       "child_paths": [
         "compare_domain_2026_Chevrolet_Traverse_Safety_and_driver_assistance.html",
@@ -58,36 +55,33 @@
         "compare_domain_2026_Chevrolet_Traverse_Wheels_and_tires.html",
         "compare_domain_2026_Chevrolet_Traverse_Mechanical_and_performance.html",
         "compare_domain_2026_Chevrolet_Traverse_Packages_and_options.html",
-        "trim_2026_Chevrolet_Traverse_LT_1LB56_AWD.html",
-        "trim_2026_Chevrolet_Traverse_Z71_1LC56_AWD.html",
-        "trim_2026_Chevrolet_Traverse_RS_1LD56_AWD.html",
-        "spec_2026_Chevrolet_Traverse_dimensions_specifications_1LB56_LT_AWD.html",
-        "spec_2026_Chevrolet_Traverse_dimensions_specifications_1LC56_Z71_AWD.html",
-        "spec_2026_Chevrolet_Traverse_dimensions_specifications_1LD56_RS_AWD.html",
-        "config_2026_Chevrolet_Traverse_powertrain_trailering_1LB56_LT_AWD.html",
-        "config_2026_Chevrolet_Traverse_powertrain_trailering_1LC56_Z71_AWD.html",
-        "config_2026_Chevrolet_Traverse_powertrain_trailering_1LD56_RS_AWD.html"
+        "trim_2026_Chevrolet_Traverse_LT_AWD.html",
+        "trim_2026_Chevrolet_Traverse_Z71_AWD.html",
+        "trim_2026_Chevrolet_Traverse_RS_AWD.html"
       ],
       "path": "model_2026_Chevrolet_Traverse.html",
       "available_trims": [
-        "LT 1LB56 AWD",
-        "Z71 1LC56 AWD",
-        "RS 1LD56 AWD"
+        "LT",
+        "Z71",
+        "RS"
       ]
     },
     {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CF66344D82FA51D3F",
+      "seating": [
+        "2/2/3"
+      ],
       "name": "2026 Chevrolet Traverse | Safety and driver assistance trim comparison",
       "title": "2026 Chevrolet Traverse | Safety and driver assistance trim comparison",
       "year": "2026",
       "make": "Chevrolet",
       "model": "Traverse",
       "trim_names_from_guide": [
-        "LT 1LB56 AWD",
-        "Z71 1LC56 AWD",
-        "RS 1LD56 AWD"
+        "LT",
+        "Z71",
+        "RS"
       ],
       "doc_type": "comparison",
       "doc_role": "passage",
@@ -115,15 +109,18 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C1483676DE9B8A7C8",
+      "seating": [
+        "2/2/3"
+      ],
       "name": "2026 Chevrolet Traverse | Technology and connectivity trim comparison",
       "title": "2026 Chevrolet Traverse | Technology and connectivity trim comparison",
       "year": "2026",
       "make": "Chevrolet",
       "model": "Traverse",
       "trim_names_from_guide": [
-        "LT 1LB56 AWD",
-        "Z71 1LC56 AWD",
-        "RS 1LD56 AWD"
+        "LT",
+        "Z71",
+        "RS"
       ],
       "doc_type": "comparison",
       "doc_role": "passage",
@@ -151,15 +148,18 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C0DDE349A6AB1C25B",
+      "seating": [
+        "2/2/3"
+      ],
       "name": "2026 Chevrolet Traverse | Interior and comfort trim comparison",
       "title": "2026 Chevrolet Traverse | Interior and comfort trim comparison",
       "year": "2026",
       "make": "Chevrolet",
       "model": "Traverse",
       "trim_names_from_guide": [
-        "LT 1LB56 AWD",
-        "Z71 1LC56 AWD",
-        "RS 1LD56 AWD"
+        "LT",
+        "Z71",
+        "RS"
       ],
       "doc_type": "comparison",
       "doc_role": "passage",
@@ -187,15 +187,18 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C734A96748528C532",
+      "seating": [
+        "2/2/3"
+      ],
       "name": "2026 Chevrolet Traverse | Exterior and utility trim comparison",
       "title": "2026 Chevrolet Traverse | Exterior and utility trim comparison",
       "year": "2026",
       "make": "Chevrolet",
       "model": "Traverse",
       "trim_names_from_guide": [
-        "LT 1LB56 AWD",
-        "Z71 1LC56 AWD",
-        "RS 1LD56 AWD"
+        "LT",
+        "Z71",
+        "RS"
       ],
       "doc_type": "comparison",
       "doc_role": "passage",
@@ -223,15 +226,18 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C5E58FA4D971001B7",
+      "seating": [
+        "2/2/3"
+      ],
       "name": "2026 Chevrolet Traverse | Wheels and tires trim comparison",
       "title": "2026 Chevrolet Traverse | Wheels and tires trim comparison",
       "year": "2026",
       "make": "Chevrolet",
       "model": "Traverse",
       "trim_names_from_guide": [
-        "LT 1LB56 AWD",
-        "Z71 1LC56 AWD",
-        "RS 1LD56 AWD"
+        "LT",
+        "Z71",
+        "RS"
       ],
       "doc_type": "comparison",
       "doc_role": "passage",
@@ -259,15 +265,18 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C472D715560384EC8",
+      "seating": [
+        "2/2/3"
+      ],
       "name": "2026 Chevrolet Traverse | Mechanical and performance trim comparison",
       "title": "2026 Chevrolet Traverse | Mechanical and performance trim comparison",
       "year": "2026",
       "make": "Chevrolet",
       "model": "Traverse",
       "trim_names_from_guide": [
-        "LT 1LB56 AWD",
-        "Z71 1LC56 AWD",
-        "RS 1LD56 AWD"
+        "LT",
+        "Z71",
+        "RS"
       ],
       "doc_type": "comparison",
       "doc_role": "passage",
@@ -295,15 +304,18 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C4595EBF51B39F825",
+      "seating": [
+        "2/2/3"
+      ],
       "name": "2026 Chevrolet Traverse | Packages and options trim comparison",
       "title": "2026 Chevrolet Traverse | Packages and options trim comparison",
       "year": "2026",
       "make": "Chevrolet",
       "model": "Traverse",
       "trim_names_from_guide": [
-        "LT 1LB56 AWD",
-        "Z71 1LC56 AWD",
-        "RS 1LD56 AWD"
+        "LT",
+        "Z71",
+        "RS"
       ],
       "doc_type": "comparison",
       "doc_role": "passage",
@@ -330,13 +342,16 @@
     {
       "objecttype": "Variant",
       "type": "trim",
-      "node_id": "T0F20F410F4107FE8",
-      "name": "LT 1LB56 AWD",
-      "title": "2026 Chevrolet Traverse LT 1LB56 AWD",
+      "node_id": "T356802850BECB7B8",
+      "name": "LT",
+      "title": "2026 Chevrolet Traverse LT",
+      "drivetrains": [
+        "AWD"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Traverse",
-      "trim": "LT 1LB56 AWD",
+      "trim": "LT",
       "doc_type": "trim",
       "doc_role": "entity",
       "entity_level": "trim",
@@ -353,28 +368,42 @@
       ],
       "surface": "both",
       "is_vehicle_entity": true,
-      "entity_name": "2026 Chevrolet Traverse LT 1LB56 AWD",
-      "entity_key": "2026_chevrolet_traverse_lt_1lb56_awd",
+      "entity_name": "2026 Chevrolet Traverse LT",
+      "entity_key": "2026_chevrolet_traverse_lt_awd",
       "vehicle_key": "2026_chevrolet_traverse",
-      "trim_key": "2026_chevrolet_traverse_lt_1lb56_awd",
+      "trim_key": "2026_chevrolet_traverse_lt_awd",
       "collection": "M4656CBE26E68DA88",
       "collection_path": "model_2026_Chevrolet_Traverse.html",
       "parent": "M4656CBE26E68DA88",
       "parent_path": "model_2026_Chevrolet_Traverse.html",
+      "child": [
+        "SEA10B8A7111E2B73",
+        "SAA4BF13D41778573"
+      ],
+      "child_paths": [
+        "spec_2026_Chevrolet_Traverse_dimensions_specifications_LT_AWD_1LB56_LT_AWD.html",
+        "config_2026_Chevrolet_Traverse_powertrain_trailering_1LB56_LT_AWD_LT_AWD.html"
+      ],
       "parent_vehicle": "model_2026_Chevrolet_Traverse.html",
       "parent_vehicle_id": "M4656CBE26E68DA88",
-      "path": "trim_2026_Chevrolet_Traverse_LT_1LB56_AWD.html"
+      "path": "trim_2026_Chevrolet_Traverse_LT_AWD.html"
     },
     {
       "objecttype": "Variant",
       "type": "trim",
-      "node_id": "TCCCF64E3BC69EDCF",
-      "name": "Z71 1LC56 AWD",
-      "title": "2026 Chevrolet Traverse Z71 1LC56 AWD",
+      "node_id": "T7D160887363C00C7",
+      "name": "Z71",
+      "title": "2026 Chevrolet Traverse Z71",
+      "seating": [
+        "2/2/3"
+      ],
+      "drivetrains": [
+        "AWD"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Traverse",
-      "trim": "Z71 1LC56 AWD",
+      "trim": "Z71",
       "doc_type": "trim",
       "doc_role": "entity",
       "entity_level": "trim",
@@ -391,28 +420,42 @@
       ],
       "surface": "both",
       "is_vehicle_entity": true,
-      "entity_name": "2026 Chevrolet Traverse Z71 1LC56 AWD",
-      "entity_key": "2026_chevrolet_traverse_z71_1lc56_awd",
+      "entity_name": "2026 Chevrolet Traverse Z71",
+      "entity_key": "2026_chevrolet_traverse_z71_awd",
       "vehicle_key": "2026_chevrolet_traverse",
-      "trim_key": "2026_chevrolet_traverse_z71_1lc56_awd",
+      "trim_key": "2026_chevrolet_traverse_z71_awd",
       "collection": "M4656CBE26E68DA88",
       "collection_path": "model_2026_Chevrolet_Traverse.html",
       "parent": "M4656CBE26E68DA88",
       "parent_path": "model_2026_Chevrolet_Traverse.html",
+      "child": [
+        "S66170E21FB96A490",
+        "S4B03362C16F4A679"
+      ],
+      "child_paths": [
+        "spec_2026_Chevrolet_Traverse_dimensions_specifications_Z71_AWD_1LC56_Z71_AWD.html",
+        "config_2026_Chevrolet_Traverse_powertrain_trailering_1LC56_Z71_AWD_Z71_AWD.html"
+      ],
       "parent_vehicle": "model_2026_Chevrolet_Traverse.html",
       "parent_vehicle_id": "M4656CBE26E68DA88",
-      "path": "trim_2026_Chevrolet_Traverse_Z71_1LC56_AWD.html"
+      "path": "trim_2026_Chevrolet_Traverse_Z71_AWD.html"
     },
     {
       "objecttype": "Variant",
       "type": "trim",
-      "node_id": "T859D1E1EFA82EBD1",
-      "name": "RS 1LD56 AWD",
-      "title": "2026 Chevrolet Traverse RS 1LD56 AWD",
+      "node_id": "T80F92296C87522B5",
+      "name": "RS",
+      "title": "2026 Chevrolet Traverse RS",
+      "seating": [
+        "2/2/3"
+      ],
+      "drivetrains": [
+        "AWD"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Traverse",
-      "trim": "RS 1LD56 AWD",
+      "trim": "RS",
       "doc_type": "trim",
       "doc_role": "entity",
       "entity_level": "trim",
@@ -429,22 +472,30 @@
       ],
       "surface": "both",
       "is_vehicle_entity": true,
-      "entity_name": "2026 Chevrolet Traverse RS 1LD56 AWD",
-      "entity_key": "2026_chevrolet_traverse_rs_1ld56_awd",
+      "entity_name": "2026 Chevrolet Traverse RS",
+      "entity_key": "2026_chevrolet_traverse_rs_awd",
       "vehicle_key": "2026_chevrolet_traverse",
-      "trim_key": "2026_chevrolet_traverse_rs_1ld56_awd",
+      "trim_key": "2026_chevrolet_traverse_rs_awd",
       "collection": "M4656CBE26E68DA88",
       "collection_path": "model_2026_Chevrolet_Traverse.html",
       "parent": "M4656CBE26E68DA88",
       "parent_path": "model_2026_Chevrolet_Traverse.html",
+      "child": [
+        "S9D196C43E10F2AD5",
+        "S9E339629D777339F"
+      ],
+      "child_paths": [
+        "spec_2026_Chevrolet_Traverse_dimensions_specifications_RS_AWD_1LD56_RS_AWD.html",
+        "config_2026_Chevrolet_Traverse_powertrain_trailering_1LD56_RS_AWD_RS_AWD.html"
+      ],
       "parent_vehicle": "model_2026_Chevrolet_Traverse.html",
       "parent_vehicle_id": "M4656CBE26E68DA88",
-      "path": "trim_2026_Chevrolet_Traverse_RS_1LD56_AWD.html"
+      "path": "trim_2026_Chevrolet_Traverse_RS_AWD.html"
     },
     {
       "objecttype": "Configuration",
       "type": "configuration-spec",
-      "node_id": "SF7F87E355496D8CE",
+      "node_id": "SEA10B8A7111E2B73",
       "name": "1LB56\nLT AWD | LT AWD",
       "title": "2026 Chevrolet Traverse | Configuration dimensions and specifications | 1LB56\nLT AWD",
       "configuration_kind": "spec-group",
@@ -459,25 +510,29 @@
       ],
       "has_numeric_specs": true,
       "surface": "passage_only",
-      "entity_name": "2026 Chevrolet Traverse",
-      "entity_key": "2026_chevrolet_traverse",
+      "entity_name": "2026 Chevrolet Traverse LT",
+      "entity_key": "2026_chevrolet_traverse_lt_awd",
       "vehicle_key": "2026_chevrolet_traverse",
       "year": "2026",
       "make": "Chevrolet",
       "model": "Traverse",
       "retrieval_granularity": "coarse",
+      "trim_key": "2026_chevrolet_traverse_lt_awd",
+      "trim": "LT",
       "collection": "M4656CBE26E68DA88",
       "collection_path": "model_2026_Chevrolet_Traverse.html",
-      "parent": "M4656CBE26E68DA88",
-      "parent_path": "model_2026_Chevrolet_Traverse.html",
+      "parent": "T356802850BECB7B8",
+      "parent_path": "trim_2026_Chevrolet_Traverse_LT_AWD.html",
       "parent_vehicle": "model_2026_Chevrolet_Traverse.html",
       "parent_vehicle_id": "M4656CBE26E68DA88",
-      "path": "spec_2026_Chevrolet_Traverse_dimensions_specifications_1LB56_LT_AWD.html"
+      "parent_trim": "trim_2026_Chevrolet_Traverse_LT_AWD.html",
+      "parent_trim_id": "T356802850BECB7B8",
+      "path": "spec_2026_Chevrolet_Traverse_dimensions_specifications_LT_AWD_1LB56_LT_AWD.html"
     },
     {
       "objecttype": "Configuration",
       "type": "configuration-spec",
-      "node_id": "SD4B04EBBD0F1C9C2",
+      "node_id": "S66170E21FB96A490",
       "name": "1LC56\nZ71 AWD | Z71 AWD",
       "title": "2026 Chevrolet Traverse | Configuration dimensions and specifications | 1LC56\nZ71 AWD",
       "configuration_kind": "spec-group",
@@ -492,25 +547,29 @@
       ],
       "has_numeric_specs": true,
       "surface": "passage_only",
-      "entity_name": "2026 Chevrolet Traverse",
-      "entity_key": "2026_chevrolet_traverse",
+      "entity_name": "2026 Chevrolet Traverse Z71",
+      "entity_key": "2026_chevrolet_traverse_z71_awd",
       "vehicle_key": "2026_chevrolet_traverse",
       "year": "2026",
       "make": "Chevrolet",
       "model": "Traverse",
       "retrieval_granularity": "coarse",
+      "trim_key": "2026_chevrolet_traverse_z71_awd",
+      "trim": "Z71",
       "collection": "M4656CBE26E68DA88",
       "collection_path": "model_2026_Chevrolet_Traverse.html",
-      "parent": "M4656CBE26E68DA88",
-      "parent_path": "model_2026_Chevrolet_Traverse.html",
+      "parent": "T7D160887363C00C7",
+      "parent_path": "trim_2026_Chevrolet_Traverse_Z71_AWD.html",
       "parent_vehicle": "model_2026_Chevrolet_Traverse.html",
       "parent_vehicle_id": "M4656CBE26E68DA88",
-      "path": "spec_2026_Chevrolet_Traverse_dimensions_specifications_1LC56_Z71_AWD.html"
+      "parent_trim": "trim_2026_Chevrolet_Traverse_Z71_AWD.html",
+      "parent_trim_id": "T7D160887363C00C7",
+      "path": "spec_2026_Chevrolet_Traverse_dimensions_specifications_Z71_AWD_1LC56_Z71_AWD.html"
     },
     {
       "objecttype": "Configuration",
       "type": "configuration-spec",
-      "node_id": "S19A609FA8863DC1F",
+      "node_id": "S9D196C43E10F2AD5",
       "name": "1LD56\nRS AWD | RS AWD",
       "title": "2026 Chevrolet Traverse | Configuration dimensions and specifications | 1LD56\nRS AWD",
       "configuration_kind": "spec-group",
@@ -525,25 +584,29 @@
       ],
       "has_numeric_specs": true,
       "surface": "passage_only",
-      "entity_name": "2026 Chevrolet Traverse",
-      "entity_key": "2026_chevrolet_traverse",
+      "entity_name": "2026 Chevrolet Traverse RS",
+      "entity_key": "2026_chevrolet_traverse_rs_awd",
       "vehicle_key": "2026_chevrolet_traverse",
       "year": "2026",
       "make": "Chevrolet",
       "model": "Traverse",
       "retrieval_granularity": "coarse",
+      "trim_key": "2026_chevrolet_traverse_rs_awd",
+      "trim": "RS",
       "collection": "M4656CBE26E68DA88",
       "collection_path": "model_2026_Chevrolet_Traverse.html",
-      "parent": "M4656CBE26E68DA88",
-      "parent_path": "model_2026_Chevrolet_Traverse.html",
+      "parent": "T80F92296C87522B5",
+      "parent_path": "trim_2026_Chevrolet_Traverse_RS_AWD.html",
       "parent_vehicle": "model_2026_Chevrolet_Traverse.html",
       "parent_vehicle_id": "M4656CBE26E68DA88",
-      "path": "spec_2026_Chevrolet_Traverse_dimensions_specifications_1LD56_RS_AWD.html"
+      "parent_trim": "trim_2026_Chevrolet_Traverse_RS_AWD.html",
+      "parent_trim_id": "T80F92296C87522B5",
+      "path": "spec_2026_Chevrolet_Traverse_dimensions_specifications_RS_AWD_1LD56_RS_AWD.html"
     },
     {
       "objecttype": "Configuration",
       "type": "configuration-spec",
-      "node_id": "SEAAAFD1145C91F4A",
+      "node_id": "SAA4BF13D41778573",
       "name": "1LB56 LT AWD",
       "title": "2026 Chevrolet Traverse | Configuration powertrain and trailering | 1LB56 LT AWD",
       "configuration_kind": "powertrain-trailering-group",
@@ -568,25 +631,29 @@
       ],
       "has_numeric_specs": true,
       "surface": "passage_only",
-      "entity_name": "2026 Chevrolet Traverse",
-      "entity_key": "2026_chevrolet_traverse",
+      "entity_name": "2026 Chevrolet Traverse LT",
+      "entity_key": "2026_chevrolet_traverse_lt_awd",
       "vehicle_key": "2026_chevrolet_traverse",
       "year": "2026",
       "make": "Chevrolet",
       "model": "Traverse",
       "retrieval_granularity": "coarse",
+      "trim_key": "2026_chevrolet_traverse_lt_awd",
+      "trim": "LT",
       "collection": "M4656CBE26E68DA88",
       "collection_path": "model_2026_Chevrolet_Traverse.html",
-      "parent": "M4656CBE26E68DA88",
-      "parent_path": "model_2026_Chevrolet_Traverse.html",
+      "parent": "T356802850BECB7B8",
+      "parent_path": "trim_2026_Chevrolet_Traverse_LT_AWD.html",
       "parent_vehicle": "model_2026_Chevrolet_Traverse.html",
       "parent_vehicle_id": "M4656CBE26E68DA88",
-      "path": "config_2026_Chevrolet_Traverse_powertrain_trailering_1LB56_LT_AWD.html"
+      "parent_trim": "trim_2026_Chevrolet_Traverse_LT_AWD.html",
+      "parent_trim_id": "T356802850BECB7B8",
+      "path": "config_2026_Chevrolet_Traverse_powertrain_trailering_1LB56_LT_AWD_LT_AWD.html"
     },
     {
       "objecttype": "Configuration",
       "type": "configuration-spec",
-      "node_id": "S92EC0B4E6223C7C5",
+      "node_id": "S4B03362C16F4A679",
       "name": "1LC56 Z71 AWD",
       "title": "2026 Chevrolet Traverse | Configuration powertrain and trailering | 1LC56 Z71 AWD",
       "configuration_kind": "powertrain-trailering-group",
@@ -611,25 +678,29 @@
       ],
       "has_numeric_specs": true,
       "surface": "passage_only",
-      "entity_name": "2026 Chevrolet Traverse",
-      "entity_key": "2026_chevrolet_traverse",
+      "entity_name": "2026 Chevrolet Traverse Z71",
+      "entity_key": "2026_chevrolet_traverse_z71_awd",
       "vehicle_key": "2026_chevrolet_traverse",
       "year": "2026",
       "make": "Chevrolet",
       "model": "Traverse",
       "retrieval_granularity": "coarse",
+      "trim_key": "2026_chevrolet_traverse_z71_awd",
+      "trim": "Z71",
       "collection": "M4656CBE26E68DA88",
       "collection_path": "model_2026_Chevrolet_Traverse.html",
-      "parent": "M4656CBE26E68DA88",
-      "parent_path": "model_2026_Chevrolet_Traverse.html",
+      "parent": "T7D160887363C00C7",
+      "parent_path": "trim_2026_Chevrolet_Traverse_Z71_AWD.html",
       "parent_vehicle": "model_2026_Chevrolet_Traverse.html",
       "parent_vehicle_id": "M4656CBE26E68DA88",
-      "path": "config_2026_Chevrolet_Traverse_powertrain_trailering_1LC56_Z71_AWD.html"
+      "parent_trim": "trim_2026_Chevrolet_Traverse_Z71_AWD.html",
+      "parent_trim_id": "T7D160887363C00C7",
+      "path": "config_2026_Chevrolet_Traverse_powertrain_trailering_1LC56_Z71_AWD_Z71_AWD.html"
     },
     {
       "objecttype": "Configuration",
       "type": "configuration-spec",
-      "node_id": "SF93837148FFAF297",
+      "node_id": "S9E339629D777339F",
       "name": "1LD56 RS AWD",
       "title": "2026 Chevrolet Traverse | Configuration powertrain and trailering | 1LD56 RS AWD",
       "configuration_kind": "powertrain-trailering-group",
@@ -654,20 +725,24 @@
       ],
       "has_numeric_specs": true,
       "surface": "passage_only",
-      "entity_name": "2026 Chevrolet Traverse",
-      "entity_key": "2026_chevrolet_traverse",
+      "entity_name": "2026 Chevrolet Traverse RS",
+      "entity_key": "2026_chevrolet_traverse_rs_awd",
       "vehicle_key": "2026_chevrolet_traverse",
       "year": "2026",
       "make": "Chevrolet",
       "model": "Traverse",
       "retrieval_granularity": "coarse",
+      "trim_key": "2026_chevrolet_traverse_rs_awd",
+      "trim": "RS",
       "collection": "M4656CBE26E68DA88",
       "collection_path": "model_2026_Chevrolet_Traverse.html",
-      "parent": "M4656CBE26E68DA88",
-      "parent_path": "model_2026_Chevrolet_Traverse.html",
+      "parent": "T80F92296C87522B5",
+      "parent_path": "trim_2026_Chevrolet_Traverse_RS_AWD.html",
       "parent_vehicle": "model_2026_Chevrolet_Traverse.html",
       "parent_vehicle_id": "M4656CBE26E68DA88",
-      "path": "config_2026_Chevrolet_Traverse_powertrain_trailering_1LD56_RS_AWD.html"
+      "parent_trim": "trim_2026_Chevrolet_Traverse_RS_AWD.html",
+      "parent_trim_id": "T80F92296C87522B5",
+      "path": "config_2026_Chevrolet_Traverse_powertrain_trailering_1LD56_RS_AWD_RS_AWD.html"
     }
   ]
 }

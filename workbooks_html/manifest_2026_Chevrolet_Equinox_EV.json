@@ -6,7 +6,9 @@
       "objecttype": "Product",
       "type": "model",
       "node_id": "MF0809B091A2E1158",
-      "seating": "2/3",
+      "seating": [
+        "2/3"
+      ],
       "fuel_type": "Fuel, none",
       "name": "2026 Chevrolet Equinox EV",
       "title": "2026 Chevrolet Equinox EV",
@@ -66,7 +68,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C5ADD983ABEA4839D",
-      "seating": "2/3",
+      "seating": [
+        "2/3"
+      ],
       "fuel_type": "Fuel, none",
       "name": "2026 Chevrolet Equinox EV | Safety and driver assistance trim comparison",
       "title": "2026 Chevrolet Equinox EV | Safety and driver assistance trim comparison",
@@ -103,7 +107,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C3A9E310F40B6CD0F",
-      "seating": "2/3",
+      "seating": [
+        "2/3"
+      ],
       "fuel_type": "Fuel, none",
       "name": "2026 Chevrolet Equinox EV | Technology and connectivity trim comparison",
       "title": "2026 Chevrolet Equinox EV | Technology and connectivity trim comparison",
@@ -140,7 +146,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C165A8AEC02A04ECD",
-      "seating": "2/3",
+      "seating": [
+        "2/3"
+      ],
       "fuel_type": "Fuel, none",
       "name": "2026 Chevrolet Equinox EV | Interior and comfort trim comparison",
       "title": "2026 Chevrolet Equinox EV | Interior and comfort trim comparison",
@@ -177,7 +185,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C740723DD230D569B",
-      "seating": "2/3",
+      "seating": [
+        "2/3"
+      ],
       "fuel_type": "Fuel, none",
       "name": "2026 Chevrolet Equinox EV | Exterior and utility trim comparison",
       "title": "2026 Chevrolet Equinox EV | Exterior and utility trim comparison",
@@ -214,7 +224,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CD8D692477669CC25",
-      "seating": "2/3",
+      "seating": [
+        "2/3"
+      ],
       "fuel_type": "Fuel, none",
       "name": "2026 Chevrolet Equinox EV | Wheels and tires trim comparison",
       "title": "2026 Chevrolet Equinox EV | Wheels and tires trim comparison",
@@ -251,7 +263,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C1DF37EB4E9226103",
-      "seating": "2/3",
+      "seating": [
+        "2/3"
+      ],
       "fuel_type": "Fuel, none",
       "name": "2026 Chevrolet Equinox EV | Mechanical and performance trim comparison",
       "title": "2026 Chevrolet Equinox EV | Mechanical and performance trim comparison",
@@ -288,7 +302,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C5E1BA48CBB3D89D7",
-      "seating": "2/3",
+      "seating": [
+        "2/3"
+      ],
       "fuel_type": "Fuel, none",
       "name": "2026 Chevrolet Equinox EV | Packages and options trim comparison",
       "title": "2026 Chevrolet Equinox EV | Packages and options trim comparison",
@@ -327,7 +343,9 @@
       "node_id": "T6D23B4EBF39D8E56",
       "name": "LT",
       "title": "2026 Chevrolet Equinox EV LT",
-      "seating": "2/3",
+      "seating": [
+        "2/3"
+      ],
       "fuel_type": "Fuel, none",
       "year": "2026",
       "make": "Chevrolet",
@@ -373,7 +391,9 @@
       "node_id": "T2FE17553F4000209",
       "name": "RS",
       "title": "2026 Chevrolet Equinox EV RS",
-      "seating": "2/3",
+      "seating": [
+        "2/3"
+      ],
       "fuel_type": "Fuel, none",
       "year": "2026",
       "make": "Chevrolet",
