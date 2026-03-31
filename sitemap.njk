@@ -23,11 +23,10 @@ eleventyExcludeFromCollections: true
       {%- if page.meta.trim %}<trim>{{ page.meta.trim }}</trim>{% endif %}
       {%- if page.meta.vehicle_key %}<vehicle_key>{{ page.meta.vehicle_key }}</vehicle_key>{% endif %}
       {%- if page.meta.trim_key %}<trim_key>{{ page.meta.trim_key }}</trim_key>{% endif %}
-      {%- if page.meta.seating %}<seating>{{ page.meta.seating }}</seating>{% endif %}
-      {%- if page.meta.body_style %}<body_style>{{ page.meta.body_style }}</body_style>{% endif %}
+      {%- if page.meta.seating %}<seating>{{ page.meta.seating | join(";") }}</seating>{% endif %}
+      {%- if page.meta.body_styles %}<body_styles>{{ page.meta.body_styles | join(";") }}</body_styles>{% endif %}
+      {%- if page.meta.drivetrains %}<drivetrains>{{ page.meta.drivetrains | join(";") }}</drivetrains>{% endif %}
       {%- if page.meta.engines %}<engines>{{ page.meta.engines | join(";") }}</engines>{% endif %}
-      {%- if page.meta.fuel_type %}<fuel_type>{{ page.meta.fuel_type }}</fuel_type>{% endif %}
-      {%- if page.meta.drivetrain %}<drivetrain>{{ page.meta.drivetrain }}</drivetrain>{% endif %}
     </coveo:metadata>
     {%- endif %}
   </url>
