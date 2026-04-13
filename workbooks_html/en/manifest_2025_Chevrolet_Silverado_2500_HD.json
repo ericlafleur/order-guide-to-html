@@ -1,0 +1,2408 @@
+{
+  "vehicle_name": "2025 Chevrolet Silverado 2500 HD",
+  "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+  "files": [
+    {
+      "objecttype": "Product",
+      "type": "model",
+      "node_id": "M2903E8AAE8E7F58F",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "name": "2025 Chevrolet Silverado 2500 HD",
+      "title": "2025 Chevrolet Silverado 2500 HD",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "doc_type": "model",
+      "doc_role": "entity",
+      "entity_level": "model",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Packages and options",
+        "Other guide content",
+        "Colour and trim"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "child": [
+        "CD095E07338BD8376",
+        "C4B7A8DE96B7358AB",
+        "C2A68A8344E6A0965",
+        "CE79FB3FEE0FA0C43",
+        "CD08027D12B8E366A",
+        "C4E9E13AB3740BCAD",
+        "C747D55237033D927",
+        "T99E1FBE8C09F386D",
+        "T08F73B0F1B05B565",
+        "TE00679D3B2B7861F",
+        "T856AA675377365BD",
+        "T5335AA0C4677556B",
+        "T9FCE038906C09A37",
+        "T93D94B875A0EFD9A",
+        "T8A5EE3A72F7912C0",
+        "T53F6A8CE3AAD88B3",
+        "S755B98244BD49769",
+        "S82ED7B1D5DBB08F5",
+        "SA0B1F88EF83AF663",
+        "S9FB6D8DCE592EC72",
+        "S534380D33FBC2540",
+        "SF46F3C4B23BA133E",
+        "SB64286D80F3DA92F",
+        "SE5A1BC81093B7BD2",
+        "SBC1FDDD83F6D1541",
+        "SE19762181118B333",
+        "SE37AE385223A1A9D",
+        "SECA49B0EF2AB74B7",
+        "SC4E9B27768285802",
+        "S8DCFE3A76BB1BC83",
+        "S5670ECF32199CBAF",
+        "S2CC12B93522AF2E2",
+        "SCA08C3F625024E45",
+        "SBE0C0610996C0FDE",
+        "SA3A069B22D1489A1",
+        "S98166E7645B5B693",
+        "S4A024151AE40C8A1",
+        "S1B285AEFA5EB6D01",
+        "SB80F811CDF1E2717",
+        "SE3CCDB4D56573964",
+        "S66A942E9A68E3D0C",
+        "S6914D64CDD78A97B",
+        "S43749FD55F790E89",
+        "SBC9CB376B7B34B68",
+        "S4C03F6B78D2ADDFD",
+        "S56A567FC509C874B",
+        "SCEAFDC1BAD39F496"
+      ],
+      "child_paths": [
+        "compare_domain_2025_Chevrolet_Silverado_2500_HD_Safety_and_driver_assistance.html",
+        "compare_domain_2025_Chevrolet_Silverado_2500_HD_Technology_and_connectivity.html",
+        "compare_domain_2025_Chevrolet_Silverado_2500_HD_Interior_and_comfort.html",
+        "compare_domain_2025_Chevrolet_Silverado_2500_HD_Exterior_and_utility.html",
+        "compare_domain_2025_Chevrolet_Silverado_2500_HD_Wheels_and_tires.html",
+        "compare_domain_2025_Chevrolet_Silverado_2500_HD_Mechanical_and_performance.html",
+        "compare_domain_2025_Chevrolet_Silverado_2500_HD_Packages_and_options.html",
+        "trim_2025_Chevrolet_Silverado_2500_HD_Work_Truck.html",
+        "trim_2025_Chevrolet_Silverado_2500_HD_Custom.html",
+        "trim_2025_Chevrolet_Silverado_2500_HD_LT.html",
+        "trim_2025_Chevrolet_Silverado_2500_HD_ZR2.html",
+        "trim_2025_Chevrolet_Silverado_2500_HD_LTZ.html",
+        "trim_2025_Chevrolet_Silverado_2500_HD_High_Country.html",
+        "trim_2025_Chevrolet_Silverado_2500_HD_LT_2.html",
+        "trim_2025_Chevrolet_Silverado_2500_HD_LTZ_2.html",
+        "trim_2025_Chevrolet_Silverado_2500_HD_High_Country_2.html",
+        "spec_2025_Chevrolet_Silverado_2500_HD_dimensions_specifications_CC20743.html",
+        "spec_2025_Chevrolet_Silverado_2500_HD_dimensions_specifications_CK20743.html",
+        "spec_2025_Chevrolet_Silverado_2500_HD_dimensions_specifications_CC20943.html",
+        "spec_2025_Chevrolet_Silverado_2500_HD_dimensions_specifications_CK20943.html",
+        "spec_2025_Chevrolet_Silverado_2500_HD_dimensions_specifications_CC20753.html",
+        "spec_2025_Chevrolet_Silverado_2500_HD_dimensions_specifications_CK20753.html",
+        "spec_2025_Chevrolet_Silverado_2500_HD_dimensions_specifications_CC20953.html",
+        "spec_2025_Chevrolet_Silverado_2500_HD_dimensions_specifications_CK20953.html",
+        "spec_2025_Chevrolet_Silverado_2500_HD_dimensions_specifications_CC20903.html",
+        "spec_2025_Chevrolet_Silverado_2500_HD_dimensions_specifications_CK20903.html",
+        "spec_2025_Chevrolet_Silverado_2500_HD_dimensions_specifications_CK20743_2.html",
+        "spec_2025_Chevrolet_Silverado_2500_HD_dimensions_specifications_CK20943_2.html",
+        "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CC20743.html",
+        "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CK20743.html",
+        "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CC20943.html",
+        "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CK20943.html",
+        "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CC20753.html",
+        "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CK20753.html",
+        "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CC20953.html",
+        "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CK20953.html",
+        "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CC20903.html",
+        "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CK20903.html",
+        "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CC20743_NHT.html",
+        "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CK20743_NHT.html",
+        "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CK20743_High_Country.html",
+        "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CC20943_NHT.html",
+        "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CK20943_NHT.html",
+        "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CK20943_High_Country.html",
+        "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CC20903_NHT.html",
+        "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CK20903_NHT.html",
+        "config_2025_Chevrolet_Silverado_2500_HD_gcwr_reference.html"
+      ],
+      "path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "available_trims": [
+        "Work Truck",
+        "Custom",
+        "LT",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ]
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "CD095E07338BD8376",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "name": "2025 Chevrolet Silverado 2500 HD | Safety and driver assistance trim comparison",
+      "title": "2025 Chevrolet Silverado 2500 HD | Safety and driver assistance trim comparison",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "Custom",
+        "LT",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Safety and driver assistance",
+      "guide_domains": [
+        "Safety and driver assistance"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 32,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "compare_domain_2025_Chevrolet_Silverado_2500_HD_Safety_and_driver_assistance.html"
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "C4B7A8DE96B7358AB",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "name": "2025 Chevrolet Silverado 2500 HD | Technology and connectivity trim comparison",
+      "title": "2025 Chevrolet Silverado 2500 HD | Technology and connectivity trim comparison",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "Custom",
+        "LT",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Technology and connectivity",
+      "guide_domains": [
+        "Technology and connectivity"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 21,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "compare_domain_2025_Chevrolet_Silverado_2500_HD_Technology_and_connectivity.html"
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "C2A68A8344E6A0965",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "name": "2025 Chevrolet Silverado 2500 HD | Interior and comfort trim comparison",
+      "title": "2025 Chevrolet Silverado 2500 HD | Interior and comfort trim comparison",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "Custom",
+        "LT",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Interior and comfort",
+      "guide_domains": [
+        "Interior and comfort"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 41,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "compare_domain_2025_Chevrolet_Silverado_2500_HD_Interior_and_comfort.html"
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "CE79FB3FEE0FA0C43",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "name": "2025 Chevrolet Silverado 2500 HD | Exterior and utility trim comparison",
+      "title": "2025 Chevrolet Silverado 2500 HD | Exterior and utility trim comparison",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "Custom",
+        "LT",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Exterior and utility",
+      "guide_domains": [
+        "Exterior and utility"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 71,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "compare_domain_2025_Chevrolet_Silverado_2500_HD_Exterior_and_utility.html"
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "CD08027D12B8E366A",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "name": "2025 Chevrolet Silverado 2500 HD | Wheels and tires trim comparison",
+      "title": "2025 Chevrolet Silverado 2500 HD | Wheels and tires trim comparison",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "Custom",
+        "LT",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Wheels and tires",
+      "guide_domains": [
+        "Wheels and tires"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 54,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "compare_domain_2025_Chevrolet_Silverado_2500_HD_Wheels_and_tires.html"
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "C4E9E13AB3740BCAD",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "name": "2025 Chevrolet Silverado 2500 HD | Mechanical and performance trim comparison",
+      "title": "2025 Chevrolet Silverado 2500 HD | Mechanical and performance trim comparison",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "Custom",
+        "LT",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Mechanical and performance",
+      "guide_domains": [
+        "Mechanical and performance"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 60,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "compare_domain_2025_Chevrolet_Silverado_2500_HD_Mechanical_and_performance.html"
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "C747D55237033D927",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "name": "2025 Chevrolet Silverado 2500 HD | Packages and options trim comparison",
+      "title": "2025 Chevrolet Silverado 2500 HD | Packages and options trim comparison",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "Custom",
+        "LT",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Packages and options",
+      "guide_domains": [
+        "Packages and options"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 23,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "compare_domain_2025_Chevrolet_Silverado_2500_HD_Packages_and_options.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "T99E1FBE8C09F386D",
+      "name": "Work Truck",
+      "title": "2025 Chevrolet Silverado 2500 HD Work Truck",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "drivetrains": [
+        "2WD",
+        "4WD"
+      ],
+      "body_styles": [
+        "Crew Cab, Standard Bed",
+        "Crew Cab, Long Bed",
+        "Double Cab, Standard Bed",
+        "Double Cab, Long Bed",
+        "Regular Cab, Long Bed"
+      ],
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "trim": "Work Truck",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Packages and options",
+        "Other guide content",
+        "Colour and trim"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2025 Chevrolet Silverado 2500 HD Work Truck",
+      "entity_key": "2025_chevrolet_silverado_2500_hd_work_truck",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "trim_key": "2025_chevrolet_silverado_2500_hd_work_truck",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "trim_2025_Chevrolet_Silverado_2500_HD_Work_Truck.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "T08F73B0F1B05B565",
+      "name": "Custom",
+      "title": "2025 Chevrolet Silverado 2500 HD Custom",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "drivetrains": [
+        "2WD",
+        "4WD"
+      ],
+      "body_styles": [
+        "Crew Cab, Standard Bed",
+        "Crew Cab, Long Bed",
+        "Double Cab, Standard Bed",
+        "Double Cab, Long Bed",
+        "Regular Cab, Long Bed"
+      ],
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "trim": "Custom",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Packages and options",
+        "Other guide content",
+        "Colour and trim"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2025 Chevrolet Silverado 2500 HD Custom",
+      "entity_key": "2025_chevrolet_silverado_2500_hd_custom",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "trim_key": "2025_chevrolet_silverado_2500_hd_custom",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "trim_2025_Chevrolet_Silverado_2500_HD_Custom.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "TE00679D3B2B7861F",
+      "name": "LT",
+      "title": "2025 Chevrolet Silverado 2500 HD LT",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "drivetrains": [
+        "2WD",
+        "4WD"
+      ],
+      "body_styles": [
+        "Crew Cab, Standard Bed",
+        "Crew Cab, Long Bed",
+        "Double Cab, Standard Bed",
+        "Double Cab, Long Bed",
+        "Regular Cab, Long Bed"
+      ],
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "trim": "LT",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Packages and options",
+        "Other guide content",
+        "Colour and trim"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2025 Chevrolet Silverado 2500 HD LT",
+      "entity_key": "2025_chevrolet_silverado_2500_hd_lt",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "trim_key": "2025_chevrolet_silverado_2500_hd_lt",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "trim_2025_Chevrolet_Silverado_2500_HD_LT.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "T856AA675377365BD",
+      "name": "ZR2",
+      "title": "2025 Chevrolet Silverado 2500 HD ZR2",
+      "seating": [
+        "6"
+      ],
+      "drivetrains": [
+        "4WD"
+      ],
+      "body_styles": [
+        "Crew Cab, Standard Bed"
+      ],
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "trim": "ZR2",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Packages and options",
+        "Other guide content",
+        "Colour and trim"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2025 Chevrolet Silverado 2500 HD ZR2",
+      "entity_key": "2025_chevrolet_silverado_2500_hd_zr2",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "trim_key": "2025_chevrolet_silverado_2500_hd_zr2",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "child": [
+        "S37F9052A3950E72F",
+        "S568AEB021E178BDE"
+      ],
+      "child_paths": [
+        "spec_2025_Chevrolet_Silverado_2500_HD_dimensions_specifications_ZR2_CK20743.html",
+        "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CK20743_ZR2.html"
+      ],
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "trim_2025_Chevrolet_Silverado_2500_HD_ZR2.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "T5335AA0C4677556B",
+      "name": "LTZ",
+      "title": "2025 Chevrolet Silverado 2500 HD LTZ",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "drivetrains": [
+        "2WD",
+        "4WD"
+      ],
+      "body_styles": [
+        "Crew Cab, Standard Bed",
+        "Crew Cab, Long Bed",
+        "Double Cab, Standard Bed",
+        "Double Cab, Long Bed",
+        "Regular Cab, Long Bed"
+      ],
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "trim": "LTZ",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Packages and options",
+        "Other guide content",
+        "Colour and trim"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2025 Chevrolet Silverado 2500 HD LTZ",
+      "entity_key": "2025_chevrolet_silverado_2500_hd_ltz",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "trim_key": "2025_chevrolet_silverado_2500_hd_ltz",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "trim_2025_Chevrolet_Silverado_2500_HD_LTZ.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "T9FCE038906C09A37",
+      "name": "High Country",
+      "title": "2025 Chevrolet Silverado 2500 HD High Country",
+      "seating": [
+        "6"
+      ],
+      "drivetrains": [
+        "4WD"
+      ],
+      "body_styles": [
+        "Crew Cab, Standard Bed",
+        "Crew Cab, Long Bed"
+      ],
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "trim": "High Country",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Packages and options",
+        "Other guide content",
+        "Colour and trim"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2025 Chevrolet Silverado 2500 HD High Country",
+      "entity_key": "2025_chevrolet_silverado_2500_hd_high_country",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "trim_key": "2025_chevrolet_silverado_2500_hd_high_country",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "trim_2025_Chevrolet_Silverado_2500_HD_High_Country.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "T93D94B875A0EFD9A",
+      "name": "LT",
+      "title": "2025 Chevrolet Silverado 2500 HD LT",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "drivetrains": [
+        "2WD",
+        "4WD"
+      ],
+      "body_styles": [
+        "Crew Cab, Standard Bed",
+        "Crew Cab, Long Bed",
+        "Double Cab, Standard Bed",
+        "Double Cab, Long Bed",
+        "Regular Cab, Long Bed"
+      ],
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "trim": "LT",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Packages and options",
+        "Colour and trim"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2025 Chevrolet Silverado 2500 HD LT",
+      "entity_key": "2025_chevrolet_silverado_2500_hd_lt",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "trim_key": "2025_chevrolet_silverado_2500_hd_lt",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "trim_2025_Chevrolet_Silverado_2500_HD_LT_2.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "T8A5EE3A72F7912C0",
+      "name": "LTZ",
+      "title": "2025 Chevrolet Silverado 2500 HD LTZ",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "drivetrains": [
+        "2WD",
+        "4WD"
+      ],
+      "body_styles": [
+        "Crew Cab, Standard Bed",
+        "Crew Cab, Long Bed",
+        "Double Cab, Standard Bed",
+        "Double Cab, Long Bed",
+        "Regular Cab, Long Bed"
+      ],
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "trim": "LTZ",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Packages and options",
+        "Colour and trim"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2025 Chevrolet Silverado 2500 HD LTZ",
+      "entity_key": "2025_chevrolet_silverado_2500_hd_ltz",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "trim_key": "2025_chevrolet_silverado_2500_hd_ltz",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "trim_2025_Chevrolet_Silverado_2500_HD_LTZ_2.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "T53F6A8CE3AAD88B3",
+      "name": "High Country",
+      "title": "2025 Chevrolet Silverado 2500 HD High Country",
+      "seating": [
+        "6"
+      ],
+      "drivetrains": [
+        "4WD"
+      ],
+      "body_styles": [
+        "Crew Cab, Standard Bed",
+        "Crew Cab, Long Bed"
+      ],
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "trim": "High Country",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Packages and options",
+        "Colour and trim"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2025 Chevrolet Silverado 2500 HD High Country",
+      "entity_key": "2025_chevrolet_silverado_2500_hd_high_country",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "trim_key": "2025_chevrolet_silverado_2500_hd_high_country",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "child": [
+        "SE37AE385223A1A9D",
+        "SECA49B0EF2AB74B7",
+        "S66A942E9A68E3D0C",
+        "SBC9CB376B7B34B68"
+      ],
+      "child_paths": [
+        "spec_2025_Chevrolet_Silverado_2500_HD_dimensions_specifications_CK20743_2.html",
+        "spec_2025_Chevrolet_Silverado_2500_HD_dimensions_specifications_CK20943_2.html",
+        "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CK20743_High_Country.html",
+        "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CK20943_High_Country.html"
+      ],
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "trim_2025_Chevrolet_Silverado_2500_HD_High_Country_2.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S755B98244BD49769",
+      "name": "Crew Cab | 2WD Standard Bed Crew Cab",
+      "title": "2025 Chevrolet Silverado 2500 HD | Configuration dimensions and specifications | 2WD Standard Bed Crew Cab",
+      "configuration_kind": "spec-group",
+      "configuration_label": "2WD Standard Bed Crew Cab",
+      "body_style": "Crew Cab",
+      "drivetrain": "2WD",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "spec_2025_Chevrolet_Silverado_2500_HD_dimensions_specifications_CC20743.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S82ED7B1D5DBB08F5",
+      "name": "Crew Cab | 4WD Standard Bed Crew Cab",
+      "title": "2025 Chevrolet Silverado 2500 HD | Configuration dimensions and specifications | 4WD Standard Bed Crew Cab",
+      "configuration_kind": "spec-group",
+      "configuration_label": "4WD Standard Bed Crew Cab",
+      "body_style": "Crew Cab",
+      "drivetrain": "4WD",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "spec_2025_Chevrolet_Silverado_2500_HD_dimensions_specifications_CK20743.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S37F9052A3950E72F",
+      "name": "Crew Cab | 4WD Standard Bed Crew Cab\nZR2 | 4WD Standard Bed Crew Cab",
+      "title": "2025 Chevrolet Silverado 2500 HD | Configuration dimensions and specifications | 4WD Standard Bed Crew Cab\nZR2",
+      "configuration_kind": "spec-group",
+      "configuration_label": "4WD Standard Bed Crew Cab\nZR2",
+      "body_style": "Crew Cab",
+      "drivetrain": "4WD",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD ZR2",
+      "entity_key": "2025_chevrolet_silverado_2500_hd_zr2",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "retrieval_granularity": "coarse",
+      "trim_key": "2025_chevrolet_silverado_2500_hd_zr2",
+      "trim": "ZR2",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "T856AA675377365BD",
+      "parent_path": "trim_2025_Chevrolet_Silverado_2500_HD_ZR2.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "parent_trim": "trim_2025_Chevrolet_Silverado_2500_HD_ZR2.html",
+      "parent_trim_id": "T856AA675377365BD",
+      "path": "spec_2025_Chevrolet_Silverado_2500_HD_dimensions_specifications_ZR2_CK20743.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SA0B1F88EF83AF663",
+      "name": "Crew Cab | 2WD Long Bed Crew Cab",
+      "title": "2025 Chevrolet Silverado 2500 HD | Configuration dimensions and specifications | 2WD Long Bed Crew Cab",
+      "configuration_kind": "spec-group",
+      "configuration_label": "2WD Long Bed Crew Cab",
+      "body_style": "Crew Cab",
+      "drivetrain": "2WD",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "spec_2025_Chevrolet_Silverado_2500_HD_dimensions_specifications_CC20943.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S9FB6D8DCE592EC72",
+      "name": "Crew Cab | 4WD Long Bed Crew Cab",
+      "title": "2025 Chevrolet Silverado 2500 HD | Configuration dimensions and specifications | 4WD Long Bed Crew Cab",
+      "configuration_kind": "spec-group",
+      "configuration_label": "4WD Long Bed Crew Cab",
+      "body_style": "Crew Cab",
+      "drivetrain": "4WD",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "spec_2025_Chevrolet_Silverado_2500_HD_dimensions_specifications_CK20943.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S534380D33FBC2540",
+      "name": "Double Cab | 2WD Standard Bed Double Cab",
+      "title": "2025 Chevrolet Silverado 2500 HD | Configuration dimensions and specifications | 2WD Standard Bed Double Cab",
+      "configuration_kind": "spec-group",
+      "configuration_label": "2WD Standard Bed Double Cab",
+      "body_style": "Double Cab",
+      "drivetrain": "2WD",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "spec_2025_Chevrolet_Silverado_2500_HD_dimensions_specifications_CC20753.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SF46F3C4B23BA133E",
+      "name": "Double Cab | 4WD Standard Bed Double Cab",
+      "title": "2025 Chevrolet Silverado 2500 HD | Configuration dimensions and specifications | 4WD Standard Bed Double Cab",
+      "configuration_kind": "spec-group",
+      "configuration_label": "4WD Standard Bed Double Cab",
+      "body_style": "Double Cab",
+      "drivetrain": "4WD",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "spec_2025_Chevrolet_Silverado_2500_HD_dimensions_specifications_CK20753.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SB64286D80F3DA92F",
+      "name": "Double Cab | 2WD Long Bed Double Cab",
+      "title": "2025 Chevrolet Silverado 2500 HD | Configuration dimensions and specifications | 2WD Long Bed Double Cab",
+      "configuration_kind": "spec-group",
+      "configuration_label": "2WD Long Bed Double Cab",
+      "body_style": "Double Cab",
+      "drivetrain": "2WD",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "spec_2025_Chevrolet_Silverado_2500_HD_dimensions_specifications_CC20953.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SE5A1BC81093B7BD2",
+      "name": "Double Cab | 4WD Long Bed Double Cab",
+      "title": "2025 Chevrolet Silverado 2500 HD | Configuration dimensions and specifications | 4WD Long Bed Double Cab",
+      "configuration_kind": "spec-group",
+      "configuration_label": "4WD Long Bed Double Cab",
+      "body_style": "Double Cab",
+      "drivetrain": "4WD",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "spec_2025_Chevrolet_Silverado_2500_HD_dimensions_specifications_CK20953.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SBC1FDDD83F6D1541",
+      "name": "Regular Cab | 2WD Long Bed Regular Cab",
+      "title": "2025 Chevrolet Silverado 2500 HD | Configuration dimensions and specifications | 2WD Long Bed Regular Cab",
+      "configuration_kind": "spec-group",
+      "configuration_label": "2WD Long Bed Regular Cab",
+      "body_style": "Regular Cab",
+      "drivetrain": "2WD",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "spec_2025_Chevrolet_Silverado_2500_HD_dimensions_specifications_CC20903.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SE19762181118B333",
+      "name": "Regular Cab | 4WD Long Bed Regular Cab",
+      "title": "2025 Chevrolet Silverado 2500 HD | Configuration dimensions and specifications | 4WD Long Bed Regular Cab",
+      "configuration_kind": "spec-group",
+      "configuration_label": "4WD Long Bed Regular Cab",
+      "body_style": "Regular Cab",
+      "drivetrain": "4WD",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "spec_2025_Chevrolet_Silverado_2500_HD_dimensions_specifications_CK20903.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SE37AE385223A1A9D",
+      "name": "Crew Cab | 4WD Standard Bed Crew Cab\nHigh Country | 4WD Standard Bed Crew Cab | High Country",
+      "title": "2025 Chevrolet Silverado 2500 HD | Configuration dimensions and specifications | 4WD Standard Bed Crew Cab\nHigh Country",
+      "configuration_kind": "spec-group",
+      "configuration_label": "4WD Standard Bed Crew Cab\nHigh Country",
+      "body_style": "Crew Cab",
+      "drivetrain": "4WD",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "parent_trims": [
+        "trim_2025_Chevrolet_Silverado_2500_HD_High_Country_2.html"
+      ],
+      "parent_trim_ids": [
+        "T53F6A8CE3AAD88B3"
+      ],
+      "path": "spec_2025_Chevrolet_Silverado_2500_HD_dimensions_specifications_CK20743_2.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SECA49B0EF2AB74B7",
+      "name": "Crew Cab | 4WD Long Bed Crew Cab\nHigh Country | 4WD Long Bed Crew Cab | High Country",
+      "title": "2025 Chevrolet Silverado 2500 HD | Configuration dimensions and specifications | 4WD Long Bed Crew Cab\nHigh Country",
+      "configuration_kind": "spec-group",
+      "configuration_label": "4WD Long Bed Crew Cab\nHigh Country",
+      "body_style": "Crew Cab",
+      "drivetrain": "4WD",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "parent_trims": [
+        "trim_2025_Chevrolet_Silverado_2500_HD_High_Country_2.html"
+      ],
+      "parent_trim_ids": [
+        "T53F6A8CE3AAD88B3"
+      ],
+      "path": "spec_2025_Chevrolet_Silverado_2500_HD_dimensions_specifications_CK20943_2.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SC4E9B27768285802",
+      "title": "2025 Chevrolet Silverado 2500 HD | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Crew Cab"
+      ],
+      "guide_categories": [
+        "Transmissions",
+        "Axles"
+      ],
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "18500 (8392)",
+        "19200 (8709)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CC20743.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S8DCFE3A76BB1BC83",
+      "title": "2025 Chevrolet Silverado 2500 HD | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Crew Cab"
+      ],
+      "guide_categories": [
+        "Transmissions",
+        "Axles"
+      ],
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "18500 (8392)",
+        "18380 (8337)",
+        "19100 (8664)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CK20743.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S5670ECF32199CBAF",
+      "title": "2025 Chevrolet Silverado 2500 HD | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Crew Cab"
+      ],
+      "guide_categories": [
+        "Transmissions",
+        "Axles"
+      ],
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "18500 (8392)",
+        "19200 (8709)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CC20943.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S2CC12B93522AF2E2",
+      "title": "2025 Chevrolet Silverado 2500 HD | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Crew Cab"
+      ],
+      "guide_categories": [
+        "Transmissions",
+        "Axles"
+      ],
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "18500 (8392)",
+        "18280 (8292)",
+        "19000 (8618)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CK20943.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SCA08C3F625024E45",
+      "title": "2025 Chevrolet Silverado 2500 HD | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Double Cab"
+      ],
+      "guide_categories": [
+        "Transmissions",
+        "Axles"
+      ],
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "14500 (6577)",
+        "18600 (8437)",
+        "18100 (8210)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CC20753.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SBE0C0610996C0FDE",
+      "title": "2025 Chevrolet Silverado 2500 HD | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Double Cab"
+      ],
+      "guide_categories": [
+        "Transmissions",
+        "Axles"
+      ],
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "14500 (6577)",
+        "18200 (8256)",
+        "17700 (8029)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CK20753.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SA3A069B22D1489A1",
+      "title": "2025 Chevrolet Silverado 2500 HD | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Double Cab"
+      ],
+      "guide_categories": [
+        "Transmissions",
+        "Axles"
+      ],
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "17900 (8119)",
+        "18400 (8346)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CC20953.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S98166E7645B5B693",
+      "title": "2025 Chevrolet Silverado 2500 HD | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Double Cab"
+      ],
+      "guide_categories": [
+        "Transmissions",
+        "Axles"
+      ],
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "17600 (7983)",
+        "18000 (8165)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CK20953.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S4A024151AE40C8A1",
+      "title": "2025 Chevrolet Silverado 2500 HD | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Regular Cab"
+      ],
+      "guide_categories": [
+        "Transmissions",
+        "Axles"
+      ],
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "14500 (6577)",
+        "18700 (8482)",
+        "18500 (8392)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CC20903.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S1B285AEFA5EB6D01",
+      "title": "2025 Chevrolet Silverado 2500 HD | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Regular Cab"
+      ],
+      "guide_categories": [
+        "Transmissions",
+        "Axles"
+      ],
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "14500 (6577)",
+        "18300 (8301)",
+        "18090 (8206)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CK20903.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SB80F811CDF1E2717",
+      "name": "NHT",
+      "title": "2025 Chevrolet Silverado 2500 HD | Configuration powertrain and trailering | NHT",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "20000 (9072)",
+        "21510 (9757)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CC20743_NHT.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SE3CCDB4D56573964",
+      "name": "NHT",
+      "title": "2025 Chevrolet Silverado 2500 HD | Configuration powertrain and trailering | NHT",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "20000 (9072)",
+        "21600 (9798)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CK20743_NHT.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S568AEB021E178BDE",
+      "name": "ZR2",
+      "title": "2025 Chevrolet Silverado 2500 HD | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "18500 (8392)",
+        "18100 (8210)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD ZR2",
+      "entity_key": "2025_chevrolet_silverado_2500_hd_zr2",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "retrieval_granularity": "coarse",
+      "trim_key": "2025_chevrolet_silverado_2500_hd_zr2",
+      "trim": "ZR2",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "T856AA675377365BD",
+      "parent_path": "trim_2025_Chevrolet_Silverado_2500_HD_ZR2.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "parent_trim": "trim_2025_Chevrolet_Silverado_2500_HD_ZR2.html",
+      "parent_trim_id": "T856AA675377365BD",
+      "path": "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CK20743_ZR2.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S66A942E9A68E3D0C",
+      "name": "High Country",
+      "title": "2025 Chevrolet Silverado 2500 HD | Configuration powertrain and trailering | High Country",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "18500 (8392)",
+        "18000 (8165)",
+        "18100 (8210)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "parent_trims": [
+        "trim_2025_Chevrolet_Silverado_2500_HD_High_Country_2.html"
+      ],
+      "parent_trim_ids": [
+        "T53F6A8CE3AAD88B3"
+      ],
+      "path": "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CK20743_High_Country.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S6914D64CDD78A97B",
+      "name": "NHT",
+      "title": "2025 Chevrolet Silverado 2500 HD | Configuration powertrain and trailering | NHT",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "20000 (9072)",
+        "22070 (10011)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CC20943_NHT.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S43749FD55F790E89",
+      "name": "NHT",
+      "title": "2025 Chevrolet Silverado 2500 HD | Configuration powertrain and trailering | NHT",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "20000 (9072)",
+        "21490 (9748)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CK20943_NHT.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SBC9CB376B7B34B68",
+      "name": "High Country",
+      "title": "2025 Chevrolet Silverado 2500 HD | Configuration powertrain and trailering | High Country",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "18500 (8392)",
+        "17900 (8119)",
+        "18700 (8482)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "parent_trims": [
+        "trim_2025_Chevrolet_Silverado_2500_HD_High_Country_2.html"
+      ],
+      "parent_trim_ids": [
+        "T53F6A8CE3AAD88B3"
+      ],
+      "path": "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CK20943_High_Country.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S4C03F6B78D2ADDFD",
+      "name": "NHT",
+      "title": "2025 Chevrolet Silverado 2500 HD | Configuration powertrain and trailering | NHT",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "14500 (6577)",
+        "22420 (10170)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CC20903_NHT.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S56A567FC509C874B",
+      "name": "NHT",
+      "title": "2025 Chevrolet Silverado 2500 HD | Configuration powertrain and trailering | NHT",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "14500 (6577)",
+        "22050 (10002)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CK20903_NHT.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SCEAFDC1BAD39F496",
+      "name": "2025 Chevrolet Silverado 2500 HD GCWR reference",
+      "title": "2025 Chevrolet Silverado 2500 HD | GCWR reference",
+      "configuration_kind": "gcwr-reference",
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "gcwr_values": [
+        "24500 (11113)",
+        "26000 (11794)",
+        "27500 (12474)",
+        "30000 (13608)"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Trailering and GCWR",
+      "guide_domains": [
+        "Trailering and GCWR"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500 HD",
+      "entity_key": "2025_chevrolet_silverado_2500_hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M2903E8AAE8E7F58F",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent": "M2903E8AAE8E7F58F",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
+      "parent_vehicle_id": "M2903E8AAE8E7F58F",
+      "path": "config_2025_Chevrolet_Silverado_2500_HD_gcwr_reference.html"
+    }
+  ]
+}

@@ -1,0 +1,2255 @@
+{
+  "vehicle_name": "2026 Chevrolet Silverado 3500 HD",
+  "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+  "files": [
+    {
+      "objecttype": "Product",
+      "type": "model",
+      "node_id": "M4490F0E9C53E2E2F",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "name": "2026 Chevrolet Silverado 3500 HD",
+      "title": "2026 Chevrolet Silverado 3500 HD",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "doc_type": "model",
+      "doc_role": "entity",
+      "entity_level": "model",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Packages and options",
+        "Other guide content",
+        "Colour and trim"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "child": [
+        "CE101C88CC5189CEA",
+        "C6B7F98E1E46B87FB",
+        "CC50BF2454951F691",
+        "C49E16BC072B443E7",
+        "C1876A94192E1BB2F",
+        "CA8CA3C84C57A036D",
+        "C3F5F3C3E2265963D",
+        "T9922C107BA787C2E",
+        "TAA17513B11C09051",
+        "T32E96FA32860A8D7",
+        "T51F156C3B3F9D9E3",
+        "S9A326A6E8AA61165",
+        "S6D30F0E97BB57B5D",
+        "S616CEED4BE5AE5A1",
+        "SAF84FB1EB13237A8",
+        "SCE8188A3E6483410",
+        "SA7F0F51999E5B7C3",
+        "SE35ED6417BA2EBFF",
+        "S35D3607AEB37F933",
+        "SB906FED8174597F8",
+        "S3331567C55B6618F",
+        "SA9B7A11027EBC977",
+        "S2539DEABC5FC428D",
+        "S9B556E8F0B056FE5",
+        "S26482EE5A643366F",
+        "S81986908B9BB7D5A",
+        "S80BDF63429CFDFA9",
+        "S3D6CC5FBE453D80F",
+        "S0B2FA5606434A06A",
+        "S6312BE85969B7B70",
+        "S3A32338710583412",
+        "S50181AC4E909C39A",
+        "S6C4CD5334F13FFC3",
+        "S214C8097F57977C6",
+        "S154AAE617DF8016A",
+        "S79C1EA081AB0AEEC",
+        "SA96EC84384F66B67",
+        "S42D4974C13F8B47B",
+        "S842C9A848ADB8E9C",
+        "SC86956EEDDC850F6",
+        "SE3E46575619F0457",
+        "S34AE17D537B1CC78",
+        "S4EAAEFF84CEED71A"
+      ],
+      "child_paths": [
+        "compare_domain_2026_Chevrolet_Silverado_3500_HD_Safety_and_driver_assistance.html",
+        "compare_domain_2026_Chevrolet_Silverado_3500_HD_Technology_and_connectivity.html",
+        "compare_domain_2026_Chevrolet_Silverado_3500_HD_Interior_and_comfort.html",
+        "compare_domain_2026_Chevrolet_Silverado_3500_HD_Exterior_and_utility.html",
+        "compare_domain_2026_Chevrolet_Silverado_3500_HD_Wheels_and_tires.html",
+        "compare_domain_2026_Chevrolet_Silverado_3500_HD_Mechanical_and_performance.html",
+        "compare_domain_2026_Chevrolet_Silverado_3500_HD_Packages_and_options.html",
+        "trim_2026_Chevrolet_Silverado_3500_HD_Work_Truck.html",
+        "trim_2026_Chevrolet_Silverado_3500_HD_LT.html",
+        "trim_2026_Chevrolet_Silverado_3500_HD_LTZ.html",
+        "trim_2026_Chevrolet_Silverado_3500_HD_High_Country.html",
+        "spec_2026_Chevrolet_Silverado_3500_HD_dimensions_specifications_CC30743.html",
+        "spec_2026_Chevrolet_Silverado_3500_HD_dimensions_specifications_CK30743.html",
+        "spec_2026_Chevrolet_Silverado_3500_HD_dimensions_specifications_CC30943.html",
+        "spec_2026_Chevrolet_Silverado_3500_HD_dimensions_specifications_CK30943.html",
+        "spec_2026_Chevrolet_Silverado_3500_HD_dimensions_specifications_CC30953.html",
+        "spec_2026_Chevrolet_Silverado_3500_HD_dimensions_specifications_CK30953.html",
+        "spec_2026_Chevrolet_Silverado_3500_HD_dimensions_specifications_CC30903.html",
+        "spec_2026_Chevrolet_Silverado_3500_HD_dimensions_specifications_CK30903.html",
+        "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CC30743.html",
+        "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CK30743.html",
+        "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CC30943.html",
+        "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CK30943.html",
+        "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CC30953.html",
+        "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CK30953.html",
+        "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CC30903.html",
+        "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CK30903.html",
+        "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CC30743_w_SRW.html",
+        "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CK30743_w_SRW.html",
+        "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CC30943_w_SRW.html",
+        "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CC30943_w_DRW.html",
+        "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CK30943_w_SRW.html",
+        "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CK30943_w_DRW.html",
+        "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CC30953_w_SRW.html",
+        "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CC30953_w_DRW.html",
+        "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CK30953_w_SRW.html",
+        "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CK30953_w_DRW.html",
+        "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CC30903_w_SRW.html",
+        "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CC30903_w_DRW.html",
+        "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CC30903_w_DRW_and_NHT.html",
+        "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CK30903_w_SRW.html",
+        "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CK30903_w_DRW.html",
+        "config_2026_Chevrolet_Silverado_3500_HD_gcwr_reference.html"
+      ],
+      "path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "available_trims": [
+        "Work Truck",
+        "LT",
+        "LTZ",
+        "High Country"
+      ]
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "CE101C88CC5189CEA",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "name": "2026 Chevrolet Silverado 3500 HD | Safety and driver assistance trim comparison",
+      "title": "2026 Chevrolet Silverado 3500 HD | Safety and driver assistance trim comparison",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Safety and driver assistance",
+      "guide_domains": [
+        "Safety and driver assistance"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 31,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "compare_domain_2026_Chevrolet_Silverado_3500_HD_Safety_and_driver_assistance.html"
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "C6B7F98E1E46B87FB",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "name": "2026 Chevrolet Silverado 3500 HD | Technology and connectivity trim comparison",
+      "title": "2026 Chevrolet Silverado 3500 HD | Technology and connectivity trim comparison",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Technology and connectivity",
+      "guide_domains": [
+        "Technology and connectivity"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 20,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "compare_domain_2026_Chevrolet_Silverado_3500_HD_Technology_and_connectivity.html"
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "CC50BF2454951F691",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "name": "2026 Chevrolet Silverado 3500 HD | Interior and comfort trim comparison",
+      "title": "2026 Chevrolet Silverado 3500 HD | Interior and comfort trim comparison",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Interior and comfort",
+      "guide_domains": [
+        "Interior and comfort"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 38,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "compare_domain_2026_Chevrolet_Silverado_3500_HD_Interior_and_comfort.html"
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "C49E16BC072B443E7",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "name": "2026 Chevrolet Silverado 3500 HD | Exterior and utility trim comparison",
+      "title": "2026 Chevrolet Silverado 3500 HD | Exterior and utility trim comparison",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Exterior and utility",
+      "guide_domains": [
+        "Exterior and utility"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 60,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "compare_domain_2026_Chevrolet_Silverado_3500_HD_Exterior_and_utility.html"
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "C1876A94192E1BB2F",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "name": "2026 Chevrolet Silverado 3500 HD | Wheels and tires trim comparison",
+      "title": "2026 Chevrolet Silverado 3500 HD | Wheels and tires trim comparison",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Wheels and tires",
+      "guide_domains": [
+        "Wheels and tires"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 57,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "compare_domain_2026_Chevrolet_Silverado_3500_HD_Wheels_and_tires.html"
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "CA8CA3C84C57A036D",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "name": "2026 Chevrolet Silverado 3500 HD | Mechanical and performance trim comparison",
+      "title": "2026 Chevrolet Silverado 3500 HD | Mechanical and performance trim comparison",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Mechanical and performance",
+      "guide_domains": [
+        "Mechanical and performance"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 24,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "compare_domain_2026_Chevrolet_Silverado_3500_HD_Mechanical_and_performance.html"
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "C3F5F3C3E2265963D",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "name": "2026 Chevrolet Silverado 3500 HD | Packages and options trim comparison",
+      "title": "2026 Chevrolet Silverado 3500 HD | Packages and options trim comparison",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Packages and options",
+      "guide_domains": [
+        "Packages and options"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 23,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "compare_domain_2026_Chevrolet_Silverado_3500_HD_Packages_and_options.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "T9922C107BA787C2E",
+      "name": "Work Truck",
+      "title": "2026 Chevrolet Silverado 3500 HD Work Truck",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "drivetrains": [
+        "2WD",
+        "4WD"
+      ],
+      "body_styles": [
+        "Crew Cab, Standard Bed",
+        "Crew Cab, Long Bed",
+        "Double Cab, Long Bed",
+        "Regular Cab, Long Bed"
+      ],
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "trim": "Work Truck",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Packages and options",
+        "Other guide content",
+        "Colour and trim"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2026 Chevrolet Silverado 3500 HD Work Truck",
+      "entity_key": "2026_chevrolet_silverado_3500_hd_work_truck",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "trim_key": "2026_chevrolet_silverado_3500_hd_work_truck",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "trim_2026_Chevrolet_Silverado_3500_HD_Work_Truck.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "TAA17513B11C09051",
+      "name": "LT",
+      "title": "2026 Chevrolet Silverado 3500 HD LT",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "drivetrains": [
+        "2WD",
+        "4WD"
+      ],
+      "body_styles": [
+        "Crew Cab, Standard Bed",
+        "Crew Cab, Long Bed",
+        "Double Cab, Long Bed",
+        "Regular Cab, Long Bed"
+      ],
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "trim": "LT",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Packages and options",
+        "Other guide content",
+        "Colour and trim"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2026 Chevrolet Silverado 3500 HD LT",
+      "entity_key": "2026_chevrolet_silverado_3500_hd_lt",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "trim_key": "2026_chevrolet_silverado_3500_hd_lt",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "trim_2026_Chevrolet_Silverado_3500_HD_LT.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "T32E96FA32860A8D7",
+      "name": "LTZ",
+      "title": "2026 Chevrolet Silverado 3500 HD LTZ",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "drivetrains": [
+        "2WD",
+        "4WD"
+      ],
+      "body_styles": [
+        "Crew Cab, Standard Bed",
+        "Crew Cab, Long Bed",
+        "Double Cab, Long Bed",
+        "Regular Cab, Long Bed"
+      ],
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "trim": "LTZ",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Packages and options",
+        "Other guide content",
+        "Colour and trim"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2026 Chevrolet Silverado 3500 HD LTZ",
+      "entity_key": "2026_chevrolet_silverado_3500_hd_ltz",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "trim_key": "2026_chevrolet_silverado_3500_hd_ltz",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "trim_2026_Chevrolet_Silverado_3500_HD_LTZ.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "T51F156C3B3F9D9E3",
+      "name": "High Country",
+      "title": "2026 Chevrolet Silverado 3500 HD High Country",
+      "seating": [
+        "6"
+      ],
+      "drivetrains": [
+        "4WD"
+      ],
+      "body_styles": [
+        "Crew Cab, Standard Bed",
+        "Crew Cab, Long Bed"
+      ],
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "trim": "High Country",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Packages and options",
+        "Other guide content",
+        "Colour and trim"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2026 Chevrolet Silverado 3500 HD High Country",
+      "entity_key": "2026_chevrolet_silverado_3500_hd_high_country",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "trim_key": "2026_chevrolet_silverado_3500_hd_high_country",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "child": [
+        "S872000FA3A5851FA",
+        "S2D4A2354E072B31A",
+        "S638E72F20B17C0F9",
+        "S7FFA935716B4DD7A",
+        "SDB98BAB6B3743CA3"
+      ],
+      "child_paths": [
+        "spec_2026_Chevrolet_Silverado_3500_HD_dimensions_specifications_High_Country_CK30743.html",
+        "spec_2026_Chevrolet_Silverado_3500_HD_dimensions_specifications_High_Country_CK30943.html",
+        "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CK30743_w_SRW_and_High_Country.html",
+        "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CK30943_w_SRW_and_High_Country.html",
+        "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CK30943_w_DRW_and_High_Country.html"
+      ],
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "trim_2026_Chevrolet_Silverado_3500_HD_High_Country.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S9A326A6E8AA61165",
+      "name": "Crew Cab | 2WD Standard Bed Crew Cab with Single Rear Wheel",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration dimensions and specifications | 2WD Standard Bed Crew Cab with Single Rear Wheel",
+      "configuration_kind": "spec-group",
+      "configuration_label": "2WD Standard Bed Crew Cab with Single Rear Wheel",
+      "body_style": "Crew Cab",
+      "drivetrain": "2WD",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "spec_2026_Chevrolet_Silverado_3500_HD_dimensions_specifications_CC30743.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S6D30F0E97BB57B5D",
+      "name": "Crew Cab | 4WD Standard Bed Crew Cab with Single Rear Wheel",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration dimensions and specifications | 4WD Standard Bed Crew Cab with Single Rear Wheel",
+      "configuration_kind": "spec-group",
+      "configuration_label": "4WD Standard Bed Crew Cab with Single Rear Wheel",
+      "body_style": "Crew Cab",
+      "drivetrain": "4WD",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "spec_2026_Chevrolet_Silverado_3500_HD_dimensions_specifications_CK30743.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S616CEED4BE5AE5A1",
+      "name": "Crew Cab | 2WD Long Bed Crew Cab with Single or Dual Rear Wheel",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration dimensions and specifications | 2WD Long Bed Crew Cab with Single or Dual Rear Wheel",
+      "configuration_kind": "spec-group",
+      "configuration_label": "2WD Long Bed Crew Cab with Single or Dual Rear Wheel",
+      "body_style": "Crew Cab",
+      "drivetrain": "2WD",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "spec_2026_Chevrolet_Silverado_3500_HD_dimensions_specifications_CC30943.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SAF84FB1EB13237A8",
+      "name": "Crew Cab | 4WD Long Bed Crew Cab with Single or Dual Rear Wheel",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration dimensions and specifications | 4WD Long Bed Crew Cab with Single or Dual Rear Wheel",
+      "configuration_kind": "spec-group",
+      "configuration_label": "4WD Long Bed Crew Cab with Single or Dual Rear Wheel",
+      "body_style": "Crew Cab",
+      "drivetrain": "4WD",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "spec_2026_Chevrolet_Silverado_3500_HD_dimensions_specifications_CK30943.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SCE8188A3E6483410",
+      "name": "Double Cab | 2WD Long Bed Double Cab with Single or Dual Rear Wheel",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration dimensions and specifications | 2WD Long Bed Double Cab with Single or Dual Rear Wheel",
+      "configuration_kind": "spec-group",
+      "configuration_label": "2WD Long Bed Double Cab with Single or Dual Rear Wheel",
+      "body_style": "Double Cab",
+      "drivetrain": "2WD",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "spec_2026_Chevrolet_Silverado_3500_HD_dimensions_specifications_CC30953.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SA7F0F51999E5B7C3",
+      "name": "Double Cab | 4WD Long Bed Double Cab with Single or Dual Rear Wheel",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration dimensions and specifications | 4WD Long Bed Double Cab with Single or Dual Rear Wheel",
+      "configuration_kind": "spec-group",
+      "configuration_label": "4WD Long Bed Double Cab with Single or Dual Rear Wheel",
+      "body_style": "Double Cab",
+      "drivetrain": "4WD",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "spec_2026_Chevrolet_Silverado_3500_HD_dimensions_specifications_CK30953.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SE35ED6417BA2EBFF",
+      "name": "Regular Cab | 2WD Long Bed Regular Cab with Single or Dual Rear Wheel",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration dimensions and specifications | 2WD Long Bed Regular Cab with Single or Dual Rear Wheel",
+      "configuration_kind": "spec-group",
+      "configuration_label": "2WD Long Bed Regular Cab with Single or Dual Rear Wheel",
+      "body_style": "Regular Cab",
+      "drivetrain": "2WD",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "spec_2026_Chevrolet_Silverado_3500_HD_dimensions_specifications_CC30903.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S35D3607AEB37F933",
+      "name": "Regular Cab | 4WD Long Bed Regular Cab with Single or Dual Rear Wheel",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration dimensions and specifications | 4WD Long Bed Regular Cab with Single or Dual Rear Wheel",
+      "configuration_kind": "spec-group",
+      "configuration_label": "4WD Long Bed Regular Cab with Single or Dual Rear Wheel",
+      "body_style": "Regular Cab",
+      "drivetrain": "4WD",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "spec_2026_Chevrolet_Silverado_3500_HD_dimensions_specifications_CK30903.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S872000FA3A5851FA",
+      "name": "Crew Cab | 4WD Standard Bed Crew Cab with Single Rear Wheel\nHigh Country | 4WD Standard Bed Crew Cab with Single Rear Wheel | High Country",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration dimensions and specifications | 4WD Standard Bed Crew Cab with Single Rear Wheel\nHigh Country",
+      "configuration_kind": "spec-group",
+      "configuration_label": "4WD Standard Bed Crew Cab with Single Rear Wheel\nHigh Country",
+      "body_style": "Crew Cab",
+      "drivetrain": "4WD",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD High Country",
+      "entity_key": "2026_chevrolet_silverado_3500_hd_high_country",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "trim_key": "2026_chevrolet_silverado_3500_hd_high_country",
+      "trim": "High Country",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "T51F156C3B3F9D9E3",
+      "parent_path": "trim_2026_Chevrolet_Silverado_3500_HD_High_Country.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "parent_trim": "trim_2026_Chevrolet_Silverado_3500_HD_High_Country.html",
+      "parent_trim_id": "T51F156C3B3F9D9E3",
+      "path": "spec_2026_Chevrolet_Silverado_3500_HD_dimensions_specifications_High_Country_CK30743.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S2D4A2354E072B31A",
+      "name": "Crew Cab | 4WD Long Bed Crew Cab with Single or Dual Rear Wheel\nHigh Country | 4WD Long Bed Crew Cab with Single or Dual Rear Wheel | High Country",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration dimensions and specifications | 4WD Long Bed Crew Cab with Single or Dual Rear Wheel\nHigh Country",
+      "configuration_kind": "spec-group",
+      "configuration_label": "4WD Long Bed Crew Cab with Single or Dual Rear Wheel\nHigh Country",
+      "body_style": "Crew Cab",
+      "drivetrain": "4WD",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD High Country",
+      "entity_key": "2026_chevrolet_silverado_3500_hd_high_country",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "trim_key": "2026_chevrolet_silverado_3500_hd_high_country",
+      "trim": "High Country",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "T51F156C3B3F9D9E3",
+      "parent_path": "trim_2026_Chevrolet_Silverado_3500_HD_High_Country.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "parent_trim": "trim_2026_Chevrolet_Silverado_3500_HD_High_Country.html",
+      "parent_trim_id": "T51F156C3B3F9D9E3",
+      "path": "spec_2026_Chevrolet_Silverado_3500_HD_dimensions_specifications_High_Country_CK30943.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SB906FED8174597F8",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Crew Cab"
+      ],
+      "guide_categories": [
+        "Transmissions",
+        "Axles"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CC30743.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S3331567C55B6618F",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Crew Cab"
+      ],
+      "guide_categories": [
+        "Transmissions",
+        "Axles"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CK30743.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SA9B7A11027EBC977",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Crew Cab"
+      ],
+      "guide_categories": [
+        "Transmissions",
+        "Axles"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CC30943.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S2539DEABC5FC428D",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Crew Cab"
+      ],
+      "guide_categories": [
+        "Transmissions",
+        "Axles"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CK30943.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S9B556E8F0B056FE5",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Double Cab"
+      ],
+      "guide_categories": [
+        "Transmissions",
+        "Axles"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CC30953.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S26482EE5A643366F",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Double Cab"
+      ],
+      "guide_categories": [
+        "Transmissions",
+        "Axles"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CK30953.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S81986908B9BB7D5A",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Regular Cab"
+      ],
+      "guide_categories": [
+        "Transmissions",
+        "Axles"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CC30903.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S80BDF63429CFDFA9",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Regular Cab"
+      ],
+      "guide_categories": [
+        "Transmissions",
+        "Axles"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CK30903.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S3D6CC5FBE453D80F",
+      "name": "w/SRW",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration powertrain and trailering | w/SRW",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "20000 (9072)",
+        "18650 (8460)",
+        "21900 (9934)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CC30743_w_SRW.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S0B2FA5606434A06A",
+      "name": "w/SRW",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration powertrain and trailering | w/SRW",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "20000 (9072)",
+        "18300 (8301)",
+        "21600 (9798)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CK30743_w_SRW.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S638E72F20B17C0F9",
+      "name": "w/SRW and High Country",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration powertrain and trailering | w/SRW and High Country",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "20000 (9072)",
+        "17900 (8119)",
+        "21300 (9662)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD High Country",
+      "entity_key": "2026_chevrolet_silverado_3500_hd_high_country",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "trim_key": "2026_chevrolet_silverado_3500_hd_high_country",
+      "trim": "High Country",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "T51F156C3B3F9D9E3",
+      "parent_path": "trim_2026_Chevrolet_Silverado_3500_HD_High_Country.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "parent_trim": "trim_2026_Chevrolet_Silverado_3500_HD_High_Country.html",
+      "parent_trim_id": "T51F156C3B3F9D9E3",
+      "path": "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CK30743_w_SRW_and_High_Country.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S6312BE85969B7B70",
+      "name": "w/SRW",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration powertrain and trailering | w/SRW",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "20000 (9072)",
+        "18510 (8396)",
+        "22070 (10011)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CC30943_w_SRW.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S3A32338710583412",
+      "name": "w/DRW",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration powertrain and trailering | w/DRW",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "18700 (8482)",
+        "20000 (9072)",
+        "18230 (8269)",
+        "31440 (14261)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CC30943_w_DRW.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S50181AC4E909C39A",
+      "name": "w/SRW",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration powertrain and trailering | w/SRW",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "20000 (9072)",
+        "18230 (8269)",
+        "21490 (9748)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CK30943_w_SRW.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S7FFA935716B4DD7A",
+      "name": "w/SRW and High Country",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration powertrain and trailering | w/SRW and High Country",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "20000 (9072)",
+        "17600 (7983)",
+        "21200 (9616)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD High Country",
+      "entity_key": "2026_chevrolet_silverado_3500_hd_high_country",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "trim_key": "2026_chevrolet_silverado_3500_hd_high_country",
+      "trim": "High Country",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "T51F156C3B3F9D9E3",
+      "parent_path": "trim_2026_Chevrolet_Silverado_3500_HD_High_Country.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "parent_trim": "trim_2026_Chevrolet_Silverado_3500_HD_High_Country.html",
+      "parent_trim_id": "T51F156C3B3F9D9E3",
+      "path": "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CK30943_w_SRW_and_High_Country.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S6C4CD5334F13FFC3",
+      "name": "w/DRW",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration powertrain and trailering | w/DRW",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "17800 (8074)",
+        "20000 (9072)",
+        "31000 (14062)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CK30943_w_DRW.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SDB98BAB6B3743CA3",
+      "name": "w/DRW and High Country",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration powertrain and trailering | w/DRW and High Country",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "17600 (7983)",
+        "20000 (9072)",
+        "30900 (14016)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD High Country",
+      "entity_key": "2026_chevrolet_silverado_3500_hd_high_country",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "trim_key": "2026_chevrolet_silverado_3500_hd_high_country",
+      "trim": "High Country",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "T51F156C3B3F9D9E3",
+      "parent_path": "trim_2026_Chevrolet_Silverado_3500_HD_High_Country.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "parent_trim": "trim_2026_Chevrolet_Silverado_3500_HD_High_Country.html",
+      "parent_trim_id": "T51F156C3B3F9D9E3",
+      "path": "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CK30943_w_DRW_and_High_Country.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S214C8097F57977C6",
+      "name": "w/SRW",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration powertrain and trailering | w/SRW",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "20000 (9072)",
+        "18620 (8446)",
+        "21900 (9934)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CC30953_w_SRW.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S154AAE617DF8016A",
+      "name": "w/DRW",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration powertrain and trailering | w/DRW",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "18300 (8301)",
+        "20000 (9072)",
+        "31580 (14325)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CC30953_w_DRW.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S79C1EA081AB0AEEC",
+      "name": "w/SRW",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration powertrain and trailering | w/SRW",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "20000 (9072)",
+        "18310 (8305)",
+        "21590 (9793)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CK30953_w_SRW.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SA96EC84384F66B67",
+      "name": "w/DRW",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration powertrain and trailering | w/DRW",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "18000 (8165)",
+        "20000 (9072)",
+        "17990 (8160)",
+        "31270 (14184)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CK30953_w_DRW.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S42D4974C13F8B47B",
+      "name": "w/SRW",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration powertrain and trailering | w/SRW",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "14500 (6577)",
+        "19080 (8655)",
+        "22420 (10170)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CC30903_w_SRW.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S842C9A848ADB8E9C",
+      "name": "w/DRW",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration powertrain and trailering | w/DRW",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "18700 (8482)",
+        "20000 (9072)",
+        "18760 (8510)",
+        "35500 (16103)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CC30903_w_DRW.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SC86956EEDDC850F6",
+      "name": "w/DRW and NHT",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration powertrain and trailering | w/DRW and NHT",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "20000 (9072)",
+        "36000 (16330)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CC30903_w_DRW_and_NHT.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SE3E46575619F0457",
+      "name": "w/SRW",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration powertrain and trailering | w/SRW",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "14500 (6577)",
+        "18700 (8482)",
+        "22040 (9997)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CK30903_w_SRW.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S34AE17D537B1CC78",
+      "name": "w/DRW",
+      "title": "2026 Chevrolet Silverado 3500 HD | Configuration powertrain and trailering | w/DRW",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "18400 (8346)",
+        "20000 (9072)",
+        "18380 (8337)",
+        "31500 (14288)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "config_2026_Chevrolet_Silverado_3500_HD_powertrain_trailering_CK30903_w_DRW.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S4EAAEFF84CEED71A",
+      "name": "2026 Chevrolet Silverado 3500 HD GCWR reference",
+      "title": "2026 Chevrolet Silverado 3500 HD | GCWR reference",
+      "configuration_kind": "gcwr-reference",
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "gcwr_values": [
+        "26000 (11794)",
+        "30000 (13608)",
+        "40000 (18144)",
+        "43500 (19732)",
+        "43900 (19913)"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Trailering and GCWR",
+      "guide_domains": [
+        "Trailering and GCWR"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 HD",
+      "entity_key": "2026_chevrolet_silverado_3500_hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500_hd",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M4490F0E9C53E2E2F",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent": "M4490F0E9C53E2E2F",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_HD.html",
+      "parent_vehicle_id": "M4490F0E9C53E2E2F",
+      "path": "config_2026_Chevrolet_Silverado_3500_HD_gcwr_reference.html"
+    }
+  ]
+}
