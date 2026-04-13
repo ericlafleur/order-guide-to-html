@@ -19,8 +19,9 @@ class TrimDef:
 
     @property
     def key(self) -> str:
+        code_part = self.code if normalize_text(self.code) and normalize_text(self.code) != normalize_text(self.name) else ''
         basis = ' | '.join(
-            part for part in [self.family_label, self.raw_header, self.name, self.model_code, self.code] if normalize_text(part)
+            part for part in [self.family_label, self.name or self.raw_header, code_part] if normalize_text(part)
         )
         return NON_ALNUM_RE.sub(' ', basis).strip().lower()
 
@@ -165,6 +166,7 @@ class WorkbookData:
     gcwr_records: List[GCWRRecord]
     glossary: OrderedDict[str, str]
     sheet_names: List[str]
+    language: str
 
 @dataclass
 class ModelFeatureAggregate:

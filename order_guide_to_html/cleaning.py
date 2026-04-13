@@ -14,19 +14,25 @@ SHEET_SEGMENT_RE = re.compile(
     r'^(?:Standard Equipment|Equipment Groups|PEG Stairstep|Interior|Exterior|Mechanical|'
     r'Engine Axles(?:\s+\d+)?|Colour and Trim(?:\s+\d+)?|Color and Trim(?:\s+\d+)?|'
     r'SEO Ship Thru|OnStar SiriusXM Fleet Options|Dimensions(?:\s+\d+)?|Specs(?:\s+\d+)?|'
-    r'Wheels|Trailering Specs(?:\s+\d+)?|All)$',
+    r'Wheels|Trailering Specs(?:\s+\d+)?|All|'
+    r'Équipement de série|Groupes d’équipements|Escalier des GÉP|Intérieur|Extérieur|Mécanique|'
+    r'Moteur Ponts(?:\s+\d+)?|Couleurs et garnitures(?:\s+\d+)?|ÉFS Expédition|'
+    r'Options de parc OnStar SiriusXM|Fiche technique(?:\s+\d+)?|Roues|'
+    r'Équipements de remorquage(?:\s+\d+)?|Toutes)$',
     re.I,
 )
 STATUS_BRACKET_RE = re.compile(r'\s*\[(?:--|[A-Z]+\d*|[■□*]+\d*)\]')
 CODE_PARENS_RE = re.compile(r'\(([^()]*)\)')
 SOURCE_PARENS_HINT_RE = re.compile(
     r'(Standard Equipment|Equipment Groups|PEG Stairstep|Interior|Exterior|Mechanical|Wheels|Dimensions|Specs|'
-    r'OnStar|SiriusXM|Colour and Trim|Color and Trim|Trailering|Engine Axles|SEO Ship Thru|All)',
+    r'OnStar|SiriusXM|Colour and Trim|Color and Trim|Trailering|Engine Axles|SEO Ship Thru|All|'
+    r'Équipement de série|Groupes d’équipements|Escalier des GÉP|Intérieur|Extérieur|Mécanique|Roues|'
+    r'Couleurs et garnitures|Fiche technique|Remorquage|Moteur Ponts|ÉFS Expédition|Toutes)',
     re.I,
 )
 CODE_ONLY_RE = re.compile(r'^(?=.*[A-Z])[A-Z0-9-]{2,10}$')
 FILE_CODE_RE = re.compile(r'\b[A-Z]{2}\d{5}\b')
-WITH_CODES_BRACKETS_RE = re.compile(r'\[w/\s*([^\]]+)\]', re.I)
+WITH_CODES_BRACKETS_RE = re.compile(r'\[(?:w/|avec)\s*([^\]]+)\]', re.I)
 
 FIELD_DROP_LABELS = {
     'Source tab', 'Source tabs', 'Source context', 'Guide category', 'Trim code', 'Trim header from guide',
@@ -65,6 +71,7 @@ LOW_SIGNAL_COMPARISON_DOMAINS = {
 @dataclass
 class GuideTextCleaner:
     glossary: Dict[str, str] = field(default_factory=dict)
+    language: str = 'en'
 
     def load_glossary(self, glossary: Mapping[str, str]) -> None:
         self.glossary = {
@@ -73,6 +80,72 @@ class GuideTextCleaner:
             if normalize_text(k) and normalize_text(v)
         }
 
+    def set_language(self, language: str) -> None:
+        self.language = 'fr' if normalize_text(language).lower().startswith('fr') else 'en'
+
+    def t(self, text: str) -> str:
+        text = normalize_text(text)
+        if self.language != 'fr':
+            return text
+        translations = {
+            'Vehicle': 'Véhicule',
+            'Trim': 'Version',
+            'Category': 'Catégorie',
+            'Available trims': 'Versions offertes',
+            'Model overview': 'Aperçu du modèle',
+            'Trim overview': 'Aperçu de la version',
+            'Trim lineup': 'Gamme de versions',
+            'Feature highlights': 'Points saillants des caractéristiques',
+            'Unavailable features': 'Caractéristiques non offertes',
+            'Features explicitly not offered on this trim': 'Caractéristiques explicitement non offertes sur cette version',
+            'Colour and trim': 'Couleurs et garnitures',
+            'Colour and trim combinations': 'Combinaisons de couleurs et garnitures',
+            'Comparison lines from guide': 'Lignes de comparaison',
+            'Comparison axis': 'Axe de comparaison',
+            'Specifications': 'Spécifications',
+            'Details': 'Détails',
+            'Notes': 'Notes',
+            'Engines': 'Moteurs',
+            'Trailering ratings': 'Cotes de remorquage',
+            'Configuration identity': 'Identité de configuration',
+            'Powertrain and trailering': 'Groupe motopropulseur et remorquage',
+            'Powertrain, axle and GVWR': 'Groupe motopropulseur, pont et PNBV',
+            'Trailering values': 'Valeurs de remorquage',
+            'GCWR reference': 'Référence PNBC',
+            'GCWR values': 'Valeurs PNBC',
+            'Dimensions and specifications': 'Dimensions et spécifications',
+            'part': 'partie',
+            'Highlights': 'Points saillants',
+            'Trim comparison highlights': 'Points saillants de comparaison des versions',
+            'Trim comparison': 'Comparaison des versions',
+            'Safety and driver assistance': 'Sécurité et aide à la conduite',
+            'Technology and connectivity': 'Technologie et connectivité',
+            'Interior and comfort': 'Intérieur et confort',
+            'Exterior and utility': 'Extérieur et utilité',
+            'Wheels and tires': 'Roues et pneus',
+            'Mechanical and performance': 'Mécanique et performance',
+            'Packages and options': 'Groupes et options',
+            'Specifications and dimensions': 'Dimensions et spécifications',
+            'Trailering and GCWR': 'Remorquage et PNBC',
+            'Other guide content': 'Autre contenu du guide',
+        }
+        return translations.get(text, text)
+
+    def translate_status_label(self, label: str) -> str:
+        label = normalize_text(label)
+        if self.language != 'fr':
+            return label
+        translations = {
+            'Standard Equipment': 'Équipement de série',
+            'Available': 'Livrable',
+            'ADI Available': 'ADI livrable',
+            'Included in Equipment Group': "Inclus dans le groupe d'équipement",
+            'Included in Equipment Group but upgradeable': "Inclus dans le groupe d'équipement mais évolutif",
+            'Indicates availability of feature on multiple models': 'Indique la disponibilité de ce type sur plusieurs modèles',
+            'Not Available': 'Non livrable',
+        }
+        return translations.get(label, label)
+
     def is_code_only(self, text: object) -> bool:
         text = normalize_text(text)
         if not text or not CODE_ONLY_RE.fullmatch(text):
@@ -80,7 +153,7 @@ class GuideTextCleaner:
         return any(ch.isdigit() for ch in text) or len(text) > 4
 
     def expand_code_sequence(self, seq: str) -> str:
-        parts = [normalize_text(x) for x in re.split(r'\s+and\s+|\s*,\s*|\s*;\s*', normalize_text(seq)) if normalize_text(x)]
+        parts = [normalize_text(x) for x in re.split(r'\s+and\s+|\s+et\s+|\s*,\s*|\s*;\s*', normalize_text(seq)) if normalize_text(x)]
         descriptions: List[str] = []
         leftovers: List[str] = []
         for part in parts:
@@ -93,7 +166,9 @@ class GuideTextCleaner:
         descriptions = [d for d in descriptions if d]
         leftovers = [x for x in leftovers if x]
         joined = unique_preserve_order(descriptions + leftovers)
-        return ' with ' + ' and '.join(joined) if joined else ''
+        connector = ' avec ' if self.language == 'fr' else ' with '
+        joiner = ' et ' if self.language == 'fr' else ' and '
+        return connector + joiner.join(joined) if joined else ''
 
     def _expand_with_codes(self, match: re.Match[str]) -> str:
         return self.expand_code_sequence(match.group(1))
@@ -113,7 +188,7 @@ class GuideTextCleaner:
         text = FILE_CODE_RE.sub('', text)
         text = STATUS_BRACKET_RE.sub('', text)
         text = re.sub(
-            r'\b(?:Trim code|Model code|Feature code|Reference code|Orderable code)\s*:?\s*[A-Z0-9-]{2,10}\b',
+            r'\b(?:Trim code|Model code|Feature code|Reference code|Orderable code|Code de version|Code modèle|Code ÉFC|Code ÉFC\. de réf\. seulement)\s*:?\s*[A-Z0-9-]{2,10}\b',
             '',
             text,
             flags=re.I,
@@ -139,16 +214,16 @@ class GuideTextCleaner:
         if not text:
             return ''
         replacements = {
-            'Vehicle Order Guide trim overview': 'Trim overview',
-            'Vehicle Order Guide model overview': 'Model overview',
-            'grouped guide passage': 'Highlights',
-            'trim comparison grouped passage': 'Trim comparison highlights',
-            'comparison from guide': 'comparison',
-            'guide values': 'Specifications',
+            'Vehicle Order Guide trim overview': self.t('Trim overview'),
+            'Vehicle Order Guide model overview': self.t('Model overview'),
+            'grouped guide passage': self.t('Highlights'),
+            'trim comparison grouped passage': self.t('Trim comparison highlights'),
+            'comparison from guide': self.t('Trim comparison'),
+            'guide values': self.t('Specifications'),
             'from guide': '',
-            'identity from guide': 'Overview',
-            'values from guide': 'Values',
-            'reference from guide': 'Reference',
+            'identity from guide': self.t('Model overview') if self.language == 'fr' else 'Overview',
+            'values from guide': self.t('Specifications') if self.language == 'fr' else 'Values',
+            'reference from guide': self.t('GCWR reference') if self.language == 'fr' else 'Reference',
         }
         for old, new in replacements.items():
             text = text.replace(old, new)
@@ -202,12 +277,12 @@ class GuideTextCleaner:
         if trim is not None:
             fields.append(('Trim', trim.name))
         if category:
-            fields.append(('Category', category))
+            fields.append(('Category', self.t(category) if self.language == 'fr' else category))
         for label, value in extra_fields:
             label = normalize_text(label)
             if label in FIELD_DROP_LABELS:
                 continue
-            label = FIELD_RENAME.get(label, label)
+            label = self.t(FIELD_RENAME.get(label, label))
             value = self.clean_customer_text(value)
             if not value or self.is_code_only(value):
                 continue
@@ -228,7 +303,7 @@ class GuideTextCleaner:
             label = normalize_text(label)
             if label in FIELD_DROP_LABELS:
                 continue
-            label = FIELD_RENAME.get(label, label)
+            label = self.t(FIELD_RENAME.get(label, label))
             value = self.clean_customer_text(value)
             if not label or not value or self.is_code_only(value):
                 continue
@@ -243,7 +318,7 @@ class GuideTextCleaner:
             label = normalize_text(label)
             if label in FIELD_DROP_LABELS:
                 continue
-            label = FIELD_RENAME.get(label, label)
+            label = self.t(FIELD_RENAME.get(label, label))
             clean_items: List[str] = []
             seen_items = set()
             for item in items:
@@ -275,16 +350,16 @@ class GuideTextCleaner:
             if names:
                 clean_names = [self.clean_customer_text(name) for name in names if self.clean_customer_text(name)]
                 if clean_names:
-                    lines.append(f'{self.clean_customer_text(label)}: {", ".join(clean_names)}')
+                    lines.append(f'{self.clean_customer_text(self.translate_status_label(label))}: {", ".join(clean_names)}')
         return [line for line in lines if normalize_text(line)]
 
     def clean_availability_summary_for_trim(self, agg) -> str:
-        labels = [self.clean_customer_text(label) for (_raw, label), _contexts in agg.availability_contexts.items()]
+        labels = [self.clean_customer_text(self.translate_status_label(label)) for (_raw, label), _contexts in agg.availability_contexts.items()]
         labels = unique_preserve_order(labels)
         return '; '.join(labels)
 
     def clean_availability_lines_for_trim(self, agg) -> List[str]:
-        labels = [self.clean_customer_text(label) for (_raw, label), _contexts in agg.availability_contexts.items()]
+        labels = [self.clean_customer_text(self.translate_status_label(label)) for (_raw, label), _contexts in agg.availability_contexts.items()]
         return unique_preserve_order(labels)
 
     def clean_availability_summary_for_model(self, agg) -> str:
@@ -317,7 +392,7 @@ class GuideTextCleaner:
             statuses.append((raw_value, label_value))
         if not statuses:
             return False
-        return all(label == 'not available' or raw == '--' for raw, label in statuses)
+        return all(label in {'not available', 'non livrable'} or raw == '--' for raw, label in statuses)
 
     def clean_title_document(self, title: str, *body_parts: str) -> str:
         title = self.clean_heading_text(title)

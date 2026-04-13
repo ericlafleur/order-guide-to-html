@@ -153,8 +153,9 @@ class CorpusBuilder:
             matched_trims = all_trim_matches(data, group.model_code, *group.top_labels)
             matched_trim = matched_trims[0] if len(matched_trims) == 1 else None
             trim_slug = slugify(matched_trim.name) if matched_trim is not None else ''
-            base_name = f'config_{data.year}_{slugify(data.make)}_{slugify(data.model)}_powertrain_trailering_{slugify(group.model_code)}'
-            if trim_slug:
+            model_code_slug = slugify(group.model_code)
+            base_name = f'config_{data.year}_{slugify(data.make)}_{slugify(data.model)}_powertrain_trailering_{model_code_slug}'
+            if trim_slug and trim_slug not in model_code_slug:
                 base_name += f'_{trim_slug}'
             page_path = unique_output_path(output_dir, base_name + '.html', used_names)
             page_path.write_text(self.renderer.render_powertrain_trailering_group_page(data, group, trim=matched_trim), encoding='utf-8')
@@ -195,6 +196,7 @@ class CorpusBuilder:
             add_bound_record(bindings, record, collection=model_path, parent=model_path, parent_vehicle=model_path, parent_trims=[])
 
     def write_outputs(self, data, output_dir: Path) -> Dict[str, object]:
+        self.cleaner.set_language(getattr(data, 'language', 'en'))
         self.cleaner.load_glossary(getattr(data, 'glossary', {}))
         output_dir.mkdir(parents=True, exist_ok=True)
         used_names: set[str] = set()

@@ -5,6 +5,7 @@ from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Sequence, Tuple
 import html  # noqa: F401 — re-exported so callers can use base.html.escape
 import re
+import unicodedata
 
 
 FOOTNOTE_LINE_RE = re.compile(r"^\s*(\d+)\.\s*(.+?)\s*$")
@@ -17,12 +18,12 @@ CODE_IN_PARENS_RE = re.compile(r"\(([A-Z0-9]{2,6})\)")
 
 NON_ALNUM_RE = re.compile(r"[^a-z0-9]+", re.I)
 
-FILLER_TOKENS = {"Truck", "Trucks", "Cars", "Car", "SUV", "SUVs"}
+FILLER_TOKENS = {"Truck", "Trucks", "Cars", "Car", "SUV", "SUVs", "Camion", "Camions", "Voiture", "Voitures", "Auto", "Autos", "VUS"}
 
 def normalize_text(value: object) -> str:
     if value is None:
         return ""
-    text = str(value)
+    text = unicodedata.normalize('NFC', str(value))
     text = text.replace("\xa0", " ").replace("\r", "\n")
     text = re.sub(r"[ \t]+", " ", text)
     text = re.sub(r" *\n *", "\n", text)
@@ -170,8 +171,8 @@ STATUS_PRIORITY: Dict[str, int] = {
 # Manifest helper constants and small utilities
 
 MANIFEST_STANDARDISH_CODES: frozenset = frozenset({'S', '\u25a0', '\u25a1'})
-MANIFEST_DRIVE_TOKENS = ('2WD', '4WD', 'AWD', 'FWD', 'RWD')
-MANIFEST_BODY_STYLE_TOKENS = ('Crew Cab', 'Double Cab', 'Regular Cab')
+MANIFEST_DRIVE_TOKENS = ('2WD', '4WD', 'AWD', 'FWD', 'RWD', '2RM', '4RM')
+MANIFEST_BODY_STYLE_TOKENS = ('Crew Cab', 'Double Cab', 'Regular Cab', 'Cabine classique', 'Cabine double', 'Cabine multiplace', 'Coupe', 'Convertible', 'Coupé')
 
 
 def first_unique(values: Iterable[str]) -> Optional[str]:

@@ -55,11 +55,14 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         for sub_data in split_workbook_by_subfamily(data):
             clear_metadata_caches()
             builder = build_pipeline()
-            manifest = builder.write_outputs(sub_data, output_dir)
+            language = 'fr' if getattr(sub_data, 'language', 'en').lower().startswith('fr') else 'en'
+            language_output_dir = output_dir / language
+            manifest = builder.write_outputs(sub_data, language_output_dir)
             summary = {
                 'workbook': str(workbook_path),
                 'vehicle_name': sub_data.vehicle_name,
-                'output_dir': str(output_dir),
+                'language': language,
+                'output_dir': str(language_output_dir),
                 'file_count': len(manifest.get('files', [])),
             }
     return 0

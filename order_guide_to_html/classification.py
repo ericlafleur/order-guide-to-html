@@ -83,7 +83,7 @@ def infer_feature_category(*texts: str) -> str:
     if not blob:
         return 'Other guide content'
 
-    if 'colour and trim' in blob or 'color and trim' in blob or ' paint' in blob or blob.startswith('paint ') or 'decor level' in blob:
+    if 'colour and trim' in blob or 'color and trim' in blob or 'couleurs et garnitures' in blob or 'couleur' in blob or 'garniture' in blob or ' peinture' in blob or blob.startswith('paint ') or blob.startswith('peinture ') or 'decor level' in blob or 'niveau décor' in blob:
         return 'Colour and trim'
 
     safety_keywords = [
@@ -91,7 +91,11 @@ def infer_feature_category(*texts: str) -> str:
         'hd surround vision', 'lane ', 'pedestrian', 'parking assist', 'rear cross traffic', 'rear pedestrian',
         'safety', 'seat belt', 'stability control', 'traffic sign', 'traction control', 'warning', 'alert',
         'camera', 'restraint', 'teen driver', 'sensing system', 'automatic emergency braking', 'brake assist',
-        'reverse automatic braking', 'tire pressure monitor', 'rear park assist'
+        'reverse automatic braking', 'tire pressure monitor', 'rear park assist',
+        'sécurité', 'aide à la conduite', 'aide au conducteur', "freinage d'urgence", 'détection des piétons',
+        'cyclistes', 'maintien sur la voie', 'sortie de voie', 'prévention de collision', 'vision périphérique',
+        'panneaux de signalisation', 'alerte', 'avertisseur', 'stationnement', 'circulation transversale',
+        'angles morts', 'ceinture', 'freinage automatique', "piétons à l'arrière", 'caméra', 'régulateur de vitesse'
     ]
     if any(keyword in blob for keyword in safety_keywords):
         return 'Safety and driver assistance'
@@ -100,12 +104,15 @@ def infer_feature_category(*texts: str) -> str:
         'android auto', 'apple carplay', 'audio system', 'bluetooth', 'display', 'google built-in',
         'head-up display', 'infotainment', 'mychevrolet', 'navigation', 'onstar', 'phone', 'radio',
         'remote start', 'screen', 'siriusxm', 'smartphone', 'speaker', 'usb', 'wi-fi', 'wifi',
-        'wireless', 'charging pad', 'charging-only', 'device charging', 'driver information center'
+        'wireless', 'charging pad', 'charging-only', 'device charging', 'driver information center',
+        'technologie', 'connectivité', 'écran', 'affichage', 'affichage tête haute', 'recharge sans fil',
+        'téléphone', 'audio', 'haut-parleur', 'démarreur à distance', "centre d'information du conducteur",
+        'télécommande universelle', 'navigation', 'radio'
     ]
     if any(keyword in blob for keyword in technology_keywords):
         return 'Technology and connectivity'
 
-    wheels_keywords = ['wheel', 'wheels', 'tire', 'tires', 'spare tire', 'spare wheel', 'lug nut', 'wheel lock']
+    wheels_keywords = ['wheel', 'wheels', 'tire', 'tires', 'spare tire', 'spare wheel', 'lug nut', 'wheel lock', 'roue', 'roues', 'pneu', 'pneus', 'écrou']
     if any(keyword in blob for keyword in wheels_keywords):
         return 'Wheels and tires'
 
@@ -113,7 +120,8 @@ def infer_feature_category(*texts: str) -> str:
         'all-wheel drive', 'axle', 'battery', 'brakes', 'charging', 'charger', 'drive unit', 'drivetrain',
         'electric drive', 'engine', 'evot? ', 'fuel', 'gvwr', 'horsepower', 'motor', 'payload', 'performance',
         'powertrain', 'propulsion', 'range', 'rear axle', 'suspension', 'torque', 'tow', 'trailer',
-        'trailering', 'transmission'
+        'trailering', 'transmission', 'mécanique', 'moteur', 'batterie', 'charge', 'pont', 'boîte de vitesses',
+        'remorquage', 'pnbv', 'couple', 'autonomie', 'groupe motopropulseur', 'essieu', 'carburant'
     ]
     if any(keyword in blob for keyword in mechanical_keywords):
         return 'Mechanical and performance'
@@ -121,7 +129,9 @@ def infer_feature_category(*texts: str) -> str:
     exterior_keywords = [
         'bed', 'box', 'bumper', 'cargo', 'cross rails', 'door', 'emblem', 'fascia', 'glass', 'grille',
         'headlamp', 'hood', 'lamp', 'liftgate', 'license plate', 'mirror, outside', 'nameplate', 'roof',
-        'running board', 'splash guard', 'tailgate', 'window', 'wiper', 'privacy glass', 'deep tint'
+        'running board', 'splash guard', 'tailgate', 'window', 'wiper', 'privacy glass', 'deep tint',
+        'extérieur', 'caisse', 'pare-chocs', 'calandre', 'phare', 'feu', 'hayon', 'rétroviseur extérieur',
+        'toit', 'marchepied', 'glace', 'essuie-glace', 'porte', 'brancards de toit'
     ]
     if any(keyword in blob for keyword in exterior_keywords):
         return 'Exterior and utility'
@@ -129,22 +139,24 @@ def infer_feature_category(*texts: str) -> str:
     interior_keywords = [
         'air conditioning', 'ambient', 'armrest', 'carpet', 'climate', 'console', 'cup holder', 'driver seat',
         'floor mat', 'headrest', 'heated seat', 'inside rearview', 'instrument panel', 'lumbar', 'rear seat',
-        'seat adjuster', 'seat trim', 'seating', 'seats', 'steering wheel', 'sun visor', 'visor', 'interior'
+        'seat adjuster', 'seat trim', 'seating', 'seats', 'steering wheel', 'sun visor', 'visor', 'interior',
+        'intérieur', 'siège', 'sièges', 'garniture de sièges', 'garniture', 'volant', 'climatisation', 'console',
+        'tapis', 'chauffant', 'ventilé', 'rétroviseur intérieur', 'appuie-tête', 'soutien lombaire'
     ]
     if any(keyword in blob for keyword in interior_keywords):
         return 'Interior and comfort'
 
-    package_keywords = ['package', 'equipment group', 'lpo', 'accessory', 'dealer-installed', 'option']
+    package_keywords = ['package', 'equipment group', 'lpo', 'accessory', 'dealer-installed', 'option', 'groupe', 'groupes', 'équipement', 'opl', 'accessoire']
     if any(keyword in blob for keyword in package_keywords):
         return 'Packages and options'
 
-    if 'interior' in blob:
+    if 'interior' in blob or 'intérieur' in blob:
         return 'Interior and comfort'
-    if 'exterior' in blob:
+    if 'exterior' in blob or 'extérieur' in blob:
         return 'Exterior and utility'
-    if 'mechanical' in blob:
+    if 'mechanical' in blob or 'mécanique' in blob:
         return 'Mechanical and performance'
-    if 'wheels' in blob:
+    if 'wheels' in blob or 'roues' in blob:
         return 'Wheels and tires'
     if 'onstar' in blob or 'siriusxm' in blob:
         return 'Technology and connectivity'

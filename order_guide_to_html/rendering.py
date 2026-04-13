@@ -30,12 +30,12 @@ class HtmlRenderer:
         if trim is None:
             fields = [('Vehicle', data.vehicle_name)]
             trim_names = [normalize_text(t.name) for t in data.trim_defs if normalize_text(t.name)]
-            bullets = [('Available trims', unique_preserve_order(trim_names))] if trim_names else []
-            title = f'{entity} | Model overview'
+            bullets = [(self.cleaner.t('Available trims'), unique_preserve_order(trim_names))] if trim_names else []
+            title = f"{entity} | {self.cleaner.t('Model overview')}"
         else:
             fields = [('Vehicle', data.vehicle_name), ('Trim', trim.name)]
             bullets = []
-            title = f'{entity} | Trim overview'
+            title = f"{entity} | {self.cleaner.t('Trim overview')}"
         return '<section class="vehicle-identity">' + self.cleaner.cleaned_render_article(title, fields, bullets) + '</section>'
 
     def render_trim_lineup_section(self, data) -> str:
@@ -43,9 +43,9 @@ class HtmlRenderer:
         if not trim_names:
             return ''
         article = self.cleaner.cleaned_render_article(
-            self.cleaner.article_heading(data.vehicle_name, 'Trim lineup'),
+            self.cleaner.article_heading(data.vehicle_name, self.cleaner.t('Trim lineup')),
             self.cleaner.filtered_identity_fields(data, category='Other guide content'),
-            [('Trim names from guide', unique_preserve_order(trim_names))],
+            [(self.cleaner.t('Available trims'), unique_preserve_order(trim_names))],
         )
         return '<section class="trim-lineup">' + article + '</section>'
 
@@ -67,11 +67,12 @@ class HtmlRenderer:
         parts = [f'<section class="{section_class}"><h2>{html.escape(entity)} | {html.escape(section_heading)}</h2>']
         for category in sorted(category_groups.keys(), key=sort_category_key):
             items = category_groups[category]
+            display_category = self.cleaner.t(category) if self.cleaner.language == 'fr' else category
             lines = [self.cleaner.clean_model_group_line(item) if model_mode else self.cleaner.clean_trim_group_line(item) for item in items]
             for idx, line_chunk in enumerate(chunk_feature_items(lines), start=1):
-                title = f'{category} | {title_suffix}'
+                title = f'{display_category} | {title_suffix}'
                 if idx > 1:
-                    title += f' | part {idx}'
+                    title += f' | {self.cleaner.t("part")} {idx}'
                 parts.append(
                     self.cleaner.cleaned_render_article(
                         self.cleaner.article_heading(entity, title),
@@ -101,9 +102,9 @@ class HtmlRenderer:
                     trim=trim,
                     model_mode=False,
                     section_class='grouped-feature-passages',
-                    section_heading='Feature highlights',
-                    bullet_label='Feature highlights',
-                    title_suffix='Highlights',
+                    section_heading=self.cleaner.t('Feature highlights'),
+                    bullet_label=self.cleaner.t('Feature highlights'),
+                    title_suffix=self.cleaner.t('Highlights'),
                 ),
                 self.render_feature_section(
                     data,
@@ -112,9 +113,9 @@ class HtmlRenderer:
                     trim=trim,
                     model_mode=False,
                     section_class='unavailable-feature-passages',
-                    section_heading='Features explicitly not offered on this trim',
-                    bullet_label='Unavailable features',
-                    title_suffix='Unavailable features',
+                    section_heading=self.cleaner.t('Features explicitly not offered on this trim'),
+                    bullet_label=self.cleaner.t('Unavailable features'),
+                    title_suffix=self.cleaner.t('Unavailable features'),
                 ),
             ])
 
@@ -129,9 +130,9 @@ class HtmlRenderer:
             trim=trim,
             model_mode=model_mode,
             section_class='grouped-feature-passages',
-            section_heading='Feature highlights',
-            bullet_label='Feature highlights',
-            title_suffix='Highlights',
+            section_heading=self.cleaner.t('Feature highlights'),
+            bullet_label=self.cleaner.t('Feature highlights'),
+            title_suffix=self.cleaner.t('Highlights'),
         )
 
     def clean_model_colour_group_lines(self, data) -> List[str]:
@@ -139,10 +140,10 @@ class HtmlRenderer:
         for sheet in data.color_sheets:
             for row in sheet.interior_rows:
                 colors = [self.cleaner.clean_customer_text(color) for color, code in row.colors.items() if normalize_text(code) and normalize_text(code) != '--']
-                parts = ['Interior trim', row.decor_level, row.seat_type, row.seat_trim]
+                parts = [self.cleaner.t('Colour and trim'), row.decor_level, row.seat_type, row.seat_trim]
                 summary = ' | '.join(self.cleaner.clean_customer_text(x) for x in parts if self.cleaner.clean_customer_text(x))
                 if colors:
-                    summary += ' — Available colours: ' + '; '.join(unique_preserve_order(colors))
+                    summary += (' — Couleurs offertes: ' if self.cleaner.language == 'fr' else ' — Available colours: ') + '; '.join(unique_preserve_order(colors))
                 lines.append(summary)
             for row in sheet.exterior_rows:
                 title_value, _title_note_ids = parse_value_and_footnote_ids(row.title)
@@ -153,10 +154,10 @@ class HtmlRenderer:
                     if not color or not status_label:
                         continue
                     if status_code == '--':
-                        availability_lines.append(f'{color}: Not available')
+                        availability_lines.append(f"{color}: {'Non livrable' if self.cleaner.language == 'fr' else 'Not available'}")
                     else:
-                        availability_lines.append(f'{color}: {self.cleaner.clean_customer_text(status_label)}')
-                summary = ' | '.join(self.cleaner.clean_customer_text(x) for x in ['Exterior paint', title_value or row.title] if self.cleaner.clean_customer_text(x))
+                        availability_lines.append(f"{color}: {self.cleaner.clean_customer_text(self.cleaner.translate_status_label(status_label))}")
+                summary = ' | '.join(self.cleaner.clean_customer_text(x) for x in [self.cleaner.t('Colour and trim'), title_value or row.title] if self.cleaner.clean_customer_text(x))
                 if availability_lines:
                     summary += ' — ' + '; '.join(unique_preserve_order(availability_lines))
                 lines.append(summary)
@@ -167,9 +168,9 @@ class HtmlRenderer:
         lines: List[str] = []
         for _sheet, row, color_lines in ctx['interior_items']:
             colors = [self.cleaner.clean_customer_text(line.split(':', 1)[0]) for line in color_lines if self.cleaner.clean_customer_text(line.split(':', 1)[0])]
-            summary = ' | '.join(self.cleaner.clean_customer_text(x) for x in ['Interior trim', row.decor_level, row.seat_type, row.seat_trim] if self.cleaner.clean_customer_text(x))
+            summary = ' | '.join(self.cleaner.clean_customer_text(x) for x in [self.cleaner.t('Colour and trim'), row.decor_level, row.seat_type, row.seat_trim] if self.cleaner.clean_customer_text(x))
             if colors:
-                summary += ' — Available colours: ' + '; '.join(unique_preserve_order(colors))
+                summary += (' — Couleurs offertes: ' if self.cleaner.language == 'fr' else ' — Available colours: ') + '; '.join(unique_preserve_order(colors))
             lines.append(summary)
         for sheet, row, availability_lines, _note_texts in ctx['exterior_items']:
             title_value, _title_note_ids = parse_value_and_footnote_ids(row.title)
@@ -181,10 +182,10 @@ class HtmlRenderer:
                 if not color or not status_label:
                     continue
                 if status_code == '--':
-                    clean_lines.append(f'{color}: Not available')
+                    clean_lines.append(f"{color}: {'Non livrable' if self.cleaner.language == 'fr' else 'Not available'}")
                 else:
-                    clean_lines.append(f'{color}: {self.cleaner.clean_customer_text(status_label)}')
-            summary = ' | '.join(self.cleaner.clean_customer_text(x) for x in ['Exterior paint', title_value or row.title] if self.cleaner.clean_customer_text(x))
+                    clean_lines.append(f"{color}: {self.cleaner.clean_customer_text(self.cleaner.translate_status_label(status_label))}")
+            summary = ' | '.join(self.cleaner.clean_customer_text(x) for x in [self.cleaner.t('Colour and trim'), title_value or row.title] if self.cleaner.clean_customer_text(x))
             if clean_lines:
                 summary += ' — ' + '; '.join(unique_preserve_order(clean_lines))
             lines.append(summary)
@@ -197,14 +198,15 @@ class HtmlRenderer:
         lines = self.clean_trim_colour_group_lines(data, trim) if trim is not None else self.clean_model_colour_group_lines(data)
         if not lines:
             return ''
-        parts = [f'<section class="grouped-colour-passages"><h2>{html.escape(entity)} | Colour and trim</h2>']
+        colour_and_trim_label = self.cleaner.t('Colour and trim')
+        parts = [f'<section class="grouped-colour-passages"><h2>{html.escape(entity)} | {html.escape(colour_and_trim_label)}</h2>']
         for idx, chunk in enumerate(chunk_feature_items(lines), start=1):
-            chunk_title = self.cleaner.article_heading(entity, 'Colour and trim') if idx == 1 else self.cleaner.article_heading(entity, f'Colour and trim | part {idx}')
+            chunk_title = self.cleaner.article_heading(entity, self.cleaner.t('Colour and trim')) if idx == 1 else self.cleaner.article_heading(entity, f"{self.cleaner.t('Colour and trim')} | {self.cleaner.t('part')} {idx}")
             parts.append(
                 self.cleaner.cleaned_render_article(
                     chunk_title,
                     self.cleaner.filtered_identity_fields(data, trim, category=DOMAIN_COLOR),
-                    [('Colour and trim combinations', chunk)],
+                    [(self.cleaner.t('Colour and trim combinations'), chunk)],
                 )
             )
         parts.append('</section>')
@@ -213,7 +215,7 @@ class HtmlRenderer:
     def render_model_overview_page(self, data) -> str:
         entity = data.vehicle_name
         return self.cleaner.clean_title_document(
-            f'{entity} | Vehicle Order Guide model overview',
+            f"{entity} | {self.cleaner.t('Model overview')}",
             self.render_page_identity_section(data),
             self.render_trim_lineup_section(data),
             self.render_grouped_feature_sections(data, self.aggregation.aggregate_model_features(data), model_mode=True),
@@ -223,7 +225,7 @@ class HtmlRenderer:
     def render_trim_overview_page(self, data, trim) -> str:
         entity = self.cleaner.clean_trim_heading(data, trim)
         return self.cleaner.clean_title_document(
-            f'{entity} | Vehicle Order Guide trim overview',
+            f"{entity} | {self.cleaner.t('Trim overview')}",
             self.render_page_identity_section(data, trim=trim),
             self.render_grouped_feature_sections(data, self.aggregation.aggregate_trim_features(data, trim), trim=trim, model_mode=False),
             self.render_grouped_colour_summary(data, trim=trim),
@@ -232,32 +234,34 @@ class HtmlRenderer:
     def render_comparison_domain_page(self, data, category: str, features: Sequence[ModelFeatureAggregate]) -> str:
         entity = data.vehicle_name
         lines = [self.cleaner.clean_model_group_line(feature) for feature in features]
-        parts = [f'<section class="comparison-domain"><h2>{html.escape(entity)} | {html.escape(category)} trim comparison from guide</h2>']
+        category_label = self.cleaner.t(category) if self.cleaner.language == 'fr' else category
+        trim_comparison_label = self.cleaner.t('Trim comparison')
+        parts = [f'<section class="comparison-domain"><h2>{html.escape(entity)} | {html.escape(category_label)} {html.escape(trim_comparison_label)}</h2>']
         for idx, chunk in enumerate(chunk_feature_items(lines), start=1):
-            title = self.cleaner.article_heading(entity, f'{category} | trim comparison grouped passage')
+            title = self.cleaner.article_heading(entity, f"{self.cleaner.t(category) if self.cleaner.language == 'fr' else category} | {self.cleaner.t('Trim comparison highlights')}")
             if idx > 1:
-                title = self.cleaner.article_heading(entity, f'{category} | trim comparison grouped passage | part {idx}')
+                title = self.cleaner.article_heading(entity, f"{self.cleaner.t(category) if self.cleaner.language == 'fr' else category} | {self.cleaner.t('Trim comparison highlights')} | {self.cleaner.t('part')} {idx}")
             parts.append(
                 self.cleaner.cleaned_render_article(
                     title,
                     self.cleaner.filtered_identity_fields(
                         data,
                         category=category,
-                        extra_fields=[('Comparison axis', 'Trim')],
+                        extra_fields=[(self.cleaner.t('Comparison axis'), self.cleaner.t('Trim'))],
                     ),
-                    [('Comparison lines from guide', chunk)],
+                    [(self.cleaner.t('Comparison lines from guide'), chunk)],
                 )
             )
         parts.append('</section>')
-        return self.cleaner.clean_title_document(f'{entity} | {category} trim comparison', ''.join(parts))
+        return self.cleaner.clean_title_document(f"{entity} | {self.cleaner.t(category) if self.cleaner.language == 'fr' else category} {self.cleaner.t('Trim comparison')}", ''.join(parts))
 
     def render_spec_group_page(self, data, group: SpecGroupDoc, trim=None) -> str:
         entity = self.cleaner.clean_trim_heading(data, trim) if trim is not None else data.vehicle_name
         parts = [
             '<section class="configuration-identity">'
             + self.cleaner.cleaned_render_article(
-                self.cleaner.article_heading(entity, 'Configuration identity'),
-                self.cleaner.filtered_identity_fields(data, trim, category='Dimensions and specifications'),
+                self.cleaner.article_heading(entity, self.cleaner.t('Configuration identity')),
+                self.cleaner.filtered_identity_fields(data, trim, category=self.cleaner.t('Dimensions and specifications') if self.cleaner.language == 'fr' else 'Dimensions and specifications'),
             )
             + '</section>'
         ]
@@ -270,7 +274,7 @@ class HtmlRenderer:
                     title_bits = []
                     if normalize_text(section_name) and normalize_text(section_name).lower() != 'data':
                         title_bits.append(section_name)
-                    title_bits.append('Specifications')
+                    title_bits.append(self.cleaner.t('Specifications'))
                     title = self.cleaner.article_heading(entity, ' | '.join(title_bits))
                     if idx > 1:
                         title = self.cleaner.article_heading(entity, ' | '.join(title_bits + [f'part {idx}']))
@@ -278,14 +282,14 @@ class HtmlRenderer:
                         '<section class="configuration-values">'
                         + self.cleaner.cleaned_render_article(
                             title,
-                            self.cleaner.filtered_identity_fields(data, trim, category='Dimensions and specifications'),
-                            [('Specifications', chunk)],
+                            self.cleaner.filtered_identity_fields(data, trim, category=self.cleaner.t('Dimensions and specifications') if self.cleaner.language == 'fr' else 'Dimensions and specifications'),
+                            [(self.cleaner.t('Specifications'), chunk)],
                         )
                         + '</section>'
                     )
         title_context = group.header or group.top_label
         return self.cleaner.clean_title_document(
-            self.cleaner.article_heading(entity, f'Configuration dimensions and specifications | {title_context}'),
+            self.cleaner.article_heading(entity, f"{self.cleaner.t('Dimensions and specifications')} | {title_context}"),
             ''.join(parts),
         )
 
@@ -295,12 +299,12 @@ class HtmlRenderer:
         parts = [
             '<section class="configuration-identity">'
             + self.cleaner.cleaned_render_article(
-                self.cleaner.article_heading(entity, 'Configuration identity'),
+                self.cleaner.article_heading(entity, self.cleaner.t('Configuration identity')),
                 self.cleaner.filtered_identity_fields(
                     data,
                     trim,
-                    category='Powertrain and trailering',
-                    extra_fields=[('Engines from guide', ' ; '.join(engines))] if engines else [],
+                    category=self.cleaner.t('Powertrain and trailering') if self.cleaner.language == 'fr' else 'Powertrain and trailering',
+                    extra_fields=[(self.cleaner.t('Engines'), ' ; '.join(engines))] if engines else [],
                 ),
             )
             + '</section>'
@@ -308,42 +312,42 @@ class HtmlRenderer:
         engine_lines: List[str] = []
         for entry in group.engine_entries:
             for item in entry.items:
-                line = f'Engine {item.engine or entry.engine if hasattr(item, "engine") else entry.engine} | {item.category}: {item.status_label or item.raw_status}'
+                line = f"{('Moteur' if self.cleaner.language == 'fr' else 'Engine')} {item.engine or entry.engine if hasattr(item, 'engine') else entry.engine} | {item.category}: {self.cleaner.translate_status_label(item.status_label) or item.raw_status}"
                 if item.notes:
-                    line += f" | Notes: {' ; '.join(unique_preserve_order(item.notes))}"
+                    line += f" | {self.cleaner.t('Notes')}: {' ; '.join(unique_preserve_order(item.notes))}"
                 engine_lines.append(line)
         engine_lines = unique_preserve_order(engine_lines)
         if engine_lines:
             for idx, chunk in enumerate(chunk_list(engine_lines, max_words=125, max_items=10), start=1):
-                title = self.cleaner.article_heading(entity, 'Powertrain, axle and GVWR')
+                title = self.cleaner.article_heading(entity, self.cleaner.t('Powertrain, axle and GVWR'))
                 if idx > 1:
-                    title = self.cleaner.article_heading(entity, f'Powertrain, axle and GVWR | part {idx}')
+                    title = self.cleaner.article_heading(entity, f"{self.cleaner.t('Powertrain, axle and GVWR')} | {self.cleaner.t('part')} {idx}")
                 parts.append(
                     '<section class="powertrain-values">'
                     + self.cleaner.cleaned_render_article(
                         title,
-                        self.cleaner.filtered_identity_fields(data, trim, category='Powertrain and trailering'),
-                        [('Specifications', chunk)],
+                        self.cleaner.filtered_identity_fields(data, trim, category=self.cleaner.t('Powertrain and trailering') if self.cleaner.language == 'fr' else 'Powertrain and trailering'),
+                        [(self.cleaner.t('Specifications'), chunk)],
                     )
                     + '</section>'
                 )
         trailering_lines: List[str] = []
         rating_types: List[str] = []
         for record in group.trailering_records:
-            line = f'{record.rating_type} | Engine {record.engine} | Axle ratio {record.axle_ratio} | Maximum trailer weight {record.max_trailer_weight}'
+            line = f"{record.rating_type} | {('Moteur' if self.cleaner.language == 'fr' else 'Engine')} {record.engine} | {'Rapport de pont' if self.cleaner.language == 'fr' else 'Axle ratio'} {record.axle_ratio} | {'Poids maximal de la remorque' if self.cleaner.language == 'fr' else 'Maximum trailer weight'} {record.max_trailer_weight}"
             if normalize_text(record.note_text):
-                line += f' | Note heading: {record.note_text}'
+                line += f" | {'Note' if self.cleaner.language == 'fr' else 'Note heading'}: {record.note_text}"
             if record.footnotes:
-                line += f" | Notes: {' ; '.join(unique_preserve_order(record.footnotes))}"
+                line += f" | {self.cleaner.t('Notes')}: {' ; '.join(unique_preserve_order(record.footnotes))}"
             trailering_lines.append(line)
             rating_types.append(record.rating_type)
         trailering_lines = unique_preserve_order(trailering_lines)
         if trailering_lines:
             rating_text = ' ; '.join(unique_preserve_order(rating_types))
             for idx, chunk in enumerate(chunk_list(trailering_lines, max_words=125, max_items=8), start=1):
-                title = self.cleaner.article_heading(entity, 'Trailering values')
+                title = self.cleaner.article_heading(entity, self.cleaner.t('Trailering values'))
                 if idx > 1:
-                    title = self.cleaner.article_heading(entity, f'Trailering values | part {idx}')
+                    title = self.cleaner.article_heading(entity, f"{self.cleaner.t('Trailering values')} | {self.cleaner.t('part')} {idx}")
                 parts.append(
                     '<section class="trailering-values">'
                     + self.cleaner.cleaned_render_article(
@@ -351,15 +355,15 @@ class HtmlRenderer:
                         self.cleaner.filtered_identity_fields(
                             data,
                             trim,
-                            category='Powertrain and trailering',
-                            extra_fields=[('Trailering rating types', rating_text)] if rating_text else [],
+                            category=self.cleaner.t('Powertrain and trailering') if self.cleaner.language == 'fr' else 'Powertrain and trailering',
+                            extra_fields=[(self.cleaner.t('Trailering ratings'), rating_text)] if rating_text else [],
                         ),
-                        [('Specifications', chunk)],
+                        [(self.cleaner.t('Specifications'), chunk)],
                     )
                     + '</section>'
                 )
         return self.cleaner.clean_title_document(
-            self.cleaner.article_heading(entity, f'Configuration powertrain and trailering | {group.model_code}'),
+            self.cleaner.article_heading(entity, f"{self.cleaner.t('Powertrain and trailering')} | {group.model_code}"),
             ''.join(parts),
         )
 
@@ -368,28 +372,28 @@ class HtmlRenderer:
         parts = [
             '<section class="gcwr-identity">'
             + self.cleaner.cleaned_render_article(
-                self.cleaner.article_heading(entity, 'GCWR identity'),
+                self.cleaner.article_heading(entity, self.cleaner.t('GCWR reference')),
                 self.cleaner.filtered_identity_fields(data, category='Trailering and GCWR'),
             )
             + '</section>'
         ]
         lines: List[str] = []
         for record in records:
-            line = f'Engine {record.engine} | GCWR {record.gcwr} | Axle ratio {record.axle_ratio}'
+            line = f"{('Moteur' if self.cleaner.language == 'fr' else 'Engine')} {record.engine} | GCWR {record.gcwr} | {'Rapport de pont' if self.cleaner.language == 'fr' else 'Axle ratio'} {record.axle_ratio}"
             if record.footnotes:
-                line += f" | Notes: {' ; '.join(unique_preserve_order(record.footnotes))}"
+                line += f" | {self.cleaner.t('Notes')}: {' ; '.join(unique_preserve_order(record.footnotes))}"
             lines.append(line)
         for idx, chunk in enumerate(chunk_list(unique_preserve_order(lines), max_words=125, max_items=10), start=1):
-            title = self.cleaner.article_heading(entity, 'GCWR values')
+            title = self.cleaner.article_heading(entity, self.cleaner.t('GCWR values'))
             if idx > 1:
-                title = self.cleaner.article_heading(entity, f'GCWR values | part {idx}')
+                title = self.cleaner.article_heading(entity, f"{self.cleaner.t('GCWR values')} | {self.cleaner.t('part')} {idx}")
             parts.append(
                 '<section class="gcwr-values">'
                 + self.cleaner.cleaned_render_article(
                     title,
                     self.cleaner.filtered_identity_fields(data, category='Trailering and GCWR'),
-                    [('Specifications', chunk)],
+                    [(self.cleaner.t('Specifications'), chunk)],
                 )
                 + '</section>'
             )
-        return self.cleaner.clean_title_document(self.cleaner.article_heading(entity, 'GCWR reference'), ''.join(parts))
+        return self.cleaner.clean_title_document(self.cleaner.article_heading(entity, self.cleaner.t('GCWR reference')), ''.join(parts))

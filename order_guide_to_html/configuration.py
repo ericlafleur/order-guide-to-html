@@ -177,17 +177,17 @@ def section_names_for_column(column: SpecColumn) -> List[str]:
 
 def spec_column_engine_value(column: SpecColumn) -> Optional[str]:
     values = (
-        find_cell_values_by_label_prefix(column, ['Engine', 'Electric drive unit', 'Electric drive', 'Drive unit']) +
-        find_cell_values_by_label_contains(column, ['engine', 'electric drive', 'drive unit'])
+        find_cell_values_by_label_prefix(column, ['Engine', 'Electric drive unit', 'Electric drive', 'Drive unit', 'Moteur', "Unité d'entraînement électrique"]) +
+        find_cell_values_by_label_contains(column, ['engine', 'electric drive', 'drive unit', 'moteur', 'entraînement électrique'])
     )
     return first_unique(values)
 
 def spec_column_fuel_value(column: SpecColumn) -> Optional[str]:
-    values = find_cell_values_by_label_contains(column, ['fuel'])
+    values = find_cell_values_by_label_contains(column, ['fuel', 'carburant'])
     return first_unique(values)
 
 def spec_column_drivetrain_value(column: SpecColumn) -> Optional[str]:
-    values = find_cell_values_by_label_contains(column, ['drive', 'drivetrain', 'propulsion'])
+    values = find_cell_values_by_label_contains(column, ['drive', 'drivetrain', 'propulsion', 'motricité', 'transmission'])
     choice = first_unique(values)
     if choice:
         return choice
@@ -198,7 +198,7 @@ def spec_column_drivetrain_value(column: SpecColumn) -> Optional[str]:
     return None
 
 def spec_column_seating_value(column: SpecColumn) -> Optional[str]:
-    return first_unique(find_cell_values_by_label_contains(column, ['seating capacity']))
+    return first_unique(find_cell_values_by_label_contains(column, ['seating capacity', 'nombre de places', 'places assises']))
 
 def trim_drivetrains(data: WorkbookData, trim: TrimDef) -> List[str]:
     """Return all drivetrain values applicable to a trim.

@@ -5,6 +5,7 @@ from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 import openpyxl
 import re
+import unicodedata
 
 from .utils import CODE_IN_PARENS_RE, FILLER_TOKENS, FOOTNOTE_LINE_RE, STATUS_LABELS, TRAILING_DIGITS_RE, normalize_text, unique_preserve_order
 from .models import ColorExteriorRow, ColorInteriorRow, ColorSheet, EngineAxleEntry, EngineAxleItem, GCWRRecord, MatrixRow, MatrixSheet, SpecCell, SpecColumn, TraileringRecord, TrimDef, WorkbookData
@@ -14,21 +15,57 @@ MODEL_CODE_LINE_RE = re.compile(r'^[0-9][A-Z0-9]{4,6}$')
 GENERIC_MATRIX_TOP_LABELS = {
     'recommended',
     'custom interior trim and seat combinations',
+    'recommandé',
+    'combinaisons personnalisées de garnitures intérieures et de sièges',
 }
+
+FRENCH_HINTS = (
+    'camion ', 'voiture ', 'équipement de série', 'groupes d’équipements', "groupes d'équipements",
+    'intérieur', 'extérieur', 'mécanique', 'couleurs et garnitures', 'fiche technique',
+    'moteur ponts', 'équipements de remorquage', 'toutes',
+)
+
+COLOUR_SHEET_PREFIXES = ('Colour and Trim', 'Color and Trim', 'Couleurs et garnitures')
+SPEC_SHEET_PREFIXES = ('Dimensions', 'Specs', 'Fiche technique')
+ENGINE_AXLE_SHEET_PREFIXES = ('Engine Axles', 'Moteur Ponts')
+TRAILERING_SHEET_PREFIXES = ('Trailering Specs', 'Équipements de remorquage')
+GLOSSARY_SHEET_NAMES = {'All', 'Toutes'}
+INTERIOR_HEADER_LABELS = {'Decor Level', 'Niveau décor'}
+EXTERIOR_HEADER_LABELS = {'Exterior Solid Paint', 'Extérieur La peinture solide'}
+SPEC_SECTION_MARKERS = {'Specifications', 'Capacities', 'Fiche technique', 'Capacités'}
+SPEC_NOTE_HINTS = ('dimensions are', 'all dimensions', 'les dimensions sont exprimées')
+
+
+def _starts_with_any(text: str, prefixes) -> bool:
+    normalized = normalize_text(text)
+    return any(normalized.startswith(prefix) for prefix in prefixes)
+
+
+def detect_workbook_language(path: Path, sheet_names: List[str]) -> str:
+    blob = ' | '.join([normalize_text(path.stem)] + [normalize_text(name) for name in sheet_names]).lower()
+    return 'fr' if any(hint in blob for hint in FRENCH_HINTS) else 'en'
 
 
 def parse_filename_metadata(path: Path) -> Tuple[str, str, str, str]:
-    stem = path.stem
+    stem = unicodedata.normalize('NFC', path.stem)
     stem = re.sub(r"\s+Export$", "", stem, flags=re.I)
-    stem = re.sub(r"\s+(Retail and Fleet|Retail|Fleet)$", "", stem, flags=re.I)
+    stem = re.sub(r"\s+(Retail and Fleet|Retail|Fleet|de détail et pour parc|de detail et pour parc)$", "", stem, flags=re.I)
     parts = stem.split()
     if not parts or not re.fullmatch(r"\d{4}", parts[0]):
         raise ValueError(f"Cannot determine year from filename: {path.name}")
     year = parts[0]
-    if len(parts) < 3:
+    tail = parts[1:]
+    if len(tail) < 2:
         raise ValueError(f"Cannot determine make/model from filename: {path.name}")
-    make = parts[1]
-    model_tokens = [p for p in parts[2:] if p not in FILLER_TOKENS]
+
+    if tail[0] in FILLER_TOKENS and len(tail) >= 2:
+        make = tail[1]
+        model_tokens = tail[2:]
+    else:
+        make = tail[0]
+        model_tokens = tail[1:]
+
+    model_tokens = [p for p in model_tokens if p not in FILLER_TOKENS]
     if not model_tokens:
         raise ValueError(f"Cannot determine model from filename: {path.name}")
     model = " ".join(model_tokens)
@@ -234,17 +271,17 @@ def parse_color_sheet(ws) -> ColorSheet:
                     if line.startswith("•"):
                         bullet_notes.append(normalize_text(line.lstrip("•").strip()))
 
-        if first == "Decor Level":
+        if first in INTERIOR_HEADER_LABELS:
             color_headers = [normalize_text(ws.cell(r, c).value).split("\n")[0] for c in range(5, ws.max_column + 1)]
             rr = r + 1
             while rr <= ws.max_row:
                 values = [normalize_text(ws.cell(rr, c).value) for c in range(1, ws.max_column + 1)]
-                if values[0] == "Exterior Solid Paint":
+                if values[0] in EXTERIOR_HEADER_LABELS:
                     break
                 if not any(values):
                     rr += 1
                     continue
-                if values[0] and values[0] != "Decor Level":
+                if values[0] and values[0] not in INTERIOR_HEADER_LABELS:
                     colors = {
                         color_headers[i]: values[4 + i]
                         for i in range(len(color_headers))
@@ -261,7 +298,7 @@ def parse_color_sheet(ws) -> ColorSheet:
                     )
                 rr += 1
 
-        if first == "Exterior Solid Paint":
+        if first in EXTERIOR_HEADER_LABELS:
             color_headers = [normalize_text(ws.cell(r, c).value).split("\n")[0] for c in range(5, ws.max_column + 1)]
             rr = r + 1
             while rr <= ws.max_row:
@@ -271,7 +308,7 @@ def parse_color_sheet(ws) -> ColorSheet:
                     continue
                 if FOOTNOTE_LINE_RE.match(values[0]) or values[0].startswith("•"):
                     break
-                if values[0] and values[0] != "Exterior Solid Paint":
+                if values[0] and values[0] not in EXTERIOR_HEADER_LABELS:
                     colors = {
                         color_headers[i]: values[4 + i]
                         for i in range(len(color_headers))
@@ -297,7 +334,7 @@ def parse_color_sheet(ws) -> ColorSheet:
     )
 
 def parse_spec_sheet(ws) -> List[SpecColumn]:
-    section_markers = {"Specifications", "Capacities"}
+    section_markers = SPEC_SECTION_MARKERS
     first_section_row: Optional[int] = None
     for r in range(1, min(ws.max_row, 10) + 1):
         if normalize_text(ws.cell(r, 1).value) in section_markers:
@@ -315,7 +352,8 @@ def parse_spec_sheet(ws) -> List[SpecColumn]:
     top_label = ""
     for r in range(1, header_row + 1):
         cell = normalize_text(ws.cell(r, 1).value)
-        if cell and cell not in section_markers and "all dimensions" not in cell.lower():
+        lowered = cell.lower()
+        if cell and cell not in section_markers and not any(hint in lowered for hint in SPEC_NOTE_HINTS):
             top_label = cell
             break
 
@@ -349,7 +387,7 @@ def parse_spec_sheet(ws) -> List[SpecColumn]:
     return columns
 
 def parse_engine_axles_sheet(ws) -> List[EngineAxleEntry]:
-    if not ws.title.startswith("Engine Axles"):
+    if not _starts_with_any(ws.title, ENGINE_AXLE_SHEET_PREFIXES):
         return []
     top_label = normalize_text(ws.cell(1, 1).value)
     legend_text = " ".join(
@@ -430,7 +468,7 @@ def parse_value_and_footnote_ids(raw: str) -> Tuple[str, List[str]]:
     return raw, []
 
 def parse_trailering_sheet(ws) -> Tuple[List[TraileringRecord], List[GCWRRecord]]:
-    if not ws.title.startswith("Trailering Specs"):
+    if not _starts_with_any(ws.title, TRAILERING_SHEET_PREFIXES):
         return [], []
 
     sheet_footnotes: Dict[str, str] = {}
@@ -454,7 +492,8 @@ def parse_trailering_sheet(ws) -> Tuple[List[TraileringRecord], List[GCWRRecord]
     gcwr_start_row = None
     for r in range(5, ws.max_row + 1):
         first = normalize_text(ws.cell(r, 1).value)
-        if first.startswith("GCWR "):
+        first_lower = first.lower()
+        if first.startswith("GCWR ") or first_lower.startswith('pnbv ') or 'poids nominal brut combiné' in first_lower:
             gcwr_start_row = r
             break
         if first and FOOTNOTE_LINE_RE.match(first):
@@ -516,7 +555,7 @@ def parse_glossary_sheet(ws) -> OrderedDict[str, str]:
     glossary: OrderedDict[str, str] = OrderedDict()
     first = normalize_text(ws.cell(1, 1).value)
     second = normalize_text(ws.cell(1, 2).value)
-    if first != "Option Code" or second != "Description":
+    if second != "Description" or first not in {"Option Code", "Le code d'option"}:
         return glossary
     for r in range(2, ws.max_row + 1):
         code = normalize_text(ws.cell(r, 1).value)
@@ -527,6 +566,7 @@ def parse_glossary_sheet(ws) -> OrderedDict[str, str]:
 
 def parse_workbook(path: Path) -> WorkbookData:
     wb = openpyxl.load_workbook(path, data_only=True)
+    language = detect_workbook_language(path, wb.sheetnames)
     year, make, model, vehicle_name = parse_filename_metadata(path)
 
     trim_defs_by_key: OrderedDict[str, TrimDef] = OrderedDict()
@@ -545,17 +585,17 @@ def parse_workbook(path: Path) -> WorkbookData:
             for trim in matrix.trim_defs:
                 trim_defs_by_key.setdefault(trim.key, trim)
             matrix_sheets.append(matrix)
-        if name.startswith("Colour and Trim"):
+        if _starts_with_any(name, COLOUR_SHEET_PREFIXES):
             color_sheets.append(parse_color_sheet(ws))
-        if name.startswith("Dimensions") or name.startswith("Specs") or name in {"Dimensions", "Specs"}:
+        if _starts_with_any(name, SPEC_SHEET_PREFIXES) or name in {"Dimensions", "Specs", "Fiche technique"}:
             spec_columns.extend(parse_spec_sheet(ws))
-        if name.startswith("Engine Axles"):
+        if _starts_with_any(name, ENGINE_AXLE_SHEET_PREFIXES):
             engine_axle_entries.extend(parse_engine_axles_sheet(ws))
-        if name.startswith("Trailering Specs"):
+        if _starts_with_any(name, TRAILERING_SHEET_PREFIXES):
             records, gcwrs = parse_trailering_sheet(ws)
             trailering_records.extend(records)
             gcwr_records.extend(gcwrs)
-        if name == "All":
+        if name in GLOSSARY_SHEET_NAMES:
             glossary.update(parse_glossary_sheet(ws))
 
     return WorkbookData(
@@ -564,6 +604,7 @@ def parse_workbook(path: Path) -> WorkbookData:
         make=make,
         model=model,
         vehicle_name=vehicle_name,
+        language=language,
         trim_defs=list(trim_defs_by_key.values()),
         matrix_sheets=matrix_sheets,
         color_sheets=color_sheets,
@@ -743,6 +784,7 @@ def split_workbook_by_subfamily(data: WorkbookData) -> List[WorkbookData]:
             make=data.make,
             model=sub_model,
             vehicle_name=sub_vehicle_name,
+            language=data.language,
             trim_defs=collapsed,
             matrix_sheets=new_sheets,
             color_sheets=list(data.color_sheets),
