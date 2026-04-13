@@ -31,32 +31,37 @@ module.exports = function (eleventyConfig) {
     }
   }
 
-  // Build a collection of workbook pages so the sitemap knows about them.
-  eleventyConfig.addCollection("workbookPages", function (_collectionApi) {
-    const pages = [];
+  // Build a collection of workbook pages for a given language subdirectory.
+  function buildWorkbookPagesCollection(langDir) {
+    return function (_collectionApi) {
+      const pages = [];
 
-    function walkDir(currentPath) {
-      if (!fs.existsSync(currentPath)) return;
-      for (const entry of fs.readdirSync(currentPath, {
-        withFileTypes: true,
-      })) {
-        const fullPath = path.join(currentPath, entry.name);
-        if (entry.isDirectory()) {
-          walkDir(fullPath);
-        } else if (entry.name.endsWith(".html")) {
-          const mtime = fs.statSync(fullPath).mtime;
-          pages.push({
-            url: "/" + fullPath.split(path.sep).join("/"),
-            date: mtime.toISOString().split("T")[0],
-            meta: metadataByFilename[entry.name] || null,
-          });
+      function walkDir(currentPath) {
+        if (!fs.existsSync(currentPath)) return;
+        for (const entry of fs.readdirSync(currentPath, {
+          withFileTypes: true,
+        })) {
+          const fullPath = path.join(currentPath, entry.name);
+          if (entry.isDirectory()) {
+            walkDir(fullPath);
+          } else if (entry.name.endsWith(".html")) {
+            const mtime = fs.statSync(fullPath).mtime;
+            pages.push({
+              url: "/" + fullPath.split(path.sep).join("/"),
+              date: mtime.toISOString().split("T")[0],
+              meta: metadataByFilename[entry.name] || null,
+            });
+          }
         }
       }
-    }
 
-    walkDir("workbooks_html");
-    return pages;
-  });
+      walkDir(langDir);
+      return pages;
+    };
+  }
+
+  eleventyConfig.addCollection("workbookPagesEn", buildWorkbookPagesCollection("workbooks_html/en"));
+  eleventyConfig.addCollection("workbookPagesFr", buildWorkbookPagesCollection("workbooks_html/fr"));
 
   // Prevent Eleventy from processing the README.
   eleventyConfig.ignores.add("README.md");
