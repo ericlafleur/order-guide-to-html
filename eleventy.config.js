@@ -29,17 +29,20 @@ module.exports = function (eleventyConfig) {
           const manifest = JSON.parse(
             fs.readFileSync(fullPath, "utf-8")
           );
+          const manifestDir = path.dirname(fullPath).split(path.sep).join("/");
           for (const fileEntry of manifest.files || []) {
             if (fileEntry.path) {
-              const relativeFilePath = fileEntry.path.split(path.sep).join("/");
-              const filename = path.basename(relativeFilePath);
+              const filename = path.basename(fileEntry.path);
+              const relativeFilePath = manifestDir + "/" + filename;
               const metadata = {
                 vehicle_name: manifest.vehicle_name,
                 ...fileEntry,
               };
               metadataByRelativePath[relativeFilePath] = metadata;
-              // Keep filename fallback for legacy flat outputs.
-              metadataByFilename[filename] = metadata;
+              // Keep filename fallback for legacy flat outputs (first writer wins).
+              if (!metadataByFilename[filename]) {
+                metadataByFilename[filename] = metadata;
+              }
             }
           }
         } catch (_e) {
