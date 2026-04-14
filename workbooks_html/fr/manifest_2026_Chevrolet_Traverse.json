@@ -61,9 +61,9 @@
       ],
       "path": "model_2026_Chevrolet_Traverse.html",
       "available_trims": [
-        "LT à TI",
-        "Z71 à TI",
-        "RS à TI"
+        "LT",
+        "Z71",
+        "RS"
       ]
     },
     {
@@ -79,9 +79,9 @@
       "make": "Chevrolet",
       "model": "Traverse",
       "trim_names_from_guide": [
-        "LT à TI",
-        "Z71 à TI",
-        "RS à TI"
+        "LT",
+        "Z71",
+        "RS"
       ],
       "doc_type": "comparison",
       "doc_role": "passage",
@@ -118,9 +118,9 @@
       "make": "Chevrolet",
       "model": "Traverse",
       "trim_names_from_guide": [
-        "LT à TI",
-        "Z71 à TI",
-        "RS à TI"
+        "LT",
+        "Z71",
+        "RS"
       ],
       "doc_type": "comparison",
       "doc_role": "passage",
@@ -157,9 +157,9 @@
       "make": "Chevrolet",
       "model": "Traverse",
       "trim_names_from_guide": [
-        "LT à TI",
-        "Z71 à TI",
-        "RS à TI"
+        "LT",
+        "Z71",
+        "RS"
       ],
       "doc_type": "comparison",
       "doc_role": "passage",
@@ -196,9 +196,9 @@
       "make": "Chevrolet",
       "model": "Traverse",
       "trim_names_from_guide": [
-        "LT à TI",
-        "Z71 à TI",
-        "RS à TI"
+        "LT",
+        "Z71",
+        "RS"
       ],
       "doc_type": "comparison",
       "doc_role": "passage",
@@ -235,9 +235,9 @@
       "make": "Chevrolet",
       "model": "Traverse",
       "trim_names_from_guide": [
-        "LT à TI",
-        "Z71 à TI",
-        "RS à TI"
+        "LT",
+        "Z71",
+        "RS"
       ],
       "doc_type": "comparison",
       "doc_role": "passage",
@@ -274,9 +274,9 @@
       "make": "Chevrolet",
       "model": "Traverse",
       "trim_names_from_guide": [
-        "LT à TI",
-        "Z71 à TI",
-        "RS à TI"
+        "LT",
+        "Z71",
+        "RS"
       ],
       "doc_type": "comparison",
       "doc_role": "passage",
@@ -313,9 +313,9 @@
       "make": "Chevrolet",
       "model": "Traverse",
       "trim_names_from_guide": [
-        "LT à TI",
-        "Z71 à TI",
-        "RS à TI"
+        "LT",
+        "Z71",
+        "RS"
       ],
       "doc_type": "comparison",
       "doc_role": "passage",
@@ -342,12 +342,15 @@
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "T886512F35D4A9C93",
-      "name": "LT à TI",
-      "title": "2026 Chevrolet Traverse LT à TI",
+      "name": "LT",
+      "title": "2026 Chevrolet Traverse LT",
+      "drivetrains": [
+        "à TI"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Traverse",
-      "trim": "LT à TI",
+      "trim": "LT",
       "doc_type": "trim",
       "doc_role": "entity",
       "entity_level": "trim",
@@ -364,7 +367,7 @@
       ],
       "surface": "both",
       "is_vehicle_entity": true,
-      "entity_name": "2026 Chevrolet Traverse LT à TI",
+      "entity_name": "2026 Chevrolet Traverse LT",
       "entity_key": "2026_chevrolet_traverse_lt_ti",
       "vehicle_key": "2026_chevrolet_traverse",
       "trim_key": "2026_chevrolet_traverse_lt_ti",
@@ -388,15 +391,18 @@
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "T35065124BD9C0B73",
-      "name": "Z71 à TI",
-      "title": "2026 Chevrolet Traverse Z71 à TI",
+      "name": "Z71",
+      "title": "2026 Chevrolet Traverse Z71",
       "seating": [
         "2/2/3"
+      ],
+      "drivetrains": [
+        "à TI"
       ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Traverse",
-      "trim": "Z71 à TI",
+      "trim": "Z71",
       "doc_type": "trim",
       "doc_role": "entity",
       "entity_level": "trim",
@@ -413,7 +419,7 @@
       ],
       "surface": "both",
       "is_vehicle_entity": true,
-      "entity_name": "2026 Chevrolet Traverse Z71 à TI",
+      "entity_name": "2026 Chevrolet Traverse Z71",
       "entity_key": "2026_chevrolet_traverse_z71_ti",
       "vehicle_key": "2026_chevrolet_traverse",
       "trim_key": "2026_chevrolet_traverse_z71_ti",
@@ -437,15 +443,18 @@
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "T7DF66C36D056931E",
-      "name": "RS à TI",
-      "title": "2026 Chevrolet Traverse RS à TI",
+      "name": "RS",
+      "title": "2026 Chevrolet Traverse RS",
       "seating": [
         "2/2/3"
+      ],
+      "drivetrains": [
+        "à TI"
       ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Traverse",
-      "trim": "RS à TI",
+      "trim": "RS",
       "doc_type": "trim",
       "doc_role": "entity",
       "entity_level": "trim",
@@ -462,7 +471,7 @@
       ],
       "surface": "both",
       "is_vehicle_entity": true,
-      "entity_name": "2026 Chevrolet Traverse RS à TI",
+      "entity_name": "2026 Chevrolet Traverse RS",
       "entity_key": "2026_chevrolet_traverse_rs_ti",
       "vehicle_key": "2026_chevrolet_traverse",
       "trim_key": "2026_chevrolet_traverse_rs_ti",
@@ -490,6 +499,7 @@
       "title": "2026 Chevrolet Traverse | Configuration dimensions and specifications | 1LB56\nLT à TI",
       "configuration_kind": "spec-group",
       "configuration_label": "1LB56\nLT à TI",
+      "drivetrain": "à TI",
       "doc_type": "configuration-spec",
       "doc_role": "passage",
       "entity_level": "configuration",
@@ -499,7 +509,7 @@
       ],
       "has_numeric_specs": true,
       "surface": "passage_only",
-      "entity_name": "2026 Chevrolet Traverse LT à TI",
+      "entity_name": "2026 Chevrolet Traverse LT",
       "entity_key": "2026_chevrolet_traverse_lt_ti",
       "vehicle_key": "2026_chevrolet_traverse",
       "year": "2026",
@@ -507,7 +517,7 @@
       "model": "Traverse",
       "retrieval_granularity": "coarse",
       "trim_key": "2026_chevrolet_traverse_lt_ti",
-      "trim": "LT à TI",
+      "trim": "LT",
       "collection": "M4656CBE26E68DA88",
       "collection_path": "model_2026_Chevrolet_Traverse.html",
       "parent": "T886512F35D4A9C93",
@@ -526,6 +536,7 @@
       "title": "2026 Chevrolet Traverse | Configuration dimensions and specifications | 1LC56\nZ71 à TI",
       "configuration_kind": "spec-group",
       "configuration_label": "1LC56\nZ71 à TI",
+      "drivetrain": "à TI",
       "doc_type": "configuration-spec",
       "doc_role": "passage",
       "entity_level": "configuration",
@@ -535,7 +546,7 @@
       ],
       "has_numeric_specs": true,
       "surface": "passage_only",
-      "entity_name": "2026 Chevrolet Traverse Z71 à TI",
+      "entity_name": "2026 Chevrolet Traverse Z71",
       "entity_key": "2026_chevrolet_traverse_z71_ti",
       "vehicle_key": "2026_chevrolet_traverse",
       "year": "2026",
@@ -543,7 +554,7 @@
       "model": "Traverse",
       "retrieval_granularity": "coarse",
       "trim_key": "2026_chevrolet_traverse_z71_ti",
-      "trim": "Z71 à TI",
+      "trim": "Z71",
       "collection": "M4656CBE26E68DA88",
       "collection_path": "model_2026_Chevrolet_Traverse.html",
       "parent": "T35065124BD9C0B73",
@@ -562,6 +573,7 @@
       "title": "2026 Chevrolet Traverse | Configuration dimensions and specifications | 1LD56\nRS à TI",
       "configuration_kind": "spec-group",
       "configuration_label": "1LD56\nRS à TI",
+      "drivetrain": "à TI",
       "doc_type": "configuration-spec",
       "doc_role": "passage",
       "entity_level": "configuration",
@@ -571,7 +583,7 @@
       ],
       "has_numeric_specs": true,
       "surface": "passage_only",
-      "entity_name": "2026 Chevrolet Traverse RS à TI",
+      "entity_name": "2026 Chevrolet Traverse RS",
       "entity_key": "2026_chevrolet_traverse_rs_ti",
       "vehicle_key": "2026_chevrolet_traverse",
       "year": "2026",
@@ -579,7 +591,7 @@
       "model": "Traverse",
       "retrieval_granularity": "coarse",
       "trim_key": "2026_chevrolet_traverse_rs_ti",
-      "trim": "RS à TI",
+      "trim": "RS",
       "collection": "M4656CBE26E68DA88",
       "collection_path": "model_2026_Chevrolet_Traverse.html",
       "parent": "T7DF66C36D056931E",
@@ -618,7 +630,7 @@
       ],
       "has_numeric_specs": true,
       "surface": "passage_only",
-      "entity_name": "2026 Chevrolet Traverse LT à TI",
+      "entity_name": "2026 Chevrolet Traverse LT",
       "entity_key": "2026_chevrolet_traverse_lt_ti",
       "vehicle_key": "2026_chevrolet_traverse",
       "year": "2026",
@@ -626,7 +638,7 @@
       "model": "Traverse",
       "retrieval_granularity": "coarse",
       "trim_key": "2026_chevrolet_traverse_lt_ti",
-      "trim": "LT à TI",
+      "trim": "LT",
       "collection": "M4656CBE26E68DA88",
       "collection_path": "model_2026_Chevrolet_Traverse.html",
       "parent": "T886512F35D4A9C93",
@@ -665,7 +677,7 @@
       ],
       "has_numeric_specs": true,
       "surface": "passage_only",
-      "entity_name": "2026 Chevrolet Traverse Z71 à TI",
+      "entity_name": "2026 Chevrolet Traverse Z71",
       "entity_key": "2026_chevrolet_traverse_z71_ti",
       "vehicle_key": "2026_chevrolet_traverse",
       "year": "2026",
@@ -673,7 +685,7 @@
       "model": "Traverse",
       "retrieval_granularity": "coarse",
       "trim_key": "2026_chevrolet_traverse_z71_ti",
-      "trim": "Z71 à TI",
+      "trim": "Z71",
       "collection": "M4656CBE26E68DA88",
       "collection_path": "model_2026_Chevrolet_Traverse.html",
       "parent": "T35065124BD9C0B73",
@@ -712,7 +724,7 @@
       ],
       "has_numeric_specs": true,
       "surface": "passage_only",
-      "entity_name": "2026 Chevrolet Traverse RS à TI",
+      "entity_name": "2026 Chevrolet Traverse RS",
       "entity_key": "2026_chevrolet_traverse_rs_ti",
       "vehicle_key": "2026_chevrolet_traverse",
       "year": "2026",
@@ -720,7 +732,7 @@
       "model": "Traverse",
       "retrieval_granularity": "coarse",
       "trim_key": "2026_chevrolet_traverse_rs_ti",
-      "trim": "RS à TI",
+      "trim": "RS",
       "collection": "M4656CBE26E68DA88",
       "collection_path": "model_2026_Chevrolet_Traverse.html",
       "parent": "T7DF66C36D056931E",

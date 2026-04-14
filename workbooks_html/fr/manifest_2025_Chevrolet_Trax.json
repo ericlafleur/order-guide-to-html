@@ -370,6 +370,9 @@
       "seating": [
         "2/3"
       ],
+      "drivetrains": [
+        "à TA"
+      ],
       "year": "2025",
       "make": "Chevrolet",
       "model": "Trax",
@@ -416,6 +419,9 @@
       "title": "2025 Chevrolet Trax 1RS",
       "seating": [
         "2/3"
+      ],
+      "drivetrains": [
+        "à TA"
       ],
       "year": "2025",
       "make": "Chevrolet",
@@ -464,6 +470,9 @@
       "seating": [
         "2/3"
       ],
+      "drivetrains": [
+        "à TA"
+      ],
       "year": "2025",
       "make": "Chevrolet",
       "model": "Trax",
@@ -510,6 +519,9 @@
       "title": "2025 Chevrolet Trax 2RS",
       "seating": [
         "2/3"
+      ],
+      "drivetrains": [
+        "à TA"
       ],
       "year": "2025",
       "make": "Chevrolet",
@@ -558,6 +570,9 @@
       "seating": [
         "2/3"
       ],
+      "drivetrains": [
+        "à TA"
+      ],
       "year": "2025",
       "make": "Chevrolet",
       "model": "Trax",
@@ -604,6 +619,7 @@
       "title": "2025 Chevrolet Trax | Configuration dimensions and specifications | 1TR58\n1RS et LS à TA",
       "configuration_kind": "spec-group",
       "configuration_label": "1TR58\n1RS et LS à TA",
+      "drivetrain": "à TA",
       "doc_type": "configuration-spec",
       "doc_role": "passage",
       "entity_level": "configuration",
@@ -644,6 +660,7 @@
       "title": "2025 Chevrolet Trax | Configuration dimensions and specifications | 1TU58\nLT, 2RS ET ACTIV À TA",
       "configuration_kind": "spec-group",
       "configuration_label": "1TU58\nLT, 2RS ET ACTIV À TA",
+      "drivetrain": "à TA",
       "doc_type": "configuration-spec",
       "doc_role": "passage",
       "entity_level": "configuration",
