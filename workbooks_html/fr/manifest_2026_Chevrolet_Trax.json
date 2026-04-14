@@ -358,6 +358,9 @@
       "seating": [
         "2/3"
       ],
+      "drivetrains": [
+        "à TA"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Trax",
@@ -404,6 +407,9 @@
       "title": "2026 Chevrolet Trax LT",
       "seating": [
         "2/3"
+      ],
+      "drivetrains": [
+        "à TA"
       ],
       "year": "2026",
       "make": "Chevrolet",
@@ -452,6 +458,9 @@
       "seating": [
         "2/3"
       ],
+      "drivetrains": [
+        "à TA"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Trax",
@@ -499,6 +508,9 @@
       "seating": [
         "2/3"
       ],
+      "drivetrains": [
+        "à TA"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Trax",
@@ -545,6 +557,7 @@
       "title": "2026 Chevrolet Trax | Configuration dimensions and specifications | 1TR58\n1RS à TA",
       "configuration_kind": "spec-group",
       "configuration_label": "1TR58\n1RS à TA",
+      "drivetrain": "à TA",
       "doc_type": "configuration-spec",
       "doc_role": "passage",
       "entity_level": "configuration",
@@ -581,6 +594,7 @@
       "title": "2026 Chevrolet Trax | Configuration dimensions and specifications | 1TU58\nLT, 2RS ET ACTIV À TA",
       "configuration_kind": "spec-group",
       "configuration_label": "1TU58\nLT, 2RS ET ACTIV À TA",
+      "drivetrain": "à TA",
       "doc_type": "configuration-spec",
       "doc_role": "passage",
       "entity_level": "configuration",

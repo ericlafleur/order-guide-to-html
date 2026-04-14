@@ -71,10 +71,10 @@
       ],
       "path": "model_2025_Chevrolet_Trailblazer.html",
       "available_trims": [
-        "LS à TA et à TI",
-        "LT à TA et à TI",
-        "RS À TI",
-        "ACTIV À TI"
+        "LS et",
+        "LT et",
+        "RS",
+        "ACTIV"
       ]
     },
     {
@@ -90,10 +90,10 @@
       "make": "Chevrolet",
       "model": "Trailblazer",
       "trim_names_from_guide": [
-        "LS à TA et à TI",
-        "LT à TA et à TI",
-        "RS À TI",
-        "ACTIV À TI"
+        "LS et",
+        "LT et",
+        "RS",
+        "ACTIV"
       ],
       "doc_type": "comparison",
       "doc_role": "passage",
@@ -130,10 +130,10 @@
       "make": "Chevrolet",
       "model": "Trailblazer",
       "trim_names_from_guide": [
-        "LS à TA et à TI",
-        "LT à TA et à TI",
-        "RS À TI",
-        "ACTIV À TI"
+        "LS et",
+        "LT et",
+        "RS",
+        "ACTIV"
       ],
       "doc_type": "comparison",
       "doc_role": "passage",
@@ -170,10 +170,10 @@
       "make": "Chevrolet",
       "model": "Trailblazer",
       "trim_names_from_guide": [
-        "LS à TA et à TI",
-        "LT à TA et à TI",
-        "RS À TI",
-        "ACTIV À TI"
+        "LS et",
+        "LT et",
+        "RS",
+        "ACTIV"
       ],
       "doc_type": "comparison",
       "doc_role": "passage",
@@ -210,10 +210,10 @@
       "make": "Chevrolet",
       "model": "Trailblazer",
       "trim_names_from_guide": [
-        "LS à TA et à TI",
-        "LT à TA et à TI",
-        "RS À TI",
-        "ACTIV À TI"
+        "LS et",
+        "LT et",
+        "RS",
+        "ACTIV"
       ],
       "doc_type": "comparison",
       "doc_role": "passage",
@@ -250,10 +250,10 @@
       "make": "Chevrolet",
       "model": "Trailblazer",
       "trim_names_from_guide": [
-        "LS à TA et à TI",
-        "LT à TA et à TI",
-        "RS À TI",
-        "ACTIV À TI"
+        "LS et",
+        "LT et",
+        "RS",
+        "ACTIV"
       ],
       "doc_type": "comparison",
       "doc_role": "passage",
@@ -290,10 +290,10 @@
       "make": "Chevrolet",
       "model": "Trailblazer",
       "trim_names_from_guide": [
-        "LS à TA et à TI",
-        "LT à TA et à TI",
-        "RS À TI",
-        "ACTIV À TI"
+        "LS et",
+        "LT et",
+        "RS",
+        "ACTIV"
       ],
       "doc_type": "comparison",
       "doc_role": "passage",
@@ -330,10 +330,10 @@
       "make": "Chevrolet",
       "model": "Trailblazer",
       "trim_names_from_guide": [
-        "LS à TA et à TI",
-        "LT à TA et à TI",
-        "RS À TI",
-        "ACTIV À TI"
+        "LS et",
+        "LT et",
+        "RS",
+        "ACTIV"
       ],
       "doc_type": "comparison",
       "doc_role": "passage",
@@ -360,15 +360,19 @@
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "T9A78066723941097",
-      "name": "LS à TA et à TI",
-      "title": "2025 Chevrolet Trailblazer LS à TA et à TI",
+      "name": "LS et",
+      "title": "2025 Chevrolet Trailblazer LS et",
       "seating": [
         "2/3"
+      ],
+      "drivetrains": [
+        "à TA",
+        "à TI"
       ],
       "year": "2025",
       "make": "Chevrolet",
       "model": "Trailblazer",
-      "trim": "LS à TA et à TI",
+      "trim": "LS et",
       "doc_type": "trim",
       "doc_role": "entity",
       "entity_level": "trim",
@@ -385,7 +389,7 @@
       ],
       "surface": "both",
       "is_vehicle_entity": true,
-      "entity_name": "2025 Chevrolet Trailblazer LS à TA et à TI",
+      "entity_name": "2025 Chevrolet Trailblazer LS et",
       "entity_key": "2025_chevrolet_trailblazer_ls_1tr56_ta_et_1tv56_ti",
       "vehicle_key": "2025_chevrolet_trailblazer",
       "trim_key": "2025_chevrolet_trailblazer_ls_1tr56_ta_et_1tv56_ti",
@@ -401,15 +405,19 @@
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "T6433810C02FAAEDD",
-      "name": "LT à TA et à TI",
-      "title": "2025 Chevrolet Trailblazer LT à TA et à TI",
+      "name": "LT et",
+      "title": "2025 Chevrolet Trailblazer LT et",
       "seating": [
         "2/3"
+      ],
+      "drivetrains": [
+        "à TA",
+        "à TI"
       ],
       "year": "2025",
       "make": "Chevrolet",
       "model": "Trailblazer",
-      "trim": "LT à TA et à TI",
+      "trim": "LT et",
       "doc_type": "trim",
       "doc_role": "entity",
       "entity_level": "trim",
@@ -426,7 +434,7 @@
       ],
       "surface": "both",
       "is_vehicle_entity": true,
-      "entity_name": "2025 Chevrolet Trailblazer LT à TA et à TI",
+      "entity_name": "2025 Chevrolet Trailblazer LT et",
       "entity_key": "2025_chevrolet_trailblazer_lt_1tu56_ta_et_1tw56_ti",
       "vehicle_key": "2025_chevrolet_trailblazer",
       "trim_key": "2025_chevrolet_trailblazer_lt_1tu56_ta_et_1tw56_ti",
@@ -442,15 +450,18 @@
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "TAE4A06DB77CEFCE1",
-      "name": "RS À TI",
-      "title": "2025 Chevrolet Trailblazer RS À TI",
+      "name": "RS",
+      "title": "2025 Chevrolet Trailblazer RS",
       "seating": [
         "2/3"
+      ],
+      "drivetrains": [
+        "à TI"
       ],
       "year": "2025",
       "make": "Chevrolet",
       "model": "Trailblazer",
-      "trim": "RS À TI",
+      "trim": "RS",
       "doc_type": "trim",
       "doc_role": "entity",
       "entity_level": "trim",
@@ -467,7 +478,7 @@
       ],
       "surface": "both",
       "is_vehicle_entity": true,
-      "entity_name": "2025 Chevrolet Trailblazer RS À TI",
+      "entity_name": "2025 Chevrolet Trailblazer RS",
       "entity_key": "2025_chevrolet_trailblazer_rs_1ty56_ti",
       "vehicle_key": "2025_chevrolet_trailblazer",
       "trim_key": "2025_chevrolet_trailblazer_rs_1ty56_ti",
@@ -489,15 +500,18 @@
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "TD79332077BCB9CF4",
-      "name": "ACTIV À TI",
-      "title": "2025 Chevrolet Trailblazer ACTIV À TI",
+      "name": "ACTIV",
+      "title": "2025 Chevrolet Trailblazer ACTIV",
       "seating": [
         "2/3"
+      ],
+      "drivetrains": [
+        "à TI"
       ],
       "year": "2025",
       "make": "Chevrolet",
       "model": "Trailblazer",
-      "trim": "ACTIV À TI",
+      "trim": "ACTIV",
       "doc_type": "trim",
       "doc_role": "entity",
       "entity_level": "trim",
@@ -514,7 +528,7 @@
       ],
       "surface": "both",
       "is_vehicle_entity": true,
-      "entity_name": "2025 Chevrolet Trailblazer ACTIV À TI",
+      "entity_name": "2025 Chevrolet Trailblazer ACTIV",
       "entity_key": "2025_chevrolet_trailblazer_activ_1tx56_ti",
       "vehicle_key": "2025_chevrolet_trailblazer",
       "trim_key": "2025_chevrolet_trailblazer_activ_1tx56_ti",
@@ -540,6 +554,7 @@
       "title": "2025 Chevrolet Trailblazer | Configuration dimensions and specifications | 1TR56\nLS à TA",
       "configuration_kind": "spec-group",
       "configuration_label": "1TR56\nLS à TA",
+      "drivetrain": "à TA",
       "doc_type": "configuration-spec",
       "doc_role": "passage",
       "entity_level": "configuration",
@@ -572,6 +587,7 @@
       "title": "2025 Chevrolet Trailblazer | Configuration dimensions and specifications | 1TV56\nLS à TI",
       "configuration_kind": "spec-group",
       "configuration_label": "1TV56\nLS à TI",
+      "drivetrain": "à TI",
       "doc_type": "configuration-spec",
       "doc_role": "passage",
       "entity_level": "configuration",
@@ -604,6 +620,7 @@
       "title": "2025 Chevrolet Trailblazer | Configuration dimensions and specifications | 1TU56\nLT à TA",
       "configuration_kind": "spec-group",
       "configuration_label": "1TU56\nLT à TA",
+      "drivetrain": "à TA",
       "doc_type": "configuration-spec",
       "doc_role": "passage",
       "entity_level": "configuration",
@@ -636,6 +653,7 @@
       "title": "2025 Chevrolet Trailblazer | Configuration dimensions and specifications | 1TW56\nLT à TI",
       "configuration_kind": "spec-group",
       "configuration_label": "1TW56\nLT à TI",
+      "drivetrain": "à TI",
       "doc_type": "configuration-spec",
       "doc_role": "passage",
       "entity_level": "configuration",
@@ -668,6 +686,7 @@
       "title": "2025 Chevrolet Trailblazer | Configuration dimensions and specifications | 1TY56\nRS à TI",
       "configuration_kind": "spec-group",
       "configuration_label": "1TY56\nRS à TI",
+      "drivetrain": "à TI",
       "doc_type": "configuration-spec",
       "doc_role": "passage",
       "entity_level": "configuration",
@@ -677,7 +696,7 @@
       ],
       "has_numeric_specs": true,
       "surface": "passage_only",
-      "entity_name": "2025 Chevrolet Trailblazer RS À TI",
+      "entity_name": "2025 Chevrolet Trailblazer RS",
       "entity_key": "2025_chevrolet_trailblazer_rs_1ty56_ti",
       "vehicle_key": "2025_chevrolet_trailblazer",
       "year": "2025",
@@ -685,7 +704,7 @@
       "model": "Trailblazer",
       "retrieval_granularity": "coarse",
       "trim_key": "2025_chevrolet_trailblazer_rs_1ty56_ti",
-      "trim": "RS À TI",
+      "trim": "RS",
       "collection": "M015720E488E2ACB3",
       "collection_path": "model_2025_Chevrolet_Trailblazer.html",
       "parent": "TAE4A06DB77CEFCE1",
@@ -704,6 +723,7 @@
       "title": "2025 Chevrolet Trailblazer | Configuration dimensions and specifications | 1TX56\nACTIV à TI",
       "configuration_kind": "spec-group",
       "configuration_label": "1TX56\nACTIV à TI",
+      "drivetrain": "à TI",
       "doc_type": "configuration-spec",
       "doc_role": "passage",
       "entity_level": "configuration",
@@ -713,7 +733,7 @@
       ],
       "has_numeric_specs": true,
       "surface": "passage_only",
-      "entity_name": "2025 Chevrolet Trailblazer ACTIV À TI",
+      "entity_name": "2025 Chevrolet Trailblazer ACTIV",
       "entity_key": "2025_chevrolet_trailblazer_activ_1tx56_ti",
       "vehicle_key": "2025_chevrolet_trailblazer",
       "year": "2025",
@@ -721,7 +741,7 @@
       "model": "Trailblazer",
       "retrieval_granularity": "coarse",
       "trim_key": "2025_chevrolet_trailblazer_activ_1tx56_ti",
-      "trim": "ACTIV À TI",
+      "trim": "ACTIV",
       "collection": "M015720E488E2ACB3",
       "collection_path": "model_2025_Chevrolet_Trailblazer.html",
       "parent": "TD79332077BCB9CF4",

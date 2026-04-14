@@ -310,6 +310,9 @@
       "seating": [
         "2/3"
       ],
+      "drivetrains": [
+        "à TI"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Blazer",
@@ -395,6 +398,9 @@
       "seating": [
         "2/3"
       ],
+      "drivetrains": [
+        "à TI"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Blazer",
@@ -444,6 +450,7 @@
       "title": "2026 Chevrolet Blazer | Configuration dimensions and specifications | 1NR26\nLT à TI",
       "configuration_kind": "spec-group",
       "configuration_label": "1NR26\nLT à TI",
+      "drivetrain": "à TI",
       "doc_type": "configuration-spec",
       "doc_role": "passage",
       "entity_level": "configuration",
@@ -480,6 +487,7 @@
       "title": "2026 Chevrolet Blazer | Configuration dimensions and specifications | 1NS26\nRS à TI",
       "configuration_kind": "spec-group",
       "configuration_label": "1NS26\nRS à TI",
+      "drivetrain": "à TI",
       "doc_type": "configuration-spec",
       "doc_role": "passage",
       "entity_level": "configuration",

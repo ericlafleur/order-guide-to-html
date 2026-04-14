@@ -353,6 +353,9 @@
       "seating": [
         "2/3"
       ],
+      "drivetrains": [
+        "à TI"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Equinox",
@@ -393,6 +396,9 @@
       "title": "2026 Chevrolet Equinox LT",
       "seating": [
         "2/3"
+      ],
+      "drivetrains": [
+        "à TI"
       ],
       "year": "2026",
       "make": "Chevrolet",
@@ -441,6 +447,9 @@
       "seating": [
         "2/3"
       ],
+      "drivetrains": [
+        "à TI"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Equinox",
@@ -488,6 +497,9 @@
       "seating": [
         "2/3"
       ],
+      "drivetrains": [
+        "à TI"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Equinox",
@@ -534,6 +546,7 @@
       "title": "2026 Chevrolet Equinox | Configuration dimensions and specifications | 1PT26\nLT à TA et à TI",
       "configuration_kind": "spec-group",
       "configuration_label": "1PT26\nLT à TA et à TI",
+      "drivetrain": "à TI",
       "doc_type": "configuration-spec",
       "doc_role": "passage",
       "entity_level": "configuration",
@@ -572,6 +585,7 @@
       "title": "2026 Chevrolet Equinox | Configuration dimensions and specifications | 1PR26\nACTIV À TI",
       "configuration_kind": "spec-group",
       "configuration_label": "1PR26\nACTIV À TI",
+      "drivetrain": "à TI",
       "doc_type": "configuration-spec",
       "doc_role": "passage",
       "entity_level": "configuration",
@@ -608,6 +622,7 @@
       "title": "2026 Chevrolet Equinox | Configuration dimensions and specifications | 1PS26\nRS à TI",
       "configuration_kind": "spec-group",
       "configuration_label": "1PS26\nRS à TI",
+      "drivetrain": "à TI",
       "doc_type": "configuration-spec",
       "doc_role": "passage",
       "entity_level": "configuration",
