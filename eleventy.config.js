@@ -70,7 +70,7 @@ module.exports = function (eleventyConfig) {
             const relativePath = fullPath.split(path.sep).join("/");
             pages.push({
               url: "/" + relativePath,
-              date: mtime.toISOString().split("T")[0],
+              date: mtime.toISOString().replace(/\.\d{3}Z$/, "Z"),
               meta:
                 metadataByRelativePath[relativePath] ||
                 metadataByFilename[entry.name] ||
