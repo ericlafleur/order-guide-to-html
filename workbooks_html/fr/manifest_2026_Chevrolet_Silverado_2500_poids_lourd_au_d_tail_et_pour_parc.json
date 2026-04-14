@@ -1,0 +1,2409 @@
+{
+  "vehicle_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+  "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+  "files": [
+    {
+      "objecttype": "Product",
+      "type": "model",
+      "node_id": "MD59E22F025A0C60E",
+      "seating": [
+        "3",
+        "6"
+      ],
+      "name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "doc_type": "model",
+      "doc_role": "entity",
+      "entity_level": "model",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Colour and trim",
+        "Other guide content"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "child": [
+        "CEC12150C64F90B86",
+        "C857D3A660818D698",
+        "CDF3A1F14CC19CE1E",
+        "C66C01D3F3E5C0B0D",
+        "C4FC5D3D6CDB1EB8A",
+        "CAB935E39125183A4",
+        "TCC095D50F5544DE6",
+        "T247AC4604CA70C01",
+        "T430EA3DBB402B1B3",
+        "TFF1C2B85CA879983",
+        "TCFC9B5B92B1CDDA2",
+        "T58D3050033AC789C",
+        "T9490E4899C2F04A0",
+        "T0F4473CF8157D918",
+        "TAFA030BED8A76486",
+        "T4E25CAFB751FEFD8",
+        "SA2A1A2DD54A2EB57",
+        "SDE25C4C60213033A",
+        "S16538F669554CC48",
+        "S2201376E7CDD4AA0",
+        "SA4795A1E6896FF22",
+        "S18AD82DC78F26E1E",
+        "SAD72D3943A584678",
+        "S1FB9F8D52B0D5C46",
+        "SADF1BD4524436DAF",
+        "SD990EE9349DA99E9",
+        "SB4D6A075CB4B2F2C",
+        "SB560FA32252A6446",
+        "S61D8AF24FCD4B075",
+        "S15C6A80CED6C43EC",
+        "S3CDEF81E77573125",
+        "S4EB8098972B8D8D4",
+        "SD15C66A11DBC581D",
+        "SAE8EACF8974F7600",
+        "SC47B30649D46AAB9",
+        "SA8432BB367C21AC7",
+        "S59ACB44214A1681C",
+        "S6D7BD1D687811868",
+        "S481E43A98389193E",
+        "S49BBA39FBFA5FFB4",
+        "S1D1534951AAD0634",
+        "S5383D5B3AEB93ADF",
+        "S6844CA12E2F46A16",
+        "S74A8DD8854478D5F",
+        "SFE9CAC4ED2BF860B",
+        "SAA559CF2ABE7BCFB",
+        "SE202B7C289D0C8B5",
+        "SBBFB4FA12985110A",
+        "SFE19B3CD7D20865D"
+      ],
+      "child_paths": [
+        "compare_domain_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_Safety_and_driver_assistance.html",
+        "compare_domain_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_Technology_and_connectivity.html",
+        "compare_domain_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_Interior_and_comfort.html",
+        "compare_domain_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_Exterior_and_utility.html",
+        "compare_domain_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_Wheels_and_tires.html",
+        "compare_domain_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_Mechanical_and_performance.html",
+        "trim_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_WT.html",
+        "trim_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_Custom.html",
+        "trim_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_LT.html",
+        "trim_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_ZR2.html",
+        "trim_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_LTZ.html",
+        "trim_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_High_Country.html",
+        "trim_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_LT_2.html",
+        "trim_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_ZR2_2.html",
+        "trim_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_LTZ_2.html",
+        "trim_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_High_Country_2.html",
+        "spec_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CC20903.html",
+        "spec_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CK20903.html",
+        "spec_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CC20753.html",
+        "spec_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CK20753.html",
+        "spec_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CC20953.html",
+        "spec_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CK20953.html",
+        "spec_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CC20743.html",
+        "spec_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CK20743.html",
+        "spec_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CK20743_2.html",
+        "spec_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CC20943.html",
+        "spec_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CK20943.html",
+        "spec_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CK20743_3.html",
+        "spec_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CK20943_2.html",
+        "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC20903.html",
+        "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK20903.html",
+        "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC20753.html",
+        "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK20753.html",
+        "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC20953.html",
+        "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK20953.html",
+        "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC20743.html",
+        "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK20743.html",
+        "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC20943.html",
+        "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK20943.html",
+        "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC20743_NHT.html",
+        "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK20743_NHT.html",
+        "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK20743_ZR2.html",
+        "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK20743_High_Country.html",
+        "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC20943_NHT.html",
+        "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK20943_NHT.html",
+        "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK20943_High_Country.html",
+        "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC20903_NHT.html",
+        "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK20903_NHT.html",
+        "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_gcwr_reference.html"
+      ],
+      "path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "available_trims": [
+        "WT",
+        "Custom",
+        "LT",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ]
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "CEC12150C64F90B86",
+      "seating": [
+        "3",
+        "6"
+      ],
+      "name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Safety and driver assistance trim comparison",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Safety and driver assistance trim comparison",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "trim_names_from_guide": [
+        "WT",
+        "Custom",
+        "LT",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Safety and driver assistance",
+      "guide_domains": [
+        "Safety and driver assistance"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 33,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "compare_domain_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_Safety_and_driver_assistance.html"
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "C857D3A660818D698",
+      "seating": [
+        "3",
+        "6"
+      ],
+      "name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Technology and connectivity trim comparison",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Technology and connectivity trim comparison",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "trim_names_from_guide": [
+        "WT",
+        "Custom",
+        "LT",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Technology and connectivity",
+      "guide_domains": [
+        "Technology and connectivity"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 20,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "compare_domain_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_Technology_and_connectivity.html"
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "CDF3A1F14CC19CE1E",
+      "seating": [
+        "3",
+        "6"
+      ],
+      "name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Interior and comfort trim comparison",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Interior and comfort trim comparison",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "trim_names_from_guide": [
+        "WT",
+        "Custom",
+        "LT",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Interior and comfort",
+      "guide_domains": [
+        "Interior and comfort"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 37,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "compare_domain_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_Interior_and_comfort.html"
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "C66C01D3F3E5C0B0D",
+      "seating": [
+        "3",
+        "6"
+      ],
+      "name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Exterior and utility trim comparison",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Exterior and utility trim comparison",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "trim_names_from_guide": [
+        "WT",
+        "Custom",
+        "LT",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Exterior and utility",
+      "guide_domains": [
+        "Exterior and utility"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 76,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "compare_domain_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_Exterior_and_utility.html"
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "C4FC5D3D6CDB1EB8A",
+      "seating": [
+        "3",
+        "6"
+      ],
+      "name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Wheels and tires trim comparison",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Wheels and tires trim comparison",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "trim_names_from_guide": [
+        "WT",
+        "Custom",
+        "LT",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Wheels and tires",
+      "guide_domains": [
+        "Wheels and tires"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 40,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "compare_domain_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_Wheels_and_tires.html"
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "CAB935E39125183A4",
+      "seating": [
+        "3",
+        "6"
+      ],
+      "name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Mechanical and performance trim comparison",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Mechanical and performance trim comparison",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "trim_names_from_guide": [
+        "WT",
+        "Custom",
+        "LT",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Mechanical and performance",
+      "guide_domains": [
+        "Mechanical and performance"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 74,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "compare_domain_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_Mechanical_and_performance.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "TCC095D50F5544DE6",
+      "name": "WT",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc WT",
+      "seating": [
+        "3",
+        "6"
+      ],
+      "drivetrains": [
+        "2RM",
+        "4RM"
+      ],
+      "body_styles": [
+        "Cabine classique",
+        "Cabine double",
+        "Cabine multiplace"
+      ],
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "trim": "WT",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Colour and trim",
+        "Other guide content"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc WT",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc_wt",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "trim_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc_wt",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "trim_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_WT.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "T247AC4604CA70C01",
+      "name": "Custom",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc Custom",
+      "seating": [
+        "3",
+        "6"
+      ],
+      "drivetrains": [
+        "2RM",
+        "4RM"
+      ],
+      "body_styles": [
+        "Cabine classique",
+        "Cabine double",
+        "Cabine multiplace"
+      ],
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "trim": "Custom",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Colour and trim",
+        "Other guide content"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc Custom",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc_custom",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "trim_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc_custom",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "trim_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_Custom.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "T430EA3DBB402B1B3",
+      "name": "LT",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc LT",
+      "seating": [
+        "3",
+        "6"
+      ],
+      "drivetrains": [
+        "2RM",
+        "4RM"
+      ],
+      "body_styles": [
+        "Cabine classique",
+        "Cabine double",
+        "Cabine multiplace"
+      ],
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "trim": "LT",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Packages and options",
+        "Colour and trim",
+        "Other guide content"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc LT",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc_lt",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "trim_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc_lt",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "trim_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_LT.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "TFF1C2B85CA879983",
+      "name": "ZR2",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc ZR2",
+      "seating": [
+        "6"
+      ],
+      "drivetrains": [
+        "4RM"
+      ],
+      "body_styles": [
+        "Cabine multiplace"
+      ],
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "trim": "ZR2",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Packages and options",
+        "Colour and trim",
+        "Other guide content"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc ZR2",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc_zr2",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "trim_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc_zr2",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "trim_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_ZR2.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "TCFC9B5B92B1CDDA2",
+      "name": "LTZ",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc LTZ",
+      "seating": [
+        "3",
+        "6"
+      ],
+      "drivetrains": [
+        "2RM",
+        "4RM"
+      ],
+      "body_styles": [
+        "Cabine classique",
+        "Cabine double",
+        "Cabine multiplace"
+      ],
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "trim": "LTZ",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Packages and options",
+        "Colour and trim",
+        "Other guide content"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc LTZ",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc_ltz",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "trim_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc_ltz",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "trim_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_LTZ.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "T58D3050033AC789C",
+      "name": "High Country",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc High Country",
+      "seating": [
+        "6"
+      ],
+      "drivetrains": [
+        "4RM"
+      ],
+      "body_styles": [
+        "Cabine multiplace"
+      ],
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "trim": "High Country",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Packages and options",
+        "Colour and trim",
+        "Other guide content"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc High Country",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc_high_country",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "trim_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc_high_country",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "trim_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_High_Country.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "T9490E4899C2F04A0",
+      "name": "LT",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc LT",
+      "seating": [
+        "3",
+        "6"
+      ],
+      "drivetrains": [
+        "2RM",
+        "4RM"
+      ],
+      "body_styles": [
+        "Cabine classique",
+        "Cabine double",
+        "Cabine multiplace"
+      ],
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "trim": "LT",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Packages and options",
+        "Colour and trim"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc LT",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc_lt",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "trim_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc_lt",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "trim_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_LT_2.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "T0F4473CF8157D918",
+      "name": "ZR2",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc ZR2",
+      "seating": [
+        "6"
+      ],
+      "drivetrains": [
+        "4RM"
+      ],
+      "body_styles": [
+        "Cabine multiplace"
+      ],
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "trim": "ZR2",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Packages and options",
+        "Colour and trim"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc ZR2",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc_zr2",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "trim_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc_zr2",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "child": [
+        "SADF1BD4524436DAF",
+        "S5383D5B3AEB93ADF"
+      ],
+      "child_paths": [
+        "spec_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CK20743_2.html",
+        "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK20743_ZR2.html"
+      ],
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "trim_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_ZR2_2.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "TAFA030BED8A76486",
+      "name": "LTZ",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc LTZ",
+      "seating": [
+        "3",
+        "6"
+      ],
+      "drivetrains": [
+        "2RM",
+        "4RM"
+      ],
+      "body_styles": [
+        "Cabine classique",
+        "Cabine double",
+        "Cabine multiplace"
+      ],
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "trim": "LTZ",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Packages and options",
+        "Colour and trim"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc LTZ",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc_ltz",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "trim_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc_ltz",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "trim_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_LTZ_2.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "T4E25CAFB751FEFD8",
+      "name": "High Country",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc High Country",
+      "seating": [
+        "6"
+      ],
+      "drivetrains": [
+        "4RM"
+      ],
+      "body_styles": [
+        "Cabine multiplace"
+      ],
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "trim": "High Country",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Packages and options",
+        "Colour and trim"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc High Country",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc_high_country",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "trim_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc_high_country",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "child": [
+        "SB560FA32252A6446",
+        "S61D8AF24FCD4B075",
+        "S6844CA12E2F46A16",
+        "SAA559CF2ABE7BCFB"
+      ],
+      "child_paths": [
+        "spec_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CK20743_3.html",
+        "spec_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CK20943_2.html",
+        "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK20743_High_Country.html",
+        "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK20943_High_Country.html"
+      ],
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "trim_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_High_Country_2.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SA2A1A2DD54A2EB57",
+      "name": "Cabine classique | 2RM, cabine classique à caisse longue",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Configuration dimensions and specifications | 2RM, cabine classique à caisse longue",
+      "configuration_kind": "spec-group",
+      "configuration_label": "2RM, cabine classique à caisse longue",
+      "body_style": "Cabine classique",
+      "drivetrain": "2RM",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "spec_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CC20903.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SDE25C4C60213033A",
+      "name": "Cabine classique | 4RM, cabine classique, caisse longue",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Configuration dimensions and specifications | 4RM, cabine classique, caisse longue",
+      "configuration_kind": "spec-group",
+      "configuration_label": "4RM, cabine classique, caisse longue",
+      "body_style": "Cabine classique",
+      "drivetrain": "4RM",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "spec_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CK20903.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S16538F669554CC48",
+      "name": "Cabine double | 2RM, cabine double, caisse standard",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Configuration dimensions and specifications | 2RM, cabine double, caisse standard",
+      "configuration_kind": "spec-group",
+      "configuration_label": "2RM, cabine double, caisse standard",
+      "body_style": "Cabine double",
+      "drivetrain": "2RM",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "spec_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CC20753.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S2201376E7CDD4AA0",
+      "name": "Cabine double | 4RM, cabine double, caisse standard",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Configuration dimensions and specifications | 4RM, cabine double, caisse standard",
+      "configuration_kind": "spec-group",
+      "configuration_label": "4RM, cabine double, caisse standard",
+      "body_style": "Cabine double",
+      "drivetrain": "4RM",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "spec_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CK20753.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SA4795A1E6896FF22",
+      "name": "Cabine double | 2RM, cabine double, caisse longue",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Configuration dimensions and specifications | 2RM, cabine double, caisse longue",
+      "configuration_kind": "spec-group",
+      "configuration_label": "2RM, cabine double, caisse longue",
+      "body_style": "Cabine double",
+      "drivetrain": "2RM",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "spec_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CC20953.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S18AD82DC78F26E1E",
+      "name": "Cabine double | 4RM, cabine double, caisse longue",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Configuration dimensions and specifications | 4RM, cabine double, caisse longue",
+      "configuration_kind": "spec-group",
+      "configuration_label": "4RM, cabine double, caisse longue",
+      "body_style": "Cabine double",
+      "drivetrain": "4RM",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "spec_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CK20953.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SAD72D3943A584678",
+      "name": "Cabine multiplace | 2RM, cabine multiplace, caisse standard",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Configuration dimensions and specifications | 2RM, cabine multiplace, caisse standard",
+      "configuration_kind": "spec-group",
+      "configuration_label": "2RM, cabine multiplace, caisse standard",
+      "body_style": "Cabine multiplace",
+      "drivetrain": "2RM",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "spec_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CC20743.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S1FB9F8D52B0D5C46",
+      "name": "Cabine multiplace | 4RM, cabine multiplace, caisse standard",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Configuration dimensions and specifications | 4RM, cabine multiplace, caisse standard",
+      "configuration_kind": "spec-group",
+      "configuration_label": "4RM, cabine multiplace, caisse standard",
+      "body_style": "Cabine multiplace",
+      "drivetrain": "4RM",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "spec_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CK20743.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SADF1BD4524436DAF",
+      "name": "Cabine multiplace | 4RM, cabine multiplace, caisse standard\nZR2 | 4RM, cabine multiplace, caisse standard",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Configuration dimensions and specifications | 4RM, cabine multiplace, caisse standard\nZR2",
+      "configuration_kind": "spec-group",
+      "configuration_label": "4RM, cabine multiplace, caisse standard\nZR2",
+      "body_style": "Cabine multiplace",
+      "drivetrain": "4RM",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "parent_trims": [
+        "trim_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_ZR2_2.html"
+      ],
+      "parent_trim_ids": [
+        "T0F4473CF8157D918"
+      ],
+      "path": "spec_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CK20743_2.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SD990EE9349DA99E9",
+      "name": "Cabine multiplace | 2RM, cabine multiplace, caisse longue",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Configuration dimensions and specifications | 2RM, cabine multiplace, caisse longue",
+      "configuration_kind": "spec-group",
+      "configuration_label": "2RM, cabine multiplace, caisse longue",
+      "body_style": "Cabine multiplace",
+      "drivetrain": "2RM",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "spec_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CC20943.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SB4D6A075CB4B2F2C",
+      "name": "Cabine multiplace | 4RM, cabine multiplace, caisse longue",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Configuration dimensions and specifications | 4RM, cabine multiplace, caisse longue",
+      "configuration_kind": "spec-group",
+      "configuration_label": "4RM, cabine multiplace, caisse longue",
+      "body_style": "Cabine multiplace",
+      "drivetrain": "4RM",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "spec_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CK20943.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SB560FA32252A6446",
+      "name": "Cabine multiplace | 4RM, cabine multiplace, caisse standard\nHigh Country | 4RM, cabine multiplace, caisse standard | High Country",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Configuration dimensions and specifications | 4RM, cabine multiplace, caisse standard\nHigh Country",
+      "configuration_kind": "spec-group",
+      "configuration_label": "4RM, cabine multiplace, caisse standard\nHigh Country",
+      "body_style": "Cabine multiplace",
+      "drivetrain": "4RM",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "parent_trims": [
+        "trim_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_High_Country_2.html"
+      ],
+      "parent_trim_ids": [
+        "T4E25CAFB751FEFD8"
+      ],
+      "path": "spec_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CK20743_3.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S61D8AF24FCD4B075",
+      "name": "Cabine multiplace | 4RM, cabine multiplace, caisse longue\nHigh Country | 4RM, cabine multiplace, caisse longue | High Country",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Configuration dimensions and specifications | 4RM, cabine multiplace, caisse longue\nHigh Country",
+      "configuration_kind": "spec-group",
+      "configuration_label": "4RM, cabine multiplace, caisse longue\nHigh Country",
+      "body_style": "Cabine multiplace",
+      "drivetrain": "4RM",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "parent_trims": [
+        "trim_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_High_Country_2.html"
+      ],
+      "parent_trim_ids": [
+        "T4E25CAFB751FEFD8"
+      ],
+      "path": "spec_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CK20943_2.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S15C6A80CED6C43EC",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine classique"
+      ],
+      "guide_categories": [
+        "Boîtes de vitesses",
+        "Ponts"
+      ],
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "14500 (6577)",
+        "18700 (8482)",
+        "18500 (8392)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC20903.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S3CDEF81E77573125",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine classique"
+      ],
+      "guide_categories": [
+        "Boîtes de vitesses",
+        "Ponts"
+      ],
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "14500 (6577)",
+        "18300 (8301)",
+        "18090 (8206)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK20903.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S4EB8098972B8D8D4",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine double"
+      ],
+      "guide_categories": [
+        "Boîtes de vitesses",
+        "Ponts"
+      ],
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "14500 (6577)",
+        "18600 (8437)",
+        "18100 (8210)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC20753.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SD15C66A11DBC581D",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine double"
+      ],
+      "guide_categories": [
+        "Boîtes de vitesses",
+        "Ponts"
+      ],
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "14500 (6577)",
+        "18200 (8256)",
+        "17700 (8029)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK20753.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SAE8EACF8974F7600",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine double"
+      ],
+      "guide_categories": [
+        "Boîtes de vitesses",
+        "Ponts"
+      ],
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "17900 (8119)",
+        "18400 (8346)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC20953.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SC47B30649D46AAB9",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine double"
+      ],
+      "guide_categories": [
+        "Boîtes de vitesses",
+        "Ponts"
+      ],
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "17600 (7983)",
+        "18000 (8165)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK20953.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SA8432BB367C21AC7",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine multiplace"
+      ],
+      "guide_categories": [
+        "Boîtes de vitesses",
+        "Ponts"
+      ],
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "18500 (8392)",
+        "19200 (8709)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC20743.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S59ACB44214A1681C",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine multiplace"
+      ],
+      "guide_categories": [
+        "Boîtes de vitesses",
+        "Ponts"
+      ],
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "18500 (8392)",
+        "18380 (8337)",
+        "19100 (8664)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK20743.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S6D7BD1D687811868",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine multiplace"
+      ],
+      "guide_categories": [
+        "Boîtes de vitesses",
+        "Ponts"
+      ],
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "18500 (8392)",
+        "19200 (8709)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC20943.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S481E43A98389193E",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine multiplace"
+      ],
+      "guide_categories": [
+        "Boîtes de vitesses",
+        "Ponts"
+      ],
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "18500 (8392)",
+        "18280 (8292)",
+        "19000 (8618)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK20943.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S49BBA39FBFA5FFB4",
+      "name": "NHT",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Configuration powertrain and trailering | NHT",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "20000 (9072)",
+        "21510 (9757)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC20743_NHT.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S1D1534951AAD0634",
+      "name": "NHT",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Configuration powertrain and trailering | NHT",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "20000 (9072)",
+        "21600 (9798)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK20743_NHT.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S5383D5B3AEB93ADF",
+      "name": "ZR2",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "18500 (8392)",
+        "18100 (8210)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "parent_trims": [
+        "trim_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_ZR2_2.html"
+      ],
+      "parent_trim_ids": [
+        "T0F4473CF8157D918"
+      ],
+      "path": "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK20743_ZR2.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S6844CA12E2F46A16",
+      "name": "High Country",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Configuration powertrain and trailering | High Country",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "18500 (8392)",
+        "18000 (8165)",
+        "18100 (8210)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "parent_trims": [
+        "trim_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_High_Country_2.html"
+      ],
+      "parent_trim_ids": [
+        "T4E25CAFB751FEFD8"
+      ],
+      "path": "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK20743_High_Country.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S74A8DD8854478D5F",
+      "name": "NHT",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Configuration powertrain and trailering | NHT",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "20000 (9072)",
+        "22070 (10011)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC20943_NHT.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SFE9CAC4ED2BF860B",
+      "name": "NHT",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Configuration powertrain and trailering | NHT",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "20000 (9072)",
+        "21490 (9748)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK20943_NHT.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SAA559CF2ABE7BCFB",
+      "name": "High Country",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Configuration powertrain and trailering | High Country",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "18500 (8392)",
+        "17900 (8119)",
+        "18700 (8482)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "parent_trims": [
+        "trim_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_High_Country_2.html"
+      ],
+      "parent_trim_ids": [
+        "T4E25CAFB751FEFD8"
+      ],
+      "path": "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK20943_High_Country.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SE202B7C289D0C8B5",
+      "name": "NHT",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Configuration powertrain and trailering | NHT",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "14500 (6577)",
+        "22420 (10170)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC20903_NHT.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SBBFB4FA12985110A",
+      "name": "NHT",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | Configuration powertrain and trailering | NHT",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "14500 (6577)",
+        "22050 (10002)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK20903_NHT.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SFE19B3CD7D20865D",
+      "name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc GCWR reference",
+      "title": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc | GCWR reference",
+      "configuration_kind": "gcwr-reference",
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "gcwr_values": [
+        "24500 (11113)",
+        "26000 (11794)",
+        "27500 (12474)",
+        "30000 (13608)"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Trailering and GCWR",
+      "guide_domains": [
+        "Trailering and GCWR"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_2500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "MD59E22F025A0C60E",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "MD59E22F025A0C60E",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "MD59E22F025A0C60E",
+      "path": "config_2026_Chevrolet_Silverado_2500_poids_lourd_au_d_tail_et_pour_parc_gcwr_reference.html"
+    }
+  ]
+}

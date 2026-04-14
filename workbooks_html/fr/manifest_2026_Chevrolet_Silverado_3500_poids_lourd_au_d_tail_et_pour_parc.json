@@ -1,0 +1,2203 @@
+{
+  "vehicle_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+  "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+  "files": [
+    {
+      "objecttype": "Product",
+      "type": "model",
+      "node_id": "M8C19DF447065B7CF",
+      "seating": [
+        "3",
+        "6"
+      ],
+      "name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "doc_type": "model",
+      "doc_role": "entity",
+      "entity_level": "model",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Colour and trim",
+        "Other guide content"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "child": [
+        "CD107E9A77719DF66",
+        "CAD270D0C5742121B",
+        "C00F73A27C0E7E21C",
+        "C9E371A4389AA4581",
+        "C9DA18B94431576A5",
+        "CC8EB66F794F3C81F",
+        "T2F035755C037336C",
+        "T808AB0E22E9F9BBD",
+        "T20F9DA729C04A9EC",
+        "TFBC74D5911718E2C",
+        "S1FDE789C3F807F64",
+        "SB2344B5F2505ABEC",
+        "S41FAB83ED75B6559",
+        "S2F654691B91FE143",
+        "S8E16B1D71098224C",
+        "S04E641E3A703CAEF",
+        "S4D290D992C2B7539",
+        "SE6534362D2219020",
+        "S45DECDA65E7A668D",
+        "SB0B982DE0B44E964",
+        "S1747F69FAEC71B2F",
+        "S7ECA3DA6A4897FF1",
+        "SBB426A95D005D1CE",
+        "S689EB719CE65E70D",
+        "S7F829F5831BC99A1",
+        "SE21BE0AB473C6905",
+        "SEAE37C05A339C6F0",
+        "SEB74AD4FE65D7082",
+        "S2A2B9AE83FC20D5A",
+        "SD06B0BE6C03D30AA",
+        "S858E28C8EC653445",
+        "SDCAFBE22013B8AD9",
+        "S5891D85CB63C7EF2",
+        "SB4BCE9FA634C1442",
+        "S622B47EA311A08CB",
+        "S603DD73290E3961F",
+        "S147FFFB3A9D3E884",
+        "SBBC57E3BAD9A5B5D",
+        "S8E7EE75ECF60E9E2",
+        "S8670A6F3AF243A45",
+        "S412C15B1C68DA025",
+        "S597038743BDB8CEB"
+      ],
+      "child_paths": [
+        "compare_domain_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_Safety_and_driver_assistance.html",
+        "compare_domain_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_Technology_and_connectivity.html",
+        "compare_domain_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_Interior_and_comfort.html",
+        "compare_domain_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_Exterior_and_utility.html",
+        "compare_domain_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_Wheels_and_tires.html",
+        "compare_domain_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_Mechanical_and_performance.html",
+        "trim_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_WT.html",
+        "trim_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_LT.html",
+        "trim_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_LTZ.html",
+        "trim_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_High_Country.html",
+        "spec_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CC30903.html",
+        "spec_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CK30903.html",
+        "spec_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CC30953.html",
+        "spec_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CK30953.html",
+        "spec_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CC30743.html",
+        "spec_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CK30743.html",
+        "spec_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CC30943.html",
+        "spec_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CK30943.html",
+        "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC30903.html",
+        "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK30903.html",
+        "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC30953.html",
+        "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK30953.html",
+        "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC30743.html",
+        "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK30743.html",
+        "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC30943.html",
+        "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK30943.html",
+        "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC30743_avec_roues_arri_re_simples.html",
+        "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK30743_avec_roues_arri_re_simples.html",
+        "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC30943_avec_roues_arri_re_simples.html",
+        "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC30943_avec_roues_arri_re_jumel_es.html",
+        "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK30943_avec_roues_arri_re_simples.html",
+        "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK30943_avec_roues_arri_re_jumel_es.html",
+        "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC30953_avec_roues_arri_re_simples.html",
+        "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC30953_avec_roues_arri_re_jumel_es.html",
+        "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK30953_avec_roues_arri_re_simples.html",
+        "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK30953_avec_roues_arri_re_jumel_es.html",
+        "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC30903_avec_roues_arri_re_simples.html",
+        "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC30903_avec_roues_arri_re_jumel_es.html",
+        "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC30903_avec_roues_arri_re_jumel_es_et_NHT.html",
+        "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK30903_avec_roues_arri_re_simples.html",
+        "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK30903_avec_roues_arri_re_jumel_es.html",
+        "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_gcwr_reference.html"
+      ],
+      "path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "available_trims": [
+        "WT",
+        "LT",
+        "LTZ",
+        "High Country"
+      ]
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "CD107E9A77719DF66",
+      "seating": [
+        "3",
+        "6"
+      ],
+      "name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Safety and driver assistance trim comparison",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Safety and driver assistance trim comparison",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "trim_names_from_guide": [
+        "WT",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Safety and driver assistance",
+      "guide_domains": [
+        "Safety and driver assistance"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 33,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "compare_domain_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_Safety_and_driver_assistance.html"
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "CAD270D0C5742121B",
+      "seating": [
+        "3",
+        "6"
+      ],
+      "name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Technology and connectivity trim comparison",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Technology and connectivity trim comparison",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "trim_names_from_guide": [
+        "WT",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Technology and connectivity",
+      "guide_domains": [
+        "Technology and connectivity"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 19,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "compare_domain_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_Technology_and_connectivity.html"
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "C00F73A27C0E7E21C",
+      "seating": [
+        "3",
+        "6"
+      ],
+      "name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Interior and comfort trim comparison",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Interior and comfort trim comparison",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "trim_names_from_guide": [
+        "WT",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Interior and comfort",
+      "guide_domains": [
+        "Interior and comfort"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 36,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "compare_domain_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_Interior_and_comfort.html"
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "C9E371A4389AA4581",
+      "seating": [
+        "3",
+        "6"
+      ],
+      "name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Exterior and utility trim comparison",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Exterior and utility trim comparison",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "trim_names_from_guide": [
+        "WT",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Exterior and utility",
+      "guide_domains": [
+        "Exterior and utility"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 66,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "compare_domain_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_Exterior_and_utility.html"
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "C9DA18B94431576A5",
+      "seating": [
+        "3",
+        "6"
+      ],
+      "name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Wheels and tires trim comparison",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Wheels and tires trim comparison",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "trim_names_from_guide": [
+        "WT",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Wheels and tires",
+      "guide_domains": [
+        "Wheels and tires"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 40,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "compare_domain_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_Wheels_and_tires.html"
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "CC8EB66F794F3C81F",
+      "seating": [
+        "3",
+        "6"
+      ],
+      "name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Mechanical and performance trim comparison",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Mechanical and performance trim comparison",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "trim_names_from_guide": [
+        "WT",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Mechanical and performance",
+      "guide_domains": [
+        "Mechanical and performance"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 36,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "compare_domain_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_Mechanical_and_performance.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "T2F035755C037336C",
+      "name": "WT",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc WT",
+      "seating": [
+        "3",
+        "6"
+      ],
+      "drivetrains": [
+        "2RM",
+        "4RM"
+      ],
+      "body_styles": [
+        "Cabine classique",
+        "Cabine double",
+        "Cabine multiplace"
+      ],
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "trim": "WT",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Colour and trim",
+        "Other guide content"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc WT",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc_wt",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "trim_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc_wt",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "trim_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_WT.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "T808AB0E22E9F9BBD",
+      "name": "LT",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc LT",
+      "seating": [
+        "3",
+        "6"
+      ],
+      "drivetrains": [
+        "2RM",
+        "4RM"
+      ],
+      "body_styles": [
+        "Cabine classique",
+        "Cabine double",
+        "Cabine multiplace"
+      ],
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "trim": "LT",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Colour and trim",
+        "Other guide content"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc LT",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc_lt",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "trim_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc_lt",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "trim_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_LT.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "T20F9DA729C04A9EC",
+      "name": "LTZ",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc LTZ",
+      "seating": [
+        "3",
+        "6"
+      ],
+      "drivetrains": [
+        "2RM",
+        "4RM"
+      ],
+      "body_styles": [
+        "Cabine classique",
+        "Cabine double",
+        "Cabine multiplace"
+      ],
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "trim": "LTZ",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Colour and trim",
+        "Other guide content"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc LTZ",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc_ltz",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "trim_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc_ltz",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "trim_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_LTZ.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "TFBC74D5911718E2C",
+      "name": "High Country",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc High Country",
+      "seating": [
+        "6"
+      ],
+      "drivetrains": [
+        "4RM"
+      ],
+      "body_styles": [
+        "Cabine multiplace"
+      ],
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "trim": "High Country",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Colour and trim",
+        "Other guide content"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc High Country",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc_high_country",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "trim_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc_high_country",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "child": [
+        "S0A473FF2D55BDD91",
+        "S091E6ACFC564DF0D",
+        "S0241CC710579FFF6",
+        "S7DB43BE31106D414",
+        "S8D096D08F979D043"
+      ],
+      "child_paths": [
+        "spec_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_High_Country_CK30743.html",
+        "spec_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_High_Country_CK30943.html",
+        "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK30743_avec_roues_arri_re_simples_et_High_Country.html",
+        "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK30943_avec_roues_arri_re_simples_et_High_Country.html",
+        "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK30943_avec_roues_arri_re_jumel_es_et_High_Country.html"
+      ],
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "trim_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_High_Country.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S1FDE789C3F807F64",
+      "name": "Cabine classique | 2RM, cabine classique, caisse longue avec roues arrière simples ou jumelées",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration dimensions and specifications | 2RM, cabine classique, caisse longue avec roues arrière simples ou jumelées",
+      "configuration_kind": "spec-group",
+      "configuration_label": "2RM, cabine classique, caisse longue avec roues arrière simples ou jumelées",
+      "body_style": "Cabine classique",
+      "drivetrain": "2RM",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "spec_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CC30903.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SB2344B5F2505ABEC",
+      "name": "Cabine classique | 4RM, cabine classique, caisse longue avec roues arrière simples ou jumelées",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration dimensions and specifications | 4RM, cabine classique, caisse longue avec roues arrière simples ou jumelées",
+      "configuration_kind": "spec-group",
+      "configuration_label": "4RM, cabine classique, caisse longue avec roues arrière simples ou jumelées",
+      "body_style": "Cabine classique",
+      "drivetrain": "4RM",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "spec_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CK30903.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S41FAB83ED75B6559",
+      "name": "Cabine double | 2RM, cabine double, caisse longue avec roues arrière simples ou jumelées",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration dimensions and specifications | 2RM, cabine double, caisse longue avec roues arrière simples ou jumelées",
+      "configuration_kind": "spec-group",
+      "configuration_label": "2RM, cabine double, caisse longue avec roues arrière simples ou jumelées",
+      "body_style": "Cabine double",
+      "drivetrain": "2RM",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "spec_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CC30953.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S2F654691B91FE143",
+      "name": "Cabine double | 4RM, cabine double, caisse longue avec roues arrière simples ou jumelées",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration dimensions and specifications | 4RM, cabine double, caisse longue avec roues arrière simples ou jumelées",
+      "configuration_kind": "spec-group",
+      "configuration_label": "4RM, cabine double, caisse longue avec roues arrière simples ou jumelées",
+      "body_style": "Cabine double",
+      "drivetrain": "4RM",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "spec_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CK30953.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S8E16B1D71098224C",
+      "name": "Cabine multiplace | 2RM, cabine multiplace, caisse standard avec roues arrière simples",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration dimensions and specifications | 2RM, cabine multiplace, caisse standard avec roues arrière simples",
+      "configuration_kind": "spec-group",
+      "configuration_label": "2RM, cabine multiplace, caisse standard avec roues arrière simples",
+      "body_style": "Cabine multiplace",
+      "drivetrain": "2RM",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "spec_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CC30743.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S04E641E3A703CAEF",
+      "name": "Cabine multiplace | 4RM, cabine multiplace, caisse standard avec roues arrière simples",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration dimensions and specifications | 4RM, cabine multiplace, caisse standard avec roues arrière simples",
+      "configuration_kind": "spec-group",
+      "configuration_label": "4RM, cabine multiplace, caisse standard avec roues arrière simples",
+      "body_style": "Cabine multiplace",
+      "drivetrain": "4RM",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "spec_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CK30743.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S4D290D992C2B7539",
+      "name": "Cabine multiplace | 2RM, cabine multiplace, caisse longue avec roues arrière simples ou jumelées",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration dimensions and specifications | 2RM, cabine multiplace, caisse longue avec roues arrière simples ou jumelées",
+      "configuration_kind": "spec-group",
+      "configuration_label": "2RM, cabine multiplace, caisse longue avec roues arrière simples ou jumelées",
+      "body_style": "Cabine multiplace",
+      "drivetrain": "2RM",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "spec_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CC30943.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SE6534362D2219020",
+      "name": "Cabine multiplace | 4RM, cabine multiplace, caisse longue avec roues arrière simples ou jumelées",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration dimensions and specifications | 4RM, cabine multiplace, caisse longue avec roues arrière simples ou jumelées",
+      "configuration_kind": "spec-group",
+      "configuration_label": "4RM, cabine multiplace, caisse longue avec roues arrière simples ou jumelées",
+      "body_style": "Cabine multiplace",
+      "drivetrain": "4RM",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "spec_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_CK30943.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S0A473FF2D55BDD91",
+      "name": "Cabine multiplace | 4RM, cabine multiplace, caisse standard avec roues arrière simples\nHigh Country | 4RM, cabine multiplace, caisse standard avec roues arrière simples | High Country",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration dimensions and specifications | 4RM, cabine multiplace, caisse standard avec roues arrière simples\nHigh Country",
+      "configuration_kind": "spec-group",
+      "configuration_label": "4RM, cabine multiplace, caisse standard avec roues arrière simples\nHigh Country",
+      "body_style": "Cabine multiplace",
+      "drivetrain": "4RM",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc High Country",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc_high_country",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "trim_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc_high_country",
+      "trim": "High Country",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "TFBC74D5911718E2C",
+      "parent_path": "trim_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_High_Country.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "parent_trim": "trim_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_High_Country.html",
+      "parent_trim_id": "TFBC74D5911718E2C",
+      "path": "spec_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_High_Country_CK30743.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S091E6ACFC564DF0D",
+      "name": "Cabine multiplace | 4RM, cabine multiplace, caisse longue avec roues arrière simples ou jumelées\nHigh Country | 4RM, cabine multiplace, caisse longue avec roues arrière simples ou jumelées | High Country",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration dimensions and specifications | 4RM, cabine multiplace, caisse longue avec roues arrière simples ou jumelées\nHigh Country",
+      "configuration_kind": "spec-group",
+      "configuration_label": "4RM, cabine multiplace, caisse longue avec roues arrière simples ou jumelées\nHigh Country",
+      "body_style": "Cabine multiplace",
+      "drivetrain": "4RM",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc High Country",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc_high_country",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "trim_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc_high_country",
+      "trim": "High Country",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "TFBC74D5911718E2C",
+      "parent_path": "trim_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_High_Country.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "parent_trim": "trim_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_High_Country.html",
+      "parent_trim_id": "TFBC74D5911718E2C",
+      "path": "spec_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_dimensions_specifications_High_Country_CK30943.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S45DECDA65E7A668D",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine classique"
+      ],
+      "guide_categories": [
+        "Boîtes de vitesses",
+        "Ponts"
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC30903.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SB0B982DE0B44E964",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine classique"
+      ],
+      "guide_categories": [
+        "Boîtes de vitesses",
+        "Ponts"
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK30903.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S1747F69FAEC71B2F",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine double"
+      ],
+      "guide_categories": [
+        "Boîtes de vitesses",
+        "Ponts"
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC30953.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S7ECA3DA6A4897FF1",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine double"
+      ],
+      "guide_categories": [
+        "Boîtes de vitesses",
+        "Ponts"
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK30953.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SBB426A95D005D1CE",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine multiplace"
+      ],
+      "guide_categories": [
+        "Boîtes de vitesses",
+        "Ponts"
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC30743.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S689EB719CE65E70D",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine multiplace"
+      ],
+      "guide_categories": [
+        "Boîtes de vitesses",
+        "Ponts"
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK30743.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S7F829F5831BC99A1",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine multiplace"
+      ],
+      "guide_categories": [
+        "Boîtes de vitesses",
+        "Ponts"
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC30943.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SE21BE0AB473C6905",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine multiplace"
+      ],
+      "guide_categories": [
+        "Boîtes de vitesses",
+        "Ponts"
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK30943.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SEAE37C05A339C6F0",
+      "name": "avec roues arrière simples",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration powertrain and trailering | avec roues arrière simples",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "20000 (9072)",
+        "18650 (8460)",
+        "21900 (9934)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC30743_avec_roues_arri_re_simples.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SEB74AD4FE65D7082",
+      "name": "avec roues arrière simples",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration powertrain and trailering | avec roues arrière simples",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "20000 (9072)",
+        "18300 (8301)",
+        "21600 (9798)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK30743_avec_roues_arri_re_simples.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S0241CC710579FFF6",
+      "name": "avec roues arrière simples et High Country",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration powertrain and trailering | avec roues arrière simples et High Country",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "20000 (9072)",
+        "17900 (8119)",
+        "21300 (9662)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc High Country",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc_high_country",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "trim_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc_high_country",
+      "trim": "High Country",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "TFBC74D5911718E2C",
+      "parent_path": "trim_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_High_Country.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "parent_trim": "trim_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_High_Country.html",
+      "parent_trim_id": "TFBC74D5911718E2C",
+      "path": "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK30743_avec_roues_arri_re_simples_et_High_Country.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S2A2B9AE83FC20D5A",
+      "name": "avec roues arrière simples",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration powertrain and trailering | avec roues arrière simples",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "20000 (9072)",
+        "18510 (8396)",
+        "22070 (10011)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC30943_avec_roues_arri_re_simples.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SD06B0BE6C03D30AA",
+      "name": "avec roues arrière jumelées",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration powertrain and trailering | avec roues arrière jumelées",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "18700 (8482)",
+        "20000 (9072)",
+        "18230 (8269)",
+        "31440 (14261)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC30943_avec_roues_arri_re_jumel_es.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S858E28C8EC653445",
+      "name": "avec roues arrière simples",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration powertrain and trailering | avec roues arrière simples",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "20000 (9072)",
+        "18230 (8269)",
+        "21490 (9748)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK30943_avec_roues_arri_re_simples.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S7DB43BE31106D414",
+      "name": "avec roues arrière simples et High Country",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration powertrain and trailering | avec roues arrière simples et High Country",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "20000 (9072)",
+        "17600 (7983)",
+        "21200 (9616)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc High Country",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc_high_country",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "trim_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc_high_country",
+      "trim": "High Country",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "TFBC74D5911718E2C",
+      "parent_path": "trim_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_High_Country.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "parent_trim": "trim_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_High_Country.html",
+      "parent_trim_id": "TFBC74D5911718E2C",
+      "path": "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK30943_avec_roues_arri_re_simples_et_High_Country.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SDCAFBE22013B8AD9",
+      "name": "avec roues arrière jumelées",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration powertrain and trailering | avec roues arrière jumelées",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "17800 (8074)",
+        "20000 (9072)",
+        "31000 (14062)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK30943_avec_roues_arri_re_jumel_es.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S8D096D08F979D043",
+      "name": "avec roues arrière jumelées et High Country",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration powertrain and trailering | avec roues arrière jumelées et High Country",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "17600 (7983)",
+        "20000 (9072)",
+        "30900 (14016)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc High Country",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc_high_country",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "trim_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc_high_country",
+      "trim": "High Country",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "TFBC74D5911718E2C",
+      "parent_path": "trim_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_High_Country.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "parent_trim": "trim_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_High_Country.html",
+      "parent_trim_id": "TFBC74D5911718E2C",
+      "path": "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK30943_avec_roues_arri_re_jumel_es_et_High_Country.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S5891D85CB63C7EF2",
+      "name": "avec roues arrière simples",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration powertrain and trailering | avec roues arrière simples",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "20000 (9072)",
+        "18620 (8446)",
+        "21900 (9934)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC30953_avec_roues_arri_re_simples.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SB4BCE9FA634C1442",
+      "name": "avec roues arrière jumelées",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration powertrain and trailering | avec roues arrière jumelées",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "18300 (8301)",
+        "20000 (9072)",
+        "31580 (14325)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC30953_avec_roues_arri_re_jumel_es.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S622B47EA311A08CB",
+      "name": "avec roues arrière simples",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration powertrain and trailering | avec roues arrière simples",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "20000 (9072)",
+        "18310 (8305)",
+        "21590 (9793)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK30953_avec_roues_arri_re_simples.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S603DD73290E3961F",
+      "name": "avec roues arrière jumelées",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration powertrain and trailering | avec roues arrière jumelées",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "18000 (8165)",
+        "20000 (9072)",
+        "17990 (8160)",
+        "31270 (14184)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK30953_avec_roues_arri_re_jumel_es.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S147FFFB3A9D3E884",
+      "name": "avec roues arrière simples",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration powertrain and trailering | avec roues arrière simples",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "14500 (6577)",
+        "19080 (8655)",
+        "22420 (10170)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC30903_avec_roues_arri_re_simples.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SBBC57E3BAD9A5B5D",
+      "name": "avec roues arrière jumelées",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration powertrain and trailering | avec roues arrière jumelées",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "18700 (8482)",
+        "20000 (9072)",
+        "18760 (8510)",
+        "35500 (16103)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC30903_avec_roues_arri_re_jumel_es.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S8E7EE75ECF60E9E2",
+      "name": "avec roues arrière jumelées et NHT",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration powertrain and trailering | avec roues arrière jumelées et NHT",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "20000 (9072)",
+        "36000 (16330)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CC30903_avec_roues_arri_re_jumel_es_et_NHT.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S8670A6F3AF243A45",
+      "name": "avec roues arrière simples",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration powertrain and trailering | avec roues arrière simples",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "14500 (6577)",
+        "18700 (8482)",
+        "22040 (9997)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK30903_avec_roues_arri_re_simples.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S412C15B1C68DA025",
+      "name": "avec roues arrière jumelées",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | Configuration powertrain and trailering | avec roues arrière jumelées",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
+        "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "18400 (8346)",
+        "20000 (9072)",
+        "18380 (8337)",
+        "31500 (14288)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_powertrain_trailering_CK30903_avec_roues_arri_re_jumel_es.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S597038743BDB8CEB",
+      "name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc GCWR reference",
+      "title": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc | GCWR reference",
+      "configuration_kind": "gcwr-reference",
+      "engines": [
+        "V8 à essence de 6,6 L",
+        "avec le moteur V8 turbo diesel Duramax de 6,6 L"
+      ],
+      "gcwr_values": [
+        "26000 (11794)",
+        "30000 (13608)",
+        "40000 (18144)",
+        "43500 (19732)",
+        "43900 (19913)"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Trailering and GCWR",
+      "guide_domains": [
+        "Trailering and GCWR"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500 à poids lourd au détail et pour parc",
+      "entity_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "vehicle_key": "2026_chevrolet_silverado_3500_poids_lourd_au_d_tail_et_pour_parc",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500 à poids lourd au détail et pour parc",
+      "retrieval_granularity": "coarse",
+      "collection": "M8C19DF447065B7CF",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent": "M8C19DF447065B7CF",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc.html",
+      "parent_vehicle_id": "M8C19DF447065B7CF",
+      "path": "config_2026_Chevrolet_Silverado_3500_poids_lourd_au_d_tail_et_pour_parc_gcwr_reference.html"
+    }
+  ]
+}

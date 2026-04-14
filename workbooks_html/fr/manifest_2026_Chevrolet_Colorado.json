@@ -1,0 +1,1212 @@
+{
+  "vehicle_name": "2026 Chevrolet Colorado",
+  "vehicle_key": "2026_chevrolet_colorado",
+  "files": [
+    {
+      "objecttype": "Product",
+      "type": "model",
+      "node_id": "M25999455DC3D1B75",
+      "seating": [
+        "2/3"
+      ],
+      "name": "2026 Chevrolet Colorado",
+      "title": "2026 Chevrolet Colorado",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Colorado",
+      "doc_type": "model",
+      "doc_role": "entity",
+      "entity_level": "model",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Colour and trim",
+        "Other guide content"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2026 Chevrolet Colorado",
+      "entity_key": "2026_chevrolet_colorado",
+      "vehicle_key": "2026_chevrolet_colorado",
+      "collection": "M25999455DC3D1B75",
+      "collection_path": "model_2026_Chevrolet_Colorado.html",
+      "child": [
+        "C0CD00553E3EC570B",
+        "C83730C3F95422244",
+        "C2D3E7E352802523F",
+        "C8F787105FAAF5DD0",
+        "CAC733C50BCE78435",
+        "CF2B23A2A4983B62F",
+        "TB4EFF3E61273FD80",
+        "TE3089247AC03378B",
+        "T472142A7A26EF7DE",
+        "T5D7AF952C1E3F148",
+        "TD068D1F8C18627D8",
+        "TB62F012AEBEC4691",
+        "SF54E274392348B26",
+        "S5BB5EADE327E5D51",
+        "S4FECAA044E6ED815",
+        "SD66BDB178657B6A0",
+        "SAF8ADB45AFAADCDE",
+        "S3487CD30ED5223F5",
+        "S4F32E1F7AFF0E692",
+        "S3D5264A6D9BCE568",
+        "S7DDF616EF3FEFCA8",
+        "SFC32D93DEAF8083A"
+      ],
+      "child_paths": [
+        "compare_domain_2026_Chevrolet_Colorado_Safety_and_driver_assistance.html",
+        "compare_domain_2026_Chevrolet_Colorado_Technology_and_connectivity.html",
+        "compare_domain_2026_Chevrolet_Colorado_Interior_and_comfort.html",
+        "compare_domain_2026_Chevrolet_Colorado_Exterior_and_utility.html",
+        "compare_domain_2026_Chevrolet_Colorado_Wheels_and_tires.html",
+        "compare_domain_2026_Chevrolet_Colorado_Mechanical_and_performance.html",
+        "trim_2026_Chevrolet_Colorado_WT_2RM.html",
+        "trim_2026_Chevrolet_Colorado_WT_4RM.html",
+        "trim_2026_Chevrolet_Colorado_LT_4RM.html",
+        "trim_2026_Chevrolet_Colorado_Trail_Boss_4RM.html",
+        "trim_2026_Chevrolet_Colorado_Z71_4RM.html",
+        "trim_2026_Chevrolet_Colorado_ZR2_4RM.html",
+        "spec_2026_Chevrolet_Colorado_dimensions_specifications_14C43_WT_cabine_multiplace_caisse_courte_et_2RM_ou_4RM.html",
+        "config_2026_Chevrolet_Colorado_powertrain_trailering_4WT_4WD_14C43.html",
+        "config_2026_Chevrolet_Colorado_powertrain_trailering_4LT_4WD_14C43.html",
+        "config_2026_Chevrolet_Colorado_powertrain_trailering_0TR_4WD_14E43.html",
+        "config_2026_Chevrolet_Colorado_powertrain_trailering_4Z7_4WD_14G43.html",
+        "config_2026_Chevrolet_Colorado_powertrain_trailering_4ZR_4WD_14H43.html",
+        "config_2026_Chevrolet_Colorado_powertrain_trailering_14C43.html",
+        "config_2026_Chevrolet_Colorado_powertrain_trailering_14E43_14G43.html",
+        "config_2026_Chevrolet_Colorado_powertrain_trailering_14H43.html",
+        "config_2026_Chevrolet_Colorado_gcwr_reference.html"
+      ],
+      "path": "model_2026_Chevrolet_Colorado.html",
+      "available_trims": [
+        "WT",
+        "LT",
+        "Trail Boss",
+        "Z71",
+        "ZR2"
+      ]
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "C0CD00553E3EC570B",
+      "seating": [
+        "2/3"
+      ],
+      "name": "2026 Chevrolet Colorado | Safety and driver assistance trim comparison",
+      "title": "2026 Chevrolet Colorado | Safety and driver assistance trim comparison",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Colorado",
+      "trim_names_from_guide": [
+        "WT",
+        "LT",
+        "Trail Boss",
+        "Z71",
+        "ZR2"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Safety and driver assistance",
+      "guide_domains": [
+        "Safety and driver assistance"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 10,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Colorado",
+      "entity_key": "2026_chevrolet_colorado",
+      "vehicle_key": "2026_chevrolet_colorado",
+      "collection": "M25999455DC3D1B75",
+      "collection_path": "model_2026_Chevrolet_Colorado.html",
+      "parent": "M25999455DC3D1B75",
+      "parent_path": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle_id": "M25999455DC3D1B75",
+      "path": "compare_domain_2026_Chevrolet_Colorado_Safety_and_driver_assistance.html"
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "C83730C3F95422244",
+      "seating": [
+        "2/3"
+      ],
+      "name": "2026 Chevrolet Colorado | Technology and connectivity trim comparison",
+      "title": "2026 Chevrolet Colorado | Technology and connectivity trim comparison",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Colorado",
+      "trim_names_from_guide": [
+        "WT",
+        "LT",
+        "Trail Boss",
+        "Z71",
+        "ZR2"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Technology and connectivity",
+      "guide_domains": [
+        "Technology and connectivity"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 8,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Colorado",
+      "entity_key": "2026_chevrolet_colorado",
+      "vehicle_key": "2026_chevrolet_colorado",
+      "collection": "M25999455DC3D1B75",
+      "collection_path": "model_2026_Chevrolet_Colorado.html",
+      "parent": "M25999455DC3D1B75",
+      "parent_path": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle_id": "M25999455DC3D1B75",
+      "path": "compare_domain_2026_Chevrolet_Colorado_Technology_and_connectivity.html"
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "C2D3E7E352802523F",
+      "seating": [
+        "2/3"
+      ],
+      "name": "2026 Chevrolet Colorado | Interior and comfort trim comparison",
+      "title": "2026 Chevrolet Colorado | Interior and comfort trim comparison",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Colorado",
+      "trim_names_from_guide": [
+        "WT",
+        "LT",
+        "Trail Boss",
+        "Z71",
+        "ZR2"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Interior and comfort",
+      "guide_domains": [
+        "Interior and comfort"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 28,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Colorado",
+      "entity_key": "2026_chevrolet_colorado",
+      "vehicle_key": "2026_chevrolet_colorado",
+      "collection": "M25999455DC3D1B75",
+      "collection_path": "model_2026_Chevrolet_Colorado.html",
+      "parent": "M25999455DC3D1B75",
+      "parent_path": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle_id": "M25999455DC3D1B75",
+      "path": "compare_domain_2026_Chevrolet_Colorado_Interior_and_comfort.html"
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "C8F787105FAAF5DD0",
+      "seating": [
+        "2/3"
+      ],
+      "name": "2026 Chevrolet Colorado | Exterior and utility trim comparison",
+      "title": "2026 Chevrolet Colorado | Exterior and utility trim comparison",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Colorado",
+      "trim_names_from_guide": [
+        "WT",
+        "LT",
+        "Trail Boss",
+        "Z71",
+        "ZR2"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Exterior and utility",
+      "guide_domains": [
+        "Exterior and utility"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 70,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Colorado",
+      "entity_key": "2026_chevrolet_colorado",
+      "vehicle_key": "2026_chevrolet_colorado",
+      "collection": "M25999455DC3D1B75",
+      "collection_path": "model_2026_Chevrolet_Colorado.html",
+      "parent": "M25999455DC3D1B75",
+      "parent_path": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle_id": "M25999455DC3D1B75",
+      "path": "compare_domain_2026_Chevrolet_Colorado_Exterior_and_utility.html"
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "CAC733C50BCE78435",
+      "seating": [
+        "2/3"
+      ],
+      "name": "2026 Chevrolet Colorado | Wheels and tires trim comparison",
+      "title": "2026 Chevrolet Colorado | Wheels and tires trim comparison",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Colorado",
+      "trim_names_from_guide": [
+        "WT",
+        "LT",
+        "Trail Boss",
+        "Z71",
+        "ZR2"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Wheels and tires",
+      "guide_domains": [
+        "Wheels and tires"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 39,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Colorado",
+      "entity_key": "2026_chevrolet_colorado",
+      "vehicle_key": "2026_chevrolet_colorado",
+      "collection": "M25999455DC3D1B75",
+      "collection_path": "model_2026_Chevrolet_Colorado.html",
+      "parent": "M25999455DC3D1B75",
+      "parent_path": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle_id": "M25999455DC3D1B75",
+      "path": "compare_domain_2026_Chevrolet_Colorado_Wheels_and_tires.html"
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "CF2B23A2A4983B62F",
+      "seating": [
+        "2/3"
+      ],
+      "name": "2026 Chevrolet Colorado | Mechanical and performance trim comparison",
+      "title": "2026 Chevrolet Colorado | Mechanical and performance trim comparison",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Colorado",
+      "trim_names_from_guide": [
+        "WT",
+        "LT",
+        "Trail Boss",
+        "Z71",
+        "ZR2"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Mechanical and performance",
+      "guide_domains": [
+        "Mechanical and performance"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 37,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Colorado",
+      "entity_key": "2026_chevrolet_colorado",
+      "vehicle_key": "2026_chevrolet_colorado",
+      "collection": "M25999455DC3D1B75",
+      "collection_path": "model_2026_Chevrolet_Colorado.html",
+      "parent": "M25999455DC3D1B75",
+      "parent_path": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle_id": "M25999455DC3D1B75",
+      "path": "compare_domain_2026_Chevrolet_Colorado_Mechanical_and_performance.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "TB4EFF3E61273FD80",
+      "name": "WT",
+      "title": "2026 Chevrolet Colorado WT",
+      "seating": [
+        "2/3"
+      ],
+      "drivetrains": [
+        "2RM"
+      ],
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Colorado",
+      "trim": "WT",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Colour and trim",
+        "Other guide content"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2026 Chevrolet Colorado WT",
+      "entity_key": "2026_chevrolet_colorado_wt_2rm",
+      "vehicle_key": "2026_chevrolet_colorado",
+      "trim_key": "2026_chevrolet_colorado_wt_2rm",
+      "collection": "M25999455DC3D1B75",
+      "collection_path": "model_2026_Chevrolet_Colorado.html",
+      "parent": "M25999455DC3D1B75",
+      "parent_path": "model_2026_Chevrolet_Colorado.html",
+      "child": [
+        "SF54E274392348B26"
+      ],
+      "child_paths": [
+        "spec_2026_Chevrolet_Colorado_dimensions_specifications_14C43_WT_cabine_multiplace_caisse_courte_et_2RM_ou_4RM.html"
+      ],
+      "parent_vehicle": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle_id": "M25999455DC3D1B75",
+      "path": "trim_2026_Chevrolet_Colorado_WT_2RM.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "TE3089247AC03378B",
+      "name": "WT",
+      "title": "2026 Chevrolet Colorado WT",
+      "seating": [
+        "2/3"
+      ],
+      "drivetrains": [
+        "2RM"
+      ],
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Colorado",
+      "trim": "WT",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Colour and trim",
+        "Other guide content"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2026 Chevrolet Colorado WT",
+      "entity_key": "2026_chevrolet_colorado_wt_4rm",
+      "vehicle_key": "2026_chevrolet_colorado",
+      "trim_key": "2026_chevrolet_colorado_wt_4rm",
+      "collection": "M25999455DC3D1B75",
+      "collection_path": "model_2026_Chevrolet_Colorado.html",
+      "parent": "M25999455DC3D1B75",
+      "parent_path": "model_2026_Chevrolet_Colorado.html",
+      "child": [
+        "SF54E274392348B26"
+      ],
+      "child_paths": [
+        "spec_2026_Chevrolet_Colorado_dimensions_specifications_14C43_WT_cabine_multiplace_caisse_courte_et_2RM_ou_4RM.html"
+      ],
+      "parent_vehicle": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle_id": "M25999455DC3D1B75",
+      "path": "trim_2026_Chevrolet_Colorado_WT_4RM.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "T472142A7A26EF7DE",
+      "name": "LT",
+      "title": "2026 Chevrolet Colorado LT",
+      "seating": [
+        "2/3"
+      ],
+      "drivetrains": [
+        "4RM"
+      ],
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Colorado",
+      "trim": "LT",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Colour and trim",
+        "Other guide content"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2026 Chevrolet Colorado LT",
+      "entity_key": "2026_chevrolet_colorado_lt_4rm",
+      "vehicle_key": "2026_chevrolet_colorado",
+      "trim_key": "2026_chevrolet_colorado_lt_4rm",
+      "collection": "M25999455DC3D1B75",
+      "collection_path": "model_2026_Chevrolet_Colorado.html",
+      "parent": "M25999455DC3D1B75",
+      "parent_path": "model_2026_Chevrolet_Colorado.html",
+      "child": [
+        "SC035E621EB810473"
+      ],
+      "child_paths": [
+        "spec_2026_Chevrolet_Colorado_dimensions_specifications_LT_4RM_14C43_LT_4RM_cabine_multiplace_et_caisse_courte.html"
+      ],
+      "parent_vehicle": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle_id": "M25999455DC3D1B75",
+      "path": "trim_2026_Chevrolet_Colorado_LT_4RM.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "T5D7AF952C1E3F148",
+      "name": "Trail Boss",
+      "title": "2026 Chevrolet Colorado Trail Boss",
+      "seating": [
+        "2/3"
+      ],
+      "drivetrains": [
+        "4RM"
+      ],
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Colorado",
+      "trim": "Trail Boss",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Colour and trim",
+        "Other guide content"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2026 Chevrolet Colorado Trail Boss",
+      "entity_key": "2026_chevrolet_colorado_trail_boss_4rm",
+      "vehicle_key": "2026_chevrolet_colorado",
+      "trim_key": "2026_chevrolet_colorado_trail_boss_4rm",
+      "collection": "M25999455DC3D1B75",
+      "collection_path": "model_2026_Chevrolet_Colorado.html",
+      "parent": "M25999455DC3D1B75",
+      "parent_path": "model_2026_Chevrolet_Colorado.html",
+      "child": [
+        "S10570B94AF555EC6"
+      ],
+      "child_paths": [
+        "spec_2026_Chevrolet_Colorado_dimensions_specifications_Trail_Boss_4RM_14E43_Trail_Boss_4RM_cabine_multiplace_et_caisse_courte.html"
+      ],
+      "parent_vehicle": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle_id": "M25999455DC3D1B75",
+      "path": "trim_2026_Chevrolet_Colorado_Trail_Boss_4RM.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "TD068D1F8C18627D8",
+      "name": "Z71",
+      "title": "2026 Chevrolet Colorado Z71",
+      "seating": [
+        "2/3"
+      ],
+      "drivetrains": [
+        "4RM"
+      ],
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Colorado",
+      "trim": "Z71",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Colour and trim",
+        "Other guide content"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2026 Chevrolet Colorado Z71",
+      "entity_key": "2026_chevrolet_colorado_z71_4rm",
+      "vehicle_key": "2026_chevrolet_colorado",
+      "trim_key": "2026_chevrolet_colorado_z71_4rm",
+      "collection": "M25999455DC3D1B75",
+      "collection_path": "model_2026_Chevrolet_Colorado.html",
+      "parent": "M25999455DC3D1B75",
+      "parent_path": "model_2026_Chevrolet_Colorado.html",
+      "child": [
+        "SC5A12D5C0550B8FB"
+      ],
+      "child_paths": [
+        "spec_2026_Chevrolet_Colorado_dimensions_specifications_Z71_4RM_14G43_Z71_4RM_cabine_multiplace_et_caisse_courte.html"
+      ],
+      "parent_vehicle": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle_id": "M25999455DC3D1B75",
+      "path": "trim_2026_Chevrolet_Colorado_Z71_4RM.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "TB62F012AEBEC4691",
+      "name": "ZR2",
+      "title": "2026 Chevrolet Colorado ZR2",
+      "seating": [
+        "2/3"
+      ],
+      "drivetrains": [
+        "4RM"
+      ],
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Colorado",
+      "trim": "ZR2",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Colour and trim",
+        "Other guide content"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2026 Chevrolet Colorado ZR2",
+      "entity_key": "2026_chevrolet_colorado_zr2_4rm",
+      "vehicle_key": "2026_chevrolet_colorado",
+      "trim_key": "2026_chevrolet_colorado_zr2_4rm",
+      "collection": "M25999455DC3D1B75",
+      "collection_path": "model_2026_Chevrolet_Colorado.html",
+      "parent": "M25999455DC3D1B75",
+      "parent_path": "model_2026_Chevrolet_Colorado.html",
+      "child": [
+        "S7337AF55E307D284"
+      ],
+      "child_paths": [
+        "spec_2026_Chevrolet_Colorado_dimensions_specifications_ZR2_4RM_14H43_Cabine_multiplace_caisse_courte_ZR2_4RM.html"
+      ],
+      "parent_vehicle": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle_id": "M25999455DC3D1B75",
+      "path": "trim_2026_Chevrolet_Colorado_ZR2_4RM.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SF54E274392348B26",
+      "name": "14C43\nWT à cabine multiplace, caisse courte et 2RM ou 4RM | WT à cabine multiplace, caisse courte et 2RM ou 4RM",
+      "title": "2026 Chevrolet Colorado | Configuration dimensions and specifications | 14C43\nWT à cabine multiplace, caisse courte et 2RM ou 4RM",
+      "configuration_kind": "spec-group",
+      "configuration_label": "14C43\nWT à cabine multiplace, caisse courte et 2RM ou 4RM",
+      "drivetrain": "2RM",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Colorado",
+      "entity_key": "2026_chevrolet_colorado",
+      "vehicle_key": "2026_chevrolet_colorado",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Colorado",
+      "retrieval_granularity": "coarse",
+      "collection": "M25999455DC3D1B75",
+      "collection_path": "model_2026_Chevrolet_Colorado.html",
+      "parent": "M25999455DC3D1B75",
+      "parent_path": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle_id": "M25999455DC3D1B75",
+      "parent_trims": [
+        "trim_2026_Chevrolet_Colorado_WT_2RM.html",
+        "trim_2026_Chevrolet_Colorado_WT_4RM.html"
+      ],
+      "parent_trim_ids": [
+        "TB4EFF3E61273FD80",
+        "TE3089247AC03378B"
+      ],
+      "path": "spec_2026_Chevrolet_Colorado_dimensions_specifications_14C43_WT_cabine_multiplace_caisse_courte_et_2RM_ou_4RM.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SC035E621EB810473",
+      "name": "14C43\nLT à 4RM, cabine multiplace et caisse courte | LT à 4RM, cabine multiplace et caisse courte",
+      "title": "2026 Chevrolet Colorado | Configuration dimensions and specifications | 14C43\nLT à 4RM, cabine multiplace et caisse courte",
+      "configuration_kind": "spec-group",
+      "configuration_label": "14C43\nLT à 4RM, cabine multiplace et caisse courte",
+      "drivetrain": "4RM",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Colorado LT",
+      "entity_key": "2026_chevrolet_colorado_lt_4rm",
+      "vehicle_key": "2026_chevrolet_colorado",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Colorado",
+      "retrieval_granularity": "coarse",
+      "trim_key": "2026_chevrolet_colorado_lt_4rm",
+      "trim": "LT",
+      "collection": "M25999455DC3D1B75",
+      "collection_path": "model_2026_Chevrolet_Colorado.html",
+      "parent": "T472142A7A26EF7DE",
+      "parent_path": "trim_2026_Chevrolet_Colorado_LT_4RM.html",
+      "parent_vehicle": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle_id": "M25999455DC3D1B75",
+      "parent_trim": "trim_2026_Chevrolet_Colorado_LT_4RM.html",
+      "parent_trim_id": "T472142A7A26EF7DE",
+      "path": "spec_2026_Chevrolet_Colorado_dimensions_specifications_LT_4RM_14C43_LT_4RM_cabine_multiplace_et_caisse_courte.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S10570B94AF555EC6",
+      "name": "14E43\nTrail Boss à 4RM, cabine multiplace et caisse courte | Trail Boss à 4RM, cabine multiplace et caisse courte",
+      "title": "2026 Chevrolet Colorado | Configuration dimensions and specifications | 14E43\nTrail Boss à 4RM, cabine multiplace et caisse courte",
+      "configuration_kind": "spec-group",
+      "configuration_label": "14E43\nTrail Boss à 4RM, cabine multiplace et caisse courte",
+      "drivetrain": "4RM",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Colorado Trail Boss",
+      "entity_key": "2026_chevrolet_colorado_trail_boss_4rm",
+      "vehicle_key": "2026_chevrolet_colorado",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Colorado",
+      "retrieval_granularity": "coarse",
+      "trim_key": "2026_chevrolet_colorado_trail_boss_4rm",
+      "trim": "Trail Boss",
+      "collection": "M25999455DC3D1B75",
+      "collection_path": "model_2026_Chevrolet_Colorado.html",
+      "parent": "T5D7AF952C1E3F148",
+      "parent_path": "trim_2026_Chevrolet_Colorado_Trail_Boss_4RM.html",
+      "parent_vehicle": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle_id": "M25999455DC3D1B75",
+      "parent_trim": "trim_2026_Chevrolet_Colorado_Trail_Boss_4RM.html",
+      "parent_trim_id": "T5D7AF952C1E3F148",
+      "path": "spec_2026_Chevrolet_Colorado_dimensions_specifications_Trail_Boss_4RM_14E43_Trail_Boss_4RM_cabine_multiplace_et_caisse_courte.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SC5A12D5C0550B8FB",
+      "name": "14G43\nZ71 à 4RM, cabine multiplace et caisse courte | Z71 à 4RM, cabine multiplace et caisse courte",
+      "title": "2026 Chevrolet Colorado | Configuration dimensions and specifications | 14G43\nZ71 à 4RM, cabine multiplace et caisse courte",
+      "configuration_kind": "spec-group",
+      "configuration_label": "14G43\nZ71 à 4RM, cabine multiplace et caisse courte",
+      "drivetrain": "4RM",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Colorado Z71",
+      "entity_key": "2026_chevrolet_colorado_z71_4rm",
+      "vehicle_key": "2026_chevrolet_colorado",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Colorado",
+      "retrieval_granularity": "coarse",
+      "trim_key": "2026_chevrolet_colorado_z71_4rm",
+      "trim": "Z71",
+      "collection": "M25999455DC3D1B75",
+      "collection_path": "model_2026_Chevrolet_Colorado.html",
+      "parent": "TD068D1F8C18627D8",
+      "parent_path": "trim_2026_Chevrolet_Colorado_Z71_4RM.html",
+      "parent_vehicle": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle_id": "M25999455DC3D1B75",
+      "parent_trim": "trim_2026_Chevrolet_Colorado_Z71_4RM.html",
+      "parent_trim_id": "TD068D1F8C18627D8",
+      "path": "spec_2026_Chevrolet_Colorado_dimensions_specifications_Z71_4RM_14G43_Z71_4RM_cabine_multiplace_et_caisse_courte.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S7337AF55E307D284",
+      "name": "14H43\nCabine multiplace, caisse courte ZR2 4RM | Cabine multiplace, caisse courte ZR2 4RM",
+      "title": "2026 Chevrolet Colorado | Configuration dimensions and specifications | 14H43\nCabine multiplace, caisse courte ZR2 4RM",
+      "configuration_kind": "spec-group",
+      "configuration_label": "14H43\nCabine multiplace, caisse courte ZR2 4RM",
+      "drivetrain": "4RM",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Colorado ZR2",
+      "entity_key": "2026_chevrolet_colorado_zr2_4rm",
+      "vehicle_key": "2026_chevrolet_colorado",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Colorado",
+      "retrieval_granularity": "coarse",
+      "trim_key": "2026_chevrolet_colorado_zr2_4rm",
+      "trim": "ZR2",
+      "collection": "M25999455DC3D1B75",
+      "collection_path": "model_2026_Chevrolet_Colorado.html",
+      "parent": "TB62F012AEBEC4691",
+      "parent_path": "trim_2026_Chevrolet_Colorado_ZR2_4RM.html",
+      "parent_vehicle": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle_id": "M25999455DC3D1B75",
+      "parent_trim": "trim_2026_Chevrolet_Colorado_ZR2_4RM.html",
+      "parent_trim_id": "TB62F012AEBEC4691",
+      "path": "spec_2026_Chevrolet_Colorado_dimensions_specifications_ZR2_4RM_14H43_Cabine_multiplace_caisse_courte_ZR2_4RM.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S5BB5EADE327E5D51",
+      "name": "4WT 4WD 14C43",
+      "title": "2026 Chevrolet Colorado | Configuration powertrain and trailering | 4WT 4WD 14C43",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "S = Équipement de série A = Livrable -- (dashes) = Non livrable D = Carré noir – Compris dans le groupe d'équipements ■ = Inclus dans le groupe d'équipement □ = Inclus dans le groupe d'équipement mais évolutif * = Indique disponibilité de ce type sur plusieurs modèles."
+      ],
+      "guide_categories": [
+        "MFC 8 vitesses Automatique",
+        "GU6 3,42",
+        "C6X 6250 (2835)"
+      ],
+      "engines": [
+        "TurboMax"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Colorado",
+      "entity_key": "2026_chevrolet_colorado",
+      "vehicle_key": "2026_chevrolet_colorado",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Colorado",
+      "retrieval_granularity": "coarse",
+      "collection": "M25999455DC3D1B75",
+      "collection_path": "model_2026_Chevrolet_Colorado.html",
+      "parent": "M25999455DC3D1B75",
+      "parent_path": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle_id": "M25999455DC3D1B75",
+      "path": "config_2026_Chevrolet_Colorado_powertrain_trailering_4WT_4WD_14C43.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S4FECAA044E6ED815",
+      "name": "4LT 4WD 14C43",
+      "title": "2026 Chevrolet Colorado | Configuration powertrain and trailering | 4LT 4WD 14C43",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "S = Équipement de série A = Livrable -- (dashes) = Non livrable D = Carré noir – Compris dans le groupe d'équipements ■ = Inclus dans le groupe d'équipement □ = Inclus dans le groupe d'équipement mais évolutif * = Indique disponibilité de ce type sur plusieurs modèles."
+      ],
+      "guide_categories": [
+        "MFC 8 vitesses Automatique",
+        "GU6 3,42",
+        "C6X 6250 (2835)"
+      ],
+      "engines": [
+        "TurboMax"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Colorado",
+      "entity_key": "2026_chevrolet_colorado",
+      "vehicle_key": "2026_chevrolet_colorado",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Colorado",
+      "retrieval_granularity": "coarse",
+      "collection": "M25999455DC3D1B75",
+      "collection_path": "model_2026_Chevrolet_Colorado.html",
+      "parent": "M25999455DC3D1B75",
+      "parent_path": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle_id": "M25999455DC3D1B75",
+      "path": "config_2026_Chevrolet_Colorado_powertrain_trailering_4LT_4WD_14C43.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SD66BDB178657B6A0",
+      "name": "0TR 4WD 14E43",
+      "title": "2026 Chevrolet Colorado | Configuration powertrain and trailering | 0TR 4WD 14E43",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "S = Équipement de série A = Livrable -- (dashes) = Non livrable D = Carré noir – Compris dans le groupe d'équipements ■ = Inclus dans le groupe d'équipement □ = Inclus dans le groupe d'équipement mais évolutif * = Indique disponibilité de ce type sur plusieurs modèles."
+      ],
+      "guide_categories": [
+        "MFC 8 vitesses Automatique",
+        "GU6 3,42",
+        "C6X 6250 (2835)"
+      ],
+      "engines": [
+        "TurboMax"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Colorado",
+      "entity_key": "2026_chevrolet_colorado",
+      "vehicle_key": "2026_chevrolet_colorado",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Colorado",
+      "retrieval_granularity": "coarse",
+      "collection": "M25999455DC3D1B75",
+      "collection_path": "model_2026_Chevrolet_Colorado.html",
+      "parent": "M25999455DC3D1B75",
+      "parent_path": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle_id": "M25999455DC3D1B75",
+      "path": "config_2026_Chevrolet_Colorado_powertrain_trailering_0TR_4WD_14E43.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SAF8ADB45AFAADCDE",
+      "name": "4Z7 4WD 14G43",
+      "title": "2026 Chevrolet Colorado | Configuration powertrain and trailering | 4Z7 4WD 14G43",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "S = Équipement de série A = Livrable -- (dashes) = Non livrable D = Carré noir – Compris dans le groupe d'équipements ■ = Inclus dans le groupe d'équipement □ = Inclus dans le groupe d'équipement mais évolutif * = Indique disponibilité de ce type sur plusieurs modèles."
+      ],
+      "guide_categories": [
+        "MFC 8 vitesses Automatique",
+        "GU6 3,42",
+        "C6X 6250 (2835)"
+      ],
+      "engines": [
+        "TurboMax"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Colorado",
+      "entity_key": "2026_chevrolet_colorado",
+      "vehicle_key": "2026_chevrolet_colorado",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Colorado",
+      "retrieval_granularity": "coarse",
+      "collection": "M25999455DC3D1B75",
+      "collection_path": "model_2026_Chevrolet_Colorado.html",
+      "parent": "M25999455DC3D1B75",
+      "parent_path": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle_id": "M25999455DC3D1B75",
+      "path": "config_2026_Chevrolet_Colorado_powertrain_trailering_4Z7_4WD_14G43.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S3487CD30ED5223F5",
+      "name": "4ZR 4WD 14H43",
+      "title": "2026 Chevrolet Colorado | Configuration powertrain and trailering | 4ZR 4WD 14H43",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "S = Équipement de série A = Livrable -- (dashes) = Non livrable D = Carré noir – Compris dans le groupe d'équipements ■ = Inclus dans le groupe d'équipement □ = Inclus dans le groupe d'équipement mais évolutif * = Indique disponibilité de ce type sur plusieurs modèles."
+      ],
+      "guide_categories": [
+        "MFC 8 vitesses Automatique",
+        "GU6 3,42",
+        "C6X 6250 (2835)"
+      ],
+      "engines": [
+        "TurboMax"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Colorado",
+      "entity_key": "2026_chevrolet_colorado",
+      "vehicle_key": "2026_chevrolet_colorado",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Colorado",
+      "retrieval_granularity": "coarse",
+      "collection": "M25999455DC3D1B75",
+      "collection_path": "model_2026_Chevrolet_Colorado.html",
+      "parent": "M25999455DC3D1B75",
+      "parent_path": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle_id": "M25999455DC3D1B75",
+      "path": "config_2026_Chevrolet_Colorado_powertrain_trailering_4ZR_4WD_14H43.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S4F32E1F7AFF0E692",
+      "name": "14C43",
+      "title": "2026 Chevrolet Colorado | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule"
+      ],
+      "engines": [
+        "TurboMax"
+      ],
+      "axle_ratios": [
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "7700 (3493)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Colorado",
+      "entity_key": "2026_chevrolet_colorado",
+      "vehicle_key": "2026_chevrolet_colorado",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Colorado",
+      "retrieval_granularity": "coarse",
+      "collection": "M25999455DC3D1B75",
+      "collection_path": "model_2026_Chevrolet_Colorado.html",
+      "parent": "M25999455DC3D1B75",
+      "parent_path": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle_id": "M25999455DC3D1B75",
+      "path": "config_2026_Chevrolet_Colorado_powertrain_trailering_14C43.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S3D5264A6D9BCE568",
+      "name": "14E43 /14G43",
+      "title": "2026 Chevrolet Colorado | Configuration powertrain and trailering | 14E43 /14G43",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule"
+      ],
+      "engines": [
+        "TurboMax"
+      ],
+      "axle_ratios": [
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "7700 (3493)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Colorado",
+      "entity_key": "2026_chevrolet_colorado",
+      "vehicle_key": "2026_chevrolet_colorado",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Colorado",
+      "retrieval_granularity": "coarse",
+      "collection": "M25999455DC3D1B75",
+      "collection_path": "model_2026_Chevrolet_Colorado.html",
+      "parent": "M25999455DC3D1B75",
+      "parent_path": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle_id": "M25999455DC3D1B75",
+      "path": "config_2026_Chevrolet_Colorado_powertrain_trailering_14E43_14G43.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S7DDF616EF3FEFCA8",
+      "name": "14H43",
+      "title": "2026 Chevrolet Colorado | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Caractéristiques de boîte de vitesses automatique avec attelage à boule"
+      ],
+      "engines": [
+        "TurboMax"
+      ],
+      "axle_ratios": [
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "6000 (2722)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Colorado",
+      "entity_key": "2026_chevrolet_colorado",
+      "vehicle_key": "2026_chevrolet_colorado",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Colorado",
+      "retrieval_granularity": "coarse",
+      "collection": "M25999455DC3D1B75",
+      "collection_path": "model_2026_Chevrolet_Colorado.html",
+      "parent": "M25999455DC3D1B75",
+      "parent_path": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle_id": "M25999455DC3D1B75",
+      "path": "config_2026_Chevrolet_Colorado_powertrain_trailering_14H43.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SFC32D93DEAF8083A",
+      "name": "2026 Chevrolet Colorado GCWR reference",
+      "title": "2026 Chevrolet Colorado | GCWR reference",
+      "configuration_kind": "gcwr-reference",
+      "engines": [
+        "TurboMax"
+      ],
+      "gcwr_values": [
+        "9100 (4128)",
+        "11600 (5262)",
+        "13250 (6010)"
+      ],
+      "axle_ratios": [
+        "3.42"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Trailering and GCWR",
+      "guide_domains": [
+        "Trailering and GCWR"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Colorado",
+      "entity_key": "2026_chevrolet_colorado",
+      "vehicle_key": "2026_chevrolet_colorado",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Colorado",
+      "retrieval_granularity": "coarse",
+      "collection": "M25999455DC3D1B75",
+      "collection_path": "model_2026_Chevrolet_Colorado.html",
+      "parent": "M25999455DC3D1B75",
+      "parent_path": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle": "model_2026_Chevrolet_Colorado.html",
+      "parent_vehicle_id": "M25999455DC3D1B75",
+      "path": "config_2026_Chevrolet_Colorado_gcwr_reference.html"
+    }
+  ]
+}
