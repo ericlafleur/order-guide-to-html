@@ -7,26 +7,26 @@ eleventyExcludeFromCollections: true
         xmlns:coveo="https://www.coveo.com/en/company/about-us">
 {%- for page in collections.workbookPagesFr %}
   <url>
-    <loc>{{ site.url }}{{ page.url }}</loc>
-    <lastmod>{{ page.date }}</lastmod>
+    <loc>{{ (site.url + page.url) | escape }}</loc>
+    <lastmod>{{ page.date | escape }}</lastmod>
     {%- if page.meta %}
     <coveo:metadata>
-      {%- if page.meta.objecttype %}<objecttype>{{ page.meta.objecttype }}</objecttype>{% endif %}
-      {%- if page.meta.type %}<type>{{ page.meta.type }}</type>{% endif %}
-      {%- if page.meta.name %}<name>{{ page.meta.name }}</name>{% endif %}
-      {%- if page.meta.title %}<title>{{ page.meta.title }}</title>{% endif %}
-      {%- if page.meta.domain %}<domain>{{ page.meta.domain }}</domain>{% endif %}
-      {%- if page.meta.surface %}<surface>{{ page.meta.surface }}</surface>{% endif %}
-      {%- if page.meta.make %}<make>{{ page.meta.make }}</make>{% endif %}
-      {%- if page.meta.model %}<model>{{ page.meta.model }}</model>{% endif %}
-      {%- if page.meta.year %}<year>{{ page.meta.year }}</year>{% endif %}
-      {%- if page.meta.trim %}<trim>{{ page.meta.trim }}</trim>{% endif %}
-      {%- if page.meta.vehicle_key %}<vehicle_key>{{ page.meta.vehicle_key }}</vehicle_key>{% endif %}
-      {%- if page.meta.trim_key %}<trim_key>{{ page.meta.trim_key }}</trim_key>{% endif %}
-      {%- if page.meta.seating %}<seating>{{ page.meta.seating | join(";") }}</seating>{% endif %}
-      {%- if page.meta.body_styles %}<body_styles>{{ page.meta.body_styles | join(";") }}</body_styles>{% endif %}
-      {%- if page.meta.drivetrains %}<drivetrains>{{ page.meta.drivetrains | join(";") }}</drivetrains>{% endif %}
-      {%- if page.meta.engines %}<engines>{{ page.meta.engines | join(";") }}</engines>{% endif %}
+      {%- if page.meta.objecttype %}<objecttype>{{ page.meta.objecttype | escape }}</objecttype>{% endif %}
+      {%- if page.meta.type %}<type>{{ page.meta.type | escape }}</type>{% endif %}
+      {%- if page.meta.name %}<name>{{ page.meta.name | escape }}</name>{% endif %}
+      {%- if page.meta.title %}<title>{{ page.meta.title | escape }}</title>{% endif %}
+      {%- if page.meta.domain %}<domain>{{ page.meta.domain | escape }}</domain>{% endif %}
+      {%- if page.meta.surface %}<surface>{{ page.meta.surface | escape }}</surface>{% endif %}
+      {%- if page.meta.make %}<make>{{ page.meta.make | escape }}</make>{% endif %}
+      {%- if page.meta.model %}<model>{{ page.meta.model | escape }}</model>{% endif %}
+      {%- if page.meta.year %}<year>{{ page.meta.year | escape }}</year>{% endif %}
+      {%- if page.meta.trim %}<trim>{{ page.meta.trim | escape }}</trim>{% endif %}
+      {%- if page.meta.vehicle_key %}<vehicle_key>{{ page.meta.vehicle_key | escape }}</vehicle_key>{% endif %}
+      {%- if page.meta.trim_key %}<trim_key>{{ page.meta.trim_key | escape }}</trim_key>{% endif %}
+      {%- if page.meta.seating %}<seating>{{ page.meta.seating | join(";") | escape }}</seating>{% endif %}
+      {%- if page.meta.body_styles %}<body_styles>{{ page.meta.body_styles | join(";") | escape }}</body_styles>{% endif %}
+      {%- if page.meta.drivetrains %}<drivetrains>{{ page.meta.drivetrains | join(";") | escape }}</drivetrains>{% endif %}
+      {%- if page.meta.engines %}<engines>{{ page.meta.engines | join(";") | escape }}</engines>{% endif %}
     </coveo:metadata>
     {%- endif %}
   </url>

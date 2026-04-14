@@ -5,30 +5,48 @@ module.exports = function (eleventyConfig) {
   // Copy all HTML files from workbooks_html/ to _site/workbooks_html/ as-is.
   eleventyConfig.addPassthroughCopy("workbooks_html");
 
-  // Build a metadata lookup from all manifest_*.json files in workbooks_html/.
+  // Build a metadata lookup from all manifest_*.json files under workbooks_html/.
   const metadataByFilename = {};
+  const metadataByRelativePath = {};
   const htmlDir = "workbooks_html";
+
+  function walkDir(currentPath, onFile) {
+    if (!fs.existsSync(currentPath)) return;
+    for (const entry of fs.readdirSync(currentPath, { withFileTypes: true })) {
+      const fullPath = path.join(currentPath, entry.name);
+      if (entry.isDirectory()) {
+        walkDir(fullPath, onFile);
+      } else {
+        onFile(fullPath, entry.name);
+      }
+    }
+  }
+
   if (fs.existsSync(htmlDir)) {
-    for (const entry of fs.readdirSync(htmlDir)) {
-      if (entry.startsWith("manifest_") && entry.endsWith(".json")) {
+    walkDir(htmlDir, (fullPath, entryName) => {
+      if (entryName.startsWith("manifest_") && entryName.endsWith(".json")) {
         try {
           const manifest = JSON.parse(
-            fs.readFileSync(path.join(htmlDir, entry), "utf-8")
+            fs.readFileSync(fullPath, "utf-8")
           );
           for (const fileEntry of manifest.files || []) {
             if (fileEntry.path) {
-              const filename = path.basename(fileEntry.path);
-              metadataByFilename[filename] = {
+              const relativeFilePath = fileEntry.path.split(path.sep).join("/");
+              const filename = path.basename(relativeFilePath);
+              const metadata = {
                 vehicle_name: manifest.vehicle_name,
                 ...fileEntry,
               };
+              metadataByRelativePath[relativeFilePath] = metadata;
+              // Keep filename fallback for legacy flat outputs.
+              metadataByFilename[filename] = metadata;
             }
           }
         } catch (_e) {
           // skip unreadable or malformed manifest files
         }
       }
-    }
+    });
   }
 
   // Build a collection of workbook pages for a given language subdirectory.
@@ -46,10 +64,14 @@ module.exports = function (eleventyConfig) {
             walkDir(fullPath);
           } else if (entry.name.endsWith(".html")) {
             const mtime = fs.statSync(fullPath).mtime;
+            const relativePath = fullPath.split(path.sep).join("/");
             pages.push({
-              url: "/" + fullPath.split(path.sep).join("/"),
+              url: "/" + relativePath,
               date: mtime.toISOString().split("T")[0],
-              meta: metadataByFilename[entry.name] || null,
+              meta:
+                metadataByRelativePath[relativePath] ||
+                metadataByFilename[entry.name] ||
+                null,
             });
           }
         }
