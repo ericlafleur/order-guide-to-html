@@ -1,5 +1,34 @@
 const path = require("path");
 const fs = require("fs");
+const { execSync } = require("child_process");
+
+// Build a map of repo-relative file path (forward slashes) -> ISO date string
+// of the most recent git commit that touched it. Falls back gracefully when
+// git is unavailable or the file is untracked.
+function buildGitMtimeMap() {
+  const map = {};
+  try {
+    const out = execSync(
+      'git log --pretty="format:COMMIT %aI" --name-only -- workbooks_html/',
+      { encoding: "utf-8", maxBuffer: 20 * 1024 * 1024 }
+    );
+    let currentDate = null;
+    for (const line of out.split("\n")) {
+      const t = line.trim();
+      if (t.startsWith("COMMIT ")) {
+        currentDate = t.slice(7);
+      } else if (t && currentDate) {
+        // First occurrence = most recent commit (git log is newest-first).
+        if (!map[t]) map[t] = currentDate;
+      }
+    }
+  } catch (_e) {
+    // Not a git repo or git unavailable; all entries will fall back to mtime.
+  }
+  return map;
+}
+
+const gitMtimeMap = buildGitMtimeMap();
 
 module.exports = function (eleventyConfig) {
   // Copy all HTML files from workbooks_html/ to _site/workbooks_html/ as-is.
@@ -66,11 +95,13 @@ module.exports = function (eleventyConfig) {
           if (entry.isDirectory()) {
             walkDir(fullPath);
           } else if (entry.name.endsWith(".html")) {
-            const mtime = fs.statSync(fullPath).mtime;
             const relativePath = fullPath.split(path.sep).join("/");
+            const gitDate = gitMtimeMap[relativePath];
+            const dateStr = gitDate
+              || fs.statSync(fullPath).mtime.toISOString().replace(/\.\d{3}Z$/, "Z");
             pages.push({
               url: "/" + relativePath,
-              date: mtime.toISOString().replace(/\.\d{3}Z$/, "Z"),
+              date: dateStr,
               meta:
                 metadataByRelativePath[relativePath] ||
                 metadataByFilename[entry.name] ||
