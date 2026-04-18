@@ -83,7 +83,7 @@ def infer_feature_category(*texts: str) -> str:
     if not blob:
         return 'Other guide content'
 
-    if 'colour and trim' in blob or 'color and trim' in blob or 'couleurs et garnitures' in blob or 'couleur' in blob or 'garniture' in blob or ' peinture' in blob or blob.startswith('paint ') or blob.startswith('peinture ') or 'decor level' in blob or 'niveau décor' in blob:
+    if 'colour and trim' in blob or 'color and trim' in blob or 'couleurs et garnitures' in blob or 'couleur' in blob or 'garniture' in blob or ' peinture' in blob or blob.startswith('peinture ') or ' paint' in blob or blob.startswith('paint ') or 'decor level' in blob or 'niveau décor' in blob:
         return 'Colour and trim'
 
     safety_keywords = [
@@ -165,11 +165,63 @@ def infer_feature_category(*texts: str) -> str:
 def sort_category_key(category: str) -> Tuple[int, str]:
     return (CATEGORY_ORDER.get(category, 999), normalize_text(category).lower())
 
+# (substring_in_lowercased_sheet_name, category) — first match wins.
+SHEET_CATEGORY_RULES: List[Tuple[str, str]] = [
+    ('colour and trim',         'Colour and trim'),
+    ('color and trim',          'Colour and trim'),
+    ('couleurs et garnitures',  'Colour and trim'),
+    ('safety',                  'Safety and driver assistance'),
+    ('sécurité',                'Safety and driver assistance'),
+    ('technology',              'Technology and connectivity'),
+    ('technologie',             'Technology and connectivity'),
+    ('onstar siriusxm',         'Technology and connectivity'),
+    ('options de parc',         'Technology and connectivity'),
+    ('interior',                'Interior and comfort'),
+    ('intérieur',               'Interior and comfort'),
+    ('exterior',                'Exterior and utility'),
+    ('extérieur',               'Exterior and utility'),
+    ('wheels',                  'Wheels and tires'),
+    ('roues',                   'Wheels and tires'),
+    ('mechanical',              'Mechanical and performance'),
+    ('mécanique',               'Mechanical and performance'),
+    ('equipment groups',        'Packages and options'),
+    ("groupes d'équipements",   'Packages and options'),
+    ('escalier',                'Packages and options'),
+    ('stairstep',               'Packages and options'),
+]
+
+def category_from_sheet_name(source_contexts: List[str]) -> str:
+    """Return a category derived from source contexts (sheet name and/or row group), or '' if unknown."""
+    for ctx in source_contexts:
+        # Check each pipe-separated segment (e.g. "Standard Equipment | Safety and driver assistance")
+        for segment in normalize_text(ctx).split('|'):
+            segment = segment.strip().lower()
+            for substring, category in SHEET_CATEGORY_RULES:
+                if substring in segment:
+                    return category
+    return ''
+
 def category_for_trim_feature(agg: TrimFeatureAggregate) -> str:
-    return infer_feature_category(' '.join(agg.source_contexts), agg.title, agg.description)
+    # 1. Title-only keyword inference: most reliable, avoids description cross-contamination
+    #    and cross-listed sheet errors (e.g. safety features on Interior tab).
+    cat = infer_feature_category(agg.title)
+    if cat != 'Other guide content':
+        return cat
+    # 2. Sheet/row-group name matching: reliable when the title is generic.
+    cat = category_from_sheet_name(agg.source_contexts)
+    if cat:
+        return cat
+    # 3. Full fallback: title + description.
+    return infer_feature_category(agg.title, agg.description)
 
 def category_for_model_feature(agg: ModelFeatureAggregate) -> str:
-    return infer_feature_category(' '.join(agg.source_contexts), agg.title, agg.description)
+    cat = infer_feature_category(agg.title)
+    if cat != 'Other guide content':
+        return cat
+    cat = category_from_sheet_name(agg.source_contexts)
+    if cat:
+        return cat
+    return infer_feature_category(agg.title, agg.description)
 
 CONFIG_OBJECTTYPE = 'Configuration'
 
