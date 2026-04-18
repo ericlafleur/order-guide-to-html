@@ -47,10 +47,6 @@
         "TCD455B269F33216E",
         "T99D3485AABC58C38",
         "T3966DD22DA6F6D32",
-        "T57C1B62EB657CBC0",
-        "TE5DF8E64C78B15D2",
-        "T3BC05968358AD3D8",
-        "TF30C7401B03549A7",
         "S5B139FC399019AAA",
         "SEFA38887A70C8A0D",
         "S60588519F8329576",
@@ -70,10 +66,6 @@
         "trim_2025_Chevrolet_Blazer_True_North.html",
         "trim_2025_Chevrolet_Blazer_RS.html",
         "trim_2025_Chevrolet_Blazer_Premier.html",
-        "trim_2025_Chevrolet_Blazer_LT_2.html",
-        "trim_2025_Chevrolet_Blazer_True_North_2.html",
-        "trim_2025_Chevrolet_Blazer_RS_2.html",
-        "trim_2025_Chevrolet_Blazer_Premier_2.html",
         "spec_2025_Chevrolet_Blazer_dimensions_specifications_1NR26_AWD_LT.html",
         "spec_2025_Chevrolet_Blazer_dimensions_specifications_1NS26_AWD_RS.html",
         "spec_2025_Chevrolet_Blazer_dimensions_specifications_1NT26_AWD_Premier.html",
@@ -410,6 +402,12 @@
       "collection_path": "model_2025_Chevrolet_Blazer.html",
       "parent": "M60332A3148256EF0",
       "parent_path": "model_2025_Chevrolet_Blazer.html",
+      "child": [
+        "S5B139FC399019AAA"
+      ],
+      "child_paths": [
+        "spec_2025_Chevrolet_Blazer_dimensions_specifications_1NR26_AWD_LT.html"
+      ],
       "parent_vehicle": "model_2025_Chevrolet_Blazer.html",
       "parent_vehicle_id": "M60332A3148256EF0",
       "path": "trim_2025_Chevrolet_Blazer_LT.html"
@@ -494,6 +492,14 @@
       "collection_path": "model_2025_Chevrolet_Blazer.html",
       "parent": "M60332A3148256EF0",
       "parent_path": "model_2025_Chevrolet_Blazer.html",
+      "child": [
+        "SEFA38887A70C8A0D",
+        "SDA3C35B4426301AA"
+      ],
+      "child_paths": [
+        "spec_2025_Chevrolet_Blazer_dimensions_specifications_1NS26_AWD_RS.html",
+        "config_2025_Chevrolet_Blazer_powertrain_trailering_2LT_1NR26_3LT_1NR26_RS_1NS26_and_Premier_1NT26.html"
+      ],
       "parent_vehicle": "model_2025_Chevrolet_Blazer.html",
       "parent_vehicle_id": "M60332A3148256EF0",
       "path": "trim_2025_Chevrolet_Blazer_RS.html"
@@ -539,190 +545,6 @@
       "collection_path": "model_2025_Chevrolet_Blazer.html",
       "parent": "M60332A3148256EF0",
       "parent_path": "model_2025_Chevrolet_Blazer.html",
-      "parent_vehicle": "model_2025_Chevrolet_Blazer.html",
-      "parent_vehicle_id": "M60332A3148256EF0",
-      "path": "trim_2025_Chevrolet_Blazer_Premier.html"
-    },
-    {
-      "objecttype": "Variant",
-      "type": "trim",
-      "node_id": "T57C1B62EB657CBC0",
-      "name": "LT",
-      "title": "2025 Chevrolet Blazer LT",
-      "seating": [
-        "2/3"
-      ],
-      "drivetrains": [
-        "AWD"
-      ],
-      "year": "2025",
-      "make": "Chevrolet",
-      "model": "Blazer",
-      "trim": "LT",
-      "doc_type": "trim",
-      "doc_role": "entity",
-      "entity_level": "trim",
-      "domain": "Overview",
-      "guide_domains": [
-        "Safety and driver assistance",
-        "Technology and connectivity",
-        "Interior and comfort",
-        "Exterior and utility",
-        "Wheels and tires",
-        "Mechanical and performance",
-        "Packages and options",
-        "Colour and trim"
-      ],
-      "surface": "both",
-      "is_vehicle_entity": true,
-      "entity_name": "2025 Chevrolet Blazer LT",
-      "entity_key": "2025_chevrolet_blazer_lt",
-      "vehicle_key": "2025_chevrolet_blazer",
-      "trim_key": "2025_chevrolet_blazer_lt",
-      "collection": "M60332A3148256EF0",
-      "collection_path": "model_2025_Chevrolet_Blazer.html",
-      "parent": "M60332A3148256EF0",
-      "parent_path": "model_2025_Chevrolet_Blazer.html",
-      "child": [
-        "S5B139FC399019AAA"
-      ],
-      "child_paths": [
-        "spec_2025_Chevrolet_Blazer_dimensions_specifications_1NR26_AWD_LT.html"
-      ],
-      "parent_vehicle": "model_2025_Chevrolet_Blazer.html",
-      "parent_vehicle_id": "M60332A3148256EF0",
-      "path": "trim_2025_Chevrolet_Blazer_LT_2.html"
-    },
-    {
-      "objecttype": "Variant",
-      "type": "trim",
-      "node_id": "TE5DF8E64C78B15D2",
-      "name": "True North",
-      "title": "2025 Chevrolet Blazer True North",
-      "year": "2025",
-      "make": "Chevrolet",
-      "model": "Blazer",
-      "trim": "True North",
-      "doc_type": "trim",
-      "doc_role": "entity",
-      "entity_level": "trim",
-      "domain": "Overview",
-      "guide_domains": [
-        "Safety and driver assistance",
-        "Technology and connectivity",
-        "Interior and comfort",
-        "Exterior and utility",
-        "Wheels and tires",
-        "Mechanical and performance",
-        "Packages and options",
-        "Colour and trim"
-      ],
-      "surface": "both",
-      "is_vehicle_entity": true,
-      "entity_name": "2025 Chevrolet Blazer True North",
-      "entity_key": "2025_chevrolet_blazer_true_north",
-      "vehicle_key": "2025_chevrolet_blazer",
-      "trim_key": "2025_chevrolet_blazer_true_north",
-      "collection": "M60332A3148256EF0",
-      "collection_path": "model_2025_Chevrolet_Blazer.html",
-      "parent": "M60332A3148256EF0",
-      "parent_path": "model_2025_Chevrolet_Blazer.html",
-      "parent_vehicle": "model_2025_Chevrolet_Blazer.html",
-      "parent_vehicle_id": "M60332A3148256EF0",
-      "path": "trim_2025_Chevrolet_Blazer_True_North_2.html"
-    },
-    {
-      "objecttype": "Variant",
-      "type": "trim",
-      "node_id": "T3BC05968358AD3D8",
-      "name": "RS",
-      "title": "2025 Chevrolet Blazer RS",
-      "seating": [
-        "2/3"
-      ],
-      "drivetrains": [
-        "AWD"
-      ],
-      "year": "2025",
-      "make": "Chevrolet",
-      "model": "Blazer",
-      "trim": "RS",
-      "doc_type": "trim",
-      "doc_role": "entity",
-      "entity_level": "trim",
-      "domain": "Overview",
-      "guide_domains": [
-        "Safety and driver assistance",
-        "Technology and connectivity",
-        "Interior and comfort",
-        "Exterior and utility",
-        "Wheels and tires",
-        "Mechanical and performance",
-        "Packages and options",
-        "Colour and trim"
-      ],
-      "surface": "both",
-      "is_vehicle_entity": true,
-      "entity_name": "2025 Chevrolet Blazer RS",
-      "entity_key": "2025_chevrolet_blazer_rs",
-      "vehicle_key": "2025_chevrolet_blazer",
-      "trim_key": "2025_chevrolet_blazer_rs",
-      "collection": "M60332A3148256EF0",
-      "collection_path": "model_2025_Chevrolet_Blazer.html",
-      "parent": "M60332A3148256EF0",
-      "parent_path": "model_2025_Chevrolet_Blazer.html",
-      "child": [
-        "SEFA38887A70C8A0D",
-        "SDA3C35B4426301AA"
-      ],
-      "child_paths": [
-        "spec_2025_Chevrolet_Blazer_dimensions_specifications_1NS26_AWD_RS.html",
-        "config_2025_Chevrolet_Blazer_powertrain_trailering_2LT_1NR26_3LT_1NR26_RS_1NS26_and_Premier_1NT26.html"
-      ],
-      "parent_vehicle": "model_2025_Chevrolet_Blazer.html",
-      "parent_vehicle_id": "M60332A3148256EF0",
-      "path": "trim_2025_Chevrolet_Blazer_RS_2.html"
-    },
-    {
-      "objecttype": "Variant",
-      "type": "trim",
-      "node_id": "TF30C7401B03549A7",
-      "name": "Premier",
-      "title": "2025 Chevrolet Blazer Premier",
-      "seating": [
-        "2/3"
-      ],
-      "drivetrains": [
-        "AWD"
-      ],
-      "year": "2025",
-      "make": "Chevrolet",
-      "model": "Blazer",
-      "trim": "Premier",
-      "doc_type": "trim",
-      "doc_role": "entity",
-      "entity_level": "trim",
-      "domain": "Overview",
-      "guide_domains": [
-        "Safety and driver assistance",
-        "Technology and connectivity",
-        "Interior and comfort",
-        "Exterior and utility",
-        "Wheels and tires",
-        "Mechanical and performance",
-        "Packages and options",
-        "Colour and trim"
-      ],
-      "surface": "both",
-      "is_vehicle_entity": true,
-      "entity_name": "2025 Chevrolet Blazer Premier",
-      "entity_key": "2025_chevrolet_blazer_premier",
-      "vehicle_key": "2025_chevrolet_blazer",
-      "trim_key": "2025_chevrolet_blazer_premier",
-      "collection": "M60332A3148256EF0",
-      "collection_path": "model_2025_Chevrolet_Blazer.html",
-      "parent": "M60332A3148256EF0",
-      "parent_path": "model_2025_Chevrolet_Blazer.html",
       "child": [
         "S60588519F8329576",
         "SDA3C35B4426301AA"
@@ -733,7 +555,7 @@
       ],
       "parent_vehicle": "model_2025_Chevrolet_Blazer.html",
       "parent_vehicle_id": "M60332A3148256EF0",
-      "path": "trim_2025_Chevrolet_Blazer_Premier_2.html"
+      "path": "trim_2025_Chevrolet_Blazer_Premier.html"
     },
     {
       "objecttype": "Configuration",
@@ -767,10 +589,10 @@
       "parent_vehicle": "model_2025_Chevrolet_Blazer.html",
       "parent_vehicle_id": "M60332A3148256EF0",
       "parent_trims": [
-        "trim_2025_Chevrolet_Blazer_LT_2.html"
+        "trim_2025_Chevrolet_Blazer_LT.html"
       ],
       "parent_trim_ids": [
-        "T57C1B62EB657CBC0"
+        "T5CC283AACEFAB3E3"
       ],
       "path": "spec_2025_Chevrolet_Blazer_dimensions_specifications_1NR26_AWD_LT.html"
     },
@@ -806,10 +628,10 @@
       "parent_vehicle": "model_2025_Chevrolet_Blazer.html",
       "parent_vehicle_id": "M60332A3148256EF0",
       "parent_trims": [
-        "trim_2025_Chevrolet_Blazer_RS_2.html"
+        "trim_2025_Chevrolet_Blazer_RS.html"
       ],
       "parent_trim_ids": [
-        "T3BC05968358AD3D8"
+        "T99D3485AABC58C38"
       ],
       "path": "spec_2025_Chevrolet_Blazer_dimensions_specifications_1NS26_AWD_RS.html"
     },
@@ -845,10 +667,10 @@
       "parent_vehicle": "model_2025_Chevrolet_Blazer.html",
       "parent_vehicle_id": "M60332A3148256EF0",
       "parent_trims": [
-        "trim_2025_Chevrolet_Blazer_Premier_2.html"
+        "trim_2025_Chevrolet_Blazer_Premier.html"
       ],
       "parent_trim_ids": [
-        "TF30C7401B03549A7"
+        "T3966DD22DA6F6D32"
       ],
       "path": "spec_2025_Chevrolet_Blazer_dimensions_specifications_1NT26_AWD_Premier.html"
     },
@@ -893,12 +715,12 @@
       "parent_vehicle": "model_2025_Chevrolet_Blazer.html",
       "parent_vehicle_id": "M60332A3148256EF0",
       "parent_trims": [
-        "trim_2025_Chevrolet_Blazer_RS_2.html",
-        "trim_2025_Chevrolet_Blazer_Premier_2.html"
+        "trim_2025_Chevrolet_Blazer_RS.html",
+        "trim_2025_Chevrolet_Blazer_Premier.html"
       ],
       "parent_trim_ids": [
-        "T3BC05968358AD3D8",
-        "TF30C7401B03549A7"
+        "T99D3485AABC58C38",
+        "T3966DD22DA6F6D32"
       ],
       "path": "config_2025_Chevrolet_Blazer_powertrain_trailering_2LT_1NR26_3LT_1NR26_RS_1NS26_and_Premier_1NT26.html"
     },

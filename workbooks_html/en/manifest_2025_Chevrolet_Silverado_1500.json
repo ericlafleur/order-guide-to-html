@@ -55,13 +55,6 @@
         "T22966378B07AC11C",
         "T10A28632ECBABB3E",
         "T2CA051A0A7A8ECB7",
-        "TFAB895519609A81C",
-        "T6B8EFD2192C60B39",
-        "T6B4349E1640B41CE",
-        "T5CA3B97446334F48",
-        "T42C721CE5B7859DA",
-        "T36E9D2823AC2E462",
-        "T6E1FF6B1402C4C53",
         "SAF21CA951B9E6A99",
         "S7F035FCD776E4995",
         "S271FE37C718552C4",
@@ -104,13 +97,6 @@
         "trim_2025_Chevrolet_Silverado_1500_ZR2.html",
         "trim_2025_Chevrolet_Silverado_1500_LTZ.html",
         "trim_2025_Chevrolet_Silverado_1500_High_Country.html",
-        "trim_2025_Chevrolet_Silverado_1500_Custom_Trail_Boss_2.html",
-        "trim_2025_Chevrolet_Silverado_1500_LT_2.html",
-        "trim_2025_Chevrolet_Silverado_1500_RST_2.html",
-        "trim_2025_Chevrolet_Silverado_1500_LT_Trail_Boss_2.html",
-        "trim_2025_Chevrolet_Silverado_1500_ZR2_2.html",
-        "trim_2025_Chevrolet_Silverado_1500_LTZ_2.html",
-        "trim_2025_Chevrolet_Silverado_1500_High_Country_2.html",
         "spec_2025_Chevrolet_Silverado_1500_dimensions_specifications_CC10543.html",
         "spec_2025_Chevrolet_Silverado_1500_dimensions_specifications_CK10543.html",
         "spec_2025_Chevrolet_Silverado_1500_dimensions_specifications_CK10543_2.html",
@@ -846,6 +832,12 @@
       "collection_path": "model_2025_Chevrolet_Silverado_1500.html",
       "parent": "MA0E0C75F0F82ECB5",
       "parent_path": "model_2025_Chevrolet_Silverado_1500.html",
+      "child": [
+        "S0A31FE896615CCF7"
+      ],
+      "child_paths": [
+        "spec_2025_Chevrolet_Silverado_1500_dimensions_specifications_CK10543_3.html"
+      ],
       "parent_vehicle": "model_2025_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "MA0E0C75F0F82ECB5",
       "path": "trim_2025_Chevrolet_Silverado_1500_ZR2.html"
@@ -957,377 +949,6 @@
       "parent_vehicle": "model_2025_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "MA0E0C75F0F82ECB5",
       "path": "trim_2025_Chevrolet_Silverado_1500_High_Country.html"
-    },
-    {
-      "objecttype": "Variant",
-      "type": "trim",
-      "node_id": "TFAB895519609A81C",
-      "name": "Custom Trail Boss",
-      "title": "2025 Chevrolet Silverado 1500 Custom Trail Boss",
-      "seating": [
-        "6",
-        "3"
-      ],
-      "drivetrains": [
-        "2WD",
-        "4WD"
-      ],
-      "body_styles": [
-        "Crew Cab, Short Bed",
-        "Crew Cab, Standard Bed",
-        "Double Cab, Standard Bed",
-        "Regular Cab, Standard Bed",
-        "Regular Cab, Long Bed"
-      ],
-      "year": "2025",
-      "make": "Chevrolet",
-      "model": "Silverado 1500",
-      "trim": "Custom Trail Boss",
-      "doc_type": "trim",
-      "doc_role": "entity",
-      "entity_level": "trim",
-      "domain": "Overview",
-      "guide_domains": [
-        "Safety and driver assistance",
-        "Technology and connectivity",
-        "Interior and comfort",
-        "Exterior and utility",
-        "Wheels and tires",
-        "Mechanical and performance",
-        "Packages and options",
-        "Colour and trim"
-      ],
-      "surface": "both",
-      "is_vehicle_entity": true,
-      "entity_name": "2025 Chevrolet Silverado 1500 Custom Trail Boss",
-      "entity_key": "2025_chevrolet_silverado_1500_custom_trail_boss",
-      "vehicle_key": "2025_chevrolet_silverado_1500",
-      "trim_key": "2025_chevrolet_silverado_1500_custom_trail_boss",
-      "collection": "MA0E0C75F0F82ECB5",
-      "collection_path": "model_2025_Chevrolet_Silverado_1500.html",
-      "parent": "MA0E0C75F0F82ECB5",
-      "parent_path": "model_2025_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "model_2025_Chevrolet_Silverado_1500.html",
-      "parent_vehicle_id": "MA0E0C75F0F82ECB5",
-      "path": "trim_2025_Chevrolet_Silverado_1500_Custom_Trail_Boss_2.html"
-    },
-    {
-      "objecttype": "Variant",
-      "type": "trim",
-      "node_id": "T6B8EFD2192C60B39",
-      "name": "LT",
-      "title": "2025 Chevrolet Silverado 1500 LT",
-      "seating": [
-        "6",
-        "3"
-      ],
-      "drivetrains": [
-        "2WD",
-        "4WD"
-      ],
-      "body_styles": [
-        "Crew Cab, Short Bed",
-        "Crew Cab, Standard Bed",
-        "Double Cab, Standard Bed",
-        "Regular Cab, Standard Bed",
-        "Regular Cab, Long Bed"
-      ],
-      "year": "2025",
-      "make": "Chevrolet",
-      "model": "Silverado 1500",
-      "trim": "LT",
-      "doc_type": "trim",
-      "doc_role": "entity",
-      "entity_level": "trim",
-      "domain": "Overview",
-      "guide_domains": [
-        "Safety and driver assistance",
-        "Technology and connectivity",
-        "Interior and comfort",
-        "Exterior and utility",
-        "Wheels and tires",
-        "Mechanical and performance",
-        "Packages and options",
-        "Colour and trim"
-      ],
-      "surface": "both",
-      "is_vehicle_entity": true,
-      "entity_name": "2025 Chevrolet Silverado 1500 LT",
-      "entity_key": "2025_chevrolet_silverado_1500_lt",
-      "vehicle_key": "2025_chevrolet_silverado_1500",
-      "trim_key": "2025_chevrolet_silverado_1500_lt",
-      "collection": "MA0E0C75F0F82ECB5",
-      "collection_path": "model_2025_Chevrolet_Silverado_1500.html",
-      "parent": "MA0E0C75F0F82ECB5",
-      "parent_path": "model_2025_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "model_2025_Chevrolet_Silverado_1500.html",
-      "parent_vehicle_id": "MA0E0C75F0F82ECB5",
-      "path": "trim_2025_Chevrolet_Silverado_1500_LT_2.html"
-    },
-    {
-      "objecttype": "Variant",
-      "type": "trim",
-      "node_id": "T6B4349E1640B41CE",
-      "name": "RST",
-      "title": "2025 Chevrolet Silverado 1500 RST",
-      "seating": [
-        "6",
-        "3"
-      ],
-      "drivetrains": [
-        "2WD",
-        "4WD"
-      ],
-      "body_styles": [
-        "Crew Cab, Short Bed",
-        "Crew Cab, Standard Bed",
-        "Double Cab, Standard Bed",
-        "Regular Cab, Standard Bed",
-        "Regular Cab, Long Bed"
-      ],
-      "year": "2025",
-      "make": "Chevrolet",
-      "model": "Silverado 1500",
-      "trim": "RST",
-      "doc_type": "trim",
-      "doc_role": "entity",
-      "entity_level": "trim",
-      "domain": "Overview",
-      "guide_domains": [
-        "Safety and driver assistance",
-        "Technology and connectivity",
-        "Interior and comfort",
-        "Exterior and utility",
-        "Wheels and tires",
-        "Mechanical and performance",
-        "Packages and options",
-        "Colour and trim"
-      ],
-      "surface": "both",
-      "is_vehicle_entity": true,
-      "entity_name": "2025 Chevrolet Silverado 1500 RST",
-      "entity_key": "2025_chevrolet_silverado_1500_rst",
-      "vehicle_key": "2025_chevrolet_silverado_1500",
-      "trim_key": "2025_chevrolet_silverado_1500_rst",
-      "collection": "MA0E0C75F0F82ECB5",
-      "collection_path": "model_2025_Chevrolet_Silverado_1500.html",
-      "parent": "MA0E0C75F0F82ECB5",
-      "parent_path": "model_2025_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "model_2025_Chevrolet_Silverado_1500.html",
-      "parent_vehicle_id": "MA0E0C75F0F82ECB5",
-      "path": "trim_2025_Chevrolet_Silverado_1500_RST_2.html"
-    },
-    {
-      "objecttype": "Variant",
-      "type": "trim",
-      "node_id": "T5CA3B97446334F48",
-      "name": "LT Trail Boss",
-      "title": "2025 Chevrolet Silverado 1500 LT Trail Boss",
-      "seating": [
-        "6",
-        "3"
-      ],
-      "drivetrains": [
-        "2WD",
-        "4WD"
-      ],
-      "body_styles": [
-        "Crew Cab, Short Bed",
-        "Crew Cab, Standard Bed",
-        "Double Cab, Standard Bed",
-        "Regular Cab, Standard Bed",
-        "Regular Cab, Long Bed"
-      ],
-      "year": "2025",
-      "make": "Chevrolet",
-      "model": "Silverado 1500",
-      "trim": "LT Trail Boss",
-      "doc_type": "trim",
-      "doc_role": "entity",
-      "entity_level": "trim",
-      "domain": "Overview",
-      "guide_domains": [
-        "Safety and driver assistance",
-        "Technology and connectivity",
-        "Interior and comfort",
-        "Exterior and utility",
-        "Wheels and tires",
-        "Mechanical and performance",
-        "Packages and options",
-        "Colour and trim"
-      ],
-      "surface": "both",
-      "is_vehicle_entity": true,
-      "entity_name": "2025 Chevrolet Silverado 1500 LT Trail Boss",
-      "entity_key": "2025_chevrolet_silverado_1500_lt_trail_boss",
-      "vehicle_key": "2025_chevrolet_silverado_1500",
-      "trim_key": "2025_chevrolet_silverado_1500_lt_trail_boss",
-      "collection": "MA0E0C75F0F82ECB5",
-      "collection_path": "model_2025_Chevrolet_Silverado_1500.html",
-      "parent": "MA0E0C75F0F82ECB5",
-      "parent_path": "model_2025_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "model_2025_Chevrolet_Silverado_1500.html",
-      "parent_vehicle_id": "MA0E0C75F0F82ECB5",
-      "path": "trim_2025_Chevrolet_Silverado_1500_LT_Trail_Boss_2.html"
-    },
-    {
-      "objecttype": "Variant",
-      "type": "trim",
-      "node_id": "T42C721CE5B7859DA",
-      "name": "ZR2",
-      "title": "2025 Chevrolet Silverado 1500 ZR2",
-      "seating": [
-        "5"
-      ],
-      "drivetrains": [
-        "4WD"
-      ],
-      "body_styles": [
-        "Crew Cab, Short Bed"
-      ],
-      "year": "2025",
-      "make": "Chevrolet",
-      "model": "Silverado 1500",
-      "trim": "ZR2",
-      "doc_type": "trim",
-      "doc_role": "entity",
-      "entity_level": "trim",
-      "domain": "Overview",
-      "guide_domains": [
-        "Safety and driver assistance",
-        "Technology and connectivity",
-        "Interior and comfort",
-        "Exterior and utility",
-        "Wheels and tires",
-        "Mechanical and performance",
-        "Packages and options",
-        "Colour and trim"
-      ],
-      "surface": "both",
-      "is_vehicle_entity": true,
-      "entity_name": "2025 Chevrolet Silverado 1500 ZR2",
-      "entity_key": "2025_chevrolet_silverado_1500_zr2",
-      "vehicle_key": "2025_chevrolet_silverado_1500",
-      "trim_key": "2025_chevrolet_silverado_1500_zr2",
-      "collection": "MA0E0C75F0F82ECB5",
-      "collection_path": "model_2025_Chevrolet_Silverado_1500.html",
-      "parent": "MA0E0C75F0F82ECB5",
-      "parent_path": "model_2025_Chevrolet_Silverado_1500.html",
-      "child": [
-        "S0A31FE896615CCF7"
-      ],
-      "child_paths": [
-        "spec_2025_Chevrolet_Silverado_1500_dimensions_specifications_CK10543_3.html"
-      ],
-      "parent_vehicle": "model_2025_Chevrolet_Silverado_1500.html",
-      "parent_vehicle_id": "MA0E0C75F0F82ECB5",
-      "path": "trim_2025_Chevrolet_Silverado_1500_ZR2_2.html"
-    },
-    {
-      "objecttype": "Variant",
-      "type": "trim",
-      "node_id": "T36E9D2823AC2E462",
-      "name": "LTZ",
-      "title": "2025 Chevrolet Silverado 1500 LTZ",
-      "seating": [
-        "6",
-        "3"
-      ],
-      "drivetrains": [
-        "2WD",
-        "4WD"
-      ],
-      "body_styles": [
-        "Crew Cab, Short Bed",
-        "Crew Cab, Standard Bed",
-        "Double Cab, Standard Bed",
-        "Regular Cab, Standard Bed",
-        "Regular Cab, Long Bed"
-      ],
-      "year": "2025",
-      "make": "Chevrolet",
-      "model": "Silverado 1500",
-      "trim": "LTZ",
-      "doc_type": "trim",
-      "doc_role": "entity",
-      "entity_level": "trim",
-      "domain": "Overview",
-      "guide_domains": [
-        "Safety and driver assistance",
-        "Technology and connectivity",
-        "Interior and comfort",
-        "Exterior and utility",
-        "Wheels and tires",
-        "Mechanical and performance",
-        "Packages and options",
-        "Colour and trim"
-      ],
-      "surface": "both",
-      "is_vehicle_entity": true,
-      "entity_name": "2025 Chevrolet Silverado 1500 LTZ",
-      "entity_key": "2025_chevrolet_silverado_1500_ltz",
-      "vehicle_key": "2025_chevrolet_silverado_1500",
-      "trim_key": "2025_chevrolet_silverado_1500_ltz",
-      "collection": "MA0E0C75F0F82ECB5",
-      "collection_path": "model_2025_Chevrolet_Silverado_1500.html",
-      "parent": "MA0E0C75F0F82ECB5",
-      "parent_path": "model_2025_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "model_2025_Chevrolet_Silverado_1500.html",
-      "parent_vehicle_id": "MA0E0C75F0F82ECB5",
-      "path": "trim_2025_Chevrolet_Silverado_1500_LTZ_2.html"
-    },
-    {
-      "objecttype": "Variant",
-      "type": "trim",
-      "node_id": "T6E1FF6B1402C4C53",
-      "name": "High Country",
-      "title": "2025 Chevrolet Silverado 1500 High Country",
-      "seating": [
-        "6",
-        "3"
-      ],
-      "drivetrains": [
-        "2WD",
-        "4WD"
-      ],
-      "body_styles": [
-        "Crew Cab, Short Bed",
-        "Crew Cab, Standard Bed",
-        "Double Cab, Standard Bed",
-        "Regular Cab, Standard Bed",
-        "Regular Cab, Long Bed"
-      ],
-      "year": "2025",
-      "make": "Chevrolet",
-      "model": "Silverado 1500",
-      "trim": "High Country",
-      "doc_type": "trim",
-      "doc_role": "entity",
-      "entity_level": "trim",
-      "domain": "Overview",
-      "guide_domains": [
-        "Safety and driver assistance",
-        "Technology and connectivity",
-        "Interior and comfort",
-        "Exterior and utility",
-        "Wheels and tires",
-        "Mechanical and performance",
-        "Packages and options",
-        "Colour and trim"
-      ],
-      "surface": "both",
-      "is_vehicle_entity": true,
-      "entity_name": "2025 Chevrolet Silverado 1500 High Country",
-      "entity_key": "2025_chevrolet_silverado_1500_high_country",
-      "vehicle_key": "2025_chevrolet_silverado_1500",
-      "trim_key": "2025_chevrolet_silverado_1500_high_country",
-      "collection": "MA0E0C75F0F82ECB5",
-      "collection_path": "model_2025_Chevrolet_Silverado_1500.html",
-      "parent": "MA0E0C75F0F82ECB5",
-      "parent_path": "model_2025_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "model_2025_Chevrolet_Silverado_1500.html",
-      "parent_vehicle_id": "MA0E0C75F0F82ECB5",
-      "path": "trim_2025_Chevrolet_Silverado_1500_High_Country_2.html"
     },
     {
       "objecttype": "Configuration",
@@ -1464,10 +1085,10 @@
       "parent_vehicle": "model_2025_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "MA0E0C75F0F82ECB5",
       "parent_trims": [
-        "trim_2025_Chevrolet_Silverado_1500_ZR2_2.html"
+        "trim_2025_Chevrolet_Silverado_1500_ZR2.html"
       ],
       "parent_trim_ids": [
-        "T42C721CE5B7859DA"
+        "T22966378B07AC11C"
       ],
       "path": "spec_2025_Chevrolet_Silverado_1500_dimensions_specifications_CK10543_3.html"
     },

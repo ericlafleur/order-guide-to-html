@@ -55,13 +55,6 @@
         "TDF3D181958796E95",
         "T77898B6DD5C20CE0",
         "TD72FF37971AA9EAB",
-        "T08043561CE45047F",
-        "T71C0321B2513210E",
-        "T0417E4A7310B8A5A",
-        "TE94C097FCB5D8942",
-        "TF31A9DAF4EBCF017",
-        "T42BA82DF117C11EA",
-        "TC9A570A0F9179994",
         "SDFD34E6FD4AE8A16",
         "S6479E0A16793943E",
         "S91548A458670E576",
@@ -104,13 +97,6 @@
         "trim_2026_Chevrolet_Silverado_1500_ZR2.html",
         "trim_2026_Chevrolet_Silverado_1500_LTZ.html",
         "trim_2026_Chevrolet_Silverado_1500_High_Country.html",
-        "trim_2026_Chevrolet_Silverado_1500_Custom_Trail_Boss_2.html",
-        "trim_2026_Chevrolet_Silverado_1500_LT_2.html",
-        "trim_2026_Chevrolet_Silverado_1500_RST_2.html",
-        "trim_2026_Chevrolet_Silverado_1500_LT_Trail_Boss_2.html",
-        "trim_2026_Chevrolet_Silverado_1500_ZR2_2.html",
-        "trim_2026_Chevrolet_Silverado_1500_LTZ_2.html",
-        "trim_2026_Chevrolet_Silverado_1500_High_Country_2.html",
         "spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CC10703.html",
         "spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CK10703.html",
         "spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CC10903.html",
@@ -834,6 +820,12 @@
       "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "parent": "M3381846B8AEC20F4",
       "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "child": [
+        "S0E346B5C0551CFE4"
+      ],
+      "child_paths": [
+        "spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CK10543_3.html"
+      ],
       "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
       "path": "trim_2026_Chevrolet_Silverado_1500_ZR2.html"
@@ -941,365 +933,6 @@
       "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
       "path": "trim_2026_Chevrolet_Silverado_1500_High_Country.html"
-    },
-    {
-      "objecttype": "Variant",
-      "type": "trim",
-      "node_id": "T08043561CE45047F",
-      "name": "Custom Trail Boss",
-      "title": "2026 Chevrolet Silverado 1500 Custom Trail Boss",
-      "seating": [
-        "3",
-        "6"
-      ],
-      "drivetrains": [
-        "2RM",
-        "4RM"
-      ],
-      "body_styles": [
-        "Cabine classique",
-        "Cabine double",
-        "Cabine multiplace"
-      ],
-      "year": "2026",
-      "make": "Chevrolet",
-      "model": "Silverado 1500",
-      "trim": "Custom Trail Boss",
-      "doc_type": "trim",
-      "doc_role": "entity",
-      "entity_level": "trim",
-      "domain": "Overview",
-      "guide_domains": [
-        "Safety and driver assistance",
-        "Technology and connectivity",
-        "Interior and comfort",
-        "Exterior and utility",
-        "Wheels and tires",
-        "Mechanical and performance",
-        "Packages and options",
-        "Colour and trim"
-      ],
-      "surface": "both",
-      "is_vehicle_entity": true,
-      "entity_name": "2026 Chevrolet Silverado 1500 Custom Trail Boss",
-      "entity_key": "2026_chevrolet_silverado_1500_custom_trail_boss",
-      "vehicle_key": "2026_chevrolet_silverado_1500",
-      "trim_key": "2026_chevrolet_silverado_1500_custom_trail_boss",
-      "collection": "M3381846B8AEC20F4",
-      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
-      "parent": "M3381846B8AEC20F4",
-      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "trim_2026_Chevrolet_Silverado_1500_Custom_Trail_Boss_2.html"
-    },
-    {
-      "objecttype": "Variant",
-      "type": "trim",
-      "node_id": "T71C0321B2513210E",
-      "name": "LT",
-      "title": "2026 Chevrolet Silverado 1500 LT",
-      "seating": [
-        "3",
-        "6"
-      ],
-      "drivetrains": [
-        "2RM",
-        "4RM"
-      ],
-      "body_styles": [
-        "Cabine classique",
-        "Cabine double",
-        "Cabine multiplace"
-      ],
-      "year": "2026",
-      "make": "Chevrolet",
-      "model": "Silverado 1500",
-      "trim": "LT",
-      "doc_type": "trim",
-      "doc_role": "entity",
-      "entity_level": "trim",
-      "domain": "Overview",
-      "guide_domains": [
-        "Safety and driver assistance",
-        "Technology and connectivity",
-        "Interior and comfort",
-        "Exterior and utility",
-        "Wheels and tires",
-        "Mechanical and performance",
-        "Packages and options",
-        "Colour and trim"
-      ],
-      "surface": "both",
-      "is_vehicle_entity": true,
-      "entity_name": "2026 Chevrolet Silverado 1500 LT",
-      "entity_key": "2026_chevrolet_silverado_1500_lt",
-      "vehicle_key": "2026_chevrolet_silverado_1500",
-      "trim_key": "2026_chevrolet_silverado_1500_lt",
-      "collection": "M3381846B8AEC20F4",
-      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
-      "parent": "M3381846B8AEC20F4",
-      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "trim_2026_Chevrolet_Silverado_1500_LT_2.html"
-    },
-    {
-      "objecttype": "Variant",
-      "type": "trim",
-      "node_id": "T0417E4A7310B8A5A",
-      "name": "RST",
-      "title": "2026 Chevrolet Silverado 1500 RST",
-      "seating": [
-        "3",
-        "6"
-      ],
-      "drivetrains": [
-        "2RM",
-        "4RM"
-      ],
-      "body_styles": [
-        "Cabine classique",
-        "Cabine double",
-        "Cabine multiplace"
-      ],
-      "year": "2026",
-      "make": "Chevrolet",
-      "model": "Silverado 1500",
-      "trim": "RST",
-      "doc_type": "trim",
-      "doc_role": "entity",
-      "entity_level": "trim",
-      "domain": "Overview",
-      "guide_domains": [
-        "Safety and driver assistance",
-        "Technology and connectivity",
-        "Interior and comfort",
-        "Exterior and utility",
-        "Wheels and tires",
-        "Mechanical and performance",
-        "Packages and options",
-        "Colour and trim"
-      ],
-      "surface": "both",
-      "is_vehicle_entity": true,
-      "entity_name": "2026 Chevrolet Silverado 1500 RST",
-      "entity_key": "2026_chevrolet_silverado_1500_rst",
-      "vehicle_key": "2026_chevrolet_silverado_1500",
-      "trim_key": "2026_chevrolet_silverado_1500_rst",
-      "collection": "M3381846B8AEC20F4",
-      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
-      "parent": "M3381846B8AEC20F4",
-      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "trim_2026_Chevrolet_Silverado_1500_RST_2.html"
-    },
-    {
-      "objecttype": "Variant",
-      "type": "trim",
-      "node_id": "TE94C097FCB5D8942",
-      "name": "LT Trail Boss",
-      "title": "2026 Chevrolet Silverado 1500 LT Trail Boss",
-      "seating": [
-        "3",
-        "6"
-      ],
-      "drivetrains": [
-        "2RM",
-        "4RM"
-      ],
-      "body_styles": [
-        "Cabine classique",
-        "Cabine double",
-        "Cabine multiplace"
-      ],
-      "year": "2026",
-      "make": "Chevrolet",
-      "model": "Silverado 1500",
-      "trim": "LT Trail Boss",
-      "doc_type": "trim",
-      "doc_role": "entity",
-      "entity_level": "trim",
-      "domain": "Overview",
-      "guide_domains": [
-        "Safety and driver assistance",
-        "Technology and connectivity",
-        "Interior and comfort",
-        "Exterior and utility",
-        "Wheels and tires",
-        "Mechanical and performance",
-        "Packages and options",
-        "Colour and trim"
-      ],
-      "surface": "both",
-      "is_vehicle_entity": true,
-      "entity_name": "2026 Chevrolet Silverado 1500 LT Trail Boss",
-      "entity_key": "2026_chevrolet_silverado_1500_lt_trail_boss",
-      "vehicle_key": "2026_chevrolet_silverado_1500",
-      "trim_key": "2026_chevrolet_silverado_1500_lt_trail_boss",
-      "collection": "M3381846B8AEC20F4",
-      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
-      "parent": "M3381846B8AEC20F4",
-      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "trim_2026_Chevrolet_Silverado_1500_LT_Trail_Boss_2.html"
-    },
-    {
-      "objecttype": "Variant",
-      "type": "trim",
-      "node_id": "TF31A9DAF4EBCF017",
-      "name": "ZR2",
-      "title": "2026 Chevrolet Silverado 1500 ZR2",
-      "seating": [
-        "5"
-      ],
-      "drivetrains": [
-        "4RM"
-      ],
-      "body_styles": [
-        "Cabine multiplace"
-      ],
-      "year": "2026",
-      "make": "Chevrolet",
-      "model": "Silverado 1500",
-      "trim": "ZR2",
-      "doc_type": "trim",
-      "doc_role": "entity",
-      "entity_level": "trim",
-      "domain": "Overview",
-      "guide_domains": [
-        "Safety and driver assistance",
-        "Technology and connectivity",
-        "Interior and comfort",
-        "Exterior and utility",
-        "Wheels and tires",
-        "Mechanical and performance",
-        "Packages and options",
-        "Colour and trim"
-      ],
-      "surface": "both",
-      "is_vehicle_entity": true,
-      "entity_name": "2026 Chevrolet Silverado 1500 ZR2",
-      "entity_key": "2026_chevrolet_silverado_1500_zr2",
-      "vehicle_key": "2026_chevrolet_silverado_1500",
-      "trim_key": "2026_chevrolet_silverado_1500_zr2",
-      "collection": "M3381846B8AEC20F4",
-      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
-      "parent": "M3381846B8AEC20F4",
-      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
-      "child": [
-        "S0E346B5C0551CFE4"
-      ],
-      "child_paths": [
-        "spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CK10543_3.html"
-      ],
-      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "trim_2026_Chevrolet_Silverado_1500_ZR2_2.html"
-    },
-    {
-      "objecttype": "Variant",
-      "type": "trim",
-      "node_id": "T42BA82DF117C11EA",
-      "name": "LTZ",
-      "title": "2026 Chevrolet Silverado 1500 LTZ",
-      "seating": [
-        "3",
-        "6"
-      ],
-      "drivetrains": [
-        "2RM",
-        "4RM"
-      ],
-      "body_styles": [
-        "Cabine classique",
-        "Cabine double",
-        "Cabine multiplace"
-      ],
-      "year": "2026",
-      "make": "Chevrolet",
-      "model": "Silverado 1500",
-      "trim": "LTZ",
-      "doc_type": "trim",
-      "doc_role": "entity",
-      "entity_level": "trim",
-      "domain": "Overview",
-      "guide_domains": [
-        "Safety and driver assistance",
-        "Technology and connectivity",
-        "Interior and comfort",
-        "Exterior and utility",
-        "Wheels and tires",
-        "Mechanical and performance",
-        "Packages and options",
-        "Colour and trim"
-      ],
-      "surface": "both",
-      "is_vehicle_entity": true,
-      "entity_name": "2026 Chevrolet Silverado 1500 LTZ",
-      "entity_key": "2026_chevrolet_silverado_1500_ltz",
-      "vehicle_key": "2026_chevrolet_silverado_1500",
-      "trim_key": "2026_chevrolet_silverado_1500_ltz",
-      "collection": "M3381846B8AEC20F4",
-      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
-      "parent": "M3381846B8AEC20F4",
-      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "trim_2026_Chevrolet_Silverado_1500_LTZ_2.html"
-    },
-    {
-      "objecttype": "Variant",
-      "type": "trim",
-      "node_id": "TC9A570A0F9179994",
-      "name": "High Country",
-      "title": "2026 Chevrolet Silverado 1500 High Country",
-      "seating": [
-        "3",
-        "6"
-      ],
-      "drivetrains": [
-        "2RM",
-        "4RM"
-      ],
-      "body_styles": [
-        "Cabine classique",
-        "Cabine double",
-        "Cabine multiplace"
-      ],
-      "year": "2026",
-      "make": "Chevrolet",
-      "model": "Silverado 1500",
-      "trim": "High Country",
-      "doc_type": "trim",
-      "doc_role": "entity",
-      "entity_level": "trim",
-      "domain": "Overview",
-      "guide_domains": [
-        "Safety and driver assistance",
-        "Technology and connectivity",
-        "Interior and comfort",
-        "Exterior and utility",
-        "Wheels and tires",
-        "Mechanical and performance",
-        "Packages and options",
-        "Colour and trim"
-      ],
-      "surface": "both",
-      "is_vehicle_entity": true,
-      "entity_name": "2026 Chevrolet Silverado 1500 High Country",
-      "entity_key": "2026_chevrolet_silverado_1500_high_country",
-      "vehicle_key": "2026_chevrolet_silverado_1500",
-      "trim_key": "2026_chevrolet_silverado_1500_high_country",
-      "collection": "M3381846B8AEC20F4",
-      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
-      "parent": "M3381846B8AEC20F4",
-      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
-      "parent_vehicle_id": "M3381846B8AEC20F4",
-      "path": "trim_2026_Chevrolet_Silverado_1500_High_Country_2.html"
     },
     {
       "objecttype": "Configuration",
@@ -1640,10 +1273,10 @@
       "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
       "parent_trims": [
-        "trim_2026_Chevrolet_Silverado_1500_ZR2_2.html"
+        "trim_2026_Chevrolet_Silverado_1500_ZR2.html"
       ],
       "parent_trim_ids": [
-        "TF31A9DAF4EBCF017"
+        "TDF3D181958796E95"
       ],
       "path": "spec_2026_Chevrolet_Silverado_1500_dimensions_specifications_CK10543_3.html"
     },

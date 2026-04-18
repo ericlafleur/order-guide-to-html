@@ -51,9 +51,6 @@
         "T856AA675377365BD",
         "T5335AA0C4677556B",
         "T9FCE038906C09A37",
-        "T93D94B875A0EFD9A",
-        "T8A5EE3A72F7912C0",
-        "T53F6A8CE3AAD88B3",
         "S755B98244BD49769",
         "S82ED7B1D5DBB08F5",
         "SA0B1F88EF83AF663",
@@ -100,9 +97,6 @@
         "trim_2025_Chevrolet_Silverado_2500_HD_ZR2.html",
         "trim_2025_Chevrolet_Silverado_2500_HD_LTZ.html",
         "trim_2025_Chevrolet_Silverado_2500_HD_High_Country.html",
-        "trim_2025_Chevrolet_Silverado_2500_HD_LT_2.html",
-        "trim_2025_Chevrolet_Silverado_2500_HD_LTZ_2.html",
-        "trim_2025_Chevrolet_Silverado_2500_HD_High_Country_2.html",
         "spec_2025_Chevrolet_Silverado_2500_HD_dimensions_specifications_CC20743.html",
         "spec_2025_Chevrolet_Silverado_2500_HD_dimensions_specifications_CK20743.html",
         "spec_2025_Chevrolet_Silverado_2500_HD_dimensions_specifications_CC20943.html",
@@ -763,154 +757,6 @@
       "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
       "parent": "M2903E8AAE8E7F58F",
       "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
-      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
-      "parent_vehicle_id": "M2903E8AAE8E7F58F",
-      "path": "trim_2025_Chevrolet_Silverado_2500_HD_High_Country.html"
-    },
-    {
-      "objecttype": "Variant",
-      "type": "trim",
-      "node_id": "T93D94B875A0EFD9A",
-      "name": "LT",
-      "title": "2025 Chevrolet Silverado 2500 HD LT",
-      "seating": [
-        "6",
-        "3"
-      ],
-      "drivetrains": [
-        "2WD",
-        "4WD"
-      ],
-      "body_styles": [
-        "Crew Cab, Standard Bed",
-        "Crew Cab, Long Bed",
-        "Double Cab, Standard Bed",
-        "Double Cab, Long Bed",
-        "Regular Cab, Long Bed"
-      ],
-      "year": "2025",
-      "make": "Chevrolet",
-      "model": "Silverado 2500 HD",
-      "trim": "LT",
-      "doc_type": "trim",
-      "doc_role": "entity",
-      "entity_level": "trim",
-      "domain": "Overview",
-      "guide_domains": [
-        "Safety and driver assistance",
-        "Exterior and utility",
-        "Wheels and tires",
-        "Mechanical and performance",
-        "Packages and options",
-        "Colour and trim"
-      ],
-      "surface": "both",
-      "is_vehicle_entity": true,
-      "entity_name": "2025 Chevrolet Silverado 2500 HD LT",
-      "entity_key": "2025_chevrolet_silverado_2500_hd_lt",
-      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
-      "trim_key": "2025_chevrolet_silverado_2500_hd_lt",
-      "collection": "M2903E8AAE8E7F58F",
-      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
-      "parent": "M2903E8AAE8E7F58F",
-      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
-      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
-      "parent_vehicle_id": "M2903E8AAE8E7F58F",
-      "path": "trim_2025_Chevrolet_Silverado_2500_HD_LT_2.html"
-    },
-    {
-      "objecttype": "Variant",
-      "type": "trim",
-      "node_id": "T8A5EE3A72F7912C0",
-      "name": "LTZ",
-      "title": "2025 Chevrolet Silverado 2500 HD LTZ",
-      "seating": [
-        "6",
-        "3"
-      ],
-      "drivetrains": [
-        "2WD",
-        "4WD"
-      ],
-      "body_styles": [
-        "Crew Cab, Standard Bed",
-        "Crew Cab, Long Bed",
-        "Double Cab, Standard Bed",
-        "Double Cab, Long Bed",
-        "Regular Cab, Long Bed"
-      ],
-      "year": "2025",
-      "make": "Chevrolet",
-      "model": "Silverado 2500 HD",
-      "trim": "LTZ",
-      "doc_type": "trim",
-      "doc_role": "entity",
-      "entity_level": "trim",
-      "domain": "Overview",
-      "guide_domains": [
-        "Safety and driver assistance",
-        "Exterior and utility",
-        "Wheels and tires",
-        "Mechanical and performance",
-        "Packages and options",
-        "Colour and trim"
-      ],
-      "surface": "both",
-      "is_vehicle_entity": true,
-      "entity_name": "2025 Chevrolet Silverado 2500 HD LTZ",
-      "entity_key": "2025_chevrolet_silverado_2500_hd_ltz",
-      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
-      "trim_key": "2025_chevrolet_silverado_2500_hd_ltz",
-      "collection": "M2903E8AAE8E7F58F",
-      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
-      "parent": "M2903E8AAE8E7F58F",
-      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
-      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
-      "parent_vehicle_id": "M2903E8AAE8E7F58F",
-      "path": "trim_2025_Chevrolet_Silverado_2500_HD_LTZ_2.html"
-    },
-    {
-      "objecttype": "Variant",
-      "type": "trim",
-      "node_id": "T53F6A8CE3AAD88B3",
-      "name": "High Country",
-      "title": "2025 Chevrolet Silverado 2500 HD High Country",
-      "seating": [
-        "6"
-      ],
-      "drivetrains": [
-        "4WD"
-      ],
-      "body_styles": [
-        "Crew Cab, Standard Bed",
-        "Crew Cab, Long Bed"
-      ],
-      "year": "2025",
-      "make": "Chevrolet",
-      "model": "Silverado 2500 HD",
-      "trim": "High Country",
-      "doc_type": "trim",
-      "doc_role": "entity",
-      "entity_level": "trim",
-      "domain": "Overview",
-      "guide_domains": [
-        "Safety and driver assistance",
-        "Exterior and utility",
-        "Wheels and tires",
-        "Mechanical and performance",
-        "Packages and options",
-        "Colour and trim"
-      ],
-      "surface": "both",
-      "is_vehicle_entity": true,
-      "entity_name": "2025 Chevrolet Silverado 2500 HD High Country",
-      "entity_key": "2025_chevrolet_silverado_2500_hd_high_country",
-      "vehicle_key": "2025_chevrolet_silverado_2500_hd",
-      "trim_key": "2025_chevrolet_silverado_2500_hd_high_country",
-      "collection": "M2903E8AAE8E7F58F",
-      "collection_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
-      "parent": "M2903E8AAE8E7F58F",
-      "parent_path": "model_2025_Chevrolet_Silverado_2500_HD.html",
       "child": [
         "SE37AE385223A1A9D",
         "SECA49B0EF2AB74B7",
@@ -925,7 +771,7 @@
       ],
       "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
       "parent_vehicle_id": "M2903E8AAE8E7F58F",
-      "path": "trim_2025_Chevrolet_Silverado_2500_HD_High_Country_2.html"
+      "path": "trim_2025_Chevrolet_Silverado_2500_HD_High_Country.html"
     },
     {
       "objecttype": "Configuration",
@@ -1338,10 +1184,10 @@
       "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
       "parent_vehicle_id": "M2903E8AAE8E7F58F",
       "parent_trims": [
-        "trim_2025_Chevrolet_Silverado_2500_HD_High_Country_2.html"
+        "trim_2025_Chevrolet_Silverado_2500_HD_High_Country.html"
       ],
       "parent_trim_ids": [
-        "T53F6A8CE3AAD88B3"
+        "T9FCE038906C09A37"
       ],
       "path": "spec_2025_Chevrolet_Silverado_2500_HD_dimensions_specifications_CK20743_2.html"
     },
@@ -1378,10 +1224,10 @@
       "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
       "parent_vehicle_id": "M2903E8AAE8E7F58F",
       "parent_trims": [
-        "trim_2025_Chevrolet_Silverado_2500_HD_High_Country_2.html"
+        "trim_2025_Chevrolet_Silverado_2500_HD_High_Country.html"
       ],
       "parent_trim_ids": [
-        "T53F6A8CE3AAD88B3"
+        "T9FCE038906C09A37"
       ],
       "path": "spec_2025_Chevrolet_Silverado_2500_HD_dimensions_specifications_CK20943_2.html"
     },
@@ -2117,10 +1963,10 @@
       "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
       "parent_vehicle_id": "M2903E8AAE8E7F58F",
       "parent_trims": [
-        "trim_2025_Chevrolet_Silverado_2500_HD_High_Country_2.html"
+        "trim_2025_Chevrolet_Silverado_2500_HD_High_Country.html"
       ],
       "parent_trim_ids": [
-        "T53F6A8CE3AAD88B3"
+        "T9FCE038906C09A37"
       ],
       "path": "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CK20743_High_Country.html"
     },
@@ -2262,10 +2108,10 @@
       "parent_vehicle": "model_2025_Chevrolet_Silverado_2500_HD.html",
       "parent_vehicle_id": "M2903E8AAE8E7F58F",
       "parent_trims": [
-        "trim_2025_Chevrolet_Silverado_2500_HD_High_Country_2.html"
+        "trim_2025_Chevrolet_Silverado_2500_HD_High_Country.html"
       ],
       "parent_trim_ids": [
-        "T53F6A8CE3AAD88B3"
+        "T9FCE038906C09A37"
       ],
       "path": "config_2025_Chevrolet_Silverado_2500_HD_powertrain_trailering_CK20943_High_Country.html"
     },

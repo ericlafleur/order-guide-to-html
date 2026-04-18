@@ -45,7 +45,6 @@
         "C8CD381194037EDDA",
         "C31103E105DCBCC8D",
         "T35F8B42ADD750091",
-        "T422D41625966574F",
         "T9EB3AC993B26CBED",
         "TF11E9B3C85137C4D",
         "S3A675B73809DF577",
@@ -60,7 +59,6 @@
         "compare_domain_2025_Chevrolet_Equinox_Mechanical_and_performance.html",
         "compare_domain_2025_Chevrolet_Equinox_Packages_and_options.html",
         "trim_2025_Chevrolet_Equinox_LT.html",
-        "trim_2025_Chevrolet_Equinox_LT_2.html",
         "trim_2025_Chevrolet_Equinox_ACTIV.html",
         "trim_2025_Chevrolet_Equinox_RS.html",
         "spec_2025_Chevrolet_Equinox_dimensions_specifications_1PT26_FWD_and_AWD_LT.html",
@@ -394,51 +392,6 @@
       "collection_path": "model_2025_Chevrolet_Equinox.html",
       "parent": "M66DE29EF8FC6485F",
       "parent_path": "model_2025_Chevrolet_Equinox.html",
-      "parent_vehicle": "model_2025_Chevrolet_Equinox.html",
-      "parent_vehicle_id": "M66DE29EF8FC6485F",
-      "path": "trim_2025_Chevrolet_Equinox_LT.html"
-    },
-    {
-      "objecttype": "Variant",
-      "type": "trim",
-      "node_id": "T422D41625966574F",
-      "name": "LT",
-      "title": "2025 Chevrolet Equinox LT",
-      "seating": [
-        "2/3"
-      ],
-      "fuel_type": "Fuel, gasoline, E15",
-      "drivetrains": [
-        "AWD"
-      ],
-      "year": "2025",
-      "make": "Chevrolet",
-      "model": "Equinox",
-      "trim": "LT",
-      "doc_type": "trim",
-      "doc_role": "entity",
-      "entity_level": "trim",
-      "domain": "Overview",
-      "guide_domains": [
-        "Safety and driver assistance",
-        "Technology and connectivity",
-        "Interior and comfort",
-        "Exterior and utility",
-        "Wheels and tires",
-        "Mechanical and performance",
-        "Packages and options",
-        "Colour and trim"
-      ],
-      "surface": "both",
-      "is_vehicle_entity": true,
-      "entity_name": "2025 Chevrolet Equinox LT",
-      "entity_key": "2025_chevrolet_equinox_lt",
-      "vehicle_key": "2025_chevrolet_equinox",
-      "trim_key": "2025_chevrolet_equinox_lt",
-      "collection": "M66DE29EF8FC6485F",
-      "collection_path": "model_2025_Chevrolet_Equinox.html",
-      "parent": "M66DE29EF8FC6485F",
-      "parent_path": "model_2025_Chevrolet_Equinox.html",
       "child": [
         "S3A675B73809DF577"
       ],
@@ -447,7 +400,7 @@
       ],
       "parent_vehicle": "model_2025_Chevrolet_Equinox.html",
       "parent_vehicle_id": "M66DE29EF8FC6485F",
-      "path": "trim_2025_Chevrolet_Equinox_LT_2.html"
+      "path": "trim_2025_Chevrolet_Equinox_LT.html"
     },
     {
       "objecttype": "Variant",
@@ -583,10 +536,10 @@
       "parent_vehicle": "model_2025_Chevrolet_Equinox.html",
       "parent_vehicle_id": "M66DE29EF8FC6485F",
       "parent_trims": [
-        "trim_2025_Chevrolet_Equinox_LT_2.html"
+        "trim_2025_Chevrolet_Equinox_LT.html"
       ],
       "parent_trim_ids": [
-        "T422D41625966574F"
+        "T35F8B42ADD750091"
       ],
       "path": "spec_2025_Chevrolet_Equinox_dimensions_specifications_1PT26_FWD_and_AWD_LT.html"
     },
