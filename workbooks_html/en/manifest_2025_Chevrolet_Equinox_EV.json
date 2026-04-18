@@ -89,7 +89,7 @@
         "Safety and driver assistance"
       ],
       "comparison_axis": "trim",
-      "feature_count": 1,
+      "feature_count": 35,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Equinox EV",
@@ -128,7 +128,7 @@
         "Technology and connectivity"
       ],
       "comparison_axis": "trim",
-      "feature_count": 2,
+      "feature_count": 1,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Equinox EV",
@@ -206,7 +206,7 @@
         "Exterior and utility"
       ],
       "comparison_axis": "trim",
-      "feature_count": 18,
+      "feature_count": 15,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Equinox EV",
@@ -245,7 +245,7 @@
         "Wheels and tires"
       ],
       "comparison_axis": "trim",
-      "feature_count": 10,
+      "feature_count": 8,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Equinox EV",
@@ -323,7 +323,7 @@
         "Packages and options"
       ],
       "comparison_axis": "trim",
-      "feature_count": 1,
+      "feature_count": 6,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Equinox EV",

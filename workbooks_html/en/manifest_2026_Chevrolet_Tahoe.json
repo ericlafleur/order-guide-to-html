@@ -27,8 +27,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,
@@ -122,7 +122,7 @@
         "Safety and driver assistance"
       ],
       "comparison_axis": "trim",
-      "feature_count": 15,
+      "feature_count": 11,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Tahoe",
@@ -166,7 +166,7 @@
         "Technology and connectivity"
       ],
       "comparison_axis": "trim",
-      "feature_count": 15,
+      "feature_count": 11,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Tahoe",
@@ -210,7 +210,7 @@
         "Interior and comfort"
       ],
       "comparison_axis": "trim",
-      "feature_count": 42,
+      "feature_count": 32,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Tahoe",
@@ -254,7 +254,7 @@
         "Exterior and utility"
       ],
       "comparison_axis": "trim",
-      "feature_count": 49,
+      "feature_count": 39,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Tahoe",
@@ -298,7 +298,7 @@
         "Wheels and tires"
       ],
       "comparison_axis": "trim",
-      "feature_count": 35,
+      "feature_count": 25,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Tahoe",
@@ -342,7 +342,7 @@
         "Mechanical and performance"
       ],
       "comparison_axis": "trim",
-      "feature_count": 43,
+      "feature_count": 40,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Tahoe",
@@ -386,7 +386,7 @@
         "Packages and options"
       ],
       "comparison_axis": "trim",
-      "feature_count": 18,
+      "feature_count": 49,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Tahoe",
@@ -423,8 +423,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,
@@ -470,8 +470,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,
@@ -524,8 +524,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,
@@ -576,8 +576,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,
@@ -628,8 +628,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,
@@ -680,8 +680,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,
@@ -732,8 +732,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,

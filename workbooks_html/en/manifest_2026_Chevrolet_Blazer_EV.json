@@ -101,7 +101,7 @@
         "Safety and driver assistance"
       ],
       "comparison_axis": "trim",
-      "feature_count": 11,
+      "feature_count": 7,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Blazer EV",
@@ -179,7 +179,7 @@
         "Interior and comfort"
       ],
       "comparison_axis": "trim",
-      "feature_count": 12,
+      "feature_count": 13,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Blazer EV",
@@ -218,7 +218,7 @@
         "Exterior and utility"
       ],
       "comparison_axis": "trim",
-      "feature_count": 28,
+      "feature_count": 24,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Blazer EV",
@@ -257,7 +257,7 @@
         "Wheels and tires"
       ],
       "comparison_axis": "trim",
-      "feature_count": 24,
+      "feature_count": 15,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Blazer EV",
@@ -335,7 +335,7 @@
         "Packages and options"
       ],
       "comparison_axis": "trim",
-      "feature_count": 1,
+      "feature_count": 13,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Blazer EV",

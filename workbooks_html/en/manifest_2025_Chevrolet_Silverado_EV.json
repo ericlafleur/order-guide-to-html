@@ -23,8 +23,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,
@@ -100,7 +100,7 @@
         "Safety and driver assistance"
       ],
       "comparison_axis": "trim",
-      "feature_count": 24,
+      "feature_count": 18,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Silverado EV",
@@ -139,7 +139,7 @@
         "Technology and connectivity"
       ],
       "comparison_axis": "trim",
-      "feature_count": 17,
+      "feature_count": 14,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Silverado EV",
@@ -178,7 +178,7 @@
         "Interior and comfort"
       ],
       "comparison_axis": "trim",
-      "feature_count": 25,
+      "feature_count": 23,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Silverado EV",
@@ -217,7 +217,7 @@
         "Exterior and utility"
       ],
       "comparison_axis": "trim",
-      "feature_count": 34,
+      "feature_count": 28,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Silverado EV",
@@ -256,7 +256,7 @@
         "Wheels and tires"
       ],
       "comparison_axis": "trim",
-      "feature_count": 24,
+      "feature_count": 21,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Silverado EV",
@@ -295,7 +295,7 @@
         "Mechanical and performance"
       ],
       "comparison_axis": "trim",
-      "feature_count": 24,
+      "feature_count": 23,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Silverado EV",
@@ -334,7 +334,7 @@
         "Packages and options"
       ],
       "comparison_axis": "trim",
-      "feature_count": 1,
+      "feature_count": 20,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Silverado EV",
@@ -373,8 +373,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,
@@ -415,8 +415,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,
@@ -457,8 +457,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,
@@ -499,8 +499,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,
@@ -541,8 +541,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,
@@ -583,8 +583,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,

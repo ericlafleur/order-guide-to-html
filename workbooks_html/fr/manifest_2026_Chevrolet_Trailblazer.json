@@ -183,7 +183,7 @@
         "Interior and comfort"
       ],
       "comparison_axis": "trim",
-      "feature_count": 24,
+      "feature_count": 23,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Trailblazer",
@@ -223,7 +223,7 @@
         "Exterior and utility"
       ],
       "comparison_axis": "trim",
-      "feature_count": 36,
+      "feature_count": 32,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Trailblazer",
@@ -343,7 +343,8 @@
         "Packages and options"
       ],
       "comparison_axis": "trim",
-      "feature_count": 1,
+      "feature_count": 5,
+      "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Trailblazer",
       "entity_key": "2026_chevrolet_trailblazer",

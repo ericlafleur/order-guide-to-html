@@ -27,8 +27,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,
@@ -160,7 +160,7 @@
         "Safety and driver assistance"
       ],
       "comparison_axis": "trim",
-      "feature_count": 32,
+      "feature_count": 24,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Silverado 2500 HD",
@@ -203,7 +203,7 @@
         "Technology and connectivity"
       ],
       "comparison_axis": "trim",
-      "feature_count": 21,
+      "feature_count": 18,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Silverado 2500 HD",
@@ -246,7 +246,7 @@
         "Interior and comfort"
       ],
       "comparison_axis": "trim",
-      "feature_count": 39,
+      "feature_count": 25,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Silverado 2500 HD",
@@ -289,7 +289,7 @@
         "Exterior and utility"
       ],
       "comparison_axis": "trim",
-      "feature_count": 72,
+      "feature_count": 63,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Silverado 2500 HD",
@@ -332,7 +332,7 @@
         "Wheels and tires"
       ],
       "comparison_axis": "trim",
-      "feature_count": 55,
+      "feature_count": 39,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Silverado 2500 HD",
@@ -375,7 +375,7 @@
         "Mechanical and performance"
       ],
       "comparison_axis": "trim",
-      "feature_count": 62,
+      "feature_count": 60,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Silverado 2500 HD",
@@ -418,7 +418,7 @@
         "Packages and options"
       ],
       "comparison_axis": "trim",
-      "feature_count": 23,
+      "feature_count": 68,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Silverado 2500 HD",
@@ -469,8 +469,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,
@@ -523,8 +523,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,
@@ -577,8 +577,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,
@@ -625,8 +625,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,
@@ -687,8 +687,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,
@@ -736,8 +736,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,

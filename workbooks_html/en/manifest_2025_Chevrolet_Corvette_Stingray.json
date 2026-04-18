@@ -160,7 +160,7 @@
         "Interior and comfort"
       ],
       "comparison_axis": "trim",
-      "feature_count": 15,
+      "feature_count": 13,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Corvette Stingray",
@@ -196,7 +196,7 @@
         "Exterior and utility"
       ],
       "comparison_axis": "trim",
-      "feature_count": 12,
+      "feature_count": 6,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Corvette Stingray",
@@ -232,7 +232,7 @@
         "Wheels and tires"
       ],
       "comparison_axis": "trim",
-      "feature_count": 3,
+      "feature_count": 2,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Corvette Stingray",
@@ -303,7 +303,8 @@
         "Packages and options"
       ],
       "comparison_axis": "trim",
-      "feature_count": 2,
+      "feature_count": 11,
+      "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Corvette Stingray",
       "entity_key": "2025_chevrolet_corvette_stingray",

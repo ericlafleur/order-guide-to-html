@@ -28,8 +28,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,
@@ -166,7 +166,7 @@
         "Safety and driver assistance"
       ],
       "comparison_axis": "trim",
-      "feature_count": 45,
+      "feature_count": 30,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Silverado 1500",
@@ -213,7 +213,7 @@
         "Technology and connectivity"
       ],
       "comparison_axis": "trim",
-      "feature_count": 26,
+      "feature_count": 23,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Silverado 1500",
@@ -260,7 +260,7 @@
         "Interior and comfort"
       ],
       "comparison_axis": "trim",
-      "feature_count": 50,
+      "feature_count": 30,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Silverado 1500",
@@ -307,7 +307,7 @@
         "Exterior and utility"
       ],
       "comparison_axis": "trim",
-      "feature_count": 83,
+      "feature_count": 73,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Silverado 1500",
@@ -354,7 +354,7 @@
         "Wheels and tires"
       ],
       "comparison_axis": "trim",
-      "feature_count": 76,
+      "feature_count": 55,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Silverado 1500",
@@ -401,7 +401,7 @@
         "Mechanical and performance"
       ],
       "comparison_axis": "trim",
-      "feature_count": 52,
+      "feature_count": 53,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Silverado 1500",
@@ -448,7 +448,7 @@
         "Packages and options"
       ],
       "comparison_axis": "trim",
-      "feature_count": 36,
+      "feature_count": 89,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Silverado 1500",
@@ -499,8 +499,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,
@@ -553,8 +553,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,
@@ -607,8 +607,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,
@@ -661,8 +661,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,
@@ -715,8 +715,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,
@@ -769,8 +769,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,
@@ -817,8 +817,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,
@@ -877,8 +877,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,
@@ -931,8 +931,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,

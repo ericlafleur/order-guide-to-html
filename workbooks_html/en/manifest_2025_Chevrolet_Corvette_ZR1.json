@@ -154,7 +154,7 @@
         "Interior and comfort"
       ],
       "comparison_axis": "trim",
-      "feature_count": 14,
+      "feature_count": 13,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Corvette ZR1",
@@ -189,7 +189,7 @@
         "Exterior and utility"
       ],
       "comparison_axis": "trim",
-      "feature_count": 12,
+      "feature_count": 6,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Corvette ZR1",
@@ -224,7 +224,7 @@
         "Wheels and tires"
       ],
       "comparison_axis": "trim",
-      "feature_count": 6,
+      "feature_count": 5,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Corvette ZR1",
@@ -259,7 +259,7 @@
         "Mechanical and performance"
       ],
       "comparison_axis": "trim",
-      "feature_count": 22,
+      "feature_count": 23,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Corvette ZR1",
@@ -294,7 +294,8 @@
         "Packages and options"
       ],
       "comparison_axis": "trim",
-      "feature_count": 1,
+      "feature_count": 9,
+      "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Corvette ZR1",
       "entity_key": "2025_chevrolet_corvette_zr1",

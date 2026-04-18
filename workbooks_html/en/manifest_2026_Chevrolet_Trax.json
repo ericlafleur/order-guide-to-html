@@ -97,7 +97,7 @@
         "Safety and driver assistance"
       ],
       "comparison_axis": "trim",
-      "feature_count": 4,
+      "feature_count": 3,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Trax",
@@ -217,7 +217,7 @@
         "Exterior and utility"
       ],
       "comparison_axis": "trim",
-      "feature_count": 19,
+      "feature_count": 18,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Trax",
@@ -257,7 +257,7 @@
         "Wheels and tires"
       ],
       "comparison_axis": "trim",
-      "feature_count": 16,
+      "feature_count": 12,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Trax",
@@ -297,8 +297,7 @@
         "Mechanical and performance"
       ],
       "comparison_axis": "trim",
-      "feature_count": 1,
-      "has_notes": true,
+      "feature_count": 20,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Trax",
       "entity_key": "2026_chevrolet_trax",
@@ -337,7 +336,8 @@
         "Packages and options"
       ],
       "comparison_axis": "trim",
-      "feature_count": 1,
+      "feature_count": 6,
+      "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Trax",
       "entity_key": "2026_chevrolet_trax",

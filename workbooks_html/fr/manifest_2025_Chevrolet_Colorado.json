@@ -25,6 +25,7 @@
         "Exterior and utility",
         "Wheels and tires",
         "Mechanical and performance",
+        "Packages and options",
         "Colour and trim",
         "Other guide content"
       ],
@@ -42,6 +43,7 @@
         "C6D18729995880C53",
         "C154AC641F0218BD0",
         "CF21BBB789EE9FB30",
+        "CBC66CEA5FDA74BCD",
         "T9E1010DE3398747D",
         "TFF001C79F45B295D",
         "T5D0C13C461D4F0DD",
@@ -66,6 +68,7 @@
         "compare_domain_2025_Chevrolet_Colorado_Exterior_and_utility.html",
         "compare_domain_2025_Chevrolet_Colorado_Wheels_and_tires.html",
         "compare_domain_2025_Chevrolet_Colorado_Mechanical_and_performance.html",
+        "compare_domain_2025_Chevrolet_Colorado_Packages_and_options.html",
         "trim_2025_Chevrolet_Colorado_WT_2RM.html",
         "trim_2025_Chevrolet_Colorado_WT_4RM.html",
         "trim_2025_Chevrolet_Colorado_LT_4RM.html",
@@ -201,7 +204,7 @@
         "Interior and comfort"
       ],
       "comparison_axis": "trim",
-      "feature_count": 28,
+      "feature_count": 26,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Colorado",
@@ -242,7 +245,7 @@
         "Exterior and utility"
       ],
       "comparison_axis": "trim",
-      "feature_count": 66,
+      "feature_count": 51,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Colorado",
@@ -324,7 +327,7 @@
         "Mechanical and performance"
       ],
       "comparison_axis": "trim",
-      "feature_count": 35,
+      "feature_count": 32,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Colorado",
@@ -337,6 +340,47 @@
       "parent_vehicle": "model_2025_Chevrolet_Colorado.html",
       "parent_vehicle_id": "M74C7CA0D75F950B8",
       "path": "compare_domain_2025_Chevrolet_Colorado_Mechanical_and_performance.html"
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "CBC66CEA5FDA74BCD",
+      "seating": [
+        "2/3"
+      ],
+      "name": "2025 Chevrolet Colorado | Packages and options trim comparison",
+      "title": "2025 Chevrolet Colorado | Packages and options trim comparison",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Colorado",
+      "trim_names_from_guide": [
+        "WT",
+        "LT",
+        "Trail Boss",
+        "Z71",
+        "ZR2"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Packages and options",
+      "guide_domains": [
+        "Packages and options"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 20,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Colorado",
+      "entity_key": "2025_chevrolet_colorado",
+      "vehicle_key": "2025_chevrolet_colorado",
+      "collection": "M74C7CA0D75F950B8",
+      "collection_path": "model_2025_Chevrolet_Colorado.html",
+      "parent": "M74C7CA0D75F950B8",
+      "parent_path": "model_2025_Chevrolet_Colorado.html",
+      "parent_vehicle": "model_2025_Chevrolet_Colorado.html",
+      "parent_vehicle_id": "M74C7CA0D75F950B8",
+      "path": "compare_domain_2025_Chevrolet_Colorado_Packages_and_options.html"
     },
     {
       "objecttype": "Variant",
@@ -365,6 +409,7 @@
         "Exterior and utility",
         "Wheels and tires",
         "Mechanical and performance",
+        "Packages and options",
         "Colour and trim",
         "Other guide content"
       ],
@@ -415,6 +460,7 @@
         "Exterior and utility",
         "Wheels and tires",
         "Mechanical and performance",
+        "Packages and options",
         "Colour and trim",
         "Other guide content"
       ],
@@ -465,6 +511,7 @@
         "Exterior and utility",
         "Wheels and tires",
         "Mechanical and performance",
+        "Packages and options",
         "Colour and trim",
         "Other guide content"
       ],
@@ -515,6 +562,7 @@
         "Exterior and utility",
         "Wheels and tires",
         "Mechanical and performance",
+        "Packages and options",
         "Colour and trim",
         "Other guide content"
       ],
@@ -565,6 +613,7 @@
         "Exterior and utility",
         "Wheels and tires",
         "Mechanical and performance",
+        "Packages and options",
         "Colour and trim",
         "Other guide content"
       ],
@@ -615,6 +664,7 @@
         "Exterior and utility",
         "Wheels and tires",
         "Mechanical and performance",
+        "Packages and options",
         "Colour and trim",
         "Other guide content"
       ],

@@ -169,7 +169,7 @@
         "Interior and comfort"
       ],
       "comparison_axis": "trim",
-      "feature_count": 23,
+      "feature_count": 19,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Traverse",
@@ -208,7 +208,7 @@
         "Exterior and utility"
       ],
       "comparison_axis": "trim",
-      "feature_count": 26,
+      "feature_count": 21,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Traverse",
@@ -325,7 +325,8 @@
         "Packages and options"
       ],
       "comparison_axis": "trim",
-      "feature_count": 1,
+      "feature_count": 9,
+      "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Traverse",
       "entity_key": "2025_chevrolet_traverse",

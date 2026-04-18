@@ -116,7 +116,7 @@
         "Technology and connectivity"
       ],
       "comparison_axis": "trim",
-      "feature_count": 22,
+      "feature_count": 23,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2027 Chevrolet Bolt",
@@ -256,7 +256,7 @@
         "Mechanical and performance"
       ],
       "comparison_axis": "trim",
-      "feature_count": 17,
+      "feature_count": 15,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2027 Chevrolet Bolt",
@@ -291,7 +291,8 @@
         "Packages and options"
       ],
       "comparison_axis": "trim",
-      "feature_count": 1,
+      "feature_count": 6,
+      "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2027 Chevrolet Bolt",
       "entity_key": "2027_chevrolet_bolt",

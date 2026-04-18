@@ -103,7 +103,7 @@
         "Safety and driver assistance"
       ],
       "comparison_axis": "trim",
-      "feature_count": 7,
+      "feature_count": 6,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Trax",
@@ -144,7 +144,7 @@
         "Technology and connectivity"
       ],
       "comparison_axis": "trim",
-      "feature_count": 10,
+      "feature_count": 9,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Trax",
@@ -226,7 +226,7 @@
         "Exterior and utility"
       ],
       "comparison_axis": "trim",
-      "feature_count": 22,
+      "feature_count": 19,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Trax",
@@ -267,7 +267,7 @@
         "Wheels and tires"
       ],
       "comparison_axis": "trim",
-      "feature_count": 13,
+      "feature_count": 12,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Trax",
@@ -308,8 +308,7 @@
         "Mechanical and performance"
       ],
       "comparison_axis": "trim",
-      "feature_count": 1,
-      "has_notes": true,
+      "feature_count": 20,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Trax",
       "entity_key": "2025_chevrolet_trax",
@@ -349,7 +348,8 @@
         "Packages and options"
       ],
       "comparison_axis": "trim",
-      "feature_count": 1,
+      "feature_count": 6,
+      "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Trax",
       "entity_key": "2025_chevrolet_trax",

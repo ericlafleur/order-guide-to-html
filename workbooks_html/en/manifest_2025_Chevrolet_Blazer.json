@@ -115,7 +115,7 @@
         "Safety and driver assistance"
       ],
       "comparison_axis": "trim",
-      "feature_count": 16,
+      "feature_count": 11,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Blazer",
@@ -195,7 +195,7 @@
         "Interior and comfort"
       ],
       "comparison_axis": "trim",
-      "feature_count": 14,
+      "feature_count": 13,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Blazer",
@@ -235,7 +235,7 @@
         "Exterior and utility"
       ],
       "comparison_axis": "trim",
-      "feature_count": 37,
+      "feature_count": 30,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Blazer",
@@ -275,7 +275,7 @@
         "Wheels and tires"
       ],
       "comparison_axis": "trim",
-      "feature_count": 22,
+      "feature_count": 16,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Blazer",
@@ -355,7 +355,7 @@
         "Packages and options"
       ],
       "comparison_axis": "trim",
-      "feature_count": 5,
+      "feature_count": 22,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Blazer",

@@ -81,7 +81,7 @@
         "Safety and driver assistance"
       ],
       "comparison_axis": "trim",
-      "feature_count": 1,
+      "feature_count": 24,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2027 Chevrolet Bolt",
@@ -116,7 +116,7 @@
         "Technology and connectivity"
       ],
       "comparison_axis": "trim",
-      "feature_count": 21,
+      "feature_count": 22,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2027 Chevrolet Bolt",
@@ -151,7 +151,7 @@
         "Interior and comfort"
       ],
       "comparison_axis": "trim",
-      "feature_count": 8,
+      "feature_count": 7,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2027 Chevrolet Bolt",
@@ -221,7 +221,7 @@
         "Wheels and tires"
       ],
       "comparison_axis": "trim",
-      "feature_count": 7,
+      "feature_count": 3,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2027 Chevrolet Bolt",
@@ -256,7 +256,7 @@
         "Mechanical and performance"
       ],
       "comparison_axis": "trim",
-      "feature_count": 15,
+      "feature_count": 13,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2027 Chevrolet Bolt",
@@ -291,7 +291,8 @@
         "Packages and options"
       ],
       "comparison_axis": "trim",
-      "feature_count": 1,
+      "feature_count": 3,
+      "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2027 Chevrolet Bolt",
       "entity_key": "2027_chevrolet_bolt",

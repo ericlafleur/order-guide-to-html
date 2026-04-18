@@ -26,8 +26,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,
@@ -122,7 +122,7 @@
         "Safety and driver assistance"
       ],
       "comparison_axis": "trim",
-      "feature_count": 12,
+      "feature_count": 10,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Colorado",
@@ -163,7 +163,7 @@
         "Technology and connectivity"
       ],
       "comparison_axis": "trim",
-      "feature_count": 8,
+      "feature_count": 5,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Colorado",
@@ -204,7 +204,7 @@
         "Interior and comfort"
       ],
       "comparison_axis": "trim",
-      "feature_count": 27,
+      "feature_count": 26,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Colorado",
@@ -245,7 +245,7 @@
         "Exterior and utility"
       ],
       "comparison_axis": "trim",
-      "feature_count": 57,
+      "feature_count": 49,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Colorado",
@@ -286,7 +286,7 @@
         "Wheels and tires"
       ],
       "comparison_axis": "trim",
-      "feature_count": 42,
+      "feature_count": 36,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Colorado",
@@ -327,7 +327,7 @@
         "Mechanical and performance"
       ],
       "comparison_axis": "trim",
-      "feature_count": 27,
+      "feature_count": 26,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Colorado",
@@ -368,7 +368,7 @@
         "Packages and options"
       ],
       "comparison_axis": "trim",
-      "feature_count": 15,
+      "feature_count": 32,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Colorado",
@@ -410,8 +410,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,
@@ -455,8 +455,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,
@@ -500,8 +500,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,
@@ -551,8 +551,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,
@@ -602,8 +602,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,
@@ -653,8 +653,8 @@
         "Wheels and tires",
         "Mechanical and performance",
         "Packages and options",
-        "Other guide content",
-        "Colour and trim"
+        "Colour and trim",
+        "Other guide content"
       ],
       "surface": "both",
       "is_vehicle_entity": true,

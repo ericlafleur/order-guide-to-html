@@ -183,7 +183,7 @@
         "Interior and comfort"
       ],
       "comparison_axis": "trim",
-      "feature_count": 22,
+      "feature_count": 21,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Trailblazer",
@@ -223,7 +223,7 @@
         "Exterior and utility"
       ],
       "comparison_axis": "trim",
-      "feature_count": 33,
+      "feature_count": 31,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Trailblazer",
@@ -343,7 +343,8 @@
         "Packages and options"
       ],
       "comparison_axis": "trim",
-      "feature_count": 1,
+      "feature_count": 3,
+      "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Trailblazer",
       "entity_key": "2025_chevrolet_trailblazer",

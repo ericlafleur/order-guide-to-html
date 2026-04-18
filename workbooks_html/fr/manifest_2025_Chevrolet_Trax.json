@@ -185,7 +185,7 @@
         "Interior and comfort"
       ],
       "comparison_axis": "trim",
-      "feature_count": 18,
+      "feature_count": 17,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Trax",
@@ -226,7 +226,7 @@
         "Exterior and utility"
       ],
       "comparison_axis": "trim",
-      "feature_count": 19,
+      "feature_count": 16,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Trax",
@@ -348,7 +348,8 @@
         "Packages and options"
       ],
       "comparison_axis": "trim",
-      "feature_count": 1,
+      "feature_count": 4,
+      "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Trax",
       "entity_key": "2025_chevrolet_trax",

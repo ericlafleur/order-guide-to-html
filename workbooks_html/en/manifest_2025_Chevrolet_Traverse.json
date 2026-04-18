@@ -91,7 +91,7 @@
         "Safety and driver assistance"
       ],
       "comparison_axis": "trim",
-      "feature_count": 12,
+      "feature_count": 10,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Traverse",
@@ -169,7 +169,7 @@
         "Interior and comfort"
       ],
       "comparison_axis": "trim",
-      "feature_count": 22,
+      "feature_count": 19,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Traverse",
@@ -208,7 +208,7 @@
         "Exterior and utility"
       ],
       "comparison_axis": "trim",
-      "feature_count": 28,
+      "feature_count": 23,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Traverse",
@@ -247,7 +247,7 @@
         "Wheels and tires"
       ],
       "comparison_axis": "trim",
-      "feature_count": 23,
+      "feature_count": 13,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Traverse",
@@ -325,7 +325,7 @@
         "Packages and options"
       ],
       "comparison_axis": "trim",
-      "feature_count": 3,
+      "feature_count": 17,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Traverse",

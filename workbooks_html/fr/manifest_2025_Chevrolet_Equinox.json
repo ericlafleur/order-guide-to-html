@@ -214,7 +214,7 @@
         "Exterior and utility"
       ],
       "comparison_axis": "trim",
-      "feature_count": 17,
+      "feature_count": 14,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Equinox",
@@ -292,7 +292,7 @@
         "Mechanical and performance"
       ],
       "comparison_axis": "trim",
-      "feature_count": 11,
+      "feature_count": 10,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Equinox",
@@ -331,7 +331,8 @@
         "Packages and options"
       ],
       "comparison_axis": "trim",
-      "feature_count": 1,
+      "feature_count": 4,
+      "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2025 Chevrolet Equinox",
       "entity_key": "2025_chevrolet_equinox",

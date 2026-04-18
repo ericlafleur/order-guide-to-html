@@ -91,7 +91,7 @@
         "Safety and driver assistance"
       ],
       "comparison_axis": "trim",
-      "feature_count": 15,
+      "feature_count": 14,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Traverse",
@@ -130,7 +130,7 @@
         "Technology and connectivity"
       ],
       "comparison_axis": "trim",
-      "feature_count": 3,
+      "feature_count": 4,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Traverse",
@@ -169,7 +169,7 @@
         "Interior and comfort"
       ],
       "comparison_axis": "trim",
-      "feature_count": 23,
+      "feature_count": 20,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Traverse",
@@ -208,7 +208,7 @@
         "Exterior and utility"
       ],
       "comparison_axis": "trim",
-      "feature_count": 29,
+      "feature_count": 23,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Traverse",
@@ -325,7 +325,8 @@
         "Packages and options"
       ],
       "comparison_axis": "trim",
-      "feature_count": 1,
+      "feature_count": 9,
+      "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Traverse",
       "entity_key": "2026_chevrolet_traverse",

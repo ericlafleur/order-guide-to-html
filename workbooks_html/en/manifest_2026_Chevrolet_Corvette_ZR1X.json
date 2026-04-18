@@ -154,7 +154,7 @@
         "Interior and comfort"
       ],
       "comparison_axis": "trim",
-      "feature_count": 15,
+      "feature_count": 14,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Corvette ZR1X",
@@ -189,7 +189,7 @@
         "Exterior and utility"
       ],
       "comparison_axis": "trim",
-      "feature_count": 13,
+      "feature_count": 7,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Corvette ZR1X",
@@ -224,7 +224,7 @@
         "Wheels and tires"
       ],
       "comparison_axis": "trim",
-      "feature_count": 6,
+      "feature_count": 5,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Corvette ZR1X",
@@ -259,7 +259,7 @@
         "Mechanical and performance"
       ],
       "comparison_axis": "trim",
-      "feature_count": 1,
+      "feature_count": 27,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Corvette ZR1X",
@@ -294,7 +294,7 @@
         "Packages and options"
       ],
       "comparison_axis": "trim",
-      "feature_count": 2,
+      "feature_count": 11,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Corvette ZR1X",

@@ -139,7 +139,7 @@
         "Technology and connectivity"
       ],
       "comparison_axis": "trim",
-      "feature_count": 2,
+      "feature_count": 1,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Equinox",
@@ -219,7 +219,7 @@
         "Exterior and utility"
       ],
       "comparison_axis": "trim",
-      "feature_count": 17,
+      "feature_count": 15,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Equinox",
@@ -259,7 +259,7 @@
         "Wheels and tires"
       ],
       "comparison_axis": "trim",
-      "feature_count": 16,
+      "feature_count": 14,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Equinox",
@@ -339,7 +339,7 @@
         "Packages and options"
       ],
       "comparison_axis": "trim",
-      "feature_count": 2,
+      "feature_count": 4,
       "has_notes": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Equinox",
