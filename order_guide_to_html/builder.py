@@ -88,8 +88,12 @@ class CorpusBuilder:
 
     def build_trims(self, data, output_dir: Path, used_names: set[str], bindings: List[BoundRecord], model_path: Path) -> Dict[str, Path]:
         trim_paths: Dict[str, Path] = {}
+        name_slug_to_path: Dict[str, Path] = {}
         for trim in data.trim_defs:
             filename = f'trim_{data.year}_{slugify(data.make)}_{slugify(data.model)}_{slugify(trim.name)}.html'
+            if filename in name_slug_to_path:
+                trim_paths[trim.key] = name_slug_to_path[filename]
+                continue
             path = unique_output_path(output_dir, filename, used_names)
             path.write_text(self.renderer.render_trim_overview_page(data, trim), encoding='utf-8')
             record = OutputFileRecord(
@@ -100,6 +104,7 @@ class CorpusBuilder:
             )
             add_bound_record(bindings, record, collection=model_path, parent=model_path, parent_vehicle=model_path, parent_trims=[])
             trim_paths[trim.key] = path
+            name_slug_to_path[filename] = path
         return trim_paths
 
     def build_configurations(

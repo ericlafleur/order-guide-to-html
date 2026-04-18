@@ -2155,8 +2155,15 @@ def build_trim_records(
     model_path: Path,
 ) -> Dict[str, Path]:
     trim_paths: Dict[str, Path] = {}
+    # Keyed by canonical filename (before unique_output_path) to avoid _2.html
+    # duplicates when the same trim name appears with different model codes across sheets.
+    name_slug_to_path: Dict[str, Path] = {}
     for trim in data.trim_defs:
         overview_filename = f'trim_{data.year}_{slugify(data.make)}_{slugify(data.model)}_{slugify(trim.name)}.html'
+        if overview_filename in name_slug_to_path:
+            # Same trim name already has a page; reuse it so specs can still link here.
+            trim_paths[trim.key] = name_slug_to_path[overview_filename]
+            continue
         overview_path = unique_output_path(output_dir, overview_filename, used_names)
         overview_path.write_text(render_trim_overview_page(data, trim), encoding='utf-8')
         overview_record = OutputFileRecord(
@@ -2167,6 +2174,7 @@ def build_trim_records(
         )
         add_bound_record(bindings, overview_record, collection=model_path, parent=model_path, parent_vehicle=model_path, parent_trims=[])
         trim_paths[trim.key] = overview_path
+        name_slug_to_path[overview_filename] = overview_path
     return trim_paths
 
 def fold_safe_id(record: OutputFileRecord) -> str:
