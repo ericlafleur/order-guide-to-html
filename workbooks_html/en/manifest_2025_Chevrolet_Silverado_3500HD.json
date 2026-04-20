@@ -1,0 +1,2255 @@
+{
+  "vehicle_name": "2025 Chevrolet Silverado 3500HD",
+  "vehicle_key": "2025_chevrolet_silverado_3500hd",
+  "files": [
+    {
+      "objecttype": "Product",
+      "type": "model",
+      "node_id": "M7D3D40177D213138",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "name": "2025 Chevrolet Silverado 3500HD",
+      "title": "2025 Chevrolet Silverado 3500HD",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "doc_type": "model",
+      "doc_role": "entity",
+      "entity_level": "model",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Packages and options",
+        "Colour and trim",
+        "Other guide content"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "child": [
+        "C7620D5A4EC0EC83C",
+        "CC35E650EC8EC797A",
+        "CF3C5B1AFD321D811",
+        "C0915B8CD3F7E5CCE",
+        "C0FA294D7D970C347",
+        "CCEC58BEA86F11C23",
+        "CB24E6DE8D9528FBC",
+        "T68D47E785F62E48D",
+        "T186D2D8264EF9BF7",
+        "TA6BBF186CBDE98E5",
+        "TBF58E4A6CA9DAF30",
+        "SCD1211D777BC567F",
+        "S821CEF54AB4320B4",
+        "S3C46017EF15D13D4",
+        "S9E172296024B8CCC",
+        "S9DCA033F862AD4A5",
+        "SE3633ADFC8A3E58D",
+        "SD127836A8FA56E3B",
+        "S8771155F48D7F4B5",
+        "SB3D777FB5182FECD",
+        "SFD188A3C16AF5836",
+        "S8BB636413FA96F28",
+        "SE0E7A2C31AFDAA96",
+        "SCAEE4D2690DB5E44",
+        "SFC3AE025AFA2E242",
+        "S94DCE1A012B3AD50",
+        "S479554E4ACA18480",
+        "S63FF67B77B3975B2",
+        "S49852C4E37B09146",
+        "SCC2961BACA270A00",
+        "SC21279E4F82E4B3D",
+        "SF40EB128811A07C1",
+        "S5294E582CF765DD4",
+        "S623AC6954559C81C",
+        "S3C24B2AD0A35137C",
+        "SF5F4B05AFE8A8FAD",
+        "S40C0F6A997E2978A",
+        "SF5963B726A556E5E",
+        "S4354E45940632919",
+        "S9379BAEF3BB5C7F7",
+        "SFDE60A4BFE2C482A",
+        "S0958535E591765DE",
+        "S26D26B4DE34C75CE"
+      ],
+      "child_paths": [
+        "compare_domain_2025_Chevrolet_Silverado_3500HD_Safety_and_driver_assistance.html",
+        "compare_domain_2025_Chevrolet_Silverado_3500HD_Technology_and_connectivity.html",
+        "compare_domain_2025_Chevrolet_Silverado_3500HD_Interior_and_comfort.html",
+        "compare_domain_2025_Chevrolet_Silverado_3500HD_Exterior_and_utility.html",
+        "compare_domain_2025_Chevrolet_Silverado_3500HD_Wheels_and_tires.html",
+        "compare_domain_2025_Chevrolet_Silverado_3500HD_Mechanical_and_performance.html",
+        "compare_domain_2025_Chevrolet_Silverado_3500HD_Packages_and_options.html",
+        "trim_2025_Chevrolet_Silverado_3500HD_Work_Truck.html",
+        "trim_2025_Chevrolet_Silverado_3500HD_LT.html",
+        "trim_2025_Chevrolet_Silverado_3500HD_LTZ.html",
+        "trim_2025_Chevrolet_Silverado_3500HD_High_Country.html",
+        "spec_2025_Chevrolet_Silverado_3500HD_dimensions_specifications_CC30743.html",
+        "spec_2025_Chevrolet_Silverado_3500HD_dimensions_specifications_CK30743.html",
+        "spec_2025_Chevrolet_Silverado_3500HD_dimensions_specifications_CC30943.html",
+        "spec_2025_Chevrolet_Silverado_3500HD_dimensions_specifications_CK30943.html",
+        "spec_2025_Chevrolet_Silverado_3500HD_dimensions_specifications_CC30953.html",
+        "spec_2025_Chevrolet_Silverado_3500HD_dimensions_specifications_CK30953.html",
+        "spec_2025_Chevrolet_Silverado_3500HD_dimensions_specifications_CC30903.html",
+        "spec_2025_Chevrolet_Silverado_3500HD_dimensions_specifications_CK30903.html",
+        "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CC30743.html",
+        "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CK30743.html",
+        "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CC30943.html",
+        "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CK30943.html",
+        "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CC30953.html",
+        "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CK30953.html",
+        "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CC30903.html",
+        "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CK30903.html",
+        "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CC30743_w_SRW.html",
+        "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CK30743_w_SRW.html",
+        "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CC30943_w_SRW.html",
+        "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CC30943_w_DRW.html",
+        "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CK30943_w_SRW.html",
+        "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CK30943_w_DRW.html",
+        "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CC30953_w_SRW.html",
+        "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CC30953_w_DRW.html",
+        "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CK30953_w_SRW.html",
+        "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CK30953_w_DRW.html",
+        "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CC30903_w_SRW.html",
+        "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CC30903_w_DRW.html",
+        "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CC30903_w_DRW_and_NHT.html",
+        "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CK30903_w_SRW.html",
+        "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CK30903_w_DRW.html",
+        "config_2025_Chevrolet_Silverado_3500HD_gcwr_reference.html"
+      ],
+      "path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "available_trims": [
+        "Work Truck",
+        "LT",
+        "LTZ",
+        "High Country"
+      ]
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "C7620D5A4EC0EC83C",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "name": "2025 Chevrolet Silverado 3500HD | Safety and driver assistance trim comparison",
+      "title": "2025 Chevrolet Silverado 3500HD | Safety and driver assistance trim comparison",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Safety and driver assistance",
+      "guide_domains": [
+        "Safety and driver assistance"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 24,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "compare_domain_2025_Chevrolet_Silverado_3500HD_Safety_and_driver_assistance.html"
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "CC35E650EC8EC797A",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "name": "2025 Chevrolet Silverado 3500HD | Technology and connectivity trim comparison",
+      "title": "2025 Chevrolet Silverado 3500HD | Technology and connectivity trim comparison",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Technology and connectivity",
+      "guide_domains": [
+        "Technology and connectivity"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 18,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "compare_domain_2025_Chevrolet_Silverado_3500HD_Technology_and_connectivity.html"
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "CF3C5B1AFD321D811",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "name": "2025 Chevrolet Silverado 3500HD | Interior and comfort trim comparison",
+      "title": "2025 Chevrolet Silverado 3500HD | Interior and comfort trim comparison",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Interior and comfort",
+      "guide_domains": [
+        "Interior and comfort"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 27,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "compare_domain_2025_Chevrolet_Silverado_3500HD_Interior_and_comfort.html"
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "C0915B8CD3F7E5CCE",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "name": "2025 Chevrolet Silverado 3500HD | Exterior and utility trim comparison",
+      "title": "2025 Chevrolet Silverado 3500HD | Exterior and utility trim comparison",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Exterior and utility",
+      "guide_domains": [
+        "Exterior and utility"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 52,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "compare_domain_2025_Chevrolet_Silverado_3500HD_Exterior_and_utility.html"
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "C0FA294D7D970C347",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "name": "2025 Chevrolet Silverado 3500HD | Wheels and tires trim comparison",
+      "title": "2025 Chevrolet Silverado 3500HD | Wheels and tires trim comparison",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Wheels and tires",
+      "guide_domains": [
+        "Wheels and tires"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 29,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "compare_domain_2025_Chevrolet_Silverado_3500HD_Wheels_and_tires.html"
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "CCEC58BEA86F11C23",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "name": "2025 Chevrolet Silverado 3500HD | Mechanical and performance trim comparison",
+      "title": "2025 Chevrolet Silverado 3500HD | Mechanical and performance trim comparison",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Mechanical and performance",
+      "guide_domains": [
+        "Mechanical and performance"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 34,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "compare_domain_2025_Chevrolet_Silverado_3500HD_Mechanical_and_performance.html"
+    },
+    {
+      "objecttype": "Comparison",
+      "type": "comparison",
+      "node_id": "CB24E6DE8D9528FBC",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "name": "2025 Chevrolet Silverado 3500HD | Packages and options trim comparison",
+      "title": "2025 Chevrolet Silverado 3500HD | Packages and options trim comparison",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "comparison",
+      "doc_role": "passage",
+      "entity_level": "comparison",
+      "domain": "Packages and options",
+      "guide_domains": [
+        "Packages and options"
+      ],
+      "comparison_axis": "trim",
+      "feature_count": 62,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "compare_domain_2025_Chevrolet_Silverado_3500HD_Packages_and_options.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "T68D47E785F62E48D",
+      "name": "Work Truck",
+      "title": "2025 Chevrolet Silverado 3500HD Work Truck",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "drivetrains": [
+        "2WD",
+        "4WD"
+      ],
+      "body_styles": [
+        "Crew Cab, Standard Bed",
+        "Crew Cab, Long Bed",
+        "Double Cab, Long Bed",
+        "Regular Cab, Long Bed"
+      ],
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "trim": "Work Truck",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Packages and options",
+        "Colour and trim",
+        "Other guide content"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2025 Chevrolet Silverado 3500HD Work Truck",
+      "entity_key": "2025_chevrolet_silverado_3500hd_work_truck",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "trim_key": "2025_chevrolet_silverado_3500hd_work_truck",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "trim_2025_Chevrolet_Silverado_3500HD_Work_Truck.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "T186D2D8264EF9BF7",
+      "name": "LT",
+      "title": "2025 Chevrolet Silverado 3500HD LT",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "drivetrains": [
+        "2WD",
+        "4WD"
+      ],
+      "body_styles": [
+        "Crew Cab, Standard Bed",
+        "Crew Cab, Long Bed",
+        "Double Cab, Long Bed",
+        "Regular Cab, Long Bed"
+      ],
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "trim": "LT",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Packages and options",
+        "Colour and trim",
+        "Other guide content"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2025 Chevrolet Silverado 3500HD LT",
+      "entity_key": "2025_chevrolet_silverado_3500hd_lt",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "trim_key": "2025_chevrolet_silverado_3500hd_lt",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "trim_2025_Chevrolet_Silverado_3500HD_LT.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "TA6BBF186CBDE98E5",
+      "name": "LTZ",
+      "title": "2025 Chevrolet Silverado 3500HD LTZ",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "drivetrains": [
+        "2WD",
+        "4WD"
+      ],
+      "body_styles": [
+        "Crew Cab, Standard Bed",
+        "Crew Cab, Long Bed",
+        "Double Cab, Long Bed",
+        "Regular Cab, Long Bed"
+      ],
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "trim": "LTZ",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Packages and options",
+        "Colour and trim",
+        "Other guide content"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2025 Chevrolet Silverado 3500HD LTZ",
+      "entity_key": "2025_chevrolet_silverado_3500hd_ltz",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "trim_key": "2025_chevrolet_silverado_3500hd_ltz",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "trim_2025_Chevrolet_Silverado_3500HD_LTZ.html"
+    },
+    {
+      "objecttype": "Variant",
+      "type": "trim",
+      "node_id": "TBF58E4A6CA9DAF30",
+      "name": "High Country",
+      "title": "2025 Chevrolet Silverado 3500HD High Country",
+      "seating": [
+        "6"
+      ],
+      "drivetrains": [
+        "4WD"
+      ],
+      "body_styles": [
+        "Crew Cab, Standard Bed",
+        "Crew Cab, Long Bed"
+      ],
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "trim": "High Country",
+      "doc_type": "trim",
+      "doc_role": "entity",
+      "entity_level": "trim",
+      "domain": "Overview",
+      "guide_domains": [
+        "Safety and driver assistance",
+        "Technology and connectivity",
+        "Interior and comfort",
+        "Exterior and utility",
+        "Wheels and tires",
+        "Mechanical and performance",
+        "Packages and options",
+        "Colour and trim",
+        "Other guide content"
+      ],
+      "surface": "both",
+      "is_vehicle_entity": true,
+      "entity_name": "2025 Chevrolet Silverado 3500HD High Country",
+      "entity_key": "2025_chevrolet_silverado_3500hd_high_country",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "trim_key": "2025_chevrolet_silverado_3500hd_high_country",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "child": [
+        "S9F49741E2A025D04",
+        "S94CB3FD42237A095",
+        "SE4A2A74F54D3151A",
+        "S9A75E801DE7A4A72",
+        "S0F06ED8513FAC1B7"
+      ],
+      "child_paths": [
+        "spec_2025_Chevrolet_Silverado_3500HD_dimensions_specifications_High_Country_CK30743.html",
+        "spec_2025_Chevrolet_Silverado_3500HD_dimensions_specifications_High_Country_CK30943.html",
+        "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CK30743_w_SRW_and_High_Country.html",
+        "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CK30943_w_SRW_and_High_Country.html",
+        "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CK30943_w_DRW_and_High_Country.html"
+      ],
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "trim_2025_Chevrolet_Silverado_3500HD_High_Country.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SCD1211D777BC567F",
+      "name": "Crew Cab | 2WD Standard Bed Crew Cab with Single Rear Wheel",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration dimensions and specifications | 2WD Standard Bed Crew Cab with Single Rear Wheel",
+      "configuration_kind": "spec-group",
+      "configuration_label": "2WD Standard Bed Crew Cab with Single Rear Wheel",
+      "body_style": "Crew Cab",
+      "drivetrain": "2WD",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "spec_2025_Chevrolet_Silverado_3500HD_dimensions_specifications_CC30743.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S821CEF54AB4320B4",
+      "name": "Crew Cab | 4WD Standard Bed Crew Cab with Single Rear Wheel",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration dimensions and specifications | 4WD Standard Bed Crew Cab with Single Rear Wheel",
+      "configuration_kind": "spec-group",
+      "configuration_label": "4WD Standard Bed Crew Cab with Single Rear Wheel",
+      "body_style": "Crew Cab",
+      "drivetrain": "4WD",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "spec_2025_Chevrolet_Silverado_3500HD_dimensions_specifications_CK30743.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S3C46017EF15D13D4",
+      "name": "Crew Cab | 2WD Long Bed Crew Cab with Single or Dual Rear Wheel",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration dimensions and specifications | 2WD Long Bed Crew Cab with Single or Dual Rear Wheel",
+      "configuration_kind": "spec-group",
+      "configuration_label": "2WD Long Bed Crew Cab with Single or Dual Rear Wheel",
+      "body_style": "Crew Cab",
+      "drivetrain": "2WD",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "spec_2025_Chevrolet_Silverado_3500HD_dimensions_specifications_CC30943.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S9E172296024B8CCC",
+      "name": "Crew Cab | 4WD Long Bed Crew Cab with Single or Dual Rear Wheel",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration dimensions and specifications | 4WD Long Bed Crew Cab with Single or Dual Rear Wheel",
+      "configuration_kind": "spec-group",
+      "configuration_label": "4WD Long Bed Crew Cab with Single or Dual Rear Wheel",
+      "body_style": "Crew Cab",
+      "drivetrain": "4WD",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "spec_2025_Chevrolet_Silverado_3500HD_dimensions_specifications_CK30943.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S9DCA033F862AD4A5",
+      "name": "Double Cab | 2WD Long Bed Double Cab with Single or Dual Rear Wheel",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration dimensions and specifications | 2WD Long Bed Double Cab with Single or Dual Rear Wheel",
+      "configuration_kind": "spec-group",
+      "configuration_label": "2WD Long Bed Double Cab with Single or Dual Rear Wheel",
+      "body_style": "Double Cab",
+      "drivetrain": "2WD",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "spec_2025_Chevrolet_Silverado_3500HD_dimensions_specifications_CC30953.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SE3633ADFC8A3E58D",
+      "name": "Double Cab | 4WD Long Bed Double Cab with Single or Dual Rear Wheel",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration dimensions and specifications | 4WD Long Bed Double Cab with Single or Dual Rear Wheel",
+      "configuration_kind": "spec-group",
+      "configuration_label": "4WD Long Bed Double Cab with Single or Dual Rear Wheel",
+      "body_style": "Double Cab",
+      "drivetrain": "4WD",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "spec_2025_Chevrolet_Silverado_3500HD_dimensions_specifications_CK30953.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SD127836A8FA56E3B",
+      "name": "Regular Cab | 2WD Long Bed Regular Cab with Single or Dual Rear Wheel",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration dimensions and specifications | 2WD Long Bed Regular Cab with Single or Dual Rear Wheel",
+      "configuration_kind": "spec-group",
+      "configuration_label": "2WD Long Bed Regular Cab with Single or Dual Rear Wheel",
+      "body_style": "Regular Cab",
+      "drivetrain": "2WD",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "spec_2025_Chevrolet_Silverado_3500HD_dimensions_specifications_CC30903.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S8771155F48D7F4B5",
+      "name": "Regular Cab | 4WD Long Bed Regular Cab with Single or Dual Rear Wheel",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration dimensions and specifications | 4WD Long Bed Regular Cab with Single or Dual Rear Wheel",
+      "configuration_kind": "spec-group",
+      "configuration_label": "4WD Long Bed Regular Cab with Single or Dual Rear Wheel",
+      "body_style": "Regular Cab",
+      "drivetrain": "4WD",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "spec_2025_Chevrolet_Silverado_3500HD_dimensions_specifications_CK30903.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S9F49741E2A025D04",
+      "name": "Crew Cab | 4WD Standard Bed Crew Cab with Single Rear Wheel\nHigh Country | 4WD Standard Bed Crew Cab with Single Rear Wheel | High Country",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration dimensions and specifications | 4WD Standard Bed Crew Cab with Single Rear Wheel\nHigh Country",
+      "configuration_kind": "spec-group",
+      "configuration_label": "4WD Standard Bed Crew Cab with Single Rear Wheel\nHigh Country",
+      "body_style": "Crew Cab",
+      "drivetrain": "4WD",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD High Country",
+      "entity_key": "2025_chevrolet_silverado_3500hd_high_country",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "trim_key": "2025_chevrolet_silverado_3500hd_high_country",
+      "trim": "High Country",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "TBF58E4A6CA9DAF30",
+      "parent_path": "trim_2025_Chevrolet_Silverado_3500HD_High_Country.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "parent_trim": "trim_2025_Chevrolet_Silverado_3500HD_High_Country.html",
+      "parent_trim_id": "TBF58E4A6CA9DAF30",
+      "path": "spec_2025_Chevrolet_Silverado_3500HD_dimensions_specifications_High_Country_CK30743.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S94CB3FD42237A095",
+      "name": "Crew Cab | 4WD Long Bed Crew Cab with Single or Dual Rear Wheel\nHigh Country | 4WD Long Bed Crew Cab with Single or Dual Rear Wheel | High Country",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration dimensions and specifications | 4WD Long Bed Crew Cab with Single or Dual Rear Wheel\nHigh Country",
+      "configuration_kind": "spec-group",
+      "configuration_label": "4WD Long Bed Crew Cab with Single or Dual Rear Wheel\nHigh Country",
+      "body_style": "Crew Cab",
+      "drivetrain": "4WD",
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Dimensions and specifications",
+      "guide_domains": [
+        "Dimensions and specifications"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD High Country",
+      "entity_key": "2025_chevrolet_silverado_3500hd_high_country",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "trim_key": "2025_chevrolet_silverado_3500hd_high_country",
+      "trim": "High Country",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "TBF58E4A6CA9DAF30",
+      "parent_path": "trim_2025_Chevrolet_Silverado_3500HD_High_Country.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "parent_trim": "trim_2025_Chevrolet_Silverado_3500HD_High_Country.html",
+      "parent_trim_id": "TBF58E4A6CA9DAF30",
+      "path": "spec_2025_Chevrolet_Silverado_3500HD_dimensions_specifications_High_Country_CK30943.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SB3D777FB5182FECD",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Crew Cab"
+      ],
+      "guide_categories": [
+        "Transmissions",
+        "Axles"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CC30743.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SFD188A3C16AF5836",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Crew Cab"
+      ],
+      "guide_categories": [
+        "Transmissions",
+        "Axles"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CK30743.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S8BB636413FA96F28",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Crew Cab"
+      ],
+      "guide_categories": [
+        "Transmissions",
+        "Axles"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CC30943.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SE0E7A2C31AFDAA96",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Crew Cab"
+      ],
+      "guide_categories": [
+        "Transmissions",
+        "Axles"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CK30943.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SCAEE4D2690DB5E44",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Double Cab"
+      ],
+      "guide_categories": [
+        "Transmissions",
+        "Axles"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CC30953.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SFC3AE025AFA2E242",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Double Cab"
+      ],
+      "guide_categories": [
+        "Transmissions",
+        "Axles"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CK30953.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S94DCE1A012B3AD50",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Regular Cab"
+      ],
+      "guide_categories": [
+        "Transmissions",
+        "Axles"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CC30903.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S479554E4ACA18480",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering",
+      "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Regular Cab"
+      ],
+      "guide_categories": [
+        "Transmissions",
+        "Axles"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CK30903.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S63FF67B77B3975B2",
+      "name": "w/SRW",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/SRW",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "20000 (9072)",
+        "18650 (8460)",
+        "21900 (9934)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CC30743_w_SRW.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S49852C4E37B09146",
+      "name": "w/SRW",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/SRW",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "20000 (9072)",
+        "18300 (8301)",
+        "21600 (9798)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CK30743_w_SRW.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SE4A2A74F54D3151A",
+      "name": "w/SRW and High Country",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/SRW and High Country",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "20000 (9072)",
+        "17900 (8119)",
+        "21300 (9662)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD High Country",
+      "entity_key": "2025_chevrolet_silverado_3500hd_high_country",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "trim_key": "2025_chevrolet_silverado_3500hd_high_country",
+      "trim": "High Country",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "TBF58E4A6CA9DAF30",
+      "parent_path": "trim_2025_Chevrolet_Silverado_3500HD_High_Country.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "parent_trim": "trim_2025_Chevrolet_Silverado_3500HD_High_Country.html",
+      "parent_trim_id": "TBF58E4A6CA9DAF30",
+      "path": "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CK30743_w_SRW_and_High_Country.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SCC2961BACA270A00",
+      "name": "w/SRW",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/SRW",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "20000 (9072)",
+        "18510 (8396)",
+        "22070 (10011)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CC30943_w_SRW.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SC21279E4F82E4B3D",
+      "name": "w/DRW",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/DRW",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "18700 (8482)",
+        "20000 (9072)",
+        "18230 (8269)",
+        "31440 (14261)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CC30943_w_DRW.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SF40EB128811A07C1",
+      "name": "w/SRW",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/SRW",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "20000 (9072)",
+        "18230 (8269)",
+        "21490 (9748)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CK30943_w_SRW.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S9A75E801DE7A4A72",
+      "name": "w/SRW and High Country",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/SRW and High Country",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "20000 (9072)",
+        "17600 (7983)",
+        "21200 (9616)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD High Country",
+      "entity_key": "2025_chevrolet_silverado_3500hd_high_country",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "trim_key": "2025_chevrolet_silverado_3500hd_high_country",
+      "trim": "High Country",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "TBF58E4A6CA9DAF30",
+      "parent_path": "trim_2025_Chevrolet_Silverado_3500HD_High_Country.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "parent_trim": "trim_2025_Chevrolet_Silverado_3500HD_High_Country.html",
+      "parent_trim_id": "TBF58E4A6CA9DAF30",
+      "path": "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CK30943_w_SRW_and_High_Country.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S5294E582CF765DD4",
+      "name": "w/DRW",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/DRW",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "17800 (8074)",
+        "20000 (9072)",
+        "31000 (14062)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CK30943_w_DRW.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S0F06ED8513FAC1B7",
+      "name": "w/DRW and High Country",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/DRW and High Country",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "17600 (7983)",
+        "20000 (9072)",
+        "30900 (14016)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD High Country",
+      "entity_key": "2025_chevrolet_silverado_3500hd_high_country",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "trim_key": "2025_chevrolet_silverado_3500hd_high_country",
+      "trim": "High Country",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "TBF58E4A6CA9DAF30",
+      "parent_path": "trim_2025_Chevrolet_Silverado_3500HD_High_Country.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "parent_trim": "trim_2025_Chevrolet_Silverado_3500HD_High_Country.html",
+      "parent_trim_id": "TBF58E4A6CA9DAF30",
+      "path": "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CK30943_w_DRW_and_High_Country.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S623AC6954559C81C",
+      "name": "w/SRW",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/SRW",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "20000 (9072)",
+        "18620 (8446)",
+        "21900 (9934)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CC30953_w_SRW.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S3C24B2AD0A35137C",
+      "name": "w/DRW",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/DRW",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "18300 (8301)",
+        "20000 (9072)",
+        "31580 (14325)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CC30953_w_DRW.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SF5F4B05AFE8A8FAD",
+      "name": "w/SRW",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/SRW",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "16000 (7258)",
+        "20000 (9072)",
+        "18310 (8305)",
+        "21590 (9793)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CK30953_w_SRW.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S40C0F6A997E2978A",
+      "name": "w/DRW",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/DRW",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "18000 (8165)",
+        "20000 (9072)",
+        "17990 (8160)",
+        "31270 (14184)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CK30953_w_DRW.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SF5963B726A556E5E",
+      "name": "w/SRW",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/SRW",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "14500 (6577)",
+        "19080 (8655)",
+        "22420 (10170)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CC30903_w_SRW.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S4354E45940632919",
+      "name": "w/DRW",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/DRW",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "18700 (8482)",
+        "20000 (9072)",
+        "18760 (8510)",
+        "35500 (16103)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CC30903_w_DRW.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S9379BAEF3BB5C7F7",
+      "name": "w/DRW and NHT",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/DRW and NHT",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "20000 (9072)",
+        "36000 (16330)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CC30903_w_DRW_and_NHT.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "SFDE60A4BFE2C482A",
+      "name": "w/SRW",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/SRW",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "14500 (6577)",
+        "18700 (8482)",
+        "22040 (9997)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CK30903_w_SRW.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S0958535E591765DE",
+      "name": "w/DRW",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/DRW",
+      "configuration_kind": "powertrain-trailering-group",
+      "trailering_rating_types": [
+        "Automatic Transmission Ratings with Ball Hitch",
+        "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "max_trailer_weights": [
+        "18400 (8346)",
+        "20000 (9072)",
+        "18380 (8337)",
+        "31500 (14288)"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Powertrain and trailering",
+      "guide_domains": [
+        "Powertrain and trailering"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "config_2025_Chevrolet_Silverado_3500HD_powertrain_trailering_CK30903_w_DRW.html"
+    },
+    {
+      "objecttype": "Configuration",
+      "type": "configuration-spec",
+      "node_id": "S26D26B4DE34C75CE",
+      "name": "2025 Chevrolet Silverado 3500HD GCWR reference",
+      "title": "2025 Chevrolet Silverado 3500HD | GCWR reference",
+      "configuration_kind": "gcwr-reference",
+      "engines": [
+        "6.6L V8 gasoline",
+        "Duramax 6.6L Turbo-Diesel V8"
+      ],
+      "gcwr_values": [
+        "26000 (11794)",
+        "30000 (13608)",
+        "40000 (18144)",
+        "43500 (19732)",
+        "43900 (19913)"
+      ],
+      "axle_ratios": [
+        "3.73",
+        "3.42"
+      ],
+      "doc_type": "configuration-spec",
+      "doc_role": "passage",
+      "entity_level": "configuration",
+      "domain": "Trailering and GCWR",
+      "guide_domains": [
+        "Trailering and GCWR"
+      ],
+      "has_numeric_specs": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "retrieval_granularity": "coarse",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "config_2025_Chevrolet_Silverado_3500HD_gcwr_reference.html"
+    }
+  ]
+}
