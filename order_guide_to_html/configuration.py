@@ -268,6 +268,28 @@ def trim_drivetrains(data: WorkbookData, trim: TrimDef) -> List[str]:
     if name_tokens and (not values or trim not in explicitly_covered):
         return name_tokens
 
+    # Strategy 4: propulsion rows in matrix sheets (EV workbooks).
+    # Covers vehicles like Equinox EV and Bolt where drivetrain is not present in
+    # spec columns or trim headers.  Scans every matrix sheet for rows whose
+    # description starts with "Propulsion," and extracts drive tokens for any trim
+    # that has a non-"--" availability status in that row.  Captures all drivetrains
+    # the trim can have (both standard and available).
+    if not values:
+        matrix_tokens: List[str] = []
+        for ms in data.matrix_sheets:
+            for row in ms.rows:
+                desc = normalize_text(row.description_main)
+                if not desc.lower().startswith('propulsion,'):
+                    continue
+                status = row.status_by_trim.get(trim.key, '--')
+                if not status or status.strip() == '--':
+                    continue
+                for token in MANIFEST_DRIVE_TOKENS:
+                    if phrase_occurs_in_text(token, desc) and token not in matrix_tokens:
+                        matrix_tokens.append(token)
+        if matrix_tokens:
+            return matrix_tokens
+
     return values
 
 
