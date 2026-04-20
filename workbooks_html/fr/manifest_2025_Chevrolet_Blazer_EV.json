@@ -75,7 +75,6 @@
       "available_trims": [
         "LT",
         "RS",
-        "RS À prop.",
         "SS"
       ]
     },
@@ -94,7 +93,6 @@
       "trim_names_from_guide": [
         "LT",
         "RS",
-        "RS À prop.",
         "SS"
       ],
       "doc_type": "comparison",
@@ -134,7 +132,6 @@
       "trim_names_from_guide": [
         "LT",
         "RS",
-        "RS À prop.",
         "SS"
       ],
       "doc_type": "comparison",
@@ -174,7 +171,6 @@
       "trim_names_from_guide": [
         "LT",
         "RS",
-        "RS À prop.",
         "SS"
       ],
       "doc_type": "comparison",
@@ -214,7 +210,6 @@
       "trim_names_from_guide": [
         "LT",
         "RS",
-        "RS À prop.",
         "SS"
       ],
       "doc_type": "comparison",
@@ -254,7 +249,6 @@
       "trim_names_from_guide": [
         "LT",
         "RS",
-        "RS À prop.",
         "SS"
       ],
       "doc_type": "comparison",
@@ -294,7 +288,6 @@
       "trim_names_from_guide": [
         "LT",
         "RS",
-        "RS À prop.",
         "SS"
       ],
       "doc_type": "comparison",
@@ -334,7 +327,6 @@
       "trim_names_from_guide": [
         "LT",
         "RS",
-        "RS À prop.",
         "SS"
       ],
       "doc_type": "comparison",
@@ -519,12 +511,18 @@
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "T5DD93B0374F2BF4C",
-      "name": "RS À prop.",
-      "title": "2025 Chevrolet Blazer EV RS À prop.",
+      "name": "RS",
+      "title": "2025 Chevrolet Blazer EV RS",
+      "seating": [
+        "2/3"
+      ],
+      "drivetrains": [
+        "à prop."
+      ],
       "year": "2025",
       "make": "Chevrolet",
       "model": "Blazer EV",
-      "trim": "RS À prop.",
+      "trim": "RS",
       "doc_type": "trim",
       "doc_role": "entity",
       "entity_level": "trim",
@@ -541,7 +539,7 @@
       ],
       "surface": "both",
       "is_vehicle_entity": true,
-      "entity_name": "2025 Chevrolet Blazer EV RS À prop.",
+      "entity_name": "2025 Chevrolet Blazer EV RS",
       "entity_key": "2025_chevrolet_blazer_ev_rs_prop",
       "vehicle_key": "2025_chevrolet_blazer_ev",
       "trim_key": "2025_chevrolet_blazer_ev_rs_prop",
@@ -549,6 +547,14 @@
       "collection_path": "model_2025_Chevrolet_Blazer_EV.html",
       "parent": "M69393CDFB1FEC274",
       "parent_path": "model_2025_Chevrolet_Blazer_EV.html",
+      "child": [
+        "SBFE9433E4EF3ED39",
+        "S2C58FFFB0BD9F9C5"
+      ],
+      "child_paths": [
+        "spec_2025_Chevrolet_Blazer_EV_dimensions_specifications_1MC26_LT_RS_1MD26.html",
+        "spec_2025_Chevrolet_Blazer_EV_dimensions_specifications_1MD26_RS.html"
+      ],
       "parent_vehicle": "model_2025_Chevrolet_Blazer_EV.html",
       "parent_vehicle_id": "M69393CDFB1FEC274",
       "path": "trim_2025_Chevrolet_Blazer_EV_RS_prop.html"
@@ -615,7 +621,7 @@
         "2/3"
       ],
       "drivetrains": [
-        "5730 (2599)"
+        "à TI"
       ],
       "year": "2025",
       "make": "Chevrolet",
@@ -689,12 +695,14 @@
         "trim_2025_Chevrolet_Blazer_EV_LT_TA.html",
         "trim_2025_Chevrolet_Blazer_EV_LT_TI.html",
         "trim_2025_Chevrolet_Blazer_EV_RS_TA.html",
+        "trim_2025_Chevrolet_Blazer_EV_RS_prop.html",
         "trim_2025_Chevrolet_Blazer_EV_RS_TI.html"
       ],
       "parent_trim_ids": [
         "T6508C6DBC4B1AA49",
         "TCD18E0B29BDCD2F6",
         "TB5F8D5461BFAEB4C",
+        "T5DD93B0374F2BF4C",
         "TF03118B0948B2614"
       ],
       "path": "spec_2025_Chevrolet_Blazer_EV_dimensions_specifications_1MC26_LT_RS_1MD26.html"
@@ -807,10 +815,12 @@
       "parent_vehicle_id": "M69393CDFB1FEC274",
       "parent_trims": [
         "trim_2025_Chevrolet_Blazer_EV_RS_TA.html",
+        "trim_2025_Chevrolet_Blazer_EV_RS_prop.html",
         "trim_2025_Chevrolet_Blazer_EV_RS_TI.html"
       ],
       "parent_trim_ids": [
         "TB5F8D5461BFAEB4C",
+        "T5DD93B0374F2BF4C",
         "TF03118B0948B2614"
       ],
       "path": "spec_2025_Chevrolet_Blazer_EV_dimensions_specifications_1MD26_RS.html"

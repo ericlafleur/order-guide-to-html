@@ -46,11 +46,7 @@
         "TA99F5EC684CCB34A",
         "TA0D1AF9A2AA589E3",
         "TEB2273CA5291D30B",
-        "TA728C992D824880F",
-        "SF217DFB0B7AA47BF",
-        "S31C920F0D2EDA045",
-        "S1FF9C2CEF5D9112E",
-        "SD9930CCEE1A63983"
+        "TA728C992D824880F"
       ],
       "child_paths": [
         "compare_domain_2026_Chevrolet_Trailblazer_Safety_and_driver_assistance.html",
@@ -63,16 +59,12 @@
         "trim_2026_Chevrolet_Trailblazer_LS_1TR56_TA_et_1TV56_TI.html",
         "trim_2026_Chevrolet_Trailblazer_LT_1TU56_TA_et_1TW56_TI.html",
         "trim_2026_Chevrolet_Trailblazer_RS_1TY56_TI.html",
-        "trim_2026_Chevrolet_Trailblazer_ACTIV_1TX56_TI.html",
-        "spec_2026_Chevrolet_Trailblazer_dimensions_specifications_1TR56_LS_TA.html",
-        "spec_2026_Chevrolet_Trailblazer_dimensions_specifications_1TV56_LS_TI.html",
-        "spec_2026_Chevrolet_Trailblazer_dimensions_specifications_1TU56_LT_TA.html",
-        "spec_2026_Chevrolet_Trailblazer_dimensions_specifications_1TW56_LT_TI.html"
+        "trim_2026_Chevrolet_Trailblazer_ACTIV_1TX56_TI.html"
       ],
       "path": "model_2026_Chevrolet_Trailblazer.html",
       "available_trims": [
-        "LS et",
-        "LT et",
+        "LS",
+        "LT",
         "RS",
         "ACTIV"
       ]
@@ -90,8 +82,8 @@
       "make": "Chevrolet",
       "model": "Trailblazer",
       "trim_names_from_guide": [
-        "LS et",
-        "LT et",
+        "LS",
+        "LT",
         "RS",
         "ACTIV"
       ],
@@ -130,8 +122,8 @@
       "make": "Chevrolet",
       "model": "Trailblazer",
       "trim_names_from_guide": [
-        "LS et",
-        "LT et",
+        "LS",
+        "LT",
         "RS",
         "ACTIV"
       ],
@@ -170,8 +162,8 @@
       "make": "Chevrolet",
       "model": "Trailblazer",
       "trim_names_from_guide": [
-        "LS et",
-        "LT et",
+        "LS",
+        "LT",
         "RS",
         "ACTIV"
       ],
@@ -210,8 +202,8 @@
       "make": "Chevrolet",
       "model": "Trailblazer",
       "trim_names_from_guide": [
-        "LS et",
-        "LT et",
+        "LS",
+        "LT",
         "RS",
         "ACTIV"
       ],
@@ -250,8 +242,8 @@
       "make": "Chevrolet",
       "model": "Trailblazer",
       "trim_names_from_guide": [
-        "LS et",
-        "LT et",
+        "LS",
+        "LT",
         "RS",
         "ACTIV"
       ],
@@ -290,8 +282,8 @@
       "make": "Chevrolet",
       "model": "Trailblazer",
       "trim_names_from_guide": [
-        "LS et",
-        "LT et",
+        "LS",
+        "LT",
         "RS",
         "ACTIV"
       ],
@@ -330,8 +322,8 @@
       "make": "Chevrolet",
       "model": "Trailblazer",
       "trim_names_from_guide": [
-        "LS et",
-        "LT et",
+        "LS",
+        "LT",
         "RS",
         "ACTIV"
       ],
@@ -361,8 +353,8 @@
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "TA99F5EC684CCB34A",
-      "name": "LS et",
-      "title": "2026 Chevrolet Trailblazer LS et",
+      "name": "LS",
+      "title": "2026 Chevrolet Trailblazer LS",
       "seating": [
         "2/3"
       ],
@@ -373,7 +365,7 @@
       "year": "2026",
       "make": "Chevrolet",
       "model": "Trailblazer",
-      "trim": "LS et",
+      "trim": "LS",
       "doc_type": "trim",
       "doc_role": "entity",
       "entity_level": "trim",
@@ -390,7 +382,7 @@
       ],
       "surface": "both",
       "is_vehicle_entity": true,
-      "entity_name": "2026 Chevrolet Trailblazer LS et",
+      "entity_name": "2026 Chevrolet Trailblazer LS",
       "entity_key": "2026_chevrolet_trailblazer_ls_1tr56_ta_et_1tv56_ti",
       "vehicle_key": "2026_chevrolet_trailblazer",
       "trim_key": "2026_chevrolet_trailblazer_ls_1tr56_ta_et_1tv56_ti",
@@ -398,6 +390,14 @@
       "collection_path": "model_2026_Chevrolet_Trailblazer.html",
       "parent": "M6B8414C496A78875",
       "parent_path": "model_2026_Chevrolet_Trailblazer.html",
+      "child": [
+        "S6419A897A537EC80",
+        "S2E02E212E5878835"
+      ],
+      "child_paths": [
+        "spec_2026_Chevrolet_Trailblazer_dimensions_specifications_LS_1TR56_TA_et_1TV56_TI_1TR56_LS_TA.html",
+        "spec_2026_Chevrolet_Trailblazer_dimensions_specifications_LS_1TR56_TA_et_1TV56_TI_1TV56_LS_TI.html"
+      ],
       "parent_vehicle": "model_2026_Chevrolet_Trailblazer.html",
       "parent_vehicle_id": "M6B8414C496A78875",
       "path": "trim_2026_Chevrolet_Trailblazer_LS_1TR56_TA_et_1TV56_TI.html"
@@ -406,8 +406,8 @@
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "TA0D1AF9A2AA589E3",
-      "name": "LT et",
-      "title": "2026 Chevrolet Trailblazer LT et",
+      "name": "LT",
+      "title": "2026 Chevrolet Trailblazer LT",
       "seating": [
         "2/3"
       ],
@@ -418,7 +418,7 @@
       "year": "2026",
       "make": "Chevrolet",
       "model": "Trailblazer",
-      "trim": "LT et",
+      "trim": "LT",
       "doc_type": "trim",
       "doc_role": "entity",
       "entity_level": "trim",
@@ -435,7 +435,7 @@
       ],
       "surface": "both",
       "is_vehicle_entity": true,
-      "entity_name": "2026 Chevrolet Trailblazer LT et",
+      "entity_name": "2026 Chevrolet Trailblazer LT",
       "entity_key": "2026_chevrolet_trailblazer_lt_1tu56_ta_et_1tw56_ti",
       "vehicle_key": "2026_chevrolet_trailblazer",
       "trim_key": "2026_chevrolet_trailblazer_lt_1tu56_ta_et_1tw56_ti",
@@ -443,6 +443,14 @@
       "collection_path": "model_2026_Chevrolet_Trailblazer.html",
       "parent": "M6B8414C496A78875",
       "parent_path": "model_2026_Chevrolet_Trailblazer.html",
+      "child": [
+        "S6B22691F485D0DA2",
+        "S8CE400152F286EBB"
+      ],
+      "child_paths": [
+        "spec_2026_Chevrolet_Trailblazer_dimensions_specifications_LT_1TU56_TA_et_1TW56_TI_1TU56_LT_TA.html",
+        "spec_2026_Chevrolet_Trailblazer_dimensions_specifications_LT_1TU56_TA_et_1TW56_TI_1TW56_LT_TI.html"
+      ],
       "parent_vehicle": "model_2026_Chevrolet_Trailblazer.html",
       "parent_vehicle_id": "M6B8414C496A78875",
       "path": "trim_2026_Chevrolet_Trailblazer_LT_1TU56_TA_et_1TW56_TI.html"
@@ -550,7 +558,7 @@
     {
       "objecttype": "Configuration",
       "type": "configuration-spec",
-      "node_id": "SF217DFB0B7AA47BF",
+      "node_id": "S6419A897A537EC80",
       "name": "1TR56\nLS à TA | LS à TA",
       "title": "2026 Chevrolet Trailblazer | Configuration dimensions and specifications | 1TR56\nLS à TA",
       "configuration_kind": "spec-group",
@@ -565,25 +573,29 @@
       ],
       "has_numeric_specs": true,
       "surface": "passage_only",
-      "entity_name": "2026 Chevrolet Trailblazer",
-      "entity_key": "2026_chevrolet_trailblazer",
+      "entity_name": "2026 Chevrolet Trailblazer LS",
+      "entity_key": "2026_chevrolet_trailblazer_ls_1tr56_ta_et_1tv56_ti",
       "vehicle_key": "2026_chevrolet_trailblazer",
       "year": "2026",
       "make": "Chevrolet",
       "model": "Trailblazer",
       "retrieval_granularity": "coarse",
+      "trim_key": "2026_chevrolet_trailblazer_ls_1tr56_ta_et_1tv56_ti",
+      "trim": "LS",
       "collection": "M6B8414C496A78875",
       "collection_path": "model_2026_Chevrolet_Trailblazer.html",
-      "parent": "M6B8414C496A78875",
-      "parent_path": "model_2026_Chevrolet_Trailblazer.html",
+      "parent": "TA99F5EC684CCB34A",
+      "parent_path": "trim_2026_Chevrolet_Trailblazer_LS_1TR56_TA_et_1TV56_TI.html",
       "parent_vehicle": "model_2026_Chevrolet_Trailblazer.html",
       "parent_vehicle_id": "M6B8414C496A78875",
-      "path": "spec_2026_Chevrolet_Trailblazer_dimensions_specifications_1TR56_LS_TA.html"
+      "parent_trim": "trim_2026_Chevrolet_Trailblazer_LS_1TR56_TA_et_1TV56_TI.html",
+      "parent_trim_id": "TA99F5EC684CCB34A",
+      "path": "spec_2026_Chevrolet_Trailblazer_dimensions_specifications_LS_1TR56_TA_et_1TV56_TI_1TR56_LS_TA.html"
     },
     {
       "objecttype": "Configuration",
       "type": "configuration-spec",
-      "node_id": "S31C920F0D2EDA045",
+      "node_id": "S2E02E212E5878835",
       "name": "1TV56\nLS à TI | LS à TI",
       "title": "2026 Chevrolet Trailblazer | Configuration dimensions and specifications | 1TV56\nLS à TI",
       "configuration_kind": "spec-group",
@@ -598,25 +610,29 @@
       ],
       "has_numeric_specs": true,
       "surface": "passage_only",
-      "entity_name": "2026 Chevrolet Trailblazer",
-      "entity_key": "2026_chevrolet_trailblazer",
+      "entity_name": "2026 Chevrolet Trailblazer LS",
+      "entity_key": "2026_chevrolet_trailblazer_ls_1tr56_ta_et_1tv56_ti",
       "vehicle_key": "2026_chevrolet_trailblazer",
       "year": "2026",
       "make": "Chevrolet",
       "model": "Trailblazer",
       "retrieval_granularity": "coarse",
+      "trim_key": "2026_chevrolet_trailblazer_ls_1tr56_ta_et_1tv56_ti",
+      "trim": "LS",
       "collection": "M6B8414C496A78875",
       "collection_path": "model_2026_Chevrolet_Trailblazer.html",
-      "parent": "M6B8414C496A78875",
-      "parent_path": "model_2026_Chevrolet_Trailblazer.html",
+      "parent": "TA99F5EC684CCB34A",
+      "parent_path": "trim_2026_Chevrolet_Trailblazer_LS_1TR56_TA_et_1TV56_TI.html",
       "parent_vehicle": "model_2026_Chevrolet_Trailblazer.html",
       "parent_vehicle_id": "M6B8414C496A78875",
-      "path": "spec_2026_Chevrolet_Trailblazer_dimensions_specifications_1TV56_LS_TI.html"
+      "parent_trim": "trim_2026_Chevrolet_Trailblazer_LS_1TR56_TA_et_1TV56_TI.html",
+      "parent_trim_id": "TA99F5EC684CCB34A",
+      "path": "spec_2026_Chevrolet_Trailblazer_dimensions_specifications_LS_1TR56_TA_et_1TV56_TI_1TV56_LS_TI.html"
     },
     {
       "objecttype": "Configuration",
       "type": "configuration-spec",
-      "node_id": "S1FF9C2CEF5D9112E",
+      "node_id": "S6B22691F485D0DA2",
       "name": "1TU56\nLT à TA | LT à TA",
       "title": "2026 Chevrolet Trailblazer | Configuration dimensions and specifications | 1TU56\nLT à TA",
       "configuration_kind": "spec-group",
@@ -631,25 +647,29 @@
       ],
       "has_numeric_specs": true,
       "surface": "passage_only",
-      "entity_name": "2026 Chevrolet Trailblazer",
-      "entity_key": "2026_chevrolet_trailblazer",
+      "entity_name": "2026 Chevrolet Trailblazer LT",
+      "entity_key": "2026_chevrolet_trailblazer_lt_1tu56_ta_et_1tw56_ti",
       "vehicle_key": "2026_chevrolet_trailblazer",
       "year": "2026",
       "make": "Chevrolet",
       "model": "Trailblazer",
       "retrieval_granularity": "coarse",
+      "trim_key": "2026_chevrolet_trailblazer_lt_1tu56_ta_et_1tw56_ti",
+      "trim": "LT",
       "collection": "M6B8414C496A78875",
       "collection_path": "model_2026_Chevrolet_Trailblazer.html",
-      "parent": "M6B8414C496A78875",
-      "parent_path": "model_2026_Chevrolet_Trailblazer.html",
+      "parent": "TA0D1AF9A2AA589E3",
+      "parent_path": "trim_2026_Chevrolet_Trailblazer_LT_1TU56_TA_et_1TW56_TI.html",
       "parent_vehicle": "model_2026_Chevrolet_Trailblazer.html",
       "parent_vehicle_id": "M6B8414C496A78875",
-      "path": "spec_2026_Chevrolet_Trailblazer_dimensions_specifications_1TU56_LT_TA.html"
+      "parent_trim": "trim_2026_Chevrolet_Trailblazer_LT_1TU56_TA_et_1TW56_TI.html",
+      "parent_trim_id": "TA0D1AF9A2AA589E3",
+      "path": "spec_2026_Chevrolet_Trailblazer_dimensions_specifications_LT_1TU56_TA_et_1TW56_TI_1TU56_LT_TA.html"
     },
     {
       "objecttype": "Configuration",
       "type": "configuration-spec",
-      "node_id": "SD9930CCEE1A63983",
+      "node_id": "S8CE400152F286EBB",
       "name": "1TW56\nLT à TI | LT à TI",
       "title": "2026 Chevrolet Trailblazer | Configuration dimensions and specifications | 1TW56\nLT à TI",
       "configuration_kind": "spec-group",
@@ -664,20 +684,24 @@
       ],
       "has_numeric_specs": true,
       "surface": "passage_only",
-      "entity_name": "2026 Chevrolet Trailblazer",
-      "entity_key": "2026_chevrolet_trailblazer",
+      "entity_name": "2026 Chevrolet Trailblazer LT",
+      "entity_key": "2026_chevrolet_trailblazer_lt_1tu56_ta_et_1tw56_ti",
       "vehicle_key": "2026_chevrolet_trailblazer",
       "year": "2026",
       "make": "Chevrolet",
       "model": "Trailblazer",
       "retrieval_granularity": "coarse",
+      "trim_key": "2026_chevrolet_trailblazer_lt_1tu56_ta_et_1tw56_ti",
+      "trim": "LT",
       "collection": "M6B8414C496A78875",
       "collection_path": "model_2026_Chevrolet_Trailblazer.html",
-      "parent": "M6B8414C496A78875",
-      "parent_path": "model_2026_Chevrolet_Trailblazer.html",
+      "parent": "TA0D1AF9A2AA589E3",
+      "parent_path": "trim_2026_Chevrolet_Trailblazer_LT_1TU56_TA_et_1TW56_TI.html",
       "parent_vehicle": "model_2026_Chevrolet_Trailblazer.html",
       "parent_vehicle_id": "M6B8414C496A78875",
-      "path": "spec_2026_Chevrolet_Trailblazer_dimensions_specifications_1TW56_LT_TI.html"
+      "parent_trim": "trim_2026_Chevrolet_Trailblazer_LT_1TU56_TA_et_1TW56_TI.html",
+      "parent_trim_id": "TA0D1AF9A2AA589E3",
+      "path": "spec_2026_Chevrolet_Trailblazer_dimensions_specifications_LT_1TU56_TA_et_1TW56_TI_1TW56_LT_TI.html"
     },
     {
       "objecttype": "Configuration",
