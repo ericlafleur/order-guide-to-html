@@ -171,7 +171,7 @@ STATUS_PRIORITY: Dict[str, int] = {
 # Manifest helper constants and small utilities
 
 MANIFEST_STANDARDISH_CODES: frozenset = frozenset({'S', '\u25a0', '\u25a1'})
-MANIFEST_DRIVE_TOKENS = ('2WD', '4WD', 'AWD', 'FWD', 'RWD', '2RM', '4RM', 'à TI', 'à TA')
+MANIFEST_DRIVE_TOKENS = ('2WD', '4WD', 'AWD', 'FWD', 'RWD', '2RM', '4RM', 'à TI', 'à TA', 'à prop.')
 MANIFEST_BODY_STYLE_TOKENS = ('Crew Cab', 'Double Cab', 'Regular Cab', 'Cabine classique', 'Cabine double', 'Cabine multiplace', 'Coupe', 'Convertible', 'Coupé')
 
 

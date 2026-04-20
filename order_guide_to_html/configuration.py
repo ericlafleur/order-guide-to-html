@@ -46,10 +46,14 @@ def trim_header_list(data: WorkbookData) -> List[str]:
 def strip_drive_tokens(name: str) -> str:
     pattern = r'\s*\b(?:' + '|'.join(MANIFEST_DRIVE_TOKENS) + r')\b'
     stripped = re.sub(pattern, '', name, flags=re.IGNORECASE)
+    # 'À prop.' ends with '.' so \b fails at the end; handle it separately
+    stripped = re.sub(r'\s*\bÀ prop\.', '', stripped, flags=re.IGNORECASE)
     stripped = MODEL_CODE_RE.sub('', stripped)
     stripped = re.sub(r'\s*\b[0-9][A-Z0-9]{4,6}\b', '', stripped)
     stripped = re.sub(r'\s*/\s*', ' ', stripped)
     stripped = re.sub(r'\s+', ' ', stripped)
+    # Remove dangling conjunctions left over after model-code/drive-token stripping
+    stripped = re.sub(r'^\s*et\s+|\s+et\s*$', '', stripped, flags=re.IGNORECASE)
     return stripped.strip()
 
 def trim_name_list(data: WorkbookData) -> List[str]:
@@ -187,7 +191,17 @@ def spec_column_fuel_value(column: SpecColumn) -> Optional[str]:
     return first_unique(values)
 
 def spec_column_drivetrain_value(column: SpecColumn) -> Optional[str]:
-    values = find_cell_values_by_label_contains(column, ['drive', 'drivetrain', 'propulsion', 'motricité', 'transmission'])
+    raw_values = find_cell_values_by_label_contains(column, ['drive', 'drivetrain', 'propulsion', 'motricité', 'transmission'])
+    # Trailering rows contain 'propulsion' in their labels but their *values* are
+    # weights like '1500 (680)', not drivetrain identifiers.  Only keep values
+    # that actually look like a drivetrain: contain a recognised drive token or
+    # the phrase "wheel drive".
+    def _is_drivetrain_value(v: str) -> bool:
+        v_lower = normalize_text(v).lower()
+        if 'wheel drive' in v_lower:
+            return True
+        return any(phrase_occurs_in_text(token, v) for token in MANIFEST_DRIVE_TOKENS)
+    values = [v for v in raw_values if _is_drivetrain_value(v)]
     choice = first_unique(values)
     if choice:
         return choice
@@ -244,12 +258,15 @@ def trim_drivetrains(data: WorkbookData, trim: TrimDef) -> List[str]:
                 if dt and dt not in values:
                     values.append(dt)
 
-    # Strategy 3: drive token in trim name / header
-    if not values:
-        blob = normalize_text(trim.raw_header) + ' ' + normalize_text(trim.name)
-        for token in MANIFEST_DRIVE_TOKENS:
-            if phrase_occurs_in_text(token, blob):
-                values.append(token)
+    # Strategy 3: drive token in trim name / header.
+    # Runs when no values were found, but also overrides values that came from
+    # a generic (multi-trim) spec-group when the trim's own header/name already
+    # encodes a specific drivetrain — e.g. "Work Truck 4WD" must not inherit
+    # "2WD" from a shared "2WD / 4WD WT Crew Cab" spec-group header.
+    blob = normalize_text(trim.raw_header) + ' ' + normalize_text(trim.name)
+    name_tokens = [token for token in MANIFEST_DRIVE_TOKENS if phrase_occurs_in_text(token, blob)]
+    if name_tokens and (not values or trim not in explicitly_covered):
+        return name_tokens
 
     return values
 
