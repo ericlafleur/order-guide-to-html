@@ -311,6 +311,9 @@
       "node_id": "T57482AC2AB18E4A3",
       "name": "LT",
       "title": "2027 Chevrolet Bolt LT",
+      "drivetrains": [
+        "à traction avant"
+      ],
       "year": "2027",
       "make": "Chevrolet",
       "model": "Bolt",
@@ -355,6 +358,9 @@
       "node_id": "TA74E59989269C76B",
       "name": "RS",
       "title": "2027 Chevrolet Bolt RS",
+      "drivetrains": [
+        "à traction avant"
+      ],
       "year": "2027",
       "make": "Chevrolet",
       "model": "Bolt",

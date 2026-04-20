@@ -338,6 +338,11 @@
       "seating": [
         "2/3"
       ],
+      "drivetrains": [
+        "à traction avant",
+        "à TA",
+        "à TI"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Equinox EV",
@@ -384,6 +389,11 @@
       "title": "2026 Chevrolet Equinox EV RS",
       "seating": [
         "2/3"
+      ],
+      "drivetrains": [
+        "à traction avant",
+        "à TA",
+        "à TI"
       ],
       "year": "2026",
       "make": "Chevrolet",

@@ -347,6 +347,10 @@
         "2/3"
       ],
       "fuel_type": "Fuel, none",
+      "drivetrains": [
+        "FWD",
+        "AWD"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Equinox EV",
@@ -395,6 +399,10 @@
         "2/3"
       ],
       "fuel_type": "Fuel, none",
+      "drivetrains": [
+        "FWD",
+        "AWD"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Equinox EV",
