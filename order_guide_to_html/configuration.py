@@ -10,7 +10,7 @@ from .parsing import parse_value_and_footnote_ids
 from .classification import MODEL_CODE_RE
 from .utils import MANIFEST_BODY_STYLE_TOKENS, MANIFEST_DRIVE_TOKENS, MANIFEST_STANDARDISH_CODES, first_unique, material_note_texts
 
-BED_TYPE_RE = re.compile(r'\b(Short Bed|Standard Bed|Long Bed)\b', re.IGNORECASE)
+BED_TYPE_RE = re.compile(r'\b(Short Bed|Standard Bed|Long Bed|Caisse courte|Caisse standard|Caisse longue)\b', re.IGNORECASE)
 
 
 def trim_matches_decor(trim: TrimDef, decor_value: str) -> bool:
