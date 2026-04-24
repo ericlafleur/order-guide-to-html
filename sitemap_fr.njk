@@ -26,6 +26,7 @@ eleventyExcludeFromCollections: true
       {%- if page.meta.seating %}<seating>{{ page.meta.seating | join(";") | escape }}</seating>{% endif %}
       {%- if page.meta.body_styles %}<body_styles>{{ page.meta.body_styles | join(";") | escape }}</body_styles>{% endif %}
       {%- if page.meta.drivetrains %}<drivetrains>{{ page.meta.drivetrains | join(";") | escape }}</drivetrains>{% endif %}
+      {%- if page.meta.fuel_type %}<fuel_type>{{ page.meta.fuel_type | join(";") | escape }}</fuel_type>{% endif %}
       {%- if page.meta.engines %}<engines>{{ page.meta.engines | join(";") | escape }}</engines>{% endif %}
     </coveo:metadata>
     {%- endif %}
