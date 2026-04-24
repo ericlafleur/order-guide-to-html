@@ -9,6 +9,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Blazer",
       "title": "2025 Chevrolet Blazer",
       "year": "2025",
@@ -88,6 +91,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Blazer | Safety and driver assistance trim comparison",
       "title": "2025 Chevrolet Blazer | Safety and driver assistance trim comparison",
       "year": "2025",
@@ -127,6 +133,9 @@
       "node_id": "C26C8B939EBE64F6B",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
       ],
       "name": "2025 Chevrolet Blazer | Technology and connectivity trim comparison",
       "title": "2025 Chevrolet Blazer | Technology and connectivity trim comparison",
@@ -168,6 +177,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Blazer | Interior and comfort trim comparison",
       "title": "2025 Chevrolet Blazer | Interior and comfort trim comparison",
       "year": "2025",
@@ -207,6 +219,9 @@
       "node_id": "C98501AB3102014A4",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
       ],
       "name": "2025 Chevrolet Blazer | Exterior and utility trim comparison",
       "title": "2025 Chevrolet Blazer | Exterior and utility trim comparison",
@@ -248,6 +263,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Blazer | Wheels and tires trim comparison",
       "title": "2025 Chevrolet Blazer | Wheels and tires trim comparison",
       "year": "2025",
@@ -288,6 +306,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Blazer | Mechanical and performance trim comparison",
       "title": "2025 Chevrolet Blazer | Mechanical and performance trim comparison",
       "year": "2025",
@@ -327,6 +348,9 @@
       "node_id": "C3762709FA101C63A",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
       ],
       "name": "2025 Chevrolet Blazer | Packages and options trim comparison",
       "title": "2025 Chevrolet Blazer | Packages and options trim comparison",
@@ -369,6 +393,9 @@
       "title": "2025 Chevrolet Blazer LT",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
       ],
       "drivetrains": [
         "AWD"
@@ -418,6 +445,9 @@
       "node_id": "TCD455B269F33216E",
       "name": "True North",
       "title": "2025 Chevrolet Blazer True North",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "year": "2025",
       "make": "Chevrolet",
       "model": "Blazer",
@@ -459,6 +489,9 @@
       "title": "2025 Chevrolet Blazer RS",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
       ],
       "drivetrains": [
         "AWD"
@@ -512,6 +545,9 @@
       "title": "2025 Chevrolet Blazer Premier",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
       ],
       "drivetrains": [
         "AWD"

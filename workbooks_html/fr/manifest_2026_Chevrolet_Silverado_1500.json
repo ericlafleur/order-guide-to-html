@@ -11,6 +11,10 @@
         "6",
         "5"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Silverado 1500",
       "title": "2026 Chevrolet Silverado 1500",
       "year": "2026",
@@ -144,6 +148,10 @@
         "6",
         "5"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Silverado 1500 | Safety and driver assistance trim comparison",
       "title": "2026 Chevrolet Silverado 1500 | Safety and driver assistance trim comparison",
       "year": "2026",
@@ -190,6 +198,10 @@
         "3",
         "6",
         "5"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
       ],
       "name": "2026 Chevrolet Silverado 1500 | Technology and connectivity trim comparison",
       "title": "2026 Chevrolet Silverado 1500 | Technology and connectivity trim comparison",
@@ -238,6 +250,10 @@
         "6",
         "5"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Silverado 1500 | Interior and comfort trim comparison",
       "title": "2026 Chevrolet Silverado 1500 | Interior and comfort trim comparison",
       "year": "2026",
@@ -284,6 +300,10 @@
         "3",
         "6",
         "5"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
       ],
       "name": "2026 Chevrolet Silverado 1500 | Exterior and utility trim comparison",
       "title": "2026 Chevrolet Silverado 1500 | Exterior and utility trim comparison",
@@ -332,6 +352,10 @@
         "6",
         "5"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Silverado 1500 | Wheels and tires trim comparison",
       "title": "2026 Chevrolet Silverado 1500 | Wheels and tires trim comparison",
       "year": "2026",
@@ -378,6 +402,10 @@
         "3",
         "6",
         "5"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
       ],
       "name": "2026 Chevrolet Silverado 1500 | Mechanical and performance trim comparison",
       "title": "2026 Chevrolet Silverado 1500 | Mechanical and performance trim comparison",
@@ -426,6 +454,10 @@
         "6",
         "5"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Silverado 1500 | Packages and options trim comparison",
       "title": "2026 Chevrolet Silverado 1500 | Packages and options trim comparison",
       "year": "2026",
@@ -473,6 +505,9 @@
       "seating": [
         "3",
         "6"
+      ],
+      "fuel_type": [
+        "Gasoline"
       ],
       "drivetrains": [
         "2RM",
@@ -526,6 +561,9 @@
         "3",
         "6"
       ],
+      "fuel_type": [
+        "Gasoline"
+      ],
       "drivetrains": [
         "2RM",
         "4RM"
@@ -577,6 +615,10 @@
       "seating": [
         "3",
         "6"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
       ],
       "drivetrains": [
         "2RM",
@@ -630,6 +672,10 @@
         "3",
         "6"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "drivetrains": [
         "2RM",
         "4RM"
@@ -681,6 +727,10 @@
       "seating": [
         "3",
         "6"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
       ],
       "drivetrains": [
         "2RM",
@@ -734,6 +784,10 @@
         "3",
         "6"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "drivetrains": [
         "2RM",
         "4RM"
@@ -784,6 +838,10 @@
       "title": "2026 Chevrolet Silverado 1500 ZR2",
       "seating": [
         "5"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
       ],
       "drivetrains": [
         "4RM"
@@ -840,6 +898,10 @@
         "3",
         "6"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "drivetrains": [
         "2RM",
         "4RM"
@@ -891,6 +953,10 @@
       "seating": [
         "3",
         "6"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
       ],
       "drivetrains": [
         "2RM",

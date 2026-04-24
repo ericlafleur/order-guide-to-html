@@ -6,6 +6,9 @@
       "objecttype": "Product",
       "type": "model",
       "node_id": "M19F778277657CB9A",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Corvette Z06",
       "title": "2025 Chevrolet Corvette Z06",
       "year": "2025",
@@ -71,6 +74,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C7D55B17FF2AE3334",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Corvette Z06 | Safety and driver assistance trim comparison",
       "title": "2025 Chevrolet Corvette Z06 | Safety and driver assistance trim comparison",
       "year": "2025",
@@ -107,6 +113,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C346D0F7536330000",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Corvette Z06 | Technology and connectivity trim comparison",
       "title": "2025 Chevrolet Corvette Z06 | Technology and connectivity trim comparison",
       "year": "2025",
@@ -142,6 +151,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C9C06D37F27C4A7AD",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Corvette Z06 | Interior and comfort trim comparison",
       "title": "2025 Chevrolet Corvette Z06 | Interior and comfort trim comparison",
       "year": "2025",
@@ -178,6 +190,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C78E4FDEC71FE891F",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Corvette Z06 | Exterior and utility trim comparison",
       "title": "2025 Chevrolet Corvette Z06 | Exterior and utility trim comparison",
       "year": "2025",
@@ -214,6 +229,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CCA37CE925ADFB4F9",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Corvette Z06 | Wheels and tires trim comparison",
       "title": "2025 Chevrolet Corvette Z06 | Wheels and tires trim comparison",
       "year": "2025",
@@ -250,6 +268,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C995FFEC396E1EF60",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Corvette Z06 | Mechanical and performance trim comparison",
       "title": "2025 Chevrolet Corvette Z06 | Mechanical and performance trim comparison",
       "year": "2025",
@@ -285,6 +306,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CC0016D6D109321A2",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Corvette Z06 | Packages and options trim comparison",
       "title": "2025 Chevrolet Corvette Z06 | Packages and options trim comparison",
       "year": "2025",
@@ -323,6 +347,9 @@
       "node_id": "T32646A04791E3BDC",
       "name": "1LZ",
       "title": "2025 Chevrolet Corvette Z06 1LZ",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "year": "2025",
       "make": "Chevrolet",
       "model": "Corvette Z06",
@@ -361,6 +388,9 @@
       "node_id": "T36C72B6E779ADD6E",
       "name": "2LZ",
       "title": "2025 Chevrolet Corvette Z06 2LZ",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "year": "2025",
       "make": "Chevrolet",
       "model": "Corvette Z06",
@@ -399,6 +429,9 @@
       "node_id": "TE48C73373B06359E",
       "name": "3LZ",
       "title": "2025 Chevrolet Corvette Z06 3LZ",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "year": "2025",
       "make": "Chevrolet",
       "model": "Corvette Z06",

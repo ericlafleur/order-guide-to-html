@@ -9,6 +9,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Electric"
+      ],
       "name": "2025 Chevrolet Blazer EV",
       "title": "2025 Chevrolet Blazer EV",
       "year": "2025",
@@ -85,6 +88,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Electric"
+      ],
       "name": "2025 Chevrolet Blazer EV | Safety and driver assistance trim comparison",
       "title": "2025 Chevrolet Blazer EV | Safety and driver assistance trim comparison",
       "year": "2025",
@@ -123,6 +129,9 @@
       "node_id": "C0A6EC0CF926E66B0",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Electric"
       ],
       "name": "2025 Chevrolet Blazer EV | Technology and connectivity trim comparison",
       "title": "2025 Chevrolet Blazer EV | Technology and connectivity trim comparison",
@@ -163,6 +172,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Electric"
+      ],
       "name": "2025 Chevrolet Blazer EV | Interior and comfort trim comparison",
       "title": "2025 Chevrolet Blazer EV | Interior and comfort trim comparison",
       "year": "2025",
@@ -201,6 +213,9 @@
       "node_id": "C3FF1F17F37841E91",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Electric"
       ],
       "name": "2025 Chevrolet Blazer EV | Exterior and utility trim comparison",
       "title": "2025 Chevrolet Blazer EV | Exterior and utility trim comparison",
@@ -241,6 +256,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Electric"
+      ],
       "name": "2025 Chevrolet Blazer EV | Wheels and tires trim comparison",
       "title": "2025 Chevrolet Blazer EV | Wheels and tires trim comparison",
       "year": "2025",
@@ -280,6 +298,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Electric"
+      ],
       "name": "2025 Chevrolet Blazer EV | Mechanical and performance trim comparison",
       "title": "2025 Chevrolet Blazer EV | Mechanical and performance trim comparison",
       "year": "2025",
@@ -318,6 +339,9 @@
       "node_id": "C9E5A9D3B4329C15A",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Electric"
       ],
       "name": "2025 Chevrolet Blazer EV | Packages and options trim comparison",
       "title": "2025 Chevrolet Blazer EV | Packages and options trim comparison",
@@ -359,6 +383,9 @@
       "title": "2025 Chevrolet Blazer EV LT",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Electric"
       ],
       "drivetrains": [
         "FWD"
@@ -412,6 +439,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Electric"
+      ],
       "drivetrains": [
         "AWD"
       ],
@@ -463,6 +493,9 @@
       "title": "2025 Chevrolet Blazer EV RS",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Electric"
       ],
       "drivetrains": [
         "FWD"
@@ -516,6 +549,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Electric"
+      ],
       "drivetrains": [
         "RWD"
       ],
@@ -568,6 +604,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Electric"
+      ],
       "drivetrains": [
         "AWD"
       ],
@@ -619,6 +658,9 @@
       "title": "2025 Chevrolet Blazer EV SS",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Electric"
       ],
       "drivetrains": [
         "AWD"

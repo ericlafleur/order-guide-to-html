@@ -6,6 +6,9 @@
       "objecttype": "Product",
       "type": "model",
       "node_id": "MDF413A323383EE51",
+      "fuel_type": [
+        "Electric"
+      ],
       "name": "2025 Chevrolet Silverado EV",
       "title": "2025 Chevrolet Silverado EV",
       "year": "2025",
@@ -79,6 +82,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CF4482422D97BEB22",
+      "fuel_type": [
+        "Electric"
+      ],
       "name": "2025 Chevrolet Silverado EV | Safety and driver assistance trim comparison",
       "title": "2025 Chevrolet Silverado EV | Safety and driver assistance trim comparison",
       "year": "2025",
@@ -118,6 +124,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CC6F0BC1CE8F3B45E",
+      "fuel_type": [
+        "Electric"
+      ],
       "name": "2025 Chevrolet Silverado EV | Technology and connectivity trim comparison",
       "title": "2025 Chevrolet Silverado EV | Technology and connectivity trim comparison",
       "year": "2025",
@@ -157,6 +166,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CF4D714A24BEC69AE",
+      "fuel_type": [
+        "Electric"
+      ],
       "name": "2025 Chevrolet Silverado EV | Interior and comfort trim comparison",
       "title": "2025 Chevrolet Silverado EV | Interior and comfort trim comparison",
       "year": "2025",
@@ -196,6 +208,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C167B5BFA058939AF",
+      "fuel_type": [
+        "Electric"
+      ],
       "name": "2025 Chevrolet Silverado EV | Exterior and utility trim comparison",
       "title": "2025 Chevrolet Silverado EV | Exterior and utility trim comparison",
       "year": "2025",
@@ -235,6 +250,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CC41D76A75C5BDF45",
+      "fuel_type": [
+        "Electric"
+      ],
       "name": "2025 Chevrolet Silverado EV | Wheels and tires trim comparison",
       "title": "2025 Chevrolet Silverado EV | Wheels and tires trim comparison",
       "year": "2025",
@@ -274,6 +292,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C3E0ACBB295378B30",
+      "fuel_type": [
+        "Electric"
+      ],
       "name": "2025 Chevrolet Silverado EV | Mechanical and performance trim comparison",
       "title": "2025 Chevrolet Silverado EV | Mechanical and performance trim comparison",
       "year": "2025",
@@ -313,6 +334,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C4C4E289C4111D037",
+      "fuel_type": [
+        "Electric"
+      ],
       "name": "2025 Chevrolet Silverado EV | Packages and options trim comparison",
       "title": "2025 Chevrolet Silverado EV | Packages and options trim comparison",
       "year": "2025",
@@ -354,6 +378,9 @@
       "node_id": "TE708C18B1FD22B73",
       "name": "WT Distance standard",
       "title": "2025 Chevrolet Silverado EV WT Distance standard",
+      "fuel_type": [
+        "Electric"
+      ],
       "drivetrains": [
         "4RM"
       ],
@@ -396,6 +423,9 @@
       "node_id": "T3DC1BE230E0A4025",
       "name": "WT Autonomie prolongée",
       "title": "2025 Chevrolet Silverado EV WT Autonomie prolongée",
+      "fuel_type": [
+        "Electric"
+      ],
       "drivetrains": [
         "4RM"
       ],
@@ -438,6 +468,9 @@
       "node_id": "T41D96D42D9DD87AA",
       "name": "WT Autonomie maximale",
       "title": "2025 Chevrolet Silverado EV WT Autonomie maximale",
+      "fuel_type": [
+        "Electric"
+      ],
       "drivetrains": [
         "4RM"
       ],
@@ -480,6 +513,9 @@
       "node_id": "TDEF353D3079531D3",
       "name": "LT Autonomie prolongée",
       "title": "2025 Chevrolet Silverado EV LT Autonomie prolongée",
+      "fuel_type": [
+        "Electric"
+      ],
       "drivetrains": [
         "4RM"
       ],
@@ -522,6 +558,9 @@
       "node_id": "T49D18C99D11B1CFE",
       "name": "RST Autonomie prolongée",
       "title": "2025 Chevrolet Silverado EV RST Autonomie prolongée",
+      "fuel_type": [
+        "Electric"
+      ],
       "drivetrains": [
         "4RM"
       ],
@@ -564,6 +603,9 @@
       "node_id": "T320B88E94CABBE83",
       "name": "RST Autonomie maximale",
       "title": "2025 Chevrolet Silverado EV RST Autonomie maximale",
+      "fuel_type": [
+        "Electric"
+      ],
       "drivetrains": [
         "4RM"
       ],

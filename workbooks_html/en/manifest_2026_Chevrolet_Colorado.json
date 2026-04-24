@@ -9,6 +9,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Colorado",
       "title": "2026 Chevrolet Colorado",
       "year": "2026",
@@ -102,6 +105,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Colorado | Safety and driver assistance trim comparison",
       "title": "2026 Chevrolet Colorado | Safety and driver assistance trim comparison",
       "year": "2026",
@@ -142,6 +148,9 @@
       "node_id": "C83730C3F95422244",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
       ],
       "name": "2026 Chevrolet Colorado | Technology and connectivity trim comparison",
       "title": "2026 Chevrolet Colorado | Technology and connectivity trim comparison",
@@ -184,6 +193,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Colorado | Interior and comfort trim comparison",
       "title": "2026 Chevrolet Colorado | Interior and comfort trim comparison",
       "year": "2026",
@@ -224,6 +236,9 @@
       "node_id": "C8F787105FAAF5DD0",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
       ],
       "name": "2026 Chevrolet Colorado | Exterior and utility trim comparison",
       "title": "2026 Chevrolet Colorado | Exterior and utility trim comparison",
@@ -266,6 +281,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Colorado | Wheels and tires trim comparison",
       "title": "2026 Chevrolet Colorado | Wheels and tires trim comparison",
       "year": "2026",
@@ -307,6 +325,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Colorado | Mechanical and performance trim comparison",
       "title": "2026 Chevrolet Colorado | Mechanical and performance trim comparison",
       "year": "2026",
@@ -347,6 +368,9 @@
       "node_id": "C19325F1536942F73",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
       ],
       "name": "2026 Chevrolet Colorado | Packages and options trim comparison",
       "title": "2026 Chevrolet Colorado | Packages and options trim comparison",
@@ -390,6 +414,9 @@
       "title": "2026 Chevrolet Colorado Work Truck",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
       ],
       "drivetrains": [
         "2WD"
@@ -436,6 +463,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Gasoline"
+      ],
       "drivetrains": [
         "4WD"
       ],
@@ -480,6 +510,9 @@
       "title": "2026 Chevrolet Colorado LT",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
       ],
       "drivetrains": [
         "4WD"
@@ -532,6 +565,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Gasoline"
+      ],
       "drivetrains": [
         "4WD"
       ],
@@ -583,6 +619,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Gasoline"
+      ],
       "drivetrains": [
         "4WD"
       ],
@@ -633,6 +672,9 @@
       "title": "2026 Chevrolet Colorado ZR2",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
       ],
       "drivetrains": [
         "4WD"

@@ -6,6 +6,9 @@
       "objecttype": "Product",
       "type": "model",
       "node_id": "M4AE928A2DBEA2704",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Corvette Stingray",
       "title": "2026 Chevrolet Corvette Stingray",
       "year": "2026",
@@ -71,6 +74,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C438D72AEF48B4CB4",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Corvette Stingray | Safety and driver assistance trim comparison",
       "title": "2026 Chevrolet Corvette Stingray | Safety and driver assistance trim comparison",
       "year": "2026",
@@ -107,6 +113,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C8B4E1AE4E2441E51",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Corvette Stingray | Technology and connectivity trim comparison",
       "title": "2026 Chevrolet Corvette Stingray | Technology and connectivity trim comparison",
       "year": "2026",
@@ -142,6 +151,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C05EEBFBAD1E7B729",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Corvette Stingray | Interior and comfort trim comparison",
       "title": "2026 Chevrolet Corvette Stingray | Interior and comfort trim comparison",
       "year": "2026",
@@ -178,6 +190,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CB97939CD90A45112",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Corvette Stingray | Exterior and utility trim comparison",
       "title": "2026 Chevrolet Corvette Stingray | Exterior and utility trim comparison",
       "year": "2026",
@@ -214,6 +229,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C96853E539D4C8B99",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Corvette Stingray | Wheels and tires trim comparison",
       "title": "2026 Chevrolet Corvette Stingray | Wheels and tires trim comparison",
       "year": "2026",
@@ -250,6 +268,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C6D47BDB29F5779F5",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Corvette Stingray | Mechanical and performance trim comparison",
       "title": "2026 Chevrolet Corvette Stingray | Mechanical and performance trim comparison",
       "year": "2026",
@@ -285,6 +306,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C156D6BAD2F2D874B",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Corvette Stingray | Packages and options trim comparison",
       "title": "2026 Chevrolet Corvette Stingray | Packages and options trim comparison",
       "year": "2026",
@@ -323,6 +347,9 @@
       "node_id": "T87E1EC3FF2BF0BE0",
       "name": "1LT",
       "title": "2026 Chevrolet Corvette Stingray 1LT",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Corvette Stingray",
@@ -361,6 +388,9 @@
       "node_id": "T5E0F45CC3A48A25E",
       "name": "2LT",
       "title": "2026 Chevrolet Corvette Stingray 2LT",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Corvette Stingray",
@@ -399,6 +429,9 @@
       "node_id": "T50F48F96B231EF54",
       "name": "3LT",
       "title": "2026 Chevrolet Corvette Stingray 3LT",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Corvette Stingray",

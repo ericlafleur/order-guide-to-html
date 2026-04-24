@@ -9,7 +9,10 @@
       "seating": [
         "3/3/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Tahoe",
       "title": "2025 Chevrolet Tahoe",
       "year": "2025",
@@ -101,7 +104,10 @@
       "seating": [
         "3/3/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Tahoe | Safety and driver assistance trim comparison",
       "title": "2025 Chevrolet Tahoe | Safety and driver assistance trim comparison",
       "year": "2025",
@@ -145,7 +151,10 @@
       "seating": [
         "3/3/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Tahoe | Technology and connectivity trim comparison",
       "title": "2025 Chevrolet Tahoe | Technology and connectivity trim comparison",
       "year": "2025",
@@ -189,7 +198,10 @@
       "seating": [
         "3/3/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Tahoe | Interior and comfort trim comparison",
       "title": "2025 Chevrolet Tahoe | Interior and comfort trim comparison",
       "year": "2025",
@@ -233,7 +245,10 @@
       "seating": [
         "3/3/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Tahoe | Exterior and utility trim comparison",
       "title": "2025 Chevrolet Tahoe | Exterior and utility trim comparison",
       "year": "2025",
@@ -277,7 +292,10 @@
       "seating": [
         "3/3/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Tahoe | Wheels and tires trim comparison",
       "title": "2025 Chevrolet Tahoe | Wheels and tires trim comparison",
       "year": "2025",
@@ -321,7 +339,10 @@
       "seating": [
         "3/3/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Tahoe | Mechanical and performance trim comparison",
       "title": "2025 Chevrolet Tahoe | Mechanical and performance trim comparison",
       "year": "2025",
@@ -365,7 +386,10 @@
       "seating": [
         "3/3/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Tahoe | Packages and options trim comparison",
       "title": "2025 Chevrolet Tahoe | Packages and options trim comparison",
       "year": "2025",
@@ -408,7 +432,9 @@
       "node_id": "T2A1C77EB8FFE70F6",
       "name": "Comm",
       "title": "2025 Chevrolet Tahoe Comm",
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "year": "2025",
       "make": "Chevrolet",
       "model": "Tahoe",
@@ -451,7 +477,9 @@
       "seating": [
         "3/3/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "drivetrains": [
         "2WD",
         "4WD"
@@ -506,7 +534,10 @@
       "seating": [
         "3/3/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "drivetrains": [
         "4WD"
       ],
@@ -558,7 +589,10 @@
       "seating": [
         "3/3/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "drivetrains": [
         "4WD"
       ],
@@ -610,7 +644,10 @@
       "seating": [
         "3/3/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "drivetrains": [
         "4WD"
       ],
@@ -662,7 +699,10 @@
       "seating": [
         "3/3/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "drivetrains": [
         "4WD"
       ],
@@ -714,7 +754,10 @@
       "seating": [
         "3/3/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "drivetrains": [
         "4WD"
       ],

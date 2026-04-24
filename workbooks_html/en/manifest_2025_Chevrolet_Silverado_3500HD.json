@@ -10,6 +10,10 @@
         "6",
         "3"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Silverado 3500HD",
       "title": "2025 Chevrolet Silverado 3500HD",
       "year": "2025",
@@ -143,6 +147,10 @@
         "6",
         "3"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Silverado 3500HD | Safety and driver assistance trim comparison",
       "title": "2025 Chevrolet Silverado 3500HD | Safety and driver assistance trim comparison",
       "year": "2025",
@@ -183,6 +191,10 @@
       "seating": [
         "6",
         "3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
       ],
       "name": "2025 Chevrolet Silverado 3500HD | Technology and connectivity trim comparison",
       "title": "2025 Chevrolet Silverado 3500HD | Technology and connectivity trim comparison",
@@ -225,6 +237,10 @@
         "6",
         "3"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Silverado 3500HD | Interior and comfort trim comparison",
       "title": "2025 Chevrolet Silverado 3500HD | Interior and comfort trim comparison",
       "year": "2025",
@@ -265,6 +281,10 @@
       "seating": [
         "6",
         "3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
       ],
       "name": "2025 Chevrolet Silverado 3500HD | Exterior and utility trim comparison",
       "title": "2025 Chevrolet Silverado 3500HD | Exterior and utility trim comparison",
@@ -307,6 +327,10 @@
         "6",
         "3"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Silverado 3500HD | Wheels and tires trim comparison",
       "title": "2025 Chevrolet Silverado 3500HD | Wheels and tires trim comparison",
       "year": "2025",
@@ -348,6 +372,10 @@
         "6",
         "3"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Silverado 3500HD | Mechanical and performance trim comparison",
       "title": "2025 Chevrolet Silverado 3500HD | Mechanical and performance trim comparison",
       "year": "2025",
@@ -388,6 +416,10 @@
       "seating": [
         "6",
         "3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
       ],
       "name": "2025 Chevrolet Silverado 3500HD | Packages and options trim comparison",
       "title": "2025 Chevrolet Silverado 3500HD | Packages and options trim comparison",
@@ -431,6 +463,10 @@
       "seating": [
         "6",
         "3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
       ],
       "drivetrains": [
         "2WD",
@@ -485,6 +521,10 @@
         "6",
         "3"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "drivetrains": [
         "2WD",
         "4WD"
@@ -538,6 +578,10 @@
         "6",
         "3"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "drivetrains": [
         "2WD",
         "4WD"
@@ -589,6 +633,10 @@
       "title": "2025 Chevrolet Silverado 3500HD High Country",
       "seating": [
         "6"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
       ],
       "drivetrains": [
         "4WD"

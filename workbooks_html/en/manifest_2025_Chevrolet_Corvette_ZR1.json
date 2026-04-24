@@ -6,6 +6,9 @@
       "objecttype": "Product",
       "type": "model",
       "node_id": "MFB03BC0688BDF9E9",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Corvette ZR1",
       "title": "2025 Chevrolet Corvette ZR1",
       "year": "2025",
@@ -68,6 +71,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C472844B4276E8ED8",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Corvette ZR1 | Safety and driver assistance trim comparison",
       "title": "2025 Chevrolet Corvette ZR1 | Safety and driver assistance trim comparison",
       "year": "2025",
@@ -103,6 +109,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C5C5B04FED552C40C",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Corvette ZR1 | Technology and connectivity trim comparison",
       "title": "2025 Chevrolet Corvette ZR1 | Technology and connectivity trim comparison",
       "year": "2025",
@@ -137,6 +146,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C1381A4625BD4D80A",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Corvette ZR1 | Interior and comfort trim comparison",
       "title": "2025 Chevrolet Corvette ZR1 | Interior and comfort trim comparison",
       "year": "2025",
@@ -172,6 +184,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C7D4FC2CCA8B56356",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Corvette ZR1 | Exterior and utility trim comparison",
       "title": "2025 Chevrolet Corvette ZR1 | Exterior and utility trim comparison",
       "year": "2025",
@@ -207,6 +222,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C82F8325D7B39B6CB",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Corvette ZR1 | Wheels and tires trim comparison",
       "title": "2025 Chevrolet Corvette ZR1 | Wheels and tires trim comparison",
       "year": "2025",
@@ -242,6 +260,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C40A67AA0208305A0",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Corvette ZR1 | Mechanical and performance trim comparison",
       "title": "2025 Chevrolet Corvette ZR1 | Mechanical and performance trim comparison",
       "year": "2025",
@@ -277,6 +298,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C7C6EC39AC9FCD50D",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Corvette ZR1 | Packages and options trim comparison",
       "title": "2025 Chevrolet Corvette ZR1 | Packages and options trim comparison",
       "year": "2025",
@@ -314,6 +338,9 @@
       "node_id": "T3F7D1E4897871B25",
       "name": "1LZ",
       "title": "2025 Chevrolet Corvette ZR1 1LZ",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "year": "2025",
       "make": "Chevrolet",
       "model": "Corvette ZR1",
@@ -352,6 +379,9 @@
       "node_id": "T749D4F764C9771CF",
       "name": "3LZ",
       "title": "2025 Chevrolet Corvette ZR1 3LZ",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "year": "2025",
       "make": "Chevrolet",
       "model": "Corvette ZR1",

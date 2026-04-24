@@ -9,7 +9,9 @@
       "seating": [
         "2/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Equinox",
       "title": "2026 Chevrolet Equinox",
       "year": "2026",
@@ -78,7 +80,9 @@
       "seating": [
         "2/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Equinox | Safety and driver assistance trim comparison",
       "title": "2026 Chevrolet Equinox | Safety and driver assistance trim comparison",
       "year": "2026",
@@ -118,7 +122,9 @@
       "seating": [
         "2/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Equinox | Technology and connectivity trim comparison",
       "title": "2026 Chevrolet Equinox | Technology and connectivity trim comparison",
       "year": "2026",
@@ -158,7 +164,9 @@
       "seating": [
         "2/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Equinox | Interior and comfort trim comparison",
       "title": "2026 Chevrolet Equinox | Interior and comfort trim comparison",
       "year": "2026",
@@ -198,7 +206,9 @@
       "seating": [
         "2/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Equinox | Exterior and utility trim comparison",
       "title": "2026 Chevrolet Equinox | Exterior and utility trim comparison",
       "year": "2026",
@@ -238,7 +248,9 @@
       "seating": [
         "2/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Equinox | Wheels and tires trim comparison",
       "title": "2026 Chevrolet Equinox | Wheels and tires trim comparison",
       "year": "2026",
@@ -278,7 +290,9 @@
       "seating": [
         "2/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Equinox | Mechanical and performance trim comparison",
       "title": "2026 Chevrolet Equinox | Mechanical and performance trim comparison",
       "year": "2026",
@@ -318,7 +332,9 @@
       "seating": [
         "2/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Equinox | Packages and options trim comparison",
       "title": "2026 Chevrolet Equinox | Packages and options trim comparison",
       "year": "2026",
@@ -360,7 +376,9 @@
       "seating": [
         "2/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "drivetrains": [
         "AWD"
       ],
@@ -411,7 +429,9 @@
       "seating": [
         "2/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "drivetrains": [
         "AWD"
       ],
@@ -462,7 +482,9 @@
       "seating": [
         "2/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "drivetrains": [
         "AWD"
       ],

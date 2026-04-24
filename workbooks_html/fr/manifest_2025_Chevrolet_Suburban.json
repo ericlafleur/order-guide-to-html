@@ -9,6 +9,10 @@
       "seating": [
         "3/3/3"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Suburban",
       "title": "2025 Chevrolet Suburban",
       "year": "2025",
@@ -96,6 +100,10 @@
       "seating": [
         "3/3/3"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Suburban | Safety and driver assistance trim comparison",
       "title": "2025 Chevrolet Suburban | Safety and driver assistance trim comparison",
       "year": "2025",
@@ -137,6 +145,10 @@
       "node_id": "C1EA121A34FAF5C1E",
       "seating": [
         "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
       ],
       "name": "2025 Chevrolet Suburban | Technology and connectivity trim comparison",
       "title": "2025 Chevrolet Suburban | Technology and connectivity trim comparison",
@@ -180,6 +192,10 @@
       "seating": [
         "3/3/3"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Suburban | Interior and comfort trim comparison",
       "title": "2025 Chevrolet Suburban | Interior and comfort trim comparison",
       "year": "2025",
@@ -221,6 +237,10 @@
       "node_id": "C07BA082E520F3A2D",
       "seating": [
         "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
       ],
       "name": "2025 Chevrolet Suburban | Exterior and utility trim comparison",
       "title": "2025 Chevrolet Suburban | Exterior and utility trim comparison",
@@ -264,6 +284,10 @@
       "seating": [
         "3/3/3"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Suburban | Wheels and tires trim comparison",
       "title": "2025 Chevrolet Suburban | Wheels and tires trim comparison",
       "year": "2025",
@@ -306,6 +330,10 @@
       "seating": [
         "3/3/3"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Suburban | Mechanical and performance trim comparison",
       "title": "2025 Chevrolet Suburban | Mechanical and performance trim comparison",
       "year": "2025",
@@ -347,6 +375,10 @@
       "node_id": "CA312BA9DE35E55CF",
       "seating": [
         "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
       ],
       "name": "2025 Chevrolet Suburban | Packages and options trim comparison",
       "title": "2025 Chevrolet Suburban | Packages and options trim comparison",
@@ -391,6 +423,9 @@
       "title": "2025 Chevrolet Suburban LS",
       "seating": [
         "3/3/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
       ],
       "drivetrains": [
         "2RM",
@@ -445,6 +480,10 @@
       "seating": [
         "3/3/3"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "drivetrains": [
         "4RM"
       ],
@@ -494,6 +533,10 @@
       "title": "2025 Chevrolet Suburban RST",
       "seating": [
         "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
       ],
       "drivetrains": [
         "4RM"
@@ -545,6 +588,10 @@
       "seating": [
         "3/3/3"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "drivetrains": [
         "4RM"
       ],
@@ -595,6 +642,10 @@
       "seating": [
         "3/3/3"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "drivetrains": [
         "4RM"
       ],
@@ -644,6 +695,10 @@
       "title": "2025 Chevrolet Suburban High Country",
       "seating": [
         "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
       ],
       "drivetrains": [
         "4RM"

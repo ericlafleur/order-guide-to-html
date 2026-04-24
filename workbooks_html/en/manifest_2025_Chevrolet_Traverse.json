@@ -9,6 +9,9 @@
       "seating": [
         "2/2/3"
       ],
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Traverse",
       "title": "2025 Chevrolet Traverse",
       "year": "2025",
@@ -73,6 +76,9 @@
       "seating": [
         "2/2/3"
       ],
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Traverse | Safety and driver assistance trim comparison",
       "title": "2025 Chevrolet Traverse | Safety and driver assistance trim comparison",
       "year": "2025",
@@ -111,6 +117,9 @@
       "node_id": "C8383E7BFE4458353",
       "seating": [
         "2/2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
       ],
       "name": "2025 Chevrolet Traverse | Technology and connectivity trim comparison",
       "title": "2025 Chevrolet Traverse | Technology and connectivity trim comparison",
@@ -151,6 +160,9 @@
       "seating": [
         "2/2/3"
       ],
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Traverse | Interior and comfort trim comparison",
       "title": "2025 Chevrolet Traverse | Interior and comfort trim comparison",
       "year": "2025",
@@ -189,6 +201,9 @@
       "node_id": "C883A2FA0B805E93B",
       "seating": [
         "2/2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
       ],
       "name": "2025 Chevrolet Traverse | Exterior and utility trim comparison",
       "title": "2025 Chevrolet Traverse | Exterior and utility trim comparison",
@@ -229,6 +244,9 @@
       "seating": [
         "2/2/3"
       ],
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Traverse | Wheels and tires trim comparison",
       "title": "2025 Chevrolet Traverse | Wheels and tires trim comparison",
       "year": "2025",
@@ -267,6 +285,9 @@
       "node_id": "C3B1D3B67841B4627",
       "seating": [
         "2/2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
       ],
       "name": "2025 Chevrolet Traverse | Mechanical and performance trim comparison",
       "title": "2025 Chevrolet Traverse | Mechanical and performance trim comparison",
@@ -307,6 +328,9 @@
       "seating": [
         "2/2/3"
       ],
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Traverse | Packages and options trim comparison",
       "title": "2025 Chevrolet Traverse | Packages and options trim comparison",
       "year": "2025",
@@ -345,6 +369,9 @@
       "node_id": "T4CD60C2A13053B66",
       "name": "LT",
       "title": "2025 Chevrolet Traverse LT",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "drivetrains": [
         "AWD"
       ],
@@ -395,6 +422,9 @@
       "seating": [
         "2/2/3"
       ],
+      "fuel_type": [
+        "Gasoline"
+      ],
       "drivetrains": [
         "AWD"
       ],
@@ -444,6 +474,9 @@
       "title": "2025 Chevrolet Traverse RS",
       "seating": [
         "2/2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
       ],
       "drivetrains": [
         "AWD"

@@ -9,6 +9,9 @@
       "seating": [
         "5"
       ],
+      "fuel_type": [
+        "Electric"
+      ],
       "name": "2026 Chevrolet Silverado EV",
       "title": "2026 Chevrolet Silverado EV",
       "year": "2026",
@@ -90,6 +93,9 @@
       "seating": [
         "5"
       ],
+      "fuel_type": [
+        "Electric"
+      ],
       "name": "2026 Chevrolet Silverado EV | Safety and driver assistance trim comparison",
       "title": "2026 Chevrolet Silverado EV | Safety and driver assistance trim comparison",
       "year": "2026",
@@ -133,6 +139,9 @@
       "node_id": "C208D614F8F748AD0",
       "seating": [
         "5"
+      ],
+      "fuel_type": [
+        "Electric"
       ],
       "name": "2026 Chevrolet Silverado EV | Technology and connectivity trim comparison",
       "title": "2026 Chevrolet Silverado EV | Technology and connectivity trim comparison",
@@ -178,6 +187,9 @@
       "seating": [
         "5"
       ],
+      "fuel_type": [
+        "Electric"
+      ],
       "name": "2026 Chevrolet Silverado EV | Interior and comfort trim comparison",
       "title": "2026 Chevrolet Silverado EV | Interior and comfort trim comparison",
       "year": "2026",
@@ -221,6 +233,9 @@
       "node_id": "CCAB29B5F1466883B",
       "seating": [
         "5"
+      ],
+      "fuel_type": [
+        "Electric"
       ],
       "name": "2026 Chevrolet Silverado EV | Exterior and utility trim comparison",
       "title": "2026 Chevrolet Silverado EV | Exterior and utility trim comparison",
@@ -266,6 +281,9 @@
       "seating": [
         "5"
       ],
+      "fuel_type": [
+        "Electric"
+      ],
       "name": "2026 Chevrolet Silverado EV | Wheels and tires trim comparison",
       "title": "2026 Chevrolet Silverado EV | Wheels and tires trim comparison",
       "year": "2026",
@@ -310,6 +328,9 @@
       "seating": [
         "5"
       ],
+      "fuel_type": [
+        "Electric"
+      ],
       "name": "2026 Chevrolet Silverado EV | Mechanical and performance trim comparison",
       "title": "2026 Chevrolet Silverado EV | Mechanical and performance trim comparison",
       "year": "2026",
@@ -353,6 +374,9 @@
       "node_id": "C83E8D8B9C1979750",
       "seating": [
         "5"
+      ],
+      "fuel_type": [
+        "Electric"
       ],
       "name": "2026 Chevrolet Silverado EV | Packages and options trim comparison",
       "title": "2026 Chevrolet Silverado EV | Packages and options trim comparison",
@@ -399,6 +423,9 @@
       "title": "2026 Chevrolet Silverado EV WT Distance standard",
       "seating": [
         "5"
+      ],
+      "fuel_type": [
+        "Electric"
       ],
       "drivetrains": [
         "4RM"
@@ -450,6 +477,9 @@
       "seating": [
         "5"
       ],
+      "fuel_type": [
+        "Electric"
+      ],
       "drivetrains": [
         "4RM"
       ],
@@ -499,6 +529,9 @@
       "title": "2026 Chevrolet Silverado EV WT Autonomie maximale",
       "seating": [
         "5"
+      ],
+      "fuel_type": [
+        "Electric"
       ],
       "drivetrains": [
         "4RM"
@@ -550,6 +583,9 @@
       "seating": [
         "5"
       ],
+      "fuel_type": [
+        "Electric"
+      ],
       "drivetrains": [
         "4RM"
       ],
@@ -599,6 +635,9 @@
       "title": "2026 Chevrolet Silverado EV LT Autonomie prolongée",
       "seating": [
         "5"
+      ],
+      "fuel_type": [
+        "Electric"
       ],
       "drivetrains": [
         "4RM"
@@ -650,6 +689,9 @@
       "seating": [
         "5"
       ],
+      "fuel_type": [
+        "Electric"
+      ],
       "drivetrains": [
         "4RM"
       ],
@@ -700,6 +742,9 @@
       "seating": [
         "5"
       ],
+      "fuel_type": [
+        "Electric"
+      ],
       "drivetrains": [
         "4RM"
       ],
@@ -747,6 +792,9 @@
       "node_id": "T92A7A663C96EC6D1",
       "name": "Trail Boss Autonomie maximale",
       "title": "2026 Chevrolet Silverado EV Trail Boss Autonomie maximale",
+      "fuel_type": [
+        "Electric"
+      ],
       "drivetrains": [
         "4RM"
       ],

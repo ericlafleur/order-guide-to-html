@@ -9,6 +9,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Trax",
       "title": "2025 Chevrolet Trax",
       "year": "2025",
@@ -83,6 +86,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Trax | Safety and driver assistance trim comparison",
       "title": "2025 Chevrolet Trax | Safety and driver assistance trim comparison",
       "year": "2025",
@@ -123,6 +129,9 @@
       "node_id": "C97392EADC80D54BE",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
       ],
       "name": "2025 Chevrolet Trax | Technology and connectivity trim comparison",
       "title": "2025 Chevrolet Trax | Technology and connectivity trim comparison",
@@ -165,6 +174,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Trax | Interior and comfort trim comparison",
       "title": "2025 Chevrolet Trax | Interior and comfort trim comparison",
       "year": "2025",
@@ -205,6 +217,9 @@
       "node_id": "C363D9BE1393A3163",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
       ],
       "name": "2025 Chevrolet Trax | Exterior and utility trim comparison",
       "title": "2025 Chevrolet Trax | Exterior and utility trim comparison",
@@ -247,6 +262,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Trax | Wheels and tires trim comparison",
       "title": "2025 Chevrolet Trax | Wheels and tires trim comparison",
       "year": "2025",
@@ -288,6 +306,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Trax | Mechanical and performance trim comparison",
       "title": "2025 Chevrolet Trax | Mechanical and performance trim comparison",
       "year": "2025",
@@ -327,6 +348,9 @@
       "node_id": "CBD4F62EBFBE00DE1",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
       ],
       "name": "2025 Chevrolet Trax | Packages and options trim comparison",
       "title": "2025 Chevrolet Trax | Packages and options trim comparison",
@@ -370,6 +394,9 @@
       "title": "2025 Chevrolet Trax LS",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
       ],
       "drivetrains": [
         "à TA"
@@ -421,6 +448,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Gasoline"
+      ],
       "drivetrains": [
         "à TA"
       ],
@@ -470,6 +500,9 @@
       "title": "2025 Chevrolet Trax LT",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
       ],
       "drivetrains": [
         "à TA"
@@ -521,6 +554,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Gasoline"
+      ],
       "drivetrains": [
         "à TA"
       ],
@@ -570,6 +606,9 @@
       "title": "2025 Chevrolet Trax ACTIV",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
       ],
       "drivetrains": [
         "à TA"

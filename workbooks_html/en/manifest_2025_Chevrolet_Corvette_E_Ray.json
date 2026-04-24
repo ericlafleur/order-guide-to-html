@@ -6,6 +6,9 @@
       "objecttype": "Product",
       "type": "model",
       "node_id": "M120CE01B35600BB1",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Corvette E-Ray",
       "title": "2025 Chevrolet Corvette E-Ray",
       "year": "2025",
@@ -71,6 +74,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C8BBA703BC72EF21E",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Corvette E-Ray | Safety and driver assistance trim comparison",
       "title": "2025 Chevrolet Corvette E-Ray | Safety and driver assistance trim comparison",
       "year": "2025",
@@ -107,6 +113,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C75EDDAC9ABC1742E",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Corvette E-Ray | Technology and connectivity trim comparison",
       "title": "2025 Chevrolet Corvette E-Ray | Technology and connectivity trim comparison",
       "year": "2025",
@@ -142,6 +151,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C784093F89BBFFB8E",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Corvette E-Ray | Interior and comfort trim comparison",
       "title": "2025 Chevrolet Corvette E-Ray | Interior and comfort trim comparison",
       "year": "2025",
@@ -178,6 +190,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CAE22C37A50EFA27E",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Corvette E-Ray | Exterior and utility trim comparison",
       "title": "2025 Chevrolet Corvette E-Ray | Exterior and utility trim comparison",
       "year": "2025",
@@ -214,6 +229,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C939D61E455E8F3A6",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Corvette E-Ray | Wheels and tires trim comparison",
       "title": "2025 Chevrolet Corvette E-Ray | Wheels and tires trim comparison",
       "year": "2025",
@@ -250,6 +268,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C60827B36CC29EC85",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Corvette E-Ray | Mechanical and performance trim comparison",
       "title": "2025 Chevrolet Corvette E-Ray | Mechanical and performance trim comparison",
       "year": "2025",
@@ -285,6 +306,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C77AAFCCB42063EF1",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Corvette E-Ray | Packages and options trim comparison",
       "title": "2025 Chevrolet Corvette E-Ray | Packages and options trim comparison",
       "year": "2025",
@@ -323,6 +347,9 @@
       "node_id": "T417EDEA5C49AFCD6",
       "name": "1LZ",
       "title": "2025 Chevrolet Corvette E-Ray 1LZ",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "year": "2025",
       "make": "Chevrolet",
       "model": "Corvette E-Ray",
@@ -361,6 +388,9 @@
       "node_id": "T2F51D2D18B4811B9",
       "name": "2LZ",
       "title": "2025 Chevrolet Corvette E-Ray 2LZ",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "year": "2025",
       "make": "Chevrolet",
       "model": "Corvette E-Ray",
@@ -399,6 +429,9 @@
       "node_id": "TF845EF49377B01D9",
       "name": "3LZ",
       "title": "2025 Chevrolet Corvette E-Ray 3LZ",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "year": "2025",
       "make": "Chevrolet",
       "model": "Corvette E-Ray",

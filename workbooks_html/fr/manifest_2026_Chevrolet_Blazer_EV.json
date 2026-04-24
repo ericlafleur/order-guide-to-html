@@ -9,6 +9,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Electric"
+      ],
       "name": "2026 Chevrolet Blazer EV",
       "title": "2026 Chevrolet Blazer EV",
       "year": "2026",
@@ -83,6 +86,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Electric"
+      ],
       "name": "2026 Chevrolet Blazer EV | Safety and driver assistance trim comparison",
       "title": "2026 Chevrolet Blazer EV | Safety and driver assistance trim comparison",
       "year": "2026",
@@ -121,6 +127,9 @@
       "node_id": "CBDCF399D75838DAB",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Electric"
       ],
       "name": "2026 Chevrolet Blazer EV | Technology and connectivity trim comparison",
       "title": "2026 Chevrolet Blazer EV | Technology and connectivity trim comparison",
@@ -161,6 +170,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Electric"
+      ],
       "name": "2026 Chevrolet Blazer EV | Interior and comfort trim comparison",
       "title": "2026 Chevrolet Blazer EV | Interior and comfort trim comparison",
       "year": "2026",
@@ -199,6 +211,9 @@
       "node_id": "CCBD84B1D69AB0ED1",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Electric"
       ],
       "name": "2026 Chevrolet Blazer EV | Exterior and utility trim comparison",
       "title": "2026 Chevrolet Blazer EV | Exterior and utility trim comparison",
@@ -239,6 +254,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Electric"
+      ],
       "name": "2026 Chevrolet Blazer EV | Wheels and tires trim comparison",
       "title": "2026 Chevrolet Blazer EV | Wheels and tires trim comparison",
       "year": "2026",
@@ -278,6 +296,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Electric"
+      ],
       "name": "2026 Chevrolet Blazer EV | Mechanical and performance trim comparison",
       "title": "2026 Chevrolet Blazer EV | Mechanical and performance trim comparison",
       "year": "2026",
@@ -316,6 +337,9 @@
       "node_id": "C011F748D9E10C1D4",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Electric"
       ],
       "name": "2026 Chevrolet Blazer EV | Packages and options trim comparison",
       "title": "2026 Chevrolet Blazer EV | Packages and options trim comparison",
@@ -357,6 +381,9 @@
       "title": "2026 Chevrolet Blazer EV LT",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Electric"
       ],
       "drivetrains": [
         "à TA"
@@ -410,6 +437,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Electric"
+      ],
       "drivetrains": [
         "à TI"
       ],
@@ -461,6 +491,9 @@
       "title": "2026 Chevrolet Blazer EV RS",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Electric"
       ],
       "drivetrains": [
         "à TA"
@@ -514,6 +547,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Electric"
+      ],
       "drivetrains": [
         "à TI"
       ],
@@ -565,6 +601,9 @@
       "title": "2026 Chevrolet Blazer EV SS",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Electric"
       ],
       "drivetrains": [
         "à TI"

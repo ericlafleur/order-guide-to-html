@@ -6,6 +6,9 @@
       "objecttype": "Product",
       "type": "model",
       "node_id": "ME71578CC4AEB4318",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Corvette ZR1X",
       "title": "2026 Chevrolet Corvette ZR1X",
       "year": "2026",
@@ -68,6 +71,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C43EAA324F580A9F3",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Corvette ZR1X | Safety and driver assistance trim comparison",
       "title": "2026 Chevrolet Corvette ZR1X | Safety and driver assistance trim comparison",
       "year": "2026",
@@ -103,6 +109,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C64AD8E991BF7FC0E",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Corvette ZR1X | Technology and connectivity trim comparison",
       "title": "2026 Chevrolet Corvette ZR1X | Technology and connectivity trim comparison",
       "year": "2026",
@@ -137,6 +146,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C1DAC18E4AC4AD34F",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Corvette ZR1X | Interior and comfort trim comparison",
       "title": "2026 Chevrolet Corvette ZR1X | Interior and comfort trim comparison",
       "year": "2026",
@@ -172,6 +184,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CD23FD5A5B1DCB894",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Corvette ZR1X | Exterior and utility trim comparison",
       "title": "2026 Chevrolet Corvette ZR1X | Exterior and utility trim comparison",
       "year": "2026",
@@ -207,6 +222,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C99BA4B8C9A6022A2",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Corvette ZR1X | Wheels and tires trim comparison",
       "title": "2026 Chevrolet Corvette ZR1X | Wheels and tires trim comparison",
       "year": "2026",
@@ -242,6 +260,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C049CA2E041E0DA5F",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Corvette ZR1X | Mechanical and performance trim comparison",
       "title": "2026 Chevrolet Corvette ZR1X | Mechanical and performance trim comparison",
       "year": "2026",
@@ -277,6 +298,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C49748F8CA780A06A",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Corvette ZR1X | Packages and options trim comparison",
       "title": "2026 Chevrolet Corvette ZR1X | Packages and options trim comparison",
       "year": "2026",
@@ -314,6 +338,9 @@
       "node_id": "T05E5E11C3AB1DEB1",
       "name": "1LZ",
       "title": "2026 Chevrolet Corvette ZR1X 1LZ",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Corvette ZR1X",
@@ -352,6 +379,9 @@
       "node_id": "TC06758A5FC4A03CB",
       "name": "3LZ",
       "title": "2026 Chevrolet Corvette ZR1X 3LZ",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Corvette ZR1X",

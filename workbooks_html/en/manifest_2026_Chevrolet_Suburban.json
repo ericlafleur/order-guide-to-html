@@ -9,7 +9,10 @@
       "seating": [
         "3/3/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Suburban",
       "title": "2026 Chevrolet Suburban",
       "year": "2026",
@@ -96,7 +99,10 @@
       "seating": [
         "3/3/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Suburban | Safety and driver assistance trim comparison",
       "title": "2026 Chevrolet Suburban | Safety and driver assistance trim comparison",
       "year": "2026",
@@ -139,7 +145,10 @@
       "seating": [
         "3/3/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Suburban | Technology and connectivity trim comparison",
       "title": "2026 Chevrolet Suburban | Technology and connectivity trim comparison",
       "year": "2026",
@@ -182,7 +191,10 @@
       "seating": [
         "3/3/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Suburban | Interior and comfort trim comparison",
       "title": "2026 Chevrolet Suburban | Interior and comfort trim comparison",
       "year": "2026",
@@ -225,7 +237,10 @@
       "seating": [
         "3/3/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Suburban | Exterior and utility trim comparison",
       "title": "2026 Chevrolet Suburban | Exterior and utility trim comparison",
       "year": "2026",
@@ -268,7 +283,10 @@
       "seating": [
         "3/3/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Suburban | Wheels and tires trim comparison",
       "title": "2026 Chevrolet Suburban | Wheels and tires trim comparison",
       "year": "2026",
@@ -311,7 +329,10 @@
       "seating": [
         "3/3/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Suburban | Mechanical and performance trim comparison",
       "title": "2026 Chevrolet Suburban | Mechanical and performance trim comparison",
       "year": "2026",
@@ -354,7 +375,10 @@
       "seating": [
         "3/3/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Suburban | Packages and options trim comparison",
       "title": "2026 Chevrolet Suburban | Packages and options trim comparison",
       "year": "2026",
@@ -399,7 +423,9 @@
       "seating": [
         "3/3/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "drivetrains": [
         "2WD",
         "4WD"
@@ -454,7 +480,10 @@
       "seating": [
         "3/3/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "drivetrains": [
         "4WD"
       ],
@@ -506,7 +535,10 @@
       "seating": [
         "3/3/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "drivetrains": [
         "4WD"
       ],
@@ -558,7 +590,10 @@
       "seating": [
         "3/3/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "drivetrains": [
         "4WD"
       ],
@@ -610,7 +645,10 @@
       "seating": [
         "3/3/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "drivetrains": [
         "4WD"
       ],
@@ -662,7 +700,10 @@
       "seating": [
         "3/3/3"
       ],
-      "fuel_type": "Fuel, gasoline, E15",
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "drivetrains": [
         "4WD"
       ],

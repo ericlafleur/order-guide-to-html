@@ -6,6 +6,9 @@
       "objecttype": "Product",
       "type": "model",
       "node_id": "M002E2C9DED824000",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Corvette Stingray",
       "title": "2025 Chevrolet Corvette Stingray",
       "year": "2025",
@@ -71,6 +74,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CC1F96754474C8548",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Corvette Stingray | Safety and driver assistance trim comparison",
       "title": "2025 Chevrolet Corvette Stingray | Safety and driver assistance trim comparison",
       "year": "2025",
@@ -107,6 +113,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C7617D409C7E3CDD0",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Corvette Stingray | Technology and connectivity trim comparison",
       "title": "2025 Chevrolet Corvette Stingray | Technology and connectivity trim comparison",
       "year": "2025",
@@ -142,6 +151,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C5AB9BCCC77C92B37",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Corvette Stingray | Interior and comfort trim comparison",
       "title": "2025 Chevrolet Corvette Stingray | Interior and comfort trim comparison",
       "year": "2025",
@@ -178,6 +190,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C871D7227992800DF",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Corvette Stingray | Exterior and utility trim comparison",
       "title": "2025 Chevrolet Corvette Stingray | Exterior and utility trim comparison",
       "year": "2025",
@@ -214,6 +229,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C4E5BEFB29C617B97",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Corvette Stingray | Wheels and tires trim comparison",
       "title": "2025 Chevrolet Corvette Stingray | Wheels and tires trim comparison",
       "year": "2025",
@@ -250,6 +268,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CBEE997112E6CBEE0",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Corvette Stingray | Mechanical and performance trim comparison",
       "title": "2025 Chevrolet Corvette Stingray | Mechanical and performance trim comparison",
       "year": "2025",
@@ -285,6 +306,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C641428CCC8456FDB",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2025 Chevrolet Corvette Stingray | Packages and options trim comparison",
       "title": "2025 Chevrolet Corvette Stingray | Packages and options trim comparison",
       "year": "2025",
@@ -323,6 +347,9 @@
       "node_id": "T4B5C0788EDD536B3",
       "name": "1LT",
       "title": "2025 Chevrolet Corvette Stingray 1LT",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "year": "2025",
       "make": "Chevrolet",
       "model": "Corvette Stingray",
@@ -361,6 +388,9 @@
       "node_id": "T6F9A4341B56AEAC5",
       "name": "2LT",
       "title": "2025 Chevrolet Corvette Stingray 2LT",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "year": "2025",
       "make": "Chevrolet",
       "model": "Corvette Stingray",
@@ -399,6 +429,9 @@
       "node_id": "T6E9AF231A7859EFC",
       "name": "3LT",
       "title": "2025 Chevrolet Corvette Stingray 3LT",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "year": "2025",
       "make": "Chevrolet",
       "model": "Corvette Stingray",

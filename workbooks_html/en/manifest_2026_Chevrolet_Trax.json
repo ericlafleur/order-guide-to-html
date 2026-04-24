@@ -9,6 +9,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Trax",
       "title": "2026 Chevrolet Trax",
       "year": "2026",
@@ -78,6 +81,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Trax | Safety and driver assistance trim comparison",
       "title": "2026 Chevrolet Trax | Safety and driver assistance trim comparison",
       "year": "2026",
@@ -117,6 +123,9 @@
       "node_id": "CD4CE4BE9877E3073",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
       ],
       "name": "2026 Chevrolet Trax | Technology and connectivity trim comparison",
       "title": "2026 Chevrolet Trax | Technology and connectivity trim comparison",
@@ -158,6 +167,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Trax | Interior and comfort trim comparison",
       "title": "2026 Chevrolet Trax | Interior and comfort trim comparison",
       "year": "2026",
@@ -197,6 +209,9 @@
       "node_id": "C62372F3B9B5E02C1",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
       ],
       "name": "2026 Chevrolet Trax | Exterior and utility trim comparison",
       "title": "2026 Chevrolet Trax | Exterior and utility trim comparison",
@@ -238,6 +253,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Trax | Wheels and tires trim comparison",
       "title": "2026 Chevrolet Trax | Wheels and tires trim comparison",
       "year": "2026",
@@ -278,6 +296,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Trax | Mechanical and performance trim comparison",
       "title": "2026 Chevrolet Trax | Mechanical and performance trim comparison",
       "year": "2026",
@@ -316,6 +337,9 @@
       "node_id": "C0EDEFACE3562C433",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
       ],
       "name": "2026 Chevrolet Trax | Packages and options trim comparison",
       "title": "2026 Chevrolet Trax | Packages and options trim comparison",
@@ -358,6 +382,9 @@
       "title": "2026 Chevrolet Trax 1RS",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
       ],
       "drivetrains": [
         "FWD"
@@ -409,6 +436,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Gasoline"
+      ],
       "drivetrains": [
         "FWD"
       ],
@@ -459,6 +489,9 @@
       "seating": [
         "2/3"
       ],
+      "fuel_type": [
+        "Gasoline"
+      ],
       "drivetrains": [
         "FWD"
       ],
@@ -508,6 +541,9 @@
       "title": "2026 Chevrolet Trax ACTIV",
       "seating": [
         "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
       ],
       "drivetrains": [
         "FWD"

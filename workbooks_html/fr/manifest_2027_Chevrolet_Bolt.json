@@ -6,6 +6,9 @@
       "objecttype": "Product",
       "type": "model",
       "node_id": "M23A674B478BE5A18",
+      "fuel_type": [
+        "Electric"
+      ],
       "name": "2027 Chevrolet Bolt",
       "title": "2027 Chevrolet Bolt",
       "year": "2027",
@@ -64,6 +67,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C107986CE7541D5F7",
+      "fuel_type": [
+        "Electric"
+      ],
       "name": "2027 Chevrolet Bolt | Safety and driver assistance trim comparison",
       "title": "2027 Chevrolet Bolt | Safety and driver assistance trim comparison",
       "year": "2027",
@@ -99,6 +105,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CDABEE531ECA5AC36",
+      "fuel_type": [
+        "Electric"
+      ],
       "name": "2027 Chevrolet Bolt | Technology and connectivity trim comparison",
       "title": "2027 Chevrolet Bolt | Technology and connectivity trim comparison",
       "year": "2027",
@@ -134,6 +143,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C5CD410131AF21193",
+      "fuel_type": [
+        "Electric"
+      ],
       "name": "2027 Chevrolet Bolt | Interior and comfort trim comparison",
       "title": "2027 Chevrolet Bolt | Interior and comfort trim comparison",
       "year": "2027",
@@ -169,6 +181,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C4DBEC5D2FFC4D8A0",
+      "fuel_type": [
+        "Electric"
+      ],
       "name": "2027 Chevrolet Bolt | Exterior and utility trim comparison",
       "title": "2027 Chevrolet Bolt | Exterior and utility trim comparison",
       "year": "2027",
@@ -204,6 +219,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C4511EF21357BA5B9",
+      "fuel_type": [
+        "Electric"
+      ],
       "name": "2027 Chevrolet Bolt | Wheels and tires trim comparison",
       "title": "2027 Chevrolet Bolt | Wheels and tires trim comparison",
       "year": "2027",
@@ -239,6 +257,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CEB78C49493546151",
+      "fuel_type": [
+        "Electric"
+      ],
       "name": "2027 Chevrolet Bolt | Mechanical and performance trim comparison",
       "title": "2027 Chevrolet Bolt | Mechanical and performance trim comparison",
       "year": "2027",
@@ -274,6 +295,9 @@
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C607320CF6F9617FE",
+      "fuel_type": [
+        "Electric"
+      ],
       "name": "2027 Chevrolet Bolt | Packages and options trim comparison",
       "title": "2027 Chevrolet Bolt | Packages and options trim comparison",
       "year": "2027",
@@ -311,6 +335,9 @@
       "node_id": "T57482AC2AB18E4A3",
       "name": "LT",
       "title": "2027 Chevrolet Bolt LT",
+      "fuel_type": [
+        "Electric"
+      ],
       "drivetrains": [
         "à traction avant"
       ],
@@ -358,6 +385,9 @@
       "node_id": "TA74E59989269C76B",
       "name": "RS",
       "title": "2027 Chevrolet Bolt RS",
+      "fuel_type": [
+        "Electric"
+      ],
       "drivetrains": [
         "à traction avant"
       ],

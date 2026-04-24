@@ -9,6 +9,10 @@
       "seating": [
         "3/3/3"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Tahoe",
       "title": "2026 Chevrolet Tahoe",
       "year": "2026",
@@ -98,6 +102,10 @@
       "seating": [
         "3/3/3"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Tahoe | Safety and driver assistance trim comparison",
       "title": "2026 Chevrolet Tahoe | Safety and driver assistance trim comparison",
       "year": "2026",
@@ -140,6 +148,10 @@
       "node_id": "C35FD49592B303DB6",
       "seating": [
         "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
       ],
       "name": "2026 Chevrolet Tahoe | Technology and connectivity trim comparison",
       "title": "2026 Chevrolet Tahoe | Technology and connectivity trim comparison",
@@ -184,6 +196,10 @@
       "seating": [
         "3/3/3"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Tahoe | Interior and comfort trim comparison",
       "title": "2026 Chevrolet Tahoe | Interior and comfort trim comparison",
       "year": "2026",
@@ -226,6 +242,10 @@
       "node_id": "CBB1A7CE54A23C3A1",
       "seating": [
         "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
       ],
       "name": "2026 Chevrolet Tahoe | Exterior and utility trim comparison",
       "title": "2026 Chevrolet Tahoe | Exterior and utility trim comparison",
@@ -270,6 +290,10 @@
       "seating": [
         "3/3/3"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Tahoe | Wheels and tires trim comparison",
       "title": "2026 Chevrolet Tahoe | Wheels and tires trim comparison",
       "year": "2026",
@@ -312,6 +336,10 @@
       "node_id": "CD591012CC89F3AF4",
       "seating": [
         "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
       ],
       "name": "2026 Chevrolet Tahoe | Mechanical and performance trim comparison",
       "title": "2026 Chevrolet Tahoe | Mechanical and performance trim comparison",
@@ -356,6 +384,10 @@
       "seating": [
         "3/3/3"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Tahoe | Packages and options trim comparison",
       "title": "2026 Chevrolet Tahoe | Packages and options trim comparison",
       "year": "2026",
@@ -398,6 +430,9 @@
       "node_id": "TD1007A6FB0B61AA4",
       "name": "Comm",
       "title": "2026 Chevrolet Tahoe Comm",
+      "fuel_type": [
+        "Gasoline"
+      ],
       "year": "2026",
       "make": "Chevrolet",
       "model": "Tahoe",
@@ -439,6 +474,9 @@
       "title": "2026 Chevrolet Tahoe LS",
       "seating": [
         "3/3/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
       ],
       "drivetrains": [
         "2RM",
@@ -494,6 +532,10 @@
       "seating": [
         "3/3/3"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "drivetrains": [
         "4RM"
       ],
@@ -544,6 +586,10 @@
       "title": "2026 Chevrolet Tahoe RST",
       "seating": [
         "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
       ],
       "drivetrains": [
         "4RM"
@@ -596,6 +642,10 @@
       "seating": [
         "3/3/3"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "drivetrains": [
         "4RM"
       ],
@@ -647,6 +697,10 @@
       "seating": [
         "3/3/3"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "drivetrains": [
         "4RM"
       ],
@@ -697,6 +751,10 @@
       "title": "2026 Chevrolet Tahoe High Country",
       "seating": [
         "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
       ],
       "drivetrains": [
         "4RM"

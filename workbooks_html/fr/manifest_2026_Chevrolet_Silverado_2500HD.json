@@ -10,6 +10,10 @@
         "3",
         "6"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Silverado 2500HD",
       "title": "2026 Chevrolet Silverado 2500HD",
       "year": "2026",
@@ -151,6 +155,10 @@
         "3",
         "6"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Silverado 2500HD | Safety and driver assistance trim comparison",
       "title": "2026 Chevrolet Silverado 2500HD | Safety and driver assistance trim comparison",
       "year": "2026",
@@ -193,6 +201,10 @@
       "seating": [
         "3",
         "6"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
       ],
       "name": "2026 Chevrolet Silverado 2500HD | Technology and connectivity trim comparison",
       "title": "2026 Chevrolet Silverado 2500HD | Technology and connectivity trim comparison",
@@ -237,6 +249,10 @@
         "3",
         "6"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Silverado 2500HD | Interior and comfort trim comparison",
       "title": "2026 Chevrolet Silverado 2500HD | Interior and comfort trim comparison",
       "year": "2026",
@@ -279,6 +295,10 @@
       "seating": [
         "3",
         "6"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
       ],
       "name": "2026 Chevrolet Silverado 2500HD | Exterior and utility trim comparison",
       "title": "2026 Chevrolet Silverado 2500HD | Exterior and utility trim comparison",
@@ -323,6 +343,10 @@
         "3",
         "6"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Silverado 2500HD | Wheels and tires trim comparison",
       "title": "2026 Chevrolet Silverado 2500HD | Wheels and tires trim comparison",
       "year": "2026",
@@ -366,6 +390,10 @@
         "3",
         "6"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "name": "2026 Chevrolet Silverado 2500HD | Mechanical and performance trim comparison",
       "title": "2026 Chevrolet Silverado 2500HD | Mechanical and performance trim comparison",
       "year": "2026",
@@ -408,6 +436,10 @@
       "seating": [
         "3",
         "6"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
       ],
       "name": "2026 Chevrolet Silverado 2500HD | Packages and options trim comparison",
       "title": "2026 Chevrolet Silverado 2500HD | Packages and options trim comparison",
@@ -453,6 +485,10 @@
       "seating": [
         "3",
         "6"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
       ],
       "drivetrains": [
         "2RM",
@@ -506,6 +542,10 @@
         "3",
         "6"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "drivetrains": [
         "2RM",
         "4RM"
@@ -558,6 +598,10 @@
         "3",
         "6"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "drivetrains": [
         "2RM",
         "4RM"
@@ -608,6 +652,10 @@
       "title": "2026 Chevrolet Silverado 2500HD ZR2",
       "seating": [
         "6"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
       ],
       "drivetrains": [
         "4RM"
@@ -666,6 +714,10 @@
         "3",
         "6"
       ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
       "drivetrains": [
         "2RM",
         "4RM"
@@ -716,6 +768,10 @@
       "title": "2026 Chevrolet Silverado 2500HD High Country",
       "seating": [
         "6"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
       ],
       "drivetrains": [
         "4RM"
