@@ -838,6 +838,87 @@ def pick_engine_description(values: Sequence[str]) -> Optional[str]:
 def pick_fuel_description(values: Sequence[str]) -> Optional[str]:
     return first_unique(v for v in values if normalize_text(v).lower().startswith('fuel,'))
 
+
+def _is_engine_fuel_emission_desc(lower: str) -> bool:
+    """Return True if the lowercased description is an engine, fuel, or ZEV emission row."""
+    if lower.startswith(('engine,', 'moteur,', 'fuel,', 'essence,', 'carburant,')):
+        return True
+    if ('emission' in lower or 'émission' in lower) and (
+        'zero' in lower or 'zéro' in lower or 'zev' in lower or 'vze' in lower
+    ):
+        return True
+    return False
+
+
+def _all_engine_fuel_descriptions(data: WorkbookData) -> List[str]:
+    """Collect all engine/fuel/emission descriptions from matrix rows (any trim status)."""
+    values: List[str] = []
+    for sheet in data.matrix_sheets:
+        for row in sheet.rows:
+            desc = normalize_text(row.description_main or row.description_raw)
+            if desc and _is_engine_fuel_emission_desc(desc.lower()):
+                values.append(desc)
+    return unique_preserve_order(values)
+
+
+def _trim_engine_fuel_descriptions(data: WorkbookData, trim: TrimDef) -> List[str]:
+    """Collect engine/fuel/emission descriptions available on a specific trim (status != '--')."""
+    values: List[str] = []
+    for sheet in data.matrix_sheets:
+        for row in sheet.rows:
+            raw = normalize_text(row.status_by_trim.get(trim.key))
+            if not raw:
+                continue
+            status_code, _, _ = parse_status_value(raw, row.inline_footnotes, sheet.footnotes)
+            if status_code == '--':
+                continue
+            desc = normalize_text(row.description_main or row.description_raw)
+            if desc and _is_engine_fuel_emission_desc(desc.lower()):
+                values.append(desc)
+    return unique_preserve_order(values)
+
+
+def infer_fuel_types(descriptions: Sequence[str], vehicle_name: str = '') -> object:
+    """Infer fuel type(s) from engine/fuel/emission descriptions.
+
+    Returns a single string (e.g. 'Gasoline') or a sorted list
+    (e.g. ['Diesel', 'Gasoline']) when multiple fuel types are detected.
+    Returns None when nothing can be determined.
+    """
+    fuel_types: set = set()
+    for desc in descriptions:
+        lower = normalize_text(desc).lower()
+        # Explicit fuel rows  (EN: Fuel,  FR: Essence, / Carburant,)
+        if lower.startswith(('fuel,', 'essence,', 'carburant,')):
+            if 'none' in lower or 'aucun' in lower:
+                fuel_types.add('Electric')
+            elif 'diesel' in lower:
+                fuel_types.add('Diesel')
+            elif 'gasoline' in lower or lower.startswith('essence,'):
+                fuel_types.add('Gasoline')
+            # else: skip non-informative rows (e.g. "additional fuel")
+        # Engine / Moteur rows
+        elif lower.startswith(('engine,', 'moteur,')):
+            if 'none' in lower or 'aucun' in lower:
+                fuel_types.add('Electric')
+            elif 'diesel' in lower:
+                fuel_types.add('Diesel')
+            else:
+                fuel_types.add('Gasoline')
+        # ZEV / VZE emission rows
+        elif ('emission' in lower or 'émission' in lower) and (
+            'zero' in lower or 'zéro' in lower or 'zev' in lower or 'vze' in lower
+        ):
+            fuel_types.add('Electric')
+    # Fallback: infer from vehicle name
+    if not fuel_types:
+        name_lower = vehicle_name.lower()
+        if re.search(r'\bev\b', name_lower) or 'bolt' in name_lower:
+            fuel_types.add('Electric')
+        else:
+            fuel_types.add('Gasoline')
+    return sorted(fuel_types)
+
 def pick_drivetrain_description(values: Sequence[str]) -> Optional[str]:
     direct = [v for v in values if 'wheel drive' in normalize_text(v).lower()]
     choice = first_unique(direct)
@@ -900,7 +981,6 @@ def extract_trim_drive_token_from_headers(data: WorkbookData, trim: TrimDef) -> 
     return first_unique(tokens)
 
 def extract_manifest_metadata_for_model(data: WorkbookData) -> Dict[str, object]:
-    descs = model_descriptions_standard_for_all_trims(data)
     metadata: Dict[str, object] = {}
     seating_values = list(dict.fromkeys(
         sv
@@ -909,13 +989,12 @@ def extract_manifest_metadata_for_model(data: WorkbookData) -> Dict[str, object]
     ))
     if seating_values:
         metadata['seating'] = seating_values
-    fuel = pick_fuel_description(descs)
+    fuel = infer_fuel_types(_all_engine_fuel_descriptions(data), data.vehicle_name)
     if fuel:
         metadata['fuel_type'] = fuel
     return metadata
 
 def extract_manifest_metadata_for_trim(data: WorkbookData, trim: TrimDef) -> Dict[str, object]:
-    descs = standardish_trim_descriptions(data, trim)
     metadata: Dict[str, object] = {}
     trim_name = normalize_text(trim.name)
     if trim_name:
@@ -926,7 +1005,7 @@ def extract_manifest_metadata_for_trim(data: WorkbookData, trim: TrimDef) -> Dic
     seating_values = trim_seating(data, trim)
     if seating_values:
         metadata['seating'] = seating_values
-    fuel = pick_fuel_description(descs)
+    fuel = infer_fuel_types(_trim_engine_fuel_descriptions(data, trim), data.vehicle_name)
     if fuel:
         metadata['fuel_type'] = fuel
     drivetrains = trim_drivetrains(data, trim)
