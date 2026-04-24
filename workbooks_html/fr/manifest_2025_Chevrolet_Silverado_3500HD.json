@@ -473,9 +473,10 @@
         "4RM"
       ],
       "body_styles": [
-        "Cabine classique",
-        "Cabine double",
-        "Cabine multiplace"
+        "Cabine classique, caisse longue",
+        "Cabine double, caisse longue",
+        "Cabine multiplace, caisse standard",
+        "Cabine multiplace, caisse longue"
       ],
       "year": "2025",
       "make": "Chevrolet",
@@ -529,9 +530,10 @@
         "4RM"
       ],
       "body_styles": [
-        "Cabine classique",
-        "Cabine double",
-        "Cabine multiplace"
+        "Cabine classique, caisse longue",
+        "Cabine double, caisse longue",
+        "Cabine multiplace, caisse standard",
+        "Cabine multiplace, caisse longue"
       ],
       "year": "2025",
       "make": "Chevrolet",
@@ -585,9 +587,10 @@
         "4RM"
       ],
       "body_styles": [
-        "Cabine classique",
-        "Cabine double",
-        "Cabine multiplace"
+        "Cabine classique, caisse longue",
+        "Cabine double, caisse longue",
+        "Cabine multiplace, caisse standard",
+        "Cabine multiplace, caisse longue"
       ],
       "year": "2025",
       "make": "Chevrolet",
@@ -639,7 +642,8 @@
         "4RM"
       ],
       "body_styles": [
-        "Cabine multiplace"
+        "Cabine multiplace, caisse standard",
+        "Cabine multiplace, caisse longue"
       ],
       "year": "2025",
       "make": "Chevrolet",
