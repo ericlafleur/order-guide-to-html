@@ -906,9 +906,6 @@
       "name": "4WT 4WD 14C43",
       "title": "2026 Chevrolet Colorado | Configuration powertrain and trailering | 4WT 4WD 14C43",
       "configuration_kind": "powertrain-trailering-group",
-      "configuration_labels": [
-        "S = Standard Equipment A = Available -- (dashes) = Not Available D = ADI Available ■ = Included in Equipment Group □ = Included in Equipment Group but upgradeable * = Indicates availability of feature on multiple models."
-      ],
       "guide_categories": [
         "MFC 8-Speed Automatic",
         "GU6 3.42",
@@ -948,9 +945,6 @@
       "name": "4LT 4WD 14C43",
       "title": "2026 Chevrolet Colorado | Configuration powertrain and trailering | 4LT 4WD 14C43",
       "configuration_kind": "powertrain-trailering-group",
-      "configuration_labels": [
-        "S = Standard Equipment A = Available -- (dashes) = Not Available D = ADI Available ■ = Included in Equipment Group □ = Included in Equipment Group but upgradeable * = Indicates availability of feature on multiple models."
-      ],
       "guide_categories": [
         "MFC 8-Speed Automatic",
         "GU6 3.42",
@@ -990,9 +984,6 @@
       "name": "0TR 4WD 14E43",
       "title": "2026 Chevrolet Colorado | Configuration powertrain and trailering | 0TR 4WD 14E43",
       "configuration_kind": "powertrain-trailering-group",
-      "configuration_labels": [
-        "S = Standard Equipment A = Available -- (dashes) = Not Available D = ADI Available ■ = Included in Equipment Group □ = Included in Equipment Group but upgradeable * = Indicates availability of feature on multiple models."
-      ],
       "guide_categories": [
         "MFC 8-Speed Automatic",
         "GU6 3.42",
@@ -1032,9 +1023,6 @@
       "name": "4Z7 4WD 14G43",
       "title": "2026 Chevrolet Colorado | Configuration powertrain and trailering | 4Z7 4WD 14G43",
       "configuration_kind": "powertrain-trailering-group",
-      "configuration_labels": [
-        "S = Standard Equipment A = Available -- (dashes) = Not Available D = ADI Available ■ = Included in Equipment Group □ = Included in Equipment Group but upgradeable * = Indicates availability of feature on multiple models."
-      ],
       "guide_categories": [
         "MFC 8-Speed Automatic",
         "GU6 3.42",
@@ -1074,9 +1062,6 @@
       "name": "4ZR 4WD 14H43",
       "title": "2026 Chevrolet Colorado | Configuration powertrain and trailering | 4ZR 4WD 14H43",
       "configuration_kind": "powertrain-trailering-group",
-      "configuration_labels": [
-        "S = Standard Equipment A = Available -- (dashes) = Not Available D = ADI Available ■ = Included in Equipment Group □ = Included in Equipment Group but upgradeable * = Indicates availability of feature on multiple models."
-      ],
       "guide_categories": [
         "MFC 8-Speed Automatic",
         "GU6 3.42",

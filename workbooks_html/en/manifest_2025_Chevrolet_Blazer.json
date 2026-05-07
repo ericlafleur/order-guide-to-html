@@ -717,9 +717,6 @@
       "name": "2LT, 3LT, RS and Premier",
       "title": "2025 Chevrolet Blazer | Configuration powertrain and trailering | 2LT, 3LT, RS and Premier",
       "configuration_kind": "powertrain-trailering-group",
-      "configuration_labels": [
-        "S = Standard Equipment A = Available -- (dashes) = Not Available D = ADI Available ■ = Included in Equipment Group □ = Included in Equipment Group but upgradeable * = Indicates availability of feature on multiple models."
-      ],
       "guide_categories": [
         "M3V 9-speed automatic",
         "FXC 3.49",

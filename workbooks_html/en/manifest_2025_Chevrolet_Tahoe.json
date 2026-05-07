@@ -932,9 +932,6 @@
       "node_id": "SF40D26761DF4382F",
       "title": "2025 Chevrolet Tahoe | Configuration powertrain and trailering",
       "configuration_kind": "powertrain-trailering-group",
-      "configuration_labels": [
-        "S = Standard Equipment A = Available -- (dashes) = Not Available D = ADI Available ■ = Included in Equipment Group □ = Included in Equipment Group but upgradeable * = Indicates availability of feature on multiple models."
-      ],
       "guide_categories": [
         "MHS 10-speed automatic",
         "GU5 3.23",
@@ -989,9 +986,6 @@
       "node_id": "S970FC6329EF35A84",
       "title": "2025 Chevrolet Tahoe | Configuration powertrain and trailering",
       "configuration_kind": "powertrain-trailering-group",
-      "configuration_labels": [
-        "S = Standard Equipment A = Available -- (dashes) = Not Available D = ADI Available ■ = Included in Equipment Group □ = Included in Equipment Group but upgradeable * = Indicates availability of feature on multiple models."
-      ],
       "guide_categories": [
         "MHS 10-speed automatic",
         "GU5 3.23",

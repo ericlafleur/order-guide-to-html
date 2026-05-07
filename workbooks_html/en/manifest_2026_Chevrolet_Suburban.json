@@ -878,9 +878,6 @@
       "node_id": "S3CBA42C0C6725D53",
       "title": "2026 Chevrolet Suburban | Configuration powertrain and trailering",
       "configuration_kind": "powertrain-trailering-group",
-      "configuration_labels": [
-        "S = Standard Equipment A = Available -- (dashes) = Not Available D = ADI Available ■ = Included in Equipment Group □ = Included in Equipment Group but upgradeable * = Indicates availability of feature on multiple models."
-      ],
       "guide_categories": [
         "MHS 10-speed automatic",
         "GU5 3.23",

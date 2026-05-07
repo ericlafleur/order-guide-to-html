@@ -646,9 +646,6 @@
       "name": "AWD",
       "title": "2026 Chevrolet Equinox | Configuration powertrain and trailering | AWD",
       "configuration_kind": "powertrain-trailering-group",
-      "configuration_labels": [
-        "S = Standard Equipment A = Available -- (dashes) = Not Available D = ADI Available ■ = Included in Equipment Group □ = Included in Equipment Group but upgradeable * = Indicates availability of feature on multiple models."
-      ],
       "guide_categories": [
         "MGH 8-speed automatic",
         "FHB 3.47",

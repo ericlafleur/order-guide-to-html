@@ -701,9 +701,6 @@
       "name": "2LT, 3LT, RS and Premier",
       "title": "2025 Chevrolet Blazer | Configuration powertrain and trailering | 2LT, 3LT, RS and Premier",
       "configuration_kind": "powertrain-trailering-group",
-      "configuration_labels": [
-        "S = Équipement de série A = Livrable -- (dashes) = Non livrable D = Carré noir – Compris dans le groupe d'équipements ■ = Inclus dans le groupe d'équipement □ = Inclus dans le groupe d'équipement mais évolutif * = Indique disponibilité de ce type sur plusieurs modèles."
-      ],
       "guide_categories": [
         "M3V Boîte automatique à 9 vitesses",
         "FXC 3,49",

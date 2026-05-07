@@ -1468,7 +1468,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S8FB5A6CDEC9256AD",
-      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering",
+      "name": "Cabine classique, caisse standard; Cabine classique",
+      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering | Cabine classique, caisse standard; Cabine classique",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Cabine classique, caisse standard",
@@ -1521,7 +1522,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S0580CC2F9EB763A1",
-      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering",
+      "name": "Cabine classique, caisse standard; Cabine classique",
+      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering | Cabine classique, caisse standard; Cabine classique",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Cabine classique, caisse standard",
@@ -1574,7 +1576,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SF299BEF6FB01EE85",
-      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering",
+      "name": "Cabine classique, caisse longue; Cabine classique",
+      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering | Cabine classique, caisse longue; Cabine classique",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Cabine classique, caisse longue",
@@ -1631,7 +1634,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S6B685DC79776C667",
-      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering",
+      "name": "Cabine classique, caisse longue; Cabine classique",
+      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering | Cabine classique, caisse longue; Cabine classique",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Cabine classique, caisse longue",
@@ -1688,7 +1692,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S5BCAFDCBE4314B00",
-      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering",
+      "name": "Cabine double, caisse standard; Cabine double",
+      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering | Cabine double, caisse standard; Cabine double",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Cabine double, caisse standard",
@@ -1752,7 +1757,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S9E090E11BC31DE36",
-      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering",
+      "name": "Cabine double, caisse standard; Cabine double",
+      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering | Cabine double, caisse standard; Cabine double",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Cabine double, caisse standard",
@@ -1817,7 +1823,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S6ACF1F4E3B89F477",
-      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering",
+      "name": "Cabine multiplace, caisse courte; Cabine multiplace",
+      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering | Cabine multiplace, caisse courte; Cabine multiplace",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Cabine multiplace, caisse courte",
@@ -1880,7 +1887,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SBD6CED1921B017FE",
-      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering",
+      "name": "Cabine multiplace, caisse courte; Cabine multiplace",
+      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering | Cabine multiplace, caisse courte; Cabine multiplace",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Cabine multiplace, caisse courte",
@@ -1949,7 +1957,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SE55EF52AB15F6216",
-      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering",
+      "name": "Cabine multiplace, caisse standard; Cabine multiplace",
+      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering | Cabine multiplace, caisse standard; Cabine multiplace",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Cabine multiplace, caisse standard",
@@ -2014,7 +2023,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S68DC0BC8E91B783A",
-      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering",
+      "name": "Cabine multiplace, caisse standard; Cabine multiplace",
+      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering | Cabine multiplace, caisse standard; Cabine multiplace",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Cabine multiplace, caisse standard",

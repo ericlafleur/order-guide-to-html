@@ -1044,7 +1044,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SB3D777FB5182FECD",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering",
+      "name": "Crew Cab, Standard Bed; Crew Cab",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Crew Cab, Standard Bed; Crew Cab",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Crew Cab, Standard Bed",
@@ -1086,7 +1087,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SFD188A3C16AF5836",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering",
+      "name": "Crew Cab, Standard Bed; Crew Cab",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Crew Cab, Standard Bed; Crew Cab",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Crew Cab, Standard Bed",
@@ -1128,7 +1130,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S8BB636413FA96F28",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering",
+      "name": "Crew Cab, Long Bed; Crew Cab",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Crew Cab, Long Bed; Crew Cab",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Crew Cab, Long Bed",
@@ -1170,7 +1173,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SE0E7A2C31AFDAA96",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering",
+      "name": "Crew Cab, Long Bed; Crew Cab",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Crew Cab, Long Bed; Crew Cab",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Crew Cab, Long Bed",
@@ -1212,7 +1216,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SCAEE4D2690DB5E44",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering",
+      "name": "Double Cab, Long Bed; Double Cab",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Double Cab, Long Bed; Double Cab",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Double Cab, Long Bed",
@@ -1254,7 +1259,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SFC3AE025AFA2E242",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering",
+      "name": "Double Cab, Long Bed; Double Cab",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Double Cab, Long Bed; Double Cab",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Double Cab, Long Bed",
@@ -1296,7 +1302,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S94DCE1A012B3AD50",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering",
+      "name": "Regular Cab, Long Bed; Regular Cab",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Regular Cab, Long Bed; Regular Cab",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Regular Cab, Long Bed",
@@ -1338,7 +1345,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S479554E4ACA18480",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering",
+      "name": "Regular Cab, Long Bed; Regular Cab",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Regular Cab, Long Bed; Regular Cab",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Regular Cab, Long Bed",

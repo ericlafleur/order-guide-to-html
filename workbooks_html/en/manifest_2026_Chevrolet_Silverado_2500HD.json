@@ -1279,7 +1279,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SAE5C77EFEA94A44D",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering",
+      "name": "Crew Cab, Standard Bed; Crew Cab",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Crew Cab, Standard Bed; Crew Cab",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Crew Cab, Standard Bed",
@@ -1334,7 +1335,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S63FB5185986CFBF2",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering",
+      "name": "Crew Cab, Standard Bed; Crew Cab",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Crew Cab, Standard Bed; Crew Cab",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Crew Cab, Standard Bed",
@@ -1390,7 +1392,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S064BB671DE9A6772",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering",
+      "name": "Crew Cab, Long Bed; Crew Cab",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Crew Cab, Long Bed; Crew Cab",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Crew Cab, Long Bed",
@@ -1445,7 +1448,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S288F79E8240943D2",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering",
+      "name": "Crew Cab, Long Bed; Crew Cab",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Crew Cab, Long Bed; Crew Cab",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Crew Cab, Long Bed",
@@ -1501,7 +1505,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S195345D107BB22ED",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering",
+      "name": "Double Cab, Standard Bed; Double Cab",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Double Cab, Standard Bed; Double Cab",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Double Cab, Standard Bed",
@@ -1556,7 +1561,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SEED3AB01EF2E87A9",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering",
+      "name": "Double Cab, Standard Bed; Double Cab",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Double Cab, Standard Bed; Double Cab",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Double Cab, Standard Bed",
@@ -1611,7 +1617,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SD4DD4EF85C6BF66A",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering",
+      "name": "Double Cab, Long Bed; Double Cab",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Double Cab, Long Bed; Double Cab",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Double Cab, Long Bed",
@@ -1666,7 +1673,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S678D0C704E6DF028",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering",
+      "name": "Double Cab, Long Bed; Double Cab",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Double Cab, Long Bed; Double Cab",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Double Cab, Long Bed",
@@ -1721,7 +1729,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S860B91B8DE6B6A02",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering",
+      "name": "Regular Cab, Long Bed; Regular Cab",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Regular Cab, Long Bed; Regular Cab",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Regular Cab, Long Bed",
@@ -1776,7 +1785,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S5310F4631A81AFB6",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering",
+      "name": "Regular Cab, Long Bed; Regular Cab",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Regular Cab, Long Bed; Regular Cab",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Regular Cab, Long Bed",

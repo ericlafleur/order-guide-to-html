@@ -646,9 +646,6 @@
       "name": "à TI",
       "title": "2026 Chevrolet Equinox | Configuration powertrain and trailering | à TI",
       "configuration_kind": "powertrain-trailering-group",
-      "configuration_labels": [
-        "S = Équipement de série A = Livrable -- (dashes) = Non livrable D = Carré noir – Compris dans le groupe d'équipements ■ = Inclus dans le groupe d'équipement □ = Inclus dans le groupe d'équipement mais évolutif * = Indique disponibilité de ce type sur plusieurs modèles."
-      ],
       "guide_categories": [
         "MGH Automatique à 8 vitesses",
         "FHB 3,47",

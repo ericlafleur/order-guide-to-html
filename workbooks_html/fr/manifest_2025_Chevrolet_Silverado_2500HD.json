@@ -1279,7 +1279,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SFB36397B61AE2B20",
-      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering",
+      "name": "Cabine classique, caisse longue; Cabine classique",
+      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Cabine classique, caisse longue; Cabine classique",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Cabine classique, caisse longue",
@@ -1334,7 +1335,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S0BA78CFDFE09D9FF",
-      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering",
+      "name": "Cabine classique, caisse longue; Cabine classique",
+      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Cabine classique, caisse longue; Cabine classique",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Cabine classique, caisse longue",
@@ -1389,7 +1391,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SD7B1A8D688B0F86B",
-      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering",
+      "name": "Cabine double, caisse standard; Cabine double",
+      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Cabine double, caisse standard; Cabine double",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Cabine double, caisse standard",
@@ -1444,7 +1447,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S1B75D2317B9DE459",
-      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering",
+      "name": "Cabine double, caisse standard; Cabine double",
+      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Cabine double, caisse standard; Cabine double",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Cabine double, caisse standard",
@@ -1499,7 +1503,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SEECB3ED9948B4BFF",
-      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering",
+      "name": "Cabine double, caisse longue; Cabine double",
+      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Cabine double, caisse longue; Cabine double",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Cabine double, caisse longue",
@@ -1554,7 +1559,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SD8B97B67CC57BAB3",
-      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering",
+      "name": "Cabine double, caisse longue; Cabine double",
+      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Cabine double, caisse longue; Cabine double",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Cabine double, caisse longue",
@@ -1609,7 +1615,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S7D94E3262ECB00F8",
-      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering",
+      "name": "Cabine multiplace, caisse standard; Cabine multiplace",
+      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Cabine multiplace, caisse standard; Cabine multiplace",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Cabine multiplace, caisse standard",
@@ -1664,7 +1671,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SDAC1F61B1C8FB022",
-      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering",
+      "name": "Cabine multiplace, caisse standard; Cabine multiplace",
+      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Cabine multiplace, caisse standard; Cabine multiplace",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Cabine multiplace, caisse standard",
@@ -1720,7 +1728,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S812F0C4DC5F07423",
-      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering",
+      "name": "Cabine multiplace, caisse longue; Cabine multiplace",
+      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Cabine multiplace, caisse longue; Cabine multiplace",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Cabine multiplace, caisse longue",
@@ -1775,7 +1784,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SC03CC0E10A51B42A",
-      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering",
+      "name": "Cabine multiplace, caisse longue; Cabine multiplace",
+      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Cabine multiplace, caisse longue; Cabine multiplace",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Cabine multiplace, caisse longue",

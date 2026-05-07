@@ -930,9 +930,6 @@
       "node_id": "SB1E2E039FB48223B",
       "title": "2026 Chevrolet Tahoe | Configuration powertrain and trailering",
       "configuration_kind": "powertrain-trailering-group",
-      "configuration_labels": [
-        "S = Standard Equipment A = Available -- (dashes) = Not Available D = ADI Available ■ = Included in Equipment Group □ = Included in Equipment Group but upgradeable * = Indicates availability of feature on multiple models."
-      ],
       "guide_categories": [
         "MHS 10-speed automatic",
         "GU5 3.23",

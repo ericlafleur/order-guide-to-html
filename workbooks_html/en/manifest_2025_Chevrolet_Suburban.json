@@ -873,9 +873,6 @@
       "node_id": "S2557C10871498FF1",
       "title": "2025 Chevrolet Suburban | Configuration powertrain and trailering",
       "configuration_kind": "powertrain-trailering-group",
-      "configuration_labels": [
-        "S = Standard Equipment A = Available -- (dashes) = Not Available D = ADI Available ■ = Included in Equipment Group □ = Included in Equipment Group but upgradeable * = Indicates availability of feature on multiple models."
-      ],
       "guide_categories": [
         "MHS 10-speed automatic",
         "GU5 3.23",
@@ -929,9 +926,6 @@
       "node_id": "S35E04D204A72542A",
       "title": "2025 Chevrolet Suburban | Configuration powertrain and trailering",
       "configuration_kind": "powertrain-trailering-group",
-      "configuration_labels": [
-        "S = Standard Equipment A = Available -- (dashes) = Not Available D = ADI Available ■ = Included in Equipment Group □ = Included in Equipment Group but upgradeable * = Indicates availability of feature on multiple models."
-      ],
       "guide_categories": [
         "MHS 10-speed automatic",
         "GU5 3.23",
