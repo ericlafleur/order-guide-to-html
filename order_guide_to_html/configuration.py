@@ -500,8 +500,9 @@ def group_powertrain_trailering_for_cpr(data: WorkbookData) -> List[PowertrainTr
 
     for entry in data.engine_axle_entries:
         g = ensure_group(entry.model_code)
-        if entry.top_label:
-            g.top_labels.append(normalize_text(entry.top_label))
+        label = normalize_text(entry.top_label)
+        if label and any(token.lower() in label.lower() for token in MANIFEST_BODY_STYLE_TOKENS):
+            g.top_labels.append(label)
         g.engine_entries.append(entry)
 
     for record in data.trailering_records:

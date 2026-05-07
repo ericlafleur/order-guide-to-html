@@ -2575,8 +2575,8 @@ def powertrain_trailering_manifest_metadata(data: WorkbookData, group: Powertrai
     max_trailer_weights = unique_preserve_order(record.max_trailer_weight for record in group.trailering_records if normalize_text(record.max_trailer_weight))
     guide_categories = unique_preserve_order(item.category for entry in group.engine_entries for item in entry.items if normalize_text(item.category))
     metadata: Dict[str, object] = {
-        'name': group.model_code,
-        'title': article_heading(data.vehicle_name, f'Configuration powertrain and trailering | {group.model_code}'),
+        'name': ' ; '.join(group.top_labels) if group.top_labels else group.model_code,
+        'title': article_heading(data.vehicle_name, f'Configuration powertrain and trailering | {" ; ".join(group.top_labels)}') if group.top_labels else article_heading(data.vehicle_name, f'Configuration powertrain and trailering | {group.model_code}'),
         'source_tabs': unique_preserve_order([entry.sheet_name for entry in group.engine_entries] + [record.sheet_name for record in group.trailering_records]),
         'configuration_kind': CONFIG_KIND_POWERTRAIN_TRAILERING_GROUP,
         'model_code': group.model_code,
