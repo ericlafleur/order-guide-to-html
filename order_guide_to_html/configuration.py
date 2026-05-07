@@ -494,8 +494,9 @@ def group_powertrain_trailering_for_cpr(data: WorkbookData) -> List[PowertrainTr
         if not model_code:
             continue
         g = ensure_group(model_code)
-        if group.top_label:
-            g.top_labels.append(group.top_label)
+        label = spec_group_body_style_label(group)
+        if label:
+            g.top_labels.append(label)
 
     for entry in data.engine_axle_entries:
         g = ensure_group(entry.model_code)

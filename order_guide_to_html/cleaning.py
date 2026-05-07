@@ -105,6 +105,7 @@ class GuideTextCleaner:
             'Specifications': 'Spécifications',
             'Details': 'Détails',
             'Notes': 'Notes',
+            'Body style': 'Style de carrosserie',
             'Engines': 'Moteurs',
             'Trailering ratings': 'Cotes de remorquage',
             'Configuration identity': 'Identité de configuration',

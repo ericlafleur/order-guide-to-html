@@ -296,6 +296,11 @@ class HtmlRenderer:
     def render_powertrain_trailering_group_page(self, data, group: PowertrainTraileringGroup, trim=None) -> str:
         entity = self.cleaner.clean_trim_heading(data, trim) if trim is not None else data.vehicle_name
         engines = unique_preserve_order([entry.engine for entry in group.engine_entries] + [record.engine for record in group.trailering_records])
+        identity_extra = []
+        if group.top_labels:
+            identity_extra.append((self.cleaner.t('Body style'), ' ; '.join(group.top_labels)))
+        if engines:
+            identity_extra.append((self.cleaner.t('Engines'), ' ; '.join(engines)))
         parts = [
             '<section class="configuration-identity">'
             + self.cleaner.cleaned_render_article(
@@ -304,7 +309,7 @@ class HtmlRenderer:
                     data,
                     trim,
                     category=self.cleaner.t('Powertrain and trailering') if self.cleaner.language == 'fr' else 'Powertrain and trailering',
-                    extra_fields=[(self.cleaner.t('Engines'), ' ; '.join(engines))] if engines else [],
+                    extra_fields=identity_extra,
                 ),
             )
             + '</section>'
@@ -362,8 +367,9 @@ class HtmlRenderer:
                     )
                     + '</section>'
                 )
+        title_context = ' ; '.join(group.top_labels) if group.top_labels else group.model_code
         return self.cleaner.clean_title_document(
-            self.cleaner.article_heading(entity, f"{self.cleaner.t('Powertrain and trailering')} | {group.model_code}"),
+            self.cleaner.article_heading(entity, f"{self.cleaner.t('Powertrain and trailering')} | {title_context}"),
             ''.join(parts),
         )
 
