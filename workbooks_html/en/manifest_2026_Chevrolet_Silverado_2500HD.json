@@ -1279,8 +1279,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SAE5C77EFEA94A44D",
-      "name": "Crew Cab, Standard Bed; Crew Cab",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Crew Cab, Standard Bed; Crew Cab",
+      "name": "Crew Cab, Standard Bed; Crew Cab | 2WD",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Crew Cab, Standard Bed; Crew Cab | 2WD",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Crew Cab, Standard Bed",
@@ -1293,6 +1293,9 @@
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "2WD"
       ],
       "engines": [
         "6.6L V8 gasoline",
@@ -1335,8 +1338,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S63FB5185986CFBF2",
-      "name": "Crew Cab, Standard Bed; Crew Cab",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Crew Cab, Standard Bed; Crew Cab",
+      "name": "Crew Cab, Standard Bed; Crew Cab | 4WD",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Crew Cab, Standard Bed; Crew Cab | 4WD",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Crew Cab, Standard Bed",
@@ -1349,6 +1352,9 @@
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "4WD"
       ],
       "engines": [
         "6.6L V8 gasoline",
@@ -1392,8 +1398,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S064BB671DE9A6772",
-      "name": "Crew Cab, Long Bed; Crew Cab",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Crew Cab, Long Bed; Crew Cab",
+      "name": "Crew Cab, Long Bed; Crew Cab | 2WD",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Crew Cab, Long Bed; Crew Cab | 2WD",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Crew Cab, Long Bed",
@@ -1406,6 +1412,9 @@
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "2WD"
       ],
       "engines": [
         "6.6L V8 gasoline",
@@ -1448,8 +1457,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S288F79E8240943D2",
-      "name": "Crew Cab, Long Bed; Crew Cab",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Crew Cab, Long Bed; Crew Cab",
+      "name": "Crew Cab, Long Bed; Crew Cab | 4WD",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Crew Cab, Long Bed; Crew Cab | 4WD",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Crew Cab, Long Bed",
@@ -1462,6 +1471,9 @@
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "4WD"
       ],
       "engines": [
         "6.6L V8 gasoline",
@@ -1505,8 +1517,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S195345D107BB22ED",
-      "name": "Double Cab, Standard Bed; Double Cab",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Double Cab, Standard Bed; Double Cab",
+      "name": "Double Cab, Standard Bed; Double Cab | 2WD",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Double Cab, Standard Bed; Double Cab | 2WD",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Double Cab, Standard Bed",
@@ -1519,6 +1531,9 @@
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "2WD"
       ],
       "engines": [
         "6.6L V8 gasoline",
@@ -1561,8 +1576,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SEED3AB01EF2E87A9",
-      "name": "Double Cab, Standard Bed; Double Cab",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Double Cab, Standard Bed; Double Cab",
+      "name": "Double Cab, Standard Bed; Double Cab | 4WD",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Double Cab, Standard Bed; Double Cab | 4WD",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Double Cab, Standard Bed",
@@ -1575,6 +1590,9 @@
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "4WD"
       ],
       "engines": [
         "6.6L V8 gasoline",
@@ -1617,8 +1635,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SD4DD4EF85C6BF66A",
-      "name": "Double Cab, Long Bed; Double Cab",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Double Cab, Long Bed; Double Cab",
+      "name": "Double Cab, Long Bed; Double Cab | 2WD",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Double Cab, Long Bed; Double Cab | 2WD",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Double Cab, Long Bed",
@@ -1631,6 +1649,9 @@
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "2WD"
       ],
       "engines": [
         "6.6L V8 gasoline",
@@ -1673,8 +1694,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S678D0C704E6DF028",
-      "name": "Double Cab, Long Bed; Double Cab",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Double Cab, Long Bed; Double Cab",
+      "name": "Double Cab, Long Bed; Double Cab | 4WD",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Double Cab, Long Bed; Double Cab | 4WD",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Double Cab, Long Bed",
@@ -1687,6 +1708,9 @@
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "4WD"
       ],
       "engines": [
         "6.6L V8 gasoline",
@@ -1729,8 +1753,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S860B91B8DE6B6A02",
-      "name": "Regular Cab, Long Bed; Regular Cab",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Regular Cab, Long Bed; Regular Cab",
+      "name": "Regular Cab, Long Bed; Regular Cab | 2WD",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Regular Cab, Long Bed; Regular Cab | 2WD",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Regular Cab, Long Bed",
@@ -1743,6 +1767,9 @@
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "2WD"
       ],
       "engines": [
         "6.6L V8 gasoline",
@@ -1785,8 +1812,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S5310F4631A81AFB6",
-      "name": "Regular Cab, Long Bed; Regular Cab",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Regular Cab, Long Bed; Regular Cab",
+      "name": "Regular Cab, Long Bed; Regular Cab | 4WD",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Regular Cab, Long Bed; Regular Cab | 4WD",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Regular Cab, Long Bed",
@@ -1799,6 +1826,9 @@
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "4WD"
       ],
       "engines": [
         "6.6L V8 gasoline",

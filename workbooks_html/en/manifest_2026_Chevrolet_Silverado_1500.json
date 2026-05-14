@@ -1464,8 +1464,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S6ACF1F4E3B89F477",
-      "name": "Crew Cab, Short Bed; Crew Cab",
-      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering | Crew Cab, Short Bed; Crew Cab",
+      "name": "Crew Cab, Short Bed; Crew Cab | 2WD",
+      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering | Crew Cab, Short Bed; Crew Cab | 2WD",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Crew Cab, Short Bed",
@@ -1479,6 +1479,9 @@
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "2WD"
       ],
       "engines": [
         "TurboMax",
@@ -1528,8 +1531,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SBD6CED1921B017FE",
-      "name": "Crew Cab, Short Bed; Crew Cab",
-      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering | Crew Cab, Short Bed; Crew Cab",
+      "name": "Crew Cab, Short Bed; Crew Cab | 4WD",
+      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering | Crew Cab, Short Bed; Crew Cab | 4WD",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Crew Cab, Short Bed",
@@ -1543,6 +1546,9 @@
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "4WD"
       ],
       "engines": [
         "TurboMax",
@@ -1598,8 +1604,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SE55EF52AB15F6216",
-      "name": "Crew Cab, Standard Bed; Crew Cab",
-      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering | Crew Cab, Standard Bed; Crew Cab",
+      "name": "Crew Cab, Standard Bed; Crew Cab | 2WD",
+      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering | Crew Cab, Standard Bed; Crew Cab | 2WD",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Crew Cab, Standard Bed",
@@ -1613,6 +1619,9 @@
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "2WD"
       ],
       "engines": [
         "TurboMax",
@@ -1664,8 +1673,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S68DC0BC8E91B783A",
-      "name": "Crew Cab, Standard Bed; Crew Cab",
-      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering | Crew Cab, Standard Bed; Crew Cab",
+      "name": "Crew Cab, Standard Bed; Crew Cab | 4WD",
+      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering | Crew Cab, Standard Bed; Crew Cab | 4WD",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Crew Cab, Standard Bed",
@@ -1679,6 +1688,9 @@
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "4WD"
       ],
       "engines": [
         "TurboMax",
@@ -1733,8 +1745,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S5BCAFDCBE4314B00",
-      "name": "Double Cab, Standard Bed; Double Cab",
-      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering | Double Cab, Standard Bed; Double Cab",
+      "name": "Double Cab, Standard Bed; Double Cab | 2WD",
+      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering | Double Cab, Standard Bed; Double Cab | 2WD",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Double Cab, Standard Bed",
@@ -1748,6 +1760,9 @@
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "2WD"
       ],
       "engines": [
         "TurboMax",
@@ -1798,8 +1813,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S9E090E11BC31DE36",
-      "name": "Double Cab, Standard Bed; Double Cab",
-      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering | Double Cab, Standard Bed; Double Cab",
+      "name": "Double Cab, Standard Bed; Double Cab | 4WD",
+      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering | Double Cab, Standard Bed; Double Cab | 4WD",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Double Cab, Standard Bed",
@@ -1813,6 +1828,9 @@
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "4WD"
       ],
       "engines": [
         "TurboMax",
@@ -1864,8 +1882,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S8FB5A6CDEC9256AD",
-      "name": "Regular Cab, Standard Bed; Regular Cab",
-      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering | Regular Cab, Standard Bed; Regular Cab",
+      "name": "Regular Cab, Standard Bed; Regular Cab | 2WD",
+      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering | Regular Cab, Standard Bed; Regular Cab | 2WD",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Regular Cab, Standard Bed",
@@ -1879,6 +1897,9 @@
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "2WD"
       ],
       "engines": [
         "TurboMax"
@@ -1918,8 +1939,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S0580CC2F9EB763A1",
-      "name": "Regular Cab, Standard Bed; Regular Cab",
-      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering | Regular Cab, Standard Bed; Regular Cab",
+      "name": "Regular Cab, Standard Bed; Regular Cab | 4WD",
+      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering | Regular Cab, Standard Bed; Regular Cab | 4WD",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Regular Cab, Standard Bed",
@@ -1933,6 +1954,9 @@
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "4WD"
       ],
       "engines": [
         "TurboMax"
@@ -1972,8 +1996,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SF299BEF6FB01EE85",
-      "name": "Regular Cab, Long Bed; Regular Cab",
-      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering | Regular Cab, Long Bed; Regular Cab",
+      "name": "Regular Cab, Long Bed; Regular Cab | 2WD",
+      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering | Regular Cab, Long Bed; Regular Cab | 2WD",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Regular Cab, Long Bed",
@@ -1987,6 +2011,9 @@
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "2WD"
       ],
       "engines": [
         "TurboMax",
@@ -2030,8 +2057,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S6B685DC79776C667",
-      "name": "Regular Cab, Long Bed; Regular Cab",
-      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering | Regular Cab, Long Bed; Regular Cab",
+      "name": "Regular Cab, Long Bed; Regular Cab | 4WD",
+      "title": "2026 Chevrolet Silverado 1500 | Configuration powertrain and trailering | Regular Cab, Long Bed; Regular Cab | 4WD",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Regular Cab, Long Bed",
@@ -2045,6 +2072,9 @@
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "4WD"
       ],
       "engines": [
         "TurboMax",

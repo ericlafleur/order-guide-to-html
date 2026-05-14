@@ -745,7 +745,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S7F495622627654F0",
-      "title": "2025 Chevrolet Suburban | Configuration dimensions and specifications",
+      "name": "2WD",
+      "title": "2025 Chevrolet Suburban | Configuration dimensions and specifications | 2WD",
       "configuration_kind": "spec-group",
       "configuration_label": "2WD",
       "drivetrain": "2WD",
@@ -781,7 +782,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SC7C66C04B985186E",
-      "title": "2025 Chevrolet Suburban | Configuration dimensions and specifications",
+      "name": "4WD",
+      "title": "2025 Chevrolet Suburban | Configuration dimensions and specifications | 4WD",
       "configuration_kind": "spec-group",
       "configuration_label": "4WD",
       "drivetrain": "4WD",
@@ -829,10 +831,14 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S3B2BBDC06877F4C2",
-      "title": "2025 Chevrolet Suburban | Configuration powertrain and trailering",
+      "name": "2WD",
+      "title": "2025 Chevrolet Suburban | Configuration powertrain and trailering | 2WD",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch"
+      ],
+      "drivetrains": [
+        "2WD"
       ],
       "engines": [
         "5.3L EcoTec3 V8"
@@ -871,7 +877,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S2557C10871498FF1",
-      "title": "2025 Chevrolet Suburban | Configuration powertrain and trailering",
+      "name": "4WD",
+      "title": "2025 Chevrolet Suburban | Configuration powertrain and trailering | 4WD",
       "configuration_kind": "powertrain-trailering-group",
       "guide_categories": [
         "MHS 10-speed automatic",
@@ -881,6 +888,9 @@
       ],
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch"
+      ],
+      "drivetrains": [
+        "4WD"
       ],
       "engines": [
         "5.3L EcoTec3 V8",

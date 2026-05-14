@@ -1044,8 +1044,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S8C045EDE1F503248",
-      "name": "Cabine classique, caisse longue; Cabine classique",
-      "title": "2026 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Cabine classique, caisse longue; Cabine classique",
+      "name": "Cabine classique, caisse longue; Cabine classique | 2RM",
+      "title": "2026 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Cabine classique, caisse longue; Cabine classique | 2RM",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Cabine classique, caisse longue",
@@ -1054,6 +1054,9 @@
       "guide_categories": [
         "Boîtes de vitesses",
         "Ponts"
+      ],
+      "drivetrains": [
+        "2RM"
       ],
       "engines": [
         "V8 à essence de 6,6 L",
@@ -1087,8 +1090,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SA3B8E779E8E54F89",
-      "name": "Cabine classique, caisse longue; Cabine classique",
-      "title": "2026 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Cabine classique, caisse longue; Cabine classique",
+      "name": "Cabine classique, caisse longue; Cabine classique | 4RM",
+      "title": "2026 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Cabine classique, caisse longue; Cabine classique | 4RM",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Cabine classique, caisse longue",
@@ -1097,6 +1100,9 @@
       "guide_categories": [
         "Boîtes de vitesses",
         "Ponts"
+      ],
+      "drivetrains": [
+        "4RM"
       ],
       "engines": [
         "V8 à essence de 6,6 L",
@@ -1130,8 +1136,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S7A29A878B026CF5A",
-      "name": "Cabine double, caisse longue; Cabine double",
-      "title": "2026 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Cabine double, caisse longue; Cabine double",
+      "name": "Cabine double, caisse longue; Cabine double | 2RM",
+      "title": "2026 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Cabine double, caisse longue; Cabine double | 2RM",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Cabine double, caisse longue",
@@ -1140,6 +1146,9 @@
       "guide_categories": [
         "Boîtes de vitesses",
         "Ponts"
+      ],
+      "drivetrains": [
+        "2RM"
       ],
       "engines": [
         "V8 à essence de 6,6 L",
@@ -1173,8 +1182,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SC97D44E914C3918A",
-      "name": "Cabine double, caisse longue; Cabine double",
-      "title": "2026 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Cabine double, caisse longue; Cabine double",
+      "name": "Cabine double, caisse longue; Cabine double | 4RM",
+      "title": "2026 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Cabine double, caisse longue; Cabine double | 4RM",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Cabine double, caisse longue",
@@ -1183,6 +1192,9 @@
       "guide_categories": [
         "Boîtes de vitesses",
         "Ponts"
+      ],
+      "drivetrains": [
+        "4RM"
       ],
       "engines": [
         "V8 à essence de 6,6 L",
@@ -1216,8 +1228,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S4DFC236EEAD3057D",
-      "name": "Cabine multiplace, caisse standard; Cabine multiplace",
-      "title": "2026 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Cabine multiplace, caisse standard; Cabine multiplace",
+      "name": "Cabine multiplace, caisse standard; Cabine multiplace | 2RM",
+      "title": "2026 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Cabine multiplace, caisse standard; Cabine multiplace | 2RM",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Cabine multiplace, caisse standard",
@@ -1226,6 +1238,9 @@
       "guide_categories": [
         "Boîtes de vitesses",
         "Ponts"
+      ],
+      "drivetrains": [
+        "2RM"
       ],
       "engines": [
         "V8 à essence de 6,6 L",
@@ -1259,8 +1274,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SE81B2E8182C5E34A",
-      "name": "Cabine multiplace, caisse standard; Cabine multiplace",
-      "title": "2026 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Cabine multiplace, caisse standard; Cabine multiplace",
+      "name": "Cabine multiplace, caisse standard; Cabine multiplace | 4RM",
+      "title": "2026 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Cabine multiplace, caisse standard; Cabine multiplace | 4RM",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Cabine multiplace, caisse standard",
@@ -1269,6 +1284,9 @@
       "guide_categories": [
         "Boîtes de vitesses",
         "Ponts"
+      ],
+      "drivetrains": [
+        "4RM"
       ],
       "engines": [
         "V8 à essence de 6,6 L",
@@ -1302,8 +1320,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SD308F15946DB2959",
-      "name": "Cabine multiplace, caisse longue; Cabine multiplace",
-      "title": "2026 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Cabine multiplace, caisse longue; Cabine multiplace",
+      "name": "Cabine multiplace, caisse longue; Cabine multiplace | 2RM",
+      "title": "2026 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Cabine multiplace, caisse longue; Cabine multiplace | 2RM",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Cabine multiplace, caisse longue",
@@ -1312,6 +1330,9 @@
       "guide_categories": [
         "Boîtes de vitesses",
         "Ponts"
+      ],
+      "drivetrains": [
+        "2RM"
       ],
       "engines": [
         "V8 à essence de 6,6 L",
@@ -1345,8 +1366,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S96362E5BF33BEFCB",
-      "name": "Cabine multiplace, caisse longue; Cabine multiplace",
-      "title": "2026 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Cabine multiplace, caisse longue; Cabine multiplace",
+      "name": "Cabine multiplace, caisse longue; Cabine multiplace | 4RM",
+      "title": "2026 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Cabine multiplace, caisse longue; Cabine multiplace | 4RM",
       "configuration_kind": "powertrain-trailering-group",
       "configuration_labels": [
         "Cabine multiplace, caisse longue",
@@ -1355,6 +1376,9 @@
       "guide_categories": [
         "Boîtes de vitesses",
         "Ponts"
+      ],
+      "drivetrains": [
+        "4RM"
       ],
       "engines": [
         "V8 à essence de 6,6 L",

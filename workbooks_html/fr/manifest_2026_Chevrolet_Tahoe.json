@@ -802,7 +802,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S74BFF0714A02276A",
-      "title": "2026 Chevrolet Tahoe | Configuration dimensions and specifications",
+      "name": "2RM",
+      "title": "2026 Chevrolet Tahoe | Configuration dimensions and specifications | 2RM",
       "configuration_kind": "spec-group",
       "configuration_label": "2RM",
       "drivetrain": "2RM",
@@ -838,7 +839,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S1DA02E7FCEFDFC44",
-      "title": "2026 Chevrolet Tahoe | Configuration dimensions and specifications",
+      "name": "4RM",
+      "title": "2026 Chevrolet Tahoe | Configuration dimensions and specifications | 4RM",
       "configuration_kind": "spec-group",
       "configuration_label": "4RM",
       "drivetrain": "4RM",
@@ -886,10 +888,14 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SC0335AC9D8AB9913",
-      "title": "2026 Chevrolet Tahoe | Configuration powertrain and trailering",
+      "name": "2RM",
+      "title": "2026 Chevrolet Tahoe | Configuration powertrain and trailering | 2RM",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule"
+      ],
+      "drivetrains": [
+        "2RM"
       ],
       "engines": [
         "V8 EcoTec3 de 5,3 L"
@@ -928,7 +934,8 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SB1E2E039FB48223B",
-      "title": "2026 Chevrolet Tahoe | Configuration powertrain and trailering",
+      "name": "4RM",
+      "title": "2026 Chevrolet Tahoe | Configuration powertrain and trailering | 4RM",
       "configuration_kind": "powertrain-trailering-group",
       "guide_categories": [
         "MHS à 10 vitesses automatique",
@@ -939,6 +946,9 @@
       ],
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule"
+      ],
+      "drivetrains": [
+        "4RM"
       ],
       "engines": [
         "V8 EcoTec3 de 5,3 L",
