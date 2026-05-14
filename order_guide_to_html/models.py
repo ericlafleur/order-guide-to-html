@@ -216,5 +216,6 @@ class SpecGroupDoc:
 class PowertrainTraileringGroup:
     model_code: str
     top_labels: List[str]
+    drivetrains: List[str]
     engine_entries: List[EngineAxleEntry]
     trailering_records: List[TraileringRecord]

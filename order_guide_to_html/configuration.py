@@ -484,6 +484,7 @@ def group_powertrain_trailering_for_cpr(data: WorkbookData) -> List[PowertrainTr
             grouped[key] = PowertrainTraileringGroup(
                 model_code=key,
                 top_labels=[],
+                drivetrains=[],
                 engine_entries=[],
                 trailering_records=[],
             )
@@ -497,6 +498,9 @@ def group_powertrain_trailering_for_cpr(data: WorkbookData) -> List[PowertrainTr
         label = spec_group_body_style_label(group)
         if label:
             g.top_labels.append(label)
+        dt = spec_group_first_value(group, spec_column_drivetrain_value)
+        if dt:
+            g.drivetrains.append(dt)
 
     for entry in data.engine_axle_entries:
         g = ensure_group(entry.model_code)
@@ -512,6 +516,7 @@ def group_powertrain_trailering_for_cpr(data: WorkbookData) -> List[PowertrainTr
     ordered_groups: List[PowertrainTraileringGroup] = []
     for key, group in grouped.items():
         group.top_labels = unique_preserve_order(group.top_labels)
+        group.drivetrains = unique_preserve_order(group.drivetrains)
         if group.engine_entries or group.trailering_records:
             ordered_groups.append(group)
     return ordered_groups

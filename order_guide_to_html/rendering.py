@@ -299,6 +299,8 @@ class HtmlRenderer:
         identity_extra = []
         if group.top_labels:
             identity_extra.append((self.cleaner.t('Body style'), ' ; '.join(group.top_labels)))
+        if group.drivetrains:
+            identity_extra.append((self.cleaner.t('Drivetrain'), ' ; '.join(group.drivetrains)))
         if engines:
             identity_extra.append((self.cleaner.t('Engines'), ' ; '.join(engines)))
         parts = [
@@ -367,7 +369,12 @@ class HtmlRenderer:
                     )
                     + '</section>'
                 )
-        title_context = ' ; '.join(group.top_labels) if group.top_labels else group.model_code
+        title_parts = []
+        if group.top_labels:
+            title_parts.append(' ; '.join(group.top_labels))
+        if group.drivetrains:
+            title_parts.append(' ; '.join(group.drivetrains))
+        title_context = ' | '.join(title_parts) if title_parts else group.model_code
         return self.cleaner.clean_title_document(
             self.cleaner.article_heading(entity, f"{self.cleaner.t('Powertrain and trailering')} | {title_context}"),
             ''.join(parts),

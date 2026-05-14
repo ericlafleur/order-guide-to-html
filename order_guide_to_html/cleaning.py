@@ -5,7 +5,7 @@ import re
 from dataclasses import dataclass, field
 from typing import Dict, Iterable, List, Mapping, MutableMapping, Sequence, Tuple
 
-from .utils import htmlize_text, normalize_text, unique_preserve_order
+from .utils import MANIFEST_DRIVE_TOKENS, htmlize_text, normalize_text, unique_preserve_order
 from .configuration import strip_drive_tokens
 import html
 
@@ -106,6 +106,7 @@ class GuideTextCleaner:
             'Details': 'Détails',
             'Notes': 'Notes',
             'Body style': 'Style de carrosserie',
+            'Drivetrain': 'Transmission',
             'Engines': 'Moteurs',
             'Trailering ratings': 'Cotes de remorquage',
             'Configuration identity': 'Identité de configuration',
@@ -150,6 +151,8 @@ class GuideTextCleaner:
     def is_code_only(self, text: object) -> bool:
         text = normalize_text(text)
         if not text or not CODE_ONLY_RE.fullmatch(text):
+            return False
+        if text in MANIFEST_DRIVE_TOKENS:
             return False
         return any(ch.isdigit() for ch in text) or len(text) > 4
 

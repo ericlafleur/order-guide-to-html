@@ -2574,9 +2574,16 @@ def powertrain_trailering_manifest_metadata(data: WorkbookData, group: Powertrai
     axle_ratios = unique_preserve_order(record.axle_ratio for record in group.trailering_records if normalize_text(record.axle_ratio))
     max_trailer_weights = unique_preserve_order(record.max_trailer_weight for record in group.trailering_records if normalize_text(record.max_trailer_weight))
     guide_categories = unique_preserve_order(item.category for entry in group.engine_entries for item in entry.items if normalize_text(item.category))
+    title_parts = []
+    if group.top_labels:
+        title_parts.append(' ; '.join(group.top_labels))
+    if group.drivetrains:
+        title_parts.append(' ; '.join(group.drivetrains))
+    title_context = ' | '.join(title_parts) if title_parts else group.model_code
+    name = title_context
     metadata: Dict[str, object] = {
-        'name': ' ; '.join(group.top_labels) if group.top_labels else group.model_code,
-        'title': article_heading(data.vehicle_name, f'Configuration powertrain and trailering | {" ; ".join(group.top_labels)}') if group.top_labels else article_heading(data.vehicle_name, f'Configuration powertrain and trailering | {group.model_code}'),
+        'name': name,
+        'title': article_heading(data.vehicle_name, f'Configuration powertrain and trailering | {title_context}'),
         'source_tabs': unique_preserve_order([entry.sheet_name for entry in group.engine_entries] + [record.sheet_name for record in group.trailering_records]),
         'configuration_kind': CONFIG_KIND_POWERTRAIN_TRAILERING_GROUP,
         'model_code': group.model_code,
@@ -2584,6 +2591,8 @@ def powertrain_trailering_manifest_metadata(data: WorkbookData, group: Powertrai
         'guide_categories': guide_categories,
         'trailering_rating_types': unique_preserve_order(record.rating_type for record in group.trailering_records if normalize_text(record.rating_type)),
     }
+    if group.drivetrains:
+        metadata['drivetrains'] = unique_preserve_order(group.drivetrains)
     if engines:
         metadata['engines'] = engines
     if axle_ratios:
