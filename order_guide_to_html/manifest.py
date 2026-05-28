@@ -2578,8 +2578,17 @@ def powertrain_trailering_manifest_metadata(data: WorkbookData, group: Powertrai
     if group.top_labels:
         title_parts.append(' ; '.join(group.top_labels))
     if group.drivetrains:
-        title_parts.append(' ; '.join(group.drivetrains))
-    title_context = ' | '.join(title_parts) if title_parts else group.model_code
+        # Only add drivetrains when they provide info not already in top_labels or model_code
+        base_text = (' ; '.join(group.top_labels) + ' ' + group.model_code).lower()
+        if not all(d.lower() in base_text for d in group.drivetrains):
+            title_parts.append(' ; '.join(group.drivetrains))
+    if title_parts and not group.top_labels:
+        # No body style labels — prepend model_code so contextual text (e.g. "w/SRW") is preserved
+        title_context = group.model_code + ' | ' + ' | '.join(title_parts)
+    elif title_parts:
+        title_context = ' | '.join(title_parts)
+    else:
+        title_context = group.model_code
     name = title_context
     metadata: Dict[str, object] = {
         'name': name,

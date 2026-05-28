@@ -475,6 +475,26 @@ def spec_group_first_value(group: SpecGroupDoc, extractor) -> Optional[str]:
             values.append(normalize_text(value))
     return first_unique(values)
 
+
+def infer_drivetrain_from_model_code(model_code: str, language: str) -> Optional[str]:
+    text = normalize_text(model_code)
+    if not text:
+        return None
+    for token in MANIFEST_DRIVE_TOKENS:
+        if phrase_occurs_in_text(token, text):
+            return token
+    # Common GM body/config codes encode drive type: CC=2WD, CK=4WD.
+    match = re.search(r'\b(C[CK])\d{5}\b', text, re.IGNORECASE)
+    if not match:
+        return None
+    prefix = match.group(1).upper()
+    is_fr = normalize_text(language).lower().startswith('fr')
+    if prefix == 'CC':
+        return '2RM' if is_fr else '2WD'
+    if prefix == 'CK':
+        return '4RM' if is_fr else '4WD'
+    return None
+
 def group_powertrain_trailering_for_cpr(data: WorkbookData) -> List[PowertrainTraileringGroup]:
     grouped: 'OrderedDict[str, PowertrainTraileringGroup]' = OrderedDict()
 
@@ -519,6 +539,23 @@ def group_powertrain_trailering_for_cpr(data: WorkbookData) -> List[PowertrainTr
         group.drivetrains = unique_preserve_order(group.drivetrains)
         if group.engine_entries or group.trailering_records:
             ordered_groups.append(group)
+
+    # Infer drivetrain from model code only for groups that need disambiguation:
+    # i.e. groups whose title_context (top_labels or cleaned model_code) collides with another group.
+    from collections import Counter
+    def _title_context(g: PowertrainTraileringGroup) -> str:
+        if g.top_labels:
+            return ' ; '.join(g.top_labels)
+        # Strip the actual model code pattern (e.g. CC10706) since clean_heading_text will remove it
+        cleaned = MODEL_CODE_RE.sub('', g.model_code).strip()
+        return cleaned if cleaned else g.model_code
+    context_counts = Counter(_title_context(g) for g in ordered_groups if not g.drivetrains)
+    for group in ordered_groups:
+        if not group.drivetrains and context_counts[_title_context(group)] > 1:
+            inferred = infer_drivetrain_from_model_code(group.model_code, data.language)
+            if inferred:
+                group.drivetrains.append(inferred)
+
     return ordered_groups
 
 def powertrain_group_trim_match(data: WorkbookData, group: PowertrainTraileringGroup) -> Optional[TrimDef]:
