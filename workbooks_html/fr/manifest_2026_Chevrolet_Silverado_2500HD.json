@@ -1889,12 +1889,15 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S73939CE13E5E2801",
-      "name": "NHT",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | NHT",
+      "name": "NHT | 2RM",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | NHT | 2RM",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "drivetrains": [
+        "2RM"
       ],
       "engines": [
         "avec le moteur V8 turbo diesel Duramax de 6,6 L"
@@ -1934,12 +1937,15 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SCFBD69748E87CCB3",
-      "name": "NHT",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | NHT",
+      "name": "NHT | 4RM",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | NHT | 4RM",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "drivetrains": [
+        "4RM"
       ],
       "engines": [
         "avec le moteur V8 turbo diesel Duramax de 6,6 L"
@@ -2033,12 +2039,15 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S8689D961086A1CBC",
-      "name": "High Country",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | High Country",
+      "name": "High Country | 4RM",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | High Country | 4RM",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "drivetrains": [
+        "4RM"
       ],
       "engines": [
         "V8 à essence de 6,6 L",
@@ -2088,12 +2097,15 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SDB1B3C28A1B09768",
-      "name": "NHT",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | NHT",
+      "name": "NHT | 2RM",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | NHT | 2RM",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "drivetrains": [
+        "2RM"
       ],
       "engines": [
         "avec le moteur V8 turbo diesel Duramax de 6,6 L"
@@ -2133,12 +2145,15 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SB51C78C167B9BC1D",
-      "name": "NHT",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | NHT",
+      "name": "NHT | 4RM",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | NHT | 4RM",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "drivetrains": [
+        "4RM"
       ],
       "engines": [
         "avec le moteur V8 turbo diesel Duramax de 6,6 L"
@@ -2178,12 +2193,15 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SEDD3F5AE0818FCB9",
-      "name": "High Country",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | High Country",
+      "name": "High Country | 4RM",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | High Country | 4RM",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "drivetrains": [
+        "4RM"
       ],
       "engines": [
         "V8 à essence de 6,6 L",
@@ -2233,12 +2251,15 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SD41433489A890FB3",
-      "name": "NHT",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | NHT",
+      "name": "NHT | 2RM",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | NHT | 2RM",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "drivetrains": [
+        "2RM"
       ],
       "engines": [
         "avec le moteur V8 turbo diesel Duramax de 6,6 L"
@@ -2278,12 +2299,15 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S33B5FCEE0DADECCE",
-      "name": "NHT",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | NHT",
+      "name": "NHT | 4RM",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | NHT | 4RM",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "drivetrains": [
+        "4RM"
       ],
       "engines": [
         "avec le moteur V8 turbo diesel Duramax de 6,6 L"

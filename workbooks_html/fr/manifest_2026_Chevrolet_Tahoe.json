@@ -992,11 +992,14 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S08AF236037286387",
-      "name": "avec NHT",
-      "title": "2026 Chevrolet Tahoe | Configuration powertrain and trailering | avec NHT",
+      "name": "avec NHT | 2RM",
+      "title": "2026 Chevrolet Tahoe | Configuration powertrain and trailering | avec NHT | 2RM",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule"
+      ],
+      "drivetrains": [
+        "2RM"
       ],
       "engines": [
         "V8 EcoTec3 de 5,3 L"
@@ -1035,11 +1038,14 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S791FB1326BB5223F",
-      "name": "avec NHT",
-      "title": "2026 Chevrolet Tahoe | Configuration powertrain and trailering | avec NHT",
+      "name": "avec NHT | 4RM",
+      "title": "2026 Chevrolet Tahoe | Configuration powertrain and trailering | avec NHT | 4RM",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule"
+      ],
+      "drivetrains": [
+        "4RM"
       ],
       "engines": [
         "V8 EcoTec3 de 5,3 L",

@@ -1883,12 +1883,15 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S12CC8E8F364F2B93",
-      "name": "NHT",
-      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | NHT",
+      "name": "NHT | 2WD",
+      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | NHT | 2WD",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "2WD"
       ],
       "engines": [
         "Duramax 6.6L Turbo-Diesel V8"
@@ -1928,12 +1931,15 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SE4081A9F0BDB1398",
-      "name": "NHT",
-      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | NHT",
+      "name": "NHT | 4WD",
+      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | NHT | 4WD",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "4WD"
       ],
       "engines": [
         "Duramax 6.6L Turbo-Diesel V8"
@@ -2025,12 +2031,15 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S51DEA8212656800B",
-      "name": "High Country",
-      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | High Country",
+      "name": "High Country | 4WD",
+      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | High Country | 4WD",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "4WD"
       ],
       "engines": [
         "6.6L V8 gasoline",
@@ -2080,12 +2089,15 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S5167E6A2698F1CEF",
-      "name": "NHT",
-      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | NHT",
+      "name": "NHT | 2WD",
+      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | NHT | 2WD",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "2WD"
       ],
       "engines": [
         "Duramax 6.6L Turbo-Diesel V8"
@@ -2125,12 +2137,15 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S3E988B482942BE0C",
-      "name": "NHT",
-      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | NHT",
+      "name": "NHT | 4WD",
+      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | NHT | 4WD",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "4WD"
       ],
       "engines": [
         "Duramax 6.6L Turbo-Diesel V8"
@@ -2170,12 +2185,15 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S17C598C8BC57AF69",
-      "name": "High Country",
-      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | High Country",
+      "name": "High Country | 4WD",
+      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | High Country | 4WD",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "4WD"
       ],
       "engines": [
         "6.6L V8 gasoline",
@@ -2225,12 +2243,15 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SD1F9DD96C4B59F36",
-      "name": "NHT",
-      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | NHT",
+      "name": "NHT | 2WD",
+      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | NHT | 2WD",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "2WD"
       ],
       "engines": [
         "Duramax 6.6L Turbo-Diesel V8"
@@ -2270,12 +2291,15 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SF32A59A4756D4659",
-      "name": "NHT",
-      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | NHT",
+      "name": "NHT | 4WD",
+      "title": "2025 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | NHT | 4WD",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "4WD"
       ],
       "engines": [
         "Duramax 6.6L Turbo-Diesel V8"

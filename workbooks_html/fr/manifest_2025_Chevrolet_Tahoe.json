@@ -1035,11 +1035,14 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S654046AB8EF816C9",
-      "name": "avec NHT",
-      "title": "2025 Chevrolet Tahoe | Configuration powertrain and trailering | avec NHT",
+      "name": "avec NHT | 2RM",
+      "title": "2025 Chevrolet Tahoe | Configuration powertrain and trailering | avec NHT | 2RM",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule"
+      ],
+      "drivetrains": [
+        "2RM"
       ],
       "engines": [
         "V8 EcoTec3 de 5,3 L"
@@ -1078,11 +1081,14 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S1863462052DAAA2C",
-      "name": "avec NHT",
-      "title": "2025 Chevrolet Tahoe | Configuration powertrain and trailering | avec NHT",
+      "name": "avec NHT | 4RM",
+      "title": "2025 Chevrolet Tahoe | Configuration powertrain and trailering | avec NHT | 4RM",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule"
+      ],
+      "drivetrains": [
+        "4RM"
       ],
       "engines": [
         "V8 EcoTec3 de 5,3 L",

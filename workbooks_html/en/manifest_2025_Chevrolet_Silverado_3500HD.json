@@ -1412,12 +1412,15 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S63FF67B77B3975B2",
-      "name": "w/SRW",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/SRW",
+      "name": "w/SRW | 2WD",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/SRW | 2WD",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "2WD"
       ],
       "engines": [
         "6.6L V8 gasoline",
@@ -1461,12 +1464,15 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S49852C4E37B09146",
-      "name": "w/SRW",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/SRW",
+      "name": "w/SRW | 4WD",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/SRW | 4WD",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "4WD"
       ],
       "engines": [
         "6.6L V8 gasoline",
@@ -1510,12 +1516,15 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SE4A2A74F54D3151A",
-      "name": "w/SRW and High Country",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/SRW and High Country",
+      "name": "w/SRW and High Country | 4WD",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/SRW and High Country | 4WD",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "4WD"
       ],
       "engines": [
         "6.6L V8 gasoline",
@@ -1563,12 +1572,15 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SCC2961BACA270A00",
-      "name": "w/SRW",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/SRW",
+      "name": "w/SRW | 2WD",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/SRW | 2WD",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "2WD"
       ],
       "engines": [
         "6.6L V8 gasoline",
@@ -1612,12 +1624,15 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SC21279E4F82E4B3D",
-      "name": "w/DRW",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/DRW",
+      "name": "w/DRW | 2WD",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/DRW | 2WD",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "2WD"
       ],
       "engines": [
         "6.6L V8 gasoline",
@@ -1661,12 +1676,15 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SF40EB128811A07C1",
-      "name": "w/SRW",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/SRW",
+      "name": "w/SRW | 4WD",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/SRW | 4WD",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "4WD"
       ],
       "engines": [
         "6.6L V8 gasoline",
@@ -1710,12 +1728,15 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S9A75E801DE7A4A72",
-      "name": "w/SRW and High Country",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/SRW and High Country",
+      "name": "w/SRW and High Country | 4WD",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/SRW and High Country | 4WD",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "4WD"
       ],
       "engines": [
         "6.6L V8 gasoline",
@@ -1763,12 +1784,15 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S5294E582CF765DD4",
-      "name": "w/DRW",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/DRW",
+      "name": "w/DRW | 4WD",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/DRW | 4WD",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "4WD"
       ],
       "engines": [
         "6.6L V8 gasoline",
@@ -1863,12 +1887,15 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S623AC6954559C81C",
-      "name": "w/SRW",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/SRW",
+      "name": "w/SRW | 2WD",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/SRW | 2WD",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "2WD"
       ],
       "engines": [
         "6.6L V8 gasoline",
@@ -1912,12 +1939,15 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S3C24B2AD0A35137C",
-      "name": "w/DRW",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/DRW",
+      "name": "w/DRW | 2WD",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/DRW | 2WD",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "2WD"
       ],
       "engines": [
         "6.6L V8 gasoline",
@@ -1960,12 +1990,15 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SF5F4B05AFE8A8FAD",
-      "name": "w/SRW",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/SRW",
+      "name": "w/SRW | 4WD",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/SRW | 4WD",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "4WD"
       ],
       "engines": [
         "6.6L V8 gasoline",
@@ -2009,12 +2042,15 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S40C0F6A997E2978A",
-      "name": "w/DRW",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/DRW",
+      "name": "w/DRW | 4WD",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/DRW | 4WD",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "4WD"
       ],
       "engines": [
         "6.6L V8 gasoline",
@@ -2058,12 +2094,15 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SF5963B726A556E5E",
-      "name": "w/SRW",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/SRW",
+      "name": "w/SRW | 2WD",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/SRW | 2WD",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "2WD"
       ],
       "engines": [
         "6.6L V8 gasoline",
@@ -2106,12 +2145,15 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S4354E45940632919",
-      "name": "w/DRW",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/DRW",
+      "name": "w/DRW | 2WD",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/DRW | 2WD",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "2WD"
       ],
       "engines": [
         "6.6L V8 gasoline",
@@ -2200,12 +2242,15 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SFDE60A4BFE2C482A",
-      "name": "w/SRW",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/SRW",
+      "name": "w/SRW | 4WD",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/SRW | 4WD",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "4WD"
       ],
       "engines": [
         "6.6L V8 gasoline",
@@ -2248,12 +2293,15 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S0958535E591765DE",
-      "name": "w/DRW",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/DRW",
+      "name": "w/DRW | 4WD",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | w/DRW | 4WD",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch",
         "Automatic Transmission Ratings with 5th Wheel or Gooseneck Hitch"
+      ],
+      "drivetrains": [
+        "4WD"
       ],
       "engines": [
         "6.6L V8 gasoline",

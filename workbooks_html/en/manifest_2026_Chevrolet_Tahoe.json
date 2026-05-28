@@ -992,11 +992,14 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S1FCB0DDC95D0FAAD",
-      "name": "with NHT",
-      "title": "2026 Chevrolet Tahoe | Configuration powertrain and trailering | with NHT",
+      "name": "with NHT | 2WD",
+      "title": "2026 Chevrolet Tahoe | Configuration powertrain and trailering | with NHT | 2WD",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch"
+      ],
+      "drivetrains": [
+        "2WD"
       ],
       "engines": [
         "5.3L EcoTec3 V8"
@@ -1035,11 +1038,14 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S1B79446A9A64E89D",
-      "name": "with NHT",
-      "title": "2026 Chevrolet Tahoe | Configuration powertrain and trailering | with NHT",
+      "name": "with NHT | 4WD",
+      "title": "2026 Chevrolet Tahoe | Configuration powertrain and trailering | with NHT | 4WD",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch"
+      ],
+      "drivetrains": [
+        "4WD"
       ],
       "engines": [
         "5.3L EcoTec3 V8",

@@ -939,11 +939,14 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S24F2FD1A535EF351",
-      "name": "with NHT",
-      "title": "2026 Chevrolet Suburban | Configuration powertrain and trailering | with NHT",
+      "name": "with NHT | 2WD",
+      "title": "2026 Chevrolet Suburban | Configuration powertrain and trailering | with NHT | 2WD",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch"
+      ],
+      "drivetrains": [
+        "2WD"
       ],
       "engines": [
         "5.3L EcoTec3 V8"
@@ -982,11 +985,14 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S1B4DCC381F6A84B8",
-      "name": "with NHT",
-      "title": "2026 Chevrolet Suburban | Configuration powertrain and trailering | with NHT",
+      "name": "with NHT | 4WD",
+      "title": "2026 Chevrolet Suburban | Configuration powertrain and trailering | with NHT | 4WD",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
         "Automatic Transmission Ratings with Ball Hitch"
+      ],
+      "drivetrains": [
+        "4WD"
       ],
       "engines": [
         "5.3L EcoTec3 V8",
