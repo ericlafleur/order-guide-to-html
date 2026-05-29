@@ -399,6 +399,12 @@ class HtmlRenderer:
         title_parts = []
         if group.top_labels:
             title_parts.append(' ; '.join(group.top_labels))
+        # Include model_code suffix (e.g. "w/SRW and High Country") when it carries
+        # context beyond the raw CK/CC code that isn't already in the labels.
+        from .classification import MODEL_CODE_RE
+        code_suffix = MODEL_CODE_RE.sub('', group.model_code).strip()
+        if code_suffix and not any(code_suffix.lower() in lbl.lower() for lbl in group.top_labels):
+            title_parts.append(code_suffix)
         if group.drivetrains:
             # Only add drivetrains when they provide info not already in top_labels or model_code
             base_text = (' ; '.join(group.top_labels) + ' ' + group.model_code).lower()

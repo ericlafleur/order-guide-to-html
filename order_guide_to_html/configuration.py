@@ -540,6 +540,22 @@ def group_powertrain_trailering_for_cpr(data: WorkbookData) -> List[PowertrainTr
         if group.engine_entries or group.trailering_records:
             ordered_groups.append(group)
 
+    # Inherit body-style labels from base model-code groups into trailering
+    # sub-groups that share the same CK/CC prefix but have no labels of their own.
+    # e.g. "CK30743 w/SRW and High Country" inherits from "CK30743" ("Crew Cab, Standard Bed").
+    base_labels_by_code: Dict[str, List[str]] = {}
+    for group in ordered_groups:
+        match = MODEL_CODE_RE.match(group.model_code)
+        if match and match.group() == group.model_code and group.top_labels:
+            base_labels_by_code[group.model_code] = group.top_labels
+    for group in ordered_groups:
+        if not group.top_labels:
+            match = MODEL_CODE_RE.match(group.model_code)
+            if match:
+                base_code = match.group()
+                if base_code in base_labels_by_code:
+                    group.top_labels = list(base_labels_by_code[base_code])
+
     # Infer drivetrain from model code only for groups that need disambiguation:
     # i.e. groups whose title_context (top_labels or cleaned model_code) collides with another group.
     from collections import Counter

@@ -17,7 +17,7 @@ from .utils import (
 )
 from .models import BoundRecord, EngineAxleEntry, EngineAxleItem, GCWRRecord, ModelFeatureAggregate, OutputFileRecord, PowertrainTraileringGroup, SpecCell, SpecColumn, SpecGroupDoc, TraileringRecord, TrimDef, TrimFeatureAggregate, WorkbookData
 from .parsing import parse_status_value, parse_value_and_footnote_ids, parse_workbook, referenced_codes_for_text
-from .classification import COMPARISON_OBJECTTYPE, CONFIG_KIND_ENGINE_AXLE, CONFIG_KIND_GCWR, CONFIG_KIND_GCWR_REFERENCE, CONFIG_KIND_POWERTRAIN_TRAILERING_GROUP, CONFIG_KIND_SPEC_COLUMN, CONFIG_KIND_SPEC_GROUP, CONFIG_KIND_TRAILERING, CONFIG_OBJECTTYPE, CONFIG_TYPE, DOC_ROLE_CHILD, DOC_ROLE_ENTITY, DOC_ROLE_PARENT, DOC_ROLE_PASSAGE, DOMAIN_COLOR, DOMAIN_OVERVIEW, DOMAIN_PASSAGE_OBJECTTYPE, MODEL_OBJECTTYPE, NOTE_OBJECTTYPE, SURFACE_BOTH, SURFACE_ENTITY_ONLY, SURFACE_PASSAGE_ONLY, TRIM_OBJECTTYPE, availability_pairs_for_model, availability_pairs_for_trim, category_for_model_feature, category_for_trim_feature, collect_row_note_texts, comparison_varies_by_trim, feature_title, model_status_summary_lines, normalize_domain_value, sort_category_key, sort_trim_feature, source_context, source_tab_list_from_contexts, source_tab_list_from_strings, summarize_model_status_groups, with_doc_metadata
+from .classification import COMPARISON_OBJECTTYPE, CONFIG_KIND_ENGINE_AXLE, CONFIG_KIND_GCWR, CONFIG_KIND_GCWR_REFERENCE, CONFIG_KIND_POWERTRAIN_TRAILERING_GROUP, CONFIG_KIND_SPEC_COLUMN, CONFIG_KIND_SPEC_GROUP, CONFIG_KIND_TRAILERING, CONFIG_OBJECTTYPE, CONFIG_TYPE, DOC_ROLE_CHILD, DOC_ROLE_ENTITY, DOC_ROLE_PARENT, DOC_ROLE_PASSAGE, DOMAIN_COLOR, DOMAIN_OVERVIEW, DOMAIN_PASSAGE_OBJECTTYPE, MODEL_CODE_RE, MODEL_OBJECTTYPE, NOTE_OBJECTTYPE, SURFACE_BOTH, SURFACE_ENTITY_ONLY, SURFACE_PASSAGE_ONLY, TRIM_OBJECTTYPE, availability_pairs_for_model, availability_pairs_for_trim, category_for_model_feature, category_for_trim_feature, collect_row_note_texts, comparison_varies_by_trim, feature_title, model_status_summary_lines, normalize_domain_value, sort_category_key, sort_trim_feature, source_context, source_tab_list_from_contexts, source_tab_list_from_strings, summarize_model_status_groups, with_doc_metadata
 from .configuration import all_trim_matches, all_trim_matches_for_spec_group, best_trim_match, best_trim_match_for_spec_column, column_matches_trim, group_powertrain_trailering_for_cpr, group_spec_columns_for_cpr, powertrain_group_trim_match, section_names_for_column, spec_column_body_style_value, spec_column_context_text, spec_column_drivetrain_value, spec_column_engine_value, spec_column_fuel_value, spec_column_seating_value, spec_group_context_text, spec_group_first_value, spec_group_model_code, spec_group_section_names, strip_drive_tokens, trim_body_styles, trim_code_list, trim_colour_context, trim_drivetrains, trim_header_list, trim_matches_decor, trim_name_list, trim_seating, workbook_tab_metadata
 
 
@@ -2603,8 +2603,20 @@ def render_powertrain_trailering_group_page(data: WorkbookData, group: Powertrai
                 ) + '</section>'
             )
 
+    # Build a descriptive heading that includes body style context (from top_labels)
+    # alongside the model_code, so the H1 distinguishes otherwise identical configs.
+    heading_parts = []
+    if group.top_labels:
+        heading_parts.append(' ; '.join(group.top_labels))
+    heading_parts.append(group.model_code)
+    if group.drivetrains:
+        base_text = (' ; '.join(group.top_labels) + ' ' + group.model_code).lower()
+        if not all(d.lower() in base_text for d in group.drivetrains):
+            heading_parts.append(' ; '.join(group.drivetrains))
+    heading_suffix = ' | '.join(heading_parts)
+
     return html_document(
-        article_heading(entity, f'Configuration powertrain and trailering | {group.model_code}'),
+        article_heading(entity, f'Configuration powertrain and trailering | {heading_suffix}'),
         ''.join(parts),
     )
 
@@ -2616,6 +2628,11 @@ def powertrain_trailering_manifest_metadata(data: WorkbookData, group: Powertrai
     title_parts = []
     if group.top_labels:
         title_parts.append(' ; '.join(group.top_labels))
+    # Include model_code suffix (e.g. "w/SRW and High Country") when it carries
+    # context beyond the raw CK/CC code that isn't already in the labels.
+    code_suffix = MODEL_CODE_RE.sub('', group.model_code).strip()
+    if code_suffix and not any(code_suffix.lower() in lbl.lower() for lbl in group.top_labels):
+        title_parts.append(code_suffix)
     if group.drivetrains:
         # Only add drivetrains when they provide info not already in top_labels or model_code
         base_text = (' ; '.join(group.top_labels) + ' ' + group.model_code).lower()
