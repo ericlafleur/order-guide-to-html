@@ -1118,7 +1118,6 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S4F32E1F7AFF0E692",
-      "name": "14C43",
       "title": "2026 Chevrolet Colorado | Configuration powertrain and trailering",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
@@ -1204,7 +1203,6 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S7DDF616EF3FEFCA8",
-      "name": "14H43",
       "title": "2026 Chevrolet Colorado | Configuration powertrain and trailering",
       "configuration_kind": "powertrain-trailering-group",
       "trailering_rating_types": [
