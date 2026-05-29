@@ -1889,9 +1889,13 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S73939CE13E5E2801",
-      "name": "NHT | 2RM",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | NHT | 2RM",
+      "name": "Cabine multiplace, caisse standard; Cabine multiplace | NHT | 2RM",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Cabine multiplace, caisse standard; Cabine multiplace | NHT | 2RM",
       "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine multiplace, caisse standard",
+        "Cabine multiplace"
+      ],
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
@@ -1937,9 +1941,13 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SCFBD69748E87CCB3",
-      "name": "NHT | 4RM",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | NHT | 4RM",
+      "name": "Cabine multiplace, caisse standard; Cabine multiplace | NHT | 4RM",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Cabine multiplace, caisse standard; Cabine multiplace | NHT | 4RM",
       "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine multiplace, caisse standard",
+        "Cabine multiplace"
+      ],
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
@@ -1985,12 +1993,19 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SA092A867E2A2A0BD",
-      "name": "ZR2",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering",
+      "name": "Cabine multiplace, caisse standard; Cabine multiplace | 4RM",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Cabine multiplace, caisse standard; Cabine multiplace | 4RM",
       "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine multiplace, caisse standard",
+        "Cabine multiplace"
+      ],
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "drivetrains": [
+        "4RM"
       ],
       "engines": [
         "V8 à essence de 6,6 L",
@@ -2039,9 +2054,13 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S8689D961086A1CBC",
-      "name": "High Country | 4RM",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | High Country | 4RM",
+      "name": "Cabine multiplace, caisse standard; Cabine multiplace | High Country | 4RM",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Cabine multiplace, caisse standard; Cabine multiplace | High Country | 4RM",
       "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine multiplace, caisse standard",
+        "Cabine multiplace"
+      ],
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
@@ -2097,9 +2116,13 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SDB1B3C28A1B09768",
-      "name": "NHT | 2RM",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | NHT | 2RM",
+      "name": "Cabine multiplace, caisse longue; Cabine multiplace | NHT | 2RM",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Cabine multiplace, caisse longue; Cabine multiplace | NHT | 2RM",
       "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine multiplace, caisse longue",
+        "Cabine multiplace"
+      ],
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
@@ -2145,9 +2168,13 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SB51C78C167B9BC1D",
-      "name": "NHT | 4RM",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | NHT | 4RM",
+      "name": "Cabine multiplace, caisse longue; Cabine multiplace | NHT | 4RM",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Cabine multiplace, caisse longue; Cabine multiplace | NHT | 4RM",
       "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine multiplace, caisse longue",
+        "Cabine multiplace"
+      ],
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
@@ -2193,9 +2220,13 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SEDD3F5AE0818FCB9",
-      "name": "High Country | 4RM",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | High Country | 4RM",
+      "name": "Cabine multiplace, caisse longue; Cabine multiplace | High Country | 4RM",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Cabine multiplace, caisse longue; Cabine multiplace | High Country | 4RM",
       "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine multiplace, caisse longue",
+        "Cabine multiplace"
+      ],
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
@@ -2251,9 +2282,13 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SD41433489A890FB3",
-      "name": "NHT | 2RM",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | NHT | 2RM",
+      "name": "Cabine classique, caisse longue; Cabine classique | NHT | 2RM",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Cabine classique, caisse longue; Cabine classique | NHT | 2RM",
       "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine classique, caisse longue",
+        "Cabine classique"
+      ],
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
@@ -2299,9 +2334,13 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S33B5FCEE0DADECCE",
-      "name": "NHT | 4RM",
-      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | NHT | 4RM",
+      "name": "Cabine classique, caisse longue; Cabine classique | NHT | 4RM",
+      "title": "2026 Chevrolet Silverado 2500HD | Configuration powertrain and trailering | Cabine classique, caisse longue; Cabine classique | NHT | 4RM",
       "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine classique, caisse longue",
+        "Cabine classique"
+      ],
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
