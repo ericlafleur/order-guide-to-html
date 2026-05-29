@@ -1778,9 +1778,13 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S36BAC55B72CCAFDD",
-      "name": "avec roues arrière simples | 2RM",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | avec roues arrière simples | 2RM",
+      "name": "Cabine multiplace, caisse standard; Cabine multiplace | avec roues arrière simples | 2RM",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Cabine multiplace, caisse standard; Cabine multiplace | avec roues arrière simples | 2RM",
       "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine multiplace, caisse standard",
+        "Cabine multiplace"
+      ],
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
@@ -1830,9 +1834,13 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S444B061B7C71A52F",
-      "name": "avec roues arrière simples | 4RM",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | avec roues arrière simples | 4RM",
+      "name": "Cabine multiplace, caisse standard; Cabine multiplace | avec roues arrière simples | 4RM",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Cabine multiplace, caisse standard; Cabine multiplace | avec roues arrière simples | 4RM",
       "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine multiplace, caisse standard",
+        "Cabine multiplace"
+      ],
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
@@ -1882,9 +1890,13 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S8AEA6F8323918262",
-      "name": "avec roues arrière simples et High Country | 4RM",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | avec roues arrière simples et High Country | 4RM",
+      "name": "Cabine multiplace, caisse standard; Cabine multiplace | avec roues arrière simples et High Country | 4RM",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Cabine multiplace, caisse standard; Cabine multiplace | avec roues arrière simples et High Country | 4RM",
       "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine multiplace, caisse standard",
+        "Cabine multiplace"
+      ],
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
@@ -1938,9 +1950,13 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SBEAF4439D474963D",
-      "name": "avec roues arrière simples | 2RM",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | avec roues arrière simples | 2RM",
+      "name": "Cabine multiplace, caisse longue; Cabine multiplace | avec roues arrière simples | 2RM",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Cabine multiplace, caisse longue; Cabine multiplace | avec roues arrière simples | 2RM",
       "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine multiplace, caisse longue",
+        "Cabine multiplace"
+      ],
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
@@ -1990,9 +2006,13 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S33A96692F0D96F30",
-      "name": "avec roues arrière jumelées | 2RM",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | avec roues arrière jumelées | 2RM",
+      "name": "Cabine multiplace, caisse longue; Cabine multiplace | avec roues arrière jumelées | 2RM",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Cabine multiplace, caisse longue; Cabine multiplace | avec roues arrière jumelées | 2RM",
       "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine multiplace, caisse longue",
+        "Cabine multiplace"
+      ],
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
@@ -2042,9 +2062,13 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S28A6BAF12663B531",
-      "name": "avec roues arrière simples | 4RM",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | avec roues arrière simples | 4RM",
+      "name": "Cabine multiplace, caisse longue; Cabine multiplace | avec roues arrière simples | 4RM",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Cabine multiplace, caisse longue; Cabine multiplace | avec roues arrière simples | 4RM",
       "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine multiplace, caisse longue",
+        "Cabine multiplace"
+      ],
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
@@ -2094,9 +2118,13 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S405DD53548CAA98F",
-      "name": "avec roues arrière simples et High Country | 4RM",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | avec roues arrière simples et High Country | 4RM",
+      "name": "Cabine multiplace, caisse longue; Cabine multiplace | avec roues arrière simples et High Country | 4RM",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Cabine multiplace, caisse longue; Cabine multiplace | avec roues arrière simples et High Country | 4RM",
       "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine multiplace, caisse longue",
+        "Cabine multiplace"
+      ],
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
@@ -2150,9 +2178,13 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S80956D0BAC2236D8",
-      "name": "avec roues arrière jumelées | 4RM",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | avec roues arrière jumelées | 4RM",
+      "name": "Cabine multiplace, caisse longue; Cabine multiplace | avec roues arrière jumelées | 4RM",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Cabine multiplace, caisse longue; Cabine multiplace | avec roues arrière jumelées | 4RM",
       "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine multiplace, caisse longue",
+        "Cabine multiplace"
+      ],
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
@@ -2201,12 +2233,19 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SC763371357EF4B76",
-      "name": "avec roues arrière jumelées et High Country",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | avec roues arrière jumelées et High Country",
+      "name": "Cabine multiplace, caisse longue; Cabine multiplace | avec roues arrière jumelées et High Country | 4RM",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Cabine multiplace, caisse longue; Cabine multiplace | avec roues arrière jumelées et High Country | 4RM",
       "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine multiplace, caisse longue",
+        "Cabine multiplace"
+      ],
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "drivetrains": [
+        "4RM"
       ],
       "engines": [
         "V8 à essence de 6,6 L",
@@ -2253,9 +2292,13 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S424778274AF6239C",
-      "name": "avec roues arrière simples | 2RM",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | avec roues arrière simples | 2RM",
+      "name": "Cabine double, caisse longue; Cabine double | avec roues arrière simples | 2RM",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Cabine double, caisse longue; Cabine double | avec roues arrière simples | 2RM",
       "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine double, caisse longue",
+        "Cabine double"
+      ],
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
@@ -2305,9 +2348,13 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S9EFCEF3B9B3F81FC",
-      "name": "avec roues arrière jumelées | 2RM",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | avec roues arrière jumelées | 2RM",
+      "name": "Cabine double, caisse longue; Cabine double | avec roues arrière jumelées | 2RM",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Cabine double, caisse longue; Cabine double | avec roues arrière jumelées | 2RM",
       "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine double, caisse longue",
+        "Cabine double"
+      ],
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
@@ -2356,9 +2403,13 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SB9CB7FD4FCBDC78A",
-      "name": "avec roues arrière simples | 4RM",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | avec roues arrière simples | 4RM",
+      "name": "Cabine double, caisse longue; Cabine double | avec roues arrière simples | 4RM",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Cabine double, caisse longue; Cabine double | avec roues arrière simples | 4RM",
       "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine double, caisse longue",
+        "Cabine double"
+      ],
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
@@ -2408,9 +2459,13 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SE538A8F8138CA46D",
-      "name": "avec roues arrière jumelées | 4RM",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | avec roues arrière jumelées | 4RM",
+      "name": "Cabine double, caisse longue; Cabine double | avec roues arrière jumelées | 4RM",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Cabine double, caisse longue; Cabine double | avec roues arrière jumelées | 4RM",
       "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine double, caisse longue",
+        "Cabine double"
+      ],
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
@@ -2460,9 +2515,13 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S347AA7E462C1F6F4",
-      "name": "avec roues arrière simples | 2RM",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | avec roues arrière simples | 2RM",
+      "name": "Cabine classique, caisse longue; Cabine classique | avec roues arrière simples | 2RM",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Cabine classique, caisse longue; Cabine classique | avec roues arrière simples | 2RM",
       "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine classique, caisse longue",
+        "Cabine classique"
+      ],
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
@@ -2511,9 +2570,13 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S445E586D347C52C2",
-      "name": "avec roues arrière jumelées | 2RM",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | avec roues arrière jumelées | 2RM",
+      "name": "Cabine classique, caisse longue; Cabine classique | avec roues arrière jumelées | 2RM",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Cabine classique, caisse longue; Cabine classique | avec roues arrière jumelées | 2RM",
       "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine classique, caisse longue",
+        "Cabine classique"
+      ],
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
@@ -2563,12 +2626,19 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "SE01101FFB538A47C",
-      "name": "avec roues arrière jumelées et NHT",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | avec roues arrière jumelées et NHT",
+      "name": "Cabine classique, caisse longue; Cabine classique | avec roues arrière jumelées et NHT | 2RM",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Cabine classique, caisse longue; Cabine classique | avec roues arrière jumelées et NHT | 2RM",
       "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine classique, caisse longue",
+        "Cabine classique"
+      ],
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
+      ],
+      "drivetrains": [
+        "2RM"
       ],
       "engines": [
         "avec le moteur V8 turbo diesel Duramax de 6,6 L"
@@ -2608,9 +2678,13 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S92CB76364A9A1414",
-      "name": "avec roues arrière simples | 4RM",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | avec roues arrière simples | 4RM",
+      "name": "Cabine classique, caisse longue; Cabine classique | avec roues arrière simples | 4RM",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Cabine classique, caisse longue; Cabine classique | avec roues arrière simples | 4RM",
       "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine classique, caisse longue",
+        "Cabine classique"
+      ],
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
@@ -2659,9 +2733,13 @@
       "objecttype": "Configuration",
       "type": "configuration-spec",
       "node_id": "S5A417D23AB8A1D86",
-      "name": "avec roues arrière jumelées | 4RM",
-      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | avec roues arrière jumelées | 4RM",
+      "name": "Cabine classique, caisse longue; Cabine classique | avec roues arrière jumelées | 4RM",
+      "title": "2025 Chevrolet Silverado 3500HD | Configuration powertrain and trailering | Cabine classique, caisse longue; Cabine classique | avec roues arrière jumelées | 4RM",
       "configuration_kind": "powertrain-trailering-group",
+      "configuration_labels": [
+        "Cabine classique, caisse longue",
+        "Cabine classique"
+      ],
       "trailering_rating_types": [
         "Caractéristiques de boîte de vitesses automatique avec attelage à boule",
         "Caractéristiques de boîte de vitesses automatique avec sellette d'attelage ou attelage en S."
