@@ -33,7 +33,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Tahoe",
       "entity_key": "2026_chevrolet_tahoe",
@@ -41,13 +41,21 @@
       "collection": "MA358CB4CDD4D64AE",
       "collection_path": "model_2026_Chevrolet_Tahoe.html",
       "child": [
+        "D498DA016F0B06B81",
         "CE3F2C0D778FBB3D3",
+        "D0520247F331B34EA",
         "C35FD49592B303DB6",
+        "DE76A918F9D3B685D",
         "CBF3612CE27A09567",
+        "D39FFDE7CC86C64A6",
         "CBB1A7CE54A23C3A1",
+        "DA19CDEB1110216EF",
         "C1F1671995B7CD706",
+        "D8925C75ED9F99F83",
         "CD591012CC89F3AF4",
+        "DFE4C1D33277CCB50",
         "C05DE47E2D5E35826",
+        "DE92841FC704F6031",
         "TD1007A6FB0B61AA4",
         "T1AA9B17A5911D2ED",
         "T05D5FEA500FCA2A4",
@@ -63,13 +71,21 @@
         "SD5EF65CB4E4C8624"
       ],
       "child_paths": [
+        "domain_2026_Chevrolet_Tahoe_Safety_and_driver_assistance.html",
         "compare_domain_2026_Chevrolet_Tahoe_Safety_and_driver_assistance.html",
+        "domain_2026_Chevrolet_Tahoe_Technology_and_connectivity.html",
         "compare_domain_2026_Chevrolet_Tahoe_Technology_and_connectivity.html",
+        "domain_2026_Chevrolet_Tahoe_Interior_and_comfort.html",
         "compare_domain_2026_Chevrolet_Tahoe_Interior_and_comfort.html",
+        "domain_2026_Chevrolet_Tahoe_Exterior_and_utility.html",
         "compare_domain_2026_Chevrolet_Tahoe_Exterior_and_utility.html",
+        "domain_2026_Chevrolet_Tahoe_Wheels_and_tires.html",
         "compare_domain_2026_Chevrolet_Tahoe_Wheels_and_tires.html",
+        "domain_2026_Chevrolet_Tahoe_Mechanical_and_performance.html",
         "compare_domain_2026_Chevrolet_Tahoe_Mechanical_and_performance.html",
+        "domain_2026_Chevrolet_Tahoe_Packages_and_options.html",
         "compare_domain_2026_Chevrolet_Tahoe_Packages_and_options.html",
+        "domain_2026_Chevrolet_Tahoe_Colour_and_trim.html",
         "trim_2026_Chevrolet_Tahoe_Comm.html",
         "trim_2026_Chevrolet_Tahoe_LS.html",
         "trim_2026_Chevrolet_Tahoe_LT.html",
@@ -94,6 +110,52 @@
         "Premier",
         "High Country"
       ]
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D498DA016F0B06B81",
+      "seating": [
+        "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Tahoe | Safety and driver assistance",
+      "title": "2026 Chevrolet Tahoe | Safety and driver assistance",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Tahoe",
+      "trim_names_from_guide": [
+        "Comm",
+        "LS",
+        "LT",
+        "RST",
+        "Z71",
+        "Premier",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Safety and driver assistance",
+      "guide_domains": [
+        "Safety and driver assistance"
+      ],
+      "feature_count": 31,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Tahoe",
+      "entity_key": "2026_chevrolet_tahoe",
+      "vehicle_key": "2026_chevrolet_tahoe",
+      "collection": "MA358CB4CDD4D64AE",
+      "collection_path": "model_2026_Chevrolet_Tahoe.html",
+      "parent": "MA358CB4CDD4D64AE",
+      "parent_path": "model_2026_Chevrolet_Tahoe.html",
+      "parent_vehicle": "model_2026_Chevrolet_Tahoe.html",
+      "parent_vehicle_id": "MA358CB4CDD4D64AE",
+      "path": "domain_2026_Chevrolet_Tahoe_Safety_and_driver_assistance.html"
     },
     {
       "objecttype": "Comparison",
@@ -143,6 +205,52 @@
       "path": "compare_domain_2026_Chevrolet_Tahoe_Safety_and_driver_assistance.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D0520247F331B34EA",
+      "seating": [
+        "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Tahoe | Technology and connectivity",
+      "title": "2026 Chevrolet Tahoe | Technology and connectivity",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Tahoe",
+      "trim_names_from_guide": [
+        "Comm",
+        "LS",
+        "LT",
+        "RST",
+        "Z71",
+        "Premier",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Technology and connectivity",
+      "guide_domains": [
+        "Technology and connectivity"
+      ],
+      "feature_count": 31,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Tahoe",
+      "entity_key": "2026_chevrolet_tahoe",
+      "vehicle_key": "2026_chevrolet_tahoe",
+      "collection": "MA358CB4CDD4D64AE",
+      "collection_path": "model_2026_Chevrolet_Tahoe.html",
+      "parent": "MA358CB4CDD4D64AE",
+      "parent_path": "model_2026_Chevrolet_Tahoe.html",
+      "parent_vehicle": "model_2026_Chevrolet_Tahoe.html",
+      "parent_vehicle_id": "MA358CB4CDD4D64AE",
+      "path": "domain_2026_Chevrolet_Tahoe_Technology_and_connectivity.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C35FD49592B303DB6",
@@ -188,6 +296,52 @@
       "parent_vehicle": "model_2026_Chevrolet_Tahoe.html",
       "parent_vehicle_id": "MA358CB4CDD4D64AE",
       "path": "compare_domain_2026_Chevrolet_Tahoe_Technology_and_connectivity.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DE76A918F9D3B685D",
+      "seating": [
+        "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Tahoe | Interior and comfort",
+      "title": "2026 Chevrolet Tahoe | Interior and comfort",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Tahoe",
+      "trim_names_from_guide": [
+        "Comm",
+        "LS",
+        "LT",
+        "RST",
+        "Z71",
+        "Premier",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Interior and comfort",
+      "guide_domains": [
+        "Interior and comfort"
+      ],
+      "feature_count": 43,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Tahoe",
+      "entity_key": "2026_chevrolet_tahoe",
+      "vehicle_key": "2026_chevrolet_tahoe",
+      "collection": "MA358CB4CDD4D64AE",
+      "collection_path": "model_2026_Chevrolet_Tahoe.html",
+      "parent": "MA358CB4CDD4D64AE",
+      "parent_path": "model_2026_Chevrolet_Tahoe.html",
+      "parent_vehicle": "model_2026_Chevrolet_Tahoe.html",
+      "parent_vehicle_id": "MA358CB4CDD4D64AE",
+      "path": "domain_2026_Chevrolet_Tahoe_Interior_and_comfort.html"
     },
     {
       "objecttype": "Comparison",
@@ -237,6 +391,52 @@
       "path": "compare_domain_2026_Chevrolet_Tahoe_Interior_and_comfort.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D39FFDE7CC86C64A6",
+      "seating": [
+        "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Tahoe | Exterior and utility",
+      "title": "2026 Chevrolet Tahoe | Exterior and utility",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Tahoe",
+      "trim_names_from_guide": [
+        "Comm",
+        "LS",
+        "LT",
+        "RST",
+        "Z71",
+        "Premier",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Exterior and utility",
+      "guide_domains": [
+        "Exterior and utility"
+      ],
+      "feature_count": 58,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Tahoe",
+      "entity_key": "2026_chevrolet_tahoe",
+      "vehicle_key": "2026_chevrolet_tahoe",
+      "collection": "MA358CB4CDD4D64AE",
+      "collection_path": "model_2026_Chevrolet_Tahoe.html",
+      "parent": "MA358CB4CDD4D64AE",
+      "parent_path": "model_2026_Chevrolet_Tahoe.html",
+      "parent_vehicle": "model_2026_Chevrolet_Tahoe.html",
+      "parent_vehicle_id": "MA358CB4CDD4D64AE",
+      "path": "domain_2026_Chevrolet_Tahoe_Exterior_and_utility.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CBB1A7CE54A23C3A1",
@@ -282,6 +482,52 @@
       "parent_vehicle": "model_2026_Chevrolet_Tahoe.html",
       "parent_vehicle_id": "MA358CB4CDD4D64AE",
       "path": "compare_domain_2026_Chevrolet_Tahoe_Exterior_and_utility.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DA19CDEB1110216EF",
+      "seating": [
+        "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Tahoe | Wheels and tires",
+      "title": "2026 Chevrolet Tahoe | Wheels and tires",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Tahoe",
+      "trim_names_from_guide": [
+        "Comm",
+        "LS",
+        "LT",
+        "RST",
+        "Z71",
+        "Premier",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Wheels and tires",
+      "guide_domains": [
+        "Wheels and tires"
+      ],
+      "feature_count": 29,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Tahoe",
+      "entity_key": "2026_chevrolet_tahoe",
+      "vehicle_key": "2026_chevrolet_tahoe",
+      "collection": "MA358CB4CDD4D64AE",
+      "collection_path": "model_2026_Chevrolet_Tahoe.html",
+      "parent": "MA358CB4CDD4D64AE",
+      "parent_path": "model_2026_Chevrolet_Tahoe.html",
+      "parent_vehicle": "model_2026_Chevrolet_Tahoe.html",
+      "parent_vehicle_id": "MA358CB4CDD4D64AE",
+      "path": "domain_2026_Chevrolet_Tahoe_Wheels_and_tires.html"
     },
     {
       "objecttype": "Comparison",
@@ -331,6 +577,52 @@
       "path": "compare_domain_2026_Chevrolet_Tahoe_Wheels_and_tires.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D8925C75ED9F99F83",
+      "seating": [
+        "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Tahoe | Mechanical and performance",
+      "title": "2026 Chevrolet Tahoe | Mechanical and performance",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Tahoe",
+      "trim_names_from_guide": [
+        "Comm",
+        "LS",
+        "LT",
+        "RST",
+        "Z71",
+        "Premier",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Mechanical and performance",
+      "guide_domains": [
+        "Mechanical and performance"
+      ],
+      "feature_count": 56,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Tahoe",
+      "entity_key": "2026_chevrolet_tahoe",
+      "vehicle_key": "2026_chevrolet_tahoe",
+      "collection": "MA358CB4CDD4D64AE",
+      "collection_path": "model_2026_Chevrolet_Tahoe.html",
+      "parent": "MA358CB4CDD4D64AE",
+      "parent_path": "model_2026_Chevrolet_Tahoe.html",
+      "parent_vehicle": "model_2026_Chevrolet_Tahoe.html",
+      "parent_vehicle_id": "MA358CB4CDD4D64AE",
+      "path": "domain_2026_Chevrolet_Tahoe_Mechanical_and_performance.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CD591012CC89F3AF4",
@@ -376,6 +668,52 @@
       "parent_vehicle": "model_2026_Chevrolet_Tahoe.html",
       "parent_vehicle_id": "MA358CB4CDD4D64AE",
       "path": "compare_domain_2026_Chevrolet_Tahoe_Mechanical_and_performance.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DFE4C1D33277CCB50",
+      "seating": [
+        "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Tahoe | Packages and options",
+      "title": "2026 Chevrolet Tahoe | Packages and options",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Tahoe",
+      "trim_names_from_guide": [
+        "Comm",
+        "LS",
+        "LT",
+        "RST",
+        "Z71",
+        "Premier",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Packages and options",
+      "guide_domains": [
+        "Packages and options"
+      ],
+      "feature_count": 49,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Tahoe",
+      "entity_key": "2026_chevrolet_tahoe",
+      "vehicle_key": "2026_chevrolet_tahoe",
+      "collection": "MA358CB4CDD4D64AE",
+      "collection_path": "model_2026_Chevrolet_Tahoe.html",
+      "parent": "MA358CB4CDD4D64AE",
+      "parent_path": "model_2026_Chevrolet_Tahoe.html",
+      "parent_vehicle": "model_2026_Chevrolet_Tahoe.html",
+      "parent_vehicle_id": "MA358CB4CDD4D64AE",
+      "path": "domain_2026_Chevrolet_Tahoe_Packages_and_options.html"
     },
     {
       "objecttype": "Comparison",
@@ -425,6 +763,50 @@
       "path": "compare_domain_2026_Chevrolet_Tahoe_Packages_and_options.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DE92841FC704F6031",
+      "seating": [
+        "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Tahoe",
+      "title": "2026 Chevrolet Tahoe",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Tahoe",
+      "trim_names_from_guide": [
+        "Comm",
+        "LS",
+        "LT",
+        "RST",
+        "Z71",
+        "Premier",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Colour and trim",
+      "guide_domains": [
+        "Colour and trim"
+      ],
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Tahoe",
+      "entity_key": "2026_chevrolet_tahoe",
+      "vehicle_key": "2026_chevrolet_tahoe",
+      "collection": "MA358CB4CDD4D64AE",
+      "collection_path": "model_2026_Chevrolet_Tahoe.html",
+      "parent": "MA358CB4CDD4D64AE",
+      "parent_path": "model_2026_Chevrolet_Tahoe.html",
+      "parent_vehicle": "model_2026_Chevrolet_Tahoe.html",
+      "parent_vehicle_id": "MA358CB4CDD4D64AE",
+      "path": "domain_2026_Chevrolet_Tahoe_Colour_and_trim.html"
+    },
+    {
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "TD1007A6FB0B61AA4",
@@ -452,7 +834,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Tahoe Comm",
       "entity_key": "2026_chevrolet_tahoe_comm",
@@ -501,7 +883,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Tahoe LS",
       "entity_key": "2026_chevrolet_tahoe_ls",
@@ -558,7 +940,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Tahoe LT",
       "entity_key": "2026_chevrolet_tahoe_lt",
@@ -613,7 +995,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Tahoe RST",
       "entity_key": "2026_chevrolet_tahoe_rst",
@@ -668,7 +1050,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Tahoe Z71",
       "entity_key": "2026_chevrolet_tahoe_z71",
@@ -723,7 +1105,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Tahoe Premier",
       "entity_key": "2026_chevrolet_tahoe_premier",
@@ -778,7 +1160,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Tahoe High Country",
       "entity_key": "2026_chevrolet_tahoe_high_country",

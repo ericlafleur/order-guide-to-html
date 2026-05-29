@@ -32,7 +32,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Silverado EV",
       "entity_key": "2026_chevrolet_silverado_ev",
@@ -40,13 +40,21 @@
       "collection": "M98FED0D3D2CD762C",
       "collection_path": "model_2026_Chevrolet_Silverado_EV.html",
       "child": [
+        "D5F0A89FF0BE06285",
         "C6B74DB746C1F786C",
+        "DAA1D91A4305EBAA8",
         "C208D614F8F748AD0",
+        "DD8933A72152D67F9",
         "CE3A8C700ED4CB372",
+        "DF1B7C7B798A77761",
         "CCAB29B5F1466883B",
+        "D80D05526678DA98C",
         "C7ED851A46A653808",
+        "D40529E1225259469",
         "CC58CDB03516DF763",
+        "D0DC277BD54EBE69C",
         "C83E8D8B9C1979750",
+        "DEE2CAFFF49B9A5B0",
         "TF358A4BD95438A6D",
         "T32CE61C010E36EE8",
         "T299E47696B8DEBF1",
@@ -58,13 +66,21 @@
         "S061F60464748336A"
       ],
       "child_paths": [
+        "domain_2026_Chevrolet_Silverado_EV_Safety_and_driver_assistance.html",
         "compare_domain_2026_Chevrolet_Silverado_EV_Safety_and_driver_assistance.html",
+        "domain_2026_Chevrolet_Silverado_EV_Technology_and_connectivity.html",
         "compare_domain_2026_Chevrolet_Silverado_EV_Technology_and_connectivity.html",
+        "domain_2026_Chevrolet_Silverado_EV_Interior_and_comfort.html",
         "compare_domain_2026_Chevrolet_Silverado_EV_Interior_and_comfort.html",
+        "domain_2026_Chevrolet_Silverado_EV_Exterior_and_utility.html",
         "compare_domain_2026_Chevrolet_Silverado_EV_Exterior_and_utility.html",
+        "domain_2026_Chevrolet_Silverado_EV_Wheels_and_tires.html",
         "compare_domain_2026_Chevrolet_Silverado_EV_Wheels_and_tires.html",
+        "domain_2026_Chevrolet_Silverado_EV_Mechanical_and_performance.html",
         "compare_domain_2026_Chevrolet_Silverado_EV_Mechanical_and_performance.html",
+        "domain_2026_Chevrolet_Silverado_EV_Packages_and_options.html",
         "compare_domain_2026_Chevrolet_Silverado_EV_Packages_and_options.html",
+        "domain_2026_Chevrolet_Silverado_EV_Colour_and_trim.html",
         "trim_2026_Chevrolet_Silverado_EV_Work_Truck_Standard_Range.html",
         "trim_2026_Chevrolet_Silverado_EV_Work_Truck_Extended_Range.html",
         "trim_2026_Chevrolet_Silverado_EV_Work_Truck_Max_Range.html",
@@ -86,6 +102,52 @@
         "Trail Boss Extended Range",
         "Trail Boss Max Range"
       ]
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D5F0A89FF0BE06285",
+      "seating": [
+        "5"
+      ],
+      "fuel_type": [
+        "Electric"
+      ],
+      "name": "2026 Chevrolet Silverado EV | Safety and driver assistance",
+      "title": "2026 Chevrolet Silverado EV | Safety and driver assistance",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado EV",
+      "trim_names_from_guide": [
+        "Work Truck Standard Range",
+        "Work Truck Extended Range",
+        "Work Truck Max Range",
+        "LT Standard Range",
+        "LT Extended Range",
+        "LT Max Range",
+        "Trail Boss Extended Range",
+        "Trail Boss Max Range"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Safety and driver assistance",
+      "guide_domains": [
+        "Safety and driver assistance"
+      ],
+      "feature_count": 38,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado EV",
+      "entity_key": "2026_chevrolet_silverado_ev",
+      "vehicle_key": "2026_chevrolet_silverado_ev",
+      "collection": "M98FED0D3D2CD762C",
+      "collection_path": "model_2026_Chevrolet_Silverado_EV.html",
+      "parent": "M98FED0D3D2CD762C",
+      "parent_path": "model_2026_Chevrolet_Silverado_EV.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_EV.html",
+      "parent_vehicle_id": "M98FED0D3D2CD762C",
+      "path": "domain_2026_Chevrolet_Silverado_EV_Safety_and_driver_assistance.html"
     },
     {
       "objecttype": "Comparison",
@@ -135,6 +197,52 @@
       "path": "compare_domain_2026_Chevrolet_Silverado_EV_Safety_and_driver_assistance.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DAA1D91A4305EBAA8",
+      "seating": [
+        "5"
+      ],
+      "fuel_type": [
+        "Electric"
+      ],
+      "name": "2026 Chevrolet Silverado EV | Technology and connectivity",
+      "title": "2026 Chevrolet Silverado EV | Technology and connectivity",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado EV",
+      "trim_names_from_guide": [
+        "Work Truck Standard Range",
+        "Work Truck Extended Range",
+        "Work Truck Max Range",
+        "LT Standard Range",
+        "LT Extended Range",
+        "LT Max Range",
+        "Trail Boss Extended Range",
+        "Trail Boss Max Range"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Technology and connectivity",
+      "guide_domains": [
+        "Technology and connectivity"
+      ],
+      "feature_count": 30,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado EV",
+      "entity_key": "2026_chevrolet_silverado_ev",
+      "vehicle_key": "2026_chevrolet_silverado_ev",
+      "collection": "M98FED0D3D2CD762C",
+      "collection_path": "model_2026_Chevrolet_Silverado_EV.html",
+      "parent": "M98FED0D3D2CD762C",
+      "parent_path": "model_2026_Chevrolet_Silverado_EV.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_EV.html",
+      "parent_vehicle_id": "M98FED0D3D2CD762C",
+      "path": "domain_2026_Chevrolet_Silverado_EV_Technology_and_connectivity.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C208D614F8F748AD0",
@@ -180,6 +288,52 @@
       "parent_vehicle": "model_2026_Chevrolet_Silverado_EV.html",
       "parent_vehicle_id": "M98FED0D3D2CD762C",
       "path": "compare_domain_2026_Chevrolet_Silverado_EV_Technology_and_connectivity.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DD8933A72152D67F9",
+      "seating": [
+        "5"
+      ],
+      "fuel_type": [
+        "Electric"
+      ],
+      "name": "2026 Chevrolet Silverado EV | Interior and comfort",
+      "title": "2026 Chevrolet Silverado EV | Interior and comfort",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado EV",
+      "trim_names_from_guide": [
+        "Work Truck Standard Range",
+        "Work Truck Extended Range",
+        "Work Truck Max Range",
+        "LT Standard Range",
+        "LT Extended Range",
+        "LT Max Range",
+        "Trail Boss Extended Range",
+        "Trail Boss Max Range"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Interior and comfort",
+      "guide_domains": [
+        "Interior and comfort"
+      ],
+      "feature_count": 42,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado EV",
+      "entity_key": "2026_chevrolet_silverado_ev",
+      "vehicle_key": "2026_chevrolet_silverado_ev",
+      "collection": "M98FED0D3D2CD762C",
+      "collection_path": "model_2026_Chevrolet_Silverado_EV.html",
+      "parent": "M98FED0D3D2CD762C",
+      "parent_path": "model_2026_Chevrolet_Silverado_EV.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_EV.html",
+      "parent_vehicle_id": "M98FED0D3D2CD762C",
+      "path": "domain_2026_Chevrolet_Silverado_EV_Interior_and_comfort.html"
     },
     {
       "objecttype": "Comparison",
@@ -229,6 +383,52 @@
       "path": "compare_domain_2026_Chevrolet_Silverado_EV_Interior_and_comfort.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DF1B7C7B798A77761",
+      "seating": [
+        "5"
+      ],
+      "fuel_type": [
+        "Electric"
+      ],
+      "name": "2026 Chevrolet Silverado EV | Exterior and utility",
+      "title": "2026 Chevrolet Silverado EV | Exterior and utility",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado EV",
+      "trim_names_from_guide": [
+        "Work Truck Standard Range",
+        "Work Truck Extended Range",
+        "Work Truck Max Range",
+        "LT Standard Range",
+        "LT Extended Range",
+        "LT Max Range",
+        "Trail Boss Extended Range",
+        "Trail Boss Max Range"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Exterior and utility",
+      "guide_domains": [
+        "Exterior and utility"
+      ],
+      "feature_count": 52,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado EV",
+      "entity_key": "2026_chevrolet_silverado_ev",
+      "vehicle_key": "2026_chevrolet_silverado_ev",
+      "collection": "M98FED0D3D2CD762C",
+      "collection_path": "model_2026_Chevrolet_Silverado_EV.html",
+      "parent": "M98FED0D3D2CD762C",
+      "parent_path": "model_2026_Chevrolet_Silverado_EV.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_EV.html",
+      "parent_vehicle_id": "M98FED0D3D2CD762C",
+      "path": "domain_2026_Chevrolet_Silverado_EV_Exterior_and_utility.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CCAB29B5F1466883B",
@@ -274,6 +474,52 @@
       "parent_vehicle": "model_2026_Chevrolet_Silverado_EV.html",
       "parent_vehicle_id": "M98FED0D3D2CD762C",
       "path": "compare_domain_2026_Chevrolet_Silverado_EV_Exterior_and_utility.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D80D05526678DA98C",
+      "seating": [
+        "5"
+      ],
+      "fuel_type": [
+        "Electric"
+      ],
+      "name": "2026 Chevrolet Silverado EV | Wheels and tires",
+      "title": "2026 Chevrolet Silverado EV | Wheels and tires",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado EV",
+      "trim_names_from_guide": [
+        "Work Truck Standard Range",
+        "Work Truck Extended Range",
+        "Work Truck Max Range",
+        "LT Standard Range",
+        "LT Extended Range",
+        "LT Max Range",
+        "Trail Boss Extended Range",
+        "Trail Boss Max Range"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Wheels and tires",
+      "guide_domains": [
+        "Wheels and tires"
+      ],
+      "feature_count": 22,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado EV",
+      "entity_key": "2026_chevrolet_silverado_ev",
+      "vehicle_key": "2026_chevrolet_silverado_ev",
+      "collection": "M98FED0D3D2CD762C",
+      "collection_path": "model_2026_Chevrolet_Silverado_EV.html",
+      "parent": "M98FED0D3D2CD762C",
+      "parent_path": "model_2026_Chevrolet_Silverado_EV.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_EV.html",
+      "parent_vehicle_id": "M98FED0D3D2CD762C",
+      "path": "domain_2026_Chevrolet_Silverado_EV_Wheels_and_tires.html"
     },
     {
       "objecttype": "Comparison",
@@ -323,6 +569,52 @@
       "path": "compare_domain_2026_Chevrolet_Silverado_EV_Wheels_and_tires.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D40529E1225259469",
+      "seating": [
+        "5"
+      ],
+      "fuel_type": [
+        "Electric"
+      ],
+      "name": "2026 Chevrolet Silverado EV | Mechanical and performance",
+      "title": "2026 Chevrolet Silverado EV | Mechanical and performance",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado EV",
+      "trim_names_from_guide": [
+        "Work Truck Standard Range",
+        "Work Truck Extended Range",
+        "Work Truck Max Range",
+        "LT Standard Range",
+        "LT Extended Range",
+        "LT Max Range",
+        "Trail Boss Extended Range",
+        "Trail Boss Max Range"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Mechanical and performance",
+      "guide_domains": [
+        "Mechanical and performance"
+      ],
+      "feature_count": 42,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado EV",
+      "entity_key": "2026_chevrolet_silverado_ev",
+      "vehicle_key": "2026_chevrolet_silverado_ev",
+      "collection": "M98FED0D3D2CD762C",
+      "collection_path": "model_2026_Chevrolet_Silverado_EV.html",
+      "parent": "M98FED0D3D2CD762C",
+      "parent_path": "model_2026_Chevrolet_Silverado_EV.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_EV.html",
+      "parent_vehicle_id": "M98FED0D3D2CD762C",
+      "path": "domain_2026_Chevrolet_Silverado_EV_Mechanical_and_performance.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CC58CDB03516DF763",
@@ -368,6 +660,52 @@
       "parent_vehicle": "model_2026_Chevrolet_Silverado_EV.html",
       "parent_vehicle_id": "M98FED0D3D2CD762C",
       "path": "compare_domain_2026_Chevrolet_Silverado_EV_Mechanical_and_performance.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D0DC277BD54EBE69C",
+      "seating": [
+        "5"
+      ],
+      "fuel_type": [
+        "Electric"
+      ],
+      "name": "2026 Chevrolet Silverado EV | Packages and options",
+      "title": "2026 Chevrolet Silverado EV | Packages and options",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado EV",
+      "trim_names_from_guide": [
+        "Work Truck Standard Range",
+        "Work Truck Extended Range",
+        "Work Truck Max Range",
+        "LT Standard Range",
+        "LT Extended Range",
+        "LT Max Range",
+        "Trail Boss Extended Range",
+        "Trail Boss Max Range"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Packages and options",
+      "guide_domains": [
+        "Packages and options"
+      ],
+      "feature_count": 27,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado EV",
+      "entity_key": "2026_chevrolet_silverado_ev",
+      "vehicle_key": "2026_chevrolet_silverado_ev",
+      "collection": "M98FED0D3D2CD762C",
+      "collection_path": "model_2026_Chevrolet_Silverado_EV.html",
+      "parent": "M98FED0D3D2CD762C",
+      "parent_path": "model_2026_Chevrolet_Silverado_EV.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_EV.html",
+      "parent_vehicle_id": "M98FED0D3D2CD762C",
+      "path": "domain_2026_Chevrolet_Silverado_EV_Packages_and_options.html"
     },
     {
       "objecttype": "Comparison",
@@ -417,6 +755,50 @@
       "path": "compare_domain_2026_Chevrolet_Silverado_EV_Packages_and_options.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DEE2CAFFF49B9A5B0",
+      "seating": [
+        "5"
+      ],
+      "fuel_type": [
+        "Electric"
+      ],
+      "name": "2026 Chevrolet Silverado EV",
+      "title": "2026 Chevrolet Silverado EV",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado EV",
+      "trim_names_from_guide": [
+        "Work Truck Standard Range",
+        "Work Truck Extended Range",
+        "Work Truck Max Range",
+        "LT Standard Range",
+        "LT Extended Range",
+        "LT Max Range",
+        "Trail Boss Extended Range",
+        "Trail Boss Max Range"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Colour and trim",
+      "guide_domains": [
+        "Colour and trim"
+      ],
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado EV",
+      "entity_key": "2026_chevrolet_silverado_ev",
+      "vehicle_key": "2026_chevrolet_silverado_ev",
+      "collection": "M98FED0D3D2CD762C",
+      "collection_path": "model_2026_Chevrolet_Silverado_EV.html",
+      "parent": "M98FED0D3D2CD762C",
+      "parent_path": "model_2026_Chevrolet_Silverado_EV.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_EV.html",
+      "parent_vehicle_id": "M98FED0D3D2CD762C",
+      "path": "domain_2026_Chevrolet_Silverado_EV_Colour_and_trim.html"
+    },
+    {
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "TF358A4BD95438A6D",
@@ -450,7 +832,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Silverado EV Work Truck Standard Range",
       "entity_key": "2026_chevrolet_silverado_ev_work_truck_standard_range",
@@ -504,7 +886,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Silverado EV Work Truck Extended Range",
       "entity_key": "2026_chevrolet_silverado_ev_work_truck_extended_range",
@@ -558,7 +940,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Silverado EV Work Truck Max Range",
       "entity_key": "2026_chevrolet_silverado_ev_work_truck_max_range",
@@ -612,7 +994,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Silverado EV LT Standard Range",
       "entity_key": "2026_chevrolet_silverado_ev_lt_standard_range",
@@ -666,7 +1048,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Silverado EV LT Extended Range",
       "entity_key": "2026_chevrolet_silverado_ev_lt_extended_range",
@@ -720,7 +1102,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Silverado EV LT Max Range",
       "entity_key": "2026_chevrolet_silverado_ev_lt_max_range",
@@ -774,7 +1156,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Silverado EV Trail Boss Extended Range",
       "entity_key": "2026_chevrolet_silverado_ev_trail_boss_extended_range",
@@ -828,7 +1210,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Silverado EV Trail Boss Max Range",
       "entity_key": "2026_chevrolet_silverado_ev_trail_boss_max_range",

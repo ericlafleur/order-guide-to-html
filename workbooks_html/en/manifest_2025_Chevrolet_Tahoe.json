@@ -33,7 +33,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Tahoe",
       "entity_key": "2025_chevrolet_tahoe",
@@ -41,13 +41,21 @@
       "collection": "M2EE7A090E7CF4816",
       "collection_path": "model_2025_Chevrolet_Tahoe.html",
       "child": [
+        "DABDD4C73C60F1A33",
         "C233815140ABC33E2",
+        "DA30D0BE50257DAB3",
         "C5C1975BD3860AA28",
+        "D280A37C1F41B8119",
         "CC4ED642BB3FED377",
+        "D3E86954C5C8A406A",
         "CA400ED767BF86191",
+        "D4CD370FA0E00DCAD",
         "C8CAB03904E40BAF7",
+        "D943FED6776ADEB29",
         "C387719A8E6A92A3D",
+        "D4BC9503776FCD6AD",
         "C2F3A14B52BFF72D4",
+        "DA1ECEDCF945586F1",
         "T2A1C77EB8FFE70F6",
         "TFB25A170B523876D",
         "TF9961254484C17B5",
@@ -64,13 +72,21 @@
         "SB59A9F83D3D00E2B"
       ],
       "child_paths": [
+        "domain_2025_Chevrolet_Tahoe_Safety_and_driver_assistance.html",
         "compare_domain_2025_Chevrolet_Tahoe_Safety_and_driver_assistance.html",
+        "domain_2025_Chevrolet_Tahoe_Technology_and_connectivity.html",
         "compare_domain_2025_Chevrolet_Tahoe_Technology_and_connectivity.html",
+        "domain_2025_Chevrolet_Tahoe_Interior_and_comfort.html",
         "compare_domain_2025_Chevrolet_Tahoe_Interior_and_comfort.html",
+        "domain_2025_Chevrolet_Tahoe_Exterior_and_utility.html",
         "compare_domain_2025_Chevrolet_Tahoe_Exterior_and_utility.html",
+        "domain_2025_Chevrolet_Tahoe_Wheels_and_tires.html",
         "compare_domain_2025_Chevrolet_Tahoe_Wheels_and_tires.html",
+        "domain_2025_Chevrolet_Tahoe_Mechanical_and_performance.html",
         "compare_domain_2025_Chevrolet_Tahoe_Mechanical_and_performance.html",
+        "domain_2025_Chevrolet_Tahoe_Packages_and_options.html",
         "compare_domain_2025_Chevrolet_Tahoe_Packages_and_options.html",
+        "domain_2025_Chevrolet_Tahoe_Colour_and_trim.html",
         "trim_2025_Chevrolet_Tahoe_Comm.html",
         "trim_2025_Chevrolet_Tahoe_LS.html",
         "trim_2025_Chevrolet_Tahoe_LT.html",
@@ -96,6 +112,52 @@
         "Premier",
         "High Country"
       ]
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DABDD4C73C60F1A33",
+      "seating": [
+        "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Tahoe | Safety and driver assistance",
+      "title": "2025 Chevrolet Tahoe | Safety and driver assistance",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Tahoe",
+      "trim_names_from_guide": [
+        "Comm",
+        "LS",
+        "LT",
+        "RST",
+        "Z71",
+        "Premier",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Safety and driver assistance",
+      "guide_domains": [
+        "Safety and driver assistance"
+      ],
+      "feature_count": 31,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Tahoe",
+      "entity_key": "2025_chevrolet_tahoe",
+      "vehicle_key": "2025_chevrolet_tahoe",
+      "collection": "M2EE7A090E7CF4816",
+      "collection_path": "model_2025_Chevrolet_Tahoe.html",
+      "parent": "M2EE7A090E7CF4816",
+      "parent_path": "model_2025_Chevrolet_Tahoe.html",
+      "parent_vehicle": "model_2025_Chevrolet_Tahoe.html",
+      "parent_vehicle_id": "M2EE7A090E7CF4816",
+      "path": "domain_2025_Chevrolet_Tahoe_Safety_and_driver_assistance.html"
     },
     {
       "objecttype": "Comparison",
@@ -145,6 +207,52 @@
       "path": "compare_domain_2025_Chevrolet_Tahoe_Safety_and_driver_assistance.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DA30D0BE50257DAB3",
+      "seating": [
+        "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Tahoe | Technology and connectivity",
+      "title": "2025 Chevrolet Tahoe | Technology and connectivity",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Tahoe",
+      "trim_names_from_guide": [
+        "Comm",
+        "LS",
+        "LT",
+        "RST",
+        "Z71",
+        "Premier",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Technology and connectivity",
+      "guide_domains": [
+        "Technology and connectivity"
+      ],
+      "feature_count": 35,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Tahoe",
+      "entity_key": "2025_chevrolet_tahoe",
+      "vehicle_key": "2025_chevrolet_tahoe",
+      "collection": "M2EE7A090E7CF4816",
+      "collection_path": "model_2025_Chevrolet_Tahoe.html",
+      "parent": "M2EE7A090E7CF4816",
+      "parent_path": "model_2025_Chevrolet_Tahoe.html",
+      "parent_vehicle": "model_2025_Chevrolet_Tahoe.html",
+      "parent_vehicle_id": "M2EE7A090E7CF4816",
+      "path": "domain_2025_Chevrolet_Tahoe_Technology_and_connectivity.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C5C1975BD3860AA28",
@@ -190,6 +298,52 @@
       "parent_vehicle": "model_2025_Chevrolet_Tahoe.html",
       "parent_vehicle_id": "M2EE7A090E7CF4816",
       "path": "compare_domain_2025_Chevrolet_Tahoe_Technology_and_connectivity.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D280A37C1F41B8119",
+      "seating": [
+        "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Tahoe | Interior and comfort",
+      "title": "2025 Chevrolet Tahoe | Interior and comfort",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Tahoe",
+      "trim_names_from_guide": [
+        "Comm",
+        "LS",
+        "LT",
+        "RST",
+        "Z71",
+        "Premier",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Interior and comfort",
+      "guide_domains": [
+        "Interior and comfort"
+      ],
+      "feature_count": 42,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Tahoe",
+      "entity_key": "2025_chevrolet_tahoe",
+      "vehicle_key": "2025_chevrolet_tahoe",
+      "collection": "M2EE7A090E7CF4816",
+      "collection_path": "model_2025_Chevrolet_Tahoe.html",
+      "parent": "M2EE7A090E7CF4816",
+      "parent_path": "model_2025_Chevrolet_Tahoe.html",
+      "parent_vehicle": "model_2025_Chevrolet_Tahoe.html",
+      "parent_vehicle_id": "M2EE7A090E7CF4816",
+      "path": "domain_2025_Chevrolet_Tahoe_Interior_and_comfort.html"
     },
     {
       "objecttype": "Comparison",
@@ -239,6 +393,52 @@
       "path": "compare_domain_2025_Chevrolet_Tahoe_Interior_and_comfort.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D3E86954C5C8A406A",
+      "seating": [
+        "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Tahoe | Exterior and utility",
+      "title": "2025 Chevrolet Tahoe | Exterior and utility",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Tahoe",
+      "trim_names_from_guide": [
+        "Comm",
+        "LS",
+        "LT",
+        "RST",
+        "Z71",
+        "Premier",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Exterior and utility",
+      "guide_domains": [
+        "Exterior and utility"
+      ],
+      "feature_count": 61,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Tahoe",
+      "entity_key": "2025_chevrolet_tahoe",
+      "vehicle_key": "2025_chevrolet_tahoe",
+      "collection": "M2EE7A090E7CF4816",
+      "collection_path": "model_2025_Chevrolet_Tahoe.html",
+      "parent": "M2EE7A090E7CF4816",
+      "parent_path": "model_2025_Chevrolet_Tahoe.html",
+      "parent_vehicle": "model_2025_Chevrolet_Tahoe.html",
+      "parent_vehicle_id": "M2EE7A090E7CF4816",
+      "path": "domain_2025_Chevrolet_Tahoe_Exterior_and_utility.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CA400ED767BF86191",
@@ -284,6 +484,52 @@
       "parent_vehicle": "model_2025_Chevrolet_Tahoe.html",
       "parent_vehicle_id": "M2EE7A090E7CF4816",
       "path": "compare_domain_2025_Chevrolet_Tahoe_Exterior_and_utility.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D4CD370FA0E00DCAD",
+      "seating": [
+        "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Tahoe | Wheels and tires",
+      "title": "2025 Chevrolet Tahoe | Wheels and tires",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Tahoe",
+      "trim_names_from_guide": [
+        "Comm",
+        "LS",
+        "LT",
+        "RST",
+        "Z71",
+        "Premier",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Wheels and tires",
+      "guide_domains": [
+        "Wheels and tires"
+      ],
+      "feature_count": 32,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Tahoe",
+      "entity_key": "2025_chevrolet_tahoe",
+      "vehicle_key": "2025_chevrolet_tahoe",
+      "collection": "M2EE7A090E7CF4816",
+      "collection_path": "model_2025_Chevrolet_Tahoe.html",
+      "parent": "M2EE7A090E7CF4816",
+      "parent_path": "model_2025_Chevrolet_Tahoe.html",
+      "parent_vehicle": "model_2025_Chevrolet_Tahoe.html",
+      "parent_vehicle_id": "M2EE7A090E7CF4816",
+      "path": "domain_2025_Chevrolet_Tahoe_Wheels_and_tires.html"
     },
     {
       "objecttype": "Comparison",
@@ -333,6 +579,52 @@
       "path": "compare_domain_2025_Chevrolet_Tahoe_Wheels_and_tires.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D943FED6776ADEB29",
+      "seating": [
+        "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Tahoe | Mechanical and performance",
+      "title": "2025 Chevrolet Tahoe | Mechanical and performance",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Tahoe",
+      "trim_names_from_guide": [
+        "Comm",
+        "LS",
+        "LT",
+        "RST",
+        "Z71",
+        "Premier",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Mechanical and performance",
+      "guide_domains": [
+        "Mechanical and performance"
+      ],
+      "feature_count": 56,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Tahoe",
+      "entity_key": "2025_chevrolet_tahoe",
+      "vehicle_key": "2025_chevrolet_tahoe",
+      "collection": "M2EE7A090E7CF4816",
+      "collection_path": "model_2025_Chevrolet_Tahoe.html",
+      "parent": "M2EE7A090E7CF4816",
+      "parent_path": "model_2025_Chevrolet_Tahoe.html",
+      "parent_vehicle": "model_2025_Chevrolet_Tahoe.html",
+      "parent_vehicle_id": "M2EE7A090E7CF4816",
+      "path": "domain_2025_Chevrolet_Tahoe_Mechanical_and_performance.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C387719A8E6A92A3D",
@@ -378,6 +670,52 @@
       "parent_vehicle": "model_2025_Chevrolet_Tahoe.html",
       "parent_vehicle_id": "M2EE7A090E7CF4816",
       "path": "compare_domain_2025_Chevrolet_Tahoe_Mechanical_and_performance.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D4BC9503776FCD6AD",
+      "seating": [
+        "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Tahoe | Packages and options",
+      "title": "2025 Chevrolet Tahoe | Packages and options",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Tahoe",
+      "trim_names_from_guide": [
+        "Comm",
+        "LS",
+        "LT",
+        "RST",
+        "Z71",
+        "Premier",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Packages and options",
+      "guide_domains": [
+        "Packages and options"
+      ],
+      "feature_count": 49,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Tahoe",
+      "entity_key": "2025_chevrolet_tahoe",
+      "vehicle_key": "2025_chevrolet_tahoe",
+      "collection": "M2EE7A090E7CF4816",
+      "collection_path": "model_2025_Chevrolet_Tahoe.html",
+      "parent": "M2EE7A090E7CF4816",
+      "parent_path": "model_2025_Chevrolet_Tahoe.html",
+      "parent_vehicle": "model_2025_Chevrolet_Tahoe.html",
+      "parent_vehicle_id": "M2EE7A090E7CF4816",
+      "path": "domain_2025_Chevrolet_Tahoe_Packages_and_options.html"
     },
     {
       "objecttype": "Comparison",
@@ -427,6 +765,50 @@
       "path": "compare_domain_2025_Chevrolet_Tahoe_Packages_and_options.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DA1ECEDCF945586F1",
+      "seating": [
+        "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Tahoe",
+      "title": "2025 Chevrolet Tahoe",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Tahoe",
+      "trim_names_from_guide": [
+        "Comm",
+        "LS",
+        "LT",
+        "RST",
+        "Z71",
+        "Premier",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Colour and trim",
+      "guide_domains": [
+        "Colour and trim"
+      ],
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Tahoe",
+      "entity_key": "2025_chevrolet_tahoe",
+      "vehicle_key": "2025_chevrolet_tahoe",
+      "collection": "M2EE7A090E7CF4816",
+      "collection_path": "model_2025_Chevrolet_Tahoe.html",
+      "parent": "M2EE7A090E7CF4816",
+      "parent_path": "model_2025_Chevrolet_Tahoe.html",
+      "parent_vehicle": "model_2025_Chevrolet_Tahoe.html",
+      "parent_vehicle_id": "M2EE7A090E7CF4816",
+      "path": "domain_2025_Chevrolet_Tahoe_Colour_and_trim.html"
+    },
+    {
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "T2A1C77EB8FFE70F6",
@@ -454,7 +836,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Tahoe Comm",
       "entity_key": "2025_chevrolet_tahoe_comm",
@@ -503,7 +885,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Tahoe LS",
       "entity_key": "2025_chevrolet_tahoe_ls",
@@ -560,7 +942,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Tahoe LT",
       "entity_key": "2025_chevrolet_tahoe_lt",
@@ -615,7 +997,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Tahoe RST",
       "entity_key": "2025_chevrolet_tahoe_rst",
@@ -670,7 +1052,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Tahoe Z71",
       "entity_key": "2025_chevrolet_tahoe_z71",
@@ -725,7 +1107,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Tahoe Premier",
       "entity_key": "2025_chevrolet_tahoe_premier",
@@ -780,7 +1162,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Tahoe High Country",
       "entity_key": "2025_chevrolet_tahoe_high_country",

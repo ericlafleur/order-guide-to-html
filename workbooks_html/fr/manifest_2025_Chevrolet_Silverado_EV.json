@@ -29,7 +29,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Silverado EV",
       "entity_key": "2025_chevrolet_silverado_ev",
@@ -37,13 +37,21 @@
       "collection": "MDF413A323383EE51",
       "collection_path": "model_2025_Chevrolet_Silverado_EV.html",
       "child": [
+        "D1200215C0ED0EDBC",
         "CF4482422D97BEB22",
+        "D87FD3D7859507D27",
         "CC6F0BC1CE8F3B45E",
+        "D7199BF658F2CB191",
         "CF4D714A24BEC69AE",
+        "D60E5D4B07CC47AF2",
         "C167B5BFA058939AF",
+        "D6CD137D81794D074",
         "CC41D76A75C5BDF45",
+        "DDF904829E3391729",
         "C3E0ACBB295378B30",
+        "DED0735BD99C0AFF0",
         "C4C4E289C4111D037",
+        "DEE095CA549900815",
         "TE708C18B1FD22B73",
         "T3DC1BE230E0A4025",
         "T41D96D42D9DD87AA",
@@ -53,13 +61,21 @@
         "S8DB91A3F51327FF0"
       ],
       "child_paths": [
+        "domain_2025_Chevrolet_Silverado_EV_Safety_and_driver_assistance.html",
         "compare_domain_2025_Chevrolet_Silverado_EV_Safety_and_driver_assistance.html",
+        "domain_2025_Chevrolet_Silverado_EV_Technology_and_connectivity.html",
         "compare_domain_2025_Chevrolet_Silverado_EV_Technology_and_connectivity.html",
+        "domain_2025_Chevrolet_Silverado_EV_Interior_and_comfort.html",
         "compare_domain_2025_Chevrolet_Silverado_EV_Interior_and_comfort.html",
+        "domain_2025_Chevrolet_Silverado_EV_Exterior_and_utility.html",
         "compare_domain_2025_Chevrolet_Silverado_EV_Exterior_and_utility.html",
+        "domain_2025_Chevrolet_Silverado_EV_Wheels_and_tires.html",
         "compare_domain_2025_Chevrolet_Silverado_EV_Wheels_and_tires.html",
+        "domain_2025_Chevrolet_Silverado_EV_Mechanical_and_performance.html",
         "compare_domain_2025_Chevrolet_Silverado_EV_Mechanical_and_performance.html",
+        "domain_2025_Chevrolet_Silverado_EV_Packages_and_options.html",
         "compare_domain_2025_Chevrolet_Silverado_EV_Packages_and_options.html",
+        "domain_2025_Chevrolet_Silverado_EV_Colour_and_trim.html",
         "trim_2025_Chevrolet_Silverado_EV_WT_Distance_standard.html",
         "trim_2025_Chevrolet_Silverado_EV_WT_Autonomie_prolong_e.html",
         "trim_2025_Chevrolet_Silverado_EV_WT_Autonomie_maximale.html",
@@ -77,6 +93,47 @@
         "RST Autonomie prolongée",
         "RST Autonomie maximale"
       ]
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D1200215C0ED0EDBC",
+      "fuel_type": [
+        "Electric"
+      ],
+      "name": "2025 Chevrolet Silverado EV | Safety and driver assistance",
+      "title": "2025 Chevrolet Silverado EV | Safety and driver assistance",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado EV",
+      "trim_names_from_guide": [
+        "WT Distance standard",
+        "WT Autonomie prolongée",
+        "WT Autonomie maximale",
+        "LT Autonomie prolongée",
+        "RST Autonomie prolongée",
+        "RST Autonomie maximale"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Safety and driver assistance",
+      "guide_domains": [
+        "Safety and driver assistance"
+      ],
+      "feature_count": 43,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado EV",
+      "entity_key": "2025_chevrolet_silverado_ev",
+      "vehicle_key": "2025_chevrolet_silverado_ev",
+      "collection": "MDF413A323383EE51",
+      "collection_path": "model_2025_Chevrolet_Silverado_EV.html",
+      "parent": "MDF413A323383EE51",
+      "parent_path": "model_2025_Chevrolet_Silverado_EV.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_EV.html",
+      "parent_vehicle_id": "MDF413A323383EE51",
+      "path": "domain_2025_Chevrolet_Silverado_EV_Safety_and_driver_assistance.html"
     },
     {
       "objecttype": "Comparison",
@@ -121,6 +178,47 @@
       "path": "compare_domain_2025_Chevrolet_Silverado_EV_Safety_and_driver_assistance.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D87FD3D7859507D27",
+      "fuel_type": [
+        "Electric"
+      ],
+      "name": "2025 Chevrolet Silverado EV | Technology and connectivity",
+      "title": "2025 Chevrolet Silverado EV | Technology and connectivity",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado EV",
+      "trim_names_from_guide": [
+        "WT Distance standard",
+        "WT Autonomie prolongée",
+        "WT Autonomie maximale",
+        "LT Autonomie prolongée",
+        "RST Autonomie prolongée",
+        "RST Autonomie maximale"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Technology and connectivity",
+      "guide_domains": [
+        "Technology and connectivity"
+      ],
+      "feature_count": 17,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado EV",
+      "entity_key": "2025_chevrolet_silverado_ev",
+      "vehicle_key": "2025_chevrolet_silverado_ev",
+      "collection": "MDF413A323383EE51",
+      "collection_path": "model_2025_Chevrolet_Silverado_EV.html",
+      "parent": "MDF413A323383EE51",
+      "parent_path": "model_2025_Chevrolet_Silverado_EV.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_EV.html",
+      "parent_vehicle_id": "MDF413A323383EE51",
+      "path": "domain_2025_Chevrolet_Silverado_EV_Technology_and_connectivity.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CC6F0BC1CE8F3B45E",
@@ -161,6 +259,47 @@
       "parent_vehicle": "model_2025_Chevrolet_Silverado_EV.html",
       "parent_vehicle_id": "MDF413A323383EE51",
       "path": "compare_domain_2025_Chevrolet_Silverado_EV_Technology_and_connectivity.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D7199BF658F2CB191",
+      "fuel_type": [
+        "Electric"
+      ],
+      "name": "2025 Chevrolet Silverado EV | Interior and comfort",
+      "title": "2025 Chevrolet Silverado EV | Interior and comfort",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado EV",
+      "trim_names_from_guide": [
+        "WT Distance standard",
+        "WT Autonomie prolongée",
+        "WT Autonomie maximale",
+        "LT Autonomie prolongée",
+        "RST Autonomie prolongée",
+        "RST Autonomie maximale"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Interior and comfort",
+      "guide_domains": [
+        "Interior and comfort"
+      ],
+      "feature_count": 44,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado EV",
+      "entity_key": "2025_chevrolet_silverado_ev",
+      "vehicle_key": "2025_chevrolet_silverado_ev",
+      "collection": "MDF413A323383EE51",
+      "collection_path": "model_2025_Chevrolet_Silverado_EV.html",
+      "parent": "MDF413A323383EE51",
+      "parent_path": "model_2025_Chevrolet_Silverado_EV.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_EV.html",
+      "parent_vehicle_id": "MDF413A323383EE51",
+      "path": "domain_2025_Chevrolet_Silverado_EV_Interior_and_comfort.html"
     },
     {
       "objecttype": "Comparison",
@@ -205,6 +344,47 @@
       "path": "compare_domain_2025_Chevrolet_Silverado_EV_Interior_and_comfort.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D60E5D4B07CC47AF2",
+      "fuel_type": [
+        "Electric"
+      ],
+      "name": "2025 Chevrolet Silverado EV | Exterior and utility",
+      "title": "2025 Chevrolet Silverado EV | Exterior and utility",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado EV",
+      "trim_names_from_guide": [
+        "WT Distance standard",
+        "WT Autonomie prolongée",
+        "WT Autonomie maximale",
+        "LT Autonomie prolongée",
+        "RST Autonomie prolongée",
+        "RST Autonomie maximale"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Exterior and utility",
+      "guide_domains": [
+        "Exterior and utility"
+      ],
+      "feature_count": 46,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado EV",
+      "entity_key": "2025_chevrolet_silverado_ev",
+      "vehicle_key": "2025_chevrolet_silverado_ev",
+      "collection": "MDF413A323383EE51",
+      "collection_path": "model_2025_Chevrolet_Silverado_EV.html",
+      "parent": "MDF413A323383EE51",
+      "parent_path": "model_2025_Chevrolet_Silverado_EV.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_EV.html",
+      "parent_vehicle_id": "MDF413A323383EE51",
+      "path": "domain_2025_Chevrolet_Silverado_EV_Exterior_and_utility.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C167B5BFA058939AF",
@@ -245,6 +425,47 @@
       "parent_vehicle": "model_2025_Chevrolet_Silverado_EV.html",
       "parent_vehicle_id": "MDF413A323383EE51",
       "path": "compare_domain_2025_Chevrolet_Silverado_EV_Exterior_and_utility.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D6CD137D81794D074",
+      "fuel_type": [
+        "Electric"
+      ],
+      "name": "2025 Chevrolet Silverado EV | Wheels and tires",
+      "title": "2025 Chevrolet Silverado EV | Wheels and tires",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado EV",
+      "trim_names_from_guide": [
+        "WT Distance standard",
+        "WT Autonomie prolongée",
+        "WT Autonomie maximale",
+        "LT Autonomie prolongée",
+        "RST Autonomie prolongée",
+        "RST Autonomie maximale"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Wheels and tires",
+      "guide_domains": [
+        "Wheels and tires"
+      ],
+      "feature_count": 25,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado EV",
+      "entity_key": "2025_chevrolet_silverado_ev",
+      "vehicle_key": "2025_chevrolet_silverado_ev",
+      "collection": "MDF413A323383EE51",
+      "collection_path": "model_2025_Chevrolet_Silverado_EV.html",
+      "parent": "MDF413A323383EE51",
+      "parent_path": "model_2025_Chevrolet_Silverado_EV.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_EV.html",
+      "parent_vehicle_id": "MDF413A323383EE51",
+      "path": "domain_2025_Chevrolet_Silverado_EV_Wheels_and_tires.html"
     },
     {
       "objecttype": "Comparison",
@@ -289,6 +510,47 @@
       "path": "compare_domain_2025_Chevrolet_Silverado_EV_Wheels_and_tires.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DDF904829E3391729",
+      "fuel_type": [
+        "Electric"
+      ],
+      "name": "2025 Chevrolet Silverado EV | Mechanical and performance",
+      "title": "2025 Chevrolet Silverado EV | Mechanical and performance",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado EV",
+      "trim_names_from_guide": [
+        "WT Distance standard",
+        "WT Autonomie prolongée",
+        "WT Autonomie maximale",
+        "LT Autonomie prolongée",
+        "RST Autonomie prolongée",
+        "RST Autonomie maximale"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Mechanical and performance",
+      "guide_domains": [
+        "Mechanical and performance"
+      ],
+      "feature_count": 44,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado EV",
+      "entity_key": "2025_chevrolet_silverado_ev",
+      "vehicle_key": "2025_chevrolet_silverado_ev",
+      "collection": "MDF413A323383EE51",
+      "collection_path": "model_2025_Chevrolet_Silverado_EV.html",
+      "parent": "MDF413A323383EE51",
+      "parent_path": "model_2025_Chevrolet_Silverado_EV.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_EV.html",
+      "parent_vehicle_id": "MDF413A323383EE51",
+      "path": "domain_2025_Chevrolet_Silverado_EV_Mechanical_and_performance.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C3E0ACBB295378B30",
@@ -329,6 +591,47 @@
       "parent_vehicle": "model_2025_Chevrolet_Silverado_EV.html",
       "parent_vehicle_id": "MDF413A323383EE51",
       "path": "compare_domain_2025_Chevrolet_Silverado_EV_Mechanical_and_performance.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DED0735BD99C0AFF0",
+      "fuel_type": [
+        "Electric"
+      ],
+      "name": "2025 Chevrolet Silverado EV | Packages and options",
+      "title": "2025 Chevrolet Silverado EV | Packages and options",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado EV",
+      "trim_names_from_guide": [
+        "WT Distance standard",
+        "WT Autonomie prolongée",
+        "WT Autonomie maximale",
+        "LT Autonomie prolongée",
+        "RST Autonomie prolongée",
+        "RST Autonomie maximale"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Packages and options",
+      "guide_domains": [
+        "Packages and options"
+      ],
+      "feature_count": 16,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado EV",
+      "entity_key": "2025_chevrolet_silverado_ev",
+      "vehicle_key": "2025_chevrolet_silverado_ev",
+      "collection": "MDF413A323383EE51",
+      "collection_path": "model_2025_Chevrolet_Silverado_EV.html",
+      "parent": "MDF413A323383EE51",
+      "parent_path": "model_2025_Chevrolet_Silverado_EV.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_EV.html",
+      "parent_vehicle_id": "MDF413A323383EE51",
+      "path": "domain_2025_Chevrolet_Silverado_EV_Packages_and_options.html"
     },
     {
       "objecttype": "Comparison",
@@ -373,6 +676,45 @@
       "path": "compare_domain_2025_Chevrolet_Silverado_EV_Packages_and_options.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DEE095CA549900815",
+      "fuel_type": [
+        "Electric"
+      ],
+      "name": "2025 Chevrolet Silverado EV",
+      "title": "2025 Chevrolet Silverado EV",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado EV",
+      "trim_names_from_guide": [
+        "WT Distance standard",
+        "WT Autonomie prolongée",
+        "WT Autonomie maximale",
+        "LT Autonomie prolongée",
+        "RST Autonomie prolongée",
+        "RST Autonomie maximale"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Colour and trim",
+      "guide_domains": [
+        "Colour and trim"
+      ],
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado EV",
+      "entity_key": "2025_chevrolet_silverado_ev",
+      "vehicle_key": "2025_chevrolet_silverado_ev",
+      "collection": "MDF413A323383EE51",
+      "collection_path": "model_2025_Chevrolet_Silverado_EV.html",
+      "parent": "MDF413A323383EE51",
+      "parent_path": "model_2025_Chevrolet_Silverado_EV.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_EV.html",
+      "parent_vehicle_id": "MDF413A323383EE51",
+      "path": "domain_2025_Chevrolet_Silverado_EV_Colour_and_trim.html"
+    },
+    {
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "TE708C18B1FD22B73",
@@ -403,7 +745,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Silverado EV WT Distance standard",
       "entity_key": "2025_chevrolet_silverado_ev_wt_distance_standard",
@@ -448,7 +790,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Silverado EV WT Autonomie prolongée",
       "entity_key": "2025_chevrolet_silverado_ev_wt_autonomie_prolong_e",
@@ -493,7 +835,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Silverado EV WT Autonomie maximale",
       "entity_key": "2025_chevrolet_silverado_ev_wt_autonomie_maximale",
@@ -538,7 +880,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Silverado EV LT Autonomie prolongée",
       "entity_key": "2025_chevrolet_silverado_ev_lt_autonomie_prolong_e",
@@ -583,7 +925,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Silverado EV RST Autonomie prolongée",
       "entity_key": "2025_chevrolet_silverado_ev_rst_autonomie_prolong_e",
@@ -628,7 +970,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Silverado EV RST Autonomie maximale",
       "entity_key": "2025_chevrolet_silverado_ev_rst_autonomie_maximale",

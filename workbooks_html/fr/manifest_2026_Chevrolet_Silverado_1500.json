@@ -35,7 +35,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Silverado 1500",
       "entity_key": "2026_chevrolet_silverado_1500",
@@ -43,13 +43,21 @@
       "collection": "M3381846B8AEC20F4",
       "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
       "child": [
+        "D943FDB142C02491D",
         "C7E89A76AE23A01C4",
+        "D3D2EE62F149A4BB2",
         "CFDBDCFC8712D216B",
+        "DB09F087E3C0A37C3",
         "C9E95A493ED4AFCF6",
+        "D5C1DE9A2355F5832",
         "C5F904DC7C441BC35",
+        "D39D191E28AFF2B7F",
         "CF40F9373CA1859AE",
+        "D38C2BE1E630CE166",
         "CFB9A2C98B2F4382F",
+        "D9915490C939AA00C",
         "CA77C37510AA3BC7B",
+        "DBC2B24395095A9BD",
         "TEA80D36DF94FD565",
         "T39BA52770A06E5C7",
         "TAD39289754078D26",
@@ -85,13 +93,21 @@
         "S8E30CE629F656F24"
       ],
       "child_paths": [
+        "domain_2026_Chevrolet_Silverado_1500_Safety_and_driver_assistance.html",
         "compare_domain_2026_Chevrolet_Silverado_1500_Safety_and_driver_assistance.html",
+        "domain_2026_Chevrolet_Silverado_1500_Technology_and_connectivity.html",
         "compare_domain_2026_Chevrolet_Silverado_1500_Technology_and_connectivity.html",
+        "domain_2026_Chevrolet_Silverado_1500_Interior_and_comfort.html",
         "compare_domain_2026_Chevrolet_Silverado_1500_Interior_and_comfort.html",
+        "domain_2026_Chevrolet_Silverado_1500_Exterior_and_utility.html",
         "compare_domain_2026_Chevrolet_Silverado_1500_Exterior_and_utility.html",
+        "domain_2026_Chevrolet_Silverado_1500_Wheels_and_tires.html",
         "compare_domain_2026_Chevrolet_Silverado_1500_Wheels_and_tires.html",
+        "domain_2026_Chevrolet_Silverado_1500_Mechanical_and_performance.html",
         "compare_domain_2026_Chevrolet_Silverado_1500_Mechanical_and_performance.html",
+        "domain_2026_Chevrolet_Silverado_1500_Packages_and_options.html",
         "compare_domain_2026_Chevrolet_Silverado_1500_Packages_and_options.html",
+        "domain_2026_Chevrolet_Silverado_1500_Colour_and_trim.html",
         "trim_2026_Chevrolet_Silverado_1500_WT.html",
         "trim_2026_Chevrolet_Silverado_1500_Custom.html",
         "trim_2026_Chevrolet_Silverado_1500_Custom_Trail_Boss.html",
@@ -138,6 +154,56 @@
         "LTZ",
         "High Country"
       ]
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D943FDB142C02491D",
+      "seating": [
+        "3",
+        "6",
+        "5"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Silverado 1500 | Safety and driver assistance",
+      "title": "2026 Chevrolet Silverado 1500 | Safety and driver assistance",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
+      "trim_names_from_guide": [
+        "WT",
+        "Custom",
+        "Custom Trail Boss",
+        "LT",
+        "RST",
+        "LT Trail Boss",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Safety and driver assistance",
+      "guide_domains": [
+        "Safety and driver assistance"
+      ],
+      "feature_count": 43,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 1500",
+      "entity_key": "2026_chevrolet_silverado_1500",
+      "vehicle_key": "2026_chevrolet_silverado_1500",
+      "collection": "M3381846B8AEC20F4",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent": "M3381846B8AEC20F4",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle_id": "M3381846B8AEC20F4",
+      "path": "domain_2026_Chevrolet_Silverado_1500_Safety_and_driver_assistance.html"
     },
     {
       "objecttype": "Comparison",
@@ -191,6 +257,56 @@
       "path": "compare_domain_2026_Chevrolet_Silverado_1500_Safety_and_driver_assistance.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D3D2EE62F149A4BB2",
+      "seating": [
+        "3",
+        "6",
+        "5"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Silverado 1500 | Technology and connectivity",
+      "title": "2026 Chevrolet Silverado 1500 | Technology and connectivity",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
+      "trim_names_from_guide": [
+        "WT",
+        "Custom",
+        "Custom Trail Boss",
+        "LT",
+        "RST",
+        "LT Trail Boss",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Technology and connectivity",
+      "guide_domains": [
+        "Technology and connectivity"
+      ],
+      "feature_count": 40,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 1500",
+      "entity_key": "2026_chevrolet_silverado_1500",
+      "vehicle_key": "2026_chevrolet_silverado_1500",
+      "collection": "M3381846B8AEC20F4",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent": "M3381846B8AEC20F4",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle_id": "M3381846B8AEC20F4",
+      "path": "domain_2026_Chevrolet_Silverado_1500_Technology_and_connectivity.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CFDBDCFC8712D216B",
@@ -240,6 +356,56 @@
       "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
       "path": "compare_domain_2026_Chevrolet_Silverado_1500_Technology_and_connectivity.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DB09F087E3C0A37C3",
+      "seating": [
+        "3",
+        "6",
+        "5"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Silverado 1500 | Interior and comfort",
+      "title": "2026 Chevrolet Silverado 1500 | Interior and comfort",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
+      "trim_names_from_guide": [
+        "WT",
+        "Custom",
+        "Custom Trail Boss",
+        "LT",
+        "RST",
+        "LT Trail Boss",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Interior and comfort",
+      "guide_domains": [
+        "Interior and comfort"
+      ],
+      "feature_count": 34,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 1500",
+      "entity_key": "2026_chevrolet_silverado_1500",
+      "vehicle_key": "2026_chevrolet_silverado_1500",
+      "collection": "M3381846B8AEC20F4",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent": "M3381846B8AEC20F4",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle_id": "M3381846B8AEC20F4",
+      "path": "domain_2026_Chevrolet_Silverado_1500_Interior_and_comfort.html"
     },
     {
       "objecttype": "Comparison",
@@ -293,6 +459,56 @@
       "path": "compare_domain_2026_Chevrolet_Silverado_1500_Interior_and_comfort.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D5C1DE9A2355F5832",
+      "seating": [
+        "3",
+        "6",
+        "5"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Silverado 1500 | Exterior and utility",
+      "title": "2026 Chevrolet Silverado 1500 | Exterior and utility",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
+      "trim_names_from_guide": [
+        "WT",
+        "Custom",
+        "Custom Trail Boss",
+        "LT",
+        "RST",
+        "LT Trail Boss",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Exterior and utility",
+      "guide_domains": [
+        "Exterior and utility"
+      ],
+      "feature_count": 100,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 1500",
+      "entity_key": "2026_chevrolet_silverado_1500",
+      "vehicle_key": "2026_chevrolet_silverado_1500",
+      "collection": "M3381846B8AEC20F4",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent": "M3381846B8AEC20F4",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle_id": "M3381846B8AEC20F4",
+      "path": "domain_2026_Chevrolet_Silverado_1500_Exterior_and_utility.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C5F904DC7C441BC35",
@@ -342,6 +558,56 @@
       "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
       "path": "compare_domain_2026_Chevrolet_Silverado_1500_Exterior_and_utility.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D39D191E28AFF2B7F",
+      "seating": [
+        "3",
+        "6",
+        "5"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Silverado 1500 | Wheels and tires",
+      "title": "2026 Chevrolet Silverado 1500 | Wheels and tires",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
+      "trim_names_from_guide": [
+        "WT",
+        "Custom",
+        "Custom Trail Boss",
+        "LT",
+        "RST",
+        "LT Trail Boss",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Wheels and tires",
+      "guide_domains": [
+        "Wheels and tires"
+      ],
+      "feature_count": 71,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 1500",
+      "entity_key": "2026_chevrolet_silverado_1500",
+      "vehicle_key": "2026_chevrolet_silverado_1500",
+      "collection": "M3381846B8AEC20F4",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent": "M3381846B8AEC20F4",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle_id": "M3381846B8AEC20F4",
+      "path": "domain_2026_Chevrolet_Silverado_1500_Wheels_and_tires.html"
     },
     {
       "objecttype": "Comparison",
@@ -395,6 +661,56 @@
       "path": "compare_domain_2026_Chevrolet_Silverado_1500_Wheels_and_tires.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D38C2BE1E630CE166",
+      "seating": [
+        "3",
+        "6",
+        "5"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Silverado 1500 | Mechanical and performance",
+      "title": "2026 Chevrolet Silverado 1500 | Mechanical and performance",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
+      "trim_names_from_guide": [
+        "WT",
+        "Custom",
+        "Custom Trail Boss",
+        "LT",
+        "RST",
+        "LT Trail Boss",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Mechanical and performance",
+      "guide_domains": [
+        "Mechanical and performance"
+      ],
+      "feature_count": 65,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 1500",
+      "entity_key": "2026_chevrolet_silverado_1500",
+      "vehicle_key": "2026_chevrolet_silverado_1500",
+      "collection": "M3381846B8AEC20F4",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent": "M3381846B8AEC20F4",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle_id": "M3381846B8AEC20F4",
+      "path": "domain_2026_Chevrolet_Silverado_1500_Mechanical_and_performance.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CFB9A2C98B2F4382F",
@@ -444,6 +760,56 @@
       "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
       "parent_vehicle_id": "M3381846B8AEC20F4",
       "path": "compare_domain_2026_Chevrolet_Silverado_1500_Mechanical_and_performance.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D9915490C939AA00C",
+      "seating": [
+        "3",
+        "6",
+        "5"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Silverado 1500 | Packages and options",
+      "title": "2026 Chevrolet Silverado 1500 | Packages and options",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
+      "trim_names_from_guide": [
+        "WT",
+        "Custom",
+        "Custom Trail Boss",
+        "LT",
+        "RST",
+        "LT Trail Boss",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Packages and options",
+      "guide_domains": [
+        "Packages and options"
+      ],
+      "feature_count": 44,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 1500",
+      "entity_key": "2026_chevrolet_silverado_1500",
+      "vehicle_key": "2026_chevrolet_silverado_1500",
+      "collection": "M3381846B8AEC20F4",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent": "M3381846B8AEC20F4",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle_id": "M3381846B8AEC20F4",
+      "path": "domain_2026_Chevrolet_Silverado_1500_Packages_and_options.html"
     },
     {
       "objecttype": "Comparison",
@@ -497,6 +863,54 @@
       "path": "compare_domain_2026_Chevrolet_Silverado_1500_Packages_and_options.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DBC2B24395095A9BD",
+      "seating": [
+        "3",
+        "6",
+        "5"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Silverado 1500",
+      "title": "2026 Chevrolet Silverado 1500",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 1500",
+      "trim_names_from_guide": [
+        "WT",
+        "Custom",
+        "Custom Trail Boss",
+        "LT",
+        "RST",
+        "LT Trail Boss",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Colour and trim",
+      "guide_domains": [
+        "Colour and trim"
+      ],
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 1500",
+      "entity_key": "2026_chevrolet_silverado_1500",
+      "vehicle_key": "2026_chevrolet_silverado_1500",
+      "collection": "M3381846B8AEC20F4",
+      "collection_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent": "M3381846B8AEC20F4",
+      "parent_path": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_1500.html",
+      "parent_vehicle_id": "M3381846B8AEC20F4",
+      "path": "domain_2026_Chevrolet_Silverado_1500_Colour_and_trim.html"
+    },
+    {
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "TEA80D36DF94FD565",
@@ -539,7 +953,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Silverado 1500 WT",
       "entity_key": "2026_chevrolet_silverado_1500_wt",
@@ -596,7 +1010,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Silverado 1500 Custom",
       "entity_key": "2026_chevrolet_silverado_1500_custom",
@@ -654,7 +1068,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Silverado 1500 Custom Trail Boss",
       "entity_key": "2026_chevrolet_silverado_1500_custom_trail_boss",
@@ -712,7 +1126,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Silverado 1500 LT",
       "entity_key": "2026_chevrolet_silverado_1500_lt",
@@ -770,7 +1184,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Silverado 1500 RST",
       "entity_key": "2026_chevrolet_silverado_1500_rst",
@@ -828,7 +1242,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Silverado 1500 LT Trail Boss",
       "entity_key": "2026_chevrolet_silverado_1500_lt_trail_boss",
@@ -880,7 +1294,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Silverado 1500 ZR2",
       "entity_key": "2026_chevrolet_silverado_1500_zr2",
@@ -944,7 +1358,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Silverado 1500 LTZ",
       "entity_key": "2026_chevrolet_silverado_1500_ltz",
@@ -1002,7 +1416,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Silverado 1500 High Country",
       "entity_key": "2026_chevrolet_silverado_1500_high_country",

@@ -31,7 +31,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Traverse",
       "entity_key": "2026_chevrolet_traverse",
@@ -39,25 +39,41 @@
       "collection": "M4656CBE26E68DA88",
       "collection_path": "model_2026_Chevrolet_Traverse.html",
       "child": [
+        "DF3F7ED8423E08CD9",
         "CF66344D82FA51D3F",
+        "D4C6FCB0E2A744F0E",
         "C1483676DE9B8A7C8",
+        "D58550BDCB8940E22",
         "C0DDE349A6AB1C25B",
+        "D24BFE9B80E025DAE",
         "C734A96748528C532",
+        "D0FBC3CF814805B38",
         "C5E58FA4D971001B7",
+        "D6B2CD9CD2A9A1E8C",
         "C472D715560384EC8",
+        "D8AC7597A5DF51713",
         "C4595EBF51B39F825",
+        "DAB2474638AE3FC25",
         "T886512F35D4A9C93",
         "T35065124BD9C0B73",
         "T7DF66C36D056931E"
       ],
       "child_paths": [
+        "domain_2026_Chevrolet_Traverse_Safety_and_driver_assistance.html",
         "compare_domain_2026_Chevrolet_Traverse_Safety_and_driver_assistance.html",
+        "domain_2026_Chevrolet_Traverse_Technology_and_connectivity.html",
         "compare_domain_2026_Chevrolet_Traverse_Technology_and_connectivity.html",
+        "domain_2026_Chevrolet_Traverse_Interior_and_comfort.html",
         "compare_domain_2026_Chevrolet_Traverse_Interior_and_comfort.html",
+        "domain_2026_Chevrolet_Traverse_Exterior_and_utility.html",
         "compare_domain_2026_Chevrolet_Traverse_Exterior_and_utility.html",
+        "domain_2026_Chevrolet_Traverse_Wheels_and_tires.html",
         "compare_domain_2026_Chevrolet_Traverse_Wheels_and_tires.html",
+        "domain_2026_Chevrolet_Traverse_Mechanical_and_performance.html",
         "compare_domain_2026_Chevrolet_Traverse_Mechanical_and_performance.html",
+        "domain_2026_Chevrolet_Traverse_Packages_and_options.html",
         "compare_domain_2026_Chevrolet_Traverse_Packages_and_options.html",
+        "domain_2026_Chevrolet_Traverse_Colour_and_trim.html",
         "trim_2026_Chevrolet_Traverse_LT_TI.html",
         "trim_2026_Chevrolet_Traverse_Z71_TI.html",
         "trim_2026_Chevrolet_Traverse_RS_TI.html"
@@ -68,6 +84,47 @@
         "Z71",
         "RS"
       ]
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DF3F7ED8423E08CD9",
+      "seating": [
+        "2/2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Traverse | Safety and driver assistance",
+      "title": "2026 Chevrolet Traverse | Safety and driver assistance",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Traverse",
+      "trim_names_from_guide": [
+        "LT",
+        "Z71",
+        "RS"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Safety and driver assistance",
+      "guide_domains": [
+        "Safety and driver assistance"
+      ],
+      "feature_count": 37,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Traverse",
+      "entity_key": "2026_chevrolet_traverse",
+      "vehicle_key": "2026_chevrolet_traverse",
+      "collection": "M4656CBE26E68DA88",
+      "collection_path": "model_2026_Chevrolet_Traverse.html",
+      "parent": "M4656CBE26E68DA88",
+      "parent_path": "model_2026_Chevrolet_Traverse.html",
+      "parent_vehicle": "model_2026_Chevrolet_Traverse.html",
+      "parent_vehicle_id": "M4656CBE26E68DA88",
+      "path": "domain_2026_Chevrolet_Traverse_Safety_and_driver_assistance.html"
     },
     {
       "objecttype": "Comparison",
@@ -112,6 +169,47 @@
       "path": "compare_domain_2026_Chevrolet_Traverse_Safety_and_driver_assistance.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D4C6FCB0E2A744F0E",
+      "seating": [
+        "2/2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Traverse | Technology and connectivity",
+      "title": "2026 Chevrolet Traverse | Technology and connectivity",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Traverse",
+      "trim_names_from_guide": [
+        "LT",
+        "Z71",
+        "RS"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Technology and connectivity",
+      "guide_domains": [
+        "Technology and connectivity"
+      ],
+      "feature_count": 27,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Traverse",
+      "entity_key": "2026_chevrolet_traverse",
+      "vehicle_key": "2026_chevrolet_traverse",
+      "collection": "M4656CBE26E68DA88",
+      "collection_path": "model_2026_Chevrolet_Traverse.html",
+      "parent": "M4656CBE26E68DA88",
+      "parent_path": "model_2026_Chevrolet_Traverse.html",
+      "parent_vehicle": "model_2026_Chevrolet_Traverse.html",
+      "parent_vehicle_id": "M4656CBE26E68DA88",
+      "path": "domain_2026_Chevrolet_Traverse_Technology_and_connectivity.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C1483676DE9B8A7C8",
@@ -152,6 +250,47 @@
       "parent_vehicle": "model_2026_Chevrolet_Traverse.html",
       "parent_vehicle_id": "M4656CBE26E68DA88",
       "path": "compare_domain_2026_Chevrolet_Traverse_Technology_and_connectivity.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D58550BDCB8940E22",
+      "seating": [
+        "2/2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Traverse | Interior and comfort",
+      "title": "2026 Chevrolet Traverse | Interior and comfort",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Traverse",
+      "trim_names_from_guide": [
+        "LT",
+        "Z71",
+        "RS"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Interior and comfort",
+      "guide_domains": [
+        "Interior and comfort"
+      ],
+      "feature_count": 40,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Traverse",
+      "entity_key": "2026_chevrolet_traverse",
+      "vehicle_key": "2026_chevrolet_traverse",
+      "collection": "M4656CBE26E68DA88",
+      "collection_path": "model_2026_Chevrolet_Traverse.html",
+      "parent": "M4656CBE26E68DA88",
+      "parent_path": "model_2026_Chevrolet_Traverse.html",
+      "parent_vehicle": "model_2026_Chevrolet_Traverse.html",
+      "parent_vehicle_id": "M4656CBE26E68DA88",
+      "path": "domain_2026_Chevrolet_Traverse_Interior_and_comfort.html"
     },
     {
       "objecttype": "Comparison",
@@ -196,6 +335,47 @@
       "path": "compare_domain_2026_Chevrolet_Traverse_Interior_and_comfort.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D24BFE9B80E025DAE",
+      "seating": [
+        "2/2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Traverse | Exterior and utility",
+      "title": "2026 Chevrolet Traverse | Exterior and utility",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Traverse",
+      "trim_names_from_guide": [
+        "LT",
+        "Z71",
+        "RS"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Exterior and utility",
+      "guide_domains": [
+        "Exterior and utility"
+      ],
+      "feature_count": 32,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Traverse",
+      "entity_key": "2026_chevrolet_traverse",
+      "vehicle_key": "2026_chevrolet_traverse",
+      "collection": "M4656CBE26E68DA88",
+      "collection_path": "model_2026_Chevrolet_Traverse.html",
+      "parent": "M4656CBE26E68DA88",
+      "parent_path": "model_2026_Chevrolet_Traverse.html",
+      "parent_vehicle": "model_2026_Chevrolet_Traverse.html",
+      "parent_vehicle_id": "M4656CBE26E68DA88",
+      "path": "domain_2026_Chevrolet_Traverse_Exterior_and_utility.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C734A96748528C532",
@@ -236,6 +416,47 @@
       "parent_vehicle": "model_2026_Chevrolet_Traverse.html",
       "parent_vehicle_id": "M4656CBE26E68DA88",
       "path": "compare_domain_2026_Chevrolet_Traverse_Exterior_and_utility.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D0FBC3CF814805B38",
+      "seating": [
+        "2/2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Traverse | Wheels and tires",
+      "title": "2026 Chevrolet Traverse | Wheels and tires",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Traverse",
+      "trim_names_from_guide": [
+        "LT",
+        "Z71",
+        "RS"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Wheels and tires",
+      "guide_domains": [
+        "Wheels and tires"
+      ],
+      "feature_count": 24,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Traverse",
+      "entity_key": "2026_chevrolet_traverse",
+      "vehicle_key": "2026_chevrolet_traverse",
+      "collection": "M4656CBE26E68DA88",
+      "collection_path": "model_2026_Chevrolet_Traverse.html",
+      "parent": "M4656CBE26E68DA88",
+      "parent_path": "model_2026_Chevrolet_Traverse.html",
+      "parent_vehicle": "model_2026_Chevrolet_Traverse.html",
+      "parent_vehicle_id": "M4656CBE26E68DA88",
+      "path": "domain_2026_Chevrolet_Traverse_Wheels_and_tires.html"
     },
     {
       "objecttype": "Comparison",
@@ -280,6 +501,47 @@
       "path": "compare_domain_2026_Chevrolet_Traverse_Wheels_and_tires.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D6B2CD9CD2A9A1E8C",
+      "seating": [
+        "2/2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Traverse | Mechanical and performance",
+      "title": "2026 Chevrolet Traverse | Mechanical and performance",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Traverse",
+      "trim_names_from_guide": [
+        "LT",
+        "Z71",
+        "RS"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Mechanical and performance",
+      "guide_domains": [
+        "Mechanical and performance"
+      ],
+      "feature_count": 21,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Traverse",
+      "entity_key": "2026_chevrolet_traverse",
+      "vehicle_key": "2026_chevrolet_traverse",
+      "collection": "M4656CBE26E68DA88",
+      "collection_path": "model_2026_Chevrolet_Traverse.html",
+      "parent": "M4656CBE26E68DA88",
+      "parent_path": "model_2026_Chevrolet_Traverse.html",
+      "parent_vehicle": "model_2026_Chevrolet_Traverse.html",
+      "parent_vehicle_id": "M4656CBE26E68DA88",
+      "path": "domain_2026_Chevrolet_Traverse_Mechanical_and_performance.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C472D715560384EC8",
@@ -320,6 +582,47 @@
       "parent_vehicle": "model_2026_Chevrolet_Traverse.html",
       "parent_vehicle_id": "M4656CBE26E68DA88",
       "path": "compare_domain_2026_Chevrolet_Traverse_Mechanical_and_performance.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D8AC7597A5DF51713",
+      "seating": [
+        "2/2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Traverse | Packages and options",
+      "title": "2026 Chevrolet Traverse | Packages and options",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Traverse",
+      "trim_names_from_guide": [
+        "LT",
+        "Z71",
+        "RS"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Packages and options",
+      "guide_domains": [
+        "Packages and options"
+      ],
+      "feature_count": 14,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Traverse",
+      "entity_key": "2026_chevrolet_traverse",
+      "vehicle_key": "2026_chevrolet_traverse",
+      "collection": "M4656CBE26E68DA88",
+      "collection_path": "model_2026_Chevrolet_Traverse.html",
+      "parent": "M4656CBE26E68DA88",
+      "parent_path": "model_2026_Chevrolet_Traverse.html",
+      "parent_vehicle": "model_2026_Chevrolet_Traverse.html",
+      "parent_vehicle_id": "M4656CBE26E68DA88",
+      "path": "domain_2026_Chevrolet_Traverse_Packages_and_options.html"
     },
     {
       "objecttype": "Comparison",
@@ -364,6 +667,45 @@
       "path": "compare_domain_2026_Chevrolet_Traverse_Packages_and_options.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DAB2474638AE3FC25",
+      "seating": [
+        "2/2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Traverse",
+      "title": "2026 Chevrolet Traverse",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Traverse",
+      "trim_names_from_guide": [
+        "LT",
+        "Z71",
+        "RS"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Colour and trim",
+      "guide_domains": [
+        "Colour and trim"
+      ],
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Traverse",
+      "entity_key": "2026_chevrolet_traverse",
+      "vehicle_key": "2026_chevrolet_traverse",
+      "collection": "M4656CBE26E68DA88",
+      "collection_path": "model_2026_Chevrolet_Traverse.html",
+      "parent": "M4656CBE26E68DA88",
+      "parent_path": "model_2026_Chevrolet_Traverse.html",
+      "parent_vehicle": "model_2026_Chevrolet_Traverse.html",
+      "parent_vehicle_id": "M4656CBE26E68DA88",
+      "path": "domain_2026_Chevrolet_Traverse_Colour_and_trim.html"
+    },
+    {
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "T886512F35D4A9C93",
@@ -393,7 +735,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Traverse LT",
       "entity_key": "2026_chevrolet_traverse_lt_ti",
@@ -448,7 +790,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Traverse Z71",
       "entity_key": "2026_chevrolet_traverse_z71_ti",
@@ -503,7 +845,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Traverse RS",
       "entity_key": "2026_chevrolet_traverse_rs_ti",

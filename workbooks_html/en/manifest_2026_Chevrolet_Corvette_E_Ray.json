@@ -28,7 +28,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Corvette E-Ray",
       "entity_key": "2026_chevrolet_corvette_e_ray",
@@ -36,13 +36,21 @@
       "collection": "M37935EA21E81E7EA",
       "collection_path": "model_2026_Chevrolet_Corvette_E_Ray.html",
       "child": [
+        "D1F4E2222D997F3E6",
         "CD33B60FB145C5CD5",
+        "D8A6EC75885258D70",
         "C3CC0375BBC255729",
+        "D3615E204DCBE8DF9",
         "C48B2834E9DB8F0C7",
+        "D1333A7A301374F71",
         "C2AD5896C442A5475",
+        "D2E6B62474AB7E042",
         "C55F9D396D61C9E60",
+        "D009BF0118C0AC1CB",
         "C5349741C2A092614",
+        "DA422AA60B3CA9C6A",
         "CC90ED5FA56834D66",
+        "DB7EF640163DE72A6",
         "T519D212DA49ADAD2",
         "TFA576B04407A5499",
         "T9923032C35A438C5",
@@ -50,13 +58,21 @@
         "S6298382D69943330"
       ],
       "child_paths": [
+        "domain_2026_Chevrolet_Corvette_E_Ray_Safety_and_driver_assistance.html",
         "compare_domain_2026_Chevrolet_Corvette_E_Ray_Safety_and_driver_assistance.html",
+        "domain_2026_Chevrolet_Corvette_E_Ray_Technology_and_connectivity.html",
         "compare_domain_2026_Chevrolet_Corvette_E_Ray_Technology_and_connectivity.html",
+        "domain_2026_Chevrolet_Corvette_E_Ray_Interior_and_comfort.html",
         "compare_domain_2026_Chevrolet_Corvette_E_Ray_Interior_and_comfort.html",
+        "domain_2026_Chevrolet_Corvette_E_Ray_Exterior_and_utility.html",
         "compare_domain_2026_Chevrolet_Corvette_E_Ray_Exterior_and_utility.html",
+        "domain_2026_Chevrolet_Corvette_E_Ray_Wheels_and_tires.html",
         "compare_domain_2026_Chevrolet_Corvette_E_Ray_Wheels_and_tires.html",
+        "domain_2026_Chevrolet_Corvette_E_Ray_Mechanical_and_performance.html",
         "compare_domain_2026_Chevrolet_Corvette_E_Ray_Mechanical_and_performance.html",
+        "domain_2026_Chevrolet_Corvette_E_Ray_Packages_and_options.html",
         "compare_domain_2026_Chevrolet_Corvette_E_Ray_Packages_and_options.html",
+        "domain_2026_Chevrolet_Corvette_E_Ray_Colour_and_trim.html",
         "trim_2026_Chevrolet_Corvette_E_Ray_1LZ.html",
         "trim_2026_Chevrolet_Corvette_E_Ray_2LZ.html",
         "trim_2026_Chevrolet_Corvette_E_Ray_3LZ.html",
@@ -69,6 +85,44 @@
         "2LZ",
         "3LZ"
       ]
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D1F4E2222D997F3E6",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Corvette E-Ray | Safety and driver assistance",
+      "title": "2026 Chevrolet Corvette E-Ray | Safety and driver assistance",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Corvette E-Ray",
+      "trim_names_from_guide": [
+        "1LZ",
+        "2LZ",
+        "3LZ"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Safety and driver assistance",
+      "guide_domains": [
+        "Safety and driver assistance"
+      ],
+      "feature_count": 24,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Corvette E-Ray",
+      "entity_key": "2026_chevrolet_corvette_e_ray",
+      "vehicle_key": "2026_chevrolet_corvette_e_ray",
+      "collection": "M37935EA21E81E7EA",
+      "collection_path": "model_2026_Chevrolet_Corvette_E_Ray.html",
+      "parent": "M37935EA21E81E7EA",
+      "parent_path": "model_2026_Chevrolet_Corvette_E_Ray.html",
+      "parent_vehicle": "model_2026_Chevrolet_Corvette_E_Ray.html",
+      "parent_vehicle_id": "M37935EA21E81E7EA",
+      "path": "domain_2026_Chevrolet_Corvette_E_Ray_Safety_and_driver_assistance.html"
     },
     {
       "objecttype": "Comparison",
@@ -110,6 +164,44 @@
       "path": "compare_domain_2026_Chevrolet_Corvette_E_Ray_Safety_and_driver_assistance.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D8A6EC75885258D70",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Corvette E-Ray | Technology and connectivity",
+      "title": "2026 Chevrolet Corvette E-Ray | Technology and connectivity",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Corvette E-Ray",
+      "trim_names_from_guide": [
+        "1LZ",
+        "2LZ",
+        "3LZ"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Technology and connectivity",
+      "guide_domains": [
+        "Technology and connectivity"
+      ],
+      "feature_count": 27,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Corvette E-Ray",
+      "entity_key": "2026_chevrolet_corvette_e_ray",
+      "vehicle_key": "2026_chevrolet_corvette_e_ray",
+      "collection": "M37935EA21E81E7EA",
+      "collection_path": "model_2026_Chevrolet_Corvette_E_Ray.html",
+      "parent": "M37935EA21E81E7EA",
+      "parent_path": "model_2026_Chevrolet_Corvette_E_Ray.html",
+      "parent_vehicle": "model_2026_Chevrolet_Corvette_E_Ray.html",
+      "parent_vehicle_id": "M37935EA21E81E7EA",
+      "path": "domain_2026_Chevrolet_Corvette_E_Ray_Technology_and_connectivity.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C3CC0375BBC255729",
@@ -146,6 +238,44 @@
       "parent_vehicle": "model_2026_Chevrolet_Corvette_E_Ray.html",
       "parent_vehicle_id": "M37935EA21E81E7EA",
       "path": "compare_domain_2026_Chevrolet_Corvette_E_Ray_Technology_and_connectivity.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D3615E204DCBE8DF9",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Corvette E-Ray | Interior and comfort",
+      "title": "2026 Chevrolet Corvette E-Ray | Interior and comfort",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Corvette E-Ray",
+      "trim_names_from_guide": [
+        "1LZ",
+        "2LZ",
+        "3LZ"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Interior and comfort",
+      "guide_domains": [
+        "Interior and comfort"
+      ],
+      "feature_count": 29,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Corvette E-Ray",
+      "entity_key": "2026_chevrolet_corvette_e_ray",
+      "vehicle_key": "2026_chevrolet_corvette_e_ray",
+      "collection": "M37935EA21E81E7EA",
+      "collection_path": "model_2026_Chevrolet_Corvette_E_Ray.html",
+      "parent": "M37935EA21E81E7EA",
+      "parent_path": "model_2026_Chevrolet_Corvette_E_Ray.html",
+      "parent_vehicle": "model_2026_Chevrolet_Corvette_E_Ray.html",
+      "parent_vehicle_id": "M37935EA21E81E7EA",
+      "path": "domain_2026_Chevrolet_Corvette_E_Ray_Interior_and_comfort.html"
     },
     {
       "objecttype": "Comparison",
@@ -187,6 +317,44 @@
       "path": "compare_domain_2026_Chevrolet_Corvette_E_Ray_Interior_and_comfort.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D1333A7A301374F71",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Corvette E-Ray | Exterior and utility",
+      "title": "2026 Chevrolet Corvette E-Ray | Exterior and utility",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Corvette E-Ray",
+      "trim_names_from_guide": [
+        "1LZ",
+        "2LZ",
+        "3LZ"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Exterior and utility",
+      "guide_domains": [
+        "Exterior and utility"
+      ],
+      "feature_count": 39,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Corvette E-Ray",
+      "entity_key": "2026_chevrolet_corvette_e_ray",
+      "vehicle_key": "2026_chevrolet_corvette_e_ray",
+      "collection": "M37935EA21E81E7EA",
+      "collection_path": "model_2026_Chevrolet_Corvette_E_Ray.html",
+      "parent": "M37935EA21E81E7EA",
+      "parent_path": "model_2026_Chevrolet_Corvette_E_Ray.html",
+      "parent_vehicle": "model_2026_Chevrolet_Corvette_E_Ray.html",
+      "parent_vehicle_id": "M37935EA21E81E7EA",
+      "path": "domain_2026_Chevrolet_Corvette_E_Ray_Exterior_and_utility.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C2AD5896C442A5475",
@@ -224,6 +392,44 @@
       "parent_vehicle": "model_2026_Chevrolet_Corvette_E_Ray.html",
       "parent_vehicle_id": "M37935EA21E81E7EA",
       "path": "compare_domain_2026_Chevrolet_Corvette_E_Ray_Exterior_and_utility.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D2E6B62474AB7E042",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Corvette E-Ray | Wheels and tires",
+      "title": "2026 Chevrolet Corvette E-Ray | Wheels and tires",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Corvette E-Ray",
+      "trim_names_from_guide": [
+        "1LZ",
+        "2LZ",
+        "3LZ"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Wheels and tires",
+      "guide_domains": [
+        "Wheels and tires"
+      ],
+      "feature_count": 20,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Corvette E-Ray",
+      "entity_key": "2026_chevrolet_corvette_e_ray",
+      "vehicle_key": "2026_chevrolet_corvette_e_ray",
+      "collection": "M37935EA21E81E7EA",
+      "collection_path": "model_2026_Chevrolet_Corvette_E_Ray.html",
+      "parent": "M37935EA21E81E7EA",
+      "parent_path": "model_2026_Chevrolet_Corvette_E_Ray.html",
+      "parent_vehicle": "model_2026_Chevrolet_Corvette_E_Ray.html",
+      "parent_vehicle_id": "M37935EA21E81E7EA",
+      "path": "domain_2026_Chevrolet_Corvette_E_Ray_Wheels_and_tires.html"
     },
     {
       "objecttype": "Comparison",
@@ -265,6 +471,44 @@
       "path": "compare_domain_2026_Chevrolet_Corvette_E_Ray_Wheels_and_tires.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D009BF0118C0AC1CB",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Corvette E-Ray | Mechanical and performance",
+      "title": "2026 Chevrolet Corvette E-Ray | Mechanical and performance",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Corvette E-Ray",
+      "trim_names_from_guide": [
+        "1LZ",
+        "2LZ",
+        "3LZ"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Mechanical and performance",
+      "guide_domains": [
+        "Mechanical and performance"
+      ],
+      "feature_count": 28,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Corvette E-Ray",
+      "entity_key": "2026_chevrolet_corvette_e_ray",
+      "vehicle_key": "2026_chevrolet_corvette_e_ray",
+      "collection": "M37935EA21E81E7EA",
+      "collection_path": "model_2026_Chevrolet_Corvette_E_Ray.html",
+      "parent": "M37935EA21E81E7EA",
+      "parent_path": "model_2026_Chevrolet_Corvette_E_Ray.html",
+      "parent_vehicle": "model_2026_Chevrolet_Corvette_E_Ray.html",
+      "parent_vehicle_id": "M37935EA21E81E7EA",
+      "path": "domain_2026_Chevrolet_Corvette_E_Ray_Mechanical_and_performance.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C5349741C2A092614",
@@ -301,6 +545,44 @@
       "parent_vehicle": "model_2026_Chevrolet_Corvette_E_Ray.html",
       "parent_vehicle_id": "M37935EA21E81E7EA",
       "path": "compare_domain_2026_Chevrolet_Corvette_E_Ray_Mechanical_and_performance.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DA422AA60B3CA9C6A",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Corvette E-Ray | Packages and options",
+      "title": "2026 Chevrolet Corvette E-Ray | Packages and options",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Corvette E-Ray",
+      "trim_names_from_guide": [
+        "1LZ",
+        "2LZ",
+        "3LZ"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Packages and options",
+      "guide_domains": [
+        "Packages and options"
+      ],
+      "feature_count": 53,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Corvette E-Ray",
+      "entity_key": "2026_chevrolet_corvette_e_ray",
+      "vehicle_key": "2026_chevrolet_corvette_e_ray",
+      "collection": "M37935EA21E81E7EA",
+      "collection_path": "model_2026_Chevrolet_Corvette_E_Ray.html",
+      "parent": "M37935EA21E81E7EA",
+      "parent_path": "model_2026_Chevrolet_Corvette_E_Ray.html",
+      "parent_vehicle": "model_2026_Chevrolet_Corvette_E_Ray.html",
+      "parent_vehicle_id": "M37935EA21E81E7EA",
+      "path": "domain_2026_Chevrolet_Corvette_E_Ray_Packages_and_options.html"
     },
     {
       "objecttype": "Comparison",
@@ -342,6 +624,42 @@
       "path": "compare_domain_2026_Chevrolet_Corvette_E_Ray_Packages_and_options.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DB7EF640163DE72A6",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Corvette E-Ray",
+      "title": "2026 Chevrolet Corvette E-Ray",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Corvette E-Ray",
+      "trim_names_from_guide": [
+        "1LZ",
+        "2LZ",
+        "3LZ"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Colour and trim",
+      "guide_domains": [
+        "Colour and trim"
+      ],
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Corvette E-Ray",
+      "entity_key": "2026_chevrolet_corvette_e_ray",
+      "vehicle_key": "2026_chevrolet_corvette_e_ray",
+      "collection": "M37935EA21E81E7EA",
+      "collection_path": "model_2026_Chevrolet_Corvette_E_Ray.html",
+      "parent": "M37935EA21E81E7EA",
+      "parent_path": "model_2026_Chevrolet_Corvette_E_Ray.html",
+      "parent_vehicle": "model_2026_Chevrolet_Corvette_E_Ray.html",
+      "parent_vehicle_id": "M37935EA21E81E7EA",
+      "path": "domain_2026_Chevrolet_Corvette_E_Ray_Colour_and_trim.html"
+    },
+    {
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "T519D212DA49ADAD2",
@@ -368,7 +686,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Corvette E-Ray 1LZ",
       "entity_key": "2026_chevrolet_corvette_e_ray_1lz",
@@ -409,7 +727,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Corvette E-Ray 2LZ",
       "entity_key": "2026_chevrolet_corvette_e_ray_2lz",
@@ -450,7 +768,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Corvette E-Ray 3LZ",
       "entity_key": "2026_chevrolet_corvette_e_ray_3lz",

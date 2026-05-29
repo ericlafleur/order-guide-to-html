@@ -31,7 +31,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Trax",
       "entity_key": "2025_chevrolet_trax",
@@ -39,13 +39,21 @@
       "collection": "MD52E535F2E7EC228",
       "collection_path": "model_2025_Chevrolet_Trax.html",
       "child": [
+        "D4C43B721324D3DF4",
         "CEDE9AAD1839864E2",
+        "DA0B24AF7B7F4E72B",
         "C97392EADC80D54BE",
+        "D9103CFB2DC432E86",
         "C54FD0F4B13619720",
+        "DF5A832113578E8A2",
         "C363D9BE1393A3163",
+        "DEFB43FD2EA4783A8",
         "CA800FC643B2AE567",
+        "D0BB29FD3AE65D942",
         "C1EFDF66B443D31AA",
+        "D1F9F092DBD6FF3E4",
         "CBD4F62EBFBE00DE1",
+        "D533651296651A98C",
         "T5084750D84F3D0E9",
         "T8D7138EC613C15C8",
         "TB04295309A0FB64F",
@@ -55,13 +63,21 @@
         "S9283095ED2990CB7"
       ],
       "child_paths": [
+        "domain_2025_Chevrolet_Trax_Safety_and_driver_assistance.html",
         "compare_domain_2025_Chevrolet_Trax_Safety_and_driver_assistance.html",
+        "domain_2025_Chevrolet_Trax_Technology_and_connectivity.html",
         "compare_domain_2025_Chevrolet_Trax_Technology_and_connectivity.html",
+        "domain_2025_Chevrolet_Trax_Interior_and_comfort.html",
         "compare_domain_2025_Chevrolet_Trax_Interior_and_comfort.html",
+        "domain_2025_Chevrolet_Trax_Exterior_and_utility.html",
         "compare_domain_2025_Chevrolet_Trax_Exterior_and_utility.html",
+        "domain_2025_Chevrolet_Trax_Wheels_and_tires.html",
         "compare_domain_2025_Chevrolet_Trax_Wheels_and_tires.html",
+        "domain_2025_Chevrolet_Trax_Mechanical_and_performance.html",
         "compare_domain_2025_Chevrolet_Trax_Mechanical_and_performance.html",
+        "domain_2025_Chevrolet_Trax_Packages_and_options.html",
         "compare_domain_2025_Chevrolet_Trax_Packages_and_options.html",
+        "domain_2025_Chevrolet_Trax_Colour_and_trim.html",
         "trim_2025_Chevrolet_Trax_LS.html",
         "trim_2025_Chevrolet_Trax_1RS.html",
         "trim_2025_Chevrolet_Trax_LT.html",
@@ -78,6 +94,49 @@
         "2RS",
         "ACTIV"
       ]
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D4C43B721324D3DF4",
+      "seating": [
+        "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Trax | Safety and driver assistance",
+      "title": "2025 Chevrolet Trax | Safety and driver assistance",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Trax",
+      "trim_names_from_guide": [
+        "LS",
+        "1RS",
+        "LT",
+        "2RS",
+        "ACTIV"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Safety and driver assistance",
+      "guide_domains": [
+        "Safety and driver assistance"
+      ],
+      "feature_count": 26,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Trax",
+      "entity_key": "2025_chevrolet_trax",
+      "vehicle_key": "2025_chevrolet_trax",
+      "collection": "MD52E535F2E7EC228",
+      "collection_path": "model_2025_Chevrolet_Trax.html",
+      "parent": "MD52E535F2E7EC228",
+      "parent_path": "model_2025_Chevrolet_Trax.html",
+      "parent_vehicle": "model_2025_Chevrolet_Trax.html",
+      "parent_vehicle_id": "MD52E535F2E7EC228",
+      "path": "domain_2025_Chevrolet_Trax_Safety_and_driver_assistance.html"
     },
     {
       "objecttype": "Comparison",
@@ -124,6 +183,49 @@
       "path": "compare_domain_2025_Chevrolet_Trax_Safety_and_driver_assistance.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DA0B24AF7B7F4E72B",
+      "seating": [
+        "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Trax | Technology and connectivity",
+      "title": "2025 Chevrolet Trax | Technology and connectivity",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Trax",
+      "trim_names_from_guide": [
+        "LS",
+        "1RS",
+        "LT",
+        "2RS",
+        "ACTIV"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Technology and connectivity",
+      "guide_domains": [
+        "Technology and connectivity"
+      ],
+      "feature_count": 19,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Trax",
+      "entity_key": "2025_chevrolet_trax",
+      "vehicle_key": "2025_chevrolet_trax",
+      "collection": "MD52E535F2E7EC228",
+      "collection_path": "model_2025_Chevrolet_Trax.html",
+      "parent": "MD52E535F2E7EC228",
+      "parent_path": "model_2025_Chevrolet_Trax.html",
+      "parent_vehicle": "model_2025_Chevrolet_Trax.html",
+      "parent_vehicle_id": "MD52E535F2E7EC228",
+      "path": "domain_2025_Chevrolet_Trax_Technology_and_connectivity.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C97392EADC80D54BE",
@@ -166,6 +268,49 @@
       "parent_vehicle": "model_2025_Chevrolet_Trax.html",
       "parent_vehicle_id": "MD52E535F2E7EC228",
       "path": "compare_domain_2025_Chevrolet_Trax_Technology_and_connectivity.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D9103CFB2DC432E86",
+      "seating": [
+        "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Trax | Interior and comfort",
+      "title": "2025 Chevrolet Trax | Interior and comfort",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Trax",
+      "trim_names_from_guide": [
+        "LS",
+        "1RS",
+        "LT",
+        "2RS",
+        "ACTIV"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Interior and comfort",
+      "guide_domains": [
+        "Interior and comfort"
+      ],
+      "feature_count": 49,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Trax",
+      "entity_key": "2025_chevrolet_trax",
+      "vehicle_key": "2025_chevrolet_trax",
+      "collection": "MD52E535F2E7EC228",
+      "collection_path": "model_2025_Chevrolet_Trax.html",
+      "parent": "MD52E535F2E7EC228",
+      "parent_path": "model_2025_Chevrolet_Trax.html",
+      "parent_vehicle": "model_2025_Chevrolet_Trax.html",
+      "parent_vehicle_id": "MD52E535F2E7EC228",
+      "path": "domain_2025_Chevrolet_Trax_Interior_and_comfort.html"
     },
     {
       "objecttype": "Comparison",
@@ -212,6 +357,49 @@
       "path": "compare_domain_2025_Chevrolet_Trax_Interior_and_comfort.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DF5A832113578E8A2",
+      "seating": [
+        "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Trax | Exterior and utility",
+      "title": "2025 Chevrolet Trax | Exterior and utility",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Trax",
+      "trim_names_from_guide": [
+        "LS",
+        "1RS",
+        "LT",
+        "2RS",
+        "ACTIV"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Exterior and utility",
+      "guide_domains": [
+        "Exterior and utility"
+      ],
+      "feature_count": 41,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Trax",
+      "entity_key": "2025_chevrolet_trax",
+      "vehicle_key": "2025_chevrolet_trax",
+      "collection": "MD52E535F2E7EC228",
+      "collection_path": "model_2025_Chevrolet_Trax.html",
+      "parent": "MD52E535F2E7EC228",
+      "parent_path": "model_2025_Chevrolet_Trax.html",
+      "parent_vehicle": "model_2025_Chevrolet_Trax.html",
+      "parent_vehicle_id": "MD52E535F2E7EC228",
+      "path": "domain_2025_Chevrolet_Trax_Exterior_and_utility.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C363D9BE1393A3163",
@@ -254,6 +442,49 @@
       "parent_vehicle": "model_2025_Chevrolet_Trax.html",
       "parent_vehicle_id": "MD52E535F2E7EC228",
       "path": "compare_domain_2025_Chevrolet_Trax_Exterior_and_utility.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DEFB43FD2EA4783A8",
+      "seating": [
+        "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Trax | Wheels and tires",
+      "title": "2025 Chevrolet Trax | Wheels and tires",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Trax",
+      "trim_names_from_guide": [
+        "LS",
+        "1RS",
+        "LT",
+        "2RS",
+        "ACTIV"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Wheels and tires",
+      "guide_domains": [
+        "Wheels and tires"
+      ],
+      "feature_count": 12,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Trax",
+      "entity_key": "2025_chevrolet_trax",
+      "vehicle_key": "2025_chevrolet_trax",
+      "collection": "MD52E535F2E7EC228",
+      "collection_path": "model_2025_Chevrolet_Trax.html",
+      "parent": "MD52E535F2E7EC228",
+      "parent_path": "model_2025_Chevrolet_Trax.html",
+      "parent_vehicle": "model_2025_Chevrolet_Trax.html",
+      "parent_vehicle_id": "MD52E535F2E7EC228",
+      "path": "domain_2025_Chevrolet_Trax_Wheels_and_tires.html"
     },
     {
       "objecttype": "Comparison",
@@ -300,6 +531,48 @@
       "path": "compare_domain_2025_Chevrolet_Trax_Wheels_and_tires.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D0BB29FD3AE65D942",
+      "seating": [
+        "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Trax | Mechanical and performance",
+      "title": "2025 Chevrolet Trax | Mechanical and performance",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Trax",
+      "trim_names_from_guide": [
+        "LS",
+        "1RS",
+        "LT",
+        "2RS",
+        "ACTIV"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Mechanical and performance",
+      "guide_domains": [
+        "Mechanical and performance"
+      ],
+      "feature_count": 19,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Trax",
+      "entity_key": "2025_chevrolet_trax",
+      "vehicle_key": "2025_chevrolet_trax",
+      "collection": "MD52E535F2E7EC228",
+      "collection_path": "model_2025_Chevrolet_Trax.html",
+      "parent": "MD52E535F2E7EC228",
+      "parent_path": "model_2025_Chevrolet_Trax.html",
+      "parent_vehicle": "model_2025_Chevrolet_Trax.html",
+      "parent_vehicle_id": "MD52E535F2E7EC228",
+      "path": "domain_2025_Chevrolet_Trax_Mechanical_and_performance.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C1EFDF66B443D31AA",
@@ -341,6 +614,49 @@
       "parent_vehicle": "model_2025_Chevrolet_Trax.html",
       "parent_vehicle_id": "MD52E535F2E7EC228",
       "path": "compare_domain_2025_Chevrolet_Trax_Mechanical_and_performance.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D1F9F092DBD6FF3E4",
+      "seating": [
+        "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Trax | Packages and options",
+      "title": "2025 Chevrolet Trax | Packages and options",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Trax",
+      "trim_names_from_guide": [
+        "LS",
+        "1RS",
+        "LT",
+        "2RS",
+        "ACTIV"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Packages and options",
+      "guide_domains": [
+        "Packages and options"
+      ],
+      "feature_count": 10,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Trax",
+      "entity_key": "2025_chevrolet_trax",
+      "vehicle_key": "2025_chevrolet_trax",
+      "collection": "MD52E535F2E7EC228",
+      "collection_path": "model_2025_Chevrolet_Trax.html",
+      "parent": "MD52E535F2E7EC228",
+      "parent_path": "model_2025_Chevrolet_Trax.html",
+      "parent_vehicle": "model_2025_Chevrolet_Trax.html",
+      "parent_vehicle_id": "MD52E535F2E7EC228",
+      "path": "domain_2025_Chevrolet_Trax_Packages_and_options.html"
     },
     {
       "objecttype": "Comparison",
@@ -387,6 +703,47 @@
       "path": "compare_domain_2025_Chevrolet_Trax_Packages_and_options.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D533651296651A98C",
+      "seating": [
+        "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Trax",
+      "title": "2025 Chevrolet Trax",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Trax",
+      "trim_names_from_guide": [
+        "LS",
+        "1RS",
+        "LT",
+        "2RS",
+        "ACTIV"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Colour and trim",
+      "guide_domains": [
+        "Colour and trim"
+      ],
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Trax",
+      "entity_key": "2025_chevrolet_trax",
+      "vehicle_key": "2025_chevrolet_trax",
+      "collection": "MD52E535F2E7EC228",
+      "collection_path": "model_2025_Chevrolet_Trax.html",
+      "parent": "MD52E535F2E7EC228",
+      "parent_path": "model_2025_Chevrolet_Trax.html",
+      "parent_vehicle": "model_2025_Chevrolet_Trax.html",
+      "parent_vehicle_id": "MD52E535F2E7EC228",
+      "path": "domain_2025_Chevrolet_Trax_Colour_and_trim.html"
+    },
+    {
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "T5084750D84F3D0E9",
@@ -419,7 +776,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Trax LS",
       "entity_key": "2025_chevrolet_trax_ls",
@@ -472,7 +829,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Trax 1RS",
       "entity_key": "2025_chevrolet_trax_1rs",
@@ -525,7 +882,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Trax LT",
       "entity_key": "2025_chevrolet_trax_lt",
@@ -578,7 +935,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Trax 2RS",
       "entity_key": "2025_chevrolet_trax_2rs",
@@ -631,7 +988,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Trax ACTIV",
       "entity_key": "2025_chevrolet_trax_activ",

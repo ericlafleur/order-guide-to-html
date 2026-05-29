@@ -28,7 +28,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Corvette Stingray",
       "entity_key": "2025_chevrolet_corvette_stingray",
@@ -36,13 +36,21 @@
       "collection": "M002E2C9DED824000",
       "collection_path": "model_2025_Chevrolet_Corvette_Stingray.html",
       "child": [
+        "DBF785C33B37B605F",
         "CC1F96754474C8548",
+        "D9EBDA75B3294D0B4",
         "C7617D409C7E3CDD0",
+        "DB1DACCA9ED92144D",
         "C5AB9BCCC77C92B37",
+        "DA2275AA9C351957C",
         "C871D7227992800DF",
+        "D876704B722EB0E3F",
         "C4E5BEFB29C617B97",
+        "DFAC1C13BA6796A84",
         "CBEE997112E6CBEE0",
+        "D6BFA8F0987703E57",
         "C641428CCC8456FDB",
+        "D333DE3B510E83A0A",
         "T4B5C0788EDD536B3",
         "T6F9A4341B56AEAC5",
         "T6E9AF231A7859EFC",
@@ -50,13 +58,21 @@
         "SB8A9BB14C4A461FE"
       ],
       "child_paths": [
+        "domain_2025_Chevrolet_Corvette_Stingray_Safety_and_driver_assistance.html",
         "compare_domain_2025_Chevrolet_Corvette_Stingray_Safety_and_driver_assistance.html",
+        "domain_2025_Chevrolet_Corvette_Stingray_Technology_and_connectivity.html",
         "compare_domain_2025_Chevrolet_Corvette_Stingray_Technology_and_connectivity.html",
+        "domain_2025_Chevrolet_Corvette_Stingray_Interior_and_comfort.html",
         "compare_domain_2025_Chevrolet_Corvette_Stingray_Interior_and_comfort.html",
+        "domain_2025_Chevrolet_Corvette_Stingray_Exterior_and_utility.html",
         "compare_domain_2025_Chevrolet_Corvette_Stingray_Exterior_and_utility.html",
+        "domain_2025_Chevrolet_Corvette_Stingray_Wheels_and_tires.html",
         "compare_domain_2025_Chevrolet_Corvette_Stingray_Wheels_and_tires.html",
+        "domain_2025_Chevrolet_Corvette_Stingray_Mechanical_and_performance.html",
         "compare_domain_2025_Chevrolet_Corvette_Stingray_Mechanical_and_performance.html",
+        "domain_2025_Chevrolet_Corvette_Stingray_Packages_and_options.html",
         "compare_domain_2025_Chevrolet_Corvette_Stingray_Packages_and_options.html",
+        "domain_2025_Chevrolet_Corvette_Stingray_Colour_and_trim.html",
         "trim_2025_Chevrolet_Corvette_Stingray_1LT.html",
         "trim_2025_Chevrolet_Corvette_Stingray_2LT.html",
         "trim_2025_Chevrolet_Corvette_Stingray_3LT.html",
@@ -69,6 +85,44 @@
         "2LT",
         "3LT"
       ]
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DBF785C33B37B605F",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Corvette Stingray | Safety and driver assistance",
+      "title": "2025 Chevrolet Corvette Stingray | Safety and driver assistance",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Corvette Stingray",
+      "trim_names_from_guide": [
+        "1LT",
+        "2LT",
+        "3LT"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Safety and driver assistance",
+      "guide_domains": [
+        "Safety and driver assistance"
+      ],
+      "feature_count": 26,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Corvette Stingray",
+      "entity_key": "2025_chevrolet_corvette_stingray",
+      "vehicle_key": "2025_chevrolet_corvette_stingray",
+      "collection": "M002E2C9DED824000",
+      "collection_path": "model_2025_Chevrolet_Corvette_Stingray.html",
+      "parent": "M002E2C9DED824000",
+      "parent_path": "model_2025_Chevrolet_Corvette_Stingray.html",
+      "parent_vehicle": "model_2025_Chevrolet_Corvette_Stingray.html",
+      "parent_vehicle_id": "M002E2C9DED824000",
+      "path": "domain_2025_Chevrolet_Corvette_Stingray_Safety_and_driver_assistance.html"
     },
     {
       "objecttype": "Comparison",
@@ -110,6 +164,44 @@
       "path": "compare_domain_2025_Chevrolet_Corvette_Stingray_Safety_and_driver_assistance.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D9EBDA75B3294D0B4",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Corvette Stingray | Technology and connectivity",
+      "title": "2025 Chevrolet Corvette Stingray | Technology and connectivity",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Corvette Stingray",
+      "trim_names_from_guide": [
+        "1LT",
+        "2LT",
+        "3LT"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Technology and connectivity",
+      "guide_domains": [
+        "Technology and connectivity"
+      ],
+      "feature_count": 30,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Corvette Stingray",
+      "entity_key": "2025_chevrolet_corvette_stingray",
+      "vehicle_key": "2025_chevrolet_corvette_stingray",
+      "collection": "M002E2C9DED824000",
+      "collection_path": "model_2025_Chevrolet_Corvette_Stingray.html",
+      "parent": "M002E2C9DED824000",
+      "parent_path": "model_2025_Chevrolet_Corvette_Stingray.html",
+      "parent_vehicle": "model_2025_Chevrolet_Corvette_Stingray.html",
+      "parent_vehicle_id": "M002E2C9DED824000",
+      "path": "domain_2025_Chevrolet_Corvette_Stingray_Technology_and_connectivity.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C7617D409C7E3CDD0",
@@ -146,6 +238,44 @@
       "parent_vehicle": "model_2025_Chevrolet_Corvette_Stingray.html",
       "parent_vehicle_id": "M002E2C9DED824000",
       "path": "compare_domain_2025_Chevrolet_Corvette_Stingray_Technology_and_connectivity.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DB1DACCA9ED92144D",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Corvette Stingray | Interior and comfort",
+      "title": "2025 Chevrolet Corvette Stingray | Interior and comfort",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Corvette Stingray",
+      "trim_names_from_guide": [
+        "1LT",
+        "2LT",
+        "3LT"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Interior and comfort",
+      "guide_domains": [
+        "Interior and comfort"
+      ],
+      "feature_count": 27,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Corvette Stingray",
+      "entity_key": "2025_chevrolet_corvette_stingray",
+      "vehicle_key": "2025_chevrolet_corvette_stingray",
+      "collection": "M002E2C9DED824000",
+      "collection_path": "model_2025_Chevrolet_Corvette_Stingray.html",
+      "parent": "M002E2C9DED824000",
+      "parent_path": "model_2025_Chevrolet_Corvette_Stingray.html",
+      "parent_vehicle": "model_2025_Chevrolet_Corvette_Stingray.html",
+      "parent_vehicle_id": "M002E2C9DED824000",
+      "path": "domain_2025_Chevrolet_Corvette_Stingray_Interior_and_comfort.html"
     },
     {
       "objecttype": "Comparison",
@@ -187,6 +317,44 @@
       "path": "compare_domain_2025_Chevrolet_Corvette_Stingray_Interior_and_comfort.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DA2275AA9C351957C",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Corvette Stingray | Exterior and utility",
+      "title": "2025 Chevrolet Corvette Stingray | Exterior and utility",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Corvette Stingray",
+      "trim_names_from_guide": [
+        "1LT",
+        "2LT",
+        "3LT"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Exterior and utility",
+      "guide_domains": [
+        "Exterior and utility"
+      ],
+      "feature_count": 41,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Corvette Stingray",
+      "entity_key": "2025_chevrolet_corvette_stingray",
+      "vehicle_key": "2025_chevrolet_corvette_stingray",
+      "collection": "M002E2C9DED824000",
+      "collection_path": "model_2025_Chevrolet_Corvette_Stingray.html",
+      "parent": "M002E2C9DED824000",
+      "parent_path": "model_2025_Chevrolet_Corvette_Stingray.html",
+      "parent_vehicle": "model_2025_Chevrolet_Corvette_Stingray.html",
+      "parent_vehicle_id": "M002E2C9DED824000",
+      "path": "domain_2025_Chevrolet_Corvette_Stingray_Exterior_and_utility.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C871D7227992800DF",
@@ -224,6 +392,44 @@
       "parent_vehicle": "model_2025_Chevrolet_Corvette_Stingray.html",
       "parent_vehicle_id": "M002E2C9DED824000",
       "path": "compare_domain_2025_Chevrolet_Corvette_Stingray_Exterior_and_utility.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D876704B722EB0E3F",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Corvette Stingray | Wheels and tires",
+      "title": "2025 Chevrolet Corvette Stingray | Wheels and tires",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Corvette Stingray",
+      "trim_names_from_guide": [
+        "1LT",
+        "2LT",
+        "3LT"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Wheels and tires",
+      "guide_domains": [
+        "Wheels and tires"
+      ],
+      "feature_count": 25,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Corvette Stingray",
+      "entity_key": "2025_chevrolet_corvette_stingray",
+      "vehicle_key": "2025_chevrolet_corvette_stingray",
+      "collection": "M002E2C9DED824000",
+      "collection_path": "model_2025_Chevrolet_Corvette_Stingray.html",
+      "parent": "M002E2C9DED824000",
+      "parent_path": "model_2025_Chevrolet_Corvette_Stingray.html",
+      "parent_vehicle": "model_2025_Chevrolet_Corvette_Stingray.html",
+      "parent_vehicle_id": "M002E2C9DED824000",
+      "path": "domain_2025_Chevrolet_Corvette_Stingray_Wheels_and_tires.html"
     },
     {
       "objecttype": "Comparison",
@@ -265,6 +471,44 @@
       "path": "compare_domain_2025_Chevrolet_Corvette_Stingray_Wheels_and_tires.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DFAC1C13BA6796A84",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Corvette Stingray | Mechanical and performance",
+      "title": "2025 Chevrolet Corvette Stingray | Mechanical and performance",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Corvette Stingray",
+      "trim_names_from_guide": [
+        "1LT",
+        "2LT",
+        "3LT"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Mechanical and performance",
+      "guide_domains": [
+        "Mechanical and performance"
+      ],
+      "feature_count": 34,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Corvette Stingray",
+      "entity_key": "2025_chevrolet_corvette_stingray",
+      "vehicle_key": "2025_chevrolet_corvette_stingray",
+      "collection": "M002E2C9DED824000",
+      "collection_path": "model_2025_Chevrolet_Corvette_Stingray.html",
+      "parent": "M002E2C9DED824000",
+      "parent_path": "model_2025_Chevrolet_Corvette_Stingray.html",
+      "parent_vehicle": "model_2025_Chevrolet_Corvette_Stingray.html",
+      "parent_vehicle_id": "M002E2C9DED824000",
+      "path": "domain_2025_Chevrolet_Corvette_Stingray_Mechanical_and_performance.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CBEE997112E6CBEE0",
@@ -301,6 +545,44 @@
       "parent_vehicle": "model_2025_Chevrolet_Corvette_Stingray.html",
       "parent_vehicle_id": "M002E2C9DED824000",
       "path": "compare_domain_2025_Chevrolet_Corvette_Stingray_Mechanical_and_performance.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D6BFA8F0987703E57",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Corvette Stingray | Packages and options",
+      "title": "2025 Chevrolet Corvette Stingray | Packages and options",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Corvette Stingray",
+      "trim_names_from_guide": [
+        "1LT",
+        "2LT",
+        "3LT"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Packages and options",
+      "guide_domains": [
+        "Packages and options"
+      ],
+      "feature_count": 59,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Corvette Stingray",
+      "entity_key": "2025_chevrolet_corvette_stingray",
+      "vehicle_key": "2025_chevrolet_corvette_stingray",
+      "collection": "M002E2C9DED824000",
+      "collection_path": "model_2025_Chevrolet_Corvette_Stingray.html",
+      "parent": "M002E2C9DED824000",
+      "parent_path": "model_2025_Chevrolet_Corvette_Stingray.html",
+      "parent_vehicle": "model_2025_Chevrolet_Corvette_Stingray.html",
+      "parent_vehicle_id": "M002E2C9DED824000",
+      "path": "domain_2025_Chevrolet_Corvette_Stingray_Packages_and_options.html"
     },
     {
       "objecttype": "Comparison",
@@ -342,6 +624,42 @@
       "path": "compare_domain_2025_Chevrolet_Corvette_Stingray_Packages_and_options.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D333DE3B510E83A0A",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Corvette Stingray",
+      "title": "2025 Chevrolet Corvette Stingray",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Corvette Stingray",
+      "trim_names_from_guide": [
+        "1LT",
+        "2LT",
+        "3LT"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Colour and trim",
+      "guide_domains": [
+        "Colour and trim"
+      ],
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Corvette Stingray",
+      "entity_key": "2025_chevrolet_corvette_stingray",
+      "vehicle_key": "2025_chevrolet_corvette_stingray",
+      "collection": "M002E2C9DED824000",
+      "collection_path": "model_2025_Chevrolet_Corvette_Stingray.html",
+      "parent": "M002E2C9DED824000",
+      "parent_path": "model_2025_Chevrolet_Corvette_Stingray.html",
+      "parent_vehicle": "model_2025_Chevrolet_Corvette_Stingray.html",
+      "parent_vehicle_id": "M002E2C9DED824000",
+      "path": "domain_2025_Chevrolet_Corvette_Stingray_Colour_and_trim.html"
+    },
+    {
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "T4B5C0788EDD536B3",
@@ -368,7 +686,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Corvette Stingray 1LT",
       "entity_key": "2025_chevrolet_corvette_stingray_1lt",
@@ -409,7 +727,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Corvette Stingray 2LT",
       "entity_key": "2025_chevrolet_corvette_stingray_2lt",
@@ -450,7 +768,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Corvette Stingray 3LT",
       "entity_key": "2025_chevrolet_corvette_stingray_3lt",

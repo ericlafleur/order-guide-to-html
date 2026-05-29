@@ -28,7 +28,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Corvette ZR1",
       "entity_key": "2025_chevrolet_corvette_zr1",
@@ -36,26 +36,42 @@
       "collection": "MFB03BC0688BDF9E9",
       "collection_path": "model_2025_Chevrolet_Corvette_ZR1.html",
       "child": [
+        "D7B5620C0B0AEDB66",
         "C472844B4276E8ED8",
+        "DC2A3FBEB246EB16C",
         "C5C5B04FED552C40C",
+        "D63B8A80A0989ACAC",
         "C1381A4625BD4D80A",
+        "D678A11F5975B87C0",
         "C7D4FC2CCA8B56356",
+        "D8324148A915A1760",
         "C82F8325D7B39B6CB",
+        "D3F7E0E760235BFF0",
         "C40A67AA0208305A0",
+        "D791FA99AC82CB440",
         "C7C6EC39AC9FCD50D",
+        "D52491205BDA4FCAB",
         "T3F7D1E4897871B25",
         "T749D4F764C9771CF",
         "S740ADC8C91F6614E",
         "SF4455BD9E23989BB"
       ],
       "child_paths": [
+        "domain_2025_Chevrolet_Corvette_ZR1_Safety_and_driver_assistance.html",
         "compare_domain_2025_Chevrolet_Corvette_ZR1_Safety_and_driver_assistance.html",
+        "domain_2025_Chevrolet_Corvette_ZR1_Technology_and_connectivity.html",
         "compare_domain_2025_Chevrolet_Corvette_ZR1_Technology_and_connectivity.html",
+        "domain_2025_Chevrolet_Corvette_ZR1_Interior_and_comfort.html",
         "compare_domain_2025_Chevrolet_Corvette_ZR1_Interior_and_comfort.html",
+        "domain_2025_Chevrolet_Corvette_ZR1_Exterior_and_utility.html",
         "compare_domain_2025_Chevrolet_Corvette_ZR1_Exterior_and_utility.html",
+        "domain_2025_Chevrolet_Corvette_ZR1_Wheels_and_tires.html",
         "compare_domain_2025_Chevrolet_Corvette_ZR1_Wheels_and_tires.html",
+        "domain_2025_Chevrolet_Corvette_ZR1_Mechanical_and_performance.html",
         "compare_domain_2025_Chevrolet_Corvette_ZR1_Mechanical_and_performance.html",
+        "domain_2025_Chevrolet_Corvette_ZR1_Packages_and_options.html",
         "compare_domain_2025_Chevrolet_Corvette_ZR1_Packages_and_options.html",
+        "domain_2025_Chevrolet_Corvette_ZR1_Colour_and_trim.html",
         "trim_2025_Chevrolet_Corvette_ZR1_1LZ.html",
         "trim_2025_Chevrolet_Corvette_ZR1_3LZ.html",
         "spec_2025_Chevrolet_Corvette_ZR1_dimensions_specifications_1YR07_ZR1_Coupe.html",
@@ -66,6 +82,43 @@
         "1LZ",
         "3LZ"
       ]
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D7B5620C0B0AEDB66",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Corvette ZR1 | Safety and driver assistance",
+      "title": "2025 Chevrolet Corvette ZR1 | Safety and driver assistance",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Corvette ZR1",
+      "trim_names_from_guide": [
+        "1LZ",
+        "3LZ"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Safety and driver assistance",
+      "guide_domains": [
+        "Safety and driver assistance"
+      ],
+      "feature_count": 26,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Corvette ZR1",
+      "entity_key": "2025_chevrolet_corvette_zr1",
+      "vehicle_key": "2025_chevrolet_corvette_zr1",
+      "collection": "MFB03BC0688BDF9E9",
+      "collection_path": "model_2025_Chevrolet_Corvette_ZR1.html",
+      "parent": "MFB03BC0688BDF9E9",
+      "parent_path": "model_2025_Chevrolet_Corvette_ZR1.html",
+      "parent_vehicle": "model_2025_Chevrolet_Corvette_ZR1.html",
+      "parent_vehicle_id": "MFB03BC0688BDF9E9",
+      "path": "domain_2025_Chevrolet_Corvette_ZR1_Safety_and_driver_assistance.html"
     },
     {
       "objecttype": "Comparison",
@@ -106,6 +159,43 @@
       "path": "compare_domain_2025_Chevrolet_Corvette_ZR1_Safety_and_driver_assistance.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DC2A3FBEB246EB16C",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Corvette ZR1 | Technology and connectivity",
+      "title": "2025 Chevrolet Corvette ZR1 | Technology and connectivity",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Corvette ZR1",
+      "trim_names_from_guide": [
+        "1LZ",
+        "3LZ"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Technology and connectivity",
+      "guide_domains": [
+        "Technology and connectivity"
+      ],
+      "feature_count": 29,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Corvette ZR1",
+      "entity_key": "2025_chevrolet_corvette_zr1",
+      "vehicle_key": "2025_chevrolet_corvette_zr1",
+      "collection": "MFB03BC0688BDF9E9",
+      "collection_path": "model_2025_Chevrolet_Corvette_ZR1.html",
+      "parent": "MFB03BC0688BDF9E9",
+      "parent_path": "model_2025_Chevrolet_Corvette_ZR1.html",
+      "parent_vehicle": "model_2025_Chevrolet_Corvette_ZR1.html",
+      "parent_vehicle_id": "MFB03BC0688BDF9E9",
+      "path": "domain_2025_Chevrolet_Corvette_ZR1_Technology_and_connectivity.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C5C5B04FED552C40C",
@@ -141,6 +231,43 @@
       "parent_vehicle": "model_2025_Chevrolet_Corvette_ZR1.html",
       "parent_vehicle_id": "MFB03BC0688BDF9E9",
       "path": "compare_domain_2025_Chevrolet_Corvette_ZR1_Technology_and_connectivity.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D63B8A80A0989ACAC",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Corvette ZR1 | Interior and comfort",
+      "title": "2025 Chevrolet Corvette ZR1 | Interior and comfort",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Corvette ZR1",
+      "trim_names_from_guide": [
+        "1LZ",
+        "3LZ"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Interior and comfort",
+      "guide_domains": [
+        "Interior and comfort"
+      ],
+      "feature_count": 27,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Corvette ZR1",
+      "entity_key": "2025_chevrolet_corvette_zr1",
+      "vehicle_key": "2025_chevrolet_corvette_zr1",
+      "collection": "MFB03BC0688BDF9E9",
+      "collection_path": "model_2025_Chevrolet_Corvette_ZR1.html",
+      "parent": "MFB03BC0688BDF9E9",
+      "parent_path": "model_2025_Chevrolet_Corvette_ZR1.html",
+      "parent_vehicle": "model_2025_Chevrolet_Corvette_ZR1.html",
+      "parent_vehicle_id": "MFB03BC0688BDF9E9",
+      "path": "domain_2025_Chevrolet_Corvette_ZR1_Interior_and_comfort.html"
     },
     {
       "objecttype": "Comparison",
@@ -181,6 +308,43 @@
       "path": "compare_domain_2025_Chevrolet_Corvette_ZR1_Interior_and_comfort.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D678A11F5975B87C0",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Corvette ZR1 | Exterior and utility",
+      "title": "2025 Chevrolet Corvette ZR1 | Exterior and utility",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Corvette ZR1",
+      "trim_names_from_guide": [
+        "1LZ",
+        "3LZ"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Exterior and utility",
+      "guide_domains": [
+        "Exterior and utility"
+      ],
+      "feature_count": 29,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Corvette ZR1",
+      "entity_key": "2025_chevrolet_corvette_zr1",
+      "vehicle_key": "2025_chevrolet_corvette_zr1",
+      "collection": "MFB03BC0688BDF9E9",
+      "collection_path": "model_2025_Chevrolet_Corvette_ZR1.html",
+      "parent": "MFB03BC0688BDF9E9",
+      "parent_path": "model_2025_Chevrolet_Corvette_ZR1.html",
+      "parent_vehicle": "model_2025_Chevrolet_Corvette_ZR1.html",
+      "parent_vehicle_id": "MFB03BC0688BDF9E9",
+      "path": "domain_2025_Chevrolet_Corvette_ZR1_Exterior_and_utility.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C7D4FC2CCA8B56356",
@@ -217,6 +381,43 @@
       "parent_vehicle": "model_2025_Chevrolet_Corvette_ZR1.html",
       "parent_vehicle_id": "MFB03BC0688BDF9E9",
       "path": "compare_domain_2025_Chevrolet_Corvette_ZR1_Exterior_and_utility.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D8324148A915A1760",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Corvette ZR1 | Wheels and tires",
+      "title": "2025 Chevrolet Corvette ZR1 | Wheels and tires",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Corvette ZR1",
+      "trim_names_from_guide": [
+        "1LZ",
+        "3LZ"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Wheels and tires",
+      "guide_domains": [
+        "Wheels and tires"
+      ],
+      "feature_count": 18,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Corvette ZR1",
+      "entity_key": "2025_chevrolet_corvette_zr1",
+      "vehicle_key": "2025_chevrolet_corvette_zr1",
+      "collection": "MFB03BC0688BDF9E9",
+      "collection_path": "model_2025_Chevrolet_Corvette_ZR1.html",
+      "parent": "MFB03BC0688BDF9E9",
+      "parent_path": "model_2025_Chevrolet_Corvette_ZR1.html",
+      "parent_vehicle": "model_2025_Chevrolet_Corvette_ZR1.html",
+      "parent_vehicle_id": "MFB03BC0688BDF9E9",
+      "path": "domain_2025_Chevrolet_Corvette_ZR1_Wheels_and_tires.html"
     },
     {
       "objecttype": "Comparison",
@@ -257,6 +458,43 @@
       "path": "compare_domain_2025_Chevrolet_Corvette_ZR1_Wheels_and_tires.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D3F7E0E760235BFF0",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Corvette ZR1 | Mechanical and performance",
+      "title": "2025 Chevrolet Corvette ZR1 | Mechanical and performance",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Corvette ZR1",
+      "trim_names_from_guide": [
+        "1LZ",
+        "3LZ"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Mechanical and performance",
+      "guide_domains": [
+        "Mechanical and performance"
+      ],
+      "feature_count": 23,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Corvette ZR1",
+      "entity_key": "2025_chevrolet_corvette_zr1",
+      "vehicle_key": "2025_chevrolet_corvette_zr1",
+      "collection": "MFB03BC0688BDF9E9",
+      "collection_path": "model_2025_Chevrolet_Corvette_ZR1.html",
+      "parent": "MFB03BC0688BDF9E9",
+      "parent_path": "model_2025_Chevrolet_Corvette_ZR1.html",
+      "parent_vehicle": "model_2025_Chevrolet_Corvette_ZR1.html",
+      "parent_vehicle_id": "MFB03BC0688BDF9E9",
+      "path": "domain_2025_Chevrolet_Corvette_ZR1_Mechanical_and_performance.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C40A67AA0208305A0",
@@ -293,6 +531,43 @@
       "parent_vehicle": "model_2025_Chevrolet_Corvette_ZR1.html",
       "parent_vehicle_id": "MFB03BC0688BDF9E9",
       "path": "compare_domain_2025_Chevrolet_Corvette_ZR1_Mechanical_and_performance.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D791FA99AC82CB440",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Corvette ZR1 | Packages and options",
+      "title": "2025 Chevrolet Corvette ZR1 | Packages and options",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Corvette ZR1",
+      "trim_names_from_guide": [
+        "1LZ",
+        "3LZ"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Packages and options",
+      "guide_domains": [
+        "Packages and options"
+      ],
+      "feature_count": 44,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Corvette ZR1",
+      "entity_key": "2025_chevrolet_corvette_zr1",
+      "vehicle_key": "2025_chevrolet_corvette_zr1",
+      "collection": "MFB03BC0688BDF9E9",
+      "collection_path": "model_2025_Chevrolet_Corvette_ZR1.html",
+      "parent": "MFB03BC0688BDF9E9",
+      "parent_path": "model_2025_Chevrolet_Corvette_ZR1.html",
+      "parent_vehicle": "model_2025_Chevrolet_Corvette_ZR1.html",
+      "parent_vehicle_id": "MFB03BC0688BDF9E9",
+      "path": "domain_2025_Chevrolet_Corvette_ZR1_Packages_and_options.html"
     },
     {
       "objecttype": "Comparison",
@@ -333,6 +608,41 @@
       "path": "compare_domain_2025_Chevrolet_Corvette_ZR1_Packages_and_options.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D52491205BDA4FCAB",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Corvette ZR1",
+      "title": "2025 Chevrolet Corvette ZR1",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Corvette ZR1",
+      "trim_names_from_guide": [
+        "1LZ",
+        "3LZ"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Colour and trim",
+      "guide_domains": [
+        "Colour and trim"
+      ],
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Corvette ZR1",
+      "entity_key": "2025_chevrolet_corvette_zr1",
+      "vehicle_key": "2025_chevrolet_corvette_zr1",
+      "collection": "MFB03BC0688BDF9E9",
+      "collection_path": "model_2025_Chevrolet_Corvette_ZR1.html",
+      "parent": "MFB03BC0688BDF9E9",
+      "parent_path": "model_2025_Chevrolet_Corvette_ZR1.html",
+      "parent_vehicle": "model_2025_Chevrolet_Corvette_ZR1.html",
+      "parent_vehicle_id": "MFB03BC0688BDF9E9",
+      "path": "domain_2025_Chevrolet_Corvette_ZR1_Colour_and_trim.html"
+    },
+    {
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "T3F7D1E4897871B25",
@@ -359,7 +669,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Corvette ZR1 1LZ",
       "entity_key": "2025_chevrolet_corvette_zr1_1lz",
@@ -400,7 +710,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Corvette ZR1 3LZ",
       "entity_key": "2025_chevrolet_corvette_zr1_3lz",

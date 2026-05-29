@@ -34,7 +34,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Silverado 2500HD",
       "entity_key": "2026_chevrolet_silverado_2500hd",
@@ -42,13 +42,21 @@
       "collection": "M60952EDDA6F9D343",
       "collection_path": "model_2026_Chevrolet_Silverado_2500HD.html",
       "child": [
+        "D83F22FFA8EF25A98",
         "CE57025F868D23B2E",
+        "DD0DC68842561F16A",
         "C6E4BCD2FF02158FF",
+        "DA70A52B571A25FF5",
         "CD1661DD7E4C9BDE2",
+        "DC8C93C5111F69B87",
         "CF00CE7FEEEF57892",
+        "DCB536736FEAC90D8",
         "CD6656B3DC8011AE6",
+        "D0D16D61DD1E023B5",
         "C8161432DE52ED078",
+        "D833E4197D44E549C",
         "C69337F94E690A0DC",
+        "DBE7D08C14580C214",
         "TAA789B29911F4BBF",
         "TCBFB4DE636A364A2",
         "T67837B582152513C",
@@ -84,13 +92,21 @@
         "SC80744835196E9E7"
       ],
       "child_paths": [
+        "domain_2026_Chevrolet_Silverado_2500HD_Safety_and_driver_assistance.html",
         "compare_domain_2026_Chevrolet_Silverado_2500HD_Safety_and_driver_assistance.html",
+        "domain_2026_Chevrolet_Silverado_2500HD_Technology_and_connectivity.html",
         "compare_domain_2026_Chevrolet_Silverado_2500HD_Technology_and_connectivity.html",
+        "domain_2026_Chevrolet_Silverado_2500HD_Interior_and_comfort.html",
         "compare_domain_2026_Chevrolet_Silverado_2500HD_Interior_and_comfort.html",
+        "domain_2026_Chevrolet_Silverado_2500HD_Exterior_and_utility.html",
         "compare_domain_2026_Chevrolet_Silverado_2500HD_Exterior_and_utility.html",
+        "domain_2026_Chevrolet_Silverado_2500HD_Wheels_and_tires.html",
         "compare_domain_2026_Chevrolet_Silverado_2500HD_Wheels_and_tires.html",
+        "domain_2026_Chevrolet_Silverado_2500HD_Mechanical_and_performance.html",
         "compare_domain_2026_Chevrolet_Silverado_2500HD_Mechanical_and_performance.html",
+        "domain_2026_Chevrolet_Silverado_2500HD_Packages_and_options.html",
         "compare_domain_2026_Chevrolet_Silverado_2500HD_Packages_and_options.html",
+        "domain_2026_Chevrolet_Silverado_2500HD_Colour_and_trim.html",
         "trim_2026_Chevrolet_Silverado_2500HD_Work_Truck.html",
         "trim_2026_Chevrolet_Silverado_2500HD_Custom.html",
         "trim_2026_Chevrolet_Silverado_2500HD_LT.html",
@@ -134,6 +150,52 @@
         "LTZ",
         "High Country"
       ]
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D83F22FFA8EF25A98",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Silverado 2500HD | Safety and driver assistance",
+      "title": "2026 Chevrolet Silverado 2500HD | Safety and driver assistance",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "Custom",
+        "LT",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Safety and driver assistance",
+      "guide_domains": [
+        "Safety and driver assistance"
+      ],
+      "feature_count": 33,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500HD",
+      "entity_key": "2026_chevrolet_silverado_2500hd",
+      "vehicle_key": "2026_chevrolet_silverado_2500hd",
+      "collection": "M60952EDDA6F9D343",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500HD.html",
+      "parent": "M60952EDDA6F9D343",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500HD.html",
+      "parent_vehicle_id": "M60952EDDA6F9D343",
+      "path": "domain_2026_Chevrolet_Silverado_2500HD_Safety_and_driver_assistance.html"
     },
     {
       "objecttype": "Comparison",
@@ -183,6 +245,52 @@
       "path": "compare_domain_2026_Chevrolet_Silverado_2500HD_Safety_and_driver_assistance.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DD0DC68842561F16A",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Silverado 2500HD | Technology and connectivity",
+      "title": "2026 Chevrolet Silverado 2500HD | Technology and connectivity",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "Custom",
+        "LT",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Technology and connectivity",
+      "guide_domains": [
+        "Technology and connectivity"
+      ],
+      "feature_count": 36,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500HD",
+      "entity_key": "2026_chevrolet_silverado_2500hd",
+      "vehicle_key": "2026_chevrolet_silverado_2500hd",
+      "collection": "M60952EDDA6F9D343",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500HD.html",
+      "parent": "M60952EDDA6F9D343",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500HD.html",
+      "parent_vehicle_id": "M60952EDDA6F9D343",
+      "path": "domain_2026_Chevrolet_Silverado_2500HD_Technology_and_connectivity.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C6E4BCD2FF02158FF",
@@ -228,6 +336,52 @@
       "parent_vehicle": "model_2026_Chevrolet_Silverado_2500HD.html",
       "parent_vehicle_id": "M60952EDDA6F9D343",
       "path": "compare_domain_2026_Chevrolet_Silverado_2500HD_Technology_and_connectivity.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DA70A52B571A25FF5",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Silverado 2500HD | Interior and comfort",
+      "title": "2026 Chevrolet Silverado 2500HD | Interior and comfort",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "Custom",
+        "LT",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Interior and comfort",
+      "guide_domains": [
+        "Interior and comfort"
+      ],
+      "feature_count": 27,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500HD",
+      "entity_key": "2026_chevrolet_silverado_2500hd",
+      "vehicle_key": "2026_chevrolet_silverado_2500hd",
+      "collection": "M60952EDDA6F9D343",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500HD.html",
+      "parent": "M60952EDDA6F9D343",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500HD.html",
+      "parent_vehicle_id": "M60952EDDA6F9D343",
+      "path": "domain_2026_Chevrolet_Silverado_2500HD_Interior_and_comfort.html"
     },
     {
       "objecttype": "Comparison",
@@ -277,6 +431,52 @@
       "path": "compare_domain_2026_Chevrolet_Silverado_2500HD_Interior_and_comfort.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DC8C93C5111F69B87",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Silverado 2500HD | Exterior and utility",
+      "title": "2026 Chevrolet Silverado 2500HD | Exterior and utility",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "Custom",
+        "LT",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Exterior and utility",
+      "guide_domains": [
+        "Exterior and utility"
+      ],
+      "feature_count": 72,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500HD",
+      "entity_key": "2026_chevrolet_silverado_2500hd",
+      "vehicle_key": "2026_chevrolet_silverado_2500hd",
+      "collection": "M60952EDDA6F9D343",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500HD.html",
+      "parent": "M60952EDDA6F9D343",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500HD.html",
+      "parent_vehicle_id": "M60952EDDA6F9D343",
+      "path": "domain_2026_Chevrolet_Silverado_2500HD_Exterior_and_utility.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CF00CE7FEEEF57892",
@@ -322,6 +522,52 @@
       "parent_vehicle": "model_2026_Chevrolet_Silverado_2500HD.html",
       "parent_vehicle_id": "M60952EDDA6F9D343",
       "path": "compare_domain_2026_Chevrolet_Silverado_2500HD_Exterior_and_utility.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DCB536736FEAC90D8",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Silverado 2500HD | Wheels and tires",
+      "title": "2026 Chevrolet Silverado 2500HD | Wheels and tires",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "Custom",
+        "LT",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Wheels and tires",
+      "guide_domains": [
+        "Wheels and tires"
+      ],
+      "feature_count": 41,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500HD",
+      "entity_key": "2026_chevrolet_silverado_2500hd",
+      "vehicle_key": "2026_chevrolet_silverado_2500hd",
+      "collection": "M60952EDDA6F9D343",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500HD.html",
+      "parent": "M60952EDDA6F9D343",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500HD.html",
+      "parent_vehicle_id": "M60952EDDA6F9D343",
+      "path": "domain_2026_Chevrolet_Silverado_2500HD_Wheels_and_tires.html"
     },
     {
       "objecttype": "Comparison",
@@ -371,6 +617,52 @@
       "path": "compare_domain_2026_Chevrolet_Silverado_2500HD_Wheels_and_tires.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D0D16D61DD1E023B5",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Silverado 2500HD | Mechanical and performance",
+      "title": "2026 Chevrolet Silverado 2500HD | Mechanical and performance",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "Custom",
+        "LT",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Mechanical and performance",
+      "guide_domains": [
+        "Mechanical and performance"
+      ],
+      "feature_count": 78,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500HD",
+      "entity_key": "2026_chevrolet_silverado_2500hd",
+      "vehicle_key": "2026_chevrolet_silverado_2500hd",
+      "collection": "M60952EDDA6F9D343",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500HD.html",
+      "parent": "M60952EDDA6F9D343",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500HD.html",
+      "parent_vehicle_id": "M60952EDDA6F9D343",
+      "path": "domain_2026_Chevrolet_Silverado_2500HD_Mechanical_and_performance.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C8161432DE52ED078",
@@ -416,6 +708,52 @@
       "parent_vehicle": "model_2026_Chevrolet_Silverado_2500HD.html",
       "parent_vehicle_id": "M60952EDDA6F9D343",
       "path": "compare_domain_2026_Chevrolet_Silverado_2500HD_Mechanical_and_performance.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D833E4197D44E549C",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Silverado 2500HD | Packages and options",
+      "title": "2026 Chevrolet Silverado 2500HD | Packages and options",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "Custom",
+        "LT",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Packages and options",
+      "guide_domains": [
+        "Packages and options"
+      ],
+      "feature_count": 75,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500HD",
+      "entity_key": "2026_chevrolet_silverado_2500hd",
+      "vehicle_key": "2026_chevrolet_silverado_2500hd",
+      "collection": "M60952EDDA6F9D343",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500HD.html",
+      "parent": "M60952EDDA6F9D343",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500HD.html",
+      "parent_vehicle_id": "M60952EDDA6F9D343",
+      "path": "domain_2026_Chevrolet_Silverado_2500HD_Packages_and_options.html"
     },
     {
       "objecttype": "Comparison",
@@ -465,6 +803,50 @@
       "path": "compare_domain_2026_Chevrolet_Silverado_2500HD_Packages_and_options.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DBE7D08C14580C214",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Silverado 2500HD",
+      "title": "2026 Chevrolet Silverado 2500HD",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 2500HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "Custom",
+        "LT",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Colour and trim",
+      "guide_domains": [
+        "Colour and trim"
+      ],
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 2500HD",
+      "entity_key": "2026_chevrolet_silverado_2500hd",
+      "vehicle_key": "2026_chevrolet_silverado_2500hd",
+      "collection": "M60952EDDA6F9D343",
+      "collection_path": "model_2026_Chevrolet_Silverado_2500HD.html",
+      "parent": "M60952EDDA6F9D343",
+      "parent_path": "model_2026_Chevrolet_Silverado_2500HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_2500HD.html",
+      "parent_vehicle_id": "M60952EDDA6F9D343",
+      "path": "domain_2026_Chevrolet_Silverado_2500HD_Colour_and_trim.html"
+    },
+    {
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "TAA789B29911F4BBF",
@@ -508,7 +890,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Silverado 2500HD Work Truck",
       "entity_key": "2026_chevrolet_silverado_2500hd_work_truck",
@@ -566,7 +948,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Silverado 2500HD Custom",
       "entity_key": "2026_chevrolet_silverado_2500hd_custom",
@@ -624,7 +1006,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Silverado 2500HD LT",
       "entity_key": "2026_chevrolet_silverado_2500hd_lt",
@@ -676,7 +1058,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Silverado 2500HD ZR2",
       "entity_key": "2026_chevrolet_silverado_2500hd_zr2",
@@ -742,7 +1124,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Silverado 2500HD LTZ",
       "entity_key": "2026_chevrolet_silverado_2500hd_ltz",
@@ -795,7 +1177,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Silverado 2500HD High Country",
       "entity_key": "2026_chevrolet_silverado_2500hd_high_country",

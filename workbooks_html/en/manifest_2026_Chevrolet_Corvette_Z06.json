@@ -28,7 +28,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Corvette Z06",
       "entity_key": "2026_chevrolet_corvette_z06",
@@ -36,13 +36,21 @@
       "collection": "M7EA5521D33D9F26A",
       "collection_path": "model_2026_Chevrolet_Corvette_Z06.html",
       "child": [
+        "D4F75F8D06369F43A",
         "C363643773743D942",
+        "D09EA6DC0CF4B1588",
         "CA472300B8C2CBD13",
+        "D0FC8A1D62D852C27",
         "CC5972D0B2F225E95",
+        "D24A5EA0BF9E076E7",
         "C27EC1B6CC9CDC6D2",
+        "DF9FE3780E12D1405",
         "CFA047132E5EEAFAD",
+        "DED1498B8B174810A",
         "C34FA9A9214341293",
+        "D901C35C311189A14",
         "C8494DF6AEC165792",
+        "D83785A0ED4E5552E",
         "TE327394CF529D131",
         "T961CF74B69E809E4",
         "TFE886206BBC898ED",
@@ -50,13 +58,21 @@
         "S1CA7641501B07CE1"
       ],
       "child_paths": [
+        "domain_2026_Chevrolet_Corvette_Z06_Safety_and_driver_assistance.html",
         "compare_domain_2026_Chevrolet_Corvette_Z06_Safety_and_driver_assistance.html",
+        "domain_2026_Chevrolet_Corvette_Z06_Technology_and_connectivity.html",
         "compare_domain_2026_Chevrolet_Corvette_Z06_Technology_and_connectivity.html",
+        "domain_2026_Chevrolet_Corvette_Z06_Interior_and_comfort.html",
         "compare_domain_2026_Chevrolet_Corvette_Z06_Interior_and_comfort.html",
+        "domain_2026_Chevrolet_Corvette_Z06_Exterior_and_utility.html",
         "compare_domain_2026_Chevrolet_Corvette_Z06_Exterior_and_utility.html",
+        "domain_2026_Chevrolet_Corvette_Z06_Wheels_and_tires.html",
         "compare_domain_2026_Chevrolet_Corvette_Z06_Wheels_and_tires.html",
+        "domain_2026_Chevrolet_Corvette_Z06_Mechanical_and_performance.html",
         "compare_domain_2026_Chevrolet_Corvette_Z06_Mechanical_and_performance.html",
+        "domain_2026_Chevrolet_Corvette_Z06_Packages_and_options.html",
         "compare_domain_2026_Chevrolet_Corvette_Z06_Packages_and_options.html",
+        "domain_2026_Chevrolet_Corvette_Z06_Colour_and_trim.html",
         "trim_2026_Chevrolet_Corvette_Z06_1LZ.html",
         "trim_2026_Chevrolet_Corvette_Z06_2LZ.html",
         "trim_2026_Chevrolet_Corvette_Z06_3LZ.html",
@@ -69,6 +85,44 @@
         "2LZ",
         "3LZ"
       ]
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D4F75F8D06369F43A",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Corvette Z06 | Safety and driver assistance",
+      "title": "2026 Chevrolet Corvette Z06 | Safety and driver assistance",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Corvette Z06",
+      "trim_names_from_guide": [
+        "1LZ",
+        "2LZ",
+        "3LZ"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Safety and driver assistance",
+      "guide_domains": [
+        "Safety and driver assistance"
+      ],
+      "feature_count": 24,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Corvette Z06",
+      "entity_key": "2026_chevrolet_corvette_z06",
+      "vehicle_key": "2026_chevrolet_corvette_z06",
+      "collection": "M7EA5521D33D9F26A",
+      "collection_path": "model_2026_Chevrolet_Corvette_Z06.html",
+      "parent": "M7EA5521D33D9F26A",
+      "parent_path": "model_2026_Chevrolet_Corvette_Z06.html",
+      "parent_vehicle": "model_2026_Chevrolet_Corvette_Z06.html",
+      "parent_vehicle_id": "M7EA5521D33D9F26A",
+      "path": "domain_2026_Chevrolet_Corvette_Z06_Safety_and_driver_assistance.html"
     },
     {
       "objecttype": "Comparison",
@@ -110,6 +164,44 @@
       "path": "compare_domain_2026_Chevrolet_Corvette_Z06_Safety_and_driver_assistance.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D09EA6DC0CF4B1588",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Corvette Z06 | Technology and connectivity",
+      "title": "2026 Chevrolet Corvette Z06 | Technology and connectivity",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Corvette Z06",
+      "trim_names_from_guide": [
+        "1LZ",
+        "2LZ",
+        "3LZ"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Technology and connectivity",
+      "guide_domains": [
+        "Technology and connectivity"
+      ],
+      "feature_count": 27,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Corvette Z06",
+      "entity_key": "2026_chevrolet_corvette_z06",
+      "vehicle_key": "2026_chevrolet_corvette_z06",
+      "collection": "M7EA5521D33D9F26A",
+      "collection_path": "model_2026_Chevrolet_Corvette_Z06.html",
+      "parent": "M7EA5521D33D9F26A",
+      "parent_path": "model_2026_Chevrolet_Corvette_Z06.html",
+      "parent_vehicle": "model_2026_Chevrolet_Corvette_Z06.html",
+      "parent_vehicle_id": "M7EA5521D33D9F26A",
+      "path": "domain_2026_Chevrolet_Corvette_Z06_Technology_and_connectivity.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CA472300B8C2CBD13",
@@ -146,6 +238,44 @@
       "parent_vehicle": "model_2026_Chevrolet_Corvette_Z06.html",
       "parent_vehicle_id": "M7EA5521D33D9F26A",
       "path": "compare_domain_2026_Chevrolet_Corvette_Z06_Technology_and_connectivity.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D0FC8A1D62D852C27",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Corvette Z06 | Interior and comfort",
+      "title": "2026 Chevrolet Corvette Z06 | Interior and comfort",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Corvette Z06",
+      "trim_names_from_guide": [
+        "1LZ",
+        "2LZ",
+        "3LZ"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Interior and comfort",
+      "guide_domains": [
+        "Interior and comfort"
+      ],
+      "feature_count": 28,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Corvette Z06",
+      "entity_key": "2026_chevrolet_corvette_z06",
+      "vehicle_key": "2026_chevrolet_corvette_z06",
+      "collection": "M7EA5521D33D9F26A",
+      "collection_path": "model_2026_Chevrolet_Corvette_Z06.html",
+      "parent": "M7EA5521D33D9F26A",
+      "parent_path": "model_2026_Chevrolet_Corvette_Z06.html",
+      "parent_vehicle": "model_2026_Chevrolet_Corvette_Z06.html",
+      "parent_vehicle_id": "M7EA5521D33D9F26A",
+      "path": "domain_2026_Chevrolet_Corvette_Z06_Interior_and_comfort.html"
     },
     {
       "objecttype": "Comparison",
@@ -187,6 +317,44 @@
       "path": "compare_domain_2026_Chevrolet_Corvette_Z06_Interior_and_comfort.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D24A5EA0BF9E076E7",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Corvette Z06 | Exterior and utility",
+      "title": "2026 Chevrolet Corvette Z06 | Exterior and utility",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Corvette Z06",
+      "trim_names_from_guide": [
+        "1LZ",
+        "2LZ",
+        "3LZ"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Exterior and utility",
+      "guide_domains": [
+        "Exterior and utility"
+      ],
+      "feature_count": 42,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Corvette Z06",
+      "entity_key": "2026_chevrolet_corvette_z06",
+      "vehicle_key": "2026_chevrolet_corvette_z06",
+      "collection": "M7EA5521D33D9F26A",
+      "collection_path": "model_2026_Chevrolet_Corvette_Z06.html",
+      "parent": "M7EA5521D33D9F26A",
+      "parent_path": "model_2026_Chevrolet_Corvette_Z06.html",
+      "parent_vehicle": "model_2026_Chevrolet_Corvette_Z06.html",
+      "parent_vehicle_id": "M7EA5521D33D9F26A",
+      "path": "domain_2026_Chevrolet_Corvette_Z06_Exterior_and_utility.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C27EC1B6CC9CDC6D2",
@@ -224,6 +392,44 @@
       "parent_vehicle": "model_2026_Chevrolet_Corvette_Z06.html",
       "parent_vehicle_id": "M7EA5521D33D9F26A",
       "path": "compare_domain_2026_Chevrolet_Corvette_Z06_Exterior_and_utility.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DF9FE3780E12D1405",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Corvette Z06 | Wheels and tires",
+      "title": "2026 Chevrolet Corvette Z06 | Wheels and tires",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Corvette Z06",
+      "trim_names_from_guide": [
+        "1LZ",
+        "2LZ",
+        "3LZ"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Wheels and tires",
+      "guide_domains": [
+        "Wheels and tires"
+      ],
+      "feature_count": 29,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Corvette Z06",
+      "entity_key": "2026_chevrolet_corvette_z06",
+      "vehicle_key": "2026_chevrolet_corvette_z06",
+      "collection": "M7EA5521D33D9F26A",
+      "collection_path": "model_2026_Chevrolet_Corvette_Z06.html",
+      "parent": "M7EA5521D33D9F26A",
+      "parent_path": "model_2026_Chevrolet_Corvette_Z06.html",
+      "parent_vehicle": "model_2026_Chevrolet_Corvette_Z06.html",
+      "parent_vehicle_id": "M7EA5521D33D9F26A",
+      "path": "domain_2026_Chevrolet_Corvette_Z06_Wheels_and_tires.html"
     },
     {
       "objecttype": "Comparison",
@@ -265,6 +471,44 @@
       "path": "compare_domain_2026_Chevrolet_Corvette_Z06_Wheels_and_tires.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DED1498B8B174810A",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Corvette Z06 | Mechanical and performance",
+      "title": "2026 Chevrolet Corvette Z06 | Mechanical and performance",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Corvette Z06",
+      "trim_names_from_guide": [
+        "1LZ",
+        "2LZ",
+        "3LZ"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Mechanical and performance",
+      "guide_domains": [
+        "Mechanical and performance"
+      ],
+      "feature_count": 27,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Corvette Z06",
+      "entity_key": "2026_chevrolet_corvette_z06",
+      "vehicle_key": "2026_chevrolet_corvette_z06",
+      "collection": "M7EA5521D33D9F26A",
+      "collection_path": "model_2026_Chevrolet_Corvette_Z06.html",
+      "parent": "M7EA5521D33D9F26A",
+      "parent_path": "model_2026_Chevrolet_Corvette_Z06.html",
+      "parent_vehicle": "model_2026_Chevrolet_Corvette_Z06.html",
+      "parent_vehicle_id": "M7EA5521D33D9F26A",
+      "path": "domain_2026_Chevrolet_Corvette_Z06_Mechanical_and_performance.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C34FA9A9214341293",
@@ -301,6 +545,44 @@
       "parent_vehicle": "model_2026_Chevrolet_Corvette_Z06.html",
       "parent_vehicle_id": "M7EA5521D33D9F26A",
       "path": "compare_domain_2026_Chevrolet_Corvette_Z06_Mechanical_and_performance.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D901C35C311189A14",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Corvette Z06 | Packages and options",
+      "title": "2026 Chevrolet Corvette Z06 | Packages and options",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Corvette Z06",
+      "trim_names_from_guide": [
+        "1LZ",
+        "2LZ",
+        "3LZ"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Packages and options",
+      "guide_domains": [
+        "Packages and options"
+      ],
+      "feature_count": 59,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Corvette Z06",
+      "entity_key": "2026_chevrolet_corvette_z06",
+      "vehicle_key": "2026_chevrolet_corvette_z06",
+      "collection": "M7EA5521D33D9F26A",
+      "collection_path": "model_2026_Chevrolet_Corvette_Z06.html",
+      "parent": "M7EA5521D33D9F26A",
+      "parent_path": "model_2026_Chevrolet_Corvette_Z06.html",
+      "parent_vehicle": "model_2026_Chevrolet_Corvette_Z06.html",
+      "parent_vehicle_id": "M7EA5521D33D9F26A",
+      "path": "domain_2026_Chevrolet_Corvette_Z06_Packages_and_options.html"
     },
     {
       "objecttype": "Comparison",
@@ -342,6 +624,42 @@
       "path": "compare_domain_2026_Chevrolet_Corvette_Z06_Packages_and_options.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D83785A0ED4E5552E",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Corvette Z06",
+      "title": "2026 Chevrolet Corvette Z06",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Corvette Z06",
+      "trim_names_from_guide": [
+        "1LZ",
+        "2LZ",
+        "3LZ"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Colour and trim",
+      "guide_domains": [
+        "Colour and trim"
+      ],
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Corvette Z06",
+      "entity_key": "2026_chevrolet_corvette_z06",
+      "vehicle_key": "2026_chevrolet_corvette_z06",
+      "collection": "M7EA5521D33D9F26A",
+      "collection_path": "model_2026_Chevrolet_Corvette_Z06.html",
+      "parent": "M7EA5521D33D9F26A",
+      "parent_path": "model_2026_Chevrolet_Corvette_Z06.html",
+      "parent_vehicle": "model_2026_Chevrolet_Corvette_Z06.html",
+      "parent_vehicle_id": "M7EA5521D33D9F26A",
+      "path": "domain_2026_Chevrolet_Corvette_Z06_Colour_and_trim.html"
+    },
+    {
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "TE327394CF529D131",
@@ -368,7 +686,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Corvette Z06 1LZ",
       "entity_key": "2026_chevrolet_corvette_z06_1lz",
@@ -409,7 +727,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Corvette Z06 2LZ",
       "entity_key": "2026_chevrolet_corvette_z06_2lz",
@@ -450,7 +768,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Corvette Z06 3LZ",
       "entity_key": "2026_chevrolet_corvette_z06_3lz",

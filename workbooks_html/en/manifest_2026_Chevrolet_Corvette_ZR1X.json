@@ -28,7 +28,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Corvette ZR1X",
       "entity_key": "2026_chevrolet_corvette_zr1x",
@@ -36,26 +36,42 @@
       "collection": "ME71578CC4AEB4318",
       "collection_path": "model_2026_Chevrolet_Corvette_ZR1X.html",
       "child": [
+        "D4795A4F708B882DF",
         "C43EAA324F580A9F3",
+        "D9356D4CB91F820BE",
         "C64AD8E991BF7FC0E",
+        "D87D169E2498D257D",
         "C1DAC18E4AC4AD34F",
+        "DED1F52745FCE9C2B",
         "CD23FD5A5B1DCB894",
+        "DE567A23EC04765EB",
         "C99BA4B8C9A6022A2",
+        "D57687FD4039DAD3A",
         "C049CA2E041E0DA5F",
+        "DAB36F57B480EB92E",
         "C49748F8CA780A06A",
+        "D857EAACDACEBA4FB",
         "T05E5E11C3AB1DEB1",
         "TC06758A5FC4A03CB",
         "S348EF1605FB9C9CF",
         "SD351C61B8957E846"
       ],
       "child_paths": [
+        "domain_2026_Chevrolet_Corvette_ZR1X_Safety_and_driver_assistance.html",
         "compare_domain_2026_Chevrolet_Corvette_ZR1X_Safety_and_driver_assistance.html",
+        "domain_2026_Chevrolet_Corvette_ZR1X_Technology_and_connectivity.html",
         "compare_domain_2026_Chevrolet_Corvette_ZR1X_Technology_and_connectivity.html",
+        "domain_2026_Chevrolet_Corvette_ZR1X_Interior_and_comfort.html",
         "compare_domain_2026_Chevrolet_Corvette_ZR1X_Interior_and_comfort.html",
+        "domain_2026_Chevrolet_Corvette_ZR1X_Exterior_and_utility.html",
         "compare_domain_2026_Chevrolet_Corvette_ZR1X_Exterior_and_utility.html",
+        "domain_2026_Chevrolet_Corvette_ZR1X_Wheels_and_tires.html",
         "compare_domain_2026_Chevrolet_Corvette_ZR1X_Wheels_and_tires.html",
+        "domain_2026_Chevrolet_Corvette_ZR1X_Mechanical_and_performance.html",
         "compare_domain_2026_Chevrolet_Corvette_ZR1X_Mechanical_and_performance.html",
+        "domain_2026_Chevrolet_Corvette_ZR1X_Packages_and_options.html",
         "compare_domain_2026_Chevrolet_Corvette_ZR1X_Packages_and_options.html",
+        "domain_2026_Chevrolet_Corvette_ZR1X_Colour_and_trim.html",
         "trim_2026_Chevrolet_Corvette_ZR1X_1LZ.html",
         "trim_2026_Chevrolet_Corvette_ZR1X_3LZ.html",
         "spec_2026_Chevrolet_Corvette_ZR1X_dimensions_specifications_1YS07_ZR1X_Coupe.html",
@@ -66,6 +82,43 @@
         "1LZ",
         "3LZ"
       ]
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D4795A4F708B882DF",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Corvette ZR1X | Safety and driver assistance",
+      "title": "2026 Chevrolet Corvette ZR1X | Safety and driver assistance",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Corvette ZR1X",
+      "trim_names_from_guide": [
+        "1LZ",
+        "3LZ"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Safety and driver assistance",
+      "guide_domains": [
+        "Safety and driver assistance"
+      ],
+      "feature_count": 24,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Corvette ZR1X",
+      "entity_key": "2026_chevrolet_corvette_zr1x",
+      "vehicle_key": "2026_chevrolet_corvette_zr1x",
+      "collection": "ME71578CC4AEB4318",
+      "collection_path": "model_2026_Chevrolet_Corvette_ZR1X.html",
+      "parent": "ME71578CC4AEB4318",
+      "parent_path": "model_2026_Chevrolet_Corvette_ZR1X.html",
+      "parent_vehicle": "model_2026_Chevrolet_Corvette_ZR1X.html",
+      "parent_vehicle_id": "ME71578CC4AEB4318",
+      "path": "domain_2026_Chevrolet_Corvette_ZR1X_Safety_and_driver_assistance.html"
     },
     {
       "objecttype": "Comparison",
@@ -106,6 +159,43 @@
       "path": "compare_domain_2026_Chevrolet_Corvette_ZR1X_Safety_and_driver_assistance.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D9356D4CB91F820BE",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Corvette ZR1X | Technology and connectivity",
+      "title": "2026 Chevrolet Corvette ZR1X | Technology and connectivity",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Corvette ZR1X",
+      "trim_names_from_guide": [
+        "1LZ",
+        "3LZ"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Technology and connectivity",
+      "guide_domains": [
+        "Technology and connectivity"
+      ],
+      "feature_count": 27,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Corvette ZR1X",
+      "entity_key": "2026_chevrolet_corvette_zr1x",
+      "vehicle_key": "2026_chevrolet_corvette_zr1x",
+      "collection": "ME71578CC4AEB4318",
+      "collection_path": "model_2026_Chevrolet_Corvette_ZR1X.html",
+      "parent": "ME71578CC4AEB4318",
+      "parent_path": "model_2026_Chevrolet_Corvette_ZR1X.html",
+      "parent_vehicle": "model_2026_Chevrolet_Corvette_ZR1X.html",
+      "parent_vehicle_id": "ME71578CC4AEB4318",
+      "path": "domain_2026_Chevrolet_Corvette_ZR1X_Technology_and_connectivity.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C64AD8E991BF7FC0E",
@@ -141,6 +231,43 @@
       "parent_vehicle": "model_2026_Chevrolet_Corvette_ZR1X.html",
       "parent_vehicle_id": "ME71578CC4AEB4318",
       "path": "compare_domain_2026_Chevrolet_Corvette_ZR1X_Technology_and_connectivity.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D87D169E2498D257D",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Corvette ZR1X | Interior and comfort",
+      "title": "2026 Chevrolet Corvette ZR1X | Interior and comfort",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Corvette ZR1X",
+      "trim_names_from_guide": [
+        "1LZ",
+        "3LZ"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Interior and comfort",
+      "guide_domains": [
+        "Interior and comfort"
+      ],
+      "feature_count": 29,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Corvette ZR1X",
+      "entity_key": "2026_chevrolet_corvette_zr1x",
+      "vehicle_key": "2026_chevrolet_corvette_zr1x",
+      "collection": "ME71578CC4AEB4318",
+      "collection_path": "model_2026_Chevrolet_Corvette_ZR1X.html",
+      "parent": "ME71578CC4AEB4318",
+      "parent_path": "model_2026_Chevrolet_Corvette_ZR1X.html",
+      "parent_vehicle": "model_2026_Chevrolet_Corvette_ZR1X.html",
+      "parent_vehicle_id": "ME71578CC4AEB4318",
+      "path": "domain_2026_Chevrolet_Corvette_ZR1X_Interior_and_comfort.html"
     },
     {
       "objecttype": "Comparison",
@@ -181,6 +308,43 @@
       "path": "compare_domain_2026_Chevrolet_Corvette_ZR1X_Interior_and_comfort.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DED1F52745FCE9C2B",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Corvette ZR1X | Exterior and utility",
+      "title": "2026 Chevrolet Corvette ZR1X | Exterior and utility",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Corvette ZR1X",
+      "trim_names_from_guide": [
+        "1LZ",
+        "3LZ"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Exterior and utility",
+      "guide_domains": [
+        "Exterior and utility"
+      ],
+      "feature_count": 32,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Corvette ZR1X",
+      "entity_key": "2026_chevrolet_corvette_zr1x",
+      "vehicle_key": "2026_chevrolet_corvette_zr1x",
+      "collection": "ME71578CC4AEB4318",
+      "collection_path": "model_2026_Chevrolet_Corvette_ZR1X.html",
+      "parent": "ME71578CC4AEB4318",
+      "parent_path": "model_2026_Chevrolet_Corvette_ZR1X.html",
+      "parent_vehicle": "model_2026_Chevrolet_Corvette_ZR1X.html",
+      "parent_vehicle_id": "ME71578CC4AEB4318",
+      "path": "domain_2026_Chevrolet_Corvette_ZR1X_Exterior_and_utility.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CD23FD5A5B1DCB894",
@@ -217,6 +381,43 @@
       "parent_vehicle": "model_2026_Chevrolet_Corvette_ZR1X.html",
       "parent_vehicle_id": "ME71578CC4AEB4318",
       "path": "compare_domain_2026_Chevrolet_Corvette_ZR1X_Exterior_and_utility.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DE567A23EC04765EB",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Corvette ZR1X | Wheels and tires",
+      "title": "2026 Chevrolet Corvette ZR1X | Wheels and tires",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Corvette ZR1X",
+      "trim_names_from_guide": [
+        "1LZ",
+        "3LZ"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Wheels and tires",
+      "guide_domains": [
+        "Wheels and tires"
+      ],
+      "feature_count": 19,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Corvette ZR1X",
+      "entity_key": "2026_chevrolet_corvette_zr1x",
+      "vehicle_key": "2026_chevrolet_corvette_zr1x",
+      "collection": "ME71578CC4AEB4318",
+      "collection_path": "model_2026_Chevrolet_Corvette_ZR1X.html",
+      "parent": "ME71578CC4AEB4318",
+      "parent_path": "model_2026_Chevrolet_Corvette_ZR1X.html",
+      "parent_vehicle": "model_2026_Chevrolet_Corvette_ZR1X.html",
+      "parent_vehicle_id": "ME71578CC4AEB4318",
+      "path": "domain_2026_Chevrolet_Corvette_ZR1X_Wheels_and_tires.html"
     },
     {
       "objecttype": "Comparison",
@@ -257,6 +458,43 @@
       "path": "compare_domain_2026_Chevrolet_Corvette_ZR1X_Wheels_and_tires.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D57687FD4039DAD3A",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Corvette ZR1X | Mechanical and performance",
+      "title": "2026 Chevrolet Corvette ZR1X | Mechanical and performance",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Corvette ZR1X",
+      "trim_names_from_guide": [
+        "1LZ",
+        "3LZ"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Mechanical and performance",
+      "guide_domains": [
+        "Mechanical and performance"
+      ],
+      "feature_count": 27,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Corvette ZR1X",
+      "entity_key": "2026_chevrolet_corvette_zr1x",
+      "vehicle_key": "2026_chevrolet_corvette_zr1x",
+      "collection": "ME71578CC4AEB4318",
+      "collection_path": "model_2026_Chevrolet_Corvette_ZR1X.html",
+      "parent": "ME71578CC4AEB4318",
+      "parent_path": "model_2026_Chevrolet_Corvette_ZR1X.html",
+      "parent_vehicle": "model_2026_Chevrolet_Corvette_ZR1X.html",
+      "parent_vehicle_id": "ME71578CC4AEB4318",
+      "path": "domain_2026_Chevrolet_Corvette_ZR1X_Mechanical_and_performance.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C049CA2E041E0DA5F",
@@ -293,6 +531,43 @@
       "parent_vehicle": "model_2026_Chevrolet_Corvette_ZR1X.html",
       "parent_vehicle_id": "ME71578CC4AEB4318",
       "path": "compare_domain_2026_Chevrolet_Corvette_ZR1X_Mechanical_and_performance.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DAB36F57B480EB92E",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Corvette ZR1X | Packages and options",
+      "title": "2026 Chevrolet Corvette ZR1X | Packages and options",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Corvette ZR1X",
+      "trim_names_from_guide": [
+        "1LZ",
+        "3LZ"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Packages and options",
+      "guide_domains": [
+        "Packages and options"
+      ],
+      "feature_count": 51,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Corvette ZR1X",
+      "entity_key": "2026_chevrolet_corvette_zr1x",
+      "vehicle_key": "2026_chevrolet_corvette_zr1x",
+      "collection": "ME71578CC4AEB4318",
+      "collection_path": "model_2026_Chevrolet_Corvette_ZR1X.html",
+      "parent": "ME71578CC4AEB4318",
+      "parent_path": "model_2026_Chevrolet_Corvette_ZR1X.html",
+      "parent_vehicle": "model_2026_Chevrolet_Corvette_ZR1X.html",
+      "parent_vehicle_id": "ME71578CC4AEB4318",
+      "path": "domain_2026_Chevrolet_Corvette_ZR1X_Packages_and_options.html"
     },
     {
       "objecttype": "Comparison",
@@ -333,6 +608,41 @@
       "path": "compare_domain_2026_Chevrolet_Corvette_ZR1X_Packages_and_options.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D857EAACDACEBA4FB",
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Corvette ZR1X",
+      "title": "2026 Chevrolet Corvette ZR1X",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Corvette ZR1X",
+      "trim_names_from_guide": [
+        "1LZ",
+        "3LZ"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Colour and trim",
+      "guide_domains": [
+        "Colour and trim"
+      ],
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Corvette ZR1X",
+      "entity_key": "2026_chevrolet_corvette_zr1x",
+      "vehicle_key": "2026_chevrolet_corvette_zr1x",
+      "collection": "ME71578CC4AEB4318",
+      "collection_path": "model_2026_Chevrolet_Corvette_ZR1X.html",
+      "parent": "ME71578CC4AEB4318",
+      "parent_path": "model_2026_Chevrolet_Corvette_ZR1X.html",
+      "parent_vehicle": "model_2026_Chevrolet_Corvette_ZR1X.html",
+      "parent_vehicle_id": "ME71578CC4AEB4318",
+      "path": "domain_2026_Chevrolet_Corvette_ZR1X_Colour_and_trim.html"
+    },
+    {
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "T05E5E11C3AB1DEB1",
@@ -359,7 +669,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Corvette ZR1X 1LZ",
       "entity_key": "2026_chevrolet_corvette_zr1x_1lz",
@@ -400,7 +710,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Corvette ZR1X 3LZ",
       "entity_key": "2026_chevrolet_corvette_zr1x_3lz",

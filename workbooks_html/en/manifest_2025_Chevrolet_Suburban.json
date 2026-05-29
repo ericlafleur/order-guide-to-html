@@ -32,7 +32,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Suburban",
       "entity_key": "2025_chevrolet_suburban",
@@ -40,13 +40,21 @@
       "collection": "MD3BDF5082E6052B1",
       "collection_path": "model_2025_Chevrolet_Suburban.html",
       "child": [
+        "DC1EB5F472359A283",
         "C27467F5585295603",
+        "DE809B2832C2B66C6",
         "C1EA121A34FAF5C1E",
+        "D142D2C281ADE27B3",
         "CD9CEA8E4934809D7",
+        "DAAB764B9A638728F",
         "C07BA082E520F3A2D",
+        "DFD2FCF2CD238CFC9",
         "CC905C78ACE1A52AB",
+        "DCC44D318FFE9ADCF",
         "CA32B8B00600B9FE8",
+        "D5C70D7CC11EAEA73",
         "CA312BA9DE35E55CF",
+        "D0832F9388FCE42AB",
         "T3A76E4F3D43F1B66",
         "T8AAEC75BCC429224",
         "T968AF6B0049A2266",
@@ -62,13 +70,21 @@
         "S8DDD3A6059879A5B"
       ],
       "child_paths": [
+        "domain_2025_Chevrolet_Suburban_Safety_and_driver_assistance.html",
         "compare_domain_2025_Chevrolet_Suburban_Safety_and_driver_assistance.html",
+        "domain_2025_Chevrolet_Suburban_Technology_and_connectivity.html",
         "compare_domain_2025_Chevrolet_Suburban_Technology_and_connectivity.html",
+        "domain_2025_Chevrolet_Suburban_Interior_and_comfort.html",
         "compare_domain_2025_Chevrolet_Suburban_Interior_and_comfort.html",
+        "domain_2025_Chevrolet_Suburban_Exterior_and_utility.html",
         "compare_domain_2025_Chevrolet_Suburban_Exterior_and_utility.html",
+        "domain_2025_Chevrolet_Suburban_Wheels_and_tires.html",
         "compare_domain_2025_Chevrolet_Suburban_Wheels_and_tires.html",
+        "domain_2025_Chevrolet_Suburban_Mechanical_and_performance.html",
         "compare_domain_2025_Chevrolet_Suburban_Mechanical_and_performance.html",
+        "domain_2025_Chevrolet_Suburban_Packages_and_options.html",
         "compare_domain_2025_Chevrolet_Suburban_Packages_and_options.html",
+        "domain_2025_Chevrolet_Suburban_Colour_and_trim.html",
         "trim_2025_Chevrolet_Suburban_LS.html",
         "trim_2025_Chevrolet_Suburban_LT.html",
         "trim_2025_Chevrolet_Suburban_RST.html",
@@ -92,6 +108,51 @@
         "Premier",
         "High Country"
       ]
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DC1EB5F472359A283",
+      "seating": [
+        "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Suburban | Safety and driver assistance",
+      "title": "2025 Chevrolet Suburban | Safety and driver assistance",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Suburban",
+      "trim_names_from_guide": [
+        "LS",
+        "LT",
+        "RST",
+        "Z71",
+        "Premier",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Safety and driver assistance",
+      "guide_domains": [
+        "Safety and driver assistance"
+      ],
+      "feature_count": 31,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Suburban",
+      "entity_key": "2025_chevrolet_suburban",
+      "vehicle_key": "2025_chevrolet_suburban",
+      "collection": "MD3BDF5082E6052B1",
+      "collection_path": "model_2025_Chevrolet_Suburban.html",
+      "parent": "MD3BDF5082E6052B1",
+      "parent_path": "model_2025_Chevrolet_Suburban.html",
+      "parent_vehicle": "model_2025_Chevrolet_Suburban.html",
+      "parent_vehicle_id": "MD3BDF5082E6052B1",
+      "path": "domain_2025_Chevrolet_Suburban_Safety_and_driver_assistance.html"
     },
     {
       "objecttype": "Comparison",
@@ -140,6 +201,51 @@
       "path": "compare_domain_2025_Chevrolet_Suburban_Safety_and_driver_assistance.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DE809B2832C2B66C6",
+      "seating": [
+        "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Suburban | Technology and connectivity",
+      "title": "2025 Chevrolet Suburban | Technology and connectivity",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Suburban",
+      "trim_names_from_guide": [
+        "LS",
+        "LT",
+        "RST",
+        "Z71",
+        "Premier",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Technology and connectivity",
+      "guide_domains": [
+        "Technology and connectivity"
+      ],
+      "feature_count": 34,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Suburban",
+      "entity_key": "2025_chevrolet_suburban",
+      "vehicle_key": "2025_chevrolet_suburban",
+      "collection": "MD3BDF5082E6052B1",
+      "collection_path": "model_2025_Chevrolet_Suburban.html",
+      "parent": "MD3BDF5082E6052B1",
+      "parent_path": "model_2025_Chevrolet_Suburban.html",
+      "parent_vehicle": "model_2025_Chevrolet_Suburban.html",
+      "parent_vehicle_id": "MD3BDF5082E6052B1",
+      "path": "domain_2025_Chevrolet_Suburban_Technology_and_connectivity.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C1EA121A34FAF5C1E",
@@ -184,6 +290,51 @@
       "parent_vehicle": "model_2025_Chevrolet_Suburban.html",
       "parent_vehicle_id": "MD3BDF5082E6052B1",
       "path": "compare_domain_2025_Chevrolet_Suburban_Technology_and_connectivity.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D142D2C281ADE27B3",
+      "seating": [
+        "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Suburban | Interior and comfort",
+      "title": "2025 Chevrolet Suburban | Interior and comfort",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Suburban",
+      "trim_names_from_guide": [
+        "LS",
+        "LT",
+        "RST",
+        "Z71",
+        "Premier",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Interior and comfort",
+      "guide_domains": [
+        "Interior and comfort"
+      ],
+      "feature_count": 41,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Suburban",
+      "entity_key": "2025_chevrolet_suburban",
+      "vehicle_key": "2025_chevrolet_suburban",
+      "collection": "MD3BDF5082E6052B1",
+      "collection_path": "model_2025_Chevrolet_Suburban.html",
+      "parent": "MD3BDF5082E6052B1",
+      "parent_path": "model_2025_Chevrolet_Suburban.html",
+      "parent_vehicle": "model_2025_Chevrolet_Suburban.html",
+      "parent_vehicle_id": "MD3BDF5082E6052B1",
+      "path": "domain_2025_Chevrolet_Suburban_Interior_and_comfort.html"
     },
     {
       "objecttype": "Comparison",
@@ -232,6 +383,51 @@
       "path": "compare_domain_2025_Chevrolet_Suburban_Interior_and_comfort.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DAAB764B9A638728F",
+      "seating": [
+        "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Suburban | Exterior and utility",
+      "title": "2025 Chevrolet Suburban | Exterior and utility",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Suburban",
+      "trim_names_from_guide": [
+        "LS",
+        "LT",
+        "RST",
+        "Z71",
+        "Premier",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Exterior and utility",
+      "guide_domains": [
+        "Exterior and utility"
+      ],
+      "feature_count": 59,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Suburban",
+      "entity_key": "2025_chevrolet_suburban",
+      "vehicle_key": "2025_chevrolet_suburban",
+      "collection": "MD3BDF5082E6052B1",
+      "collection_path": "model_2025_Chevrolet_Suburban.html",
+      "parent": "MD3BDF5082E6052B1",
+      "parent_path": "model_2025_Chevrolet_Suburban.html",
+      "parent_vehicle": "model_2025_Chevrolet_Suburban.html",
+      "parent_vehicle_id": "MD3BDF5082E6052B1",
+      "path": "domain_2025_Chevrolet_Suburban_Exterior_and_utility.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C07BA082E520F3A2D",
@@ -276,6 +472,51 @@
       "parent_vehicle": "model_2025_Chevrolet_Suburban.html",
       "parent_vehicle_id": "MD3BDF5082E6052B1",
       "path": "compare_domain_2025_Chevrolet_Suburban_Exterior_and_utility.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DFD2FCF2CD238CFC9",
+      "seating": [
+        "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Suburban | Wheels and tires",
+      "title": "2025 Chevrolet Suburban | Wheels and tires",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Suburban",
+      "trim_names_from_guide": [
+        "LS",
+        "LT",
+        "RST",
+        "Z71",
+        "Premier",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Wheels and tires",
+      "guide_domains": [
+        "Wheels and tires"
+      ],
+      "feature_count": 29,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Suburban",
+      "entity_key": "2025_chevrolet_suburban",
+      "vehicle_key": "2025_chevrolet_suburban",
+      "collection": "MD3BDF5082E6052B1",
+      "collection_path": "model_2025_Chevrolet_Suburban.html",
+      "parent": "MD3BDF5082E6052B1",
+      "parent_path": "model_2025_Chevrolet_Suburban.html",
+      "parent_vehicle": "model_2025_Chevrolet_Suburban.html",
+      "parent_vehicle_id": "MD3BDF5082E6052B1",
+      "path": "domain_2025_Chevrolet_Suburban_Wheels_and_tires.html"
     },
     {
       "objecttype": "Comparison",
@@ -324,6 +565,51 @@
       "path": "compare_domain_2025_Chevrolet_Suburban_Wheels_and_tires.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DCC44D318FFE9ADCF",
+      "seating": [
+        "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Suburban | Mechanical and performance",
+      "title": "2025 Chevrolet Suburban | Mechanical and performance",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Suburban",
+      "trim_names_from_guide": [
+        "LS",
+        "LT",
+        "RST",
+        "Z71",
+        "Premier",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Mechanical and performance",
+      "guide_domains": [
+        "Mechanical and performance"
+      ],
+      "feature_count": 50,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Suburban",
+      "entity_key": "2025_chevrolet_suburban",
+      "vehicle_key": "2025_chevrolet_suburban",
+      "collection": "MD3BDF5082E6052B1",
+      "collection_path": "model_2025_Chevrolet_Suburban.html",
+      "parent": "MD3BDF5082E6052B1",
+      "parent_path": "model_2025_Chevrolet_Suburban.html",
+      "parent_vehicle": "model_2025_Chevrolet_Suburban.html",
+      "parent_vehicle_id": "MD3BDF5082E6052B1",
+      "path": "domain_2025_Chevrolet_Suburban_Mechanical_and_performance.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CA32B8B00600B9FE8",
@@ -368,6 +654,51 @@
       "parent_vehicle": "model_2025_Chevrolet_Suburban.html",
       "parent_vehicle_id": "MD3BDF5082E6052B1",
       "path": "compare_domain_2025_Chevrolet_Suburban_Mechanical_and_performance.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D5C70D7CC11EAEA73",
+      "seating": [
+        "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Suburban | Packages and options",
+      "title": "2025 Chevrolet Suburban | Packages and options",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Suburban",
+      "trim_names_from_guide": [
+        "LS",
+        "LT",
+        "RST",
+        "Z71",
+        "Premier",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Packages and options",
+      "guide_domains": [
+        "Packages and options"
+      ],
+      "feature_count": 49,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Suburban",
+      "entity_key": "2025_chevrolet_suburban",
+      "vehicle_key": "2025_chevrolet_suburban",
+      "collection": "MD3BDF5082E6052B1",
+      "collection_path": "model_2025_Chevrolet_Suburban.html",
+      "parent": "MD3BDF5082E6052B1",
+      "parent_path": "model_2025_Chevrolet_Suburban.html",
+      "parent_vehicle": "model_2025_Chevrolet_Suburban.html",
+      "parent_vehicle_id": "MD3BDF5082E6052B1",
+      "path": "domain_2025_Chevrolet_Suburban_Packages_and_options.html"
     },
     {
       "objecttype": "Comparison",
@@ -416,6 +747,49 @@
       "path": "compare_domain_2025_Chevrolet_Suburban_Packages_and_options.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D0832F9388FCE42AB",
+      "seating": [
+        "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Suburban",
+      "title": "2025 Chevrolet Suburban",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Suburban",
+      "trim_names_from_guide": [
+        "LS",
+        "LT",
+        "RST",
+        "Z71",
+        "Premier",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Colour and trim",
+      "guide_domains": [
+        "Colour and trim"
+      ],
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Suburban",
+      "entity_key": "2025_chevrolet_suburban",
+      "vehicle_key": "2025_chevrolet_suburban",
+      "collection": "MD3BDF5082E6052B1",
+      "collection_path": "model_2025_Chevrolet_Suburban.html",
+      "parent": "MD3BDF5082E6052B1",
+      "parent_path": "model_2025_Chevrolet_Suburban.html",
+      "parent_vehicle": "model_2025_Chevrolet_Suburban.html",
+      "parent_vehicle_id": "MD3BDF5082E6052B1",
+      "path": "domain_2025_Chevrolet_Suburban_Colour_and_trim.html"
+    },
+    {
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "T3A76E4F3D43F1B66",
@@ -449,7 +823,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Suburban LS",
       "entity_key": "2025_chevrolet_suburban_ls",
@@ -505,7 +879,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Suburban LT",
       "entity_key": "2025_chevrolet_suburban_lt",
@@ -559,7 +933,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Suburban RST",
       "entity_key": "2025_chevrolet_suburban_rst",
@@ -613,7 +987,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Suburban Z71",
       "entity_key": "2025_chevrolet_suburban_z71",
@@ -667,7 +1041,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Suburban Premier",
       "entity_key": "2025_chevrolet_suburban_premier",
@@ -721,7 +1095,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Suburban High Country",
       "entity_key": "2025_chevrolet_suburban_high_country",

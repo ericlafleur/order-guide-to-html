@@ -31,7 +31,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Equinox",
       "entity_key": "2026_chevrolet_equinox",
@@ -39,13 +39,21 @@
       "collection": "M87F359BE24F1D455",
       "collection_path": "model_2026_Chevrolet_Equinox.html",
       "child": [
+        "D0577CDC5DEEED57A",
         "CBC3D68868518805D",
+        "DE17BB5694E10AC6C",
         "CCC7E17925906B358",
+        "D5EA051F48A3007B6",
         "CDA70C3D281A5A01B",
+        "D341EBC6C96C3C28D",
         "C5D9A401D50983684",
+        "D748F5C95F94D0FF4",
         "C2222FF89AF6E8BCD",
+        "DE059F822469223AD",
         "C04D4A066F482F3A9",
+        "D072E67D730521239",
         "C89F381D8672C050D",
+        "D69E3DA1C4A359826",
         "T46B29B835928C66D",
         "T8FCBDB24A59B44D0",
         "T71CE93DB8705B3C0",
@@ -53,13 +61,21 @@
         "S5C03DB325B274744"
       ],
       "child_paths": [
+        "domain_2026_Chevrolet_Equinox_Safety_and_driver_assistance.html",
         "compare_domain_2026_Chevrolet_Equinox_Safety_and_driver_assistance.html",
+        "domain_2026_Chevrolet_Equinox_Technology_and_connectivity.html",
         "compare_domain_2026_Chevrolet_Equinox_Technology_and_connectivity.html",
+        "domain_2026_Chevrolet_Equinox_Interior_and_comfort.html",
         "compare_domain_2026_Chevrolet_Equinox_Interior_and_comfort.html",
+        "domain_2026_Chevrolet_Equinox_Exterior_and_utility.html",
         "compare_domain_2026_Chevrolet_Equinox_Exterior_and_utility.html",
+        "domain_2026_Chevrolet_Equinox_Wheels_and_tires.html",
         "compare_domain_2026_Chevrolet_Equinox_Wheels_and_tires.html",
+        "domain_2026_Chevrolet_Equinox_Mechanical_and_performance.html",
         "compare_domain_2026_Chevrolet_Equinox_Mechanical_and_performance.html",
+        "domain_2026_Chevrolet_Equinox_Packages_and_options.html",
         "compare_domain_2026_Chevrolet_Equinox_Packages_and_options.html",
+        "domain_2026_Chevrolet_Equinox_Colour_and_trim.html",
         "trim_2026_Chevrolet_Equinox_LT.html",
         "trim_2026_Chevrolet_Equinox_ACTIV.html",
         "trim_2026_Chevrolet_Equinox_RS.html",
@@ -72,6 +88,47 @@
         "ACTIV",
         "RS"
       ]
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D0577CDC5DEEED57A",
+      "seating": [
+        "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Equinox | Safety and driver assistance",
+      "title": "2026 Chevrolet Equinox | Safety and driver assistance",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Equinox",
+      "trim_names_from_guide": [
+        "LT",
+        "ACTIV",
+        "RS"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Safety and driver assistance",
+      "guide_domains": [
+        "Safety and driver assistance"
+      ],
+      "feature_count": 22,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Equinox",
+      "entity_key": "2026_chevrolet_equinox",
+      "vehicle_key": "2026_chevrolet_equinox",
+      "collection": "M87F359BE24F1D455",
+      "collection_path": "model_2026_Chevrolet_Equinox.html",
+      "parent": "M87F359BE24F1D455",
+      "parent_path": "model_2026_Chevrolet_Equinox.html",
+      "parent_vehicle": "model_2026_Chevrolet_Equinox.html",
+      "parent_vehicle_id": "M87F359BE24F1D455",
+      "path": "domain_2026_Chevrolet_Equinox_Safety_and_driver_assistance.html"
     },
     {
       "objecttype": "Comparison",
@@ -116,6 +173,47 @@
       "path": "compare_domain_2026_Chevrolet_Equinox_Safety_and_driver_assistance.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DE17BB5694E10AC6C",
+      "seating": [
+        "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Equinox | Technology and connectivity",
+      "title": "2026 Chevrolet Equinox | Technology and connectivity",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Equinox",
+      "trim_names_from_guide": [
+        "LT",
+        "ACTIV",
+        "RS"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Technology and connectivity",
+      "guide_domains": [
+        "Technology and connectivity"
+      ],
+      "feature_count": 26,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Equinox",
+      "entity_key": "2026_chevrolet_equinox",
+      "vehicle_key": "2026_chevrolet_equinox",
+      "collection": "M87F359BE24F1D455",
+      "collection_path": "model_2026_Chevrolet_Equinox.html",
+      "parent": "M87F359BE24F1D455",
+      "parent_path": "model_2026_Chevrolet_Equinox.html",
+      "parent_vehicle": "model_2026_Chevrolet_Equinox.html",
+      "parent_vehicle_id": "M87F359BE24F1D455",
+      "path": "domain_2026_Chevrolet_Equinox_Technology_and_connectivity.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CCC7E17925906B358",
@@ -156,6 +254,47 @@
       "parent_vehicle": "model_2026_Chevrolet_Equinox.html",
       "parent_vehicle_id": "M87F359BE24F1D455",
       "path": "compare_domain_2026_Chevrolet_Equinox_Technology_and_connectivity.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D5EA051F48A3007B6",
+      "seating": [
+        "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Equinox | Interior and comfort",
+      "title": "2026 Chevrolet Equinox | Interior and comfort",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Equinox",
+      "trim_names_from_guide": [
+        "LT",
+        "ACTIV",
+        "RS"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Interior and comfort",
+      "guide_domains": [
+        "Interior and comfort"
+      ],
+      "feature_count": 45,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Equinox",
+      "entity_key": "2026_chevrolet_equinox",
+      "vehicle_key": "2026_chevrolet_equinox",
+      "collection": "M87F359BE24F1D455",
+      "collection_path": "model_2026_Chevrolet_Equinox.html",
+      "parent": "M87F359BE24F1D455",
+      "parent_path": "model_2026_Chevrolet_Equinox.html",
+      "parent_vehicle": "model_2026_Chevrolet_Equinox.html",
+      "parent_vehicle_id": "M87F359BE24F1D455",
+      "path": "domain_2026_Chevrolet_Equinox_Interior_and_comfort.html"
     },
     {
       "objecttype": "Comparison",
@@ -200,6 +339,47 @@
       "path": "compare_domain_2026_Chevrolet_Equinox_Interior_and_comfort.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D341EBC6C96C3C28D",
+      "seating": [
+        "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Equinox | Exterior and utility",
+      "title": "2026 Chevrolet Equinox | Exterior and utility",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Equinox",
+      "trim_names_from_guide": [
+        "LT",
+        "ACTIV",
+        "RS"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Exterior and utility",
+      "guide_domains": [
+        "Exterior and utility"
+      ],
+      "feature_count": 28,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Equinox",
+      "entity_key": "2026_chevrolet_equinox",
+      "vehicle_key": "2026_chevrolet_equinox",
+      "collection": "M87F359BE24F1D455",
+      "collection_path": "model_2026_Chevrolet_Equinox.html",
+      "parent": "M87F359BE24F1D455",
+      "parent_path": "model_2026_Chevrolet_Equinox.html",
+      "parent_vehicle": "model_2026_Chevrolet_Equinox.html",
+      "parent_vehicle_id": "M87F359BE24F1D455",
+      "path": "domain_2026_Chevrolet_Equinox_Exterior_and_utility.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C5D9A401D50983684",
@@ -240,6 +420,47 @@
       "parent_vehicle": "model_2026_Chevrolet_Equinox.html",
       "parent_vehicle_id": "M87F359BE24F1D455",
       "path": "compare_domain_2026_Chevrolet_Equinox_Exterior_and_utility.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D748F5C95F94D0FF4",
+      "seating": [
+        "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Equinox | Wheels and tires",
+      "title": "2026 Chevrolet Equinox | Wheels and tires",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Equinox",
+      "trim_names_from_guide": [
+        "LT",
+        "ACTIV",
+        "RS"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Wheels and tires",
+      "guide_domains": [
+        "Wheels and tires"
+      ],
+      "feature_count": 15,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Equinox",
+      "entity_key": "2026_chevrolet_equinox",
+      "vehicle_key": "2026_chevrolet_equinox",
+      "collection": "M87F359BE24F1D455",
+      "collection_path": "model_2026_Chevrolet_Equinox.html",
+      "parent": "M87F359BE24F1D455",
+      "parent_path": "model_2026_Chevrolet_Equinox.html",
+      "parent_vehicle": "model_2026_Chevrolet_Equinox.html",
+      "parent_vehicle_id": "M87F359BE24F1D455",
+      "path": "domain_2026_Chevrolet_Equinox_Wheels_and_tires.html"
     },
     {
       "objecttype": "Comparison",
@@ -284,6 +505,47 @@
       "path": "compare_domain_2026_Chevrolet_Equinox_Wheels_and_tires.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DE059F822469223AD",
+      "seating": [
+        "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Equinox | Mechanical and performance",
+      "title": "2026 Chevrolet Equinox | Mechanical and performance",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Equinox",
+      "trim_names_from_guide": [
+        "LT",
+        "ACTIV",
+        "RS"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Mechanical and performance",
+      "guide_domains": [
+        "Mechanical and performance"
+      ],
+      "feature_count": 28,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Equinox",
+      "entity_key": "2026_chevrolet_equinox",
+      "vehicle_key": "2026_chevrolet_equinox",
+      "collection": "M87F359BE24F1D455",
+      "collection_path": "model_2026_Chevrolet_Equinox.html",
+      "parent": "M87F359BE24F1D455",
+      "parent_path": "model_2026_Chevrolet_Equinox.html",
+      "parent_vehicle": "model_2026_Chevrolet_Equinox.html",
+      "parent_vehicle_id": "M87F359BE24F1D455",
+      "path": "domain_2026_Chevrolet_Equinox_Mechanical_and_performance.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C04D4A066F482F3A9",
@@ -324,6 +586,47 @@
       "parent_vehicle": "model_2026_Chevrolet_Equinox.html",
       "parent_vehicle_id": "M87F359BE24F1D455",
       "path": "compare_domain_2026_Chevrolet_Equinox_Mechanical_and_performance.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D072E67D730521239",
+      "seating": [
+        "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Equinox | Packages and options",
+      "title": "2026 Chevrolet Equinox | Packages and options",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Equinox",
+      "trim_names_from_guide": [
+        "LT",
+        "ACTIV",
+        "RS"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Packages and options",
+      "guide_domains": [
+        "Packages and options"
+      ],
+      "feature_count": 9,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Equinox",
+      "entity_key": "2026_chevrolet_equinox",
+      "vehicle_key": "2026_chevrolet_equinox",
+      "collection": "M87F359BE24F1D455",
+      "collection_path": "model_2026_Chevrolet_Equinox.html",
+      "parent": "M87F359BE24F1D455",
+      "parent_path": "model_2026_Chevrolet_Equinox.html",
+      "parent_vehicle": "model_2026_Chevrolet_Equinox.html",
+      "parent_vehicle_id": "M87F359BE24F1D455",
+      "path": "domain_2026_Chevrolet_Equinox_Packages_and_options.html"
     },
     {
       "objecttype": "Comparison",
@@ -368,6 +671,45 @@
       "path": "compare_domain_2026_Chevrolet_Equinox_Packages_and_options.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D69E3DA1C4A359826",
+      "seating": [
+        "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Equinox",
+      "title": "2026 Chevrolet Equinox",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Equinox",
+      "trim_names_from_guide": [
+        "LT",
+        "ACTIV",
+        "RS"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Colour and trim",
+      "guide_domains": [
+        "Colour and trim"
+      ],
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Equinox",
+      "entity_key": "2026_chevrolet_equinox",
+      "vehicle_key": "2026_chevrolet_equinox",
+      "collection": "M87F359BE24F1D455",
+      "collection_path": "model_2026_Chevrolet_Equinox.html",
+      "parent": "M87F359BE24F1D455",
+      "parent_path": "model_2026_Chevrolet_Equinox.html",
+      "parent_vehicle": "model_2026_Chevrolet_Equinox.html",
+      "parent_vehicle_id": "M87F359BE24F1D455",
+      "path": "domain_2026_Chevrolet_Equinox_Colour_and_trim.html"
+    },
+    {
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "T46B29B835928C66D",
@@ -400,7 +742,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Equinox LT",
       "entity_key": "2026_chevrolet_equinox_lt",
@@ -453,7 +795,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Equinox ACTIV",
       "entity_key": "2026_chevrolet_equinox_activ",
@@ -506,7 +848,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Equinox RS",
       "entity_key": "2026_chevrolet_equinox_rs",

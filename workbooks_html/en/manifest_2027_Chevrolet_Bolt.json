@@ -28,7 +28,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2027 Chevrolet Bolt",
       "entity_key": "2027_chevrolet_bolt",
@@ -36,24 +36,40 @@
       "collection": "M23A674B478BE5A18",
       "collection_path": "model_2027_Chevrolet_Bolt.html",
       "child": [
+        "D9FAF51AC0946EDDB",
         "C107986CE7541D5F7",
+        "D2D31347031EFB1D9",
         "CDABEE531ECA5AC36",
+        "DA14104264E1945B9",
         "C5CD410131AF21193",
+        "D1332F22F8414FCB1",
         "C4DBEC5D2FFC4D8A0",
+        "DA1CAB7B7424C75E4",
         "C4511EF21357BA5B9",
+        "D3104597EE5CBE86C",
         "CEB78C49493546151",
+        "D6EC64BDAB1972289",
         "C607320CF6F9617FE",
+        "DE5BE987AD1884BC2",
         "T57482AC2AB18E4A3",
         "TA74E59989269C76B"
       ],
       "child_paths": [
+        "domain_2027_Chevrolet_Bolt_Safety_and_driver_assistance.html",
         "compare_domain_2027_Chevrolet_Bolt_Safety_and_driver_assistance.html",
+        "domain_2027_Chevrolet_Bolt_Technology_and_connectivity.html",
         "compare_domain_2027_Chevrolet_Bolt_Technology_and_connectivity.html",
+        "domain_2027_Chevrolet_Bolt_Interior_and_comfort.html",
         "compare_domain_2027_Chevrolet_Bolt_Interior_and_comfort.html",
+        "domain_2027_Chevrolet_Bolt_Exterior_and_utility.html",
         "compare_domain_2027_Chevrolet_Bolt_Exterior_and_utility.html",
+        "domain_2027_Chevrolet_Bolt_Wheels_and_tires.html",
         "compare_domain_2027_Chevrolet_Bolt_Wheels_and_tires.html",
+        "domain_2027_Chevrolet_Bolt_Mechanical_and_performance.html",
         "compare_domain_2027_Chevrolet_Bolt_Mechanical_and_performance.html",
+        "domain_2027_Chevrolet_Bolt_Packages_and_options.html",
         "compare_domain_2027_Chevrolet_Bolt_Packages_and_options.html",
+        "domain_2027_Chevrolet_Bolt_Colour_and_trim.html",
         "trim_2027_Chevrolet_Bolt_LT.html",
         "trim_2027_Chevrolet_Bolt_RS.html"
       ],
@@ -62,6 +78,43 @@
         "LT",
         "RS"
       ]
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D9FAF51AC0946EDDB",
+      "fuel_type": [
+        "Electric"
+      ],
+      "name": "2027 Chevrolet Bolt | Safety and driver assistance",
+      "title": "2027 Chevrolet Bolt | Safety and driver assistance",
+      "year": "2027",
+      "make": "Chevrolet",
+      "model": "Bolt",
+      "trim_names_from_guide": [
+        "LT",
+        "RS"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Safety and driver assistance",
+      "guide_domains": [
+        "Safety and driver assistance"
+      ],
+      "feature_count": 24,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2027 Chevrolet Bolt",
+      "entity_key": "2027_chevrolet_bolt",
+      "vehicle_key": "2027_chevrolet_bolt",
+      "collection": "M23A674B478BE5A18",
+      "collection_path": "model_2027_Chevrolet_Bolt.html",
+      "parent": "M23A674B478BE5A18",
+      "parent_path": "model_2027_Chevrolet_Bolt.html",
+      "parent_vehicle": "model_2027_Chevrolet_Bolt.html",
+      "parent_vehicle_id": "M23A674B478BE5A18",
+      "path": "domain_2027_Chevrolet_Bolt_Safety_and_driver_assistance.html"
     },
     {
       "objecttype": "Comparison",
@@ -102,6 +155,43 @@
       "path": "compare_domain_2027_Chevrolet_Bolt_Safety_and_driver_assistance.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D2D31347031EFB1D9",
+      "fuel_type": [
+        "Electric"
+      ],
+      "name": "2027 Chevrolet Bolt | Technology and connectivity",
+      "title": "2027 Chevrolet Bolt | Technology and connectivity",
+      "year": "2027",
+      "make": "Chevrolet",
+      "model": "Bolt",
+      "trim_names_from_guide": [
+        "LT",
+        "RS"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Technology and connectivity",
+      "guide_domains": [
+        "Technology and connectivity"
+      ],
+      "feature_count": 22,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2027 Chevrolet Bolt",
+      "entity_key": "2027_chevrolet_bolt",
+      "vehicle_key": "2027_chevrolet_bolt",
+      "collection": "M23A674B478BE5A18",
+      "collection_path": "model_2027_Chevrolet_Bolt.html",
+      "parent": "M23A674B478BE5A18",
+      "parent_path": "model_2027_Chevrolet_Bolt.html",
+      "parent_vehicle": "model_2027_Chevrolet_Bolt.html",
+      "parent_vehicle_id": "M23A674B478BE5A18",
+      "path": "domain_2027_Chevrolet_Bolt_Technology_and_connectivity.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CDABEE531ECA5AC36",
@@ -138,6 +228,43 @@
       "parent_vehicle": "model_2027_Chevrolet_Bolt.html",
       "parent_vehicle_id": "M23A674B478BE5A18",
       "path": "compare_domain_2027_Chevrolet_Bolt_Technology_and_connectivity.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DA14104264E1945B9",
+      "fuel_type": [
+        "Electric"
+      ],
+      "name": "2027 Chevrolet Bolt | Interior and comfort",
+      "title": "2027 Chevrolet Bolt | Interior and comfort",
+      "year": "2027",
+      "make": "Chevrolet",
+      "model": "Bolt",
+      "trim_names_from_guide": [
+        "LT",
+        "RS"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Interior and comfort",
+      "guide_domains": [
+        "Interior and comfort"
+      ],
+      "feature_count": 19,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2027 Chevrolet Bolt",
+      "entity_key": "2027_chevrolet_bolt",
+      "vehicle_key": "2027_chevrolet_bolt",
+      "collection": "M23A674B478BE5A18",
+      "collection_path": "model_2027_Chevrolet_Bolt.html",
+      "parent": "M23A674B478BE5A18",
+      "parent_path": "model_2027_Chevrolet_Bolt.html",
+      "parent_vehicle": "model_2027_Chevrolet_Bolt.html",
+      "parent_vehicle_id": "M23A674B478BE5A18",
+      "path": "domain_2027_Chevrolet_Bolt_Interior_and_comfort.html"
     },
     {
       "objecttype": "Comparison",
@@ -178,6 +305,43 @@
       "path": "compare_domain_2027_Chevrolet_Bolt_Interior_and_comfort.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D1332F22F8414FCB1",
+      "fuel_type": [
+        "Electric"
+      ],
+      "name": "2027 Chevrolet Bolt | Exterior and utility",
+      "title": "2027 Chevrolet Bolt | Exterior and utility",
+      "year": "2027",
+      "make": "Chevrolet",
+      "model": "Bolt",
+      "trim_names_from_guide": [
+        "LT",
+        "RS"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Exterior and utility",
+      "guide_domains": [
+        "Exterior and utility"
+      ],
+      "feature_count": 19,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2027 Chevrolet Bolt",
+      "entity_key": "2027_chevrolet_bolt",
+      "vehicle_key": "2027_chevrolet_bolt",
+      "collection": "M23A674B478BE5A18",
+      "collection_path": "model_2027_Chevrolet_Bolt.html",
+      "parent": "M23A674B478BE5A18",
+      "parent_path": "model_2027_Chevrolet_Bolt.html",
+      "parent_vehicle": "model_2027_Chevrolet_Bolt.html",
+      "parent_vehicle_id": "M23A674B478BE5A18",
+      "path": "domain_2027_Chevrolet_Bolt_Exterior_and_utility.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C4DBEC5D2FFC4D8A0",
@@ -214,6 +378,43 @@
       "parent_vehicle": "model_2027_Chevrolet_Bolt.html",
       "parent_vehicle_id": "M23A674B478BE5A18",
       "path": "compare_domain_2027_Chevrolet_Bolt_Exterior_and_utility.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DA1CAB7B7424C75E4",
+      "fuel_type": [
+        "Electric"
+      ],
+      "name": "2027 Chevrolet Bolt | Wheels and tires",
+      "title": "2027 Chevrolet Bolt | Wheels and tires",
+      "year": "2027",
+      "make": "Chevrolet",
+      "model": "Bolt",
+      "trim_names_from_guide": [
+        "LT",
+        "RS"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Wheels and tires",
+      "guide_domains": [
+        "Wheels and tires"
+      ],
+      "feature_count": 9,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2027 Chevrolet Bolt",
+      "entity_key": "2027_chevrolet_bolt",
+      "vehicle_key": "2027_chevrolet_bolt",
+      "collection": "M23A674B478BE5A18",
+      "collection_path": "model_2027_Chevrolet_Bolt.html",
+      "parent": "M23A674B478BE5A18",
+      "parent_path": "model_2027_Chevrolet_Bolt.html",
+      "parent_vehicle": "model_2027_Chevrolet_Bolt.html",
+      "parent_vehicle_id": "M23A674B478BE5A18",
+      "path": "domain_2027_Chevrolet_Bolt_Wheels_and_tires.html"
     },
     {
       "objecttype": "Comparison",
@@ -254,6 +455,43 @@
       "path": "compare_domain_2027_Chevrolet_Bolt_Wheels_and_tires.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D3104597EE5CBE86C",
+      "fuel_type": [
+        "Electric"
+      ],
+      "name": "2027 Chevrolet Bolt | Mechanical and performance",
+      "title": "2027 Chevrolet Bolt | Mechanical and performance",
+      "year": "2027",
+      "make": "Chevrolet",
+      "model": "Bolt",
+      "trim_names_from_guide": [
+        "LT",
+        "RS"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Mechanical and performance",
+      "guide_domains": [
+        "Mechanical and performance"
+      ],
+      "feature_count": 13,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2027 Chevrolet Bolt",
+      "entity_key": "2027_chevrolet_bolt",
+      "vehicle_key": "2027_chevrolet_bolt",
+      "collection": "M23A674B478BE5A18",
+      "collection_path": "model_2027_Chevrolet_Bolt.html",
+      "parent": "M23A674B478BE5A18",
+      "parent_path": "model_2027_Chevrolet_Bolt.html",
+      "parent_vehicle": "model_2027_Chevrolet_Bolt.html",
+      "parent_vehicle_id": "M23A674B478BE5A18",
+      "path": "domain_2027_Chevrolet_Bolt_Mechanical_and_performance.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CEB78C49493546151",
@@ -290,6 +528,43 @@
       "parent_vehicle": "model_2027_Chevrolet_Bolt.html",
       "parent_vehicle_id": "M23A674B478BE5A18",
       "path": "compare_domain_2027_Chevrolet_Bolt_Mechanical_and_performance.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D6EC64BDAB1972289",
+      "fuel_type": [
+        "Electric"
+      ],
+      "name": "2027 Chevrolet Bolt | Packages and options",
+      "title": "2027 Chevrolet Bolt | Packages and options",
+      "year": "2027",
+      "make": "Chevrolet",
+      "model": "Bolt",
+      "trim_names_from_guide": [
+        "LT",
+        "RS"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Packages and options",
+      "guide_domains": [
+        "Packages and options"
+      ],
+      "feature_count": 9,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2027 Chevrolet Bolt",
+      "entity_key": "2027_chevrolet_bolt",
+      "vehicle_key": "2027_chevrolet_bolt",
+      "collection": "M23A674B478BE5A18",
+      "collection_path": "model_2027_Chevrolet_Bolt.html",
+      "parent": "M23A674B478BE5A18",
+      "parent_path": "model_2027_Chevrolet_Bolt.html",
+      "parent_vehicle": "model_2027_Chevrolet_Bolt.html",
+      "parent_vehicle_id": "M23A674B478BE5A18",
+      "path": "domain_2027_Chevrolet_Bolt_Packages_and_options.html"
     },
     {
       "objecttype": "Comparison",
@@ -330,6 +605,41 @@
       "path": "compare_domain_2027_Chevrolet_Bolt_Packages_and_options.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DE5BE987AD1884BC2",
+      "fuel_type": [
+        "Electric"
+      ],
+      "name": "2027 Chevrolet Bolt",
+      "title": "2027 Chevrolet Bolt",
+      "year": "2027",
+      "make": "Chevrolet",
+      "model": "Bolt",
+      "trim_names_from_guide": [
+        "LT",
+        "RS"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Colour and trim",
+      "guide_domains": [
+        "Colour and trim"
+      ],
+      "surface": "passage_only",
+      "entity_name": "2027 Chevrolet Bolt",
+      "entity_key": "2027_chevrolet_bolt",
+      "vehicle_key": "2027_chevrolet_bolt",
+      "collection": "M23A674B478BE5A18",
+      "collection_path": "model_2027_Chevrolet_Bolt.html",
+      "parent": "M23A674B478BE5A18",
+      "parent_path": "model_2027_Chevrolet_Bolt.html",
+      "parent_vehicle": "model_2027_Chevrolet_Bolt.html",
+      "parent_vehicle_id": "M23A674B478BE5A18",
+      "path": "domain_2027_Chevrolet_Bolt_Colour_and_trim.html"
+    },
+    {
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "T57482AC2AB18E4A3",
@@ -359,7 +669,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2027 Chevrolet Bolt LT",
       "entity_key": "2027_chevrolet_bolt_lt",
@@ -409,7 +719,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2027 Chevrolet Bolt RS",
       "entity_key": "2027_chevrolet_bolt_rs",

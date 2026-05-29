@@ -34,7 +34,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Silverado 2500HD",
       "entity_key": "2025_chevrolet_silverado_2500hd",
@@ -42,13 +42,21 @@
       "collection": "M5919717A7EB9BA52",
       "collection_path": "model_2025_Chevrolet_Silverado_2500HD.html",
       "child": [
+        "D1F18F8E6279AD602",
         "C1F9B2DF958B60CB9",
+        "DF5CB441A02A3294A",
         "C723460E2ACF60AF4",
+        "D206E5766185F1C17",
         "C09D1ED4BFF43BA08",
+        "DAFDB64B990C12199",
         "CFA70CC617E8796F7",
+        "D6CB748EC1060257F",
         "C0C96E7FCC73ECC12",
+        "D8DF7C7E4733C1679",
         "CC99DA14CEFD44BB0",
+        "D4609155B3BD3EADD",
         "CEF5980A130F67896",
+        "D1F634766E6CEC630",
         "T0ACE2D9210224EF8",
         "T768DA5F8BB4C3BF2",
         "TBA6BF59AB2F51319",
@@ -88,13 +96,21 @@
         "S38F73EE20F390E82"
       ],
       "child_paths": [
+        "domain_2025_Chevrolet_Silverado_2500HD_Safety_and_driver_assistance.html",
         "compare_domain_2025_Chevrolet_Silverado_2500HD_Safety_and_driver_assistance.html",
+        "domain_2025_Chevrolet_Silverado_2500HD_Technology_and_connectivity.html",
         "compare_domain_2025_Chevrolet_Silverado_2500HD_Technology_and_connectivity.html",
+        "domain_2025_Chevrolet_Silverado_2500HD_Interior_and_comfort.html",
         "compare_domain_2025_Chevrolet_Silverado_2500HD_Interior_and_comfort.html",
+        "domain_2025_Chevrolet_Silverado_2500HD_Exterior_and_utility.html",
         "compare_domain_2025_Chevrolet_Silverado_2500HD_Exterior_and_utility.html",
+        "domain_2025_Chevrolet_Silverado_2500HD_Wheels_and_tires.html",
         "compare_domain_2025_Chevrolet_Silverado_2500HD_Wheels_and_tires.html",
+        "domain_2025_Chevrolet_Silverado_2500HD_Mechanical_and_performance.html",
         "compare_domain_2025_Chevrolet_Silverado_2500HD_Mechanical_and_performance.html",
+        "domain_2025_Chevrolet_Silverado_2500HD_Packages_and_options.html",
         "compare_domain_2025_Chevrolet_Silverado_2500HD_Packages_and_options.html",
+        "domain_2025_Chevrolet_Silverado_2500HD_Colour_and_trim.html",
         "trim_2025_Chevrolet_Silverado_2500HD_Work_Truck.html",
         "trim_2025_Chevrolet_Silverado_2500HD_Custom.html",
         "trim_2025_Chevrolet_Silverado_2500HD_LT.html",
@@ -144,6 +160,52 @@
       ]
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D1F18F8E6279AD602",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Silverado 2500HD | Safety and driver assistance",
+      "title": "2025 Chevrolet Silverado 2500HD | Safety and driver assistance",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "Custom",
+        "LT",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Safety and driver assistance",
+      "guide_domains": [
+        "Safety and driver assistance"
+      ],
+      "feature_count": 33,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500HD",
+      "entity_key": "2025_chevrolet_silverado_2500hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500hd",
+      "collection": "M5919717A7EB9BA52",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500HD.html",
+      "parent": "M5919717A7EB9BA52",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500HD.html",
+      "parent_vehicle_id": "M5919717A7EB9BA52",
+      "path": "domain_2025_Chevrolet_Silverado_2500HD_Safety_and_driver_assistance.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C1F9B2DF958B60CB9",
@@ -189,6 +251,52 @@
       "parent_vehicle": "model_2025_Chevrolet_Silverado_2500HD.html",
       "parent_vehicle_id": "M5919717A7EB9BA52",
       "path": "compare_domain_2025_Chevrolet_Silverado_2500HD_Safety_and_driver_assistance.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DF5CB441A02A3294A",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Silverado 2500HD | Technology and connectivity",
+      "title": "2025 Chevrolet Silverado 2500HD | Technology and connectivity",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "Custom",
+        "LT",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Technology and connectivity",
+      "guide_domains": [
+        "Technology and connectivity"
+      ],
+      "feature_count": 41,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500HD",
+      "entity_key": "2025_chevrolet_silverado_2500hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500hd",
+      "collection": "M5919717A7EB9BA52",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500HD.html",
+      "parent": "M5919717A7EB9BA52",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500HD.html",
+      "parent_vehicle_id": "M5919717A7EB9BA52",
+      "path": "domain_2025_Chevrolet_Silverado_2500HD_Technology_and_connectivity.html"
     },
     {
       "objecttype": "Comparison",
@@ -238,6 +346,52 @@
       "path": "compare_domain_2025_Chevrolet_Silverado_2500HD_Technology_and_connectivity.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D206E5766185F1C17",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Silverado 2500HD | Interior and comfort",
+      "title": "2025 Chevrolet Silverado 2500HD | Interior and comfort",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "Custom",
+        "LT",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Interior and comfort",
+      "guide_domains": [
+        "Interior and comfort"
+      ],
+      "feature_count": 29,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500HD",
+      "entity_key": "2025_chevrolet_silverado_2500hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500hd",
+      "collection": "M5919717A7EB9BA52",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500HD.html",
+      "parent": "M5919717A7EB9BA52",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500HD.html",
+      "parent_vehicle_id": "M5919717A7EB9BA52",
+      "path": "domain_2025_Chevrolet_Silverado_2500HD_Interior_and_comfort.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C09D1ED4BFF43BA08",
@@ -283,6 +437,52 @@
       "parent_vehicle": "model_2025_Chevrolet_Silverado_2500HD.html",
       "parent_vehicle_id": "M5919717A7EB9BA52",
       "path": "compare_domain_2025_Chevrolet_Silverado_2500HD_Interior_and_comfort.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DAFDB64B990C12199",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Silverado 2500HD | Exterior and utility",
+      "title": "2025 Chevrolet Silverado 2500HD | Exterior and utility",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "Custom",
+        "LT",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Exterior and utility",
+      "guide_domains": [
+        "Exterior and utility"
+      ],
+      "feature_count": 71,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500HD",
+      "entity_key": "2025_chevrolet_silverado_2500hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500hd",
+      "collection": "M5919717A7EB9BA52",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500HD.html",
+      "parent": "M5919717A7EB9BA52",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500HD.html",
+      "parent_vehicle_id": "M5919717A7EB9BA52",
+      "path": "domain_2025_Chevrolet_Silverado_2500HD_Exterior_and_utility.html"
     },
     {
       "objecttype": "Comparison",
@@ -332,6 +532,52 @@
       "path": "compare_domain_2025_Chevrolet_Silverado_2500HD_Exterior_and_utility.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D6CB748EC1060257F",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Silverado 2500HD | Wheels and tires",
+      "title": "2025 Chevrolet Silverado 2500HD | Wheels and tires",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "Custom",
+        "LT",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Wheels and tires",
+      "guide_domains": [
+        "Wheels and tires"
+      ],
+      "feature_count": 40,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500HD",
+      "entity_key": "2025_chevrolet_silverado_2500hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500hd",
+      "collection": "M5919717A7EB9BA52",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500HD.html",
+      "parent": "M5919717A7EB9BA52",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500HD.html",
+      "parent_vehicle_id": "M5919717A7EB9BA52",
+      "path": "domain_2025_Chevrolet_Silverado_2500HD_Wheels_and_tires.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C0C96E7FCC73ECC12",
@@ -377,6 +623,52 @@
       "parent_vehicle": "model_2025_Chevrolet_Silverado_2500HD.html",
       "parent_vehicle_id": "M5919717A7EB9BA52",
       "path": "compare_domain_2025_Chevrolet_Silverado_2500HD_Wheels_and_tires.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D8DF7C7E4733C1679",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Silverado 2500HD | Mechanical and performance",
+      "title": "2025 Chevrolet Silverado 2500HD | Mechanical and performance",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "Custom",
+        "LT",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Mechanical and performance",
+      "guide_domains": [
+        "Mechanical and performance"
+      ],
+      "feature_count": 78,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500HD",
+      "entity_key": "2025_chevrolet_silverado_2500hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500hd",
+      "collection": "M5919717A7EB9BA52",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500HD.html",
+      "parent": "M5919717A7EB9BA52",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500HD.html",
+      "parent_vehicle_id": "M5919717A7EB9BA52",
+      "path": "domain_2025_Chevrolet_Silverado_2500HD_Mechanical_and_performance.html"
     },
     {
       "objecttype": "Comparison",
@@ -426,6 +718,52 @@
       "path": "compare_domain_2025_Chevrolet_Silverado_2500HD_Mechanical_and_performance.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D4609155B3BD3EADD",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Silverado 2500HD | Packages and options",
+      "title": "2025 Chevrolet Silverado 2500HD | Packages and options",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "Custom",
+        "LT",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Packages and options",
+      "guide_domains": [
+        "Packages and options"
+      ],
+      "feature_count": 75,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500HD",
+      "entity_key": "2025_chevrolet_silverado_2500hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500hd",
+      "collection": "M5919717A7EB9BA52",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500HD.html",
+      "parent": "M5919717A7EB9BA52",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500HD.html",
+      "parent_vehicle_id": "M5919717A7EB9BA52",
+      "path": "domain_2025_Chevrolet_Silverado_2500HD_Packages_and_options.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CEF5980A130F67896",
@@ -473,6 +811,50 @@
       "path": "compare_domain_2025_Chevrolet_Silverado_2500HD_Packages_and_options.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D1F634766E6CEC630",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Silverado 2500HD",
+      "title": "2025 Chevrolet Silverado 2500HD",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 2500HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "Custom",
+        "LT",
+        "ZR2",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Colour and trim",
+      "guide_domains": [
+        "Colour and trim"
+      ],
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 2500HD",
+      "entity_key": "2025_chevrolet_silverado_2500hd",
+      "vehicle_key": "2025_chevrolet_silverado_2500hd",
+      "collection": "M5919717A7EB9BA52",
+      "collection_path": "model_2025_Chevrolet_Silverado_2500HD.html",
+      "parent": "M5919717A7EB9BA52",
+      "parent_path": "model_2025_Chevrolet_Silverado_2500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_2500HD.html",
+      "parent_vehicle_id": "M5919717A7EB9BA52",
+      "path": "domain_2025_Chevrolet_Silverado_2500HD_Colour_and_trim.html"
+    },
+    {
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "T0ACE2D9210224EF8",
@@ -516,7 +898,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Silverado 2500HD Work Truck",
       "entity_key": "2025_chevrolet_silverado_2500hd_work_truck",
@@ -574,7 +956,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Silverado 2500HD Custom",
       "entity_key": "2025_chevrolet_silverado_2500hd_custom",
@@ -632,7 +1014,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Silverado 2500HD LT",
       "entity_key": "2025_chevrolet_silverado_2500hd_lt",
@@ -684,7 +1066,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Silverado 2500HD ZR2",
       "entity_key": "2025_chevrolet_silverado_2500hd_zr2",
@@ -750,7 +1132,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Silverado 2500HD LTZ",
       "entity_key": "2025_chevrolet_silverado_2500hd_ltz",
@@ -803,7 +1185,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Silverado 2500HD High Country",
       "entity_key": "2025_chevrolet_silverado_2500hd_high_country",

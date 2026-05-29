@@ -31,7 +31,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Equinox EV",
       "entity_key": "2025_chevrolet_equinox_ev",
@@ -39,24 +39,40 @@
       "collection": "M426FB352A37DCB53",
       "collection_path": "model_2025_Chevrolet_Equinox_EV.html",
       "child": [
+        "D6985F56F5D8EEB52",
         "C77A0B467818F1EF5",
+        "D088E736320826F3B",
         "CF3DCEB28D6B9DC25",
+        "D1FB756A86A91E8C9",
         "C71F2B72786E8073E",
+        "D7FD2A1CE71BEC4E8",
         "CF0E65F8624E9B2D7",
+        "D1E9239FCBB6EABDC",
         "CA553274D1D88F13E",
+        "D18FE28EE2FF29BF4",
         "C98509C1CDE596A72",
+        "D022CAF2D717E28FB",
         "CFD47960E0AC22E80",
+        "DD9DF8CB3190B9CEB",
         "T2A8FDADEECA172BD",
         "T4AE6E3430A4480B2"
       ],
       "child_paths": [
+        "domain_2025_Chevrolet_Equinox_EV_Safety_and_driver_assistance.html",
         "compare_domain_2025_Chevrolet_Equinox_EV_Safety_and_driver_assistance.html",
+        "domain_2025_Chevrolet_Equinox_EV_Technology_and_connectivity.html",
         "compare_domain_2025_Chevrolet_Equinox_EV_Technology_and_connectivity.html",
+        "domain_2025_Chevrolet_Equinox_EV_Interior_and_comfort.html",
         "compare_domain_2025_Chevrolet_Equinox_EV_Interior_and_comfort.html",
+        "domain_2025_Chevrolet_Equinox_EV_Exterior_and_utility.html",
         "compare_domain_2025_Chevrolet_Equinox_EV_Exterior_and_utility.html",
+        "domain_2025_Chevrolet_Equinox_EV_Wheels_and_tires.html",
         "compare_domain_2025_Chevrolet_Equinox_EV_Wheels_and_tires.html",
+        "domain_2025_Chevrolet_Equinox_EV_Mechanical_and_performance.html",
         "compare_domain_2025_Chevrolet_Equinox_EV_Mechanical_and_performance.html",
+        "domain_2025_Chevrolet_Equinox_EV_Packages_and_options.html",
         "compare_domain_2025_Chevrolet_Equinox_EV_Packages_and_options.html",
+        "domain_2025_Chevrolet_Equinox_EV_Colour_and_trim.html",
         "trim_2025_Chevrolet_Equinox_EV_LT.html",
         "trim_2025_Chevrolet_Equinox_EV_RS.html"
       ],
@@ -65,6 +81,46 @@
         "LT",
         "RS"
       ]
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D6985F56F5D8EEB52",
+      "seating": [
+        "2/3"
+      ],
+      "fuel_type": [
+        "Electric"
+      ],
+      "name": "2025 Chevrolet Equinox EV | Safety and driver assistance",
+      "title": "2025 Chevrolet Equinox EV | Safety and driver assistance",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Equinox EV",
+      "trim_names_from_guide": [
+        "LT",
+        "RS"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Safety and driver assistance",
+      "guide_domains": [
+        "Safety and driver assistance"
+      ],
+      "feature_count": 35,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Equinox EV",
+      "entity_key": "2025_chevrolet_equinox_ev",
+      "vehicle_key": "2025_chevrolet_equinox_ev",
+      "collection": "M426FB352A37DCB53",
+      "collection_path": "model_2025_Chevrolet_Equinox_EV.html",
+      "parent": "M426FB352A37DCB53",
+      "parent_path": "model_2025_Chevrolet_Equinox_EV.html",
+      "parent_vehicle": "model_2025_Chevrolet_Equinox_EV.html",
+      "parent_vehicle_id": "M426FB352A37DCB53",
+      "path": "domain_2025_Chevrolet_Equinox_EV_Safety_and_driver_assistance.html"
     },
     {
       "objecttype": "Comparison",
@@ -108,6 +164,46 @@
       "path": "compare_domain_2025_Chevrolet_Equinox_EV_Safety_and_driver_assistance.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D088E736320826F3B",
+      "seating": [
+        "2/3"
+      ],
+      "fuel_type": [
+        "Electric"
+      ],
+      "name": "2025 Chevrolet Equinox EV | Technology and connectivity",
+      "title": "2025 Chevrolet Equinox EV | Technology and connectivity",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Equinox EV",
+      "trim_names_from_guide": [
+        "LT",
+        "RS"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Technology and connectivity",
+      "guide_domains": [
+        "Technology and connectivity"
+      ],
+      "feature_count": 32,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Equinox EV",
+      "entity_key": "2025_chevrolet_equinox_ev",
+      "vehicle_key": "2025_chevrolet_equinox_ev",
+      "collection": "M426FB352A37DCB53",
+      "collection_path": "model_2025_Chevrolet_Equinox_EV.html",
+      "parent": "M426FB352A37DCB53",
+      "parent_path": "model_2025_Chevrolet_Equinox_EV.html",
+      "parent_vehicle": "model_2025_Chevrolet_Equinox_EV.html",
+      "parent_vehicle_id": "M426FB352A37DCB53",
+      "path": "domain_2025_Chevrolet_Equinox_EV_Technology_and_connectivity.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CF3DCEB28D6B9DC25",
@@ -147,6 +243,46 @@
       "parent_vehicle": "model_2025_Chevrolet_Equinox_EV.html",
       "parent_vehicle_id": "M426FB352A37DCB53",
       "path": "compare_domain_2025_Chevrolet_Equinox_EV_Technology_and_connectivity.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D1FB756A86A91E8C9",
+      "seating": [
+        "2/3"
+      ],
+      "fuel_type": [
+        "Electric"
+      ],
+      "name": "2025 Chevrolet Equinox EV | Interior and comfort",
+      "title": "2025 Chevrolet Equinox EV | Interior and comfort",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Equinox EV",
+      "trim_names_from_guide": [
+        "LT",
+        "RS"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Interior and comfort",
+      "guide_domains": [
+        "Interior and comfort"
+      ],
+      "feature_count": 32,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Equinox EV",
+      "entity_key": "2025_chevrolet_equinox_ev",
+      "vehicle_key": "2025_chevrolet_equinox_ev",
+      "collection": "M426FB352A37DCB53",
+      "collection_path": "model_2025_Chevrolet_Equinox_EV.html",
+      "parent": "M426FB352A37DCB53",
+      "parent_path": "model_2025_Chevrolet_Equinox_EV.html",
+      "parent_vehicle": "model_2025_Chevrolet_Equinox_EV.html",
+      "parent_vehicle_id": "M426FB352A37DCB53",
+      "path": "domain_2025_Chevrolet_Equinox_EV_Interior_and_comfort.html"
     },
     {
       "objecttype": "Comparison",
@@ -190,6 +326,46 @@
       "path": "compare_domain_2025_Chevrolet_Equinox_EV_Interior_and_comfort.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D7FD2A1CE71BEC4E8",
+      "seating": [
+        "2/3"
+      ],
+      "fuel_type": [
+        "Electric"
+      ],
+      "name": "2025 Chevrolet Equinox EV | Exterior and utility",
+      "title": "2025 Chevrolet Equinox EV | Exterior and utility",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Equinox EV",
+      "trim_names_from_guide": [
+        "LT",
+        "RS"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Exterior and utility",
+      "guide_domains": [
+        "Exterior and utility"
+      ],
+      "feature_count": 42,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Equinox EV",
+      "entity_key": "2025_chevrolet_equinox_ev",
+      "vehicle_key": "2025_chevrolet_equinox_ev",
+      "collection": "M426FB352A37DCB53",
+      "collection_path": "model_2025_Chevrolet_Equinox_EV.html",
+      "parent": "M426FB352A37DCB53",
+      "parent_path": "model_2025_Chevrolet_Equinox_EV.html",
+      "parent_vehicle": "model_2025_Chevrolet_Equinox_EV.html",
+      "parent_vehicle_id": "M426FB352A37DCB53",
+      "path": "domain_2025_Chevrolet_Equinox_EV_Exterior_and_utility.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CF0E65F8624E9B2D7",
@@ -229,6 +405,46 @@
       "parent_vehicle": "model_2025_Chevrolet_Equinox_EV.html",
       "parent_vehicle_id": "M426FB352A37DCB53",
       "path": "compare_domain_2025_Chevrolet_Equinox_EV_Exterior_and_utility.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D1E9239FCBB6EABDC",
+      "seating": [
+        "2/3"
+      ],
+      "fuel_type": [
+        "Electric"
+      ],
+      "name": "2025 Chevrolet Equinox EV | Wheels and tires",
+      "title": "2025 Chevrolet Equinox EV | Wheels and tires",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Equinox EV",
+      "trim_names_from_guide": [
+        "LT",
+        "RS"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Wheels and tires",
+      "guide_domains": [
+        "Wheels and tires"
+      ],
+      "feature_count": 16,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Equinox EV",
+      "entity_key": "2025_chevrolet_equinox_ev",
+      "vehicle_key": "2025_chevrolet_equinox_ev",
+      "collection": "M426FB352A37DCB53",
+      "collection_path": "model_2025_Chevrolet_Equinox_EV.html",
+      "parent": "M426FB352A37DCB53",
+      "parent_path": "model_2025_Chevrolet_Equinox_EV.html",
+      "parent_vehicle": "model_2025_Chevrolet_Equinox_EV.html",
+      "parent_vehicle_id": "M426FB352A37DCB53",
+      "path": "domain_2025_Chevrolet_Equinox_EV_Wheels_and_tires.html"
     },
     {
       "objecttype": "Comparison",
@@ -272,6 +488,46 @@
       "path": "compare_domain_2025_Chevrolet_Equinox_EV_Wheels_and_tires.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D18FE28EE2FF29BF4",
+      "seating": [
+        "2/3"
+      ],
+      "fuel_type": [
+        "Electric"
+      ],
+      "name": "2025 Chevrolet Equinox EV | Mechanical and performance",
+      "title": "2025 Chevrolet Equinox EV | Mechanical and performance",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Equinox EV",
+      "trim_names_from_guide": [
+        "LT",
+        "RS"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Mechanical and performance",
+      "guide_domains": [
+        "Mechanical and performance"
+      ],
+      "feature_count": 26,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Equinox EV",
+      "entity_key": "2025_chevrolet_equinox_ev",
+      "vehicle_key": "2025_chevrolet_equinox_ev",
+      "collection": "M426FB352A37DCB53",
+      "collection_path": "model_2025_Chevrolet_Equinox_EV.html",
+      "parent": "M426FB352A37DCB53",
+      "parent_path": "model_2025_Chevrolet_Equinox_EV.html",
+      "parent_vehicle": "model_2025_Chevrolet_Equinox_EV.html",
+      "parent_vehicle_id": "M426FB352A37DCB53",
+      "path": "domain_2025_Chevrolet_Equinox_EV_Mechanical_and_performance.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C98509C1CDE596A72",
@@ -311,6 +567,46 @@
       "parent_vehicle": "model_2025_Chevrolet_Equinox_EV.html",
       "parent_vehicle_id": "M426FB352A37DCB53",
       "path": "compare_domain_2025_Chevrolet_Equinox_EV_Mechanical_and_performance.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D022CAF2D717E28FB",
+      "seating": [
+        "2/3"
+      ],
+      "fuel_type": [
+        "Electric"
+      ],
+      "name": "2025 Chevrolet Equinox EV | Packages and options",
+      "title": "2025 Chevrolet Equinox EV | Packages and options",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Equinox EV",
+      "trim_names_from_guide": [
+        "LT",
+        "RS"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Packages and options",
+      "guide_domains": [
+        "Packages and options"
+      ],
+      "feature_count": 17,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Equinox EV",
+      "entity_key": "2025_chevrolet_equinox_ev",
+      "vehicle_key": "2025_chevrolet_equinox_ev",
+      "collection": "M426FB352A37DCB53",
+      "collection_path": "model_2025_Chevrolet_Equinox_EV.html",
+      "parent": "M426FB352A37DCB53",
+      "parent_path": "model_2025_Chevrolet_Equinox_EV.html",
+      "parent_vehicle": "model_2025_Chevrolet_Equinox_EV.html",
+      "parent_vehicle_id": "M426FB352A37DCB53",
+      "path": "domain_2025_Chevrolet_Equinox_EV_Packages_and_options.html"
     },
     {
       "objecttype": "Comparison",
@@ -354,6 +650,44 @@
       "path": "compare_domain_2025_Chevrolet_Equinox_EV_Packages_and_options.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DD9DF8CB3190B9CEB",
+      "seating": [
+        "2/3"
+      ],
+      "fuel_type": [
+        "Electric"
+      ],
+      "name": "2025 Chevrolet Equinox EV",
+      "title": "2025 Chevrolet Equinox EV",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Equinox EV",
+      "trim_names_from_guide": [
+        "LT",
+        "RS"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Colour and trim",
+      "guide_domains": [
+        "Colour and trim"
+      ],
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Equinox EV",
+      "entity_key": "2025_chevrolet_equinox_ev",
+      "vehicle_key": "2025_chevrolet_equinox_ev",
+      "collection": "M426FB352A37DCB53",
+      "collection_path": "model_2025_Chevrolet_Equinox_EV.html",
+      "parent": "M426FB352A37DCB53",
+      "parent_path": "model_2025_Chevrolet_Equinox_EV.html",
+      "parent_vehicle": "model_2025_Chevrolet_Equinox_EV.html",
+      "parent_vehicle_id": "M426FB352A37DCB53",
+      "path": "domain_2025_Chevrolet_Equinox_EV_Colour_and_trim.html"
+    },
+    {
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "T2A8FDADEECA172BD",
@@ -387,7 +721,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Equinox EV LT",
       "entity_key": "2025_chevrolet_equinox_ev_lt",
@@ -441,7 +775,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Equinox EV RS",
       "entity_key": "2025_chevrolet_equinox_ev_rs",

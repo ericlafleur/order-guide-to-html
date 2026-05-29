@@ -34,7 +34,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Silverado 3500HD",
       "entity_key": "2025_chevrolet_silverado_3500hd",
@@ -42,13 +42,21 @@
       "collection": "M7D3D40177D213138",
       "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
       "child": [
+        "DF98939414B05EF15",
         "C7620D5A4EC0EC83C",
+        "D54BDAF09AA4D9D4D",
         "CC35E650EC8EC797A",
+        "D5C6DC88C015ECB40",
         "CF3C5B1AFD321D811",
+        "D58CC7309AF7E18FD",
         "C0915B8CD3F7E5CCE",
+        "D932448E673822A38",
         "C0FA294D7D970C347",
+        "D97DDA20F60AD7E35",
         "CCEC58BEA86F11C23",
+        "D2A135A665E8FFB62",
         "CB24E6DE8D9528FBC",
+        "DD8B18E77FEB32202",
         "T68D47E785F62E48D",
         "T186D2D8264EF9BF7",
         "TA6BBF186CBDE98E5",
@@ -87,13 +95,21 @@
         "S26D26B4DE34C75CE"
       ],
       "child_paths": [
+        "domain_2025_Chevrolet_Silverado_3500HD_Safety_and_driver_assistance.html",
         "compare_domain_2025_Chevrolet_Silverado_3500HD_Safety_and_driver_assistance.html",
+        "domain_2025_Chevrolet_Silverado_3500HD_Technology_and_connectivity.html",
         "compare_domain_2025_Chevrolet_Silverado_3500HD_Technology_and_connectivity.html",
+        "domain_2025_Chevrolet_Silverado_3500HD_Interior_and_comfort.html",
         "compare_domain_2025_Chevrolet_Silverado_3500HD_Interior_and_comfort.html",
+        "domain_2025_Chevrolet_Silverado_3500HD_Exterior_and_utility.html",
         "compare_domain_2025_Chevrolet_Silverado_3500HD_Exterior_and_utility.html",
+        "domain_2025_Chevrolet_Silverado_3500HD_Wheels_and_tires.html",
         "compare_domain_2025_Chevrolet_Silverado_3500HD_Wheels_and_tires.html",
+        "domain_2025_Chevrolet_Silverado_3500HD_Mechanical_and_performance.html",
         "compare_domain_2025_Chevrolet_Silverado_3500HD_Mechanical_and_performance.html",
+        "domain_2025_Chevrolet_Silverado_3500HD_Packages_and_options.html",
         "compare_domain_2025_Chevrolet_Silverado_3500HD_Packages_and_options.html",
+        "domain_2025_Chevrolet_Silverado_3500HD_Colour_and_trim.html",
         "trim_2025_Chevrolet_Silverado_3500HD_Work_Truck.html",
         "trim_2025_Chevrolet_Silverado_3500HD_LT.html",
         "trim_2025_Chevrolet_Silverado_3500HD_LTZ.html",
@@ -138,6 +154,50 @@
         "LTZ",
         "High Country"
       ]
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DF98939414B05EF15",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Silverado 3500HD | Safety and driver assistance",
+      "title": "2025 Chevrolet Silverado 3500HD | Safety and driver assistance",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Safety and driver assistance",
+      "guide_domains": [
+        "Safety and driver assistance"
+      ],
+      "feature_count": 34,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "domain_2025_Chevrolet_Silverado_3500HD_Safety_and_driver_assistance.html"
     },
     {
       "objecttype": "Comparison",
@@ -185,6 +245,50 @@
       "path": "compare_domain_2025_Chevrolet_Silverado_3500HD_Safety_and_driver_assistance.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D54BDAF09AA4D9D4D",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Silverado 3500HD | Technology and connectivity",
+      "title": "2025 Chevrolet Silverado 3500HD | Technology and connectivity",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Technology and connectivity",
+      "guide_domains": [
+        "Technology and connectivity"
+      ],
+      "feature_count": 41,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "domain_2025_Chevrolet_Silverado_3500HD_Technology_and_connectivity.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CC35E650EC8EC797A",
@@ -228,6 +332,50 @@
       "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
       "parent_vehicle_id": "M7D3D40177D213138",
       "path": "compare_domain_2025_Chevrolet_Silverado_3500HD_Technology_and_connectivity.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D5C6DC88C015ECB40",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Silverado 3500HD | Interior and comfort",
+      "title": "2025 Chevrolet Silverado 3500HD | Interior and comfort",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Interior and comfort",
+      "guide_domains": [
+        "Interior and comfort"
+      ],
+      "feature_count": 29,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "domain_2025_Chevrolet_Silverado_3500HD_Interior_and_comfort.html"
     },
     {
       "objecttype": "Comparison",
@@ -275,6 +423,50 @@
       "path": "compare_domain_2025_Chevrolet_Silverado_3500HD_Interior_and_comfort.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D58CC7309AF7E18FD",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Silverado 3500HD | Exterior and utility",
+      "title": "2025 Chevrolet Silverado 3500HD | Exterior and utility",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Exterior and utility",
+      "guide_domains": [
+        "Exterior and utility"
+      ],
+      "feature_count": 64,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "domain_2025_Chevrolet_Silverado_3500HD_Exterior_and_utility.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C0915B8CD3F7E5CCE",
@@ -318,6 +510,50 @@
       "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
       "parent_vehicle_id": "M7D3D40177D213138",
       "path": "compare_domain_2025_Chevrolet_Silverado_3500HD_Exterior_and_utility.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D932448E673822A38",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Silverado 3500HD | Wheels and tires",
+      "title": "2025 Chevrolet Silverado 3500HD | Wheels and tires",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Wheels and tires",
+      "guide_domains": [
+        "Wheels and tires"
+      ],
+      "feature_count": 32,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "domain_2025_Chevrolet_Silverado_3500HD_Wheels_and_tires.html"
     },
     {
       "objecttype": "Comparison",
@@ -365,6 +601,50 @@
       "path": "compare_domain_2025_Chevrolet_Silverado_3500HD_Wheels_and_tires.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D97DDA20F60AD7E35",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Silverado 3500HD | Mechanical and performance",
+      "title": "2025 Chevrolet Silverado 3500HD | Mechanical and performance",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Mechanical and performance",
+      "guide_domains": [
+        "Mechanical and performance"
+      ],
+      "feature_count": 60,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "domain_2025_Chevrolet_Silverado_3500HD_Mechanical_and_performance.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "CCEC58BEA86F11C23",
@@ -408,6 +688,50 @@
       "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
       "parent_vehicle_id": "M7D3D40177D213138",
       "path": "compare_domain_2025_Chevrolet_Silverado_3500HD_Mechanical_and_performance.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D2A135A665E8FFB62",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Silverado 3500HD | Packages and options",
+      "title": "2025 Chevrolet Silverado 3500HD | Packages and options",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Packages and options",
+      "guide_domains": [
+        "Packages and options"
+      ],
+      "feature_count": 69,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "domain_2025_Chevrolet_Silverado_3500HD_Packages_and_options.html"
     },
     {
       "objecttype": "Comparison",
@@ -455,6 +779,48 @@
       "path": "compare_domain_2025_Chevrolet_Silverado_3500HD_Packages_and_options.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DD8B18E77FEB32202",
+      "seating": [
+        "6",
+        "3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Silverado 3500HD",
+      "title": "2025 Chevrolet Silverado 3500HD",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "trim_names_from_guide": [
+        "Work Truck",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Colour and trim",
+      "guide_domains": [
+        "Colour and trim"
+      ],
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Silverado 3500HD",
+      "entity_key": "2025_chevrolet_silverado_3500hd",
+      "vehicle_key": "2025_chevrolet_silverado_3500hd",
+      "collection": "M7D3D40177D213138",
+      "collection_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent": "M7D3D40177D213138",
+      "parent_path": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2025_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "M7D3D40177D213138",
+      "path": "domain_2025_Chevrolet_Silverado_3500HD_Colour_and_trim.html"
+    },
+    {
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "T68D47E785F62E48D",
@@ -497,7 +863,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Silverado 3500HD Work Truck",
       "entity_key": "2025_chevrolet_silverado_3500hd_work_truck",
@@ -554,7 +920,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Silverado 3500HD LT",
       "entity_key": "2025_chevrolet_silverado_3500hd_lt",
@@ -611,7 +977,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Silverado 3500HD LTZ",
       "entity_key": "2025_chevrolet_silverado_3500hd_ltz",
@@ -664,7 +1030,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Silverado 3500HD High Country",
       "entity_key": "2025_chevrolet_silverado_3500hd_high_country",

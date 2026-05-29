@@ -31,7 +31,7 @@
         "Packages and options",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Blazer",
       "entity_key": "2025_chevrolet_blazer",
@@ -39,13 +39,21 @@
       "collection": "M60332A3148256EF0",
       "collection_path": "model_2025_Chevrolet_Blazer.html",
       "child": [
+        "D2BC60361E7289951",
         "C3BA4F24D4241B561",
+        "DED84E6D4D5AD3FDD",
         "C26C8B939EBE64F6B",
+        "DFD580D52418DE768",
         "C075D7F35CDE9067D",
+        "DD4BC63A79F28451A",
         "C98501AB3102014A4",
+        "D33956A8AD260F3E3",
         "C7D92C8B893EBC74A",
+        "D25DC699397B33E78",
         "C58D34CA6266979EE",
+        "D417BD1B674F07913",
         "C3762709FA101C63A",
+        "D854D8543EAA4F079",
         "T5CC283AACEFAB3E3",
         "TCD455B269F33216E",
         "T99D3485AABC58C38",
@@ -58,13 +66,21 @@
         "S361575D896B1960D"
       ],
       "child_paths": [
+        "domain_2025_Chevrolet_Blazer_Safety_and_driver_assistance.html",
         "compare_domain_2025_Chevrolet_Blazer_Safety_and_driver_assistance.html",
+        "domain_2025_Chevrolet_Blazer_Technology_and_connectivity.html",
         "compare_domain_2025_Chevrolet_Blazer_Technology_and_connectivity.html",
+        "domain_2025_Chevrolet_Blazer_Interior_and_comfort.html",
         "compare_domain_2025_Chevrolet_Blazer_Interior_and_comfort.html",
+        "domain_2025_Chevrolet_Blazer_Exterior_and_utility.html",
         "compare_domain_2025_Chevrolet_Blazer_Exterior_and_utility.html",
+        "domain_2025_Chevrolet_Blazer_Wheels_and_tires.html",
         "compare_domain_2025_Chevrolet_Blazer_Wheels_and_tires.html",
+        "domain_2025_Chevrolet_Blazer_Mechanical_and_performance.html",
         "compare_domain_2025_Chevrolet_Blazer_Mechanical_and_performance.html",
+        "domain_2025_Chevrolet_Blazer_Packages_and_options.html",
         "compare_domain_2025_Chevrolet_Blazer_Packages_and_options.html",
+        "domain_2025_Chevrolet_Blazer_Colour_and_trim.html",
         "trim_2025_Chevrolet_Blazer_LT.html",
         "trim_2025_Chevrolet_Blazer_True_North.html",
         "trim_2025_Chevrolet_Blazer_RS.html",
@@ -83,6 +99,48 @@
         "RS",
         "Premier"
       ]
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D2BC60361E7289951",
+      "seating": [
+        "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Blazer | Safety and driver assistance",
+      "title": "2025 Chevrolet Blazer | Safety and driver assistance",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Blazer",
+      "trim_names_from_guide": [
+        "LT",
+        "True North",
+        "RS",
+        "Premier"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Safety and driver assistance",
+      "guide_domains": [
+        "Safety and driver assistance"
+      ],
+      "feature_count": 31,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Blazer",
+      "entity_key": "2025_chevrolet_blazer",
+      "vehicle_key": "2025_chevrolet_blazer",
+      "collection": "M60332A3148256EF0",
+      "collection_path": "model_2025_Chevrolet_Blazer.html",
+      "parent": "M60332A3148256EF0",
+      "parent_path": "model_2025_Chevrolet_Blazer.html",
+      "parent_vehicle": "model_2025_Chevrolet_Blazer.html",
+      "parent_vehicle_id": "M60332A3148256EF0",
+      "path": "domain_2025_Chevrolet_Blazer_Safety_and_driver_assistance.html"
     },
     {
       "objecttype": "Comparison",
@@ -128,6 +186,48 @@
       "path": "compare_domain_2025_Chevrolet_Blazer_Safety_and_driver_assistance.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DED84E6D4D5AD3FDD",
+      "seating": [
+        "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Blazer | Technology and connectivity",
+      "title": "2025 Chevrolet Blazer | Technology and connectivity",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Blazer",
+      "trim_names_from_guide": [
+        "LT",
+        "True North",
+        "RS",
+        "Premier"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Technology and connectivity",
+      "guide_domains": [
+        "Technology and connectivity"
+      ],
+      "feature_count": 32,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Blazer",
+      "entity_key": "2025_chevrolet_blazer",
+      "vehicle_key": "2025_chevrolet_blazer",
+      "collection": "M60332A3148256EF0",
+      "collection_path": "model_2025_Chevrolet_Blazer.html",
+      "parent": "M60332A3148256EF0",
+      "parent_path": "model_2025_Chevrolet_Blazer.html",
+      "parent_vehicle": "model_2025_Chevrolet_Blazer.html",
+      "parent_vehicle_id": "M60332A3148256EF0",
+      "path": "domain_2025_Chevrolet_Blazer_Technology_and_connectivity.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C26C8B939EBE64F6B",
@@ -169,6 +269,48 @@
       "parent_vehicle": "model_2025_Chevrolet_Blazer.html",
       "parent_vehicle_id": "M60332A3148256EF0",
       "path": "compare_domain_2025_Chevrolet_Blazer_Technology_and_connectivity.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DFD580D52418DE768",
+      "seating": [
+        "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Blazer | Interior and comfort",
+      "title": "2025 Chevrolet Blazer | Interior and comfort",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Blazer",
+      "trim_names_from_guide": [
+        "LT",
+        "True North",
+        "RS",
+        "Premier"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Interior and comfort",
+      "guide_domains": [
+        "Interior and comfort"
+      ],
+      "feature_count": 35,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Blazer",
+      "entity_key": "2025_chevrolet_blazer",
+      "vehicle_key": "2025_chevrolet_blazer",
+      "collection": "M60332A3148256EF0",
+      "collection_path": "model_2025_Chevrolet_Blazer.html",
+      "parent": "M60332A3148256EF0",
+      "parent_path": "model_2025_Chevrolet_Blazer.html",
+      "parent_vehicle": "model_2025_Chevrolet_Blazer.html",
+      "parent_vehicle_id": "M60332A3148256EF0",
+      "path": "domain_2025_Chevrolet_Blazer_Interior_and_comfort.html"
     },
     {
       "objecttype": "Comparison",
@@ -214,6 +356,48 @@
       "path": "compare_domain_2025_Chevrolet_Blazer_Interior_and_comfort.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DD4BC63A79F28451A",
+      "seating": [
+        "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Blazer | Exterior and utility",
+      "title": "2025 Chevrolet Blazer | Exterior and utility",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Blazer",
+      "trim_names_from_guide": [
+        "LT",
+        "True North",
+        "RS",
+        "Premier"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Exterior and utility",
+      "guide_domains": [
+        "Exterior and utility"
+      ],
+      "feature_count": 53,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Blazer",
+      "entity_key": "2025_chevrolet_blazer",
+      "vehicle_key": "2025_chevrolet_blazer",
+      "collection": "M60332A3148256EF0",
+      "collection_path": "model_2025_Chevrolet_Blazer.html",
+      "parent": "M60332A3148256EF0",
+      "parent_path": "model_2025_Chevrolet_Blazer.html",
+      "parent_vehicle": "model_2025_Chevrolet_Blazer.html",
+      "parent_vehicle_id": "M60332A3148256EF0",
+      "path": "domain_2025_Chevrolet_Blazer_Exterior_and_utility.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C98501AB3102014A4",
@@ -255,6 +439,48 @@
       "parent_vehicle": "model_2025_Chevrolet_Blazer.html",
       "parent_vehicle_id": "M60332A3148256EF0",
       "path": "compare_domain_2025_Chevrolet_Blazer_Exterior_and_utility.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D33956A8AD260F3E3",
+      "seating": [
+        "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Blazer | Wheels and tires",
+      "title": "2025 Chevrolet Blazer | Wheels and tires",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Blazer",
+      "trim_names_from_guide": [
+        "LT",
+        "True North",
+        "RS",
+        "Premier"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Wheels and tires",
+      "guide_domains": [
+        "Wheels and tires"
+      ],
+      "feature_count": 22,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Blazer",
+      "entity_key": "2025_chevrolet_blazer",
+      "vehicle_key": "2025_chevrolet_blazer",
+      "collection": "M60332A3148256EF0",
+      "collection_path": "model_2025_Chevrolet_Blazer.html",
+      "parent": "M60332A3148256EF0",
+      "parent_path": "model_2025_Chevrolet_Blazer.html",
+      "parent_vehicle": "model_2025_Chevrolet_Blazer.html",
+      "parent_vehicle_id": "M60332A3148256EF0",
+      "path": "domain_2025_Chevrolet_Blazer_Wheels_and_tires.html"
     },
     {
       "objecttype": "Comparison",
@@ -300,6 +526,48 @@
       "path": "compare_domain_2025_Chevrolet_Blazer_Wheels_and_tires.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D25DC699397B33E78",
+      "seating": [
+        "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Blazer | Mechanical and performance",
+      "title": "2025 Chevrolet Blazer | Mechanical and performance",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Blazer",
+      "trim_names_from_guide": [
+        "LT",
+        "True North",
+        "RS",
+        "Premier"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Mechanical and performance",
+      "guide_domains": [
+        "Mechanical and performance"
+      ],
+      "feature_count": 19,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Blazer",
+      "entity_key": "2025_chevrolet_blazer",
+      "vehicle_key": "2025_chevrolet_blazer",
+      "collection": "M60332A3148256EF0",
+      "collection_path": "model_2025_Chevrolet_Blazer.html",
+      "parent": "M60332A3148256EF0",
+      "parent_path": "model_2025_Chevrolet_Blazer.html",
+      "parent_vehicle": "model_2025_Chevrolet_Blazer.html",
+      "parent_vehicle_id": "M60332A3148256EF0",
+      "path": "domain_2025_Chevrolet_Blazer_Mechanical_and_performance.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C58D34CA6266979EE",
@@ -341,6 +609,48 @@
       "parent_vehicle": "model_2025_Chevrolet_Blazer.html",
       "parent_vehicle_id": "M60332A3148256EF0",
       "path": "compare_domain_2025_Chevrolet_Blazer_Mechanical_and_performance.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D417BD1B674F07913",
+      "seating": [
+        "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Blazer | Packages and options",
+      "title": "2025 Chevrolet Blazer | Packages and options",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Blazer",
+      "trim_names_from_guide": [
+        "LT",
+        "True North",
+        "RS",
+        "Premier"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Packages and options",
+      "guide_domains": [
+        "Packages and options"
+      ],
+      "feature_count": 30,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Blazer",
+      "entity_key": "2025_chevrolet_blazer",
+      "vehicle_key": "2025_chevrolet_blazer",
+      "collection": "M60332A3148256EF0",
+      "collection_path": "model_2025_Chevrolet_Blazer.html",
+      "parent": "M60332A3148256EF0",
+      "parent_path": "model_2025_Chevrolet_Blazer.html",
+      "parent_vehicle": "model_2025_Chevrolet_Blazer.html",
+      "parent_vehicle_id": "M60332A3148256EF0",
+      "path": "domain_2025_Chevrolet_Blazer_Packages_and_options.html"
     },
     {
       "objecttype": "Comparison",
@@ -386,6 +696,46 @@
       "path": "compare_domain_2025_Chevrolet_Blazer_Packages_and_options.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D854D8543EAA4F079",
+      "seating": [
+        "2/3"
+      ],
+      "fuel_type": [
+        "Gasoline"
+      ],
+      "name": "2025 Chevrolet Blazer",
+      "title": "2025 Chevrolet Blazer",
+      "year": "2025",
+      "make": "Chevrolet",
+      "model": "Blazer",
+      "trim_names_from_guide": [
+        "LT",
+        "True North",
+        "RS",
+        "Premier"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Colour and trim",
+      "guide_domains": [
+        "Colour and trim"
+      ],
+      "surface": "passage_only",
+      "entity_name": "2025 Chevrolet Blazer",
+      "entity_key": "2025_chevrolet_blazer",
+      "vehicle_key": "2025_chevrolet_blazer",
+      "collection": "M60332A3148256EF0",
+      "collection_path": "model_2025_Chevrolet_Blazer.html",
+      "parent": "M60332A3148256EF0",
+      "parent_path": "model_2025_Chevrolet_Blazer.html",
+      "parent_vehicle": "model_2025_Chevrolet_Blazer.html",
+      "parent_vehicle_id": "M60332A3148256EF0",
+      "path": "domain_2025_Chevrolet_Blazer_Colour_and_trim.html"
+    },
+    {
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "T5CC283AACEFAB3E3",
@@ -419,7 +769,7 @@
         "Other guide content",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Blazer LT",
       "entity_key": "2025_chevrolet_blazer_lt",
@@ -467,7 +817,7 @@
         "Other guide content",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Blazer True North",
       "entity_key": "2025_chevrolet_blazer_true_north",
@@ -515,7 +865,7 @@
         "Other guide content",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Blazer RS",
       "entity_key": "2025_chevrolet_blazer_rs",
@@ -571,7 +921,7 @@
         "Other guide content",
         "Colour and trim"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2025 Chevrolet Blazer Premier",
       "entity_key": "2025_chevrolet_blazer_premier",

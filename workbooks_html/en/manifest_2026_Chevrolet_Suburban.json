@@ -33,7 +33,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Suburban",
       "entity_key": "2026_chevrolet_suburban",
@@ -41,13 +41,21 @@
       "collection": "M42C4D74903002308",
       "collection_path": "model_2026_Chevrolet_Suburban.html",
       "child": [
+        "D366C15E6B8BD222B",
         "CD619984B5A5AA197",
+        "D50F579DE4B2571F4",
         "C83A9AA8EC2F912E5",
+        "D5EA4366DD9E3121D",
         "C3BE0D079B2DC449B",
+        "D7E3A6AB90D82B594",
         "C46C433840042CC4F",
+        "D00BBEBCA7415D673",
         "C7309AE50D9D75A8F",
+        "D6A9E12F760E9C912",
         "C78F3AFAF63C66835",
+        "D10A4989BB7C683B3",
         "CC43F04300E540EA2",
+        "DF5347D3CEDF2C66C",
         "TECC727F993F90D22",
         "T8C1481D6FF8A71E3",
         "T910DCC37562C06D2",
@@ -62,13 +70,21 @@
         "SBC10C3A767895DC4"
       ],
       "child_paths": [
+        "domain_2026_Chevrolet_Suburban_Safety_and_driver_assistance.html",
         "compare_domain_2026_Chevrolet_Suburban_Safety_and_driver_assistance.html",
+        "domain_2026_Chevrolet_Suburban_Technology_and_connectivity.html",
         "compare_domain_2026_Chevrolet_Suburban_Technology_and_connectivity.html",
+        "domain_2026_Chevrolet_Suburban_Interior_and_comfort.html",
         "compare_domain_2026_Chevrolet_Suburban_Interior_and_comfort.html",
+        "domain_2026_Chevrolet_Suburban_Exterior_and_utility.html",
         "compare_domain_2026_Chevrolet_Suburban_Exterior_and_utility.html",
+        "domain_2026_Chevrolet_Suburban_Wheels_and_tires.html",
         "compare_domain_2026_Chevrolet_Suburban_Wheels_and_tires.html",
+        "domain_2026_Chevrolet_Suburban_Mechanical_and_performance.html",
         "compare_domain_2026_Chevrolet_Suburban_Mechanical_and_performance.html",
+        "domain_2026_Chevrolet_Suburban_Packages_and_options.html",
         "compare_domain_2026_Chevrolet_Suburban_Packages_and_options.html",
+        "domain_2026_Chevrolet_Suburban_Colour_and_trim.html",
         "trim_2026_Chevrolet_Suburban_LS.html",
         "trim_2026_Chevrolet_Suburban_LT.html",
         "trim_2026_Chevrolet_Suburban_RST.html",
@@ -91,6 +107,51 @@
         "Premier",
         "High Country"
       ]
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D366C15E6B8BD222B",
+      "seating": [
+        "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Suburban | Safety and driver assistance",
+      "title": "2026 Chevrolet Suburban | Safety and driver assistance",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Suburban",
+      "trim_names_from_guide": [
+        "LS",
+        "LT",
+        "RST",
+        "Z71",
+        "Premier",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Safety and driver assistance",
+      "guide_domains": [
+        "Safety and driver assistance"
+      ],
+      "feature_count": 31,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Suburban",
+      "entity_key": "2026_chevrolet_suburban",
+      "vehicle_key": "2026_chevrolet_suburban",
+      "collection": "M42C4D74903002308",
+      "collection_path": "model_2026_Chevrolet_Suburban.html",
+      "parent": "M42C4D74903002308",
+      "parent_path": "model_2026_Chevrolet_Suburban.html",
+      "parent_vehicle": "model_2026_Chevrolet_Suburban.html",
+      "parent_vehicle_id": "M42C4D74903002308",
+      "path": "domain_2026_Chevrolet_Suburban_Safety_and_driver_assistance.html"
     },
     {
       "objecttype": "Comparison",
@@ -139,6 +200,51 @@
       "path": "compare_domain_2026_Chevrolet_Suburban_Safety_and_driver_assistance.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D50F579DE4B2571F4",
+      "seating": [
+        "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Suburban | Technology and connectivity",
+      "title": "2026 Chevrolet Suburban | Technology and connectivity",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Suburban",
+      "trim_names_from_guide": [
+        "LS",
+        "LT",
+        "RST",
+        "Z71",
+        "Premier",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Technology and connectivity",
+      "guide_domains": [
+        "Technology and connectivity"
+      ],
+      "feature_count": 30,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Suburban",
+      "entity_key": "2026_chevrolet_suburban",
+      "vehicle_key": "2026_chevrolet_suburban",
+      "collection": "M42C4D74903002308",
+      "collection_path": "model_2026_Chevrolet_Suburban.html",
+      "parent": "M42C4D74903002308",
+      "parent_path": "model_2026_Chevrolet_Suburban.html",
+      "parent_vehicle": "model_2026_Chevrolet_Suburban.html",
+      "parent_vehicle_id": "M42C4D74903002308",
+      "path": "domain_2026_Chevrolet_Suburban_Technology_and_connectivity.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C83A9AA8EC2F912E5",
@@ -183,6 +289,51 @@
       "parent_vehicle": "model_2026_Chevrolet_Suburban.html",
       "parent_vehicle_id": "M42C4D74903002308",
       "path": "compare_domain_2026_Chevrolet_Suburban_Technology_and_connectivity.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D5EA4366DD9E3121D",
+      "seating": [
+        "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Suburban | Interior and comfort",
+      "title": "2026 Chevrolet Suburban | Interior and comfort",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Suburban",
+      "trim_names_from_guide": [
+        "LS",
+        "LT",
+        "RST",
+        "Z71",
+        "Premier",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Interior and comfort",
+      "guide_domains": [
+        "Interior and comfort"
+      ],
+      "feature_count": 42,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Suburban",
+      "entity_key": "2026_chevrolet_suburban",
+      "vehicle_key": "2026_chevrolet_suburban",
+      "collection": "M42C4D74903002308",
+      "collection_path": "model_2026_Chevrolet_Suburban.html",
+      "parent": "M42C4D74903002308",
+      "parent_path": "model_2026_Chevrolet_Suburban.html",
+      "parent_vehicle": "model_2026_Chevrolet_Suburban.html",
+      "parent_vehicle_id": "M42C4D74903002308",
+      "path": "domain_2026_Chevrolet_Suburban_Interior_and_comfort.html"
     },
     {
       "objecttype": "Comparison",
@@ -231,6 +382,51 @@
       "path": "compare_domain_2026_Chevrolet_Suburban_Interior_and_comfort.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D7E3A6AB90D82B594",
+      "seating": [
+        "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Suburban | Exterior and utility",
+      "title": "2026 Chevrolet Suburban | Exterior and utility",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Suburban",
+      "trim_names_from_guide": [
+        "LS",
+        "LT",
+        "RST",
+        "Z71",
+        "Premier",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Exterior and utility",
+      "guide_domains": [
+        "Exterior and utility"
+      ],
+      "feature_count": 56,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Suburban",
+      "entity_key": "2026_chevrolet_suburban",
+      "vehicle_key": "2026_chevrolet_suburban",
+      "collection": "M42C4D74903002308",
+      "collection_path": "model_2026_Chevrolet_Suburban.html",
+      "parent": "M42C4D74903002308",
+      "parent_path": "model_2026_Chevrolet_Suburban.html",
+      "parent_vehicle": "model_2026_Chevrolet_Suburban.html",
+      "parent_vehicle_id": "M42C4D74903002308",
+      "path": "domain_2026_Chevrolet_Suburban_Exterior_and_utility.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C46C433840042CC4F",
@@ -275,6 +471,51 @@
       "parent_vehicle": "model_2026_Chevrolet_Suburban.html",
       "parent_vehicle_id": "M42C4D74903002308",
       "path": "compare_domain_2026_Chevrolet_Suburban_Exterior_and_utility.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D00BBEBCA7415D673",
+      "seating": [
+        "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Suburban | Wheels and tires",
+      "title": "2026 Chevrolet Suburban | Wheels and tires",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Suburban",
+      "trim_names_from_guide": [
+        "LS",
+        "LT",
+        "RST",
+        "Z71",
+        "Premier",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Wheels and tires",
+      "guide_domains": [
+        "Wheels and tires"
+      ],
+      "feature_count": 26,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Suburban",
+      "entity_key": "2026_chevrolet_suburban",
+      "vehicle_key": "2026_chevrolet_suburban",
+      "collection": "M42C4D74903002308",
+      "collection_path": "model_2026_Chevrolet_Suburban.html",
+      "parent": "M42C4D74903002308",
+      "parent_path": "model_2026_Chevrolet_Suburban.html",
+      "parent_vehicle": "model_2026_Chevrolet_Suburban.html",
+      "parent_vehicle_id": "M42C4D74903002308",
+      "path": "domain_2026_Chevrolet_Suburban_Wheels_and_tires.html"
     },
     {
       "objecttype": "Comparison",
@@ -323,6 +564,51 @@
       "path": "compare_domain_2026_Chevrolet_Suburban_Wheels_and_tires.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D6A9E12F760E9C912",
+      "seating": [
+        "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Suburban | Mechanical and performance",
+      "title": "2026 Chevrolet Suburban | Mechanical and performance",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Suburban",
+      "trim_names_from_guide": [
+        "LS",
+        "LT",
+        "RST",
+        "Z71",
+        "Premier",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Mechanical and performance",
+      "guide_domains": [
+        "Mechanical and performance"
+      ],
+      "feature_count": 50,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Suburban",
+      "entity_key": "2026_chevrolet_suburban",
+      "vehicle_key": "2026_chevrolet_suburban",
+      "collection": "M42C4D74903002308",
+      "collection_path": "model_2026_Chevrolet_Suburban.html",
+      "parent": "M42C4D74903002308",
+      "parent_path": "model_2026_Chevrolet_Suburban.html",
+      "parent_vehicle": "model_2026_Chevrolet_Suburban.html",
+      "parent_vehicle_id": "M42C4D74903002308",
+      "path": "domain_2026_Chevrolet_Suburban_Mechanical_and_performance.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C78F3AFAF63C66835",
@@ -367,6 +653,51 @@
       "parent_vehicle": "model_2026_Chevrolet_Suburban.html",
       "parent_vehicle_id": "M42C4D74903002308",
       "path": "compare_domain_2026_Chevrolet_Suburban_Mechanical_and_performance.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D10A4989BB7C683B3",
+      "seating": [
+        "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Suburban | Packages and options",
+      "title": "2026 Chevrolet Suburban | Packages and options",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Suburban",
+      "trim_names_from_guide": [
+        "LS",
+        "LT",
+        "RST",
+        "Z71",
+        "Premier",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Packages and options",
+      "guide_domains": [
+        "Packages and options"
+      ],
+      "feature_count": 48,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Suburban",
+      "entity_key": "2026_chevrolet_suburban",
+      "vehicle_key": "2026_chevrolet_suburban",
+      "collection": "M42C4D74903002308",
+      "collection_path": "model_2026_Chevrolet_Suburban.html",
+      "parent": "M42C4D74903002308",
+      "parent_path": "model_2026_Chevrolet_Suburban.html",
+      "parent_vehicle": "model_2026_Chevrolet_Suburban.html",
+      "parent_vehicle_id": "M42C4D74903002308",
+      "path": "domain_2026_Chevrolet_Suburban_Packages_and_options.html"
     },
     {
       "objecttype": "Comparison",
@@ -415,6 +746,49 @@
       "path": "compare_domain_2026_Chevrolet_Suburban_Packages_and_options.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DF5347D3CEDF2C66C",
+      "seating": [
+        "3/3/3"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Suburban",
+      "title": "2026 Chevrolet Suburban",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Suburban",
+      "trim_names_from_guide": [
+        "LS",
+        "LT",
+        "RST",
+        "Z71",
+        "Premier",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Colour and trim",
+      "guide_domains": [
+        "Colour and trim"
+      ],
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Suburban",
+      "entity_key": "2026_chevrolet_suburban",
+      "vehicle_key": "2026_chevrolet_suburban",
+      "collection": "M42C4D74903002308",
+      "collection_path": "model_2026_Chevrolet_Suburban.html",
+      "parent": "M42C4D74903002308",
+      "parent_path": "model_2026_Chevrolet_Suburban.html",
+      "parent_vehicle": "model_2026_Chevrolet_Suburban.html",
+      "parent_vehicle_id": "M42C4D74903002308",
+      "path": "domain_2026_Chevrolet_Suburban_Colour_and_trim.html"
+    },
+    {
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "TECC727F993F90D22",
@@ -449,7 +823,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Suburban LS",
       "entity_key": "2026_chevrolet_suburban_ls",
@@ -506,7 +880,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Suburban LT",
       "entity_key": "2026_chevrolet_suburban_lt",
@@ -561,7 +935,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Suburban RST",
       "entity_key": "2026_chevrolet_suburban_rst",
@@ -616,7 +990,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Suburban Z71",
       "entity_key": "2026_chevrolet_suburban_z71",
@@ -671,7 +1045,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Suburban Premier",
       "entity_key": "2026_chevrolet_suburban_premier",
@@ -726,7 +1100,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Suburban High Country",
       "entity_key": "2026_chevrolet_suburban_high_country",

@@ -34,7 +34,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Silverado 3500HD",
       "entity_key": "2026_chevrolet_silverado_3500hd",
@@ -42,13 +42,21 @@
       "collection": "MC10FF4748C63DBFA",
       "collection_path": "model_2026_Chevrolet_Silverado_3500HD.html",
       "child": [
+        "DE47C9037AF04EF22",
         "C074DACB47EF10284",
+        "DBBBF11684CA06B0F",
         "C7445A2155CCF6E56",
+        "D472C1B392DF05F60",
         "CECCEFD0F1A3E94F7",
+        "DDAFD2A989F9E57D5",
         "C26456CD10FC8652B",
+        "D0AF5177E5006EA10",
         "CFA33E2363309A31D",
+        "D90D29F279464F016",
         "C672CFE8C92DE494B",
+        "D454765F99623E59C",
         "C5B7D861FFD83D378",
+        "D0147C2984AAB3ABE",
         "T4F50A52CB0FFDF9B",
         "TFE49742C28DE046E",
         "T258931152BC76488",
@@ -87,13 +95,21 @@
         "SA4CFD78BB0B5BF21"
       ],
       "child_paths": [
+        "domain_2026_Chevrolet_Silverado_3500HD_Safety_and_driver_assistance.html",
         "compare_domain_2026_Chevrolet_Silverado_3500HD_Safety_and_driver_assistance.html",
+        "domain_2026_Chevrolet_Silverado_3500HD_Technology_and_connectivity.html",
         "compare_domain_2026_Chevrolet_Silverado_3500HD_Technology_and_connectivity.html",
+        "domain_2026_Chevrolet_Silverado_3500HD_Interior_and_comfort.html",
         "compare_domain_2026_Chevrolet_Silverado_3500HD_Interior_and_comfort.html",
+        "domain_2026_Chevrolet_Silverado_3500HD_Exterior_and_utility.html",
         "compare_domain_2026_Chevrolet_Silverado_3500HD_Exterior_and_utility.html",
+        "domain_2026_Chevrolet_Silverado_3500HD_Wheels_and_tires.html",
         "compare_domain_2026_Chevrolet_Silverado_3500HD_Wheels_and_tires.html",
+        "domain_2026_Chevrolet_Silverado_3500HD_Mechanical_and_performance.html",
         "compare_domain_2026_Chevrolet_Silverado_3500HD_Mechanical_and_performance.html",
+        "domain_2026_Chevrolet_Silverado_3500HD_Packages_and_options.html",
         "compare_domain_2026_Chevrolet_Silverado_3500HD_Packages_and_options.html",
+        "domain_2026_Chevrolet_Silverado_3500HD_Colour_and_trim.html",
         "trim_2026_Chevrolet_Silverado_3500HD_WT.html",
         "trim_2026_Chevrolet_Silverado_3500HD_LT.html",
         "trim_2026_Chevrolet_Silverado_3500HD_LTZ.html",
@@ -138,6 +154,50 @@
         "LTZ",
         "High Country"
       ]
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DE47C9037AF04EF22",
+      "seating": [
+        "3",
+        "6"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Silverado 3500HD | Safety and driver assistance",
+      "title": "2026 Chevrolet Silverado 3500HD | Safety and driver assistance",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "trim_names_from_guide": [
+        "WT",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Safety and driver assistance",
+      "guide_domains": [
+        "Safety and driver assistance"
+      ],
+      "feature_count": 40,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500HD",
+      "entity_key": "2026_chevrolet_silverado_3500hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500hd",
+      "collection": "MC10FF4748C63DBFA",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500HD.html",
+      "parent": "MC10FF4748C63DBFA",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "MC10FF4748C63DBFA",
+      "path": "domain_2026_Chevrolet_Silverado_3500HD_Safety_and_driver_assistance.html"
     },
     {
       "objecttype": "Comparison",
@@ -185,6 +245,50 @@
       "path": "compare_domain_2026_Chevrolet_Silverado_3500HD_Safety_and_driver_assistance.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DBBBF11684CA06B0F",
+      "seating": [
+        "3",
+        "6"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Silverado 3500HD | Technology and connectivity",
+      "title": "2026 Chevrolet Silverado 3500HD | Technology and connectivity",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "trim_names_from_guide": [
+        "WT",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Technology and connectivity",
+      "guide_domains": [
+        "Technology and connectivity"
+      ],
+      "feature_count": 34,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500HD",
+      "entity_key": "2026_chevrolet_silverado_3500hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500hd",
+      "collection": "MC10FF4748C63DBFA",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500HD.html",
+      "parent": "MC10FF4748C63DBFA",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "MC10FF4748C63DBFA",
+      "path": "domain_2026_Chevrolet_Silverado_3500HD_Technology_and_connectivity.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C7445A2155CCF6E56",
@@ -228,6 +332,50 @@
       "parent_vehicle": "model_2026_Chevrolet_Silverado_3500HD.html",
       "parent_vehicle_id": "MC10FF4748C63DBFA",
       "path": "compare_domain_2026_Chevrolet_Silverado_3500HD_Technology_and_connectivity.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D472C1B392DF05F60",
+      "seating": [
+        "3",
+        "6"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Silverado 3500HD | Interior and comfort",
+      "title": "2026 Chevrolet Silverado 3500HD | Interior and comfort",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "trim_names_from_guide": [
+        "WT",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Interior and comfort",
+      "guide_domains": [
+        "Interior and comfort"
+      ],
+      "feature_count": 33,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500HD",
+      "entity_key": "2026_chevrolet_silverado_3500hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500hd",
+      "collection": "MC10FF4748C63DBFA",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500HD.html",
+      "parent": "MC10FF4748C63DBFA",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "MC10FF4748C63DBFA",
+      "path": "domain_2026_Chevrolet_Silverado_3500HD_Interior_and_comfort.html"
     },
     {
       "objecttype": "Comparison",
@@ -275,6 +423,50 @@
       "path": "compare_domain_2026_Chevrolet_Silverado_3500HD_Interior_and_comfort.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "DDAFD2A989F9E57D5",
+      "seating": [
+        "3",
+        "6"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Silverado 3500HD | Exterior and utility",
+      "title": "2026 Chevrolet Silverado 3500HD | Exterior and utility",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "trim_names_from_guide": [
+        "WT",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Exterior and utility",
+      "guide_domains": [
+        "Exterior and utility"
+      ],
+      "feature_count": 74,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500HD",
+      "entity_key": "2026_chevrolet_silverado_3500hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500hd",
+      "collection": "MC10FF4748C63DBFA",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500HD.html",
+      "parent": "MC10FF4748C63DBFA",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "MC10FF4748C63DBFA",
+      "path": "domain_2026_Chevrolet_Silverado_3500HD_Exterior_and_utility.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C26456CD10FC8652B",
@@ -318,6 +510,50 @@
       "parent_vehicle": "model_2026_Chevrolet_Silverado_3500HD.html",
       "parent_vehicle_id": "MC10FF4748C63DBFA",
       "path": "compare_domain_2026_Chevrolet_Silverado_3500HD_Exterior_and_utility.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D0AF5177E5006EA10",
+      "seating": [
+        "3",
+        "6"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Silverado 3500HD | Wheels and tires",
+      "title": "2026 Chevrolet Silverado 3500HD | Wheels and tires",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "trim_names_from_guide": [
+        "WT",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Wheels and tires",
+      "guide_domains": [
+        "Wheels and tires"
+      ],
+      "feature_count": 47,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500HD",
+      "entity_key": "2026_chevrolet_silverado_3500hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500hd",
+      "collection": "MC10FF4748C63DBFA",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500HD.html",
+      "parent": "MC10FF4748C63DBFA",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "MC10FF4748C63DBFA",
+      "path": "domain_2026_Chevrolet_Silverado_3500HD_Wheels_and_tires.html"
     },
     {
       "objecttype": "Comparison",
@@ -365,6 +601,50 @@
       "path": "compare_domain_2026_Chevrolet_Silverado_3500HD_Wheels_and_tires.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D90D29F279464F016",
+      "seating": [
+        "3",
+        "6"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Silverado 3500HD | Mechanical and performance",
+      "title": "2026 Chevrolet Silverado 3500HD | Mechanical and performance",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "trim_names_from_guide": [
+        "WT",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Mechanical and performance",
+      "guide_domains": [
+        "Mechanical and performance"
+      ],
+      "feature_count": 56,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500HD",
+      "entity_key": "2026_chevrolet_silverado_3500hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500hd",
+      "collection": "MC10FF4748C63DBFA",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500HD.html",
+      "parent": "MC10FF4748C63DBFA",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "MC10FF4748C63DBFA",
+      "path": "domain_2026_Chevrolet_Silverado_3500HD_Mechanical_and_performance.html"
+    },
+    {
       "objecttype": "Comparison",
       "type": "comparison",
       "node_id": "C672CFE8C92DE494B",
@@ -408,6 +688,50 @@
       "parent_vehicle": "model_2026_Chevrolet_Silverado_3500HD.html",
       "parent_vehicle_id": "MC10FF4748C63DBFA",
       "path": "compare_domain_2026_Chevrolet_Silverado_3500HD_Mechanical_and_performance.html"
+    },
+    {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D454765F99623E59C",
+      "seating": [
+        "3",
+        "6"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Silverado 3500HD | Packages and options",
+      "title": "2026 Chevrolet Silverado 3500HD | Packages and options",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "trim_names_from_guide": [
+        "WT",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Packages and options",
+      "guide_domains": [
+        "Packages and options"
+      ],
+      "feature_count": 22,
+      "has_notes": true,
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500HD",
+      "entity_key": "2026_chevrolet_silverado_3500hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500hd",
+      "collection": "MC10FF4748C63DBFA",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500HD.html",
+      "parent": "MC10FF4748C63DBFA",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "MC10FF4748C63DBFA",
+      "path": "domain_2026_Chevrolet_Silverado_3500HD_Packages_and_options.html"
     },
     {
       "objecttype": "Comparison",
@@ -455,6 +779,48 @@
       "path": "compare_domain_2026_Chevrolet_Silverado_3500HD_Packages_and_options.html"
     },
     {
+      "objecttype": "DomainPassage",
+      "type": "domain-passage",
+      "node_id": "D0147C2984AAB3ABE",
+      "seating": [
+        "3",
+        "6"
+      ],
+      "fuel_type": [
+        "Diesel",
+        "Gasoline"
+      ],
+      "name": "2026 Chevrolet Silverado 3500HD",
+      "title": "2026 Chevrolet Silverado 3500HD",
+      "year": "2026",
+      "make": "Chevrolet",
+      "model": "Silverado 3500HD",
+      "trim_names_from_guide": [
+        "WT",
+        "LT",
+        "LTZ",
+        "High Country"
+      ],
+      "doc_type": "domain-passage",
+      "doc_role": "passage",
+      "entity_level": "domain",
+      "domain": "Colour and trim",
+      "guide_domains": [
+        "Colour and trim"
+      ],
+      "surface": "passage_only",
+      "entity_name": "2026 Chevrolet Silverado 3500HD",
+      "entity_key": "2026_chevrolet_silverado_3500hd",
+      "vehicle_key": "2026_chevrolet_silverado_3500hd",
+      "collection": "MC10FF4748C63DBFA",
+      "collection_path": "model_2026_Chevrolet_Silverado_3500HD.html",
+      "parent": "MC10FF4748C63DBFA",
+      "parent_path": "model_2026_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle": "model_2026_Chevrolet_Silverado_3500HD.html",
+      "parent_vehicle_id": "MC10FF4748C63DBFA",
+      "path": "domain_2026_Chevrolet_Silverado_3500HD_Colour_and_trim.html"
+    },
+    {
       "objecttype": "Variant",
       "type": "trim",
       "node_id": "T4F50A52CB0FFDF9B",
@@ -497,7 +863,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Silverado 3500HD WT",
       "entity_key": "2026_chevrolet_silverado_3500hd_wt",
@@ -554,7 +920,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Silverado 3500HD LT",
       "entity_key": "2026_chevrolet_silverado_3500hd_lt",
@@ -611,7 +977,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Silverado 3500HD LTZ",
       "entity_key": "2026_chevrolet_silverado_3500hd_ltz",
@@ -664,7 +1030,7 @@
         "Colour and trim",
         "Other guide content"
       ],
-      "surface": "both",
+      "surface": "entity_only",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Silverado 3500HD High Country",
       "entity_key": "2026_chevrolet_silverado_3500hd_high_country",
