@@ -218,8 +218,6 @@ class HtmlRenderer:
             f"{entity} | {self.cleaner.t('Model overview')}",
             self.render_page_identity_section(data),
             self.render_trim_lineup_section(data),
-            self.render_grouped_feature_sections(data, self.aggregation.aggregate_model_features(data), model_mode=True),
-            self.render_grouped_colour_summary(data),
         )
 
     def render_trim_overview_page(self, data, trim) -> str:
@@ -227,8 +225,37 @@ class HtmlRenderer:
         return self.cleaner.clean_title_document(
             f"{entity} | {self.cleaner.t('Trim overview')}",
             self.render_page_identity_section(data, trim=trim),
-            self.render_grouped_feature_sections(data, self.aggregation.aggregate_trim_features(data, trim), trim=trim, model_mode=False),
-            self.render_grouped_colour_summary(data, trim=trim),
+        )
+
+    def render_domain_passage_page(self, data, category: str, features: Sequence[ModelFeatureAggregate]) -> str:
+        """Render a single-domain passage with all features in model-mode formatting."""
+        entity = data.vehicle_name
+        lines = [self.cleaner.clean_model_group_line(feature) for feature in features]
+        category_label = self.cleaner.t(category) if self.cleaner.language == 'fr' else category
+        parts = [f'<section class="domain-passage"><h2>{html.escape(entity)} | {html.escape(category_label)}</h2>']
+        for idx, chunk in enumerate(chunk_feature_items(lines), start=1):
+            title = self.cleaner.article_heading(entity, f"{self.cleaner.t(category) if self.cleaner.language == 'fr' else category} | {self.cleaner.t('Highlights')}")
+            if idx > 1:
+                title = self.cleaner.article_heading(entity, f"{self.cleaner.t(category) if self.cleaner.language == 'fr' else category} | {self.cleaner.t('Highlights')} | {self.cleaner.t('part')} {idx}")
+            parts.append(
+                self.cleaner.cleaned_render_article(
+                    title,
+                    self.cleaner.filtered_identity_fields(data, category=category),
+                    [(self.cleaner.t('Feature highlights'), chunk)],
+                )
+            )
+        parts.append('</section>')
+        return self.cleaner.clean_title_document(f"{entity} | {self.cleaner.t(category) if self.cleaner.language == 'fr' else category}", ''.join(parts))
+
+    def render_colour_domain_passage_page(self, data) -> str:
+        """Render colour/trim content as a standalone domain passage."""
+        entity = data.vehicle_name
+        colour_section = self.render_grouped_colour_summary(data)
+        if not colour_section:
+            return ''
+        return self.cleaner.clean_title_document(
+            f"{entity} | {self.cleaner.t('Colour and trim')}",
+            colour_section,
         )
 
     def render_comparison_domain_page(self, data, category: str, features: Sequence[ModelFeatureAggregate]) -> str:

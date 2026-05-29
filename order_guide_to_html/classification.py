@@ -325,6 +325,10 @@ SURFACE_BOTH = 'both'
 
 SURFACE_PASSAGE_ONLY = 'passage_only'
 
+SURFACE_ENTITY_ONLY = 'entity_only'
+
+DOMAIN_PASSAGE_OBJECTTYPE = 'DomainPassage'
+
 DOC_ROLE_ENTITY = 'entity'
 
 DOC_ROLE_PASSAGE = 'passage'

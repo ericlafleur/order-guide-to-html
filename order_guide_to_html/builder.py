@@ -7,8 +7,8 @@ from typing import Dict, List, Optional, Sequence, Tuple
 from .utils import short_slug, slugify, unique_output_path
 from .models import BoundRecord, OutputFileRecord
 from .classification import (
-    COMPARISON_OBJECTTYPE, CONFIG_OBJECTTYPE, CONFIG_TYPE, MODEL_OBJECTTYPE,
-    TRIM_OBJECTTYPE, comparison_varies_by_trim, normalize_domain_value,
+    COMPARISON_OBJECTTYPE, CONFIG_OBJECTTYPE, CONFIG_TYPE, DOMAIN_PASSAGE_OBJECTTYPE,
+    MODEL_OBJECTTYPE, TRIM_OBJECTTYPE, comparison_varies_by_trim, normalize_domain_value,
 )
 from .configuration import (
     all_trim_matches, all_trim_matches_for_spec_group, best_trim_match, group_powertrain_trailering_for_cpr, group_spec_columns_for_cpr,
@@ -16,7 +16,9 @@ from .configuration import (
 )
 from .manifest import (
     add_bound_record, build_manifest_from_bindings,
+    colour_domain_passage_manifest_metadata,
     comparison_domain_manifest_metadata, config_parent_manifest_metadata,
+    domain_passage_manifest_metadata,
     gcwr_reference_manifest_metadata, model_overview_manifest_metadata,
     powertrain_trailering_manifest_metadata, spec_group_manifest_metadata,
     trim_entity_key, trim_overview_manifest_metadata, vehicle_key,
@@ -68,9 +70,24 @@ class CorpusBuilder:
             if domain == 'Other guide content':
                 continue
             if domain in LOW_SIGNAL_COMPARISON_DOMAINS:
+                # Colour/trim handled by dedicated renderer below
                 continue
             if not features:
                 continue
+
+            # Domain passage: all features for this domain (single-topic retrieval)
+            dp_filename = f'domain_{data.year}_{slugify(data.make)}_{slugify(data.model)}_{short_slug(category)}.html'
+            dp_path = unique_output_path(output_dir, dp_filename, used_names)
+            dp_path.write_text(self.renderer.render_domain_passage_page(data, category, features), encoding='utf-8')
+            dp_record = OutputFileRecord(
+                objecttype=DOMAIN_PASSAGE_OBJECTTYPE,
+                type='domain-passage',
+                path=dp_path,
+                metadata=domain_passage_manifest_metadata(data, category, features),
+            )
+            add_bound_record(bindings, dp_record, collection=model_path, parent=model_path, parent_vehicle=model_path, parent_trims=[])
+
+            # Comparison: curated differentiating features only
             selected_features = [feature for feature in features if comparison_varies_by_trim(feature)] or list(features)
             if not selected_features:
                 continue
@@ -84,6 +101,21 @@ class CorpusBuilder:
                 metadata=comparison_domain_manifest_metadata(data, category, selected_features),
             )
             add_bound_record(bindings, domain_record, collection=model_path, parent=model_path, parent_vehicle=model_path, parent_trims=[])
+
+        # Colour domain passage (separate renderer)
+        colour_html = self.renderer.render_colour_domain_passage_page(data)
+        if colour_html:
+            colour_filename = f'domain_{data.year}_{slugify(data.make)}_{slugify(data.model)}_Colour_and_trim.html'
+            colour_path = unique_output_path(output_dir, colour_filename, used_names)
+            colour_path.write_text(colour_html, encoding='utf-8')
+            colour_record = OutputFileRecord(
+                objecttype=DOMAIN_PASSAGE_OBJECTTYPE,
+                type='domain-passage',
+                path=colour_path,
+                metadata=colour_domain_passage_manifest_metadata(data),
+            )
+            add_bound_record(bindings, colour_record, collection=model_path, parent=model_path, parent_vehicle=model_path, parent_trims=[])
+
         return model_path
 
     def build_trims(self, data, output_dir: Path, used_names: set[str], bindings: List[BoundRecord], model_path: Path) -> Dict[str, Path]:

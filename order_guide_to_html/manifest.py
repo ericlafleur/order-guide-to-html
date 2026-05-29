@@ -17,7 +17,7 @@ from .utils import (
 )
 from .models import BoundRecord, EngineAxleEntry, EngineAxleItem, GCWRRecord, ModelFeatureAggregate, OutputFileRecord, PowertrainTraileringGroup, SpecCell, SpecColumn, SpecGroupDoc, TraileringRecord, TrimDef, TrimFeatureAggregate, WorkbookData
 from .parsing import parse_status_value, parse_value_and_footnote_ids, parse_workbook, referenced_codes_for_text
-from .classification import COMPARISON_OBJECTTYPE, CONFIG_KIND_ENGINE_AXLE, CONFIG_KIND_GCWR, CONFIG_KIND_GCWR_REFERENCE, CONFIG_KIND_POWERTRAIN_TRAILERING_GROUP, CONFIG_KIND_SPEC_COLUMN, CONFIG_KIND_SPEC_GROUP, CONFIG_KIND_TRAILERING, CONFIG_OBJECTTYPE, CONFIG_TYPE, DOC_ROLE_CHILD, DOC_ROLE_ENTITY, DOC_ROLE_PARENT, DOC_ROLE_PASSAGE, DOMAIN_COLOR, DOMAIN_OVERVIEW, MODEL_OBJECTTYPE, NOTE_OBJECTTYPE, SURFACE_BOTH, SURFACE_PASSAGE_ONLY, TRIM_OBJECTTYPE, availability_pairs_for_model, availability_pairs_for_trim, category_for_model_feature, category_for_trim_feature, collect_row_note_texts, comparison_varies_by_trim, feature_title, model_status_summary_lines, normalize_domain_value, sort_category_key, sort_trim_feature, source_context, source_tab_list_from_contexts, source_tab_list_from_strings, summarize_model_status_groups, with_doc_metadata
+from .classification import COMPARISON_OBJECTTYPE, CONFIG_KIND_ENGINE_AXLE, CONFIG_KIND_GCWR, CONFIG_KIND_GCWR_REFERENCE, CONFIG_KIND_POWERTRAIN_TRAILERING_GROUP, CONFIG_KIND_SPEC_COLUMN, CONFIG_KIND_SPEC_GROUP, CONFIG_KIND_TRAILERING, CONFIG_OBJECTTYPE, CONFIG_TYPE, DOC_ROLE_CHILD, DOC_ROLE_ENTITY, DOC_ROLE_PARENT, DOC_ROLE_PASSAGE, DOMAIN_COLOR, DOMAIN_OVERVIEW, DOMAIN_PASSAGE_OBJECTTYPE, MODEL_OBJECTTYPE, NOTE_OBJECTTYPE, SURFACE_BOTH, SURFACE_ENTITY_ONLY, SURFACE_PASSAGE_ONLY, TRIM_OBJECTTYPE, availability_pairs_for_model, availability_pairs_for_trim, category_for_model_feature, category_for_trim_feature, collect_row_note_texts, comparison_varies_by_trim, feature_title, model_status_summary_lines, normalize_domain_value, sort_category_key, sort_trim_feature, source_context, source_tab_list_from_contexts, source_tab_list_from_strings, summarize_model_status_groups, with_doc_metadata
 from .configuration import all_trim_matches, all_trim_matches_for_spec_group, best_trim_match, best_trim_match_for_spec_column, column_matches_trim, group_powertrain_trailering_for_cpr, group_spec_columns_for_cpr, powertrain_group_trim_match, section_names_for_column, spec_column_body_style_value, spec_column_context_text, spec_column_drivetrain_value, spec_column_engine_value, spec_column_fuel_value, spec_column_seating_value, spec_group_context_text, spec_group_first_value, spec_group_model_code, spec_group_section_names, strip_drive_tokens, trim_body_styles, trim_code_list, trim_colour_context, trim_drivetrains, trim_header_list, trim_matches_decor, trim_name_list, trim_seating, workbook_tab_metadata
 
 
@@ -2166,7 +2166,7 @@ def model_overview_manifest_metadata(data: WorkbookData) -> Dict[str, object]:
         entity_level='model',
         domain='Overview',
         guide_domains=domains_for_model_doc(data),
-        surface=SURFACE_BOTH,
+        surface=SURFACE_ENTITY_ONLY,
         is_vehicle_entity=True,
         entity_name=data.vehicle_name,
         entity_key=vehicle_key(data),
@@ -2181,7 +2181,7 @@ def trim_overview_manifest_metadata(data: WorkbookData, trim: TrimDef) -> Dict[s
         entity_level='trim',
         domain='Overview',
         guide_domains=domains_for_trim_doc(data, trim),
-        surface=SURFACE_BOTH,
+        surface=SURFACE_ENTITY_ONLY,
         is_vehicle_entity=True,
         entity_name=full_trim_heading(data, trim),
         entity_key=trim_entity_key(data, trim),
@@ -2204,6 +2204,45 @@ def comparison_domain_manifest_metadata(data: WorkbookData, category: str, featu
         comparison_axis='trim',
         feature_count=len(features),
         has_notes=bool_or_none(any(feature.notes for feature in features)),
+        surface=SURFACE_PASSAGE_ONLY,
+        is_vehicle_entity=None,
+        entity_name=data.vehicle_name,
+        entity_key=vehicle_key(data),
+        vehicle_key=vehicle_key(data),
+    )
+
+def domain_passage_manifest_metadata(data: WorkbookData, category: str, features: Sequence[ModelFeatureAggregate]) -> Dict[str, object]:
+    return with_flat_doc_metadata(
+        cached_model_metadata(data),
+        name=f'{data.vehicle_name} | {category}',
+        title=f'{data.vehicle_name} | {category}',
+        type='domain-passage',
+        doc_type='domain-passage',
+        doc_role=DOC_ROLE_PASSAGE,
+        entity_level='domain',
+        domain=normalize_domain_value(category),
+        guide_domains=[normalize_domain_value(category)],
+        source_tabs=source_tab_list_from_contexts([ctx for feature in features for ctx in feature.source_contexts]),
+        feature_count=len(features),
+        has_notes=bool_or_none(any(feature.notes for feature in features)),
+        surface=SURFACE_PASSAGE_ONLY,
+        is_vehicle_entity=None,
+        entity_name=data.vehicle_name,
+        entity_key=vehicle_key(data),
+        vehicle_key=vehicle_key(data),
+    )
+
+def colour_domain_passage_manifest_metadata(data: WorkbookData) -> Dict[str, object]:
+    return with_flat_doc_metadata(
+        cached_model_metadata(data),
+        name=f'{data.vehicle_name} | Colour and trim',
+        title=f'{data.vehicle_name} | Colour and trim',
+        type='domain-passage',
+        doc_type='domain-passage',
+        doc_role=DOC_ROLE_PASSAGE,
+        entity_level='domain',
+        domain=normalize_domain_value(DOMAIN_COLOR),
+        guide_domains=[normalize_domain_value(DOMAIN_COLOR)],
         surface=SURFACE_PASSAGE_ONLY,
         is_vehicle_entity=None,
         entity_name=data.vehicle_name,
