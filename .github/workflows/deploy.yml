@@ -2,11 +2,12 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: ["**"]
     paths:
       - "workbooks_html/**"
       - "eleventy.config.js"
       - "sitemap.njk"
+      - "sitemap_fr.njk"
       - "_data/**"
       - "package.json"
       - "package-lock.json"
@@ -14,50 +15,88 @@ on:
   workflow_run:
     workflows: ["Convert Workbooks to HTML"]
     types: [completed]
-    branches: [main]
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
+# Serialize all pushes to gh-pages to avoid conflicts
 concurrency:
-  group: pages
+  group: gh-pages-deploy
   cancel-in-progress: false
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     steps:
-      - name: Checkout
+      - name: Checkout source branch
         uses: actions/checkout@v4
+        with:
+          path: source
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "20"
           cache: "npm"
+          cache-dependency-path: source/package-lock.json
 
       - name: Install dependencies
         run: npm ci
+        working-directory: source
+
+      - name: Set branch path variables
+        id: branch
+        run: |
+          if [ "${{ github.ref_name }}" = "main" ]; then
+            echo "path_prefix=/order-guide-to-html/" >> "$GITHUB_OUTPUT"
+            echo "site_url=https://ericlafleur.github.io/order-guide-to-html" >> "$GITHUB_OUTPUT"
+            echo "deploy_dir=." >> "$GITHUB_OUTPUT"
+          else
+            SAFE_BRANCH=$(echo "${{ github.ref_name }}" | sed 's/[^a-zA-Z0-9._-]/-/g')
+            echo "path_prefix=/order-guide-to-html/preview/${SAFE_BRANCH}/" >> "$GITHUB_OUTPUT"
+            echo "site_url=https://ericlafleur.github.io/order-guide-to-html/preview/${SAFE_BRANCH}" >> "$GITHUB_OUTPUT"
+            echo "deploy_dir=preview/${SAFE_BRANCH}" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Build with Eleventy
+        env:
+          ELEVENTY_PATH_PREFIX: ${{ steps.branch.outputs.path_prefix }}
+          SITE_URL: ${{ steps.branch.outputs.site_url }}
         run: npm run build
+        working-directory: source
 
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v4
         with:
-          path: _site
+          ref: gh-pages
+          path: gh-pages
+          fetch-depth: 1
 
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Deploy to gh-pages branch
+        run: |
+          DEPLOY_DIR="${{ steps.branch.outputs.deploy_dir }}"
+
+          cd gh-pages
+
+          if [ "$DEPLOY_DIR" = "." ]; then
+            # Main branch: replace everything except preview/ and .git/
+            find . -maxdepth 1 ! -name '.' ! -name '.git' ! -name 'preview' -exec rm -rf {} +
+            cp -a ../source/_site/. .
+          else
+            # Feature branch: replace only its preview subdirectory
+            rm -rf "$DEPLOY_DIR"
+            mkdir -p "$DEPLOY_DIR"
+            cp -a ../source/_site/. "$DEPLOY_DIR/"
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to deploy."
+          else
+            git commit -m "deploy: ${{ github.ref_name }} (${{ github.sha }})"
+            git push
+          fi

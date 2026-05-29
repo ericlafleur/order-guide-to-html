@@ -126,6 +126,7 @@ module.exports = function (eleventyConfig) {
     // Only treat .njk and .md files as templates; HTML files in workbooks_html/
     // are passthrough-copied as-is via addPassthroughCopy above.
     templateFormats: ["njk", "md"],
+    pathPrefix: process.env.ELEVENTY_PATH_PREFIX || "/order-guide-to-html/",
     dir: {
       input: ".",
       output: "_site",

@@ -2,7 +2,7 @@ name: Convert Workbooks to HTML
 
 on:
   push:
-    branches: [main]
+    branches: ["**"]
     paths:
       - "workbooks/**"
   workflow_dispatch:
