@@ -1,5 +1,14 @@
 name: Deploy to GitHub Pages
 
+# ── Configuration ─────────────────────────────────────────────────────────────
+# TARGET_REPO   : "owner/repo" of the GitHub repo whose gh-pages branch is served
+# SITE_BASE_URL : root URL of that Pages site (no trailing slash)
+# Store a PAT with repo-write access in the source repo secret: DEPLOY_PAT
+# ──────────────────────────────────────────────────────────────────────────────
+env:
+  TARGET_REPO: coveo-chevrolet-ca/order-guide
+  SITE_BASE_URL: https://coveo-chevrolet-ca.github.io/order-guide
+
 on:
   push:
     branches: ["**"]
@@ -18,7 +27,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 # Serialize all pushes to gh-pages to avoid conflicts
 concurrency:
@@ -50,13 +59,13 @@ jobs:
         id: branch
         run: |
           if [ "${{ github.ref_name }}" = "main" ]; then
-            echo "path_prefix=/order-guide-to-html/" >> "$GITHUB_OUTPUT"
-            echo "site_url=https://ericlafleur.github.io/order-guide-to-html" >> "$GITHUB_OUTPUT"
+            echo "path_prefix=/order-guide/" >> "$GITHUB_OUTPUT"
+            echo "site_url=${SITE_BASE_URL}" >> "$GITHUB_OUTPUT"
             echo "deploy_dir=." >> "$GITHUB_OUTPUT"
           else
             SAFE_BRANCH=$(echo "${{ github.ref_name }}" | sed 's/[^a-zA-Z0-9._-]/-/g')
-            echo "path_prefix=/order-guide-to-html/preview/${SAFE_BRANCH}/" >> "$GITHUB_OUTPUT"
-            echo "site_url=https://ericlafleur.github.io/order-guide-to-html/preview/${SAFE_BRANCH}" >> "$GITHUB_OUTPUT"
+            echo "path_prefix=/order-guide/preview/${SAFE_BRANCH}/" >> "$GITHUB_OUTPUT"
+            echo "site_url=${SITE_BASE_URL}/preview/${SAFE_BRANCH}" >> "$GITHUB_OUTPUT"
             echo "deploy_dir=preview/${SAFE_BRANCH}" >> "$GITHUB_OUTPUT"
           fi
 
@@ -67,12 +76,14 @@ jobs:
         run: npm run build
         working-directory: source
 
-      - name: Checkout gh-pages branch
+      - name: Checkout target gh-pages branch
         uses: actions/checkout@v4
         with:
+          repository: ${{ env.TARGET_REPO }}
           ref: gh-pages
           path: gh-pages
           fetch-depth: 1
+          token: ${{ secrets.DEPLOY_PAT }}
 
       - name: Deploy to gh-pages branch
         run: |
@@ -98,5 +109,5 @@ jobs:
             echo "No changes to deploy."
           else
             git commit -m "deploy: ${{ github.ref_name }} (${{ github.sha }})"
-            git push
+            git push "https://x-access-token:${{ secrets.DEPLOY_PAT }}@github.com/${{ env.TARGET_REPO }}.git" gh-pages
           fi

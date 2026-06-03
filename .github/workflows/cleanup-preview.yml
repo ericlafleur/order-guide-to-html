@@ -1,11 +1,18 @@
 name: Cleanup Preview on Branch Delete
 
+# ── Configuration ─────────────────────────────────────────────────────────────
+# Must match the TARGET_REPO value in deploy.yml
+# Requires the same DEPLOY_PAT secret
+# ──────────────────────────────────────────────────────────────────────────────
+env:
+  TARGET_REPO: coveo-chevrolet-ca/order-guide
+
 on:
   delete:
     branches-ignore: [main]
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: gh-pages-deploy
@@ -19,8 +26,10 @@ jobs:
       - name: Checkout gh-pages
         uses: actions/checkout@v4
         with:
+          repository: ${{ env.TARGET_REPO }}
           ref: gh-pages
           fetch-depth: 1
+          token: ${{ secrets.DEPLOY_PAT }}
 
       - name: Remove preview directory
         run: |
@@ -33,7 +42,7 @@ jobs:
             git config user.email "github-actions[bot]@users.noreply.github.com"
             git add -A
             git commit -m "cleanup: remove preview for deleted branch ${SAFE_BRANCH}"
-            git push
+            git push "https://x-access-token:${{ secrets.DEPLOY_PAT }}@github.com/${{ env.TARGET_REPO }}.git" gh-pages
             echo "Removed $PREVIEW_DIR"
           else
             echo "No preview directory found for $PREVIEW_DIR, nothing to do."
