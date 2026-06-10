@@ -46,11 +46,9 @@
         "C16707D05379B7E59",
         "C9977BB06A15C46C2",
         "C011F748D9E10C1D4",
-        "T38E6065062990489",
-        "T7543570BC3F159B6",
-        "TEB961BB193A0D65B",
-        "T4CFBB01BC7AEF2FF",
-        "TFBE7B2873E019342",
+        "TC36839A320303600",
+        "T3E690923BD891534",
+        "TCF736970C9469149",
         "SD608A469F60F96B0",
         "SFFD3DCC2CA877285",
         "SE4868DBD08D2D75F"
@@ -63,11 +61,9 @@
         "compare_domain_2026_Chevrolet_Blazer_EV_Wheels_and_tires.html",
         "compare_domain_2026_Chevrolet_Blazer_EV_Mechanical_and_performance.html",
         "compare_domain_2026_Chevrolet_Blazer_EV_Packages_and_options.html",
-        "trim_2026_Chevrolet_Blazer_EV_LT_FWD.html",
-        "trim_2026_Chevrolet_Blazer_EV_LT_AWD.html",
-        "trim_2026_Chevrolet_Blazer_EV_RS_FWD.html",
-        "trim_2026_Chevrolet_Blazer_EV_RS_AWD.html",
-        "trim_2026_Chevrolet_Blazer_EV_SS_AWD.html",
+        "trim_2026_Chevrolet_Blazer_EV_LT.html",
+        "trim_2026_Chevrolet_Blazer_EV_RS.html",
+        "trim_2026_Chevrolet_Blazer_EV_SS.html",
         "spec_2026_Chevrolet_Blazer_EV_dimensions_specifications_1MC26_LT_1MD26_RS.html",
         "spec_2026_Chevrolet_Blazer_EV_dimensions_specifications_1MC26_LT.html",
         "spec_2026_Chevrolet_Blazer_EV_dimensions_specifications_1MD26_RS.html"
@@ -376,7 +372,7 @@
     {
       "objecttype": "Variant",
       "type": "trim",
-      "node_id": "T38E6065062990489",
+      "node_id": "TC36839A320303600",
       "name": "LT",
       "title": "2026 Chevrolet Blazer EV LT",
       "seating": [
@@ -409,9 +405,9 @@
       "surface": "both",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Blazer EV LT",
-      "entity_key": "2026_chevrolet_blazer_ev_lt_fwd",
+      "entity_key": "2026_chevrolet_blazer_ev_lt",
       "vehicle_key": "2026_chevrolet_blazer_ev",
-      "trim_key": "2026_chevrolet_blazer_ev_lt_fwd",
+      "trim_key": "2026_chevrolet_blazer_ev_lt",
       "collection": "M73F989D92ABBE472",
       "collection_path": "model_2026_Chevrolet_Blazer_EV.html",
       "parent": "M73F989D92ABBE472",
@@ -426,67 +422,12 @@
       ],
       "parent_vehicle": "model_2026_Chevrolet_Blazer_EV.html",
       "parent_vehicle_id": "M73F989D92ABBE472",
-      "path": "trim_2026_Chevrolet_Blazer_EV_LT_FWD.html"
+      "path": "trim_2026_Chevrolet_Blazer_EV_LT.html"
     },
     {
       "objecttype": "Variant",
       "type": "trim",
-      "node_id": "T7543570BC3F159B6",
-      "name": "LT",
-      "title": "2026 Chevrolet Blazer EV LT",
-      "seating": [
-        "2/3"
-      ],
-      "fuel_type": [
-        "Electric"
-      ],
-      "drivetrains": [
-        "AWD"
-      ],
-      "year": "2026",
-      "make": "Chevrolet",
-      "model": "Blazer EV",
-      "trim": "LT",
-      "doc_type": "trim",
-      "doc_role": "entity",
-      "entity_level": "trim",
-      "domain": "Overview",
-      "guide_domains": [
-        "Safety and driver assistance",
-        "Technology and connectivity",
-        "Interior and comfort",
-        "Exterior and utility",
-        "Wheels and tires",
-        "Mechanical and performance",
-        "Packages and options",
-        "Colour and trim"
-      ],
-      "surface": "both",
-      "is_vehicle_entity": true,
-      "entity_name": "2026 Chevrolet Blazer EV LT",
-      "entity_key": "2026_chevrolet_blazer_ev_lt_awd",
-      "vehicle_key": "2026_chevrolet_blazer_ev",
-      "trim_key": "2026_chevrolet_blazer_ev_lt_awd",
-      "collection": "M73F989D92ABBE472",
-      "collection_path": "model_2026_Chevrolet_Blazer_EV.html",
-      "parent": "M73F989D92ABBE472",
-      "parent_path": "model_2026_Chevrolet_Blazer_EV.html",
-      "child": [
-        "SD608A469F60F96B0",
-        "SFFD3DCC2CA877285"
-      ],
-      "child_paths": [
-        "spec_2026_Chevrolet_Blazer_EV_dimensions_specifications_1MC26_LT_1MD26_RS.html",
-        "spec_2026_Chevrolet_Blazer_EV_dimensions_specifications_1MC26_LT.html"
-      ],
-      "parent_vehicle": "model_2026_Chevrolet_Blazer_EV.html",
-      "parent_vehicle_id": "M73F989D92ABBE472",
-      "path": "trim_2026_Chevrolet_Blazer_EV_LT_AWD.html"
-    },
-    {
-      "objecttype": "Variant",
-      "type": "trim",
-      "node_id": "TEB961BB193A0D65B",
+      "node_id": "T3E690923BD891534",
       "name": "RS",
       "title": "2026 Chevrolet Blazer EV RS",
       "seating": [
@@ -519,9 +460,9 @@
       "surface": "both",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Blazer EV RS",
-      "entity_key": "2026_chevrolet_blazer_ev_rs_fwd",
+      "entity_key": "2026_chevrolet_blazer_ev_rs",
       "vehicle_key": "2026_chevrolet_blazer_ev",
-      "trim_key": "2026_chevrolet_blazer_ev_rs_fwd",
+      "trim_key": "2026_chevrolet_blazer_ev_rs",
       "collection": "M73F989D92ABBE472",
       "collection_path": "model_2026_Chevrolet_Blazer_EV.html",
       "parent": "M73F989D92ABBE472",
@@ -536,67 +477,12 @@
       ],
       "parent_vehicle": "model_2026_Chevrolet_Blazer_EV.html",
       "parent_vehicle_id": "M73F989D92ABBE472",
-      "path": "trim_2026_Chevrolet_Blazer_EV_RS_FWD.html"
+      "path": "trim_2026_Chevrolet_Blazer_EV_RS.html"
     },
     {
       "objecttype": "Variant",
       "type": "trim",
-      "node_id": "T4CFBB01BC7AEF2FF",
-      "name": "RS",
-      "title": "2026 Chevrolet Blazer EV RS",
-      "seating": [
-        "2/3"
-      ],
-      "fuel_type": [
-        "Electric"
-      ],
-      "drivetrains": [
-        "AWD"
-      ],
-      "year": "2026",
-      "make": "Chevrolet",
-      "model": "Blazer EV",
-      "trim": "RS",
-      "doc_type": "trim",
-      "doc_role": "entity",
-      "entity_level": "trim",
-      "domain": "Overview",
-      "guide_domains": [
-        "Safety and driver assistance",
-        "Technology and connectivity",
-        "Interior and comfort",
-        "Exterior and utility",
-        "Wheels and tires",
-        "Mechanical and performance",
-        "Packages and options",
-        "Colour and trim"
-      ],
-      "surface": "both",
-      "is_vehicle_entity": true,
-      "entity_name": "2026 Chevrolet Blazer EV RS",
-      "entity_key": "2026_chevrolet_blazer_ev_rs_awd",
-      "vehicle_key": "2026_chevrolet_blazer_ev",
-      "trim_key": "2026_chevrolet_blazer_ev_rs_awd",
-      "collection": "M73F989D92ABBE472",
-      "collection_path": "model_2026_Chevrolet_Blazer_EV.html",
-      "parent": "M73F989D92ABBE472",
-      "parent_path": "model_2026_Chevrolet_Blazer_EV.html",
-      "child": [
-        "SD608A469F60F96B0",
-        "SE4868DBD08D2D75F"
-      ],
-      "child_paths": [
-        "spec_2026_Chevrolet_Blazer_EV_dimensions_specifications_1MC26_LT_1MD26_RS.html",
-        "spec_2026_Chevrolet_Blazer_EV_dimensions_specifications_1MD26_RS.html"
-      ],
-      "parent_vehicle": "model_2026_Chevrolet_Blazer_EV.html",
-      "parent_vehicle_id": "M73F989D92ABBE472",
-      "path": "trim_2026_Chevrolet_Blazer_EV_RS_AWD.html"
-    },
-    {
-      "objecttype": "Variant",
-      "type": "trim",
-      "node_id": "TFBE7B2873E019342",
+      "node_id": "TCF736970C9469149",
       "name": "SS",
       "title": "2026 Chevrolet Blazer EV SS",
       "seating": [
@@ -629,22 +515,22 @@
       "surface": "both",
       "is_vehicle_entity": true,
       "entity_name": "2026 Chevrolet Blazer EV SS",
-      "entity_key": "2026_chevrolet_blazer_ev_ss_awd",
+      "entity_key": "2026_chevrolet_blazer_ev_ss",
       "vehicle_key": "2026_chevrolet_blazer_ev",
-      "trim_key": "2026_chevrolet_blazer_ev_ss_awd",
+      "trim_key": "2026_chevrolet_blazer_ev_ss",
       "collection": "M73F989D92ABBE472",
       "collection_path": "model_2026_Chevrolet_Blazer_EV.html",
       "parent": "M73F989D92ABBE472",
       "parent_path": "model_2026_Chevrolet_Blazer_EV.html",
       "child": [
-        "S84FA9BB02A5BBF2B"
+        "S206B8C0111116027"
       ],
       "child_paths": [
         "spec_2026_Chevrolet_Blazer_EV_dimensions_specifications_SS_AWD_1MG26_SS.html"
       ],
       "parent_vehicle": "model_2026_Chevrolet_Blazer_EV.html",
       "parent_vehicle_id": "M73F989D92ABBE472",
-      "path": "trim_2026_Chevrolet_Blazer_EV_SS_AWD.html"
+      "path": "trim_2026_Chevrolet_Blazer_EV_SS.html"
     },
     {
       "objecttype": "Configuration",
@@ -677,23 +563,19 @@
       "parent_vehicle": "model_2026_Chevrolet_Blazer_EV.html",
       "parent_vehicle_id": "M73F989D92ABBE472",
       "parent_trims": [
-        "trim_2026_Chevrolet_Blazer_EV_LT_FWD.html",
-        "trim_2026_Chevrolet_Blazer_EV_LT_AWD.html",
-        "trim_2026_Chevrolet_Blazer_EV_RS_FWD.html",
-        "trim_2026_Chevrolet_Blazer_EV_RS_AWD.html"
+        "trim_2026_Chevrolet_Blazer_EV_LT.html",
+        "trim_2026_Chevrolet_Blazer_EV_RS.html"
       ],
       "parent_trim_ids": [
-        "T38E6065062990489",
-        "T7543570BC3F159B6",
-        "TEB961BB193A0D65B",
-        "T4CFBB01BC7AEF2FF"
+        "TC36839A320303600",
+        "T3E690923BD891534"
       ],
       "path": "spec_2026_Chevrolet_Blazer_EV_dimensions_specifications_1MC26_LT_1MD26_RS.html"
     },
     {
       "objecttype": "Configuration",
       "type": "configuration-spec",
-      "node_id": "S84FA9BB02A5BBF2B",
+      "node_id": "S206B8C0111116027",
       "name": "1MG26\nSS | SS",
       "title": "2026 Chevrolet Blazer EV | Configuration dimensions and specifications | 1MG26\nSS",
       "configuration_kind": "spec-group",
@@ -708,22 +590,22 @@
       "has_numeric_specs": true,
       "surface": "passage_only",
       "entity_name": "2026 Chevrolet Blazer EV SS",
-      "entity_key": "2026_chevrolet_blazer_ev_ss_awd",
+      "entity_key": "2026_chevrolet_blazer_ev_ss",
       "vehicle_key": "2026_chevrolet_blazer_ev",
       "year": "2026",
       "make": "Chevrolet",
       "model": "Blazer EV",
       "retrieval_granularity": "coarse",
-      "trim_key": "2026_chevrolet_blazer_ev_ss_awd",
+      "trim_key": "2026_chevrolet_blazer_ev_ss",
       "trim": "SS",
       "collection": "M73F989D92ABBE472",
       "collection_path": "model_2026_Chevrolet_Blazer_EV.html",
-      "parent": "TFBE7B2873E019342",
-      "parent_path": "trim_2026_Chevrolet_Blazer_EV_SS_AWD.html",
+      "parent": "TCF736970C9469149",
+      "parent_path": "trim_2026_Chevrolet_Blazer_EV_SS.html",
       "parent_vehicle": "model_2026_Chevrolet_Blazer_EV.html",
       "parent_vehicle_id": "M73F989D92ABBE472",
-      "parent_trim": "trim_2026_Chevrolet_Blazer_EV_SS_AWD.html",
-      "parent_trim_id": "TFBE7B2873E019342",
+      "parent_trim": "trim_2026_Chevrolet_Blazer_EV_SS.html",
+      "parent_trim_id": "TCF736970C9469149",
       "path": "spec_2026_Chevrolet_Blazer_EV_dimensions_specifications_SS_AWD_1MG26_SS.html"
     },
     {
@@ -757,12 +639,10 @@
       "parent_vehicle": "model_2026_Chevrolet_Blazer_EV.html",
       "parent_vehicle_id": "M73F989D92ABBE472",
       "parent_trims": [
-        "trim_2026_Chevrolet_Blazer_EV_LT_FWD.html",
-        "trim_2026_Chevrolet_Blazer_EV_LT_AWD.html"
+        "trim_2026_Chevrolet_Blazer_EV_LT.html"
       ],
       "parent_trim_ids": [
-        "T38E6065062990489",
-        "T7543570BC3F159B6"
+        "TC36839A320303600"
       ],
       "path": "spec_2026_Chevrolet_Blazer_EV_dimensions_specifications_1MC26_LT.html"
     },
@@ -797,12 +677,10 @@
       "parent_vehicle": "model_2026_Chevrolet_Blazer_EV.html",
       "parent_vehicle_id": "M73F989D92ABBE472",
       "parent_trims": [
-        "trim_2026_Chevrolet_Blazer_EV_RS_FWD.html",
-        "trim_2026_Chevrolet_Blazer_EV_RS_AWD.html"
+        "trim_2026_Chevrolet_Blazer_EV_RS.html"
       ],
       "parent_trim_ids": [
-        "TEB961BB193A0D65B",
-        "T4CFBB01BC7AEF2FF"
+        "T3E690923BD891534"
       ],
       "path": "spec_2026_Chevrolet_Blazer_EV_dimensions_specifications_1MD26_RS.html"
     }
