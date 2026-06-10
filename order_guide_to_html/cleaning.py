@@ -276,10 +276,12 @@ class GuideTextCleaner:
         *,
         category: str = '',
         extra_fields: Sequence[Tuple[str, str]] = (),
+        strip_drive: bool = True,
     ) -> List[Tuple[str, str]]:
         fields: List[Tuple[str, str]] = [('Vehicle', data.vehicle_name)]
         if trim is not None:
-            fields.append(('Trim', trim.name))
+            trim_label = (strip_drive_tokens(trim.name) or trim.name) if strip_drive else trim.name
+            fields.append(('Trim', trim_label))
         if category:
             fields.append(('Category', self.t(category) if self.language == 'fr' else category))
         for label, value in extra_fields:
@@ -307,9 +309,10 @@ class GuideTextCleaner:
             label = normalize_text(label)
             if label in FIELD_DROP_LABELS:
                 continue
+            is_identity = label in ('Vehicle', 'Trim')
             label = self.t(FIELD_RENAME.get(label, label))
             value = self.clean_customer_text(value)
-            if not label or not value or self.is_code_only(value):
+            if not label or not value or (self.is_code_only(value) and not is_identity):
                 continue
             item = (label, value)
             if item in seen_fields:

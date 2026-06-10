@@ -2136,7 +2136,8 @@ def vehicle_key(data: WorkbookData) -> str:
     return slugify(f'{data.year} {data.make} {data.model}').lower()
 
 def trim_entity_key(data: WorkbookData, trim: TrimDef) -> str:
-    return slugify(f'{data.year} {data.make} {data.model} {trim.name}').lower()
+    trim_label = strip_drive_tokens(trim.name) or trim.name
+    return slugify(f'{data.year} {data.make} {data.model} {trim_label}').lower()
 
 def domains_for_model_doc(data: WorkbookData) -> List[str]:
     domains = list(model_feature_groups_by_category(data).keys())

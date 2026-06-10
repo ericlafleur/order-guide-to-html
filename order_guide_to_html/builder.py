@@ -90,7 +90,8 @@ class CorpusBuilder:
         trim_paths: Dict[str, Path] = {}
         name_slug_to_path: Dict[str, Path] = {}
         for trim in data.trim_defs:
-            filename = f'trim_{data.year}_{slugify(data.make)}_{slugify(data.model)}_{slugify(trim.name)}.html'
+            trim_slug = slugify(strip_drive_tokens(trim.name)) or slugify(trim.name)
+            filename = f'trim_{data.year}_{slugify(data.make)}_{slugify(data.model)}_{trim_slug}.html'
             if filename in name_slug_to_path:
                 trim_paths[trim.key] = name_slug_to_path[filename]
                 continue

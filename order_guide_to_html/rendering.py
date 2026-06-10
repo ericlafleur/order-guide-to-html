@@ -12,7 +12,7 @@ from .classification import (
     DOMAIN_COLOR, category_for_model_feature, category_for_trim_feature,
     sort_category_key,
 )
-from .configuration import trim_colour_context
+from .configuration import strip_drive_tokens, trim_colour_context
 import html
 from .aggregation import FeatureAggregationService
 from .cleaning import GuideTextCleaner, normalize_text, unique_preserve_order
@@ -33,7 +33,7 @@ class HtmlRenderer:
             bullets = [(self.cleaner.t('Available trims'), unique_preserve_order(trim_names))] if trim_names else []
             title = f"{entity} | {self.cleaner.t('Model overview')}"
         else:
-            fields = [('Vehicle', data.vehicle_name), ('Trim', trim.name)]
+            fields = [('Vehicle', data.vehicle_name), ('Trim', strip_drive_tokens(trim.name) or trim.name)]
             bullets = []
             title = f"{entity} | {self.cleaner.t('Trim overview')}"
         return '<section class="vehicle-identity">' + self.cleaner.cleaned_render_article(title, fields, bullets) + '</section>'
@@ -261,7 +261,7 @@ class HtmlRenderer:
             '<section class="configuration-identity">'
             + self.cleaner.cleaned_render_article(
                 self.cleaner.article_heading(entity, self.cleaner.t('Configuration identity')),
-                self.cleaner.filtered_identity_fields(data, trim, category=self.cleaner.t('Dimensions and specifications') if self.cleaner.language == 'fr' else 'Dimensions and specifications'),
+                self.cleaner.filtered_identity_fields(data, trim, category=self.cleaner.t('Dimensions and specifications') if self.cleaner.language == 'fr' else 'Dimensions and specifications', strip_drive=False),
             )
             + '</section>'
         ]
@@ -282,7 +282,7 @@ class HtmlRenderer:
                         '<section class="configuration-values">'
                         + self.cleaner.cleaned_render_article(
                             title,
-                            self.cleaner.filtered_identity_fields(data, trim, category=self.cleaner.t('Dimensions and specifications') if self.cleaner.language == 'fr' else 'Dimensions and specifications'),
+                            self.cleaner.filtered_identity_fields(data, trim, category=self.cleaner.t('Dimensions and specifications') if self.cleaner.language == 'fr' else 'Dimensions and specifications', strip_drive=False),
                             [(self.cleaner.t('Specifications'), chunk)],
                         )
                         + '</section>'
@@ -312,6 +312,7 @@ class HtmlRenderer:
                     trim,
                     category=self.cleaner.t('Powertrain and trailering') if self.cleaner.language == 'fr' else 'Powertrain and trailering',
                     extra_fields=identity_extra,
+                    strip_drive=False,
                 ),
             )
             + '</section>'
@@ -333,7 +334,7 @@ class HtmlRenderer:
                     '<section class="powertrain-values">'
                     + self.cleaner.cleaned_render_article(
                         title,
-                        self.cleaner.filtered_identity_fields(data, trim, category=self.cleaner.t('Powertrain and trailering') if self.cleaner.language == 'fr' else 'Powertrain and trailering'),
+                        self.cleaner.filtered_identity_fields(data, trim, category=self.cleaner.t('Powertrain and trailering') if self.cleaner.language == 'fr' else 'Powertrain and trailering', strip_drive=False),
                         [(self.cleaner.t('Specifications'), chunk)],
                     )
                     + '</section>'
@@ -364,6 +365,7 @@ class HtmlRenderer:
                             trim,
                             category=self.cleaner.t('Powertrain and trailering') if self.cleaner.language == 'fr' else 'Powertrain and trailering',
                             extra_fields=[(self.cleaner.t('Trailering ratings'), rating_text)] if rating_text else [],
+                            strip_drive=False,
                         ),
                         [(self.cleaner.t('Specifications'), chunk)],
                     )
